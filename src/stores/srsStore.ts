@@ -46,6 +46,7 @@ export interface SRSState {
   getDueCards: () => SRSCard[];
   getDueCount: () => number;
   reviewCard: (cardId: string, rating: 1 | 2 | 3 | 4) => { xpEarned: number; nextDueDate: string };
+  addXp: (amount: number) => void;
   importData: (data: any) => void;
   exportData: () => any;
   resetProgress: () => void;
@@ -224,6 +225,32 @@ export const useSRSStore = create<SRSState>()(
           xpEarned: sm2Result.xpEarned,
           nextDueDate: sm2Result.dueDate,
         };
+      },
+
+      addXp: (amount) => {
+        if (amount <= 0) return;
+        const state = get();
+        const now = new Date();
+        const today = formatLocalDate(now);
+        const yesterday = getYesterdayLocalDate(now);
+
+        let newStreak = state.stats.streak;
+        if (state.stats.lastActiveDate === today) {
+          newStreak = state.stats.streak === 0 ? 1 : state.stats.streak;
+        } else if (state.stats.lastActiveDate === yesterday) {
+          newStreak = state.stats.streak + 1;
+        } else {
+          newStreak = 1;
+        }
+
+        set({
+          stats: {
+            ...state.stats,
+            totalXp: state.stats.totalXp + amount,
+            streak: newStreak,
+            lastActiveDate: today,
+          },
+        });
       },
 
       importData: (data) => {

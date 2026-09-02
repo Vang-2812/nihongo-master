@@ -206,6 +206,20 @@ describe('useSRSStore', () => {
     store.removeCard('temp_card');
     assert.equal(useSRSStore.getState().cards['temp_card'], undefined);
   });
+
+  it('should add XP and update streak via addXp', () => {
+    const store = useSRSStore.getState();
+    assert.equal(store.stats.totalXp, 0);
+
+    store.addXp(15);
+    const updated = useSRSStore.getState();
+    assert.equal(updated.stats.totalXp, 15);
+    assert.equal(updated.stats.streak, 1);
+    assert.equal(updated.stats.lastActiveDate, formatLocalDate());
+
+    store.addXp(10);
+    assert.equal(useSRSStore.getState().stats.totalXp, 25);
+  });
 });
 
 describe('useKanjiStore', () => {
