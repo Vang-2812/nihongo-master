@@ -16,6 +16,7 @@ export interface KanjiState {
   setSearch: (search: string) => void;
   setStatus: (char: string, status: KanjiStatus) => void;
   getKanjiStatus: (char: string) => KanjiStatus;
+  importKanjiProgress: (kanjiStatus: Record<string, KanjiStatus>) => void;
   resetKanjiProgress: () => void;
 }
 
@@ -38,6 +39,13 @@ export const useKanjiStore = create<KanjiState>()(
           },
         })),
       getKanjiStatus: (char) => get().kanjiStatus[char] || 'new',
+      importKanjiProgress: (kanjiStatus) =>
+        set((state) => ({
+          kanjiStatus: {
+            ...state.kanjiStatus,
+            ...(kanjiStatus || {}),
+          },
+        })),
       resetKanjiProgress: () => set({ kanjiStatus: {} }),
     }),
     {

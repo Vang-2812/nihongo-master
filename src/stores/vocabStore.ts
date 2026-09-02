@@ -12,6 +12,10 @@ export interface VocabState {
   setVocabStatus: (vocabId: string | number, status: VocabLearningStatus) => void;
   getLessonStatus: (lessonId: string) => LessonProgressStatus;
   getVocabStatus: (vocabId: string | number) => VocabLearningStatus;
+  importVocabProgress: (data: {
+    lessonProgress?: Record<string, LessonProgressStatus>;
+    vocabStatus?: Record<string, VocabLearningStatus>;
+  }) => void;
   resetVocabProgress: () => void;
 }
 
@@ -37,6 +41,17 @@ export const useVocabStore = create<VocabState>()(
         })),
       getLessonStatus: (lessonId) => get().lessonProgress[lessonId] || 'not_started',
       getVocabStatus: (vocabId) => get().vocabStatus[String(vocabId)] || 'not_started',
+      importVocabProgress: (data) =>
+        set((state) => ({
+          lessonProgress: {
+            ...state.lessonProgress,
+            ...(data.lessonProgress || {}),
+          },
+          vocabStatus: {
+            ...state.vocabStatus,
+            ...(data.vocabStatus || {}),
+          },
+        })),
       resetVocabProgress: () => set({ lessonProgress: {}, vocabStatus: {} }),
     }),
     {

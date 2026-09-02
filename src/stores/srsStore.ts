@@ -36,6 +36,7 @@ export interface SRSState {
   stats: SRSStats;
   dailyNewLimit: number;
   autoPlayAudio: boolean;
+  soundEffects: boolean;
 
   // Actions
   addCard: (card: NewCardInput) => void;
@@ -43,6 +44,7 @@ export interface SRSState {
   removeCard: (cardId: string) => void;
   setDailyNewLimit: (limit: number) => void;
   setAutoPlayAudio: (enabled: boolean) => void;
+  setSoundEffects: (enabled: boolean) => void;
   getDueCards: () => SRSCard[];
   getDueCount: () => number;
   reviewCard: (cardId: string, rating: 1 | 2 | 3 | 4) => { xpEarned: number; nextDueDate: string };
@@ -78,6 +80,7 @@ export const useSRSStore = create<SRSState>()(
       stats: initialStats,
       dailyNewLimit: 20,
       autoPlayAudio: true,
+      soundEffects: true,
 
       addCard: (cardInput) => {
         const state = get();
@@ -141,6 +144,10 @@ export const useSRSStore = create<SRSState>()(
 
       setAutoPlayAudio: (enabled) => {
         set({ autoPlayAudio: enabled });
+      },
+
+      setSoundEffects: (enabled) => {
+        set({ soundEffects: enabled });
       },
 
       getDueCards: () => {
@@ -297,11 +304,21 @@ export const useSRSStore = create<SRSState>()(
             dailyNewLimit:
               typeof data.dailyNewLimit === 'number'
                 ? data.dailyNewLimit
+                : typeof data.settings?.dailyNewLimit === 'number'
+                ? data.settings.dailyNewLimit
                 : state.dailyNewLimit,
             autoPlayAudio:
               typeof data.autoPlayAudio === 'boolean'
                 ? data.autoPlayAudio
+                : typeof data.settings?.autoPlayAudio === 'boolean'
+                ? data.settings.autoPlayAudio
                 : state.autoPlayAudio,
+            soundEffects:
+              typeof data.soundEffects === 'boolean'
+                ? data.soundEffects
+                : typeof data.settings?.soundEffects === 'boolean'
+                ? data.settings.soundEffects
+                : state.soundEffects,
           };
         });
       },
@@ -315,6 +332,7 @@ export const useSRSStore = create<SRSState>()(
           stats: state.stats,
           dailyNewLimit: state.dailyNewLimit,
           autoPlayAudio: state.autoPlayAudio,
+          soundEffects: state.soundEffects,
         };
       },
 

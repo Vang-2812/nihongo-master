@@ -220,6 +220,17 @@ describe('useSRSStore', () => {
     store.addXp(10);
     assert.equal(useSRSStore.getState().stats.totalXp, 25);
   });
+
+  it('should toggle and persist soundEffects preference', () => {
+    const store = useSRSStore.getState();
+    assert.equal(store.soundEffects, true);
+
+    store.setSoundEffects(false);
+    assert.equal(useSRSStore.getState().soundEffects, false);
+
+    store.setSoundEffects(true);
+    assert.equal(useSRSStore.getState().soundEffects, true);
+  });
 });
 
 describe('useKanjiStore', () => {
@@ -249,6 +260,17 @@ describe('useKanjiStore', () => {
     store.resetKanjiProgress();
     assert.equal(store.getKanjiStatus('漢'), 'new');
   });
+
+  it('should bulk import kanji progress', () => {
+    const store = useKanjiStore.getState();
+    store.importKanjiProgress({
+      '日': 'known',
+      '月': 'learning',
+    });
+
+    assert.equal(useKanjiStore.getState().getKanjiStatus('日'), 'known');
+    assert.equal(useKanjiStore.getState().getKanjiStatus('月'), 'learning');
+  });
 });
 
 describe('useVocabStore', () => {
@@ -276,5 +298,17 @@ describe('useVocabStore', () => {
     store.resetVocabProgress();
     assert.equal(store.getLessonStatus('minna_lesson_1'), 'not_started');
     assert.equal(store.getVocabStatus(101), 'not_started');
+  });
+
+  it('should bulk import lesson and vocab progress', () => {
+    const store = useVocabStore.getState();
+    store.importVocabProgress({
+      lessonProgress: { minna_1: 'complete' },
+      vocabStatus: { '1': 'known', '2': 'learning' },
+    });
+
+    assert.equal(useVocabStore.getState().getLessonStatus('minna_1'), 'complete');
+    assert.equal(useVocabStore.getState().getVocabStatus(1), 'known');
+    assert.equal(useVocabStore.getState().getVocabStatus(2), 'learning');
   });
 });
