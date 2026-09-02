@@ -1,0 +1,4802 @@
+[
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 1",
+    "Từ Vựng": "男性",
+    "Hán Tự": "NAM TÍNH",
+    "Nghĩa": "nam giới, đàn ông, giới tính nam"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 1",
+    "Từ Vựng": "女性",
+    "Hán Tự": "NỮ TÍNH",
+    "Nghĩa": "nữ giới, phụ nữ, giới tính nữ"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 1",
+    "Từ Vựng": "高齢",
+    "Hán Tự": "CAO LINH",
+    "Nghĩa": "tuổi cao"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 1",
+    "Từ Vựng": "年上",
+    "Hán Tự": "NIÊN THƯỢNG",
+    "Nghĩa": "lớn tuổi hơn, hơn tuổi"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 1",
+    "Từ Vựng": "目上",
+    "Hán Tự": "MỤC THƯỢNG",
+    "Nghĩa": "cấp trên, bề trên"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 1",
+    "Từ Vựng": "先輩",
+    "Hán Tự": "TIÊN BỐI",
+    "Nghĩa": "người đi trước"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 1",
+    "Từ Vựng": "後輩",
+    "Hán Tự": "HẬU BỐI",
+    "Nghĩa": "người đi sau"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 1",
+    "Từ Vựng": "上司",
+    "Hán Tự": "THƯỢNG TƯ",
+    "Nghĩa": "cấp trên"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 1",
+    "Từ Vựng": "相手",
+    "Hán Tự": "TƯƠNG/TƯỚNG THỦ",
+    "Nghĩa": "đối phương"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 1",
+    "Từ Vựng": "知り合い",
+    "Hán Tự": "TRI HỢP",
+    "Nghĩa": "người quen"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 1",
+    "Từ Vựng": "友人",
+    "Hán Tự": "HỮU NHÂN",
+    "Nghĩa": "bạn bè"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 1",
+    "Từ Vựng": "仲",
+    "Hán Tự": "TRỌNG",
+    "Nghĩa": "quan hệ, mối quan hệ"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 1",
+    "Từ Vựng": "生年月日",
+    "Hán Tự": "SINH NIÊN NGUYỆT NHẬT",
+    "Nghĩa": "ngày tháng năm sinh"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 1",
+    "Từ Vựng": "誕生",
+    "Hán Tự": "ĐẢN SINH",
+    "Nghĩa": "sự ra đời"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 1",
+    "Từ Vựng": "年",
+    "Hán Tự": "NIÊN",
+    "Nghĩa": "năm, tuổi"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 1",
+    "Từ Vựng": "出身",
+    "Hán Tự": "XUẤT THÂN",
+    "Nghĩa": "xuất thân, quê quán"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 1",
+    "Từ Vựng": "故郷",
+    "Hán Tự": "CỐ HƯƠNG",
+    "Nghĩa": "quê hương"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 2",
+    "Từ Vựng": "成長",
+    "Hán Tự": "THÀNH TRƯỞNG",
+    "Nghĩa": "trưởng thành, phát triển"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 2",
+    "Từ Vựng": "成人",
+    "Hán Tự": "THÀNH NHÂN",
+    "Nghĩa": "người trưởng thành"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 2",
+    "Từ Vựng": "合格",
+    "Hán Tự": "HỢP CÁCH",
+    "Nghĩa": "thi đỗ, trúng tuyển"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 2",
+    "Từ Vựng": "進学",
+    "Hán Tự": "TIẾN HỌC",
+    "Nghĩa": "học lên cao hơn"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 2",
+    "Từ Vựng": "退学",
+    "Hán Tự": "THỐI HỌC",
+    "Nghĩa": "bỏ học, thôi học"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 2",
+    "Từ Vựng": "就職",
+    "Hán Tự": "TỰU CHỨC",
+    "Nghĩa": "tìm việc, có việc làm"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 2",
+    "Từ Vựng": "退職",
+    "Hán Tự": "THỐI CHỨC",
+    "Nghĩa": "nghỉ việc"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 2",
+    "Từ Vựng": "失業",
+    "Hán Tự": "THẤT NGHIỆP",
+    "Nghĩa": "thất nghiệp"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 2",
+    "Từ Vựng": "残業",
+    "Hán Tự": "TÀN NGHIỆP",
+    "Nghĩa": "làm thêm giờ"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 2",
+    "Từ Vựng": "生活",
+    "Hán Tự": "SINH HOẠT",
+    "Nghĩa": "sinh hoạt, cuộc sống"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 2",
+    "Từ Vựng": "通勤",
+    "Hán Tự": "THÔNG CẦN",
+    "Nghĩa": "đi làm"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 2",
+    "Từ Vựng": "学歴",
+    "Hán Tự": "HỌC LỊCH",
+    "Nghĩa": "quá trình học tập, bằng cấp"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 2",
+    "Từ Vựng": "給料",
+    "Hán Tự": "CẤP LIỆU",
+    "Nghĩa": "tiền lương"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 2",
+    "Từ Vựng": "面接",
+    "Hán Tự": "DIỆN TIẾP",
+    "Nghĩa": "phỏng vấn"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 2",
+    "Từ Vựng": "休憩",
+    "Hán Tự": "HƯU KHẾ",
+    "Nghĩa": "nghỉ ngơi"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 2",
+    "Từ Vựng": "観光",
+    "Hán Tự": "QUAN QUANG",
+    "Nghĩa": "tham quan, du lịch"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 2",
+    "Từ Vựng": "帰国",
+    "Hán Tự": "QUY QUỐC",
+    "Nghĩa": "về nước"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 3",
+    "Từ Vựng": "帰省",
+    "Hán Tự": "QUY TỈNH",
+    "Nghĩa": "về quê"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 3",
+    "Từ Vựng": "帰宅",
+    "Hán Tự": "QUY TRẠCH",
+    "Nghĩa": "về nhà"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 3",
+    "Từ Vựng": "参加",
+    "Hán Tự": "THAM GIA",
+    "Nghĩa": "tham gia"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 3",
+    "Từ Vựng": "出席",
+    "Hán Tự": "XUẤT TỊCH",
+    "Nghĩa": "tham dự, có mặt"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 3",
+    "Từ Vựng": "欠席",
+    "Hán Tự": "KHIẾM TỊCH",
+    "Nghĩa": "vắng mặt"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 3",
+    "Từ Vựng": "遅刻",
+    "Hán Tự": "TRÌ KHẮC",
+    "Nghĩa": "đi muộn"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 3",
+    "Từ Vựng": "化粧",
+    "Hán Tự": "HÓA TRANG",
+    "Nghĩa": "trang điểm"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 3",
+    "Từ Vựng": "計算",
+    "Hán Tự": "KẾ TOÁN",
+    "Nghĩa": "tính toán"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 3",
+    "Từ Vựng": "計画",
+    "Hán Tự": "KẾ HOẠCH",
+    "Nghĩa": "kế hoạch"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 3",
+    "Từ Vựng": "成功",
+    "Hán Tự": "THÀNH CÔNG",
+    "Nghĩa": "thành công"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 3",
+    "Từ Vựng": "失敗",
+    "Hán Tự": "THẤT BẠI",
+    "Nghĩa": "thất bại"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 3",
+    "Từ Vựng": "準備",
+    "Hán Tự": "CHUẨN BỊ",
+    "Nghĩa": "chuẩn bị"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 3",
+    "Từ Vựng": "整理",
+    "Hán Tự": "CHỈNH LÝ",
+    "Nghĩa": "chỉnh lý, sắp xếp"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 3",
+    "Từ Vựng": "注文",
+    "Hán Tự": "CHÚ VĂN",
+    "Nghĩa": "đặt hàng, gọi món"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 3",
+    "Từ Vựng": "貯金",
+    "Hán Tự": "TRỮ KIM",
+    "Nghĩa": "tiết kiệm tiền"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 3",
+    "Từ Vựng": "徹夜",
+    "Hán Tự": "TRIỆT DẠ",
+    "Nghĩa": "thức trắng đêm"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 3",
+    "Từ Vựng": "引っ越し",
+    "Hán Tự": "DẪN VIỆT",
+    "Nghĩa": "chuyển nhà"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 3",
+    "Từ Vựng": "身長",
+    "Hán Tự": "THÂN TRƯỜNG",
+    "Nghĩa": "chiều cao cơ thể"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 4",
+    "Từ Vựng": "体重",
+    "Hán Tự": "THỂ TRỌNG",
+    "Nghĩa": "cân nặng"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 4",
+    "Từ Vựng": "けが",
+    "Hán Tự": "",
+    "Nghĩa": "vết thương, bị thương"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 4",
+    "Từ Vựng": "会",
+    "Hán Tự": "HỘI",
+    "Nghĩa": "hội, tiệc"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 4",
+    "Từ Vựng": "趣味",
+    "Hán Tự": "THÚ VỊ",
+    "Nghĩa": "sở thích"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 4",
+    "Từ Vựng": "興味",
+    "Hán Tự": "HƯNG VỊ",
+    "Nghĩa": "hứng thú"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 4",
+    "Từ Vựng": "思い出",
+    "Hán Tự": "TƯ XUẤT",
+    "Nghĩa": "kỷ niệm"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 4",
+    "Từ Vựng": "冗談",
+    "Hán Tự": "NHŨNG ĐÀM",
+    "Nghĩa": "nói đùa"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 4",
+    "Từ Vựng": "目的",
+    "Hán Tự": "MỤC ĐÍCH",
+    "Nghĩa": "mục đích"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 4",
+    "Từ Vựng": "約束",
+    "Hán Tự": "ƯỚC THÚC",
+    "Nghĩa": "lời hứa, cuộc hẹn"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 4",
+    "Từ Vựng": "おしゃべり",
+    "Hán Tự": "",
+    "Nghĩa": "nói chuyện phiếm"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 4",
+    "Từ Vựng": "遠慮",
+    "Hán Tự": "VIỄN LỰ",
+    "Nghĩa": "ngần ngại, khách sáo"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 4",
+    "Từ Vựng": "我慢",
+    "Hán Tự": "NGÃ MẠN",
+    "Nghĩa": "chịu đựng, nhẫn nhịn"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 4",
+    "Từ Vựng": "迷惑",
+    "Hán Tự": "MÊ HOẶC",
+    "Nghĩa": "phiền phức"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 4",
+    "Từ Vựng": "希望",
+    "Hán Tự": "HY VỌNG",
+    "Nghĩa": "hy vọng"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 5",
+    "Từ Vựng": "夢",
+    "Hán Tự": "MỘNG",
+    "Nghĩa": "giấc mơ"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 5",
+    "Từ Vựng": "賛成",
+    "Hán Tự": "TÁN THÀNH",
+    "Nghĩa": "tán thành, đồng ý"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 5",
+    "Từ Vựng": "反対",
+    "Hán Tự": "PHẢN ĐỐI",
+    "Nghĩa": "phản đối"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 5",
+    "Từ Vựng": "想像",
+    "Hán Tự": "TƯỞNG TƯỢNG",
+    "Nghĩa": "tưởng tượng"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 5",
+    "Từ Vựng": "努力",
+    "Hán Tự": "NỖ LỰC",
+    "Nghĩa": "nỗ lực"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 6",
+    "Từ Vựng": "太陽",
+    "Hán Tự": "THÁI DƯƠNG",
+    "Nghĩa": "mặt trời"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 6",
+    "Từ Vựng": "地球",
+    "Hán Tự": "ĐỊA CẦU",
+    "Nghĩa": "trái đất"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 6",
+    "Từ Vựng": "温度",
+    "Hán Tự": "ÔN ĐỘ",
+    "Nghĩa": "nhiệt độ"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 6",
+    "Từ Vựng": "湿度",
+    "Hán Tự": "THẤP ĐỘ",
+    "Nghĩa": "độ ẩm"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 6",
+    "Từ Vựng": "湿気",
+    "Hán Tự": "THẤP KHÍ",
+    "Nghĩa": "hơi ẩm"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 6",
+    "Từ Vựng": "梅雨",
+    "Hán Tự": "MAI VŨ",
+    "Nghĩa": "mùa mưa"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 6",
+    "Từ Vựng": "かび",
+    "Hán Tự": "",
+    "Nghĩa": "nấm mốc"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 6",
+    "Từ Vựng": "暖房",
+    "Hán Tự": "NOÃN PHÒNG",
+    "Nghĩa": "lò sưởi, máy sưởi"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 6",
+    "Từ Vựng": "皮",
+    "Hán Tự": "BÌ",
+    "Nghĩa": "vỏ, da"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 6",
+    "Từ Vựng": "缶",
+    "Hán Tự": "PHỮU",
+    "Nghĩa": "vỏ lon"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 6",
+    "Từ Vựng": "画面",
+    "Hán Tự": "HỌA DIỆN",
+    "Nghĩa": "màn hình"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 6",
+    "Từ Vựng": "番組",
+    "Hán Tự": "PHIÊN TỔ",
+    "Nghĩa": "chương trình (TV, radio)"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 6",
+    "Từ Vựng": "記事",
+    "Hán Tự": "KÝ SỰ",
+    "Nghĩa": "bài báo, ký sự"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 6",
+    "Từ Vựng": "近所",
+    "Hán Tự": "CẬN SỞ",
+    "Nghĩa": "hàng xóm, lân cận"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 6",
+    "Từ Vựng": "警察",
+    "Hán Tự": "CẢNH SÁT",
+    "Nghĩa": "cảnh sát"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 6",
+    "Từ Vựng": "犯人",
+    "Hán Tự": "PHẠM NHÂN",
+    "Nghĩa": "thủ phạm, tội phạm"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 6",
+    "Từ Vựng": "小銭",
+    "Hán Tự": "TIỂU TIỀN",
+    "Nghĩa": "tiền lẻ"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 7",
+    "Từ Vựng": "ごちそう",
+    "Hán Tự": "",
+    "Nghĩa": "bữa ăn ngon, thiết đãi"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 7",
+    "Từ Vựng": "作者",
+    "Hán Tự": "TÁC GIẢ",
+    "Nghĩa": "tác giả"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 7",
+    "Từ Vựng": "作品",
+    "Hán Tự": "TÁC PHẨM",
+    "Nghĩa": "tác phẩm"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 7",
+    "Từ Vựng": "制服",
+    "Hán Tự": "CHẾ PHỤC",
+    "Nghĩa": "đồng phục"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 7",
+    "Từ Vựng": "洗剤",
+    "Hán Tự": "TẨY TỄ",
+    "Nghĩa": "chất tẩy rửa"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 7",
+    "Từ Vựng": "底",
+    "Hán Tự": "ĐỂ",
+    "Nghĩa": "đáy"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 7",
+    "Từ Vựng": "地下",
+    "Hán Tự": "ĐỊA HẠ",
+    "Nghĩa": "dưới lòng đất"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 7",
+    "Từ Vựng": "寺",
+    "Hán Tự": "TỰ",
+    "Nghĩa": "chùa"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 7",
+    "Từ Vựng": "道路",
+    "Hán Tự": "ĐẠO LỘ",
+    "Nghĩa": "con đường"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 7",
+    "Từ Vựng": "坂",
+    "Hán Tự": "PHẢN",
+    "Nghĩa": "con dốc"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 7",
+    "Từ Vựng": "煙",
+    "Hán Tự": "YÊN",
+    "Nghĩa": "khói"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 7",
+    "Từ Vựng": "灰",
+    "Hán Tự": "HÔI",
+    "Nghĩa": "tro, tàn"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 7",
+    "Từ Vựng": "判",
+    "Hán Tự": "PHÁN",
+    "Nghĩa": "con dấu"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 7",
+    "Từ Vựng": "名刺",
+    "Hán Tự": "DANH THÍCH/THỨ",
+    "Nghĩa": "danh thiếp"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 7",
+    "Từ Vựng": "免許",
+    "Hán Tự": "MIỄN HỨA",
+    "Nghĩa": "giấy phép, sự cho phép"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 7",
+    "Từ Vựng": "多く",
+    "Hán Tự": "ĐA",
+    "Nghĩa": "nhiều"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 7",
+    "Từ Vựng": "前半",
+    "Hán Tự": "TIỀN BÁN",
+    "Nghĩa": "nửa đầu"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 7",
+    "Từ Vựng": "後半",
+    "Hán Tự": "HẬU BÁN",
+    "Nghĩa": "nửa sau"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 8",
+    "Từ Vựng": "最高",
+    "Hán Tự": "TỐI CAO",
+    "Nghĩa": "cao nhất, tuyệt vời, rất"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 8",
+    "Từ Vựng": "最低",
+    "Hán Tự": "TỐI ĐÊ",
+    "Nghĩa": "thấp nhất, tồi tệ, kinh khủng"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 8",
+    "Từ Vựng": "最初",
+    "Hán Tự": "TỐI SƠ",
+    "Nghĩa": "đầu tiên"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 8",
+    "Từ Vựng": "最後",
+    "Hán Tự": "TỐI HẬU",
+    "Nghĩa": "cuối cùng"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 8",
+    "Từ Vựng": "自動",
+    "Hán Tự": "TỰ ĐỘNG",
+    "Nghĩa": "tự động"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 8",
+    "Từ Vựng": "種類",
+    "Hán Tự": "CHỦNG LOẠI",
+    "Nghĩa": "chủng loại, loại"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 8",
+    "Từ Vựng": "性格",
+    "Hán Tự": "TÍNH CÁCH",
+    "Nghĩa": "tính cách, nhân phẩm"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 8",
+    "Từ Vựng": "性質",
+    "Hán Tự": "TÍNH CHẤT",
+    "Nghĩa": "tính chất, bản chất"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 8",
+    "Từ Vựng": "順番",
+    "Hán Tự": "THUẬN PHIÊN",
+    "Nghĩa": "thứ tự, lần lượt"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 8",
+    "Từ Vựng": "番",
+    "Hán Tự": "PHIÊN",
+    "Nghĩa": "lượt, trông coi"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 8",
+    "Từ Vựng": "方法",
+    "Hán Tự": "PHƯƠNG PHÁP",
+    "Nghĩa": "phương pháp, cách thức"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 8",
+    "Từ Vựng": "製品",
+    "Hán Tự": "CHẾ PHẨM",
+    "Nghĩa": "sản phẩm"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 8",
+    "Từ Vựng": "値上がり",
+    "Hán Tự": "TRỊ THƯỢNG",
+    "Nghĩa": "tăng giá"
+  },
+  {
+    "Lesson": "Unit 01 – 名詞A – Bài 8",
+    "Từ Vựng": "生",
+    "Hán Tự": "SINH",
+    "Nghĩa": "sống, tươi sống"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 1",
+    "Từ Vựng": "渇く",
+    "Hán Tự": "KHÁT",
+    "Nghĩa": "khát"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 1",
+    "Từ Vựng": "嗅ぐ",
+    "Hán Tự": "KHỨU",
+    "Nghĩa": "ngửi"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 1",
+    "Từ Vựng": "叩く",
+    "Hán Tự": "KHẤU",
+    "Nghĩa": "đánh, gõ, vỗ"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 1",
+    "Từ Vựng": "殴る",
+    "Hán Tự": "ẨU",
+    "Nghĩa": "đánh, đấm"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 1",
+    "Từ Vựng": "ける",
+    "Hán Tự": "",
+    "Nghĩa": "đá"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 1",
+    "Từ Vựng": "抱く",
+    "Hán Tự": "BÃO",
+    "Nghĩa": "ôm, ẵm, bế"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 1",
+    "Từ Vựng": "倒れる",
+    "Hán Tự": "ĐẢO",
+    "Nghĩa": "ngã, đổ"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 1",
+    "Từ Vựng": "倒す",
+    "Hán Tự": "ĐẢO",
+    "Nghĩa": "làm đổ, hạ gục"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 1",
+    "Từ Vựng": "起きる／ 起こる",
+    "Hán Tự": "KHỞI",
+    "Nghĩa": "thức dậy, thức, xảy ra"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 1",
+    "Từ Vựng": "起こす",
+    "Hán Tự": "KHỞI",
+    "Nghĩa": "đánh thức, dựng lên, gây ra"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 1",
+    "Từ Vựng": "尋ねる",
+    "Hán Tự": "TẦM",
+    "Nghĩa": "hỏi, xin, yêu cầu"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 1",
+    "Từ Vựng": "呼ぶ",
+    "Hán Tự": "HÔ",
+    "Nghĩa": "gọi"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 1",
+    "Từ Vựng": "叫ぶ",
+    "Hán Tự": "KHIẾU",
+    "Nghĩa": "kêu gào, la hét"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 1",
+    "Từ Vựng": "黙る",
+    "Hán Tự": "MẶC",
+    "Nghĩa": "im lặng, làm thinh"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 1",
+    "Từ Vựng": "飼う",
+    "Hán Tự": "TỰ",
+    "Nghĩa": "nuôi"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 1",
+    "Từ Vựng": "数える",
+    "Hán Tự": "SỐ",
+    "Nghĩa": "đếm"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 2",
+    "Từ Vựng": "乾く",
+    "Hán Tự": "CAN",
+    "Nghĩa": "khô"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 2",
+    "Từ Vựng": "乾かす",
+    "Hán Tự": "CAN",
+    "Nghĩa": "làm khô"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 2",
+    "Từ Vựng": "畳む",
+    "Hán Tự": "ĐIỆP",
+    "Nghĩa": "gấp, gập"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 2",
+    "Từ Vựng": "誘う",
+    "Hán Tự": "DỤ",
+    "Nghĩa": "rủ, mời"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 2",
+    "Từ Vựng": "おごる",
+    "Hán Tự": "",
+    "Nghĩa": "khao, chiêu đãi"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 2",
+    "Từ Vựng": "預かる",
+    "Hán Tự": "DỰ",
+    "Nghĩa": "trong nom, chăm sóc"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 2",
+    "Từ Vựng": "預ける",
+    "Hán Tự": "DỰ",
+    "Nghĩa": "gửi tiền, giao phó"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 2",
+    "Từ Vựng": "決まる",
+    "Hán Tự": "QUYẾT",
+    "Nghĩa": "được quyết định, (thời gian, địa điểm…) nhất định"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 2",
+    "Từ Vựng": "決める",
+    "Hán Tự": "QUYẾT",
+    "Nghĩa": "quyết định"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 2",
+    "Từ Vựng": "写る",
+    "Hán Tự": "TẢ",
+    "Nghĩa": "được chiếu, được chụp"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 2",
+    "Từ Vựng": "写す",
+    "Hán Tự": "TẢ",
+    "Nghĩa": "chụp, sao chép"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 2",
+    "Từ Vựng": "思い出す",
+    "Hán Tự": "TƯ XUẤT",
+    "Nghĩa": "hồi tưởng, nhớ lại"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 2",
+    "Từ Vựng": "教わる",
+    "Hán Tự": "GIÁO",
+    "Nghĩa": "được dạy"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 2",
+    "Từ Vựng": "申し込む",
+    "Hán Tự": "THÂN NHẬP",
+    "Nghĩa": "đăng ký"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 2",
+    "Từ Vựng": "断る",
+    "Hán Tự": "ĐOẠN",
+    "Nghĩa": "từ chối"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 2",
+    "Từ Vựng": "見つかる",
+    "Hán Tự": "KIẾN",
+    "Nghĩa": "được tìm thấy; bị phát hiện"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 2",
+    "Từ Vựng": "見つける",
+    "Hán Tự": "KIẾN",
+    "Nghĩa": "tìm thấy, bắt gặp"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 3",
+    "Từ Vựng": "捕まる",
+    "Hán Tự": "BỘ",
+    "Nghĩa": "bị bắt; bị giữ (bị túm)"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 3",
+    "Từ Vựng": "捕まえる",
+    "Hán Tự": "BỘ",
+    "Nghĩa": "bắt, tóm"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 3",
+    "Từ Vựng": "乗る",
+    "Hán Tự": "THỪA",
+    "Nghĩa": "lên (tàu,xe), cưỡi (ngựa)"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 3",
+    "Từ Vựng": "乗せる",
+    "Hán Tự": "THỪA",
+    "Nghĩa": "chất lên, cho lên"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 3",
+    "Từ Vựng": "降りる／下りる",
+    "Hán Tự": "GIÁNG HẠ",
+    "Nghĩa": "xuống (tàu, xe, núi), nhận được(cấp phép, chứng chỉ, lương hưu…)"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 3",
+    "Từ Vựng": "降ろす／下ろす",
+    "Hán Tự": "GIÁNG/HÀNG HẠ",
+    "Nghĩa": "cho xuống (tàu, xe), hạ xuống, rút tiền"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 3",
+    "Từ Vựng": "直る",
+    "Hán Tự": "TRỰC",
+    "Nghĩa": "được sửa"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 3",
+    "Từ Vựng": "直す",
+    "Hán Tự": "TRỰC",
+    "Nghĩa": "sửa chữa, chỉnh lại"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 3",
+    "Từ Vựng": "治る",
+    "Hán Tự": "TRỊ",
+    "Nghĩa": "khỏi, lành"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 3",
+    "Từ Vựng": "治す",
+    "Hán Tự": "TRỊ",
+    "Nghĩa": "chữa trị, phục hồi"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 4",
+    "Từ Vựng": "亡くなる",
+    "Hán Tự": "VONG",
+    "Nghĩa": "mất, chết"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 4",
+    "Từ Vựng": "亡くす",
+    "Hán Tự": "VONG",
+    "Nghĩa": "làm mất / để mất / mất đi (người thân, vật quan trọng)"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 4",
+    "Từ Vựng": "生まれる",
+    "Hán Tự": "SINH",
+    "Nghĩa": "được sinh ra, được tạo ra"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 4",
+    "Từ Vựng": "産む 生む",
+    "Hán Tự": "SẢN SINH",
+    "Nghĩa": "sinh, tạo ra"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 4",
+    "Từ Vựng": "出会う",
+    "Hán Tự": "XUẤT HỘI",
+    "Nghĩa": "gặp gỡ, hội ngộ"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 4",
+    "Từ Vựng": "訪ねる",
+    "Hán Tự": "PHỎNG",
+    "Nghĩa": "thăm"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 4",
+    "Từ Vựng": "付き合う",
+    "Hán Tự": "PHỤ HỢP",
+    "Nghĩa": "hẹn hò, quan hệ"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 5",
+    "Từ Vựng": "効く",
+    "Hán Tự": "HIỆU",
+    "Nghĩa": "hiệu quả"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 5",
+    "Từ Vựng": "はやる",
+    "Hán Tự": "",
+    "Nghĩa": "thịnh hành, phổ biến, bùng phát (dịch bệnh)"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 5",
+    "Từ Vựng": "経つ",
+    "Hán Tự": "KINH",
+    "Nghĩa": "trải qua, trôi qua"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 5",
+    "Từ Vựng": "間に合う",
+    "Hán Tự": "GIAN HỢP",
+    "Nghĩa": "kịp giờ, đúng lúc"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 5",
+    "Từ Vựng": "間に合わせる",
+    "Hán Tự": "GIAN HỢP",
+    "Nghĩa": "làm cho kịp"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 5",
+    "Từ Vựng": "通う",
+    "Hán Tự": "THÔNG",
+    "Nghĩa": "đi lại, lưu thông"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 5",
+    "Từ Vựng": "込む",
+    "Hán Tự": "<VÀO>",
+    "Nghĩa": "đông đúc"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 5",
+    "Từ Vựng": "すれ違う",
+    "Hán Tự": "VI",
+    "Nghĩa": "đi ngang qua, lướt qua, lỡ"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 5",
+    "Từ Vựng": "掛かる",
+    "Hán Tự": "QUẢI",
+    "Nghĩa": "được phủ lên, tiêu tốn, vướng vào, gây ra, khởi động"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 5",
+    "Từ Vựng": "掛ける",
+    "Hán Tự": "QUẢI",
+    "Nghĩa": "phủ lên, lấy thời gian của ai đó, bắt đầu, nhân"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 5",
+    "Từ Vựng": "動く",
+    "Hán Tự": "ĐỘNG",
+    "Nghĩa": "di chuyển, cử động, hoạt động"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 5",
+    "Từ Vựng": "動かす",
+    "Hán Tự": "ĐỘNG",
+    "Nghĩa": "di chuyển, vận hành, làm lay động"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 6",
+    "Từ Vựng": "離れる",
+    "Hán Tự": "LI",
+    "Nghĩa": "tránh xa, cách xa"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 6",
+    "Từ Vựng": "離す",
+    "Hán Tự": "LI",
+    "Nghĩa": "rời xa, tách rời"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 6",
+    "Từ Vựng": "ぶつかる",
+    "Hán Tự": "",
+    "Nghĩa": "va chạm, xung đột"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 6",
+    "Từ Vựng": "ぶつける",
+    "Hán Tự": "",
+    "Nghĩa": "đâm mạnh, đụng vào"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 6",
+    "Từ Vựng": "こぼれる",
+    "Hán Tự": "",
+    "Nghĩa": "bị đổ, tràn"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 6",
+    "Từ Vựng": "こぼす",
+    "Hán Tự": "",
+    "Nghĩa": "làm đổ, làm tràn"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 6",
+    "Từ Vựng": "ふく",
+    "Hán Tự": "",
+    "Nghĩa": "lau, chùi"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 6",
+    "Từ Vựng": "片付く",
+    "Hán Tự": "PHIẾN PHỤ",
+    "Nghĩa": "được dọn dẹp, được giải quyết"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 6",
+    "Từ Vựng": "片付ける",
+    "Hán Tự": "PHIẾN PHỤ",
+    "Nghĩa": "dọn dẹp, giải quyết"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 6",
+    "Từ Vựng": "包む",
+    "Hán Tự": "BAO",
+    "Nghĩa": "bọc, gói"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 6",
+    "Từ Vựng": "張る",
+    "Hán Tự": "TRƯƠNG",
+    "Nghĩa": "dán"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 6",
+    "Từ Vựng": "無くなる",
+    "Hán Tự": "VÔ",
+    "Nghĩa": "bị mất"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 6",
+    "Từ Vựng": "無くす",
+    "Hán Tự": "VÔ",
+    "Nghĩa": "làm mất"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 6",
+    "Từ Vựng": "足りる",
+    "Hán Tự": "TÚC",
+    "Nghĩa": "đủ"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 6",
+    "Từ Vựng": "残る",
+    "Hán Tự": "TÀN",
+    "Nghĩa": "còn lại, sót lại"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 6",
+    "Từ Vựng": "残す",
+    "Hán Tự": "TÀN",
+    "Nghĩa": "để lại, gác lại"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 6",
+    "Từ Vựng": "腐る",
+    "Hán Tự": "HỦ",
+    "Nghĩa": "thiu, thối, hỏng"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 7",
+    "Từ Vựng": "むける",
+    "Hán Tự": "",
+    "Nghĩa": "bong tróc, lột ra"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 7",
+    "Từ Vựng": "むく",
+    "Hán Tự": "",
+    "Nghĩa": "bóc, lột"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 7",
+    "Từ Vựng": "滑る",
+    "Hán Tự": "HOẠT",
+    "Nghĩa": "trượt"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 7",
+    "Từ Vựng": "積もる",
+    "Hán Tự": "TÍCH",
+    "Nghĩa": "(tuyết) phủ dày, chất đống; tích tụ"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 7",
+    "Từ Vựng": "積む",
+    "Hán Tự": "TÍCH",
+    "Nghĩa": "chất lên, tích lũy"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 7",
+    "Từ Vựng": "空く",
+    "Hán Tự": "KHÔNG",
+    "Nghĩa": "trống (ghế/giờ), rảnh; (bụng) đói"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 7",
+    "Từ Vựng": "空ける",
+    "Hán Tự": "KHÔNG",
+    "Nghĩa": "làm trống; chừa ra; để trống (ghế/giờ); dọn trống"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 7",
+    "Từ Vựng": "下がる",
+    "Hán Tự": "HẠ",
+    "Nghĩa": "đi xuống, lùi lại"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 7",
+    "Từ Vựng": "下げる",
+    "Hán Tự": "HẠ",
+    "Nghĩa": "hạ bớt, giảm đi, thu dọn"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 7",
+    "Từ Vựng": "冷える",
+    "Hán Tự": "LÃNH",
+    "Nghĩa": "được làm lạnh, giá lạnh"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 7",
+    "Từ Vựng": "冷やす",
+    "Hán Tự": "LÃNH",
+    "Nghĩa": "làm lạnh, hạ nhiệt"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 8",
+    "Từ Vựng": "冷める",
+    "Hán Tự": "LÃNH",
+    "Nghĩa": "nguội"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 8",
+    "Từ Vựng": "冷ます",
+    "Hán Tự": "LÃNH",
+    "Nghĩa": "làm nguội"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 8",
+    "Từ Vựng": "燃える",
+    "Hán Tự": "NHIÊN",
+    "Nghĩa": "cháy"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 8",
+    "Từ Vựng": "燃やす",
+    "Hán Tự": "NHIÊN",
+    "Nghĩa": "đốt cháy, cháy cùng (đam mê)"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 8",
+    "Từ Vựng": "沸く",
+    "Hán Tự": "PHÍ",
+    "Nghĩa": "sôi, (bồn tắm) sẵn sàng, sôi động lên"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 8",
+    "Từ Vựng": "沸かす",
+    "Hán Tự": "PHÍ",
+    "Nghĩa": "đun sôi, chuẩn bị (bồn tắm), sôi động"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 8",
+    "Từ Vựng": "鳴る",
+    "Hán Tự": "MINH",
+    "Nghĩa": "reo, kêu, hót, vang"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 8",
+    "Từ Vựng": "鳴らす",
+    "Hán Tự": "MINH",
+    "Nghĩa": "làm kêu, bấm (còi)"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 8",
+    "Từ Vựng": "役立つ/ 役に立つ",
+    "Hán Tự": "DỊCH LẬP",
+    "Nghĩa": "hữu ích"
+  },
+  {
+    "Lesson": "Unit 02 – 動詞A – Bài 8",
+    "Từ Vựng": "役立てる/ 役に立てる",
+    "Hán Tự": "DỊCH LẬP",
+    "Nghĩa": "ứng dụng, đưa vào sử dụng"
+  },
+  {
+    "Lesson": "まとめ　連用名詞",
+    "Từ Vựng": "飾り",
+    "Hán Tự": "SỨC",
+    "Nghĩa": "trang trí"
+  },
+  {
+    "Lesson": "まとめ　連用名詞",
+    "Từ Vựng": "遊び",
+    "Hán Tự": "DU",
+    "Nghĩa": "chơi, trò chơi"
+  },
+  {
+    "Lesson": "まとめ　連用名詞",
+    "Từ Vựng": "集まり",
+    "Hán Tự": "TẬP",
+    "Nghĩa": "tập trung"
+  },
+  {
+    "Lesson": "まとめ　連用名詞",
+    "Từ Vựng": "教え",
+    "Hán Tự": "GIÁO",
+    "Nghĩa": "chỉ dạy"
+  },
+  {
+    "Lesson": "まとめ　連用名詞",
+    "Từ Vựng": "踊り",
+    "Hán Tự": "DŨNG",
+    "Nghĩa": "nhảy múa"
+  },
+  {
+    "Lesson": "まとめ　連用名詞",
+    "Từ Vựng": "思い",
+    "Hán Tự": "TƯ",
+    "Nghĩa": "nghĩ, cảm nhận"
+  },
+  {
+    "Lesson": "まとめ　連用名詞",
+    "Từ Vựng": "考え",
+    "Hán Tự": "KHẢO",
+    "Nghĩa": "suy nghĩ, ý tưởng"
+  },
+  {
+    "Lesson": "まとめ　連用名詞",
+    "Từ Vựng": "片づけ",
+    "Hán Tự": "PHIẾN",
+    "Nghĩa": "dọn dẹp"
+  },
+  {
+    "Lesson": "まとめ　連用名詞",
+    "Từ Vựng": "手伝い",
+    "Hán Tự": "THỦ TRUYỀN",
+    "Nghĩa": "giúp đỡ"
+  },
+  {
+    "Lesson": "まとめ　連用名詞",
+    "Từ Vựng": "働き",
+    "Hán Tự": "ĐỘNG",
+    "Nghĩa": "chức năng, hoạt động"
+  },
+  {
+    "Lesson": "まとめ　連用名詞",
+    "Từ Vựng": "決まり",
+    "Hán Tự": "QUYẾT",
+    "Nghĩa": "quy định"
+  },
+  {
+    "Lesson": "まとめ　連用名詞",
+    "Từ Vựng": "騒ぎ",
+    "Hán Tự": "TAO",
+    "Nghĩa": "ầm ĩ, ồn ào"
+  },
+  {
+    "Lesson": "まとめ　連用名詞",
+    "Từ Vựng": "知らせ",
+    "Hán Tự": "TRI",
+    "Nghĩa": "thông báo"
+  },
+  {
+    "Lesson": "まとめ　連用名詞",
+    "Từ Vựng": "頼み",
+    "Hán Tự": "LẠI",
+    "Nghĩa": "nhờ vả, yêu cầu"
+  },
+  {
+    "Lesson": "まとめ　連用名詞",
+    "Từ Vựng": "疲れ",
+    "Hán Tự": "BÌ",
+    "Nghĩa": "mệt mỏi"
+  },
+  {
+    "Lesson": "まとめ　連用名詞",
+    "Từ Vựng": "違い",
+    "Hán Tự": "VI",
+    "Nghĩa": "khác nhau"
+  },
+  {
+    "Lesson": "まとめ　連用名詞",
+    "Từ Vựng": "始め",
+    "Hán Tự": "THỦY",
+    "Nghĩa": "bắt đầu"
+  },
+  {
+    "Lesson": "まとめ　連用名詞",
+    "Từ Vựng": "続き",
+    "Hán Tự": "TỤC",
+    "Nghĩa": "tiếp tục"
+  },
+  {
+    "Lesson": "まとめ　連用名詞",
+    "Từ Vựng": "暮れ",
+    "Hán Tự": "MỘ",
+    "Nghĩa": "chiều tà, cuối (năm, thu...)"
+  },
+  {
+    "Lesson": "まとめ　連用名詞",
+    "Từ Vựng": "行き",
+    "Hán Tự": "HÀNH/HÀNG",
+    "Nghĩa": "đi"
+  },
+  {
+    "Lesson": "まとめ　連用名詞",
+    "Từ Vựng": "帰り",
+    "Hán Tự": "QUY",
+    "Nghĩa": "về"
+  },
+  {
+    "Lesson": "まとめ　連用名詞",
+    "Từ Vựng": "急ぎ",
+    "Hán Tự": "CẤP",
+    "Nghĩa": "khẩn cấp, gấp gáp"
+  },
+  {
+    "Lesson": "まとめ　連用名詞",
+    "Từ Vựng": "遅れ",
+    "Hán Tự": "TRÌ",
+    "Nghĩa": "chậm trễ, muộn"
+  },
+  {
+    "Lesson": "まとめ　連用名詞",
+    "Từ Vựng": "貸し",
+    "Hán Tự": "THẢI",
+    "Nghĩa": "cho vay"
+  },
+  {
+    "Lesson": "まとめ　連用名詞",
+    "Từ Vựng": "借り",
+    "Hán Tự": "TÁ",
+    "Nghĩa": "vay"
+  },
+  {
+    "Lesson": "まとめ　連用名詞",
+    "Từ Vựng": "勝ち",
+    "Hán Tự": "THẮNG",
+    "Nghĩa": "thắng"
+  },
+  {
+    "Lesson": "まとめ　連用名詞",
+    "Từ Vựng": "負け",
+    "Hán Tự": "PHỤ",
+    "Nghĩa": "thua"
+  },
+  {
+    "Lesson": "まとめ　連用名詞",
+    "Từ Vựng": "迎え",
+    "Hán Tự": "NGHÊNH",
+    "Nghĩa": "đón"
+  },
+  {
+    "Lesson": "まとめ　連用名詞",
+    "Từ Vựng": "始まり",
+    "Hán Tự": "THỦY",
+    "Nghĩa": "sự bắt đầu"
+  },
+  {
+    "Lesson": "まとめ　連用名詞",
+    "Từ Vựng": "終わり",
+    "Hán Tự": "CHUNG",
+    "Nghĩa": "sự kết thúc"
+  },
+  {
+    "Lesson": "まとめ　連用名詞",
+    "Từ Vựng": "戻り",
+    "Hán Tự": "LỆ",
+    "Nghĩa": "trở lại"
+  },
+  {
+    "Lesson": "まとめ　連用名詞",
+    "Từ Vựng": "別れ",
+    "Hán Tự": "BIỆT",
+    "Nghĩa": "chia ly"
+  },
+  {
+    "Lesson": "まとめ　連用名詞",
+    "Từ Vựng": "喜び",
+    "Hán Tự": "HỈ",
+    "Nghĩa": "vui mừng"
+  },
+  {
+    "Lesson": "まとめ　連用名詞",
+    "Từ Vựng": "楽しみ",
+    "Hán Tự": "LẠC/NHẠC",
+    "Nghĩa": "vui vẻ"
+  },
+  {
+    "Lesson": "まとめ　連用名詞",
+    "Từ Vựng": "笑い",
+    "Hán Tự": "TIẾU",
+    "Nghĩa": "cười, tiếng cười"
+  },
+  {
+    "Lesson": "まとめ　連用名詞",
+    "Từ Vựng": "驚き",
+    "Hán Tự": "KINH",
+    "Nghĩa": "ngạc nhiên"
+  },
+  {
+    "Lesson": "まとめ　連用名詞",
+    "Từ Vựng": "怒り",
+    "Hán Tự": "NỘ",
+    "Nghĩa": "tức giận, phẫn nộ"
+  },
+  {
+    "Lesson": "まとめ　連用名詞",
+    "Từ Vựng": "悲しみ",
+    "Hán Tự": "BI",
+    "Nghĩa": "buồn đau"
+  },
+  {
+    "Lesson": "Unit 03 – 形容詞A – Bài 1",
+    "Từ Vựng": "幸せな",
+    "Hán Tự": "HẠNH",
+    "Nghĩa": "hạnh phúc"
+  },
+  {
+    "Lesson": "Unit 03 – 形容詞A – Bài 1",
+    "Từ Vựng": "得意な",
+    "Hán Tự": "ĐẮC Ý",
+    "Nghĩa": "giỏi, tinh thông, thành thạo"
+  },
+  {
+    "Lesson": "Unit 03 – 形容詞A – Bài 1",
+    "Từ Vựng": "苦手な",
+    "Hán Tự": "KHỔ THỦ",
+    "Nghĩa": "kém, yếu, không ưu"
+  },
+  {
+    "Lesson": "Unit 03 – 形容詞A – Bài 1",
+    "Từ Vựng": "熱心な",
+    "Hán Tự": "NHIỆT TÂM",
+    "Nghĩa": "nhiệt tình, tận tâm"
+  },
+  {
+    "Lesson": "Unit 03 – 形容詞A – Bài 1",
+    "Từ Vựng": "夢中な",
+    "Hán Tự": "MỘNG TRUNG",
+    "Nghĩa": "say sưa, miệt mài"
+  },
+  {
+    "Lesson": "Unit 03 – 形容詞A – Bài 1",
+    "Từ Vựng": "退屈な",
+    "Hán Tự": "THOÁI KHUẤT",
+    "Nghĩa": "buồn tẻ, chán ngắt"
+  },
+  {
+    "Lesson": "Unit 03 – 形容詞A – Bài 1",
+    "Từ Vựng": "健康な",
+    "Hán Tự": "KIỆN KHANG",
+    "Nghĩa": "khỏe mạnh, tráng kiện"
+  },
+  {
+    "Lesson": "Unit 03 – 形容詞A – Bài 1",
+    "Từ Vựng": "苦しい",
+    "Hán Tự": "KHỔ",
+    "Nghĩa": "khổ cực, đau đớn"
+  },
+  {
+    "Lesson": "Unit 03 – 形容詞A – Bài 1",
+    "Từ Vựng": "平気な",
+    "Hán Tự": "BÌNH KHÍ",
+    "Nghĩa": "bình tĩnh, bình thản"
+  },
+  {
+    "Lesson": "Unit 03 – 形容詞A – Bài 1",
+    "Từ Vựng": "悔しい",
+    "Hán Tự": "HỐI",
+    "Nghĩa": "ấm ức, tiếc (không cam lòng)"
+  },
+  {
+    "Lesson": "Unit 03 – 形容詞A – Bài 1",
+    "Từ Vựng": "うらやましい",
+    "Hán Tự": "",
+    "Nghĩa": "ghen tị"
+  },
+  {
+    "Lesson": "Unit 03 – 形容詞A – Bài 1",
+    "Từ Vựng": "かゆい",
+    "Hán Tự": "",
+    "Nghĩa": "ngứa"
+  },
+  {
+    "Lesson": "Unit 03 – 形容詞A – Bài 2",
+    "Từ Vựng": "おとなしい",
+    "Hán Tự": "",
+    "Nghĩa": "dịu dàng, trầm lặng"
+  },
+  {
+    "Lesson": "Unit 03 – 形容詞A – Bài 2",
+    "Từ Vựng": "我慢強い",
+    "Hán Tự": "NGÃ MẠN CƯỜNG/CƯỠNG",
+    "Nghĩa": "kiên nhẫn, chịu đựng giỏi"
+  },
+  {
+    "Lesson": "Unit 03 – 形容詞A – Bài 2",
+    "Từ Vựng": "正直な",
+    "Hán Tự": "CHÍNH TRỰC",
+    "Nghĩa": "trung thực, thành thật"
+  },
+  {
+    "Lesson": "Unit 03 – 形容詞A – Bài 2",
+    "Từ Vựng": "けちな",
+    "Hán Tự": "",
+    "Nghĩa": "keo kiệt, ki bo"
+  },
+  {
+    "Lesson": "Unit 03 – 形容詞A – Bài 2",
+    "Từ Vựng": "わがままな",
+    "Hán Tự": "",
+    "Nghĩa": "ích kỷ, tùy hứng, chỉ nghĩ cho mình"
+  },
+  {
+    "Lesson": "Unit 03 – 形容詞A – Bài 2",
+    "Từ Vựng": "積極的な",
+    "Hán Tự": "TÍCH CỰC ĐÍCH",
+    "Nghĩa": "tích cực, chủ động"
+  },
+  {
+    "Lesson": "Unit 03 – 形容詞A – Bài 2",
+    "Từ Vựng": "消極的な",
+    "Hán Tự": "TIÊU CỰC ĐÍCH",
+    "Nghĩa": "tiêu cực, thụ động"
+  },
+  {
+    "Lesson": "Unit 03 – 形容詞A – Bài 2",
+    "Từ Vựng": "満足な",
+    "Hán Tự": "MÃN TÚC",
+    "Nghĩa": "thõa mãn, hài lòng"
+  },
+  {
+    "Lesson": "Unit 03 – 形容詞A – Bài 2",
+    "Từ Vựng": "不満な",
+    "Hán Tự": "BẤT MÃN",
+    "Nghĩa": "bất mãn, không hài lòng"
+  },
+  {
+    "Lesson": "Unit 03 – 形容詞A – Bài 2",
+    "Từ Vựng": "不安な",
+    "Hán Tự": "BẤT AN",
+    "Nghĩa": "bất an"
+  },
+  {
+    "Lesson": "Unit 03 – 形容詞A – Bài 2",
+    "Từ Vựng": "大変な",
+    "Hán Tự": "ĐẠI BIẾN",
+    "Nghĩa": "vất vả, khó khăn, nghiêm trọng; rất (phó từ)"
+  },
+  {
+    "Lesson": "Unit 03 – 形容詞A – Bài 3",
+    "Từ Vựng": "無理な",
+    "Hán Tự": "VÔ LÍ",
+    "Nghĩa": "không thể làm được, quá sức, vô lý"
+  },
+  {
+    "Lesson": "Unit 03 – 形容詞A – Bài 3",
+    "Từ Vựng": "不注意な",
+    "Hán Tự": "BẤT CHÚ Ý",
+    "Nghĩa": "bất cẩn, thiếu chú ý"
+  },
+  {
+    "Lesson": "Unit 03 – 形容詞A – Bài 3",
+    "Từ Vựng": "楽な",
+    "Hán Tự": "LẠC/NHẠC",
+    "Nghĩa": "dễ dàng, thoải mái"
+  },
+  {
+    "Lesson": "Unit 03 – 形容詞A – Bài 3",
+    "Từ Vựng": "面倒な",
+    "Hán Tự": "DIỆN ĐẢO",
+    "Nghĩa": "rắc rối, phiền toái"
+  },
+  {
+    "Lesson": "Unit 03 – 形容詞A – Bài 3",
+    "Từ Vựng": "失礼な",
+    "Hán Tự": "THẤT LỄ",
+    "Nghĩa": "thất lễ, mất lịch sự"
+  },
+  {
+    "Lesson": "Unit 03 – 形容詞A – Bài 3",
+    "Từ Vựng": "当然な",
+    "Hán Tự": "ĐƯƠNG NHIÊN",
+    "Nghĩa": "tất nhiên, đương nhiên"
+  },
+  {
+    "Lesson": "Unit 03 – 形容詞A – Bài 3",
+    "Từ Vựng": "意外な",
+    "Hán Tự": "Ý NGOẠI",
+    "Nghĩa": "không ngờ, không lường trước được"
+  },
+  {
+    "Lesson": "Unit 03 – 形容詞A – Bài 3",
+    "Từ Vựng": "結構な",
+    "Hán Tự": "KẾT CẤU",
+    "Nghĩa": "đủ, được, ổn; khá; (lịch sự) không cần / được rồi"
+  },
+  {
+    "Lesson": "Unit 03 – 形容詞A – Bài 3",
+    "Từ Vựng": "派手な",
+    "Hán Tự": "PHÁI THỦ",
+    "Nghĩa": "loè loẹt, màu mè"
+  },
+  {
+    "Lesson": "Unit 03 – 形容詞A – Bài 3",
+    "Từ Vựng": "地味な",
+    "Hán Tự": "ĐỊA VỊ",
+    "Nghĩa": "giản dị, đơn giản, mộc mạc"
+  },
+  {
+    "Lesson": "Unit 03 – 形容詞A – Bài 4",
+    "Từ Vựng": "おしゃれな",
+    "Hán Tự": "",
+    "Nghĩa": "hợp thời trang, sành điệu"
+  },
+  {
+    "Lesson": "Unit 03 – 形容詞A – Bài 4",
+    "Từ Vựng": "変な",
+    "Hán Tự": "BIẾN",
+    "Nghĩa": "kì lạ, lạ"
+  },
+  {
+    "Lesson": "Unit 03 – 形容詞A – Bài 4",
+    "Từ Vựng": "不思議な",
+    "Hán Tự": "BẤT TƯ NGHỊ",
+    "Nghĩa": "kì lạ, kì quái, khó hiểu"
+  },
+  {
+    "Lesson": "Unit 03 – 形容詞A – Bài 4",
+    "Từ Vựng": "ましな",
+    "Hán Tự": "",
+    "Nghĩa": "tốt hơn, thích hợp hơn"
+  },
+  {
+    "Lesson": "Unit 03 – 形容詞A – Bài 4",
+    "Từ Vựng": "むだな",
+    "Hán Tự": "",
+    "Nghĩa": "vô ích"
+  },
+  {
+    "Lesson": "Unit 03 – 形容詞A – Bài 4",
+    "Từ Vựng": "自由な",
+    "Hán Tự": "TỰ DO",
+    "Nghĩa": "tự do"
+  },
+  {
+    "Lesson": "Unit 03 – 形容詞A – Bài 4",
+    "Từ Vựng": "不自由な",
+    "Hán Tự": "BẤT TỰ DO",
+    "Nghĩa": "bất tiện, không thoải mái, bị hạn chế"
+  },
+  {
+    "Lesson": "まとめ　イ形容詞＋まる／める",
+    "Từ Vựng": "暖まる/温まる",
+    "Hán Tự": "NOÃN",
+    "Nghĩa": "ấm lên"
+  },
+  {
+    "Lesson": "まとめ　イ形容詞＋まる／める",
+    "Từ Vựng": "暖める/温める",
+    "Hán Tự": "NOÃN",
+    "Nghĩa": "làm ấm, hâm nóng"
+  },
+  {
+    "Lesson": "まとめ　イ形容詞＋まる／める",
+    "Từ Vựng": "高まる",
+    "Hán Tự": "CAO",
+    "Nghĩa": "tăng lên, tăng cao"
+  },
+  {
+    "Lesson": "まとめ　イ形容詞＋まる／める",
+    "Từ Vựng": "高める",
+    "Hán Tự": "CAO",
+    "Nghĩa": "làm cho tăng lên"
+  },
+  {
+    "Lesson": "まとめ　イ形容詞＋まる／める",
+    "Từ Vựng": "強まる",
+    "Hán Tự": "CƯỜNG/CƯỠNG",
+    "Nghĩa": "mạnh lên"
+  },
+  {
+    "Lesson": "まとめ　イ形容詞＋まる／める",
+    "Từ Vựng": "強める",
+    "Hán Tự": "CƯỜNG/CƯỠNG",
+    "Nghĩa": "làm mạnh, tăng cường"
+  },
+  {
+    "Lesson": "まとめ　イ形容詞＋まる／める",
+    "Từ Vựng": "弱まる",
+    "Hán Tự": "NHƯỢC",
+    "Nghĩa": "yếu đi, suy giảm"
+  },
+  {
+    "Lesson": "まとめ　イ形容詞＋まる／める",
+    "Từ Vựng": "弱める",
+    "Hán Tự": "NHƯỢC",
+    "Nghĩa": "làm suy yếu"
+  },
+  {
+    "Lesson": "まとめ　イ形容詞＋まる／める",
+    "Từ Vựng": "広まる",
+    "Hán Tự": "QUẢNG",
+    "Nghĩa": "lan rộng"
+  },
+  {
+    "Lesson": "まとめ　イ形容詞＋まる／める",
+    "Từ Vựng": "広める",
+    "Hán Tự": "QUẢNG",
+    "Nghĩa": "mở rộng, truyền bá"
+  },
+  {
+    "Lesson": "まとめ　イ形容詞＋まる／める",
+    "Từ Vựng": "深まる",
+    "Hán Tự": "THÂM",
+    "Nghĩa": "trở nên sâu hơn; tăng lên (mức độ, quan hệ, hiểu biết)"
+  },
+  {
+    "Lesson": "まとめ　イ形容詞＋まる／める",
+    "Từ Vựng": "深める",
+    "Hán Tự": "THÂM",
+    "Nghĩa": "tăng cường(kiến thức, giao lưu…), thắt chặt (mối quan hệ)"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 1",
+    "Từ Vựng": "世話",
+    "Hán Tự": "THẾ THOẠI",
+    "Nghĩa": "chăm sóc, hỗ trợ"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 1",
+    "Từ Vựng": "家庭",
+    "Hán Tự": "GIA ĐÌNH",
+    "Nghĩa": "gia đình"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 1",
+    "Từ Vựng": "協力",
+    "Hán Tự": "HIỆP LỰC",
+    "Nghĩa": "hợp tác, hiệp lực"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 1",
+    "Từ Vựng": "感謝",
+    "Hán Tự": "CẢM TẠ",
+    "Nghĩa": "biết ơn, cảm tạ"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 1",
+    "Từ Vựng": "（お）礼",
+    "Hán Tự": "LỄ",
+    "Nghĩa": "biết ơn"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 1",
+    "Từ Vựng": "（お）詫び",
+    "Hán Tự": "SÁ",
+    "Nghĩa": "lời xin lỗi, tạ lỗi"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 1",
+    "Từ Vựng": "（お）じぎ",
+    "Hán Tự": "",
+    "Nghĩa": "sự cúi chào"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 1",
+    "Từ Vựng": "握手",
+    "Hán Tự": "ÁC THỦ",
+    "Nghĩa": "bắt tay"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 1",
+    "Từ Vựng": "意地悪",
+    "Hán Tự": "Ý ĐỊA ÁC",
+    "Nghĩa": "xấu tính, hay bắt nạt/chơi xấu"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 1",
+    "Từ Vựng": "いたずら",
+    "Hán Tự": "",
+    "Nghĩa": "ngịch ngợm, giễu cợt"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 1",
+    "Từ Vựng": "節約",
+    "Hán Tự": "TIẾT ƯỚC",
+    "Nghĩa": "sự tiết kiệm"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 1",
+    "Từ Vựng": "経営",
+    "Hán Tự": "KINH DOANH",
+    "Nghĩa": "quản lý, điều hành (kinh doanh)"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 1",
+    "Từ Vựng": "反省",
+    "Hán Tự": "PHẢN TỈNH",
+    "Nghĩa": "kiểm điểm, xem xét lại"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 1",
+    "Từ Vựng": "実行",
+    "Hán Tự": "THỰC HÀNH",
+    "Nghĩa": "thực hành, thực hiện"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 1",
+    "Từ Vựng": "進歩",
+    "Hán Tự": "TIẾN BỘ",
+    "Nghĩa": "tiến bộ, tiến triển"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 1",
+    "Từ Vựng": "変化",
+    "Hán Tự": "BIẾN HÓA",
+    "Nghĩa": "thay đổi, biến đổi"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 2",
+    "Từ Vựng": "発達",
+    "Hán Tự": "PHÁT ĐẠT",
+    "Nghĩa": "phát triển, tiến bộ"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 2",
+    "Từ Vựng": "体力",
+    "Hán Tự": "THỂ LỰC",
+    "Nghĩa": "thể lực"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 2",
+    "Từ Vựng": "出場",
+    "Hán Tự": "XUẤT TRƯỜNG",
+    "Nghĩa": "ra sân / tham dự (thi đấu, biểu diễn)"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 2",
+    "Từ Vựng": "活躍",
+    "Hán Tự": "HOẠT DƯỢC",
+    "Nghĩa": "hoạt động nổi bật, phát huy, tỏa sáng"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 2",
+    "Từ Vựng": "競争",
+    "Hán Tự": "CẠNH TRANH",
+    "Nghĩa": "cạnh tranh, thi đấu"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 2",
+    "Từ Vựng": "応援",
+    "Hán Tự": "ỨNG VIỆN",
+    "Nghĩa": "hỗ trợ, cổ vũ"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 2",
+    "Từ Vựng": "拍手",
+    "Hán Tự": "PHÁCH THỦ",
+    "Nghĩa": "vỗ tay"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 2",
+    "Từ Vựng": "人気",
+    "Hán Tự": "NHÂN KHÍ",
+    "Nghĩa": "phổ biến, được yêu thích"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 2",
+    "Từ Vựng": "うわさ",
+    "Hán Tự": "",
+    "Nghĩa": "tin đồn"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 2",
+    "Từ Vựng": "情報",
+    "Hán Tự": "",
+    "Nghĩa": "tin tức, thông tin"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 2",
+    "Từ Vựng": "交換",
+    "Hán Tự": "GIAO HOÁN",
+    "Nghĩa": "trao đổi, thay thế"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 2",
+    "Từ Vựng": "流行",
+    "Hán Tự": "LƯU HÀNH",
+    "Nghĩa": "thịnh hành, mốt; (bệnh) bùng phát"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 2",
+    "Từ Vựng": "宣伝",
+    "Hán Tự": "TUYÊN TRUYỀN",
+    "Nghĩa": "quảng bá, tuyên truyền"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 2",
+    "Từ Vựng": "広告",
+    "Hán Tự": "QUẢNG CÁO",
+    "Nghĩa": "quảng cáo"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 2",
+    "Từ Vựng": "注目",
+    "Hán Tự": "CHÚ MỤC",
+    "Nghĩa": "sự chú ý, để ý"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 3",
+    "Từ Vựng": "通訳",
+    "Hán Tự": "THÔNG DỊCH",
+    "Nghĩa": "phiên dịch, người phiên dịch"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 3",
+    "Từ Vựng": "翻訳",
+    "Hán Tự": "PHIÊN DỊCH",
+    "Nghĩa": "biên dịch"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 3",
+    "Từ Vựng": "伝言",
+    "Hán Tự": "TRUYỀN NGÔN",
+    "Nghĩa": "lời nhắn"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 3",
+    "Từ Vựng": "報告",
+    "Hán Tự": "BÁO CÁO",
+    "Nghĩa": "báo cáo"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 3",
+    "Từ Vựng": "録画",
+    "Hán Tự": "LỤC HỌA",
+    "Nghĩa": "ghi hình"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 3",
+    "Từ Vựng": "混雑",
+    "Hán Tự": "HỖN TẠP",
+    "Nghĩa": "đông đúc, tắc nghẽn (nơi đông người)"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 3",
+    "Từ Vựng": "渋滞",
+    "Hán Tự": "SÁP TRỆ",
+    "Nghĩa": "tắc nghẽn ( xe cộ )"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 3",
+    "Từ Vựng": "衝突",
+    "Hán Tự": "XUNG ĐỘT",
+    "Nghĩa": "va chạm, xung đột"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 3",
+    "Từ Vựng": "被害",
+    "Hán Tự": "BỊ HẠI",
+    "Nghĩa": "thiệt hại"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 3",
+    "Từ Vựng": "事故",
+    "Hán Tự": "SỰ CỐ",
+    "Nghĩa": "tai nạn"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 3",
+    "Từ Vựng": "事件",
+    "Hán Tự": "SỰ KIỆN",
+    "Nghĩa": "biến cố, sự kiện"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 3",
+    "Từ Vựng": "故障",
+    "Hán Tự": "CỐ CHƯỚNG",
+    "Nghĩa": "hỏng, sự cố"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 3",
+    "Từ Vựng": "修理",
+    "Hán Tự": "TU LÍ",
+    "Nghĩa": "sửa chữa"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 3",
+    "Từ Vựng": "停電",
+    "Hán Tự": "ĐÌNH ĐIỆN",
+    "Nghĩa": "mất điện"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 3",
+    "Từ Vựng": "調子",
+    "Hán Tự": "ĐIỀU TỬ",
+    "Nghĩa": "tình trạng, phong độ, nhịp điệu"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 4",
+    "Từ Vựng": "緊張",
+    "Hán Tự": "KHẨN TRƯƠNG",
+    "Nghĩa": "căng thẳng, lo lắng"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 4",
+    "Từ Vựng": "自信",
+    "Hán Tự": "TỰ TÍN",
+    "Nghĩa": "tự tin"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 4",
+    "Từ Vựng": "自慢",
+    "Hán Tự": "TỰ MẠN",
+    "Nghĩa": "tự hào, khoe khoang"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 4",
+    "Từ Vựng": "感心",
+    "Hán Tự": "CẢM TÂM",
+    "Nghĩa": "thán phục, khâm phục"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 4",
+    "Từ Vựng": "感動",
+    "Hán Tự": "CẢM ĐỘNG",
+    "Nghĩa": "bị xúc động, cảm động"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 4",
+    "Từ Vựng": "興奮",
+    "Hán Tự": "HƯNG/HỨNG PHẤN",
+    "Nghĩa": "hưng phấn"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 4",
+    "Từ Vựng": "感想",
+    "Hán Tự": "CẢM TƯỞNG",
+    "Nghĩa": "cảm nghĩ, cảm tưởng"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 4",
+    "Từ Vựng": "予想",
+    "Hán Tự": "DỰ TƯỞNG",
+    "Nghĩa": "dự đoán"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 4",
+    "Từ Vựng": "専門",
+    "Hán Tự": "CHUYÊN MÔN",
+    "Nghĩa": "chuyên môn, chuyên ngành"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 4",
+    "Từ Vựng": "研究",
+    "Hán Tự": "NGHIÊN CỨU",
+    "Nghĩa": "nghiên cứu, tìm hiểu, học tập"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 4",
+    "Từ Vựng": "調査",
+    "Hán Tự": "ĐIỀU TRA",
+    "Nghĩa": "điều tra, khảo sát"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 4",
+    "Từ Vựng": "原因",
+    "Hán Tự": "NGUYÊN NHÂN",
+    "Nghĩa": "nguyên nhân"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 4",
+    "Từ Vựng": "結果",
+    "Hán Tự": "KẾT QUẢ",
+    "Nghĩa": "kết quả"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 4",
+    "Từ Vựng": "解決",
+    "Hán Tự": "GIẢI QUYẾT",
+    "Nghĩa": "giải quyết"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 5",
+    "Từ Vựng": "確認",
+    "Hán Tự": "XÁC NHẬN",
+    "Nghĩa": "xác nhận, xác minh"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 5",
+    "Từ Vựng": "利用",
+    "Hán Tự": "LỢI DỤNG",
+    "Nghĩa": "sử dụng, khai thác"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 5",
+    "Từ Vựng": "理解",
+    "Hán Tự": "LÍ GIẢI",
+    "Nghĩa": "hiểu"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 5",
+    "Từ Vựng": "発見",
+    "Hán Tự": "PHÁT KIẾN",
+    "Nghĩa": "khám phá, tìm thấy, phát hiện"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 5",
+    "Từ Vựng": "発明",
+    "Hán Tự": "PHÁT MINH",
+    "Nghĩa": "phát minh"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 5",
+    "Từ Vựng": "関係",
+    "Hán Tự": "QUAN HỆ",
+    "Nghĩa": "quan hệ"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 5",
+    "Từ Vựng": "団体",
+    "Hán Tự": "ĐOÀN THỂ",
+    "Nghĩa": "nhóm, đoàn thể"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 5",
+    "Từ Vựng": "選挙",
+    "Hán Tự": "TUYỂN CỬ",
+    "Nghĩa": "cuộc bầu cử"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 5",
+    "Từ Vựng": "税金",
+    "Hán Tự": "THUẾ KIM",
+    "Nghĩa": "thuế"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 5",
+    "Từ Vựng": "責任",
+    "Hán Tự": "TRÁCH NHIỆM",
+    "Nghĩa": "trách nhiệm"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 5",
+    "Từ Vựng": "書類",
+    "Hán Tự": "THƯ LOẠI",
+    "Nghĩa": "tài liệu, hồ sơ, giấy tờ"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 5",
+    "Từ Vựng": "題名",
+    "Hán Tự": "ĐỀ DANH",
+    "Nghĩa": "nhan đề, tên ( sách...)"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 5",
+    "Từ Vựng": "条件",
+    "Hán Tự": "ĐIỀU KIỆN",
+    "Nghĩa": "điều kiện"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 6",
+    "Từ Vựng": "締め切り",
+    "Hán Tự": "ĐẾ THIẾT",
+    "Nghĩa": "hạn cuối"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 6",
+    "Từ Vựng": "期間",
+    "Hán Tự": "KÌ GIAN",
+    "Nghĩa": "kỳ, thời kỳ"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 6",
+    "Từ Vựng": "倍",
+    "Hán Tự": "BỘI",
+    "Nghĩa": "gấp đôi, lần"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 6",
+    "Từ Vựng": "くじ",
+    "Hán Tự": "",
+    "Nghĩa": "rút thăm, xổ số"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 6",
+    "Từ Vựng": "近道",
+    "Hán Tự": "CẬN ĐẠO",
+    "Nghĩa": "đường tắt"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 6",
+    "Từ Vựng": "中心",
+    "Hán Tự": "TRUNG TÂM",
+    "Nghĩa": "trung tâm"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 6",
+    "Từ Vựng": "辺り",
+    "Hán Tự": "BIÊN",
+    "Nghĩa": "xung quanh, vùng lân cận"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 6",
+    "Từ Vựng": "周り/回り",
+    "Hán Tự": "CHU HỒI",
+    "Nghĩa": "vòng quanh, xung quanh"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 6",
+    "Từ Vựng": "穴",
+    "Hán Tự": "HUYỆT",
+    "Nghĩa": "hố, lỗ"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 6",
+    "Từ Vựng": "列",
+    "Hán Tự": "LIỆT",
+    "Nghĩa": "hàng, dòng"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 6",
+    "Từ Vựng": "幅",
+    "Hán Tự": "PHÚC",
+    "Nghĩa": "chiều rộng"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 6",
+    "Từ Vựng": "範囲",
+    "Hán Tự": "PHẠM VI",
+    "Nghĩa": "phạm vi"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 6",
+    "Từ Vựng": "内容",
+    "Hán Tự": "NỘI DUNG",
+    "Nghĩa": "nội dung"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 7",
+    "Từ Vựng": "中身",
+    "Hán Tự": "TRUNG THÂN",
+    "Nghĩa": "bên trong, nội dung"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 7",
+    "Từ Vựng": "特徴",
+    "Hán Tự": "ĐẶC TRƯNG",
+    "Nghĩa": "đặc trưng, đặc tính"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 7",
+    "Từ Vựng": "普通",
+    "Hán Tự": "PHỔ THÔNG",
+    "Nghĩa": "bình thường, thông thường"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 7",
+    "Từ Vựng": "当たり前",
+    "Hán Tự": "ĐƯƠNG TIỀN",
+    "Nghĩa": "tất nhiên"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 7",
+    "Từ Vựng": "偽",
+    "Hán Tự": "NGỤY",
+    "Nghĩa": "giả"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 7",
+    "Từ Vựng": "別",
+    "Hán Tự": "BIỆT",
+    "Nghĩa": "khác nhau, riêng biệt"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 7",
+    "Từ Vựng": "国籍",
+    "Hán Tự": "QUỐC TỊCH",
+    "Nghĩa": "quốc tịch"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 7",
+    "Từ Vựng": "東洋",
+    "Hán Tự": "ĐÔNG DƯƠNG",
+    "Nghĩa": "phương Đông"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 7",
+    "Từ Vựng": "西洋",
+    "Hán Tự": "TÂY DƯƠNG",
+    "Nghĩa": "phương Tây"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 7",
+    "Từ Vựng": "国際",
+    "Hán Tự": "QUỐC TẾ",
+    "Nghĩa": "quốc tế"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 7",
+    "Từ Vựng": "自然",
+    "Hán Tự": "TỰ NHIÊN",
+    "Nghĩa": "tự nhiên"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 7",
+    "Từ Vựng": "景色",
+    "Hán Tự": "CẢNH SẮC",
+    "Nghĩa": "phong cảnh, cảnh sắc"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 7",
+    "Từ Vựng": "宗教",
+    "Hán Tự": "TÔN GIÁO",
+    "Nghĩa": "tôn giáo"
+  },
+  {
+    "Lesson": "Unit 04 – 名詞B – Bài 7",
+    "Từ Vựng": "愛",
+    "Hán Tự": "ÁI",
+    "Nghĩa": "tình yêu"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 1",
+    "Từ Vựng": "届く",
+    "Hán Tự": "GIỚI",
+    "Nghĩa": "đến nơi, tới (bưu phẩm/tin), tới tay; (tay) với tới"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 1",
+    "Từ Vựng": "届ける",
+    "Hán Tự": "GIỚI",
+    "Nghĩa": "gửi/đem đến; nộp/trình (đơn, giấy tờ); báo cáo/khai báo"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 1",
+    "Từ Vựng": "かく",
+    "Hán Tự": "",
+    "Nghĩa": "gãi (đầu), gãi (ngứa), toát (mồ hôi)"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 1",
+    "Từ Vựng": "つかむ",
+    "Hán Tự": "",
+    "Nghĩa": "cầm nắm, tóm được, nắm bắt (cơ hội, ý nghĩa)"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 1",
+    "Từ Vựng": "握る",
+    "Hán Tự": "ÁC",
+    "Nghĩa": "nắm, cầm, nắm chặt; nắm quyền/giữ bí mật"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 1",
+    "Từ Vựng": "押さえる",
+    "Hán Tự": "ÁP",
+    "Nghĩa": "nắm bắt, giữ"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 1",
+    "Từ Vựng": "近づく",
+    "Hán Tự": "CẬN",
+    "Nghĩa": "lại gần"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 1",
+    "Từ Vựng": "近づける",
+    "Hán Tự": "CẬN",
+    "Nghĩa": "mang, đưa đến gần"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 1",
+    "Từ Vựng": "合う",
+    "Hán Tự": "HỢP",
+    "Nghĩa": "hợp, khớp"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 1",
+    "Từ Vựng": "合わせる",
+    "Hán Tự": "HỢP",
+    "Nghĩa": "hợp, chỉnh (đồng hồ)"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 1",
+    "Từ Vựng": "当たる",
+    "Hán Tự": "ĐƯƠNG/ĐÁNG",
+    "Nghĩa": "trúng (số), va/chạm, đúng; bị (ánh nắng) chiếu; gặp phải; ăn trúng (đồ ăn không hợp)"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 1",
+    "Từ Vựng": "当てる",
+    "Hán Tự": "ĐƯƠNG",
+    "Nghĩa": "đặt/áp vào; trúng; đoán; chỉ định; (đèn) rọi; (xe) đâm vào"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 2",
+    "Từ Vựng": "比べる",
+    "Hán Tự": "TỈ",
+    "Nghĩa": "so sánh"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 2",
+    "Từ Vựng": "似合う",
+    "Hán Tự": "TỰ HỢP",
+    "Nghĩa": "hợp (với), hợp gu"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 2",
+    "Từ Vựng": "似る",
+    "Hán Tự": "TỰ",
+    "Nghĩa": "giống"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 2",
+    "Từ Vựng": "似せる",
+    "Hán Tự": "TỰ",
+    "Nghĩa": "bắt chước, mô phỏng"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 2",
+    "Từ Vựng": "分かれる",
+    "Hán Tự": "PHÂN",
+    "Nghĩa": "chia, phân chia"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 2",
+    "Từ Vựng": "分ける",
+    "Hán Tự": "PHÂN",
+    "Nghĩa": "chia, phân chia, tách, phân loại; nhường/để phần cho"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 2",
+    "Từ Vựng": "足す",
+    "Hán Tự": "TÚC",
+    "Nghĩa": "thêm vào, cộng thêm"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 2",
+    "Từ Vựng": "引く",
+    "Hán Tự": "DẪN",
+    "Nghĩa": "trừ, bớt, kéo, dẫn, rút, tra (từ điển)"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 2",
+    "Từ Vựng": "増える",
+    "Hán Tự": "TĂNG",
+    "Nghĩa": "tăng lên, gia tăng"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 2",
+    "Từ Vựng": "増やす",
+    "Hán Tự": "TĂNG",
+    "Nghĩa": "làm tăng lên"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 2",
+    "Từ Vựng": "減る",
+    "Hán Tự": "GIẢM",
+    "Nghĩa": "giảm xuống"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 2",
+    "Từ Vựng": "減らす",
+    "Hán Tự": "GIẢM",
+    "Nghĩa": "cắt giảm"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 2",
+    "Từ Vựng": "変わる",
+    "Hán Tự": "BIẾN",
+    "Nghĩa": "thay đổi, biến đổi"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 2",
+    "Từ Vựng": "変える",
+    "Hán Tự": "BIẾN",
+    "Nghĩa": "đổi"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 2",
+    "Từ Vựng": "替わる/代わる/換わる",
+    "Hán Tự": "THẾ ĐẠI HOÁN",
+    "Nghĩa": "thay đổi, thay thế"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 2",
+    "Từ Vựng": "替える/代える/換える",
+    "Hán Tự": "THẾ ĐẠI HOÁN",
+    "Nghĩa": "thay đổi, thế chỗ"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 3",
+    "Từ Vựng": "返る",
+    "Hán Tự": "PHẢN",
+    "Nghĩa": "trả về"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 3",
+    "Từ Vựng": "返す",
+    "Hán Tự": "PHẢN",
+    "Nghĩa": "trả lại"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 3",
+    "Từ Vựng": "譲る",
+    "Hán Tự": "NHƯỢNG",
+    "Nghĩa": "bàn giao, chuyển nhượng"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 3",
+    "Từ Vựng": "助かる",
+    "Hán Tự": "TRỢ",
+    "Nghĩa": "được cứu giúp, đỡ quá, may quá"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 3",
+    "Từ Vựng": "助ける",
+    "Hán Tự": "TRỢ",
+    "Nghĩa": "cứu, giúp"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 3",
+    "Từ Vựng": "いじめる",
+    "Hán Tự": "",
+    "Nghĩa": "bắt nạt, chọc ghẹo"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 3",
+    "Từ Vựng": "だます",
+    "Hán Tự": "",
+    "Nghĩa": "lừa gạt"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 3",
+    "Từ Vựng": "盗む",
+    "Hán Tự": "ĐẠO",
+    "Nghĩa": "ăn trộm, ăn cắp"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 3",
+    "Từ Vựng": "刺さる",
+    "Hán Tự": "THÍCH",
+    "Nghĩa": "mắc, hóc, đâm"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 3",
+    "Từ Vựng": "刺す",
+    "Hán Tự": "THÍCH/THỨ",
+    "Nghĩa": "cắn, hút, chích, đâm, thọc"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 3",
+    "Từ Vựng": "殺す",
+    "Hán Tự": "SÁT",
+    "Nghĩa": "giết, sát hại"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 3",
+    "Từ Vựng": "隠れる",
+    "Hán Tự": "ẨN",
+    "Nghĩa": "trốn, ẩn nấp"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 3",
+    "Từ Vựng": "隠す",
+    "Hán Tự": "ẨN",
+    "Nghĩa": "giấu diếm, che giấu"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 3",
+    "Từ Vựng": "埋まる",
+    "Hán Tự": "MAI",
+    "Nghĩa": "bị chôn/lấp; bị vùi; (chỗ trống) được lấp đầy; (lịch) kín"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 3",
+    "Từ Vựng": "埋める",
+    "Hán Tự": "MAI",
+    "Nghĩa": "chôn/lấp; lấp đầy; bù (khoảng cách/thiếu hụt)"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 3",
+    "Từ Vựng": "囲む",
+    "Hán Tự": "VI",
+    "Nghĩa": "bao quanh, vây quanh"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 4",
+    "Từ Vựng": "詰まる",
+    "Hán Tự": "CẬT",
+    "Nghĩa": "chất, chặt, tắc, bít, gần lại"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 4",
+    "Từ Vựng": "詰める",
+    "Hán Tự": "CẬT",
+    "Nghĩa": "chất, nhét vào, rút ngắn (khoảng cách)"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 4",
+    "Từ Vựng": "開く",
+    "Hán Tự": "KHAI",
+    "Nghĩa": "mở, tổ chức"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 4",
+    "Từ Vựng": "閉じる",
+    "Hán Tự": "BẾ",
+    "Nghĩa": "đóng (cửa)"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 4",
+    "Từ Vựng": "飛ぶ",
+    "Hán Tự": "PHI",
+    "Nghĩa": "bay, bay mất"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 4",
+    "Từ Vựng": "飛ばす",
+    "Hán Tự": "PHI",
+    "Nghĩa": "bắn, phóng, làm bay, bỏ qua"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 5",
+    "Từ Vựng": "振る",
+    "Hán Tự": "CHẤN",
+    "Nghĩa": "vẫy (tay), rắc (muối), chia tay / đá (người yêu)"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 5",
+    "Từ Vựng": "めくる",
+    "Hán Tự": "",
+    "Nghĩa": "lật (card, lịch...)"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 5",
+    "Từ Vựng": "見かける",
+    "Hán Tự": "KIẾN",
+    "Nghĩa": "thấy, tình cờ gặp"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 5",
+    "Từ Vựng": "確かめる",
+    "Hán Tự": "XÁC",
+    "Nghĩa": "xác nhận, làm cho rõ ràng"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 5",
+    "Từ Vựng": "試す",
+    "Hán Tự": "THÍ",
+    "Nghĩa": "thử nghiệm"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 5",
+    "Từ Vựng": "繰り返す",
+    "Hán Tự": "SÀO PHẢN",
+    "Nghĩa": "lặp lại"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 5",
+    "Từ Vựng": "訳す",
+    "Hán Tự": "DỊCH",
+    "Nghĩa": "dịch (phiên dịch, thông dịch)"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 5",
+    "Từ Vựng": "行う",
+    "Hán Tự": "HÀNH/HÀNG",
+    "Nghĩa": "tiến hành, thực hiện, tổ chức"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 5",
+    "Từ Vựng": "間違う",
+    "Hán Tự": "GIAN VI",
+    "Nghĩa": "nhầm"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 5",
+    "Từ Vựng": "間違える",
+    "Hán Tự": "GIAN VI",
+    "Nghĩa": "làm nhầm, mắc lỗi, chọn sai"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 5",
+    "Từ Vựng": "許す",
+    "Hán Tự": "HỨA",
+    "Nghĩa": "tha thứ, cho phép"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 5",
+    "Từ Vựng": "慣れる",
+    "Hán Tự": "QUÁN",
+    "Nghĩa": "quen, quen với"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 5",
+    "Từ Vựng": "慣らす",
+    "Hán Tự": "QUÁN",
+    "Nghĩa": "làm cho quen"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 5",
+    "Từ Vựng": "立つ",
+    "Hán Tự": "LẬP",
+    "Nghĩa": "đứng, đứng dậy; mọc (nhà, cột); phát sinh"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 5",
+    "Từ Vựng": "立てる",
+    "Hán Tự": "LẬP",
+    "Nghĩa": "dựng đứng, lập nên"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 6",
+    "Từ Vựng": "建つ",
+    "Hán Tự": "KIẾN",
+    "Nghĩa": "được xây dựng, dựng lên"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 6",
+    "Từ Vựng": "建てる",
+    "Hán Tự": "KIẾN",
+    "Nghĩa": "xây dựng"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 6",
+    "Từ Vựng": "育つ",
+    "Hán Tự": "DỤC",
+    "Nghĩa": "lớn lên, phát triển, được đào tạo"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 6",
+    "Từ Vựng": "育てる",
+    "Hán Tự": "DỤC",
+    "Nghĩa": "nuôi dưỡng, nuôi lớn, chăm sóc (hoa)"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 6",
+    "Từ Vựng": "生える",
+    "Hán Tự": "SINH",
+    "Nghĩa": "mọc (cỏ, tóc, răng)"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 6",
+    "Từ Vựng": "生やす",
+    "Hán Tự": "SINH",
+    "Nghĩa": "nuôi, chăm"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 6",
+    "Từ Vựng": "汚れる",
+    "Hán Tự": "Ô",
+    "Nghĩa": "vấy bẩn, bị bẩn"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 6",
+    "Từ Vựng": "汚す",
+    "Hán Tự": "Ô",
+    "Nghĩa": "làm dơ, làm bẩn"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 6",
+    "Từ Vựng": "壊れる",
+    "Hán Tự": "HOẠI",
+    "Nghĩa": "hỏng, bị hỏng"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 6",
+    "Từ Vựng": "壊す",
+    "Hán Tự": "HOẠI",
+    "Nghĩa": "làm hư, làm hỏng, gây hại"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 6",
+    "Từ Vựng": "割れる",
+    "Hán Tự": "CÁT",
+    "Nghĩa": "bể, nứt, hỏng"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 6",
+    "Từ Vựng": "割る",
+    "Hán Tự": "CÁT",
+    "Nghĩa": "làm vỡ, chia"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 6",
+    "Từ Vựng": "折れる",
+    "Hán Tự": "CHIẾT",
+    "Nghĩa": "bị bẻ, gãy"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 6",
+    "Từ Vựng": "折る",
+    "Hán Tự": "CHIẾT",
+    "Nghĩa": "bẻ gãy, gấp lại"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 6",
+    "Từ Vựng": "破れる",
+    "Hán Tự": "PHÁ",
+    "Nghĩa": "bị rách (giấy, sách, vải, áo…)"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 6",
+    "Từ Vựng": "破る",
+    "Hán Tự": "PHÁ",
+    "Nghĩa": "làm rách (giấy, sách, vải, áo…)"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 6",
+    "Từ Vựng": "曲がる",
+    "Hán Tự": "KHÚC",
+    "Nghĩa": "cong, rẽ"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 6",
+    "Từ Vựng": "曲げる",
+    "Hán Tự": "KHÚC",
+    "Nghĩa": "bẻ cong , uốn cong"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 7",
+    "Từ Vựng": "外れる",
+    "Hán Tự": "NGOẠI",
+    "Nghĩa": "tuột ra, rời ra"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 7",
+    "Từ Vựng": "外す",
+    "Hán Tự": "NGOẠI",
+    "Nghĩa": "tháo; làm trượt; bỏ (ca trực); trật (đáp án)"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 7",
+    "Từ Vựng": "揺れる",
+    "Hán Tự": "DAO",
+    "Nghĩa": "dao động, lung lay"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 7",
+    "Từ Vựng": "揺らす",
+    "Hán Tự": "DAO",
+    "Nghĩa": "rung lắc, làm lung lay"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 7",
+    "Từ Vựng": "流れる",
+    "Hán Tự": "LƯU",
+    "Nghĩa": "chảy, trôi, lan ra"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 7",
+    "Từ Vựng": "流す",
+    "Hán Tự": "LƯU",
+    "Nghĩa": "làm cho chảy ra"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 7",
+    "Từ Vựng": "濡れる",
+    "Hán Tự": "NHU",
+    "Nghĩa": "ướt, dính"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 7",
+    "Từ Vựng": "濡らす",
+    "Hán Tự": "NHU",
+    "Nghĩa": "làm ướt, làm ẩm"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 7",
+    "Từ Vựng": "迷う",
+    "Hán Tự": "MÊ",
+    "Nghĩa": "lạc đường, lúng túng, phân vân"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 7",
+    "Từ Vựng": "悩む",
+    "Hán Tự": "NÃO",
+    "Nghĩa": "phiền não, trăn trở, đau đầu vì…"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 7",
+    "Từ Vựng": "慌てる",
+    "Hán Tự": "HOẢNG",
+    "Nghĩa": "vội, luống cuống, hốt hoảng"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 8",
+    "Từ Vựng": "覚める",
+    "Hán Tự": "GIÁC",
+    "Nghĩa": "tỉnh dậy, tỉnh"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 8",
+    "Từ Vựng": "覚ます",
+    "Hán Tự": "GIÁC",
+    "Nghĩa": "đánh thức, làm cho tỉnh"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 8",
+    "Từ Vựng": "眠る",
+    "Hán Tự": "MIÊN",
+    "Nghĩa": "ngủ"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 8",
+    "Từ Vựng": "祈る",
+    "Hán Tự": "KỲ",
+    "Nghĩa": "cầu nguyện"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 8",
+    "Từ Vựng": "祝う",
+    "Hán Tự": "CHÚC",
+    "Nghĩa": "ăn mừng, chúc mừng"
+  },
+  {
+    "Lesson": "Unit 05 – 動詞B – Bài 8",
+    "Từ Vựng": "感じる",
+    "Hán Tự": "CẢM",
+    "Nghĩa": "cảm giác, cảm thấy"
+  },
+  {
+    "Lesson": "Unit 07 – 形容詞B – Bài 1",
+    "Từ Vựng": "濃い",
+    "Hán Tự": "NỒNG",
+    "Nghĩa": "đậm, đặc"
+  },
+  {
+    "Lesson": "Unit 07 – 形容詞B – Bài 1",
+    "Từ Vựng": "薄い",
+    "Hán Tự": "BẠC",
+    "Nghĩa": "nhạt, mỏng"
+  },
+  {
+    "Lesson": "Unit 07 – 形容詞B – Bài 1",
+    "Từ Vựng": "酸っぱい",
+    "Hán Tự": "TOAN",
+    "Nghĩa": "chua"
+  },
+  {
+    "Lesson": "Unit 07 – 形容詞B – Bài 1",
+    "Từ Vựng": "臭い",
+    "Hán Tự": "XÚ",
+    "Nghĩa": "thối, tanh"
+  },
+  {
+    "Lesson": "Unit 07 – 形容詞B – Bài 1",
+    "Từ Vựng": "おかしい",
+    "Hán Tự": "",
+    "Nghĩa": "buồn cười, kì quặc (sự cố) có vấn đề, lạ"
+  },
+  {
+    "Lesson": "Unit 07 – 形容詞B – Bài 1",
+    "Từ Vựng": "かっこいい",
+    "Hán Tự": "",
+    "Nghĩa": "dễ nhìn, bảnh bao, ngầu"
+  },
+  {
+    "Lesson": "Unit 07 – 形容詞B – Bài 1",
+    "Từ Vựng": "うまい",
+    "Hán Tự": "",
+    "Nghĩa": "giỏi, ngon, suôn sẻ, trôi chảy"
+  },
+  {
+    "Lesson": "Unit 07 – 形容詞B – Bài 1",
+    "Từ Vựng": "親しい",
+    "Hán Tự": "THÂN",
+    "Nghĩa": "thân thiết"
+  },
+  {
+    "Lesson": "Unit 07 – 形容詞B – Bài 1",
+    "Từ Vựng": "詳しい",
+    "Hán Tự": "TƯỜNG",
+    "Nghĩa": "rành / am hiểu / thạo / biết rõ (về lĩnh vực, sự việc)"
+  },
+  {
+    "Lesson": "Unit 07 – 形容詞B – Bài 1",
+    "Từ Vựng": "細かい",
+    "Hán Tự": "TẾ",
+    "Nghĩa": "nhỏ, chi tiết, tiểu tiết, tiền lẻ"
+  },
+  {
+    "Lesson": "Unit 07 – 形容詞B – Bài 1",
+    "Từ Vựng": "浅い",
+    "Hán Tự": "THIỂN",
+    "Nghĩa": "nông, nông cạn, chưa thâm sâu"
+  },
+  {
+    "Lesson": "Unit 07 – 形容詞B – Bài 2",
+    "Từ Vựng": "硬い/固い",
+    "Hán Tự": "NGẠNH CỐ",
+    "Nghĩa": "硬い: cứng (vật), cứng nhắc; 固い: chắc/chặt/kiên cố"
+  },
+  {
+    "Lesson": "Unit 07 – 形容詞B – Bài 2",
+    "Từ Vựng": "ぬるい",
+    "Hán Tự": "",
+    "Nghĩa": "nguội"
+  },
+  {
+    "Lesson": "Unit 07 – 形容詞B – Bài 2",
+    "Từ Vựng": "まぶしい",
+    "Hán Tự": "",
+    "Nghĩa": "chói (mắt), rạng rỡ"
+  },
+  {
+    "Lesson": "Unit 07 – 形容詞B – Bài 2",
+    "Từ Vựng": "蒸し暑い",
+    "Hán Tự": "CHƯNG THỬ",
+    "Nghĩa": "oi bức"
+  },
+  {
+    "Lesson": "Unit 07 – 形容詞B – Bài 2",
+    "Từ Vựng": "清潔な",
+    "Hán Tự": "THANH KHIẾT",
+    "Nghĩa": "sạch sẽ"
+  },
+  {
+    "Lesson": "Unit 07 – 形容詞B – Bài 2",
+    "Từ Vựng": "新鮮な",
+    "Hán Tự": "TÂN TIÊN",
+    "Nghĩa": "tươi"
+  },
+  {
+    "Lesson": "Unit 07 – 形容詞B – Bài 2",
+    "Từ Vựng": "豊かな",
+    "Hán Tự": "PHONG",
+    "Nghĩa": "giàu có, trù phú, đa dạng"
+  },
+  {
+    "Lesson": "Unit 07 – 形容詞B – Bài 2",
+    "Từ Vựng": "立派な",
+    "Hán Tự": "LẬP PHÁI",
+    "Nghĩa": "đàng hoàng, tử tế, xứng đáng, đáng khen"
+  },
+  {
+    "Lesson": "Unit 07 – 形容詞B – Bài 2",
+    "Từ Vựng": "正確な",
+    "Hán Tự": "CHÍNH XÁC",
+    "Nghĩa": "chính xác"
+  },
+  {
+    "Lesson": "Unit 07 – 形容詞B – Bài 2",
+    "Từ Vựng": "確かな",
+    "Hán Tự": "XÁC",
+    "Nghĩa": "chắc chắn, đáng tin, xác thực"
+  },
+  {
+    "Lesson": "Unit 07 – 形容詞B – Bài 3",
+    "Từ Vựng": "重要な",
+    "Hán Tự": "TRỌNG/TRÙNG YÊU/YẾU",
+    "Nghĩa": "trọng yếu, quan trọng"
+  },
+  {
+    "Lesson": "Unit 07 – 形容詞B – Bài 3",
+    "Từ Vựng": "必要な",
+    "Hán Tự": "TẤT YÊU/YẾU",
+    "Nghĩa": "cần thiết"
+  },
+  {
+    "Lesson": "Unit 07 – 形容詞B – Bài 3",
+    "Từ Vựng": "もったいない",
+    "Hán Tự": "",
+    "Nghĩa": "lãng phí"
+  },
+  {
+    "Lesson": "Unit 07 – 形容詞B – Bài 3",
+    "Từ Vựng": "すごい",
+    "Hán Tự": "",
+    "Nghĩa": "kinh khủng, giỏi, tuyệt vời"
+  },
+  {
+    "Lesson": "Unit 07 – 形容詞B – Bài 3",
+    "Từ Vựng": "ひどい",
+    "Hán Tự": "",
+    "Nghĩa": "tồi tệ, khủng khiếp"
+  },
+  {
+    "Lesson": "Unit 07 – 形容詞B – Bài 3",
+    "Từ Vựng": "激しい",
+    "Hán Tự": "KÍCH",
+    "Nghĩa": "dữ dội, mãnh liệt, gay gắt"
+  },
+  {
+    "Lesson": "Unit 07 – 形容詞B – Bài 3",
+    "Từ Vựng": "そっくりな",
+    "Hán Tự": "",
+    "Nghĩa": "giống y đúc"
+  },
+  {
+    "Lesson": "Unit 07 – 形容詞B – Bài 3",
+    "Từ Vựng": "急な",
+    "Hán Tự": "CẤP",
+    "Nghĩa": "gấp, nhanh, đột nhiên"
+  },
+  {
+    "Lesson": "Unit 07 – 形容詞B – Bài 3",
+    "Từ Vựng": "適当な",
+    "Hán Tự": "THÍCH ĐƯƠNG",
+    "Nghĩa": "thích hợp/vừa phải; qua loa, đại khái, làm cho có"
+  },
+  {
+    "Lesson": "Unit 07 – 形容詞B – Bài 4",
+    "Từ Vựng": "特別な",
+    "Hán Tự": "ĐẶC BIỆT",
+    "Nghĩa": "đặc biệt, riêng biệt"
+  },
+  {
+    "Lesson": "Unit 07 – 形容詞B – Bài 4",
+    "Từ Vựng": "完全な",
+    "Hán Tự": "HOÀN TOÀN",
+    "Nghĩa": "hoàn toàn, tất cả"
+  },
+  {
+    "Lesson": "Unit 07 – 形容詞B – Bài 4",
+    "Từ Vựng": "盛んな",
+    "Hán Tự": "THỊNH",
+    "Nghĩa": "sôi nổi, thịnh hành, phát triển mạnh"
+  },
+  {
+    "Lesson": "Unit 07 – 形容詞B – Bài 4",
+    "Từ Vựng": "様々な",
+    "Hán Tự": "DẠNG",
+    "Nghĩa": "nhiều loại, đa dạng"
+  },
+  {
+    "Lesson": "Unit 07 – 形容詞B – Bài 4",
+    "Từ Vựng": "可能な",
+    "Hán Tự": "KHẢ NĂNG",
+    "Nghĩa": "khả thi, có thể"
+  },
+  {
+    "Lesson": "Unit 07 – 形容詞B – Bài 4",
+    "Từ Vựng": "不可能な",
+    "Hán Tự": "BẤT KHẢ NĂNG",
+    "Nghĩa": "không thể"
+  },
+  {
+    "Lesson": "Unit 07 – 形容詞B – Bài 4",
+    "Từ Vựng": "基本的な",
+    "Hán Tự": "CƠ BẢN ĐÍCH",
+    "Nghĩa": "cơ bản"
+  },
+  {
+    "Lesson": "Unit 07 – 形容詞B – Bài 4",
+    "Từ Vựng": "国際的な",
+    "Hán Tự": "QUỐC TẾ ĐÍCH",
+    "Nghĩa": "tính quốc tế"
+  },
+  {
+    "Lesson": "Unit 07 – 形容詞B – Bài 4",
+    "Từ Vựng": "ばらばらな",
+    "Hán Tự": "",
+    "Nghĩa": "chia rẻ, phân tán"
+  },
+  {
+    "Lesson": "Unit 07 – 形容詞B – Bài 4",
+    "Từ Vựng": "ぼろぼろな",
+    "Hán Tự": "",
+    "Nghĩa": "rách nát, tồi tàn, te tua"
+  },
+  {
+    "Lesson": "Unit 08 – 副詞A – Bài 1",
+    "Từ Vựng": "非常に",
+    "Hán Tự": "PHI THƯỜNG",
+    "Nghĩa": "vô cùng, cực kỳ, rất"
+  },
+  {
+    "Lesson": "Unit 08 – 副詞A – Bài 1",
+    "Từ Vựng": "大変（に）",
+    "Hán Tự": "ĐẠI BIẾN",
+    "Nghĩa": "vất vả, vô cùng, rất (mức độ)"
+  },
+  {
+    "Lesson": "Unit 08 – 副詞A – Bài 1",
+    "Từ Vựng": "ほとんど",
+    "Hán Tự": "",
+    "Nghĩa": "hầu hết, hầu như, hầu như…không (phủ định)"
+  },
+  {
+    "Lesson": "Unit 08 – 副詞A – Bài 1",
+    "Từ Vựng": "大体",
+    "Hán Tự": "ĐẠI THỂ",
+    "Nghĩa": "đại khái, nhìn chung, khoảng chừng"
+  },
+  {
+    "Lesson": "Unit 08 – 副詞A – Bài 1",
+    "Từ Vựng": "かなり",
+    "Hán Tự": "",
+    "Nghĩa": "tương đối, khá"
+  },
+  {
+    "Lesson": "Unit 08 – 副詞A – Bài 1",
+    "Từ Vựng": "ずいぶん",
+    "Hán Tự": "",
+    "Nghĩa": "đáng kể, nhiều"
+  },
+  {
+    "Lesson": "Unit 08 – 副詞A – Bài 1",
+    "Từ Vựng": "けっこう",
+    "Hán Tự": "",
+    "Nghĩa": "rất, cũng được, vừa đủ"
+  },
+  {
+    "Lesson": "Unit 08 – 副詞A – Bài 1",
+    "Từ Vựng": "大分",
+    "Hán Tự": "ĐẠI PHÂN",
+    "Nghĩa": "nhiều, khá"
+  },
+  {
+    "Lesson": "Unit 08 – 副詞A – Bài 1",
+    "Từ Vựng": "もっと",
+    "Hán Tự": "",
+    "Nghĩa": "hơn nữa, thêm nữa"
+  },
+  {
+    "Lesson": "Unit 08 – 副詞A – Bài 1",
+    "Từ Vựng": "すっかり",
+    "Hán Tự": "",
+    "Nghĩa": "toàn bộ, hoàn toàn"
+  },
+  {
+    "Lesson": "Unit 08 – 副詞A – Bài 1",
+    "Từ Vựng": "いっぱい",
+    "Hán Tự": "",
+    "Nghĩa": "đầy, no, hoàn toàn"
+  },
+  {
+    "Lesson": "Unit 08 – 副詞A – Bài 2",
+    "Từ Vựng": "ぎりぎり",
+    "Hán Tự": "",
+    "Nghĩa": "gần, sát nút"
+  },
+  {
+    "Lesson": "Unit 08 – 副詞A – Bài 2",
+    "Từ Vựng": "ぴったり（と）",
+    "Hán Tự": "",
+    "Nghĩa": "vừa vặn, đúng kịp, dính chặt, khép chặt, hợp, hoàn toàn"
+  },
+  {
+    "Lesson": "Unit 08 – 副詞A – Bài 2",
+    "Từ Vựng": "たいてい",
+    "Hán Tự": "",
+    "Nghĩa": "thông thường, đa phần"
+  },
+  {
+    "Lesson": "Unit 08 – 副詞A – Bài 2",
+    "Từ Vựng": "同時に",
+    "Hán Tự": "ĐỒNG THỜI",
+    "Nghĩa": "đồng thời, cùng một lúc"
+  },
+  {
+    "Lesson": "Unit 08 – 副詞A – Bài 2",
+    "Từ Vựng": "前もって",
+    "Hán Tự": "TIỀN",
+    "Nghĩa": "trước"
+  },
+  {
+    "Lesson": "Unit 08 – 副詞A – Bài 2",
+    "Từ Vựng": "すぐ（に）",
+    "Hán Tự": "",
+    "Nghĩa": "ngay lập tức, sát gần"
+  },
+  {
+    "Lesson": "Unit 08 – 副詞A – Bài 2",
+    "Từ Vựng": "もうすぐ",
+    "Hán Tự": "",
+    "Nghĩa": "sắp, sắp tới"
+  },
+  {
+    "Lesson": "Unit 08 – 副詞A – Bài 2",
+    "Từ Vựng": "突然",
+    "Hán Tự": "ĐỘT NHIÊN",
+    "Nghĩa": "đột nhiên"
+  },
+  {
+    "Lesson": "Unit 08 – 副詞A – Bài 2",
+    "Từ Vựng": "あっと言う間（に）",
+    "Hán Tự": "NGÔN",
+    "Nghĩa": "loáng cái, trong chớp mắt"
+  },
+  {
+    "Lesson": "Unit 08 – 副詞A – Bài 2",
+    "Từ Vựng": "いつの間にか",
+    "Hán Tự": "GIAN",
+    "Nghĩa": "từ lúc nào không biết"
+  },
+  {
+    "Lesson": "Unit 08 – 副詞A – Bài 2",
+    "Từ Vựng": "しばらく",
+    "Hán Tự": "",
+    "Nghĩa": "chốc lát, đã lâu không gặp"
+  },
+  {
+    "Lesson": "Unit 08 – 副詞A – Bài 2",
+    "Từ Vựng": "ずっと",
+    "Hán Tự": "",
+    "Nghĩa": "hơn hẳn, rất, suốt"
+  },
+  {
+    "Lesson": "Unit 08 – 副詞A – Bài 2",
+    "Từ Vựng": "相変わらず",
+    "Hán Tự": "TƯƠNG/TƯỚNG BIẾN",
+    "Nghĩa": "như mọi khi, không thay đổi"
+  },
+  {
+    "Lesson": "Unit 08 – 副詞A – Bài 3",
+    "Từ Vựng": "次々に",
+    "Hán Tự": "THỨ",
+    "Nghĩa": "tiếp theo, lần lượt"
+  },
+  {
+    "Lesson": "Unit 08 – 副詞A – Bài 3",
+    "Từ Vựng": "どんどん",
+    "Hán Tự": "",
+    "Nghĩa": "nhanh chóng, dồn dập, rầm rầm"
+  },
+  {
+    "Lesson": "Unit 08 – 副詞A – Bài 3",
+    "Từ Vựng": "ますます",
+    "Hán Tự": "",
+    "Nghĩa": "càng ngày càng"
+  },
+  {
+    "Lesson": "Unit 08 – 副詞A – Bài 3",
+    "Từ Vựng": "やっと",
+    "Hán Tự": "",
+    "Nghĩa": "cuối cùng"
+  },
+  {
+    "Lesson": "Unit 08 – 副詞A – Bài 3",
+    "Từ Vựng": "とうとう",
+    "Hán Tự": "",
+    "Nghĩa": "cuối cùng thì (khẳng định), cuối cùng thì (phủ định)"
+  },
+  {
+    "Lesson": "Unit 08 – 副詞A – Bài 3",
+    "Từ Vựng": "ついに",
+    "Hán Tự": "",
+    "Nghĩa": "cuối cùng, sau tất cả (2 cách dùng đi cùng với khẳng định và phủ định)"
+  },
+  {
+    "Lesson": "Unit 08 – 副詞A – Bài 3",
+    "Từ Vựng": "もちろん",
+    "Hán Tự": "",
+    "Nghĩa": "tất nhiên"
+  },
+  {
+    "Lesson": "Unit 08 – 副詞A – Bài 3",
+    "Từ Vựng": "やはり",
+    "Hán Tự": "",
+    "Nghĩa": "như dự tính, như tính toán, vẫn, cũng, quả nhiên"
+  },
+  {
+    "Lesson": "Unit 08 – 副詞A – Bài 3",
+    "Từ Vựng": "きっと",
+    "Hán Tự": "",
+    "Nghĩa": "chắc chắn là, nhất định là"
+  },
+  {
+    "Lesson": "Unit 08 – 副詞A – Bài 3",
+    "Từ Vựng": "ぜひ",
+    "Hán Tự": "",
+    "Nghĩa": "bằng mọi giá, nhất định"
+  },
+  {
+    "Lesson": "Unit 08 – 副詞A – Bài 3",
+    "Từ Vựng": "なるべく",
+    "Hán Tự": "",
+    "Nghĩa": "cố gắng, nếu có thể"
+  },
+  {
+    "Lesson": "Unit 08 – 副詞A – Bài 3",
+    "Từ Vựng": "案外",
+    "Hán Tự": "ÁN NGOẠI",
+    "Nghĩa": "không ngờ đến"
+  },
+  {
+    "Lesson": "Unit 08 – 副詞A – Bài 4",
+    "Từ Vựng": "もしかすると/もしかしたら/もしかして",
+    "Hán Tự": "",
+    "Nghĩa": "có lẽ, nếu không nhầm thì"
+  },
+  {
+    "Lesson": "Unit 08 – 副詞A – Bài 4",
+    "Từ Vựng": "まさか",
+    "Hán Tự": "",
+    "Nghĩa": "không lẽ nào, không thể nào"
+  },
+  {
+    "Lesson": "Unit 08 – 副詞A – Bài 4",
+    "Từ Vựng": "うっかり",
+    "Hán Tự": "",
+    "Nghĩa": "lỡ/nhỡ, sơ ý, bất cẩn, đãng trí"
+  },
+  {
+    "Lesson": "Unit 08 – 副詞A – Bài 4",
+    "Từ Vựng": "つい",
+    "Hán Tự": "",
+    "Nghĩa": "vô ý, lỡ"
+  },
+  {
+    "Lesson": "Unit 08 – 副詞A – Bài 4",
+    "Từ Vựng": "思わず",
+    "Hán Tự": "TƯ",
+    "Nghĩa": "bất giác / không kìm được / lỡ (buột miệng)"
+  },
+  {
+    "Lesson": "Unit 08 – 副詞A – Bài 4",
+    "Từ Vựng": "ほっと",
+    "Hán Tự": "",
+    "Nghĩa": "thở phào, nhẹ nhõm"
+  },
+  {
+    "Lesson": "Unit 08 – 副詞A – Bài 4",
+    "Từ Vựng": "いらいら",
+    "Hán Tự": "",
+    "Nghĩa": "nóng lòng"
+  },
+  {
+    "Lesson": "Unit 08 – 副詞A – Bài 4",
+    "Từ Vựng": "のんびり",
+    "Hán Tự": "",
+    "Nghĩa": "thong thả, từ từ"
+  },
+  {
+    "Lesson": "Unit 08 – 副詞A – Bài 4",
+    "Từ Vựng": "実は",
+    "Hán Tự": "THỰC",
+    "Nghĩa": "thực ra là, thực tế là"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 1",
+    "Từ Vựng": "読書",
+    "Hán Tự": "ĐỘC THƯ",
+    "Nghĩa": "đọc sách"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 1",
+    "Từ Vựng": "演奏",
+    "Hán Tự": "DIỄN TẤU",
+    "Nghĩa": "biểu diễn"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 1",
+    "Từ Vựng": "芸術",
+    "Hán Tự": "NGHỆ THUẬT",
+    "Nghĩa": "nghệ thuật"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 1",
+    "Từ Vựng": "検査",
+    "Hán Tự": "KIỂM TRA",
+    "Nghĩa": "kiểm tra"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 1",
+    "Từ Vựng": "血液",
+    "Hán Tự": "HUYẾT DỊCH",
+    "Nghĩa": "máu (dịch máu) / huyết dịch"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 1",
+    "Từ Vựng": "治療",
+    "Hán Tự": "TRỊ LIỆU",
+    "Nghĩa": "trị liệu, chữa bệnh"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 1",
+    "Từ Vựng": "症状",
+    "Hán Tự": "CHỨNG TRẠNG",
+    "Nghĩa": "triệu chứng"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 1",
+    "Từ Vựng": "予防",
+    "Hán Tự": "DỰ PHÒNG",
+    "Nghĩa": "đề phòng"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 1",
+    "Từ Vựng": "栄養",
+    "Hán Tự": "VINH DƯỠNG",
+    "Nghĩa": "dinh dưỡng"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 1",
+    "Từ Vựng": "手術",
+    "Hán Tự": "THỦ THUẬT",
+    "Nghĩa": "phẫu thuật"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 1",
+    "Từ Vựng": "死亡",
+    "Hán Tự": "TỬ VONG",
+    "Nghĩa": "chết"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 1",
+    "Từ Vựng": "命",
+    "Hán Tự": "MỆNH/MẠNG",
+    "Nghĩa": "sinh mạng"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 1",
+    "Từ Vựng": "一生",
+    "Hán Tự": "NHẤT SINH",
+    "Nghĩa": "suốt đời"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 1",
+    "Từ Vựng": "誤解",
+    "Hán Tự": "NGỘ GIẢI",
+    "Nghĩa": "hiểu lầm"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 1",
+    "Từ Vựng": "後悔",
+    "Hán Tự": "HẬU HỐI",
+    "Nghĩa": "hối hận"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 1",
+    "Từ Vựng": "訳",
+    "Hán Tự": "DỊCH",
+    "Nghĩa": "lý do / nguyên nhân / lẽ / nghĩa"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 2",
+    "Từ Vựng": "態度",
+    "Hán Tự": "THÁI ĐỘ",
+    "Nghĩa": "thái độ"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 2",
+    "Từ Vựng": "癖",
+    "Hán Tự": "PHÍCH",
+    "Nghĩa": "tật / thói quen"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 2",
+    "Từ Vựng": "礼儀",
+    "Hán Tự": "LỄ NGHI",
+    "Nghĩa": "lễ nghĩa"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 2",
+    "Từ Vựng": "文句",
+    "Hán Tự": "VĂN CÚ",
+    "Nghĩa": "lời phàn nàn / than phiền"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 2",
+    "Từ Vựng": "表情",
+    "Hán Tự": "BIỂU TÌNH",
+    "Nghĩa": "biểu cảm, nét mặt"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 2",
+    "Từ Vựng": "表面",
+    "Hán Tự": "BIỂU DIỆN",
+    "Nghĩa": "bề mặt"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 2",
+    "Từ Vựng": "禁煙",
+    "Hán Tự": "CẤM YÊN",
+    "Nghĩa": "cấm hút thuốc"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 2",
+    "Từ Vựng": "禁止",
+    "Hán Tự": "CẤM CHỈ",
+    "Nghĩa": "cấm"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 2",
+    "Từ Vựng": "完成",
+    "Hán Tự": "HOÀN THÀNH",
+    "Nghĩa": "hoàn thành"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 2",
+    "Từ Vựng": "課題",
+    "Hán Tự": "KHÓA ĐỀ",
+    "Nghĩa": "đề tài, bài tập, nhiệm vụ"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 2",
+    "Từ Vựng": "例外",
+    "Hán Tự": "LỆ NGOẠI",
+    "Nghĩa": "ngoại lệ"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 2",
+    "Từ Vựng": "基本",
+    "Hán Tự": "CƠ BẢN",
+    "Nghĩa": "cơ bản"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 2",
+    "Từ Vựng": "記録",
+    "Hán Tự": "KÍ LỤC",
+    "Nghĩa": "ghi chép, kỉ lục"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 2",
+    "Từ Vựng": "状態",
+    "Hán Tự": "TRẠNG THÁI",
+    "Nghĩa": "trạng thái"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 2",
+    "Từ Vựng": "出来事",
+    "Hán Tự": "XUẤT LAI SỰ",
+    "Nghĩa": "sự kiện"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 3",
+    "Từ Vựng": "場面",
+    "Hán Tự": "TRƯỜNG DIỆN",
+    "Nghĩa": "tình huống, hiện trường, cảnh (phim)"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 3",
+    "Từ Vựng": "機会",
+    "Hán Tự": "CƠ HỘI",
+    "Nghĩa": "cơ hội"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 3",
+    "Từ Vựng": "距離",
+    "Hán Tự": "CỰ LI",
+    "Nghĩa": "cự li, khoảng cách"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 3",
+    "Từ Vựng": "提案",
+    "Hán Tự": "ĐỀ ÁN",
+    "Nghĩa": "đề án, đề xuất"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 3",
+    "Từ Vựng": "やり取り",
+    "Hán Tự": "THỦ",
+    "Nghĩa": "trao đổi"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 3",
+    "Từ Vựng": "知識",
+    "Hán Tự": "TRI THỨC",
+    "Nghĩa": "tri thức / kiến thức"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 3",
+    "Từ Vựng": "実力",
+    "Hán Tự": "THỰC LỰC",
+    "Nghĩa": "thực lực"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 3",
+    "Từ Vựng": "手段",
+    "Hán Tự": "THỦ ĐOẠN",
+    "Nghĩa": "cách thức, phương pháp"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 3",
+    "Từ Vựng": "代表",
+    "Hán Tự": "ĐẠI BIỂU",
+    "Nghĩa": "đại biểu"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 4",
+    "Từ Vựng": "影響",
+    "Hán Tự": "ẢNH HƯỞNG",
+    "Nghĩa": "ảnh hưởng"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 4",
+    "Từ Vựng": "効果",
+    "Hán Tự": "HIỆU QUẢ",
+    "Nghĩa": "hiệu quả"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 4",
+    "Từ Vựng": "印象",
+    "Hán Tự": "ẤN TƯỢNG",
+    "Nghĩa": "ấn tượng"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 4",
+    "Từ Vựng": "印",
+    "Hán Tự": "ẤN",
+    "Nghĩa": "dấu hiệu, biểu tượng"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 4",
+    "Từ Vựng": "合図",
+    "Hán Tự": "HỢP ĐỒ",
+    "Nghĩa": "ra hiệu / ám hiệu / dấu hiệu (làm tín hiệu)"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 4",
+    "Từ Vựng": "共通",
+    "Hán Tự": "CỘNG THÔNG",
+    "Nghĩa": "điểm chung"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 4",
+    "Từ Vựng": "強調",
+    "Hán Tự": "CƯỜNG ĐIỆU",
+    "Nghĩa": "nhấn mạnh"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 4",
+    "Từ Vựng": "省略",
+    "Hán Tự": "TỈNH LƯỢC",
+    "Nghĩa": "giản lược, rút gọn"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 4",
+    "Từ Vựng": "挑戦",
+    "Hán Tự": "KHIÊU CHIẾN",
+    "Nghĩa": "thử thách"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 4",
+    "Từ Vựng": "やる気",
+    "Hán Tự": "KHÍ",
+    "Nghĩa": "có hứng thú, động lực"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 4",
+    "Từ Vựng": "勇気",
+    "Hán Tự": "DŨNG KHÍ",
+    "Nghĩa": "dũng khí, dũng cảm"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 4",
+    "Từ Vựng": "資格",
+    "Hán Tự": "TƯ CÁCH",
+    "Nghĩa": "tư cách, bằng cấp, xứng đáng"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 4",
+    "Từ Vựng": "申請",
+    "Hán Tự": "THÂN THỈNH",
+    "Nghĩa": "nộp đơn xin / đăng ký / xin cấp"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 4",
+    "Từ Vựng": "本人",
+    "Hán Tự": "BẢN NHÂN",
+    "Nghĩa": "chính chủ"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 4",
+    "Từ Vựng": "契約",
+    "Hán Tự": "KHẾ ƯỚC",
+    "Nghĩa": "hợp đồng"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 5",
+    "Từ Vựng": "証明",
+    "Hán Tự": "CHỨNG MINH",
+    "Nghĩa": "chứng minh"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 5",
+    "Từ Vựng": "変更",
+    "Hán Tự": "BIẾN CANH",
+    "Nghĩa": "thay đổi"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 5",
+    "Từ Vựng": "保存",
+    "Hán Tự": "BẢO TỒN",
+    "Nghĩa": "lưu, bảo quản"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 5",
+    "Từ Vựng": "保護",
+    "Hán Tự": "BẢO HỘ",
+    "Nghĩa": "bảo hộ, trông nom"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 5",
+    "Từ Vựng": "環境",
+    "Hán Tự": "HOÀN CẢNH",
+    "Nghĩa": "môi trường"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 5",
+    "Từ Vựng": "資源",
+    "Hán Tự": "TƯ NGUYÊN",
+    "Nghĩa": "tài nguyên"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 5",
+    "Từ Vựng": "不足",
+    "Hán Tự": "BẤT TÚC",
+    "Nghĩa": "thiếu, không đầy đủ"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 5",
+    "Từ Vựng": "平均",
+    "Hán Tự": "BÌNH QUÂN",
+    "Nghĩa": "bình quân, đồng đều, trung bình"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 5",
+    "Từ Vựng": "割合",
+    "Hán Tự": "CÁT HỢP",
+    "Nghĩa": "tỷ lệ / phần trăm / mức độ"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 5",
+    "Từ Vựng": "商売",
+    "Hán Tự": "THƯƠNG MẠI",
+    "Nghĩa": "thương mại, buôn bán"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 5",
+    "Từ Vựng": "商品",
+    "Hán Tự": "THƯƠNG PHẨM",
+    "Nghĩa": "hàng hóa, thương phẩm"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 5",
+    "Từ Vựng": "質",
+    "Hán Tự": "CHẤT",
+    "Nghĩa": "chất lượng"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 5",
+    "Từ Vựng": "型",
+    "Hán Tự": "HÌNH",
+    "Nghĩa": "kiểu"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 5",
+    "Từ Vựng": "生産",
+    "Hán Tự": "SINH SẢN",
+    "Nghĩa": "sản xuất, sinh sản"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 5",
+    "Từ Vựng": "消費",
+    "Hán Tự": "TIÊU PHÍ",
+    "Nghĩa": "tiêu dùng, tiêu hao"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 6",
+    "Từ Vựng": "物価",
+    "Hán Tự": "VẬT GIÁ",
+    "Nghĩa": "giá cả, vật giá, mức giá chung"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 6",
+    "Từ Vựng": "倒産",
+    "Hán Tự": "ĐẢO SẢN",
+    "Nghĩa": "phá sản"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 6",
+    "Từ Vựng": "携帯",
+    "Hán Tự": "HUỀ ĐỚI",
+    "Nghĩa": "mang theo, di động"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 6",
+    "Từ Vựng": "現代",
+    "Hán Tự": "HIỆN ĐẠI",
+    "Nghĩa": "hiện đại, ngày nay"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 6",
+    "Từ Vựng": "世紀",
+    "Hán Tự": "THẾ KỈ",
+    "Nghĩa": "thế kỷ"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 6",
+    "Từ Vựng": "文化",
+    "Hán Tự": "VĂN HÓA",
+    "Nghĩa": "văn hóa"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 6",
+    "Từ Vựng": "都市",
+    "Hán Tự": "ĐÔ THỊ",
+    "Nghĩa": "đô thị, thành phố"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 6",
+    "Từ Vựng": "地方",
+    "Hán Tự": "ĐỊA PHƯƠNG",
+    "Nghĩa": "địa phương, vùng"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 6",
+    "Từ Vựng": "戦争",
+    "Hán Tự": "CHIẾN TRANH",
+    "Nghĩa": "chiến tranh"
+  },
+  {
+    "Lesson": "Unit 09 – 名詞C – Bài 6",
+    "Từ Vựng": "平和",
+    "Hán Tự": "BÌNH HÒA",
+    "Nghĩa": "hòa bình"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 1",
+    "Từ Vựng": "上る",
+    "Hán Tự": "THƯỢNG",
+    "Nghĩa": "leo lên, lên đến, lên tới"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 1",
+    "Từ Vựng": "下る",
+    "Hán Tự": "HẠ",
+    "Nghĩa": "xuống"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 1",
+    "Từ Vựng": "進む",
+    "Hán Tự": "TIẾN",
+    "Nghĩa": "tiến lên, tiến cấp, tiến triển"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 1",
+    "Từ Vựng": "進める",
+    "Hán Tự": "TIẾN",
+    "Nghĩa": "tiến hành/đẩy tới/cho tiến lên/đề xuất"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 1",
+    "Từ Vựng": "通る",
+    "Hán Tự": "THÔNG",
+    "Nghĩa": "thông qua, đi qua"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 1",
+    "Từ Vựng": "通す",
+    "Hán Tự": "THÔNG",
+    "Nghĩa": "cho đi qua"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 1",
+    "Từ Vựng": "超える/越える",
+    "Hán Tự": "SIÊU VIỆT",
+    "Nghĩa": "vượt qua"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 1",
+    "Từ Vựng": "過ぎる",
+    "Hán Tự": "QUA/QUÁ",
+    "Nghĩa": "quá, đi qua, quá (thời gian)"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 1",
+    "Từ Vựng": "過ごす",
+    "Hán Tự": "QUA/QUÁ",
+    "Nghĩa": "trải qua, dành (thời gian)"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 2",
+    "Từ Vựng": "移る",
+    "Hán Tự": "DI",
+    "Nghĩa": "chuyển, lây"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 2",
+    "Từ Vựng": "移す",
+    "Hán Tự": "DI",
+    "Nghĩa": "làm di chuyển, làm lây nhiễm"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 2",
+    "Từ Vựng": "連れる",
+    "Hán Tự": "LIÊN",
+    "Nghĩa": "dẫn đi"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 2",
+    "Từ Vựng": "寄る",
+    "Hán Tự": "KÍ",
+    "Nghĩa": "ghé (vào), lại gần, nghiêng/lệch về"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 2",
+    "Từ Vựng": "寄せる",
+    "Hán Tự": "KÍ",
+    "Nghĩa": "kéo lại gần/ghé lại/cho sát vào; dồn/góp"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 2",
+    "Từ Vựng": "与える",
+    "Hán Tự": "DỮ/DỰ",
+    "Nghĩa": "cho, đem lại, gây ra"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 2",
+    "Từ Vựng": "得る",
+    "Hán Tự": "ĐẮC",
+    "Nghĩa": "đạt được"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 2",
+    "Từ Vựng": "向く",
+    "Hán Tự": "HƯỚNG",
+    "Nghĩa": "hướng, thích hợp, dành cho"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 2",
+    "Từ Vựng": "向ける",
+    "Hán Tự": "HƯỚNG",
+    "Nghĩa": "hướng về, quay về phía, hướng tới (đối tượng)"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 2",
+    "Từ Vựng": "勧める",
+    "Hán Tự": "KHUYẾN",
+    "Nghĩa": "khuyên, đề nghị, giới thiệu"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 2",
+    "Từ Vựng": "薦める",
+    "Hán Tự": "TIẾN",
+    "Nghĩa": "giới thiệu/đề cử/khuyên dùng"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 2",
+    "Từ Vựng": "任せる",
+    "Hán Tự": "NHIỆM",
+    "Nghĩa": "giao phó"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 2",
+    "Từ Vựng": "守る",
+    "Hán Tự": "THỦ",
+    "Nghĩa": "giữ, tuân thủ, bảo vệ"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 3",
+    "Từ Vựng": "争う",
+    "Hán Tự": "TRANH",
+    "Nghĩa": "tranh nhau, tranh cãi, chiến đấu, cạnh tranh"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 3",
+    "Từ Vựng": "望む",
+    "Hán Tự": "VỌNG",
+    "Nghĩa": "mong muốn"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 3",
+    "Từ Vựng": "信じる",
+    "Hán Tự": "TÍN",
+    "Nghĩa": "tin, tin rằng, tinh tưởng, tin"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 3",
+    "Từ Vựng": "通じる",
+    "Hán Tự": "THÔNG",
+    "Nghĩa": "hiểu, thông qua, xuyên qua, kết nối được"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 3",
+    "Từ Vựng": "飽きる",
+    "Hán Tự": "BÃO",
+    "Nghĩa": "chán"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 3",
+    "Từ Vựng": "思いつく",
+    "Hán Tự": "TƯ",
+    "Nghĩa": "nghĩ, nghĩ ra"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 3",
+    "Từ Vựng": "思いやる",
+    "Hán Tự": "TƯ",
+    "Nghĩa": "quan tâm, thông cảm"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 3",
+    "Từ Vựng": "熱中する",
+    "Hán Tự": "NHIỆT TRUNG",
+    "Nghĩa": "mải mê, nghiện"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 3",
+    "Từ Vựng": "暮らす",
+    "Hán Tự": "MỘ",
+    "Nghĩa": "sống, sinh hoạt"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 3",
+    "Từ Vựng": "巻く",
+    "Hán Tự": "QUYỂN",
+    "Nghĩa": "quấn, bọc, choàng"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 3",
+    "Từ Vựng": "結ぶ",
+    "Hán Tự": "KẾT",
+    "Nghĩa": "buộc, thắt, nối, kí (hợp đồng)"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 3",
+    "Từ Vựng": "済む",
+    "Hán Tự": "TẾ",
+    "Nghĩa": "kết thúc, hoàn tất, xong"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 3",
+    "Từ Vựng": "済ませる/済ます",
+    "Hán Tự": "TẾ",
+    "Nghĩa": "kết thúc, cũng xong"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 4",
+    "Từ Vựng": "出来る",
+    "Hán Tự": "XUẤT LAI",
+    "Nghĩa": "hoàn thành, xong, có thể"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 4",
+    "Từ Vựng": "切れる",
+    "Hán Tự": "THIẾT",
+    "Nghĩa": "cắt, hết, hết hạn"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 4",
+    "Từ Vựng": "切らす",
+    "Hán Tự": "THIẾT",
+    "Nghĩa": "dùng hết"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 5",
+    "Từ Vựng": "伝わる",
+    "Hán Tự": "TRUYỀN",
+    "Nghĩa": "lan truyền, được truyền"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 5",
+    "Từ Vựng": "伝える",
+    "Hán Tự": "TRUYỀN/TRUYỆN",
+    "Nghĩa": "truyền, truyền đạt, truyền (đạo), dẫn, truyền"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 5",
+    "Từ Vựng": "続く",
+    "Hán Tự": "TỤC",
+    "Nghĩa": "tiếp tục, theo"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 5",
+    "Từ Vựng": "続ける",
+    "Hán Tự": "TỤC",
+    "Nghĩa": "tiếp tục, liên tiếp kéo dài"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 5",
+    "Từ Vựng": "つながる",
+    "Hán Tự": "",
+    "Nghĩa": "được kết nối, dẫn tới, nối nhau, kết nối"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 5",
+    "Từ Vựng": "つなぐ",
+    "Hán Tự": "",
+    "Nghĩa": "kết nối"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 5",
+    "Từ Vựng": "つなげる",
+    "Hán Tự": "",
+    "Nghĩa": "nối/kết nối; gắn; liên kết; nối máy (điện/điện thoại); kéo dài (câu chuyện)"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 5",
+    "Từ Vựng": "伸びる",
+    "Hán Tự": "THÂN",
+    "Nghĩa": "dài ra/giãn ra; cao lên; phát triển/tăng; (tóc) mọc dài; (đường) kéo dài; (thành tích) tiến bộ"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 5",
+    "Từ Vựng": "伸ばす",
+    "Hán Tự": "THÂN",
+    "Nghĩa": "kéo dài/duỗi ra; làm dài ra; kéo dài thời gian; phát triển/nâng cao (năng lực)"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 5",
+    "Từ Vựng": "延びる",
+    "Hán Tự": "DUYÊN",
+    "Nghĩa": "bị trì hoãn, kéo dài"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 5",
+    "Từ Vựng": "延ばす",
+    "Hán Tự": "DUYÊN",
+    "Nghĩa": "kéo dài; gia hạn; hoãn lại"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 5",
+    "Từ Vựng": "重なる",
+    "Hán Tự": "TRỌNG/TRÙNG",
+    "Nghĩa": "lồng vào nhau, chồng chất"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 5",
+    "Từ Vựng": "重ねる",
+    "Hán Tự": "TRỌNG/TRÙNG",
+    "Nghĩa": "lồng vào nhau, chồng chất"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 6",
+    "Từ Vựng": "広がる",
+    "Hán Tự": "QUẢNG",
+    "Nghĩa": "rộng, lan rộng, mở rộng"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 6",
+    "Từ Vựng": "広げる",
+    "Hán Tự": "QUẢNG",
+    "Nghĩa": "mở rộng, trải rộng, dan rộng"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 6",
+    "Từ Vựng": "載る",
+    "Hán Tự": "TẢI",
+    "Nghĩa": "được đăng/tải lên (báo, sách, web); được in; (xe) chở; được đặt lên"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 6",
+    "Từ Vựng": "載せる",
+    "Hán Tự": "TẢI",
+    "Nghĩa": "cho lên, đăng tải"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 6",
+    "Từ Vựng": "そろう",
+    "Hán Tự": "",
+    "Nghĩa": "tụ tập, thu thập, hợp, hòa hợp"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 6",
+    "Từ Vựng": "そろえる",
+    "Hán Tự": "",
+    "Nghĩa": "tập hợp, chuẩn bị, sắp xếp, hợp"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 6",
+    "Từ Vựng": "まとまる",
+    "Hán Tự": "",
+    "Nghĩa": "tổng hợp, thống nhất"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 6",
+    "Từ Vựng": "まとめる",
+    "Hán Tự": "",
+    "Nghĩa": "tập hợp, gom lại, sắp xếp"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 6",
+    "Từ Vựng": "付く",
+    "Hán Tự": "PHỤ",
+    "Nghĩa": "dính, gắn, có được, ngấm vào, đính kèm"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 6",
+    "Từ Vựng": "付ける",
+    "Hán Tự": "PHỤ",
+    "Nghĩa": "bôi, phết, ngấm, đính kèm, viết"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 7",
+    "Từ Vựng": "たまる",
+    "Hán Tự": "",
+    "Nghĩa": "lưu trữ, tích tụ"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 7",
+    "Từ Vựng": "ためる",
+    "Hán Tự": "",
+    "Nghĩa": "tích"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 7",
+    "Từ Vựng": "混じる/交じる",
+    "Hán Tự": "HỖN GIAO",
+    "Nghĩa": "giao nhau, lẫn vào"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 7",
+    "Từ Vựng": "混ざる/交ざる",
+    "Hán Tự": "HỖN GIAO",
+    "Nghĩa": "trộn vào"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 7",
+    "Từ Vựng": "混ぜる/交ぜる",
+    "Hán Tự": "HỖN GIAO",
+    "Nghĩa": "trộn lẫn"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 7",
+    "Từ Vựng": "解ける/溶ける",
+    "Hán Tự": "GIẢI DUNG",
+    "Nghĩa": "được giải (bài toán), được tháo/tuột (nút dây), được giải tỏa (căng thẳng); tan chảy"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 7",
+    "Từ Vựng": "解く/溶く/溶かす",
+    "Hán Tự": "GIẢI DUNG",
+    "Nghĩa": "giải (bài); tháo (nút); hòa tan; làm tan chảy"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 7",
+    "Từ Vựng": "含む",
+    "Hán Tự": "HÀM",
+    "Nghĩa": "bao gồm, chứa"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 7",
+    "Từ Vựng": "含める",
+    "Hán Tự": "HÀM",
+    "Nghĩa": "bao gồm"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 7",
+    "Từ Vựng": "抜ける",
+    "Hán Tự": "BẠT",
+    "Nghĩa": "tháo, tuột"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 7",
+    "Từ Vựng": "抜く",
+    "Hán Tự": "BẠT",
+    "Nghĩa": "lấy ra, nhổ, cho qua, bỏ, thư giãn (cơ thể)"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 7",
+    "Từ Vựng": "現れる",
+    "Hán Tự": "HIỆN",
+    "Nghĩa": "xuất hiện, hiện ra"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 7",
+    "Từ Vựng": "現す",
+    "Hán Tự": "HIỆN",
+    "Nghĩa": "làm hiện ra"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 7",
+    "Từ Vựng": "表れる",
+    "Hán Tự": "BIỂU",
+    "Nghĩa": "biểu hiện"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 7",
+    "Từ Vựng": "表す",
+    "Hán Tự": "BIỂU",
+    "Nghĩa": "biểu thị, biểu lộ"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 8",
+    "Từ Vựng": "散る",
+    "Hán Tự": "TÁN/TẢN",
+    "Nghĩa": "rơi, tàn"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 8",
+    "Từ Vựng": "散らす",
+    "Hán Tự": "TÁN/TẢN",
+    "Nghĩa": "làm rụng, vứt lung tung"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 8",
+    "Từ Vựng": "明ける",
+    "Hán Tự": "MINH",
+    "Nghĩa": "kết thúc (mùa mưa), bắt đầu (năm mới), đến (đêm)"
+  },
+  {
+    "Lesson": "Unit 10 – 動詞C – Bài 8",
+    "Từ Vựng": "差す",
+    "Hán Tự": "SAI",
+    "Nghĩa": "giương (ô), giơ (tay), chiếu (nắng)."
+  },
+  {
+    "Lesson": "まとめ　料理の動詞",
+    "Từ Vựng": "炊ける",
+    "Hán Tự": "XUY",
+    "Nghĩa": "được nấu"
+  },
+  {
+    "Lesson": "まとめ　料理の動詞",
+    "Từ Vựng": "炊く",
+    "Hán Tự": "XUY",
+    "Nghĩa": "nấu (cơm)"
+  },
+  {
+    "Lesson": "まとめ　料理の動詞",
+    "Từ Vựng": "煮える",
+    "Hán Tự": "CHỬ",
+    "Nghĩa": "được nấu, hầm"
+  },
+  {
+    "Lesson": "まとめ　料理の動詞",
+    "Từ Vựng": "煮る",
+    "Hán Tự": "CHỬ",
+    "Nghĩa": "ninh, nấu"
+  },
+  {
+    "Lesson": "まとめ　料理の動詞",
+    "Từ Vựng": "炒める",
+    "Hán Tự": "SAO",
+    "Nghĩa": "rán, xào"
+  },
+  {
+    "Lesson": "まとめ　料理の動詞",
+    "Từ Vựng": "焼ける",
+    "Hán Tự": "THIÊU",
+    "Nghĩa": "được nướng, được rán"
+  },
+  {
+    "Lesson": "まとめ　料理の動詞",
+    "Từ Vựng": "焼く",
+    "Hán Tự": "THIÊU",
+    "Nghĩa": "nướng, rán"
+  },
+  {
+    "Lesson": "まとめ　料理の動詞",
+    "Từ Vựng": "ゆでる",
+    "Hán Tự": "",
+    "Nghĩa": "luộc"
+  },
+  {
+    "Lesson": "まとめ　料理の動詞",
+    "Từ Vựng": "揚げる",
+    "Hán Tự": "DƯƠNG",
+    "Nghĩa": "chiên, rán"
+  },
+  {
+    "Lesson": "まとめ　料理の動詞",
+    "Từ Vựng": "蒸す",
+    "Hán Tự": "CHƯNG",
+    "Nghĩa": "hấp"
+  },
+  {
+    "Lesson": "Unit 12 – 副詞B、連体詞・接続詞 – Bài 1",
+    "Từ Vựng": "ぐっすり",
+    "Hán Tự": "",
+    "Nghĩa": "ngủ say"
+  },
+  {
+    "Lesson": "Unit 12 – 副詞B、連体詞・接続詞 – Bài 1",
+    "Từ Vựng": "きちんと",
+    "Hán Tự": "",
+    "Nghĩa": "nghiêm chỉnh, cẩn thận"
+  },
+  {
+    "Lesson": "Unit 12 – 副詞B、連体詞・接続詞 – Bài 1",
+    "Từ Vựng": "しっかり",
+    "Hán Tự": "",
+    "Nghĩa": "chắc chắn, đáng tin cậy"
+  },
+  {
+    "Lesson": "Unit 12 – 副詞B、連体詞・接続詞 – Bài 1",
+    "Từ Vựng": "はっきり",
+    "Hán Tự": "",
+    "Nghĩa": "rõ ràng"
+  },
+  {
+    "Lesson": "Unit 12 – 副詞B、連体詞・接続詞 – Bài 1",
+    "Từ Vựng": "じっと",
+    "Hán Tự": "",
+    "Nghĩa": "kiên nhẫn, không động đậy, lặng im (duy trì trạng thái)"
+  },
+  {
+    "Lesson": "Unit 12 – 副詞B、連体詞・接続詞 – Bài 1",
+    "Từ Vựng": "そっと",
+    "Hán Tự": "",
+    "Nghĩa": "lặng lẽ, âm thầm, nhẹ nhàng, lén lút"
+  },
+  {
+    "Lesson": "Unit 12 – 副詞B、連体詞・接続詞 – Bài 1",
+    "Từ Vựng": "別々に",
+    "Hán Tự": "BIỆT",
+    "Nghĩa": "riêng ra"
+  },
+  {
+    "Lesson": "Unit 12 – 副詞B、連体詞・接続詞 – Bài 1",
+    "Từ Vựng": "それぞれ",
+    "Hán Tự": "",
+    "Nghĩa": "mỗi, riêng biệt, tương ứng với từng đơn vị"
+  },
+  {
+    "Lesson": "Unit 12 – 副詞B、連体詞・接続詞 – Bài 1",
+    "Từ Vựng": "互いに",
+    "Hán Tự": "HỖ",
+    "Nghĩa": "lẫn nhau"
+  },
+  {
+    "Lesson": "Unit 12 – 副詞B、連体詞・接続詞 – Bài 1",
+    "Từ Vựng": "直接",
+    "Hán Tự": "TRỰC TIẾP",
+    "Nghĩa": "trực tiếp"
+  },
+  {
+    "Lesson": "Unit 12 – 副詞B、連体詞・接続詞 – Bài 1",
+    "Từ Vựng": "本当に",
+    "Hán Tự": "BẢN ĐƯƠNG/ĐÁNG",
+    "Nghĩa": "thực sự, nói thực, sự thật"
+  },
+  {
+    "Lesson": "Unit 12 – 副詞B、連体詞・接続詞 – Bài 1",
+    "Từ Vựng": "必ず",
+    "Hán Tự": "TẤT",
+    "Nghĩa": "chắc chắn, đảm bảo, nhất định, luôn như vậy, không có ngoại lệ"
+  },
+  {
+    "Lesson": "Unit 12 – 副詞B、連体詞・接続詞 – Bài 2",
+    "Từ Vựng": "絶対に",
+    "Hán Tự": "TUYỆT ĐỐI",
+    "Nghĩa": "chắc chắn, không bao giờ, tuyệt đối không"
+  },
+  {
+    "Lesson": "Unit 12 – 副詞B、連体詞・接続詞 – Bài 2",
+    "Từ Vựng": "特に",
+    "Hán Tự": "ĐẶC",
+    "Nghĩa": "đặc biệt là, nhất là"
+  },
+  {
+    "Lesson": "Unit 12 – 副詞B、連体詞・接続詞 – Bài 2",
+    "Từ Vựng": "ただ",
+    "Hán Tự": "",
+    "Nghĩa": "chỉ, chỉ có"
+  },
+  {
+    "Lesson": "Unit 12 – 副詞B、連体詞・接続詞 – Bài 2",
+    "Từ Vựng": "少なくとも",
+    "Hán Tự": "THIẾU/THIỂU",
+    "Nghĩa": "tối thiểu, ít"
+  },
+  {
+    "Lesson": "Unit 12 – 副詞B、連体詞・接続詞 – Bài 2",
+    "Từ Vựng": "決して",
+    "Hán Tự": "QUYẾT",
+    "Nghĩa": "không bao giờ"
+  },
+  {
+    "Lesson": "Unit 12 – 副詞B、連体詞・接続詞 – Bài 2",
+    "Từ Vựng": "少しも",
+    "Hán Tự": "THIẾU/THIỂU",
+    "Nghĩa": "một chút cũng không"
+  },
+  {
+    "Lesson": "Unit 12 – 副詞B、連体詞・接続詞 – Bài 2",
+    "Từ Vựng": "ちっとも",
+    "Hán Tự": "",
+    "Nghĩa": "một chút cũng không"
+  },
+  {
+    "Lesson": "Unit 12 – 副詞B、連体詞・接続詞 – Bài 2",
+    "Từ Vựng": "全く",
+    "Hán Tự": "TOÀN",
+    "Nghĩa": "hoàn toàn không, hoàn toàn, thực sự"
+  },
+  {
+    "Lesson": "Unit 12 – 副詞B、連体詞・接続詞 – Bài 2",
+    "Từ Vựng": "とても",
+    "Hán Tự": "",
+    "Nghĩa": "rất, thực sự, khó có thể, không thể"
+  },
+  {
+    "Lesson": "Unit 12 – 副詞B、連体詞・接続詞 – Bài 2",
+    "Từ Vựng": "どんなに",
+    "Hán Tự": "",
+    "Nghĩa": "bao nhiêu (nhiều), dù cho có thể nào… đi chăng nữa"
+  },
+  {
+    "Lesson": "Unit 12 – 副詞B、連体詞・接続詞 – Bài 3",
+    "Từ Vựng": "どうしても",
+    "Hán Tự": "",
+    "Nghĩa": "dù sao cũng, nhất định, không thể"
+  },
+  {
+    "Lesson": "Unit 12 – 副詞B、連体詞・接続詞 – Bài 3",
+    "Từ Vựng": "まるで",
+    "Hán Tự": "",
+    "Nghĩa": "giống như, hoàn toàn không"
+  },
+  {
+    "Lesson": "Unit 12 – 副詞B、連体詞・接続詞 – Bài 3",
+    "Từ Vựng": "一体",
+    "Hán Tự": "NHẤT THỂ",
+    "Nghĩa": "rốt cuộc thì / rốt cuộc là"
+  },
+  {
+    "Lesson": "Unit 12 – 副詞B、連体詞・接続詞 – Bài 3",
+    "Từ Vựng": "別に",
+    "Hán Tự": "BIỆT",
+    "Nghĩa": "không có gì (cụ thể)"
+  },
+  {
+    "Lesson": "Unit 12 – 副詞B、連体詞・接続詞 – Bài 3",
+    "Từ Vựng": "たった",
+    "Hán Tự": "",
+    "Nghĩa": "chỉ, mỗi"
+  },
+  {
+    "Lesson": "Unit 12 – 副詞B、連体詞・接続詞 – Bài 3",
+    "Từ Vựng": "ほんの",
+    "Hán Tự": "",
+    "Nghĩa": "chỉ, đơn thuần"
+  },
+  {
+    "Lesson": "Unit 12 – 副詞B、連体詞・接続詞 – Bài 3",
+    "Từ Vựng": "それで",
+    "Hán Tự": "",
+    "Nghĩa": "nên là, sau đó thì, rồi sao"
+  },
+  {
+    "Lesson": "Unit 12 – 副詞B、連体詞・接続詞 – Bài 3",
+    "Từ Vựng": "そこで",
+    "Hán Tự": "",
+    "Nghĩa": "do vậy, do đó"
+  },
+  {
+    "Lesson": "Unit 12 – 副詞B、連体詞・接続詞 – Bài 3",
+    "Từ Vựng": "そのうえ",
+    "Hán Tự": "",
+    "Nghĩa": "thêm nữa"
+  },
+  {
+    "Lesson": "Unit 12 – 副詞B、連体詞・接続詞 – Bài 4",
+    "Từ Vựng": "また",
+    "Hán Tự": "",
+    "Nghĩa": "và, cũng lại"
+  },
+  {
+    "Lesson": "Unit 12 – 副詞B、連体詞・接続詞 – Bài 4",
+    "Từ Vựng": "または",
+    "Hán Tự": "",
+    "Nghĩa": "hoặc"
+  },
+  {
+    "Lesson": "Unit 12 – 副詞B、連体詞・接続詞 – Bài 4",
+    "Từ Vựng": "それとも",
+    "Hán Tự": "",
+    "Nghĩa": "hay là, hoặc là"
+  },
+  {
+    "Lesson": "Unit 12 – 副詞B、連体詞・接続詞 – Bài 4",
+    "Từ Vựng": "つまり",
+    "Hán Tự": "",
+    "Nghĩa": "nói các khác, tóm lại là, tức là"
+  }
+]

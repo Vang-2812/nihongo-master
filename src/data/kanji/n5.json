@@ -1,0 +1,2224 @@
+[
+  {
+    "character": "一",
+    "stroke_count": 1,
+    "onyomi": [
+      "イチ",
+      "イツ"
+    ],
+    "kunyomi": [
+      "ひと",
+      "ひと-つ"
+    ],
+    "meaning_vi": "nhất (một)",
+    "mnemonic_vi": "Nằm ngang như một vạch.",
+    "radicals": [
+      {
+        "character": "一",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "二",
+    "stroke_count": 6,
+    "onyomi": [
+      "ONY_40"
+    ],
+    "kunyomi": [
+      "kun_40"
+    ],
+    "meaning_vi": "Hán tự mẫu 40",
+    "mnemonic_vi": "Gợi nhớ chữ 二 mẫu.",
+    "radicals": [
+      {
+        "character": "一",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "八",
+    "stroke_count": 2,
+    "onyomi": [
+      "ハチ"
+    ],
+    "kunyomi": [
+      "や",
+      "や-つ",
+      "やっ-つ",
+      "よう"
+    ],
+    "meaning_vi": "bát (tám)",
+    "mnemonic_vi": "Hai nét mở rộng xuống dưới.",
+    "radicals": [
+      {
+        "character": "八",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "六",
+    "stroke_count": 4,
+    "onyomi": [
+      "ロク"
+    ],
+    "kunyomi": [
+      "む",
+      "む-つ",
+      "むっ-つ",
+      "むい"
+    ],
+    "meaning_vi": "lục (sáu)",
+    "mnemonic_vi": "Đội mũ và có 2 chân ở dưới.",
+    "radicals": [
+      {
+        "character": "八",
+        "is_main": true,
+        "position": "bottom"
+      }
+    ]
+  },
+  {
+    "character": "日",
+    "stroke_count": 4,
+    "onyomi": [
+      "ニチ",
+      "ジツ"
+    ],
+    "kunyomi": [
+      "ひ",
+      "び",
+      "か"
+    ],
+    "meaning_vi": "nhật (ngày, mặt trời)",
+    "mnemonic_vi": "Hình vẽ mặt trời tròn có nhân ở giữa.",
+    "radicals": [
+      {
+        "character": "日",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "目",
+    "stroke_count": 5,
+    "onyomi": [
+      "もく",
+      "ぼく"
+    ],
+    "kunyomi": [
+      "め",
+      "-め",
+      "ま-"
+    ],
+    "meaning_vi": "mục (mắt, khoản mục)",
+    "mnemonic_vi": null,
+    "radicals": [
+      {
+        "character": "目",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "三",
+    "stroke_count": 3,
+    "onyomi": [
+      "サン"
+    ],
+    "kunyomi": [
+      "み",
+      "み-つ",
+      "みっ-つ"
+    ],
+    "meaning_vi": "tam (ba)",
+    "mnemonic_vi": "Ba nét gạch.",
+    "radicals": [
+      {
+        "character": "一",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "手",
+    "stroke_count": 4,
+    "onyomi": [
+      "しゅ",
+      "ず"
+    ],
+    "kunyomi": [
+      "て",
+      "て-",
+      "-て",
+      "た-"
+    ],
+    "meaning_vi": "thủ (cái tay)",
+    "mnemonic_vi": null,
+    "radicals": [
+      {
+        "character": "手",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "十",
+    "stroke_count": 2,
+    "onyomi": [
+      "ジュウ"
+    ],
+    "kunyomi": [
+      "とお",
+      "と"
+    ],
+    "meaning_vi": "thập (mười)",
+    "mnemonic_vi": "Hình chữ thập biểu thị mười.",
+    "radicals": [
+      {
+        "character": "十",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "千",
+    "stroke_count": 3,
+    "onyomi": [
+      "セン"
+    ],
+    "kunyomi": [
+      "ち"
+    ],
+    "meaning_vi": "thiên (nghìn)",
+    "mnemonic_vi": "Số Mười (十) thêm một gạch chéo trên đầu.",
+    "radicals": [
+      {
+        "character": "十",
+        "is_main": true,
+        "position": "bottom"
+      }
+    ]
+  },
+  {
+    "character": "土",
+    "stroke_count": 3,
+    "onyomi": [
+      "ト",
+      "ド"
+    ],
+    "kunyomi": [
+      "つち"
+    ],
+    "meaning_vi": "thổ (đất)",
+    "mnemonic_vi": "Cây mọc từ mặt đất lên.",
+    "radicals": [
+      {
+        "character": "土",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "上",
+    "stroke_count": 3,
+    "onyomi": [
+      "ジョウ",
+      "ショウ"
+    ],
+    "kunyomi": [
+      "うえ",
+      "あ-がる",
+      "のぼ-る"
+    ],
+    "meaning_vi": "thượng (ở trên)",
+    "mnemonic_vi": "Vạch nằm phía trên trục.",
+    "radicals": [
+      {
+        "character": "一",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "下",
+    "stroke_count": 3,
+    "onyomi": [
+      "カ",
+      "ゲ"
+    ],
+    "kunyomi": [
+      "した",
+      "さ-げる",
+      "くだ-る"
+    ],
+    "meaning_vi": "hạ (ở dưới)",
+    "mnemonic_vi": "Vạch nằm phía dưới trục.",
+    "radicals": [
+      {
+        "character": "一",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "万",
+    "stroke_count": 3,
+    "onyomi": [
+      "マン",
+      "バン"
+    ],
+    "kunyomi": [
+      "よろず"
+    ],
+    "meaning_vi": "vạn (mười nghìn)",
+    "mnemonic_vi": "Gần giống chữ Phương 方 nhưng mất một góc.",
+    "radicals": [
+      {
+        "character": "一",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "九",
+    "stroke_count": 2,
+    "onyomi": [
+      "キュウ",
+      "ク"
+    ],
+    "kunyomi": [
+      "ここの",
+      "ここの-つ"
+    ],
+    "meaning_vi": "cửu (chín)",
+    "mnemonic_vi": "Một đường móc lên có nét cắt chéo.",
+    "radicals": [
+      {
+        "character": "乙",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "口",
+    "stroke_count": 3,
+    "onyomi": [
+      "こう",
+      "く"
+    ],
+    "kunyomi": [
+      "くち"
+    ],
+    "meaning_vi": "khẩu (mồm, miệng, cửa)",
+    "mnemonic_vi": null,
+    "radicals": [
+      {
+        "character": "口",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "四",
+    "stroke_count": 5,
+    "onyomi": [
+      "シ"
+    ],
+    "kunyomi": [
+      "よ",
+      "よ-つ",
+      "よっ-つ",
+      "よん"
+    ],
+    "meaning_vi": "tứ (bốn)",
+    "mnemonic_vi": "Khung vuông có hai người ở trong.",
+    "radicals": [
+      {
+        "character": "囗",
+        "is_main": true,
+        "position": "enclose"
+      }
+    ]
+  },
+  {
+    "character": "西",
+    "stroke_count": 6,
+    "onyomi": [
+      "セイ",
+      "サイ"
+    ],
+    "kunyomi": [
+      "にし"
+    ],
+    "meaning_vi": "tây (phía tây)",
+    "mnemonic_vi": "Mặt trời lặn sau tổ chim.",
+    "radicals": [
+      {
+        "character": "一",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "七",
+    "stroke_count": 2,
+    "onyomi": [
+      "シチ"
+    ],
+    "kunyomi": [
+      "なな",
+      "なな-つ",
+      "なの"
+    ],
+    "meaning_vi": "thất (bảy)",
+    "mnemonic_vi": "Nhìn giống số 7 lộn ngược.",
+    "radicals": [
+      {
+        "character": "一",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "北",
+    "stroke_count": 5,
+    "onyomi": [
+      "ホク"
+    ],
+    "kunyomi": [
+      "きた"
+    ],
+    "meaning_vi": "bắc (phía bắc)",
+    "mnemonic_vi": "Hai người ngồi quay lưng tránh rét bắc.",
+    "radicals": [
+      {
+        "character": "一",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "円",
+    "stroke_count": 4,
+    "onyomi": [
+      "エン"
+    ],
+    "kunyomi": [
+      "まる",
+      "まる-い"
+    ],
+    "meaning_vi": "viên (tiền yên Nhật, hình tròn)",
+    "mnemonic_vi": "Khung bao quanh có nét gạch ngang và sổ.",
+    "radicals": [
+      {
+        "character": "冂",
+        "is_main": true,
+        "position": "enclose"
+      }
+    ]
+  },
+  {
+    "character": "五",
+    "stroke_count": 6,
+    "onyomi": [
+      "ONY_48"
+    ],
+    "kunyomi": [
+      "kun_48"
+    ],
+    "meaning_vi": "Hán tự mẫu 48",
+    "mnemonic_vi": "Gợi nhớ chữ 五 mẫu.",
+    "radicals": [
+      {
+        "character": "一",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "竹",
+    "stroke_count": 6,
+    "onyomi": [
+      "チク"
+    ],
+    "kunyomi": [
+      "たけ"
+    ],
+    "meaning_vi": "TRÚC (tre)",
+    "mnemonic_vi": "Đây là thể hiện của cây tre",
+    "radicals": []
+  },
+  {
+    "character": "気",
+    "stroke_count": 6,
+    "onyomi": [
+      "き",
+      "け"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "tinh thần, tâm trạng",
+    "mnemonic_vi": "Hơi thở (气) bên trong - tinh thần, khí.",
+    "radicals": []
+  },
+  {
+    "character": "左",
+    "stroke_count": 5,
+    "onyomi": [
+      "サ"
+    ],
+    "kunyomi": [
+      "ひだり"
+    ],
+    "meaning_vi": "tả (bên trái)",
+    "mnemonic_vi": "Tay cầm dụng cụ làm việc.",
+    "radicals": [
+      {
+        "character": "一",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "右",
+    "stroke_count": 5,
+    "onyomi": [
+      "ウ",
+      "ユウ"
+    ],
+    "kunyomi": [
+      "みぎ"
+    ],
+    "meaning_vi": "hữu (bên phải)",
+    "mnemonic_vi": "Tay đưa thức ăn vào miệng.",
+    "radicals": [
+      {
+        "character": "一",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "石",
+    "stroke_count": 5,
+    "onyomi": [
+      "せき",
+      "しゃく",
+      "こく"
+    ],
+    "kunyomi": [
+      "いし"
+    ],
+    "meaning_vi": "thạch đạn (đá, tạ (đơn vị đo, bằng 120 cân))",
+    "mnemonic_vi": null,
+    "radicals": [
+      {
+        "character": "石",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "岩",
+    "stroke_count": 8,
+    "onyomi": [
+      "ガン"
+    ],
+    "kunyomi": [
+      "いわ"
+    ],
+    "meaning_vi": "NHAM (đá; tảng đá; vách đá)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "石",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "山",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "年",
+    "stroke_count": 6,
+    "onyomi": [
+      "ねん"
+    ],
+    "kunyomi": [
+      "とし"
+    ],
+    "meaning_vi": "năm",
+    "mnemonic_vi": "Mùa màng (𠂉) khô (干) theo năm.",
+    "radicals": []
+  },
+  {
+    "character": "人",
+    "stroke_count": 2,
+    "onyomi": [
+      "ジン",
+      "ニン"
+    ],
+    "kunyomi": [
+      "ひと",
+      "-り",
+      "-と"
+    ],
+    "meaning_vi": "nhân (người)",
+    "mnemonic_vi": "Người đứng nghiêng bước chân đi.",
+    "radicals": [
+      {
+        "character": "人",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "入",
+    "stroke_count": 2,
+    "onyomi": [
+      "にゅう"
+    ],
+    "kunyomi": [
+      "はい（る）",
+      "い(れる）",
+      "い(る）"
+    ],
+    "meaning_vi": "vào, điền vào, nhét vào",
+    "mnemonic_vi": "Đi vào như dòng nước chảy vào.",
+    "radicals": []
+  },
+  {
+    "character": "大",
+    "stroke_count": 3,
+    "onyomi": [
+      "ダイ",
+      "タイ"
+    ],
+    "kunyomi": [
+      "おお-きい"
+    ],
+    "meaning_vi": "đại (lớn)",
+    "mnemonic_vi": "Người dang rộng hai tay.",
+    "radicals": [
+      {
+        "character": "一",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "犬",
+    "stroke_count": 4,
+    "onyomi": [
+      "けん"
+    ],
+    "kunyomi": [
+      "いぬ",
+      "いぬ-"
+    ],
+    "meaning_vi": "khuyển (con chó)",
+    "mnemonic_vi": null,
+    "radicals": [
+      {
+        "character": "犬",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "子",
+    "stroke_count": 3,
+    "onyomi": [
+      "し",
+      "す"
+    ],
+    "kunyomi": [
+      "こ"
+    ],
+    "meaning_vi": "đứa bé, trẻ con",
+    "mnemonic_vi": "Đứa trẻ với cánh tay dang rộng.",
+    "radicals": []
+  },
+  {
+    "character": "字",
+    "stroke_count": 6,
+    "onyomi": [
+      "じ"
+    ],
+    "kunyomi": [
+      "あざ",
+      "あざな",
+      "-な"
+    ],
+    "meaning_vi": "tự (chữ, giấy tờ, hiệu, tên chữ, người con gái đã hứa hôn)",
+    "mnemonic_vi": null,
+    "radicals": [
+      {
+        "character": "子",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "学",
+    "stroke_count": 8,
+    "onyomi": [
+      "ガク"
+    ],
+    "kunyomi": [
+      "まな-ぶ"
+    ],
+    "meaning_vi": "học (học tập)",
+    "mnemonic_vi": "Đứa trẻ học dưới mái nhà.",
+    "radicals": [
+      {
+        "character": "一",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "月",
+    "stroke_count": 4,
+    "onyomi": [
+      "ゲツ",
+      "ガツ"
+    ],
+    "kunyomi": [
+      "つき"
+    ],
+    "meaning_vi": "nguyệt (tháng, mặt trăng)",
+    "mnemonic_vi": "Hình vầng trăng khuyết.",
+    "radicals": [
+      {
+        "character": "月",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "言",
+    "stroke_count": 7,
+    "onyomi": [
+      "げん",
+      "ごん"
+    ],
+    "kunyomi": [
+      "い.う",
+      "こと"
+    ],
+    "meaning_vi": "ngân ngôn (nói, lời nói)",
+    "mnemonic_vi": null,
+    "radicals": [
+      {
+        "character": "言",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "牛",
+    "stroke_count": 4,
+    "onyomi": [
+      "ぎゅう"
+    ],
+    "kunyomi": [
+      "うし"
+    ],
+    "meaning_vi": "ngưu (con trâu, sao Ngưu)",
+    "mnemonic_vi": null,
+    "radicals": [
+      {
+        "character": "牛",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "花",
+    "stroke_count": 7,
+    "onyomi": [
+      "か",
+      "け"
+    ],
+    "kunyomi": [
+      "はな"
+    ],
+    "meaning_vi": "hoa (bông hoa)",
+    "mnemonic_vi": null,
+    "radicals": [
+      {
+        "character": "艸",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "今",
+    "stroke_count": 4,
+    "onyomi": [
+      "こん",
+      "きん"
+    ],
+    "kunyomi": [
+      "いま"
+    ],
+    "meaning_vi": "bây giờ",
+    "mnemonic_vi": "Bây giờ là lúc tập hợp (今) lại.",
+    "radicals": []
+  },
+  {
+    "character": "米",
+    "stroke_count": 6,
+    "onyomi": [
+      "べい",
+      "まい",
+      "めえとる"
+    ],
+    "kunyomi": [
+      "こめ",
+      "よね"
+    ],
+    "meaning_vi": "mễ (gạo, mét (đơn vị đo chiều dài))",
+    "mnemonic_vi": null,
+    "radicals": [
+      {
+        "character": "米",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "来",
+    "stroke_count": 7,
+    "onyomi": [
+      "らい"
+    ],
+    "kunyomi": [
+      "く（る）",
+      "きた（る）",
+      "きた（す）"
+    ],
+    "meaning_vi": "đến, tới",
+    "mnemonic_vi": "Cây (木) đơm hoa kết trái - đến, tới.",
+    "radicals": []
+  },
+  {
+    "character": "木",
+    "stroke_count": 4,
+    "onyomi": [
+      "モク",
+      "ボク"
+    ],
+    "kunyomi": [
+      "き",
+      "こ-"
+    ],
+    "meaning_vi": "mộc (cây cối)",
+    "mnemonic_vi": "Hình cây cối có cành và rễ cây.",
+    "radicals": [
+      {
+        "character": "木",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "林",
+    "stroke_count": 8,
+    "onyomi": [
+      "リン"
+    ],
+    "kunyomi": [
+      "はやし"
+    ],
+    "meaning_vi": "LÂM (rừng; lùm cây)",
+    "mnemonic_vi": "Hai cái cây (木) trở thành một rừng nhỏ",
+    "radicals": [
+      {
+        "character": "木",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "森",
+    "stroke_count": 12,
+    "onyomi": [
+      "シン"
+    ],
+    "kunyomi": [
+      "もり"
+    ],
+    "meaning_vi": "SÂM (rừng)",
+    "mnemonic_vi": "Ba cái cây(木) trở thành một cánh rừng",
+    "radicals": [
+      {
+        "character": "林",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "休",
+    "stroke_count": 6,
+    "onyomi": [
+      "きゅう"
+    ],
+    "kunyomi": [
+      "やす（む）"
+    ],
+    "meaning_vi": "nghỉ ngơi",
+    "mnemonic_vi": "Người (亻) nghỉ dưới gốc cây (木).",
+    "radicals": []
+  },
+  {
+    "character": "本",
+    "stroke_count": 5,
+    "onyomi": [
+      "ホン"
+    ],
+    "kunyomi": [
+      "moto"
+    ],
+    "meaning_vi": "bản (sách, gốc rễ)",
+    "mnemonic_vi": "Cây có gạch ngang biểu thị gốc rễ.",
+    "radicals": [
+      {
+        "character": "一",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "体",
+    "stroke_count": 7,
+    "onyomi": [
+      "たい",
+      "てい"
+    ],
+    "kunyomi": [
+      "からだ",
+      "かたち"
+    ],
+    "meaning_vi": "bổn thể (thân, mình, hình thể, dạng)",
+    "mnemonic_vi": null,
+    "radicals": [
+      {
+        "character": "人",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "音",
+    "stroke_count": 9,
+    "onyomi": [
+      "おん",
+      "いん",
+      "-のん"
+    ],
+    "kunyomi": [
+      "おと",
+      "ね"
+    ],
+    "meaning_vi": "âm ấm (âm, tiếng)",
+    "mnemonic_vi": null,
+    "radicals": [
+      {
+        "character": "音",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "暗",
+    "stroke_count": 13,
+    "onyomi": [
+      "アン"
+    ],
+    "kunyomi": [
+      "くら.い",
+      "くら.む",
+      "くれ.る"
+    ],
+    "meaning_vi": "ÁM (tối; bóng tối; chỗ tối)",
+    "mnemonic_vi": "Ở trong bóng tối và bạn có thể nghe thấy âm thanh(音).",
+    "radicals": [
+      {
+        "character": "日",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "音",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "水",
+    "stroke_count": 4,
+    "onyomi": [
+      "スイ"
+    ],
+    "kunyomi": [
+      "みず",
+      "みず-"
+    ],
+    "meaning_vi": "thủy (nước)",
+    "mnemonic_vi": "Hình dòng nước chảy có bọt bắn ra.",
+    "radicals": [
+      {
+        "character": "水",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "泳",
+    "stroke_count": 8,
+    "onyomi": [
+      "えい"
+    ],
+    "kunyomi": [
+      "およ.ぐ"
+    ],
+    "meaning_vi": "vịnh (lặn dưới nước)",
+    "mnemonic_vi": null,
+    "radicals": [
+      {
+        "character": "水",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "火",
+    "stroke_count": 4,
+    "onyomi": [
+      "カ"
+    ],
+    "kunyomi": [
+      "ひ",
+      "び",
+      "ほ"
+    ],
+    "meaning_vi": "hỏa (lửa)",
+    "mnemonic_vi": "Hình ngọn lửa bùng cháy.",
+    "radicals": [
+      {
+        "character": "火",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "立",
+    "stroke_count": 5,
+    "onyomi": [
+      "りつ",
+      "りゅう",
+      "りっとる"
+    ],
+    "kunyomi": [
+      "た.つ",
+      "-た.つ",
+      "た.ち-",
+      "た.てる",
+      "-た.てる",
+      "た.て-",
+      "たて-",
+      "-た.て",
+      "-だ.て",
+      "-だ.てる"
+    ],
+    "meaning_vi": "lập (đứng thẳng, lập tức, tức thì)",
+    "mnemonic_vi": null,
+    "radicals": [
+      {
+        "character": "立",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "話",
+    "stroke_count": 13,
+    "onyomi": [
+      "わ"
+    ],
+    "kunyomi": [
+      "はなし",
+      "はな（す）"
+    ],
+    "meaning_vi": "nói, nói chuyện , câu chuyện",
+    "mnemonic_vi": "Lời nói (言) như lưỡi (舌) - nói chuyện.",
+    "radicals": []
+  },
+  {
+    "character": "門",
+    "stroke_count": 8,
+    "onyomi": [
+      "モン"
+    ],
+    "kunyomi": [
+      "かど",
+      "と"
+    ],
+    "meaning_vi": "MÔN (nơi sự vật ra vào)",
+    "mnemonic_vi": "Đây là thể hiện của cái cổng",
+    "radicals": []
+  },
+  {
+    "character": "聞",
+    "stroke_count": 14,
+    "onyomi": [
+      "ぶん",
+      "もん"
+    ],
+    "kunyomi": [
+      "き（く）",
+      "き（こえる）"
+    ],
+    "meaning_vi": "nghe, hỏi",
+    "mnemonic_vi": "Tai (耳) lắng nghe qua cửa (門) - nghe.",
+    "radicals": []
+  },
+  {
+    "character": "間",
+    "stroke_count": 12,
+    "onyomi": [
+      "かん",
+      "けん"
+    ],
+    "kunyomi": [
+      "あいだ"
+    ],
+    "meaning_vi": "trong khoảng, ở giữa",
+    "mnemonic_vi": "Cửa (門) đón ánh mặt trời (日) - khoảng giữa.",
+    "radicals": []
+  },
+  {
+    "character": "金",
+    "stroke_count": 8,
+    "onyomi": [
+      "キン",
+      "コン"
+    ],
+    "kunyomi": [
+      "かね",
+      "かな-"
+    ],
+    "meaning_vi": "kim (vàng, tiền, kim loại)",
+    "mnemonic_vi": "Đất nung có chứa quặng vàng quý giá bên dưới mái che.",
+    "radicals": [
+      {
+        "character": "金",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "貝",
+    "stroke_count": 7,
+    "onyomi": [
+      "バイ"
+    ],
+    "kunyomi": [
+      "かい"
+    ],
+    "meaning_vi": "Con sò",
+    "mnemonic_vi": "Chữ 貝 có nghĩa là \"Con sò\".",
+    "radicals": []
+  },
+  {
+    "character": "買",
+    "stroke_count": 12,
+    "onyomi": [
+      "ばい"
+    ],
+    "kunyomi": [
+      "か.う"
+    ],
+    "meaning_vi": "mãi (mua, sắm, tậu)",
+    "mnemonic_vi": null,
+    "radicals": [
+      {
+        "character": "貝",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "生",
+    "stroke_count": 5,
+    "onyomi": [
+      "セイ",
+      "ショウ"
+    ],
+    "kunyomi": [
+      "い-きる",
+      "う-まれる"
+    ],
+    "meaning_vi": "sinh (sống, sinh ra)",
+    "mnemonic_vi": "Mầm cây mọc khỏi đất.",
+    "radicals": [
+      {
+        "character": "一",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "寺",
+    "stroke_count": 6,
+    "onyomi": [
+      "ジ"
+    ],
+    "kunyomi": [
+      "てら"
+    ],
+    "meaning_vi": "TỰ (chùa)",
+    "mnemonic_vi": "Nhìn kia,có một ngôi đền trên mặt đất",
+    "radicals": [
+      {
+        "character": "寸",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "土",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "時",
+    "stroke_count": 10,
+    "onyomi": [
+      "じ"
+    ],
+    "kunyomi": [
+      "とき"
+    ],
+    "meaning_vi": "thời gian, giờ",
+    "mnemonic_vi": "Mặt trời (日) ở chùa (寺) chỉ thời gian.",
+    "radicals": []
+  },
+  {
+    "character": "魚",
+    "stroke_count": 11,
+    "onyomi": [
+      "ぎょ"
+    ],
+    "kunyomi": [
+      "うお",
+      "さかな",
+      "-ざかな"
+    ],
+    "meaning_vi": "ngư (con cá)",
+    "mnemonic_vi": null,
+    "radicals": [
+      {
+        "character": "魚",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "雨",
+    "stroke_count": 8,
+    "onyomi": [
+      "う"
+    ],
+    "kunyomi": [
+      "あめ"
+    ],
+    "meaning_vi": "mưa",
+    "mnemonic_vi": "Mưa rơi từ trên trời với những giọt nước.",
+    "radicals": []
+  },
+  {
+    "character": "電",
+    "stroke_count": 13,
+    "onyomi": [
+      "でん"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "điện",
+    "mnemonic_vi": "Mưa (雨) kèm theo tia chớp - điện.",
+    "radicals": []
+  },
+  {
+    "character": "新",
+    "stroke_count": 13,
+    "onyomi": [
+      "しん"
+    ],
+    "kunyomi": [
+      "あたら.しい",
+      "あら.た",
+      "あら-",
+      "にい-"
+    ],
+    "meaning_vi": "tân (mới mẻ)",
+    "mnemonic_vi": null,
+    "radicals": [
+      {
+        "character": "斤",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "中",
+    "stroke_count": 4,
+    "onyomi": [
+      "チュウ"
+    ],
+    "kunyomi": [
+      "なか"
+    ],
+    "meaning_vi": "trung (ở giữa)",
+    "mnemonic_vi": "Một đường đâm xuyên hồng tâm.",
+    "radicals": [
+      {
+        "character": "一",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "半",
+    "stroke_count": 5,
+    "onyomi": [
+      "はん"
+    ],
+    "kunyomi": [
+      "なか（ば）"
+    ],
+    "meaning_vi": "một nửa, giữa",
+    "mnemonic_vi": "Chia đôi (丷) một nửa (十).",
+    "radicals": []
+  },
+  {
+    "character": "母",
+    "stroke_count": 5,
+    "onyomi": [
+      "ぼ"
+    ],
+    "kunyomi": [
+      "はは"
+    ],
+    "meaning_vi": "mẹ",
+    "mnemonic_vi": "Người mẹ với dòng sữa (丶丶).",
+    "radicals": []
+  },
+  {
+    "character": "方",
+    "stroke_count": 4,
+    "onyomi": [
+      "ほう"
+    ],
+    "kunyomi": [
+      "かた",
+      "-かた",
+      "-がた"
+    ],
+    "meaning_vi": "bàng phương (phía, vuông, hình vuông, trái lời, không tuân theo)",
+    "mnemonic_vi": null,
+    "radicals": [
+      {
+        "character": "方",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "友",
+    "stroke_count": 4,
+    "onyomi": [
+      "ゆう"
+    ],
+    "kunyomi": [
+      "とも"
+    ],
+    "meaning_vi": "bạn",
+    "mnemonic_vi": "Tay trái (𠂇) và tay phải (又) - bạn bè.",
+    "radicals": []
+  },
+  {
+    "character": "分",
+    "stroke_count": 4,
+    "onyomi": [
+      "ぶん",
+      "ぶ",
+      "ふん"
+    ],
+    "kunyomi": [
+      "わ（ける）",
+      "わ（かれる）",
+      "わか（る）"
+    ],
+    "meaning_vi": "phút, phân chia,hiểu",
+    "mnemonic_vi": "Chia (八) bằng dao (刀) - phân chia.",
+    "radicals": []
+  },
+  {
+    "character": "食",
+    "stroke_count": 9,
+    "onyomi": [
+      "しょく"
+    ],
+    "kunyomi": [
+      "た（べる）",
+      "く（らう）",
+      "く(る）"
+    ],
+    "meaning_vi": "ăn",
+    "mnemonic_vi": "Thức ăn với nắp đậy bên trên.",
+    "radicals": []
+  },
+  {
+    "character": "父",
+    "stroke_count": 4,
+    "onyomi": [
+      "ふ"
+    ],
+    "kunyomi": [
+      "ちち"
+    ],
+    "meaning_vi": "bố",
+    "mnemonic_vi": "Người cha với đôi tay che chở.",
+    "radicals": []
+  },
+  {
+    "character": "校",
+    "stroke_count": 10,
+    "onyomi": [
+      "コウ"
+    ],
+    "kunyomi": [
+      "かせ"
+    ],
+    "meaning_vi": "hiệu (trường học)",
+    "mnemonic_vi": "Mộc (木) ghép với Giao (交) tạo thành trường học.",
+    "radicals": [
+      {
+        "character": "一",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "百",
+    "stroke_count": 6,
+    "onyomi": [
+      "ヒャク"
+    ],
+    "kunyomi": [
+      "もも"
+    ],
+    "meaning_vi": "bách (trăm)",
+    "mnemonic_vi": "Một (一) cộng Bạch (白 - trắng) = Một Trăm.",
+    "radicals": [
+      {
+        "character": "白",
+        "is_main": true,
+        "position": "bottom"
+      }
+    ]
+  },
+  {
+    "character": "読",
+    "stroke_count": 14,
+    "onyomi": [
+      "どく"
+    ],
+    "kunyomi": [
+      "よ（む）"
+    ],
+    "meaning_vi": "đọc",
+    "mnemonic_vi": "Nói (言) về việc bán (売) sách - đọc.",
+    "radicals": []
+  },
+  {
+    "character": "車",
+    "stroke_count": 7,
+    "onyomi": [
+      "シャ"
+    ],
+    "kunyomi": [
+      "くるま"
+    ],
+    "meaning_vi": "xa (xe cộ)",
+    "mnemonic_vi": "Chiếc xe nhìn từ trên cao xuống có trục bánh.",
+    "radicals": [
+      {
+        "character": "車",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "明",
+    "stroke_count": 8,
+    "onyomi": [
+      "めい",
+      "みょう",
+      "みん"
+    ],
+    "kunyomi": [
+      "あ.かり",
+      "あか.るい",
+      "あか.るむ",
+      "あか.らむ",
+      "あき.らか",
+      "あ.ける",
+      "-あ.け",
+      "あ.く",
+      "あ.くる",
+      "あ.かす"
+    ],
+    "meaning_vi": "minh (sáng, đời nhà Minh (Trung Quốc))",
+    "mnemonic_vi": null,
+    "radicals": [
+      {
+        "character": "日",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "出",
+    "stroke_count": 5,
+    "onyomi": [
+      "しゅつ"
+    ],
+    "kunyomi": [
+      "だ（す）",
+      "で（る）"
+    ],
+    "meaning_vi": "xuất, rời đi, ra đi",
+    "mnemonic_vi": "Núi (山) nhô ra khỏi lòng đất - đi ra.",
+    "radicals": []
+  },
+  {
+    "character": "書",
+    "stroke_count": 10,
+    "onyomi": [
+      "しょ"
+    ],
+    "kunyomi": [
+      "か（く）"
+    ],
+    "meaning_vi": "viết",
+    "mnemonic_vi": "Bàn tay cầm bút (聿) viết trên giấy (日).",
+    "radicals": []
+  },
+  {
+    "character": "元",
+    "stroke_count": 4,
+    "onyomi": [
+      "げん",
+      "がん"
+    ],
+    "kunyomi": [
+      "もと"
+    ],
+    "meaning_vi": "nguyên (bắt đầu, thứ nhất, chủ yếu, căn bản, nguyên tố, đơn vị tiền tệ, đời nhà Nguyên)",
+    "mnemonic_vi": null,
+    "radicals": [
+      {
+        "character": "儿",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "古",
+    "stroke_count": 5,
+    "onyomi": [
+      "こ"
+    ],
+    "kunyomi": [
+      "ふる.い",
+      "ふる-",
+      "-ふる.す"
+    ],
+    "meaning_vi": "cổ (cũ, xưa)",
+    "mnemonic_vi": null,
+    "radicals": [
+      {
+        "character": "口",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "何",
+    "stroke_count": 7,
+    "onyomi": [
+      "カ"
+    ],
+    "kunyomi": [
+      "なに",
+      "なん"
+    ],
+    "meaning_vi": "hà (cái gì)",
+    "mnemonic_vi": "Một người (人/亻) đang mang vác một cái gì đó khả dĩ.",
+    "radicals": [
+      {
+        "character": "人",
+        "is_main": true,
+        "position": "left"
+      }
+    ]
+  },
+  {
+    "character": "夕",
+    "stroke_count": 3,
+    "onyomi": [
+      "せき"
+    ],
+    "kunyomi": [
+      "ゆう"
+    ],
+    "meaning_vi": "tịch (buổi chiều, buổi tối, bóng tối)",
+    "mnemonic_vi": null,
+    "radicals": [
+      {
+        "character": "夕",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "外",
+    "stroke_count": 5,
+    "onyomi": [
+      "ガイ",
+      "ゲ"
+    ],
+    "kunyomi": [
+      "そと",
+      "ほか",
+      "はず-す"
+    ],
+    "meaning_vi": "ngoại (bên ngoài)",
+    "mnemonic_vi": "Buổi tối cầm dao ra ngoài.",
+    "radicals": [
+      {
+        "character": "一",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "多",
+    "stroke_count": 6,
+    "onyomi": [
+      "た"
+    ],
+    "kunyomi": [
+      "おお.い",
+      "まさ.に",
+      "まさ.る"
+    ],
+    "meaning_vi": "đa (nhiều)",
+    "mnemonic_vi": null,
+    "radicals": [
+      {
+        "character": "夕",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "名",
+    "stroke_count": 6,
+    "onyomi": [
+      "めい",
+      "みょう"
+    ],
+    "kunyomi": [
+      "な"
+    ],
+    "meaning_vi": "danh, tên",
+    "mnemonic_vi": "Buổi tối (夕) gọi tên (口) - tên.",
+    "radicals": []
+  },
+  {
+    "character": "小",
+    "stroke_count": 3,
+    "onyomi": [
+      "ショウ"
+    ],
+    "kunyomi": [
+      "ちい-さい",
+      "こ",
+      "お"
+    ],
+    "meaning_vi": "tiểu (nhỏ)",
+    "mnemonic_vi": "Ba chấm nhỏ.",
+    "radicals": [
+      {
+        "character": "一",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "少",
+    "stroke_count": 4,
+    "onyomi": [
+      "しょう"
+    ],
+    "kunyomi": [
+      "すく.ない",
+      "すこ.し"
+    ],
+    "meaning_vi": "thiếu thiểu (kém, không đủ, trẻ tuổi, ít ỏi)",
+    "mnemonic_vi": null,
+    "radicals": [
+      {
+        "character": "小",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "帰",
+    "stroke_count": 10,
+    "onyomi": [
+      "き"
+    ],
+    "kunyomi": [
+      "かえ.る",
+      "かえ.す",
+      "おく.る",
+      "とつ.ぐ"
+    ],
+    "meaning_vi": "quy (trở về)",
+    "mnemonic_vi": null,
+    "radicals": [
+      {
+        "character": "巾",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "内",
+    "stroke_count": 4,
+    "onyomi": [
+      "ない",
+      "だい"
+    ],
+    "kunyomi": [
+      "うち"
+    ],
+    "meaning_vi": "nạp nội (bên trong)",
+    "mnemonic_vi": null,
+    "radicals": [
+      {
+        "character": "入",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "肉",
+    "stroke_count": 6,
+    "onyomi": [
+      "にく"
+    ],
+    "kunyomi": [
+      "しし"
+    ],
+    "meaning_vi": "nhụ nhục nậu (thịt, cùi quả)",
+    "mnemonic_vi": null,
+    "radicals": [
+      {
+        "character": "肉",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "見",
+    "stroke_count": 7,
+    "onyomi": [
+      "けん"
+    ],
+    "kunyomi": [
+      "み（る）",
+      "み(せる）",
+      "み(える)"
+    ],
+    "meaning_vi": "nhìn, xem",
+    "mnemonic_vi": "Mắt (目) mở to nhìn (儿) - thấy.",
+    "radicals": []
+  },
+  {
+    "character": "女",
+    "stroke_count": 3,
+    "onyomi": [
+      "じょ",
+      "にょう"
+    ],
+    "kunyomi": [
+      "おんな",
+      "め"
+    ],
+    "meaning_vi": "phụ nữ",
+    "mnemonic_vi": "Người phụ nữ với dáng điệu mềm mại.",
+    "radicals": []
+  },
+  {
+    "character": "好",
+    "stroke_count": 6,
+    "onyomi": [
+      "コウ"
+    ],
+    "kunyomi": [
+      "この.む",
+      "す.く",
+      "よ.い",
+      "い.い"
+    ],
+    "meaning_vi": "HẢO, HIẾU (thích; yêu; mến)",
+    "mnemonic_vi": "Người phụ nữ(女) thích trẻ con(子).",
+    "radicals": [
+      {
+        "character": "女",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "子",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "安",
+    "stroke_count": 6,
+    "onyomi": [
+      "あん"
+    ],
+    "kunyomi": [
+      "やす.い",
+      "やす.まる",
+      "やす",
+      "やす.らか"
+    ],
+    "meaning_vi": "an yên (yên tĩnh, yên lành, làm yên lòng, an toàn, dự định)",
+    "mnemonic_vi": null,
+    "radicals": [
+      {
+        "character": "宀",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "町",
+    "stroke_count": 7,
+    "onyomi": [
+      "ちょう"
+    ],
+    "kunyomi": [
+      "まち"
+    ],
+    "meaning_vi": "đinh đỉnh (bờ ruộng, đinh (đơn vị đo, bằng 100 mẫu))",
+    "mnemonic_vi": null,
+    "radicals": [
+      {
+        "character": "田",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "東",
+    "stroke_count": 8,
+    "onyomi": [
+      "トウ"
+    ],
+    "kunyomi": [
+      "ひがし"
+    ],
+    "meaning_vi": "đông (phía đông)",
+    "mnemonic_vi": "Mặt trời mọc sau rặng cây.",
+    "radicals": [
+      {
+        "character": "一",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "高",
+    "stroke_count": 10,
+    "onyomi": [
+      "コウ"
+    ],
+    "kunyomi": [
+      "たか-い",
+      "たか"
+    ],
+    "meaning_vi": "cao (cao, đắt)",
+    "mnemonic_vi": "Hình lâu đài cao.",
+    "radicals": [
+      {
+        "character": "一",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "山",
+    "stroke_count": 3,
+    "onyomi": [
+      "サン",
+      "ザン"
+    ],
+    "kunyomi": [
+      "やま"
+    ],
+    "meaning_vi": "sơn (núi)",
+    "mnemonic_vi": "Hình ảnh ba ngọn núi trùng điệp.",
+    "radicals": [
+      {
+        "character": "山",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "足",
+    "stroke_count": 7,
+    "onyomi": [
+      "そく"
+    ],
+    "kunyomi": [
+      "あし",
+      "た.りる",
+      "た.る",
+      "た.す"
+    ],
+    "meaning_vi": "tú túc (chân thú, đầy đủ)",
+    "mnemonic_vi": null,
+    "radicals": [
+      {
+        "character": "足",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "南",
+    "stroke_count": 9,
+    "onyomi": [
+      "ナン",
+      "ナ"
+    ],
+    "kunyomi": [
+      "みなみ"
+    ],
+    "meaning_vi": "nam (phía nam)",
+    "mnemonic_vi": "Cây đón ánh nắng phương nam.",
+    "radicals": [
+      {
+        "character": "一",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "飲",
+    "stroke_count": 12,
+    "onyomi": [
+      "いん",
+      "おん"
+    ],
+    "kunyomi": [
+      "の.む",
+      "-の.み"
+    ],
+    "meaning_vi": "ấm ẩm (uống, nước uống, thuốc nước)",
+    "mnemonic_vi": null,
+    "radicals": [
+      {
+        "character": "食",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "田",
+    "stroke_count": 5,
+    "onyomi": [
+      "でん"
+    ],
+    "kunyomi": [
+      "た"
+    ],
+    "meaning_vi": "điền (ruộng, đồng)",
+    "mnemonic_vi": null,
+    "radicals": [
+      {
+        "character": "田",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "畑",
+    "stroke_count": 5,
+    "onyomi": [],
+    "kunyomi": [],
+    "meaning_vi": "Hán tự 畑",
+    "mnemonic_vi": "",
+    "radicals": []
+  },
+  {
+    "character": "物",
+    "stroke_count": 8,
+    "onyomi": [
+      "ぶつ",
+      "もつ"
+    ],
+    "kunyomi": [
+      "もの",
+      "もの-"
+    ],
+    "meaning_vi": "vật (con vật, đồ vật)",
+    "mnemonic_vi": null,
+    "radicals": [
+      {
+        "character": "牛",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "茶",
+    "stroke_count": 9,
+    "onyomi": [
+      "ちゃ",
+      "さ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "trà (chè)",
+    "mnemonic_vi": null,
+    "radicals": [
+      {
+        "character": "艸",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "行",
+    "stroke_count": 6,
+    "onyomi": [
+      "こう"
+    ],
+    "kunyomi": [
+      "い（く）",
+      "ゆ（く）",
+      "おこな(う）"
+    ],
+    "meaning_vi": "đi, thực hiện, dòng, ngân hàng",
+    "mnemonic_vi": "Bước chân (彳) trên đường phố - đi.",
+    "radicals": []
+  },
+  {
+    "character": "川",
+    "stroke_count": 3,
+    "onyomi": [
+      "セン"
+    ],
+    "kunyomi": [
+      "かわ"
+    ],
+    "meaning_vi": "xuyên (sông ngòi)",
+    "mnemonic_vi": "Ba dòng nước song song chảy tạo thành sông.",
+    "radicals": [
+      {
+        "character": "巛",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "耳",
+    "stroke_count": 6,
+    "onyomi": [
+      "じ"
+    ],
+    "kunyomi": [
+      "みみ"
+    ],
+    "meaning_vi": "nhĩ (cái tai, cái quai cầm, vậy, thôi (tiếng dứt câu))",
+    "mnemonic_vi": null,
+    "radicals": [
+      {
+        "character": "耳",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "男",
+    "stroke_count": 7,
+    "onyomi": [
+      "だん",
+      "なん"
+    ],
+    "kunyomi": [
+      "おとこ"
+    ],
+    "meaning_vi": "nam, đàn ông",
+    "mnemonic_vi": "Sức mạnh (力) trên cánh đồng (田) - đàn ông.",
+    "radicals": []
+  },
+  {
+    "character": "先",
+    "stroke_count": 6,
+    "onyomi": [
+      "セン"
+    ],
+    "kunyomi": [
+      "さき",
+      "ま-ず"
+    ],
+    "meaning_vi": "tiên (trước)",
+    "mnemonic_vi": "Đi trước người khác.",
+    "radicals": [
+      {
+        "character": "一",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  },
+  {
+    "character": "長",
+    "stroke_count": 8,
+    "onyomi": [
+      "ちょう"
+    ],
+    "kunyomi": [
+      "なが（い）"
+    ],
+    "meaning_vi": "dài, trưởng",
+    "mnemonic_vi": "Mái tóc dài bay trong gió.",
+    "radicals": []
+  },
+  {
+    "character": "鳥",
+    "stroke_count": 11,
+    "onyomi": [
+      "ちょう"
+    ],
+    "kunyomi": [
+      "とり"
+    ],
+    "meaning_vi": "điểu (con chim)",
+    "mnemonic_vi": null,
+    "radicals": [
+      {
+        "character": "鳥",
+        "is_main": true,
+        "position": "none"
+      }
+    ]
+  }
+]

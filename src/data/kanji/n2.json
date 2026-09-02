@@ -1,0 +1,5916 @@
+[
+  {
+    "character": "了",
+    "stroke_count": 2,
+    "onyomi": [
+      "リョウ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "Hiểu biết, Xong",
+    "mnemonic_vi": "Chữ 了 có nghĩa là \"Hiểu biết, Xong\".",
+    "radicals": []
+  },
+  {
+    "character": "与",
+    "stroke_count": 3,
+    "onyomi": [
+      "ヨ"
+    ],
+    "kunyomi": [
+      "あた.える",
+      "あずか.る",
+      "くみ.する",
+      "ともに"
+    ],
+    "meaning_vi": "DỮ, DỰ, DƯ (ban cho; tặng cho)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "丂",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "一",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "亡",
+    "stroke_count": 3,
+    "onyomi": [
+      "ボウ",
+      "モウ"
+    ],
+    "kunyomi": [
+      "な.い",
+      "な.き-",
+      "ほろ.びる",
+      "ほろ.ぶ",
+      "ほろ.ぼす"
+    ],
+    "meaning_vi": "VONG, VÔ (không có; mất đi; chết)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "𠃊",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "亠",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "干",
+    "stroke_count": 3,
+    "onyomi": [
+      "カン"
+    ],
+    "kunyomi": [
+      "ほ.す",
+      "ほ.し",
+      "ぼ.し"
+    ],
+    "meaning_vi": "Bến nước, Can thiệp",
+    "mnemonic_vi": "Chữ 干 có nghĩa là \"Bến nước, Can thiệp\".",
+    "radicals": []
+  },
+  {
+    "character": "介",
+    "stroke_count": 4,
+    "onyomi": [
+      "カイ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "Cõi, Ven bờ",
+    "mnemonic_vi": "Chữ 介 có nghĩa là \"Cõi, Ven bờ\".",
+    "radicals": []
+  },
+  {
+    "character": "互",
+    "stroke_count": 4,
+    "onyomi": [
+      "ゴ"
+    ],
+    "kunyomi": [
+      "たが.い",
+      "かたみ.に"
+    ],
+    "meaning_vi": "HỖ (lẫn nhau; cùng nhau; thay phiên; lần lượt)",
+    "mnemonic_vi": "",
+    "radicals": []
+  },
+  {
+    "character": "公",
+    "stroke_count": 4,
+    "onyomi": [
+      "コウ",
+      "ク"
+    ],
+    "kunyomi": [
+      "おおやけ"
+    ],
+    "meaning_vi": "CÔNG (không thiên vị; đúng đắn)",
+    "mnemonic_vi": "Phục vụ cộng đồng là một công việc khó",
+    "radicals": [
+      {
+        "character": "ハ",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "厶",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "双",
+    "stroke_count": 4,
+    "onyomi": [
+      "ソウ"
+    ],
+    "kunyomi": [
+      "ふた",
+      "たぐい",
+      "ならぶ",
+      "ふたつ"
+    ],
+    "meaning_vi": "Đôi (số chẵn)",
+    "mnemonic_vi": "Chữ 双 có nghĩa là \"Đôi (số chẵn)\".",
+    "radicals": []
+  },
+  {
+    "character": "片",
+    "stroke_count": 4,
+    "onyomi": [
+      "ヘン"
+    ],
+    "kunyomi": [
+      "かた",
+      "かた"
+    ],
+    "meaning_vi": "Mảnh",
+    "mnemonic_vi": "Chữ 片 có nghĩa là \"Mảnh\".",
+    "radicals": []
+  },
+  {
+    "character": "匹",
+    "stroke_count": 4,
+    "onyomi": [
+      "ヒツ"
+    ],
+    "kunyomi": [
+      "ひき"
+    ],
+    "meaning_vi": "Xếp, con; Đôi; Đơn, lẻ",
+    "mnemonic_vi": "Chữ 匹 có nghĩa là \"Xếp, con; Đôi; Đơn, lẻ\".",
+    "radicals": []
+  },
+  {
+    "character": "払",
+    "stroke_count": 5,
+    "onyomi": [
+      "フツ",
+      "ヒツ",
+      "ホツ"
+    ],
+    "kunyomi": [
+      "はら.う",
+      "-はら.い",
+      "-ばら.い"
+    ],
+    "meaning_vi": "PHẤT (phủi; gạt bỏ; mất đi)",
+    "mnemonic_vi": "Tôi sẽ trả tiền.",
+    "radicals": [
+      {
+        "character": "厶",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "扌",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "幼",
+    "stroke_count": 5,
+    "onyomi": [
+      "ヨウ"
+    ],
+    "kunyomi": [
+      "おさな.い"
+    ],
+    "meaning_vi": "Nhỏ bé, non nớt",
+    "mnemonic_vi": "Chữ 幼 có nghĩa là \"Nhỏ bé, non nớt\".",
+    "radicals": []
+  },
+  {
+    "character": "庁",
+    "stroke_count": 5,
+    "onyomi": [
+      "チョウ",
+      "テイ"
+    ],
+    "kunyomi": [
+      "やくしょ"
+    ],
+    "meaning_vi": "Đại sảnh",
+    "mnemonic_vi": "Chữ 庁 có nghĩa là \"Đại sảnh\".",
+    "radicals": []
+  },
+  {
+    "character": "占",
+    "stroke_count": 5,
+    "onyomi": [
+      "セン"
+    ],
+    "kunyomi": [
+      "し.める",
+      "うらな.う"
+    ],
+    "meaning_vi": "Xem",
+    "mnemonic_vi": "Chữ 占 có nghĩa là \"Xem\".",
+    "radicals": []
+  },
+  {
+    "character": "込",
+    "stroke_count": 5,
+    "onyomi": [],
+    "kunyomi": [
+      "-こ.む",
+      "こ.む",
+      "こ.み",
+      "-こ.み",
+      "こ.める"
+    ],
+    "meaning_vi": "đông đúc; chen chúc; hỗn tạp",
+    "mnemonic_vi": "Mọi người đang đi vào trong(入) .Bên trong trở nên đông đúc hơn.",
+    "radicals": [
+      {
+        "character": "⻌",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "入",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "冊",
+    "stroke_count": 5,
+    "onyomi": [
+      "サツ",
+      "サク"
+    ],
+    "kunyomi": [
+      "ふみ"
+    ],
+    "meaning_vi": "quyển(sách)",
+    "mnemonic_vi": "Chữ 冊 có nghĩa là \"quyển(sách)\".",
+    "radicals": []
+  },
+  {
+    "character": "司",
+    "stroke_count": 5,
+    "onyomi": [
+      "シ"
+    ],
+    "kunyomi": [
+      "つかさど.る"
+    ],
+    "meaning_vi": "TI, TƯ (cơ quan; chức quan; viên chức)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "可",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "処",
+    "stroke_count": 5,
+    "onyomi": [
+      "ショ"
+    ],
+    "kunyomi": [
+      "ところ",
+      "-こ",
+      "お.る"
+    ],
+    "meaning_vi": "XỨ (nơi; địa điểm)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "夂",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "几",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "収",
+    "stroke_count": 4,
+    "onyomi": [
+      "シュウ"
+    ],
+    "kunyomi": [
+      "おさ.める",
+      "おさ.まる"
+    ],
+    "meaning_vi": "THU (bắt giữ; tóm lấy)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "丩",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "又",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "召",
+    "stroke_count": 5,
+    "onyomi": [
+      "ショウ"
+    ],
+    "kunyomi": [
+      "め.す"
+    ],
+    "meaning_vi": "Vời, lấy tay vẫy lại, lấy lời gọi lại",
+    "mnemonic_vi": "Chữ 召 có nghĩa là \"Vời, lấy tay vẫy lại, lấy lời gọi lại\".",
+    "radicals": []
+  },
+  {
+    "character": "巨",
+    "stroke_count": 5,
+    "onyomi": [
+      "キョ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "Lớn, Há",
+    "mnemonic_vi": "Chữ 巨 có nghĩa là \"Lớn, Há\".",
+    "radicals": []
+  },
+  {
+    "character": "甘",
+    "stroke_count": 5,
+    "onyomi": [
+      "カン"
+    ],
+    "kunyomi": [
+      "あま.い",
+      "あま.える",
+      "あま.やかす"
+    ],
+    "meaning_vi": "ngọt",
+    "mnemonic_vi": "Chữ 甘 có nghĩa là \"ngọt\".",
+    "radicals": []
+  },
+  {
+    "character": "圧",
+    "stroke_count": 5,
+    "onyomi": [
+      "アツ",
+      "エン",
+      "オウ"
+    ],
+    "kunyomi": [
+      "お.す",
+      "へ.す",
+      "おさ.える",
+      "お.さえる"
+    ],
+    "meaning_vi": "Áp lực",
+    "mnemonic_vi": "Chữ 圧 có nghĩa là \"Áp lực\".",
+    "radicals": []
+  },
+  {
+    "character": "永",
+    "stroke_count": 5,
+    "onyomi": [
+      "エイ"
+    ],
+    "kunyomi": [
+      "なが.い"
+    ],
+    "meaning_vi": "Lâu, dài, mãi mãi",
+    "mnemonic_vi": "Chữ 永 có nghĩa là \"Lâu, dài, mãi mãi\".",
+    "radicals": []
+  },
+  {
+    "character": "衣",
+    "stroke_count": 6,
+    "onyomi": [
+      "イ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "quần áo, y phục",
+    "mnemonic_vi": "Chữ 衣 có nghĩa là \"quần áo, y phục\".",
+    "radicals": []
+  },
+  {
+    "character": "汚",
+    "stroke_count": 6,
+    "onyomi": [
+      "オ"
+    ],
+    "kunyomi": [
+      "けが.す",
+      "けが.れる",
+      "けが.らわしい",
+      "よご.す",
+      "よご.れる",
+      "きたな.い"
+    ],
+    "meaning_vi": "Bẩn",
+    "mnemonic_vi": "Chữ 汚 có nghĩa là \"Bẩn\".",
+    "radicals": []
+  },
+  {
+    "character": "汗",
+    "stroke_count": 6,
+    "onyomi": [
+      "カン"
+    ],
+    "kunyomi": [
+      "あせ"
+    ],
+    "meaning_vi": "Mồ hôi",
+    "mnemonic_vi": "Chữ 汗 có nghĩa là \"Mồ hôi\".",
+    "radicals": []
+  },
+  {
+    "character": "危",
+    "stroke_count": 6,
+    "onyomi": [
+      "キ"
+    ],
+    "kunyomi": [
+      "あぶ.ない",
+      "あや.うい",
+      "あや.ぶむ"
+    ],
+    "meaning_vi": "NGUY (nguy hiểm; nguy kịch)",
+    "mnemonic_vi": "Nhìn hòn đá ở trên cái dốc dứng kìa.Người đó thì đang  nguy hiểm",
+    "radicals": [
+      {
+        "character": "厄",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "⺈",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "宇",
+    "stroke_count": 6,
+    "onyomi": [
+      "ウ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "Vũ trụ",
+    "mnemonic_vi": "Chữ 宇 có nghĩa là \"Vũ trụ\".",
+    "radicals": []
+  },
+  {
+    "character": "灰",
+    "stroke_count": 6,
+    "onyomi": [
+      "カイ"
+    ],
+    "kunyomi": [
+      "はい"
+    ],
+    "meaning_vi": "Tro",
+    "mnemonic_vi": "Chữ 灰 có nghĩa là \"Tro\".",
+    "radicals": []
+  },
+  {
+    "character": "仮",
+    "stroke_count": 6,
+    "onyomi": [
+      "カ",
+      "ケ"
+    ],
+    "kunyomi": [
+      "かり",
+      "かり-"
+    ],
+    "meaning_vi": "GIẢ (tạm thời; giả; giả định)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "亻",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "反",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "叫",
+    "stroke_count": 6,
+    "onyomi": [
+      "キョウ"
+    ],
+    "kunyomi": [
+      "さけ.ぶ"
+    ],
+    "meaning_vi": "Kêu",
+    "mnemonic_vi": "Chữ 叫 có nghĩa là \"Kêu\".",
+    "radicals": []
+  },
+  {
+    "character": "机",
+    "stroke_count": 6,
+    "onyomi": [
+      "キ"
+    ],
+    "kunyomi": [
+      "つくえ"
+    ],
+    "meaning_vi": "bàn",
+    "mnemonic_vi": "Chữ 机 có nghĩa là \"bàn\".",
+    "radicals": []
+  },
+  {
+    "character": "吸",
+    "stroke_count": 6,
+    "onyomi": [
+      "キュウ"
+    ],
+    "kunyomi": [
+      "す.う"
+    ],
+    "meaning_vi": "HẤP (hít; hít thở; hít vào)",
+    "mnemonic_vi": "Tôi hít vào khói thuốc",
+    "radicals": [
+      {
+        "character": "口",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "及",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "舟",
+    "stroke_count": 6,
+    "onyomi": [
+      "シュウ"
+    ],
+    "kunyomi": [
+      "ふね",
+      "ふな",
+      "ぶね"
+    ],
+    "meaning_vi": "Thuyền",
+    "mnemonic_vi": "Chữ 舟 có nghĩa là \"Thuyền\".",
+    "radicals": []
+  },
+  {
+    "character": "宅",
+    "stroke_count": 6,
+    "onyomi": [
+      "タク"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "TRẠCH (nhà; nơi ở)",
+    "mnemonic_vi": "Tôi thích sống trong ngôi nhà của tôi",
+    "radicals": [
+      {
+        "character": "乇",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "宀",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "存",
+    "stroke_count": 6,
+    "onyomi": [
+      "ソン",
+      "ゾン"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "TỒN (có; ở; tồn tại)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "𠂇",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "丨",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "子",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "忙",
+    "stroke_count": 6,
+    "onyomi": [
+      "ボウ",
+      "モウ"
+    ],
+    "kunyomi": [
+      "いそが.しい",
+      "せわ.しい",
+      "おそ.れる",
+      "うれえるさま"
+    ],
+    "meaning_vi": "MANG (bận rộn; hối hả)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "亡",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "忄",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "灯",
+    "stroke_count": 6,
+    "onyomi": [
+      "トウ"
+    ],
+    "kunyomi": [
+      "ひ ほ",
+      "ともしび",
+      "とも.す",
+      "あかり"
+    ],
+    "meaning_vi": "Cái đèn",
+    "mnemonic_vi": "Chữ 灯 có nghĩa là \"Cái đèn\".",
+    "radicals": []
+  },
+  {
+    "character": "肌",
+    "stroke_count": 6,
+    "onyomi": [
+      "キ"
+    ],
+    "kunyomi": [
+      "はだ"
+    ],
+    "meaning_vi": "Da, thịt trong da",
+    "mnemonic_vi": "Chữ 肌 có nghĩa là \"Da, thịt trong da\".",
+    "radicals": []
+  },
+  {
+    "character": "否",
+    "stroke_count": 7,
+    "onyomi": [
+      "ヒ"
+    ],
+    "kunyomi": [
+      "いな",
+      "いや"
+    ],
+    "meaning_vi": "PHỦ, BĨ, PHẦU (xấu; không may)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "不",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "口",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "抜",
+    "stroke_count": 7,
+    "onyomi": [
+      "バツ",
+      "ハツ",
+      "ハイ"
+    ],
+    "kunyomi": [
+      "ぬ.く",
+      "-ぬ.く",
+      "ぬ.き",
+      "ぬ.ける",
+      "ぬ.かす",
+      "ぬ.かる"
+    ],
+    "meaning_vi": "BẠT (rút; nhổ; tuột)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "扌",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "友",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "沈",
+    "stroke_count": 7,
+    "onyomi": [
+      "チン",
+      "ジン"
+    ],
+    "kunyomi": [
+      "しず.む",
+      "しず.める"
+    ],
+    "meaning_vi": "Chìm, Thâm trầm",
+    "mnemonic_vi": "Chữ 沈 có nghĩa là \"Chìm, Thâm trầm\".",
+    "radicals": []
+  },
+  {
+    "character": "戻",
+    "stroke_count": 7,
+    "onyomi": [
+      "レイ"
+    ],
+    "kunyomi": [
+      "もど.す",
+      "もど.る"
+    ],
+    "meaning_vi": "LỆ (quay lại; trả lại)",
+    "mnemonic_vi": "Anh ấy đã trở nên to lớn(大) và đã trở lại .Bây giờ anh ấy đang ở cửa(戸).",
+    "radicals": [
+      {
+        "character": "大",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "戸",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "坊",
+    "stroke_count": 7,
+    "onyomi": [
+      "ボウ",
+      "ボッ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "PHƯỜNG (cách gọi thân mật cho con trai)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "方",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "土",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "兵",
+    "stroke_count": 7,
+    "onyomi": [
+      "セツ",
+      "ショウ"
+    ],
+    "kunyomi": [
+      "つわもの"
+    ],
+    "meaning_vi": "binh lính,binh sĩ",
+    "mnemonic_vi": "Chữ 兵 có nghĩa là \"binh lính,binh sĩ\".",
+    "radicals": []
+  },
+  {
+    "character": "麦",
+    "stroke_count": 7,
+    "onyomi": [
+      "バク"
+    ],
+    "kunyomi": [
+      "むぎ"
+    ],
+    "meaning_vi": "lúa mạch",
+    "mnemonic_vi": "Chữ 麦 có nghĩa là \"lúa mạch\".",
+    "radicals": []
+  },
+  {
+    "character": "批",
+    "stroke_count": 7,
+    "onyomi": [
+      "ヒ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "PHÊ (phê bình; đánh giá)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "比",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "扌",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "乱",
+    "stroke_count": 7,
+    "onyomi": [
+      "ラン",
+      "ロン"
+    ],
+    "kunyomi": [
+      "みだ.れる",
+      "みだ.る",
+      "みだ.す",
+      "みだ",
+      "おさ.める"
+    ],
+    "meaning_vi": "Loạn, bối rối không yên",
+    "mnemonic_vi": "Chữ 乱 có nghĩa là \"Loạn, bối rối không yên\".",
+    "radicals": []
+  },
+  {
+    "character": "卵",
+    "stroke_count": 7,
+    "onyomi": [
+      "ラン"
+    ],
+    "kunyomi": [
+      "たまご"
+    ],
+    "meaning_vi": "NOÃN - trứng",
+    "mnemonic_vi": "Hãy đập vớ quả trứng",
+    "radicals": []
+  },
+  {
+    "character": "忘",
+    "stroke_count": 7,
+    "onyomi": [
+      "ボウ"
+    ],
+    "kunyomi": [
+      "わす.れる"
+    ],
+    "meaning_vi": "VONG (quên; không nhớ)",
+    "mnemonic_vi": "Tôi quên xây dựng bức tường ở bên phải",
+    "radicals": [
+      {
+        "character": "亡",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "心",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "良",
+    "stroke_count": 7,
+    "onyomi": [
+      "リョウ"
+    ],
+    "kunyomi": [
+      "よ.い",
+      "-よ.い",
+      "い.い",
+      "-い.い"
+    ],
+    "meaning_vi": "LƯƠNG (tốt; ưu tú; đáng mến)",
+    "mnemonic_vi": "Mọi người cảm thấy  tốt với một cái dạ dày no",
+    "radicals": []
+  },
+  {
+    "character": "伸",
+    "stroke_count": 7,
+    "onyomi": [
+      "シン"
+    ],
+    "kunyomi": [
+      "の.びる",
+      "の.ばす",
+      "の.べる"
+    ],
+    "meaning_vi": "Duỗi, Làm cho phải lẽ",
+    "mnemonic_vi": "Chữ 伸 có nghĩa là \"Duỗi, Làm cho phải lẽ\".",
+    "radicals": []
+  },
+  {
+    "character": "辛",
+    "stroke_count": 7,
+    "onyomi": [
+      "シン"
+    ],
+    "kunyomi": [
+      "から.い",
+      "つら.い",
+      "づら.い",
+      "かのと"
+    ],
+    "meaning_vi": "cay",
+    "mnemonic_vi": "Chữ 辛 có nghĩa là \"cay\".",
+    "radicals": []
+  },
+  {
+    "character": "吹",
+    "stroke_count": 7,
+    "onyomi": [
+      "スイ"
+    ],
+    "kunyomi": [
+      "ふ.く"
+    ],
+    "meaning_vi": "XUY, XÚY (thổi; gió thổi; thở ra)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "欠",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "口",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "床",
+    "stroke_count": 7,
+    "onyomi": [
+      "ショウ"
+    ],
+    "kunyomi": [
+      "とこ",
+      "ゆか"
+    ],
+    "meaning_vi": "SÀNG - sàn nhà",
+    "mnemonic_vi": "",
+    "radicals": []
+  },
+  {
+    "character": "条",
+    "stroke_count": 7,
+    "onyomi": [
+      "ジョウ",
+      "チョウ",
+      "デキ"
+    ],
+    "kunyomi": [
+      "えだ",
+      "すじ"
+    ],
+    "meaning_vi": "ĐIỀU, THIÊU, ĐIÊU (điều khoản; văn bản được viết chia thành từng mục)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "夂",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "木",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "志",
+    "stroke_count": 7,
+    "onyomi": [
+      "シ"
+    ],
+    "kunyomi": [
+      "シリング",
+      "こころざ.す",
+      "こころざし"
+    ],
+    "meaning_vi": "CHÍ (quyết chí; chí hướng; ý muốn)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "士",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "心",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "伺",
+    "stroke_count": 7,
+    "onyomi": [
+      "シ"
+    ],
+    "kunyomi": [
+      "うかが.う"
+    ],
+    "meaning_vi": "Dò xét",
+    "mnemonic_vi": "Chữ 伺 có nghĩa là \"Dò xét\".",
+    "radicals": []
+  },
+  {
+    "character": "困",
+    "stroke_count": 7,
+    "onyomi": [
+      "コン"
+    ],
+    "kunyomi": [
+      "こま.る"
+    ],
+    "meaning_vi": "KHỐN (khốn đốn; khổ sở; bế tắc)",
+    "mnemonic_vi": "Chúng tôi đang gặp  rắc rối  vì có một cây lớn (木).",
+    "radicals": [
+      {
+        "character": "木",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "囗",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "含",
+    "stroke_count": 7,
+    "onyomi": [
+      "ガン"
+    ],
+    "kunyomi": [
+      "ふく.む",
+      "ふく.める"
+    ],
+    "meaning_vi": "HÀM - ngậm trong miệng",
+    "mnemonic_vi": "",
+    "radicals": []
+  },
+  {
+    "character": "更",
+    "stroke_count": 7,
+    "onyomi": [
+      "コウ"
+    ],
+    "kunyomi": [
+      "さら",
+      "さら.に",
+      "ふ.ける",
+      "ふ.かす"
+    ],
+    "meaning_vi": "CANH, CÁNH (thay đổi; đổi mới; thay thế)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "一",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "日",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "乂",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "迎",
+    "stroke_count": 7,
+    "onyomi": [
+      "ゲイ"
+    ],
+    "kunyomi": [
+      "むか.える"
+    ],
+    "meaning_vi": "NGHÊNH, NGHỊNH (đón; chờ đón)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "卬",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "⻌",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "貝",
+    "stroke_count": 7,
+    "onyomi": [
+      "バイ"
+    ],
+    "kunyomi": [
+      "かい"
+    ],
+    "meaning_vi": "BỐI (con sò; vỏ sò)",
+    "mnemonic_vi": "Đây là hình dạng của  động vật có vỏ",
+    "radicals": [
+      {
+        "character": "ハ",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "目",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "応",
+    "stroke_count": 7,
+    "onyomi": [
+      "オウ",
+      "ヨウ",
+      "-ノウ"
+    ],
+    "kunyomi": [
+      "あた.る",
+      "まさに",
+      "こた.える"
+    ],
+    "meaning_vi": "ỨNG (phù hợp; tương xứng)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "心",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "广",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "押",
+    "stroke_count": 8,
+    "onyomi": [
+      "オウ"
+    ],
+    "kunyomi": [
+      "お.す",
+      "お.し-",
+      "お.っ-",
+      "お.さえる",
+      "おさ.える"
+    ],
+    "meaning_vi": "ÁP (ấn; nhấn)",
+    "mnemonic_vi": "Tôi đã đóng dấu",
+    "radicals": [
+      {
+        "character": "甲",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "扌",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "欧",
+    "stroke_count": 8,
+    "onyomi": [
+      "オウ"
+    ],
+    "kunyomi": [
+      "うた.う"
+    ],
+    "meaning_vi": "Châu Âu",
+    "mnemonic_vi": "Chữ 欧 có nghĩa là \"Châu Âu\".",
+    "radicals": []
+  },
+  {
+    "character": "延",
+    "stroke_count": 8,
+    "onyomi": [
+      "エン"
+    ],
+    "kunyomi": [
+      "の.びる",
+      "の.べる",
+      "の.べ"
+    ],
+    "meaning_vi": "Kéo dài, Xa",
+    "mnemonic_vi": "Chữ 延 có nghĩa là \"Kéo dài, Xa\".",
+    "radicals": []
+  },
+  {
+    "character": "依",
+    "stroke_count": 8,
+    "onyomi": [
+      "イ",
+      "エ"
+    ],
+    "kunyomi": [
+      "よ.る"
+    ],
+    "meaning_vi": "Y nhiên",
+    "mnemonic_vi": "Chữ 依 có nghĩa là \"Y nhiên\".",
+    "radicals": []
+  },
+  {
+    "character": "拡",
+    "stroke_count": 8,
+    "onyomi": [
+      "カク"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "phóng to, mở rộng, khuếch trương",
+    "mnemonic_vi": "Chữ 拡 có nghĩa là \"phóng to, mở rộng, khuếch trương\".",
+    "radicals": []
+  },
+  {
+    "character": "価",
+    "stroke_count": 8,
+    "onyomi": [
+      "カ",
+      "ケ"
+    ],
+    "kunyomi": [
+      "あたい"
+    ],
+    "meaning_vi": "GIÁ (giá cả; trị giá)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "亻",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "覀",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "券",
+    "stroke_count": 8,
+    "onyomi": [
+      "ケン"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "giấy hợp đồng",
+    "mnemonic_vi": "Chữ 券 có nghĩa là \"giấy hợp đồng\".",
+    "radicals": []
+  },
+  {
+    "character": "肩",
+    "stroke_count": 8,
+    "onyomi": [
+      "ケン"
+    ],
+    "kunyomi": [
+      "かた"
+    ],
+    "meaning_vi": "Vai, Gánh vác",
+    "mnemonic_vi": "Chữ 肩 có nghĩa là \"Vai, Gánh vác\".",
+    "radicals": []
+  },
+  {
+    "character": "呼",
+    "stroke_count": 8,
+    "onyomi": [
+      "コ"
+    ],
+    "kunyomi": [
+      "よ.ぶ"
+    ],
+    "meaning_vi": "HÔ, HÁ (gọi; kêu gọi; kêu lớn)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "口",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "乎",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "肯",
+    "stroke_count": 8,
+    "onyomi": [
+      "コウ"
+    ],
+    "kunyomi": [
+      "がえんじ.る"
+    ],
+    "meaning_vi": "Khá, ừ đƣợc",
+    "mnemonic_vi": "Chữ 肯 có nghĩa là \"Khá, ừ đƣợc\".",
+    "radicals": []
+  },
+  {
+    "character": "祈",
+    "stroke_count": 8,
+    "onyomi": [
+      "キ"
+    ],
+    "kunyomi": [
+      "いの.る"
+    ],
+    "meaning_vi": "Cầu cúng, cầu phúc; Báo đền",
+    "mnemonic_vi": "Chữ 祈 có nghĩa là \"Cầu cúng, cầu phúc; Báo đền\".",
+    "radicals": []
+  },
+  {
+    "character": "供",
+    "stroke_count": 8,
+    "onyomi": [
+      "キョウ",
+      "ク",
+      "クウ",
+      "グ"
+    ],
+    "kunyomi": [
+      "そな.える",
+      "とも",
+      "-ども"
+    ],
+    "meaning_vi": "CUNG (dâng; đưa ra; nộp)",
+    "mnemonic_vi": "Chúng tôi tụ tập (共) cung cấp cho bạn sự giúp đỡ.",
+    "radicals": [
+      {
+        "character": "亻",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "共",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "況",
+    "stroke_count": 8,
+    "onyomi": [
+      "キョウ"
+    ],
+    "kunyomi": [
+      "まし.て",
+      "いわ.んや",
+      "おもむき"
+    ],
+    "meaning_vi": "Cảnh huống",
+    "mnemonic_vi": "Chữ 況 có nghĩa là \"Cảnh huống\".",
+    "radicals": []
+  },
+  {
+    "character": "刺",
+    "stroke_count": 8,
+    "onyomi": [
+      "シ"
+    ],
+    "kunyomi": [
+      "さ.す",
+      "さ.さる",
+      "さ.し",
+      "さし",
+      "とげ"
+    ],
+    "meaning_vi": "Đâm chết",
+    "mnemonic_vi": "Chữ 刺 có nghĩa là \"Đâm chết\".",
+    "radicals": []
+  },
+  {
+    "character": "刻",
+    "stroke_count": 8,
+    "onyomi": [
+      "コク"
+    ],
+    "kunyomi": [
+      "きざ.む",
+      "きざ.み"
+    ],
+    "meaning_vi": "KHẮC (khắc; chạm trổ; thái)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "亥",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "刂",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "昇",
+    "stroke_count": 8,
+    "onyomi": [
+      "ショウ"
+    ],
+    "kunyomi": [
+      "のぼ.る"
+    ],
+    "meaning_vi": "thăng chức",
+    "mnemonic_vi": "Chữ 昇 có nghĩa là \"thăng chức\".",
+    "radicals": []
+  },
+  {
+    "character": "若",
+    "stroke_count": 8,
+    "onyomi": [
+      "ジャク",
+      "ニャク",
+      "ニャ"
+    ],
+    "kunyomi": [
+      "わか.い",
+      "わか-",
+      "も.しくわ",
+      "も.し",
+      "も.しくは",
+      "ごと.し"
+    ],
+    "meaning_vi": "NHƯỢC, NHÃ (trẻ; non nớt)",
+    "mnemonic_vi": "Tôi ngắt những lá non với tay phải(左) của tôi.",
+    "radicals": [
+      {
+        "character": "右",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "艹",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "姓",
+    "stroke_count": 8,
+    "onyomi": [
+      "セイ",
+      "ショウ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "Họ",
+    "mnemonic_vi": "Chữ 姓 có nghĩa là \"Họ\".",
+    "radicals": []
+  },
+  {
+    "character": "担",
+    "stroke_count": 8,
+    "onyomi": [
+      "タン"
+    ],
+    "kunyomi": [
+      "かつ.ぐ",
+      "にな.う"
+    ],
+    "meaning_vi": "Vác, gánh",
+    "mnemonic_vi": "Chữ 担 có nghĩa là \"Vác, gánh\".",
+    "radicals": []
+  },
+  {
+    "character": "宙",
+    "stroke_count": 8,
+    "onyomi": [
+      "チュウ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "TRỤ (bầu trời; không gian)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "由",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "宀",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "怖",
+    "stroke_count": 8,
+    "onyomi": [
+      "フ",
+      "ホ"
+    ],
+    "kunyomi": [
+      "こわ.い",
+      "こわ.がる",
+      "お.じる",
+      "おそ.れる"
+    ],
+    "meaning_vi": "PHỐ, BỐ (sợ hãi; e sợ; khiếp sợ)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "布",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "忄",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "並",
+    "stroke_count": 8,
+    "onyomi": [
+      "ヘイ",
+      "ホウ"
+    ],
+    "kunyomi": [
+      "な.み",
+      "なら.べる",
+      "なら.ぶ"
+    ],
+    "meaning_vi": "Gồm, đều",
+    "mnemonic_vi": "Chữ 並 có nghĩa là \"Gồm, đều\".",
+    "radicals": []
+  },
+  {
+    "character": "沸",
+    "stroke_count": 8,
+    "onyomi": [
+      "フツ"
+    ],
+    "kunyomi": [
+      "わ.く",
+      "わ.かす"
+    ],
+    "meaning_vi": "Sôi",
+    "mnemonic_vi": "Chữ 沸 có nghĩa là \"Sôi\".",
+    "radicals": []
+  },
+  {
+    "character": "宝",
+    "stroke_count": 8,
+    "onyomi": [
+      "ホウ"
+    ],
+    "kunyomi": [
+      "たから"
+    ],
+    "meaning_vi": "quý báu, bảo bối",
+    "mnemonic_vi": "Chữ 宝 có nghĩa là \"quý báu, bảo bối\".",
+    "radicals": []
+  },
+  {
+    "character": "抱",
+    "stroke_count": 8,
+    "onyomi": [
+      "ホウ"
+    ],
+    "kunyomi": [
+      "だ.く",
+      "いだ.く",
+      "かか.える"
+    ],
+    "meaning_vi": "BÃO (bế; ôm; ôm bằng hai tay)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "包",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "扌",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "枚",
+    "stroke_count": 8,
+    "onyomi": [
+      "マイ",
+      "バ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "Cái quả, gốc cây",
+    "mnemonic_vi": "Chữ 枚 có nghĩa là \"Cái quả, gốc cây\".",
+    "radicals": []
+  },
+  {
+    "character": "泥",
+    "stroke_count": 8,
+    "onyomi": [
+      "デイ",
+      "ナイ",
+      "デ",
+      "ニ"
+    ],
+    "kunyomi": [
+      "どろ"
+    ],
+    "meaning_vi": "Bùn",
+    "mnemonic_vi": "Chữ 泥 có nghĩa là \"Bùn\".",
+    "radicals": []
+  },
+  {
+    "character": "毒",
+    "stroke_count": 8,
+    "onyomi": [
+      "ドク"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "Ác độc",
+    "mnemonic_vi": "Chữ 毒 có nghĩa là \"Ác độc\".",
+    "radicals": []
+  },
+  {
+    "character": "突",
+    "stroke_count": 8,
+    "onyomi": [
+      "トツ",
+      "カ"
+    ],
+    "kunyomi": [
+      "つ.く"
+    ],
+    "meaning_vi": "ĐỘT (đâm; va chạm)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "穴",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "大",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "届",
+    "stroke_count": 8,
+    "onyomi": [
+      "カイ"
+    ],
+    "kunyomi": [
+      "とど.ける",
+      "とど.け",
+      "とど.く"
+    ],
+    "meaning_vi": "Đến",
+    "mnemonic_vi": "Chữ 届 có nghĩa là \"Đến\".",
+    "radicals": []
+  },
+  {
+    "character": "彼",
+    "stroke_count": 8,
+    "onyomi": [
+      "ヒ"
+    ],
+    "kunyomi": [
+      "かれ",
+      "かの",
+      "か.の"
+    ],
+    "meaning_vi": "BỈ (anh ấy; người đó; người thứ ba)",
+    "mnemonic_vi": "Tôi đã cố gắng để nắm tay anh ta, nhưng  anh ấy đi đi.",
+    "radicals": [
+      {
+        "character": "彳",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "皮",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "拝",
+    "stroke_count": 8,
+    "onyomi": [
+      "ハイ"
+    ],
+    "kunyomi": [
+      "おが.む",
+      "おろが.む"
+    ],
+    "meaning_vi": "sùng bái",
+    "mnemonic_vi": "Chữ 拝 có nghĩa là \"sùng bái\".",
+    "radicals": []
+  },
+  {
+    "character": "杯",
+    "stroke_count": 8,
+    "onyomi": [
+      "ハイ"
+    ],
+    "kunyomi": [
+      "さかずき"
+    ],
+    "meaning_vi": "BÔI (chén rượu; đồ rót rượu)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "不",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "木",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "泊",
+    "stroke_count": 8,
+    "onyomi": [
+      "ハク"
+    ],
+    "kunyomi": [
+      "と.まる",
+      "とめる"
+    ],
+    "meaning_vi": "Ghé vào, đỗ thuyền bên bờ",
+    "mnemonic_vi": "Chữ 泊 có nghĩa là \"Ghé vào, đỗ thuyền bên bờ\".",
+    "radicals": []
+  },
+  {
+    "character": "到",
+    "stroke_count": 8,
+    "onyomi": [
+      "トウ"
+    ],
+    "kunyomi": [
+      "いた.る"
+    ],
+    "meaning_vi": "ĐÁO (đến nơi; đạt tới mục tiêu)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "至",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "刂",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "乳",
+    "stroke_count": 8,
+    "onyomi": [
+      "ニュウ"
+    ],
+    "kunyomi": [
+      "ちち",
+      "ち"
+    ],
+    "meaning_vi": "Cái vú",
+    "mnemonic_vi": "Chữ 乳 có nghĩa là \"Cái vú\".",
+    "radicals": []
+  },
+  {
+    "character": "逃",
+    "stroke_count": 9,
+    "onyomi": [
+      "トウ"
+    ],
+    "kunyomi": [
+      "に.げる",
+      "に.がす",
+      "のが.す",
+      "のが.れる"
+    ],
+    "meaning_vi": "ĐÀO (chạy trốn; trốn thoát; thả ra; bỏ lỡ)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "兆",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "⻌",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "背",
+    "stroke_count": 9,
+    "onyomi": [
+      "ハイ"
+    ],
+    "kunyomi": [
+      "せ",
+      "せい",
+      "そむ.く",
+      "そむ.ける"
+    ],
+    "meaning_vi": "BỐI, BỘI (lưng; phía sau)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "北",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "⺼",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "畑",
+    "stroke_count": 9,
+    "onyomi": [],
+    "kunyomi": [
+      "はた",
+      "はたけ",
+      "-ばたけ"
+    ],
+    "meaning_vi": "ruộng khô; cánh đồng",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "田",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "火",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "怒",
+    "stroke_count": 9,
+    "onyomi": [
+      "ド",
+      "ヌ"
+    ],
+    "kunyomi": [
+      "いか.る",
+      "おこ.る"
+    ],
+    "meaning_vi": "NỘ (giận; tức giận; phẫn nộ)",
+    "mnemonic_vi": "Người phụ nữ(女) tức giận  với tôi.",
+    "radicals": [
+      {
+        "character": "奴",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "心",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "珍",
+    "stroke_count": 9,
+    "onyomi": [
+      "チン"
+    ],
+    "kunyomi": [
+      "めずら.しい",
+      "たから"
+    ],
+    "meaning_vi": "Đồ quý báu",
+    "mnemonic_vi": "Chữ 珍 có nghĩa là \"Đồ quý báu\".",
+    "radicals": []
+  },
+  {
+    "character": "保",
+    "stroke_count": 9,
+    "onyomi": [
+      "ホ"
+    ],
+    "kunyomi": [
+      "たも.つ"
+    ],
+    "meaning_vi": "giữ, duy trì, bảo hiểm",
+    "mnemonic_vi": "Chữ 保 có nghĩa là \"giữ, duy trì, bảo hiểm\".",
+    "radicals": []
+  },
+  {
+    "character": "秒",
+    "stroke_count": 9,
+    "onyomi": [
+      "ビョウ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "Tua lúa, Giây",
+    "mnemonic_vi": "Chữ 秒 có nghĩa là \"Tua lúa, Giây\".",
+    "radicals": []
+  },
+  {
+    "character": "封",
+    "stroke_count": 9,
+    "onyomi": [
+      "フウ",
+      "ホウ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "Phong thư",
+    "mnemonic_vi": "Chữ 封 có nghĩa là \"Phong thư\".",
+    "radicals": []
+  },
+  {
+    "character": "律",
+    "stroke_count": 9,
+    "onyomi": [
+      "リツ",
+      "リチ",
+      "レ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "Luật lữ",
+    "mnemonic_vi": "Chữ 律 có nghĩa là \"Luật lữ\".",
+    "radicals": []
+  },
+  {
+    "character": "柱",
+    "stroke_count": 9,
+    "onyomi": [
+      "チュウ"
+    ],
+    "kunyomi": [
+      "はしら"
+    ],
+    "meaning_vi": "Cái cột",
+    "mnemonic_vi": "Chữ 柱 có nghĩa là \"Cái cột\".",
+    "radicals": []
+  },
+  {
+    "character": "段",
+    "stroke_count": 9,
+    "onyomi": [
+      "ダン",
+      "タン"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "ĐOẠN (đoạn; chỗ ngắt; chia nhỏ)",
+    "mnemonic_vi": "Chúng tôi đang làm bậc thang bằng đá",
+    "radicals": [
+      {
+        "character": "乍",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "殳",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "城",
+    "stroke_count": 9,
+    "onyomi": [
+      "ジョウ"
+    ],
+    "kunyomi": [
+      "しろ"
+    ],
+    "meaning_vi": "Cái thành",
+    "mnemonic_vi": "Chữ 城 có nghĩa là \"Cái thành\".",
+    "radicals": []
+  },
+  {
+    "character": "専",
+    "stroke_count": 9,
+    "onyomi": [
+      "セン"
+    ],
+    "kunyomi": [
+      "もっぱ.ら"
+    ],
+    "meaning_vi": "CHUYÊN - độc chiếm; giữ cho riêng mình",
+    "mnemonic_vi": "",
+    "radicals": []
+  },
+  {
+    "character": "泉",
+    "stroke_count": 9,
+    "onyomi": [
+      "セン"
+    ],
+    "kunyomi": [
+      "いずみ"
+    ],
+    "meaning_vi": "Suối, nguồn",
+    "mnemonic_vi": "Chữ 泉 có nghĩa là \"Suối, nguồn\".",
+    "radicals": []
+  },
+  {
+    "character": "浅",
+    "stroke_count": 9,
+    "onyomi": [
+      "セン"
+    ],
+    "kunyomi": [
+      "あさ.い"
+    ],
+    "meaning_vi": "Nông, thiển cận",
+    "mnemonic_vi": "Chữ 浅 có nghĩa là \"Nông, thiển cận\".",
+    "radicals": []
+  },
+  {
+    "character": "柔",
+    "stroke_count": 9,
+    "onyomi": [
+      "ジュウ",
+      "ニュウ"
+    ],
+    "kunyomi": [
+      "やわ.らか",
+      "やわ.らかい",
+      "やわ"
+    ],
+    "meaning_vi": "Mềm, mềm yếu, mềm mại",
+    "mnemonic_vi": "Chữ 柔 có nghĩa là \"Mềm, mềm yếu, mềm mại\".",
+    "radicals": []
+  },
+  {
+    "character": "拾",
+    "stroke_count": 9,
+    "onyomi": [
+      "シュウ",
+      "ジュウ"
+    ],
+    "kunyomi": [
+      "ひろ.う"
+    ],
+    "meaning_vi": "Nhặt nhạnh, mười",
+    "mnemonic_vi": "Chữ 拾 có nghĩa là \"Nhặt nhạnh, mười\".",
+    "radicals": []
+  },
+  {
+    "character": "咲",
+    "stroke_count": 9,
+    "onyomi": [
+      "ショウ"
+    ],
+    "kunyomi": [
+      "さ.く"
+    ],
+    "meaning_vi": "Cười, vui cười",
+    "mnemonic_vi": "Chữ 咲 có nghĩa là \"Cười, vui cười\".",
+    "radicals": []
+  },
+  {
+    "character": "紅",
+    "stroke_count": 9,
+    "onyomi": [
+      "コウ",
+      "ク",
+      "アカ"
+    ],
+    "kunyomi": [
+      "べに",
+      "くれない"
+    ],
+    "meaning_vi": "Đỏ hồng",
+    "mnemonic_vi": "Chữ 紅 có nghĩa là \"Đỏ hồng\".",
+    "radicals": []
+  },
+  {
+    "character": "香",
+    "stroke_count": 9,
+    "onyomi": [
+      "コウ",
+      "キョウ"
+    ],
+    "kunyomi": [
+      "か",
+      "かお.り",
+      "かお.る"
+    ],
+    "meaning_vi": "hương thơm",
+    "mnemonic_vi": "Chữ 香 có nghĩa là \"hương thơm\".",
+    "radicals": []
+  },
+  {
+    "character": "砂",
+    "stroke_count": 9,
+    "onyomi": [
+      "サ",
+      "シャ"
+    ],
+    "kunyomi": [
+      "すな"
+    ],
+    "meaning_vi": "Cát vàng, đá vụn, sỏi vụn",
+    "mnemonic_vi": "Chữ 砂 có nghĩa là \"Cát vàng, đá vụn, sỏi vụn\".",
+    "radicals": []
+  },
+  {
+    "character": "狭",
+    "stroke_count": 9,
+    "onyomi": [
+      "キョウ",
+      "コウ"
+    ],
+    "kunyomi": [
+      "せま.い",
+      "せば.める",
+      "せば.まる",
+      "さ"
+    ],
+    "meaning_vi": "HIỆP (hẹp; thu hẹp; hẹp lại)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "夹",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "犭",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "挟",
+    "stroke_count": 9,
+    "onyomi": [
+      "キョウ",
+      "ショウ"
+    ],
+    "kunyomi": [
+      "はさ.む",
+      "はさ.まる",
+      "わきばさ.む",
+      "さしはさ.む"
+    ],
+    "meaning_vi": "kẹp, giữa",
+    "mnemonic_vi": "Chữ 挟 có nghĩa là \"kẹp, giữa\".",
+    "radicals": []
+  },
+  {
+    "character": "荒",
+    "stroke_count": 9,
+    "onyomi": [
+      "コウ"
+    ],
+    "kunyomi": [
+      "あら.い",
+      "あら-",
+      "あ.れる",
+      "あ.らす",
+      "あ.らし",
+      "すさ.む"
+    ],
+    "meaning_vi": "Bỏ hoang",
+    "mnemonic_vi": "Chữ 荒 có nghĩa là \"Bỏ hoang\".",
+    "radicals": []
+  },
+  {
+    "character": "郊",
+    "stroke_count": 9,
+    "onyomi": [
+      "コウ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "Tế giao",
+    "mnemonic_vi": "Chữ 郊 có nghĩa là \"Tế giao\".",
+    "radicals": []
+  },
+  {
+    "character": "故",
+    "stroke_count": 9,
+    "onyomi": [
+      "コ"
+    ],
+    "kunyomi": [
+      "ゆえ",
+      "ふる.い",
+      "もと"
+    ],
+    "meaning_vi": "CỐ (cũ; xưa)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "古",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "攵",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "枯",
+    "stroke_count": 9,
+    "onyomi": [
+      "コ"
+    ],
+    "kunyomi": [
+      "か.れる",
+      "か.らす"
+    ],
+    "meaning_vi": "Khô héo, cạn",
+    "mnemonic_vi": "Chữ 枯 có nghĩa là \"Khô héo, cạn\".",
+    "radicals": []
+  },
+  {
+    "character": "皆",
+    "stroke_count": 9,
+    "onyomi": [
+      "カイ"
+    ],
+    "kunyomi": [
+      "みな",
+      "みんな"
+    ],
+    "meaning_vi": "GIAI (tất cả; mọi người; toàn bộ)",
+    "mnemonic_vi": "So sánh(比) mọi người ở trên tòa nhà trắng(白).Mọi người trông tương tự nhau.",
+    "radicals": [
+      {
+        "character": "比",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "白",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "革",
+    "stroke_count": 9,
+    "onyomi": [
+      "カク"
+    ],
+    "kunyomi": [
+      "かわ"
+    ],
+    "meaning_vi": "Da, đổi",
+    "mnemonic_vi": "Chữ 革 có nghĩa là \"Da, đổi\".",
+    "radicals": []
+  },
+  {
+    "character": "看",
+    "stroke_count": 9,
+    "onyomi": [
+      "カン"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "chăm sóc (người bệnh)",
+    "mnemonic_vi": "Chữ 看 có nghĩa là \"chăm sóc (người bệnh)\".",
+    "radicals": []
+  },
+  {
+    "character": "巻",
+    "stroke_count": 9,
+    "onyomi": [
+      "カン",
+      "ケン"
+    ],
+    "kunyomi": [
+      "ま.く",
+      "まき",
+      "ま.き"
+    ],
+    "meaning_vi": "Quyển sách",
+    "mnemonic_vi": "Chữ 巻 có nghĩa là \"Quyển sách\".",
+    "radicals": []
+  },
+  {
+    "character": "案",
+    "stroke_count": 10,
+    "onyomi": [
+      "アン"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "dự thảo, phương án, đề xuất",
+    "mnemonic_vi": "Chữ 案 có nghĩa là \"dự thảo, phương án, đề xuất\".",
+    "radicals": []
+  },
+  {
+    "character": "軒",
+    "stroke_count": 10,
+    "onyomi": [
+      "ケン"
+    ],
+    "kunyomi": [
+      "のき"
+    ],
+    "meaning_vi": "Mái hiên",
+    "mnemonic_vi": "Chữ 軒 có nghĩa là \"Mái hiên\".",
+    "radicals": []
+  },
+  {
+    "character": "原",
+    "stroke_count": 10,
+    "onyomi": [
+      "ゲン"
+    ],
+    "kunyomi": [
+      "はら"
+    ],
+    "meaning_vi": "NGUYÊN (cánh đồng; vùng đất rộng và bằng phẳng)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "厂",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "小",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "白",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "恵",
+    "stroke_count": 10,
+    "onyomi": [
+      "ケイ",
+      "エ"
+    ],
+    "kunyomi": [
+      "めぐ.む",
+      "めぐ.み"
+    ],
+    "meaning_vi": "HUỆ (ban cho; thương xót; ân huệ)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "一",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "由",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "心",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "降",
+    "stroke_count": 10,
+    "onyomi": [
+      "コウ",
+      "ゴ"
+    ],
+    "kunyomi": [
+      "お.りる",
+      "お.ろす",
+      "ふ.る",
+      "ふ.り",
+      "くだ.る",
+      "くだ.す"
+    ],
+    "meaning_vi": "HÀNG, GIÁNG (xuống; đi xuống; hạ xuống)",
+    "mnemonic_vi": "Chúng tôi xuống ở bến xe bus.",
+    "radicals": [
+      {
+        "character": "ヰ",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "夂",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "⻖",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "胸",
+    "stroke_count": 10,
+    "onyomi": [
+      "キョウ"
+    ],
+    "kunyomi": [
+      "むね",
+      "むな-"
+    ],
+    "meaning_vi": "Ngực, Tấm lòng",
+    "mnemonic_vi": "Chữ 胸 có nghĩa là \"Ngực, Tấm lòng\".",
+    "radicals": []
+  },
+  {
+    "character": "恐",
+    "stroke_count": 10,
+    "onyomi": [
+      "キョウ"
+    ],
+    "kunyomi": [
+      "おそ.れる",
+      "おそ.る",
+      "おそ.ろしい",
+      "こわ.い",
+      "こわ.がる"
+    ],
+    "meaning_vi": "KHỦNG, KHÚNG (sợ; đáng sợ)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "凡",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "工",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "心",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "座",
+    "stroke_count": 10,
+    "onyomi": [
+      "ザ"
+    ],
+    "kunyomi": [
+      "すわ.る"
+    ],
+    "meaning_vi": "TỌA (ngồi; chỗ ngồi; địa vị; ngôi vị)",
+    "mnemonic_vi": "Hai người(人) ngồi trên đất(土).",
+    "radicals": [
+      {
+        "character": "坐",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "广",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "耕",
+    "stroke_count": 10,
+    "onyomi": [
+      "コウ",
+      "タガヤ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "Cầy ruộng",
+    "mnemonic_vi": "Chữ 耕 có nghĩa là \"Cầy ruộng\".",
+    "radicals": []
+  },
+  {
+    "character": "骨",
+    "stroke_count": 10,
+    "onyomi": [
+      "コツ"
+    ],
+    "kunyomi": [
+      "ほね"
+    ],
+    "meaning_vi": "Xương",
+    "mnemonic_vi": "Chữ 骨 có nghĩa là \"Xương\".",
+    "radicals": []
+  },
+  {
+    "character": "脂",
+    "stroke_count": 10,
+    "onyomi": [
+      "シ"
+    ],
+    "kunyomi": [
+      "あぶら"
+    ],
+    "meaning_vi": "Mỡ tảng",
+    "mnemonic_vi": "Chữ 脂 có nghĩa là \"Mỡ tảng\".",
+    "radicals": []
+  },
+  {
+    "character": "修",
+    "stroke_count": 10,
+    "onyomi": [
+      "シュウ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "sửa chữa, chỉnh sửa",
+    "mnemonic_vi": "Chữ 修 có nghĩa là \"sửa chữa, chỉnh sửa\".",
+    "radicals": []
+  },
+  {
+    "character": "純",
+    "stroke_count": 10,
+    "onyomi": [
+      "ジュン"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "Thành thực",
+    "mnemonic_vi": "Chữ 純 có nghĩa là \"Thành thực\".",
+    "radicals": []
+  },
+  {
+    "character": "将",
+    "stroke_count": 10,
+    "onyomi": [
+      "ショウ",
+      "ソウ",
+      "モッ"
+    ],
+    "kunyomi": [
+      "まさ.に",
+      "はた",
+      "まさ",
+      "ひきい.る"
+    ],
+    "meaning_vi": "tương lai, tướng quân",
+    "mnemonic_vi": "Chữ 将 có nghĩa là \"tương lai, tướng quân\".",
+    "radicals": []
+  },
+  {
+    "character": "捜",
+    "stroke_count": 10,
+    "onyomi": [
+      "ソウ",
+      "シュ",
+      "シュウ"
+    ],
+    "kunyomi": [
+      "さが.す"
+    ],
+    "meaning_vi": "Sưu tầm, sưu tập",
+    "mnemonic_vi": "Chữ 捜 có nghĩa là \"Sưu tầm, sưu tập\".",
+    "radicals": []
+  },
+  {
+    "character": "除",
+    "stroke_count": 10,
+    "onyomi": [
+      "ジョ",
+      "ジ"
+    ],
+    "kunyomi": [
+      "のぞ.く",
+      "-よ.け"
+    ],
+    "meaning_vi": "TRỪ (loại bỏ; lấy đi; xua đuổi)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "余",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "⻖",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "針",
+    "stroke_count": 10,
+    "onyomi": [
+      "シン"
+    ],
+    "kunyomi": [
+      "はり"
+    ],
+    "meaning_vi": "cây kim",
+    "mnemonic_vi": "Chữ 針 có nghĩa là \"cây kim\".",
+    "radicals": []
+  },
+  {
+    "character": "値",
+    "stroke_count": 10,
+    "onyomi": [
+      "チ"
+    ],
+    "kunyomi": [
+      "ね",
+      "あたい"
+    ],
+    "meaning_vi": "TRỊ (giá trị số)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "亻",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "直",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "恥",
+    "stroke_count": 10,
+    "onyomi": [
+      "チ"
+    ],
+    "kunyomi": [
+      "は.じる",
+      "はじ",
+      "は.じらう",
+      "は.ずかしい"
+    ],
+    "meaning_vi": "SỈ (xấu hổ; nỗi nhục)",
+    "mnemonic_vi": "Thật  là một sự  xấu hổ  nếu bạn không lắng nghe tiếng nói từ trái tim của bạn (心).",
+    "radicals": [
+      {
+        "character": "耳",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "心",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "畜",
+    "stroke_count": 10,
+    "onyomi": [
+      "チク"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "súc tích, chứa ,nuôi",
+    "mnemonic_vi": "Chữ 畜 có nghĩa là \"súc tích, chứa ,nuôi\".",
+    "radicals": []
+  },
+  {
+    "character": "涙",
+    "stroke_count": 10,
+    "onyomi": [
+      "ルイ",
+      "レイ"
+    ],
+    "kunyomi": [
+      "なみだ"
+    ],
+    "meaning_vi": "Nước mắt",
+    "mnemonic_vi": "Chữ 涙 có nghĩa là \"Nước mắt\".",
+    "radicals": []
+  },
+  {
+    "character": "恋",
+    "stroke_count": 10,
+    "onyomi": [
+      "レン"
+    ],
+    "kunyomi": [
+      "こ.う",
+      "こい",
+      "こい.しい"
+    ],
+    "meaning_vi": "Mến",
+    "mnemonic_vi": "Chữ 恋 có nghĩa là \"Mến\".",
+    "radicals": []
+  },
+  {
+    "character": "粉",
+    "stroke_count": 10,
+    "onyomi": [
+      "フン"
+    ],
+    "kunyomi": [
+      "こ",
+      "こな",
+      "デシメートル"
+    ],
+    "meaning_vi": "Bột gạo, phấn gạo",
+    "mnemonic_vi": "Chữ 粉 có nghĩa là \"Bột gạo, phấn gạo\".",
+    "radicals": []
+  },
+  {
+    "character": "浮",
+    "stroke_count": 10,
+    "onyomi": [
+      "フ"
+    ],
+    "kunyomi": [
+      "う.く",
+      "う.かれる",
+      "う.かぶ",
+      "む",
+      "う.かべる"
+    ],
+    "meaning_vi": "PHÙ (nổi; trôi; làm cho nổi)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "孚",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "氵",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "疲",
+    "stroke_count": 10,
+    "onyomi": [
+      "ヒ"
+    ],
+    "kunyomi": [
+      "つか.れる",
+      "-づか.れ",
+      "つか.らす"
+    ],
+    "meaning_vi": "BÌ (mệt mỏi; suy yếu)",
+    "mnemonic_vi": "Anh ấy (彼) đã kiệt sức và đã đi đến bệnh viện",
+    "radicals": [
+      {
+        "character": "疒",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "皮",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "被",
+    "stroke_count": 10,
+    "onyomi": [
+      "ヒ"
+    ],
+    "kunyomi": [
+      "こうむ.る",
+      "おお.う",
+      "かぶ.る",
+      "かぶ.せる"
+    ],
+    "meaning_vi": "Áo ngủ",
+    "mnemonic_vi": "Chữ 被 có nghĩa là \"Áo ngủ\".",
+    "radicals": []
+  },
+  {
+    "character": "途",
+    "stroke_count": 10,
+    "onyomi": [
+      "ト"
+    ],
+    "kunyomi": [
+      "みち"
+    ],
+    "meaning_vi": "ĐỒ (con đường; lộ trình)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "余",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "⻌",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "捕",
+    "stroke_count": 10,
+    "onyomi": [
+      "ホ"
+    ],
+    "kunyomi": [
+      "と.らえる",
+      "と.らわれる",
+      "と.る",
+      "とら.える",
+      "とら.われる",
+      "つか.まえる",
+      "つか.まる"
+    ],
+    "meaning_vi": "BỘ (bắt; tóm; bắt giữ)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "甫",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "扌",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "眠",
+    "stroke_count": 10,
+    "onyomi": [
+      "ミン"
+    ],
+    "kunyomi": [
+      "ねむ.る",
+      "ねむ.い"
+    ],
+    "meaning_vi": "MIÊN (ngủ; buồn ngủ; giấc ngủ)",
+    "mnemonic_vi": "Một người(民) thì đang ngủ với đôi mắt(目) đã khép.",
+    "radicals": [
+      {
+        "character": "目",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "民",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "娘",
+    "stroke_count": 10,
+    "onyomi": [
+      "ジョウ"
+    ],
+    "kunyomi": [
+      "むすめ",
+      "こ"
+    ],
+    "meaning_vi": "NƯƠNG (con gái)",
+    "mnemonic_vi": "Con gái của tôi là  một cô gái(女) tốt(良)",
+    "radicals": [
+      {
+        "character": "良",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "女",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "埋",
+    "stroke_count": 10,
+    "onyomi": [
+      "マイ"
+    ],
+    "kunyomi": [
+      "う.める",
+      "う.まる",
+      "う.もれる",
+      "うず.める",
+      "うず.まる",
+      "い.ける"
+    ],
+    "meaning_vi": "Chôn, mai táng",
+    "mnemonic_vi": "Chữ 埋 có nghĩa là \"Chôn, mai táng\".",
+    "radicals": []
+  },
+  {
+    "character": "展",
+    "stroke_count": 10,
+    "onyomi": [
+      "テン"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "TRIỂN (ngắm nhìn; quan sát rộng)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "𧘇",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "龷",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "尸",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "倒",
+    "stroke_count": 10,
+    "onyomi": [
+      "トウ"
+    ],
+    "kunyomi": [
+      "たお.れる",
+      "-だお.れ",
+      "たお.す",
+      "さかさま",
+      "さかさ",
+      "さかしま"
+    ],
+    "meaning_vi": "ĐẢO (đảo ngược; đảo lộn)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "亻",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "到",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "党",
+    "stroke_count": 10,
+    "onyomi": [
+      "トウ"
+    ],
+    "kunyomi": [
+      "なかま むら"
+    ],
+    "meaning_vi": "Đảng",
+    "mnemonic_vi": "Chữ 党 có nghĩa là \"Đảng\".",
+    "radicals": []
+  },
+  {
+    "character": "凍",
+    "stroke_count": 10,
+    "onyomi": [
+      "トウ"
+    ],
+    "kunyomi": [
+      "こお.る",
+      "こご.える",
+      "こご.る",
+      "い.てる"
+    ],
+    "meaning_vi": "Nước đông, nước đá",
+    "mnemonic_vi": "Chữ 凍 có nghĩa là \"Nước đông, nước đá\".",
+    "radicals": []
+  },
+  {
+    "character": "般",
+    "stroke_count": 10,
+    "onyomi": [
+      "ハン"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "Quanh co",
+    "mnemonic_vi": "Chữ 般 có nghĩa là \"Quanh co\".",
+    "radicals": []
+  },
+  {
+    "character": "悩",
+    "stroke_count": 10,
+    "onyomi": [
+      "ノウ"
+    ],
+    "kunyomi": [
+      "なや.む",
+      "なや.ます",
+      "なや.ましい",
+      "なやみ"
+    ],
+    "meaning_vi": "Khổ não, lo lắng, não lòng",
+    "mnemonic_vi": "Chữ 悩 có nghĩa là \"Khổ não, lo lắng, não lòng\".",
+    "radicals": []
+  },
+  {
+    "character": "盗",
+    "stroke_count": 11,
+    "onyomi": [
+      "トウ"
+    ],
+    "kunyomi": [
+      "ぬす.む",
+      "ぬす.み"
+    ],
+    "meaning_vi": "ĐẠO (ăn trộm; lấy đồ của người khác; việc trộm cắp)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "次",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "皿",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "脳",
+    "stroke_count": 11,
+    "onyomi": [
+      "ノウ",
+      "ドウ"
+    ],
+    "kunyomi": [
+      "のうずる"
+    ],
+    "meaning_vi": "Bộ não, đầu não",
+    "mnemonic_vi": "Chữ 脳 có nghĩa là \"Bộ não, đầu não\".",
+    "radicals": []
+  },
+  {
+    "character": "猫",
+    "stroke_count": 11,
+    "onyomi": [
+      "ビョウ"
+    ],
+    "kunyomi": [
+      "ねこ"
+    ],
+    "meaning_vi": "MIÊU (con mèo; động vật họ mèo)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "苗",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "犭",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "軟",
+    "stroke_count": 11,
+    "onyomi": [
+      "ナン"
+    ],
+    "kunyomi": [
+      "やわ.らか",
+      "やわ.らかい"
+    ],
+    "meaning_vi": "Mềm",
+    "mnemonic_vi": "Chữ 軟 có nghĩa là \"Mềm\".",
+    "radicals": []
+  },
+  {
+    "character": "販",
+    "stroke_count": 11,
+    "onyomi": [
+      "ハン"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "Mua rẻ bán đắt, buôn bán",
+    "mnemonic_vi": "Chữ 販 có nghĩa là \"Mua rẻ bán đắt, buôn bán\".",
+    "radicals": []
+  },
+  {
+    "character": "訪",
+    "stroke_count": 11,
+    "onyomi": [
+      "ホウ"
+    ],
+    "kunyomi": [
+      "おとず.れる",
+      "たず.ねる",
+      "と.う"
+    ],
+    "meaning_vi": "PHÓNG, PHỎNG (đến thăm; hỏi; viếng thăm ai đó)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "方",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "言",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "符",
+    "stroke_count": 11,
+    "onyomi": [
+      "フ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "Cái thẻ, bùa; Hợp, đúng",
+    "mnemonic_vi": "Chữ 符 có nghĩa là \"Cái thẻ, bùa; Hợp, đúng\".",
+    "radicals": []
+  },
+  {
+    "character": "貧",
+    "stroke_count": 11,
+    "onyomi": [
+      "ヒン",
+      "ビン"
+    ],
+    "kunyomi": [
+      "まず.しい"
+    ],
+    "meaning_vi": "BẦN (nghèo; tồi tàn)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "分",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "貝",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "閉",
+    "stroke_count": 11,
+    "onyomi": [
+      "ヘイ"
+    ],
+    "kunyomi": [
+      "と.じる",
+      "と.ざす",
+      "し.める",
+      "し.まる",
+      "た.てる"
+    ],
+    "meaning_vi": "BẾ (đóng; khép)",
+    "mnemonic_vi": "Một người đóng cái cổng(門).",
+    "radicals": [
+      {
+        "character": "オ",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "門",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "粒",
+    "stroke_count": 11,
+    "onyomi": [
+      "リュウ"
+    ],
+    "kunyomi": [
+      "つぶ"
+    ],
+    "meaning_vi": "Hạt gạo, hạt lúa",
+    "mnemonic_vi": "Chữ 粒 có nghĩa là \"Hạt gạo, hạt lúa\".",
+    "radicals": []
+  },
+  {
+    "character": "涼",
+    "stroke_count": 11,
+    "onyomi": [
+      "リョウ",
+      "マコト"
+    ],
+    "kunyomi": [
+      "すず.しい",
+      "すず.む",
+      "すず.やか",
+      "うす.い",
+      "ひや.す"
+    ],
+    "meaning_vi": "Mỏng mẻo ; Lạnh, mát",
+    "mnemonic_vi": "Chữ 涼 có nghĩa là \"Mỏng mẻo ; Lạnh, mát\".",
+    "radicals": []
+  },
+  {
+    "character": "欲",
+    "stroke_count": 11,
+    "onyomi": [
+      "ヨク"
+    ],
+    "kunyomi": [
+      "ほっ.する",
+      "ほ.しい"
+    ],
+    "meaning_vi": "DỤC (khao khát; mong muốn)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "欠",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "谷",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "翌",
+    "stroke_count": 11,
+    "onyomi": [
+      "ヨク"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "Ngày mai, kỳ tới",
+    "mnemonic_vi": "Chữ 翌 có nghĩa là \"Ngày mai, kỳ tới\".",
+    "radicals": []
+  },
+  {
+    "character": "郵",
+    "stroke_count": 11,
+    "onyomi": [
+      "ユウ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "Nhà trạm",
+    "mnemonic_vi": "Chữ 郵 có nghĩa là \"Nhà trạm\".",
+    "radicals": []
+  },
+  {
+    "character": "紹",
+    "stroke_count": 11,
+    "onyomi": [
+      "ショウ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "giới thiệu",
+    "mnemonic_vi": "Chữ 紹 có nghĩa là \"giới thiệu\".",
+    "radicals": []
+  },
+  {
+    "character": "頂",
+    "stroke_count": 11,
+    "onyomi": [
+      "チョウ"
+    ],
+    "kunyomi": [
+      "いただ.く",
+      "いただき"
+    ],
+    "meaning_vi": "ĐÍNH (đỉnh; chóp)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "丁",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "頁",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "著",
+    "stroke_count": 11,
+    "onyomi": [
+      "チョ",
+      "チャク"
+    ],
+    "kunyomi": [
+      "あらわ.す",
+      "いちじる.しい"
+    ],
+    "meaning_vi": "Sáng, rõ rệ",
+    "mnemonic_vi": "Chữ 著 có nghĩa là \"Sáng, rõ rệ\".",
+    "radicals": []
+  },
+  {
+    "character": "張",
+    "stroke_count": 11,
+    "onyomi": [
+      "チョウ"
+    ],
+    "kunyomi": [
+      "は.る",
+      "-は.り",
+      "-ば.り"
+    ],
+    "meaning_vi": "TRƯƠNG, TRƯỚNG (khăng khăng; quả quyết)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "長",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "弓",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "袋",
+    "stroke_count": 11,
+    "onyomi": [
+      "タイ",
+      "ダイ"
+    ],
+    "kunyomi": [
+      "ふくろ"
+    ],
+    "meaning_vi": "Cái đẫy",
+    "mnemonic_vi": "Chữ 袋 có nghĩa là \"Cái đẫy\".",
+    "radicals": []
+  },
+  {
+    "character": "探",
+    "stroke_count": 11,
+    "onyomi": [
+      "タン"
+    ],
+    "kunyomi": [
+      "さぐ.る",
+      "さが.す"
+    ],
+    "meaning_vi": "THAM, THÁM (dò xét; tìm kiếm; tìm tòi)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "扌",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "罙",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "掃",
+    "stroke_count": 11,
+    "onyomi": [
+      "ソウ",
+      "シュ"
+    ],
+    "kunyomi": [
+      "は.く"
+    ],
+    "meaning_vi": "quét,",
+    "mnemonic_vi": "Chữ 掃 có nghĩa là \"quét,\".",
+    "radicals": []
+  },
+  {
+    "character": "窓",
+    "stroke_count": 11,
+    "onyomi": [
+      "ソウ",
+      "ス"
+    ],
+    "kunyomi": [
+      "まど",
+      "てんまど",
+      "けむだし"
+    ],
+    "meaning_vi": "SONG (cửa sổ)",
+    "mnemonic_vi": "Hãy mở cửa sổ trái tim(心) bạn",
+    "radicals": [
+      {
+        "character": "穴",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "厶",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "心",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "授",
+    "stroke_count": 11,
+    "onyomi": [
+      "ジュ"
+    ],
+    "kunyomi": [
+      "さず.ける",
+      "さず.かる"
+    ],
+    "meaning_vi": "THỤ (ban cho; truyền thụ; trao cho)",
+    "mnemonic_vi": "Được  hướng dẫn  giống như  nhận (受) điều từ một người nào đó.",
+    "radicals": [
+      {
+        "character": "扌",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "受",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "捨",
+    "stroke_count": 11,
+    "onyomi": [
+      "シャ"
+    ],
+    "kunyomi": [
+      "す.てる"
+    ],
+    "meaning_vi": "Vứt bỏ, Bỏ",
+    "mnemonic_vi": "Chữ 捨 có nghĩa là \"Vứt bỏ, Bỏ\".",
+    "radicals": []
+  },
+  {
+    "character": "婚",
+    "stroke_count": 11,
+    "onyomi": [
+      "コン"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "HÔN (trở thành vợ chồng; kết hôn)",
+    "mnemonic_vi": "Người phụ nữ(女) đã thay đổi họ tên(氏) của cô ấy sau  đám cưới",
+    "radicals": [
+      {
+        "character": "女",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "昏",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "採",
+    "stroke_count": 11,
+    "onyomi": [
+      "サイ"
+    ],
+    "kunyomi": [
+      "と.る"
+    ],
+    "meaning_vi": "Hái, Chọn nhặt",
+    "mnemonic_vi": "Chữ 採 có nghĩa là \"Hái, Chọn nhặt\".",
+    "radicals": []
+  },
+  {
+    "character": "済",
+    "stroke_count": 11,
+    "onyomi": [
+      "サイ",
+      "セイ"
+    ],
+    "kunyomi": [
+      "す.む",
+      "-ず.み",
+      "-ずみ",
+      "す.まない",
+      "す.ます",
+      "-す.ます",
+      "すく.う",
+      "な.す",
+      "わたし",
+      "わた.る"
+    ],
+    "meaning_vi": "TẾ (xong xuôi; kết thúc)",
+    "mnemonic_vi": "Tôi đã hoàn thành viết các câu(文) trên tấm bảng",
+    "radicals": [
+      {
+        "character": "斉",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "氵",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "偶",
+    "stroke_count": 11,
+    "onyomi": [
+      "グウ"
+    ],
+    "kunyomi": [
+      "たま"
+    ],
+    "meaning_vi": "NGẪU (thành đôi; đồng hành; cùng loại)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "禺",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "亻",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "掘",
+    "stroke_count": 11,
+    "onyomi": [
+      "クツ"
+    ],
+    "kunyomi": [
+      "ほ.る"
+    ],
+    "meaning_vi": "Đào, Khát",
+    "mnemonic_vi": "Chữ 掘 có nghĩa là \"Đào, Khát\".",
+    "radicals": []
+  },
+  {
+    "character": "康",
+    "stroke_count": 11,
+    "onyomi": [
+      "コウ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "KHANG, KHƯƠNG (yên ổn; bình an; yên tâm)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "隶",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "广",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "健",
+    "stroke_count": 11,
+    "onyomi": [
+      "ケン"
+    ],
+    "kunyomi": [
+      "すこ.やか"
+    ],
+    "meaning_vi": "KIỆN (khỏe mạnh; tráng kiện)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "亻",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "建",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "異",
+    "stroke_count": 11,
+    "onyomi": [
+      "イ"
+    ],
+    "kunyomi": [
+      "こと",
+      "こと.なる",
+      "け"
+    ],
+    "meaning_vi": "DỊ, DI (khác biệt; làm cho khác; khác lạ)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "共",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "田",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "黄",
+    "stroke_count": 11,
+    "onyomi": [
+      "コウ",
+      "オウ"
+    ],
+    "kunyomi": [
+      "き",
+      "こ"
+    ],
+    "meaning_vi": "Sắc vàng, sắc ngũ cốc chín",
+    "mnemonic_vi": "Chữ 黄 có nghĩa là \"Sắc vàng, sắc ngũ cốc chín\".",
+    "radicals": []
+  },
+  {
+    "character": "乾",
+    "stroke_count": 11,
+    "onyomi": [
+      "カン",
+      "ケン"
+    ],
+    "kunyomi": [
+      "かわ.く",
+      "かわ.かす",
+      "ほ.す",
+      "ひ.る",
+      "いぬい"
+    ],
+    "meaning_vi": "Khô, khô kiệt",
+    "mnemonic_vi": "Chữ 乾 có nghĩa là \"Khô, khô kiệt\".",
+    "radicals": []
+  },
+  {
+    "character": "基",
+    "stroke_count": 11,
+    "onyomi": [
+      "キ"
+    ],
+    "kunyomi": [
+      "もと",
+      "もとい"
+    ],
+    "meaning_vi": "CƠ (cơ sở; nền tảng; căn bản; chỗ dựa)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "其",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "土",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "域",
+    "stroke_count": 11,
+    "onyomi": [
+      "イキ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "VỰC - một phạm vi giới hạn nhất định",
+    "mnemonic_vi": "",
+    "radicals": []
+  },
+  {
+    "character": "械",
+    "stroke_count": 11,
+    "onyomi": [
+      "カイ"
+    ],
+    "kunyomi": [
+      "かせ"
+    ],
+    "meaning_vi": "Đồ khí giới",
+    "mnemonic_vi": "Chữ 械 có nghĩa là \"Đồ khí giới\".",
+    "radicals": []
+  },
+  {
+    "character": "菓",
+    "stroke_count": 12,
+    "onyomi": [
+      "カ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "kẹo, bánh, trái cây",
+    "mnemonic_vi": "Chữ 菓 có nghĩa là \"kẹo, bánh, trái cây\".",
+    "radicals": []
+  },
+  {
+    "character": "割",
+    "stroke_count": 12,
+    "onyomi": [
+      "カツ"
+    ],
+    "kunyomi": [
+      "わ.る",
+      "わり",
+      "わ.り",
+      "わ.れる",
+      "さ.く"
+    ],
+    "meaning_vi": "CÁT (chia; tách; xẻ)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "害",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "刂",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "換",
+    "stroke_count": 12,
+    "onyomi": [
+      "カン"
+    ],
+    "kunyomi": [
+      "か.える",
+      "か.える",
+      "か.わる"
+    ],
+    "meaning_vi": "Thay đổi",
+    "mnemonic_vi": "Chữ 換 có nghĩa là \"Thay đổi\".",
+    "radicals": []
+  },
+  {
+    "character": "奥",
+    "stroke_count": 12,
+    "onyomi": [
+      "オウ"
+    ],
+    "kunyomi": [
+      "おく",
+      "おく.まる",
+      "くま"
+    ],
+    "meaning_vi": "Thần áo, Nước Áo",
+    "mnemonic_vi": "Chữ 奥 có nghĩa là \"Thần áo, Nước Áo\".",
+    "radicals": []
+  },
+  {
+    "character": "偉",
+    "stroke_count": 12,
+    "onyomi": [
+      "イ"
+    ],
+    "kunyomi": [
+      "えら.い"
+    ],
+    "meaning_vi": "VĨ (vĩ đại; xuất chúng)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "亻",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "韋",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "越",
+    "stroke_count": 12,
+    "onyomi": [
+      "エツ",
+      "オツ"
+    ],
+    "kunyomi": [
+      "こ.す",
+      "-こ.す",
+      "-ご.し",
+      "こ.える",
+      "-ご.え"
+    ],
+    "meaning_vi": "VIỆT, HOẠT (vượt qua; băng qua; nhảy qua)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "走",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "戉",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "敬",
+    "stroke_count": 12,
+    "onyomi": [
+      "ケイ",
+      "キョウ"
+    ],
+    "kunyomi": [
+      "うやま.う"
+    ],
+    "meaning_vi": "Cung kính",
+    "mnemonic_vi": "Chữ 敬 có nghĩa là \"Cung kính\".",
+    "radicals": []
+  },
+  {
+    "character": "減",
+    "stroke_count": 12,
+    "onyomi": [
+      "ゲン"
+    ],
+    "kunyomi": [
+      "へ.る",
+      "へ.らす"
+    ],
+    "meaning_vi": "Bớt, ít đi, giảm đi",
+    "mnemonic_vi": "Chữ 減 có nghĩa là \"Bớt, ít đi, giảm đi\".",
+    "radicals": []
+  },
+  {
+    "character": "雇",
+    "stroke_count": 12,
+    "onyomi": [
+      "コ"
+    ],
+    "kunyomi": [
+      "やと.う"
+    ],
+    "meaning_vi": "Tên một giống chim",
+    "mnemonic_vi": "Chữ 雇 có nghĩa là \"Tên một giống chim\".",
+    "radicals": []
+  },
+  {
+    "character": "硬",
+    "stroke_count": 12,
+    "onyomi": [
+      "コウ"
+    ],
+    "kunyomi": [
+      "かた.い"
+    ],
+    "meaning_vi": "Cứng rắn",
+    "mnemonic_vi": "Chữ 硬 có nghĩa là \"Cứng rắn\".",
+    "radicals": []
+  },
+  {
+    "character": "御",
+    "stroke_count": 12,
+    "onyomi": [
+      "ギョ",
+      "ゴ"
+    ],
+    "kunyomi": [
+      "おん-",
+      "お-",
+      "み-"
+    ],
+    "meaning_vi": "NGỰ, NHẠ, NGỮ (từ biểu thị sự kính trọng; lịch sự)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "彳",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "卸",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "隅",
+    "stroke_count": 12,
+    "onyomi": [
+      "グウ"
+    ],
+    "kunyomi": [
+      "すみ"
+    ],
+    "meaning_vi": "Đất ngoài ven",
+    "mnemonic_vi": "Chữ 隅 có nghĩa là \"Đất ngoài ven\".",
+    "radicals": []
+  },
+  {
+    "character": "勤",
+    "stroke_count": 12,
+    "onyomi": [
+      "キン",
+      "ゴン"
+    ],
+    "kunyomi": [
+      "つと.める",
+      "-づと.め",
+      "つと.まる",
+      "いそ.しむ"
+    ],
+    "meaning_vi": "CẦN (làm việc chăm chỉ; nỗ lực; siêng năng)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "菫",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "力",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "喫",
+    "stroke_count": 12,
+    "onyomi": [
+      "キツ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "Ăn uống",
+    "mnemonic_vi": "Chữ 喫 có nghĩa là \"Ăn uống\".",
+    "radicals": []
+  },
+  {
+    "character": "湿",
+    "stroke_count": 12,
+    "onyomi": [
+      "シツ",
+      "シュウ"
+    ],
+    "kunyomi": [
+      "しめ.る",
+      "しめ.す",
+      "うるお.う",
+      "うるお.す"
+    ],
+    "meaning_vi": "Ướt, ẩm thấp",
+    "mnemonic_vi": "Chữ 湿 có nghĩa là \"Ướt, ẩm thấp\".",
+    "radicals": []
+  },
+  {
+    "character": "詞",
+    "stroke_count": 12,
+    "onyomi": [
+      "シ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "Lời văn",
+    "mnemonic_vi": "Chữ 詞 có nghĩa là \"Lời văn\".",
+    "radicals": []
+  },
+  {
+    "character": "畳",
+    "stroke_count": 12,
+    "onyomi": [
+      "ジョウ",
+      "チョウ"
+    ],
+    "kunyomi": [
+      "たた.む",
+      "たたみ",
+      "かさ.なる"
+    ],
+    "meaning_vi": "Chiếu, chiếu ngủ",
+    "mnemonic_vi": "Chữ 畳 có nghĩa là \"Chiếu, chiếu ngủ\".",
+    "radicals": []
+  },
+  {
+    "character": "装",
+    "stroke_count": 12,
+    "onyomi": [
+      "ソウ",
+      "ショウ"
+    ],
+    "kunyomi": [
+      "よそお.う",
+      "よそお.い"
+    ],
+    "meaning_vi": "Trang sức, trang hoàng",
+    "mnemonic_vi": "Chữ 装 có nghĩa là \"Trang sức, trang hoàng\".",
+    "radicals": []
+  },
+  {
+    "character": "善",
+    "stroke_count": 12,
+    "onyomi": [
+      "ゼン"
+    ],
+    "kunyomi": [
+      "よ.い",
+      "い.い",
+      "よ.く",
+      "よし.とする"
+    ],
+    "meaning_vi": "THIỆN, THIẾN (tốt; đúng đắn; hợp đạo lý)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "羊",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "䒑",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "口",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "晴",
+    "stroke_count": 12,
+    "onyomi": [
+      "セイ"
+    ],
+    "kunyomi": [
+      "は.れる",
+      "は.れ",
+      "は.れ-",
+      "-ば.れ",
+      "は.らす"
+    ],
+    "meaning_vi": "TÌNH (quang đãng; sáng sủa; tươi sáng)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "日",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "青",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "尊",
+    "stroke_count": 12,
+    "onyomi": [
+      "ソン"
+    ],
+    "kunyomi": [
+      "たっと.い",
+      "とうと.い",
+      "たっと.ぶ"
+    ],
+    "meaning_vi": "Tôn trọng",
+    "mnemonic_vi": "Chữ 尊 có nghĩa là \"Tôn trọng\".",
+    "radicals": []
+  },
+  {
+    "character": "替",
+    "stroke_count": 12,
+    "onyomi": [
+      "タイ"
+    ],
+    "kunyomi": [
+      "か.える",
+      "か.え",
+      "か.わる"
+    ],
+    "meaning_vi": "Bỏ, Thay, Suy bại",
+    "mnemonic_vi": "Chữ 替 có nghĩa là \"Bỏ, Thay, Suy bại\".",
+    "radicals": []
+  },
+  {
+    "character": "超",
+    "stroke_count": 12,
+    "onyomi": [
+      "チョウ"
+    ],
+    "kunyomi": [
+      "こ.える",
+      "こ.す"
+    ],
+    "meaning_vi": "tài trí hơn người",
+    "mnemonic_vi": "Chữ 超 có nghĩa là \"tài trí hơn người\".",
+    "radicals": []
+  },
+  {
+    "character": "遅",
+    "stroke_count": 12,
+    "onyomi": [
+      "チ"
+    ],
+    "kunyomi": [
+      "おく.れる",
+      "おく.らす",
+      "おそ.い"
+    ],
+    "meaning_vi": "TRÌ (chậm; lề mề; kém nhạy bén)",
+    "mnemonic_vi": "Một trong những con cừu(羊) đã nghỉ lại và trở về muộn",
+    "radicals": [
+      {
+        "character": "羊",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "尸",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "⻌",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "絡",
+    "stroke_count": 12,
+    "onyomi": [
+      "ラク"
+    ],
+    "kunyomi": [
+      "から.む",
+      "から.まる"
+    ],
+    "meaning_vi": "mạch lạc",
+    "mnemonic_vi": "Chữ 絡 có nghĩa là \"mạch lạc\".",
+    "radicals": []
+  },
+  {
+    "character": "湾",
+    "stroke_count": 12,
+    "onyomi": [
+      "ワン"
+    ],
+    "kunyomi": [
+      "いりえ"
+    ],
+    "meaning_vi": "Vũng bể, chỗ nước hõm vào",
+    "mnemonic_vi": "Chữ 湾 có nghĩa là \"Vũng bể, chỗ nước hõm vào\".",
+    "radicals": []
+  },
+  {
+    "character": "腕",
+    "stroke_count": 12,
+    "onyomi": [
+      "ワン"
+    ],
+    "kunyomi": [
+      "うで"
+    ],
+    "meaning_vi": "Cổ tay",
+    "mnemonic_vi": "Chữ 腕 có nghĩa là \"Cổ tay\".",
+    "radicals": []
+  },
+  {
+    "character": "幅",
+    "stroke_count": 12,
+    "onyomi": [
+      "フク"
+    ],
+    "kunyomi": [
+      "はば"
+    ],
+    "meaning_vi": "Bức, Sửa sang",
+    "mnemonic_vi": "Chữ 幅 có nghĩa là \"Bức, Sửa sang\".",
+    "radicals": []
+  },
+  {
+    "character": "普",
+    "stroke_count": 12,
+    "onyomi": [
+      "フ"
+    ],
+    "kunyomi": [
+      "あまね.く"
+    ],
+    "meaning_vi": "Rộng, lớn, khắp",
+    "mnemonic_vi": "Chữ 普 có nghĩa là \"Rộng, lớn, khắp\".",
+    "radicals": []
+  },
+  {
+    "character": "評",
+    "stroke_count": 12,
+    "onyomi": [
+      "ヒョウ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "BÌNH (đánh giá; bàn luận; phán đoán tốt xấu của sự vật sự việc)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "平",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "言",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "帽",
+    "stroke_count": 12,
+    "onyomi": [
+      "ボウ",
+      "モウ"
+    ],
+    "kunyomi": [
+      "ずきん",
+      "おお.う"
+    ],
+    "meaning_vi": "Cái mũ",
+    "mnemonic_vi": "Chữ 帽 có nghĩa là \"Cái mũ\".",
+    "radicals": []
+  },
+  {
+    "character": "補",
+    "stroke_count": 12,
+    "onyomi": [
+      "ホ"
+    ],
+    "kunyomi": [
+      "おぎな.う"
+    ],
+    "meaning_vi": "Bù, giúp",
+    "mnemonic_vi": "Chữ 補 có nghĩa là \"Bù, giúp\".",
+    "radicals": []
+  },
+  {
+    "character": "募",
+    "stroke_count": 12,
+    "onyomi": [
+      "ボ"
+    ],
+    "kunyomi": [
+      "つの.る"
+    ],
+    "meaning_vi": "Tìm rộng ra",
+    "mnemonic_vi": "Chữ 募 có nghĩa là \"Tìm rộng ra\".",
+    "radicals": []
+  },
+  {
+    "character": "棒",
+    "stroke_count": 12,
+    "onyomi": [
+      "ボウ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "Cái gậy, Đánh gậy",
+    "mnemonic_vi": "Chữ 棒 có nghĩa là \"Cái gậy, Đánh gậy\".",
+    "radicals": []
+  },
+  {
+    "character": "晩",
+    "stroke_count": 12,
+    "onyomi": [
+      "バン"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "VÃN (hoàng hôn; chiều tà; đêm)",
+    "mnemonic_vi": "Đứa trẻ vội vàng trở về nhà trước buổi tối",
+    "radicals": [
+      {
+        "character": "日",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "免",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "鈍",
+    "stroke_count": 12,
+    "onyomi": [
+      "ドン"
+    ],
+    "kunyomi": [
+      "にぶ.い",
+      "にぶ.る",
+      "にぶ",
+      "なま.る",
+      "なまく.ら"
+    ],
+    "meaning_vi": "ngu độn",
+    "mnemonic_vi": "Chữ 鈍 có nghĩa là \"ngu độn\".",
+    "radicals": []
+  },
+  {
+    "character": "塔",
+    "stroke_count": 12,
+    "onyomi": [
+      "トウ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "Cái tháp",
+    "mnemonic_vi": "Chữ 塔 có nghĩa là \"Cái tháp\".",
+    "radicals": []
+  },
+  {
+    "character": "筒",
+    "stroke_count": 12,
+    "onyomi": [
+      "トウ"
+    ],
+    "kunyomi": [
+      "つつ"
+    ],
+    "meaning_vi": "Ống tre, ống trúc",
+    "mnemonic_vi": "Chữ 筒 có nghĩa là \"Ống tre, ống trúc\".",
+    "radicals": []
+  },
+  {
+    "character": "痛",
+    "stroke_count": 12,
+    "onyomi": [
+      "ツウ"
+    ],
+    "kunyomi": [
+      "いた.い",
+      "いた.む",
+      "いた.ましい",
+      "いた.める"
+    ],
+    "meaning_vi": "THỐNG (đau đớn; làm đau; ốm đau)",
+    "mnemonic_vi": "Tôi vượt qua hàng rào của bệnh viện với sự  đau đớn",
+    "radicals": [
+      {
+        "character": "疒",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "甬",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "渡",
+    "stroke_count": 12,
+    "onyomi": [
+      "ト"
+    ],
+    "kunyomi": [
+      "わた.る",
+      "-わた.る",
+      "わた.す"
+    ],
+    "meaning_vi": "ĐỘ (băng qua; vượt qua sông hoặc biển)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "度",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "氵",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "殿",
+    "stroke_count": 13,
+    "onyomi": [
+      "デン"
+    ],
+    "kunyomi": [
+      "どの",
+      "との"
+    ],
+    "meaning_vi": "ngài, lâu đài, tòa nhà nguy nga",
+    "mnemonic_vi": "Chữ 殿 có nghĩa là \"ngài, lâu đài, tòa nhà nguy nga\".",
+    "radicals": []
+  },
+  {
+    "character": "塗",
+    "stroke_count": 13,
+    "onyomi": [
+      "ト"
+    ],
+    "kunyomi": [
+      "ぬ.る",
+      "ぬ.り",
+      "まみ.れる"
+    ],
+    "meaning_vi": "Bùn bửn",
+    "mnemonic_vi": "Chữ 塗 có nghĩa là \"Bùn bửn\".",
+    "radicals": []
+  },
+  {
+    "character": "賃",
+    "stroke_count": 13,
+    "onyomi": [
+      "チン"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "tiền thuê nhà, phí vận chuyển",
+    "mnemonic_vi": "Chữ 賃 có nghĩa là \"tiền thuê nhà, phí vận chuyển\".",
+    "radicals": []
+  },
+  {
+    "character": "福",
+    "stroke_count": 13,
+    "onyomi": [
+      "フク"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "PHÚC (may mắn; hạnh phúc; sự phù hộ từ thần linh)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "礻",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "畐",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "腹",
+    "stroke_count": 13,
+    "onyomi": [
+      "フク"
+    ],
+    "kunyomi": [
+      "はら"
+    ],
+    "meaning_vi": "PHÚC (bụng)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "⺼",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "复",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "零",
+    "stroke_count": 13,
+    "onyomi": [
+      "レイ"
+    ],
+    "kunyomi": [
+      "ぜろ",
+      "こぼ.す",
+      "こぼ.れる"
+    ],
+    "meaning_vi": "Mưa lác đác, mưa rây",
+    "mnemonic_vi": "Chữ 零 có nghĩa là \"Mưa lác đác, mưa rây\".",
+    "radicals": []
+  },
+  {
+    "character": "裏",
+    "stroke_count": 13,
+    "onyomi": [
+      "リ"
+    ],
+    "kunyomi": [
+      "うら"
+    ],
+    "meaning_vi": "Lần lót áo",
+    "mnemonic_vi": "Chữ 裏 có nghĩa là \"Lần lót áo\".",
+    "radicals": []
+  },
+  {
+    "character": "溶",
+    "stroke_count": 13,
+    "onyomi": [
+      "ヨウ"
+    ],
+    "kunyomi": [
+      "と.ける",
+      "と.かす",
+      "と.く"
+    ],
+    "meaning_vi": "nước mông mênh",
+    "mnemonic_vi": "Chữ 溶 có nghĩa là \"nước mông mênh\".",
+    "radicals": []
+  },
+  {
+    "character": "預",
+    "stroke_count": 13,
+    "onyomi": [
+      "ヨ"
+    ],
+    "kunyomi": [
+      "あず.ける",
+      "あず.かる"
+    ],
+    "meaning_vi": "Sẵn",
+    "mnemonic_vi": "Chữ 預 có nghĩa là \"Sẵn\".",
+    "radicals": []
+  },
+  {
+    "character": "暖",
+    "stroke_count": 13,
+    "onyomi": [
+      "ダン"
+    ],
+    "kunyomi": [
+      "あたた.かい",
+      "あたた.める",
+      "あたた.まる"
+    ],
+    "meaning_vi": "không khí ấm áp, làm ấm",
+    "mnemonic_vi": "Chữ 暖 có nghĩa là \"không khí ấm áp, làm ấm\".",
+    "radicals": []
+  },
+  {
+    "character": "節",
+    "stroke_count": 13,
+    "onyomi": [
+      "セツ",
+      "セチ"
+    ],
+    "kunyomi": [
+      "ふし",
+      "-ぶし",
+      "のっと"
+    ],
+    "meaning_vi": "TIẾT, TIỆT (phân đoạn (thơ văn, âm nhạc); giai điệu)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "即",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "⺮",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "寝",
+    "stroke_count": 13,
+    "onyomi": [
+      "シン"
+    ],
+    "kunyomi": [
+      "ね.る",
+      "ね.かす",
+      "い.ぬ",
+      "みたまや",
+      "や.める"
+    ],
+    "meaning_vi": "TẨM (ngủ; nằm nghỉ)",
+    "mnemonic_vi": "Hai người thi đang ngủ",
+    "radicals": [
+      {
+        "character": "又",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "冖",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "ヨ",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "丬",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "宀",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "蒸",
+    "stroke_count": 13,
+    "onyomi": [
+      "ジョウ",
+      "セイ"
+    ],
+    "kunyomi": [
+      "む.す",
+      "む.れる",
+      "む.らす"
+    ],
+    "meaning_vi": "Lũ, bọn; Đuốc, củi nhỏ",
+    "mnemonic_vi": "Chữ 蒸 có nghĩa là \"Lũ, bọn; Đuốc, củi nhỏ\".",
+    "radicals": []
+  },
+  {
+    "character": "触",
+    "stroke_count": 13,
+    "onyomi": [
+      "ショク"
+    ],
+    "kunyomi": [
+      "ふ.れる",
+      "さわ.る",
+      "さわ"
+    ],
+    "meaning_vi": "Tiếp xúc, chạm biết",
+    "mnemonic_vi": "Chữ 触 có nghĩa là \"Tiếp xúc, chạm biết\".",
+    "radicals": []
+  },
+  {
+    "character": "照",
+    "stroke_count": 13,
+    "onyomi": [
+      "ショウ"
+    ],
+    "kunyomi": [
+      "て.る",
+      "て.らす",
+      "て.れる"
+    ],
+    "meaning_vi": "Soi sáng",
+    "mnemonic_vi": "Chữ 照 có nghĩa là \"Soi sáng\".",
+    "radicals": []
+  },
+  {
+    "character": "署",
+    "stroke_count": 13,
+    "onyomi": [
+      "ショ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "Đặt, Nêu rỏ ra",
+    "mnemonic_vi": "Chữ 署 có nghĩa là \"Đặt, Nêu rỏ ra\".",
+    "radicals": []
+  },
+  {
+    "character": "辞",
+    "stroke_count": 13,
+    "onyomi": [
+      "ジ"
+    ],
+    "kunyomi": [
+      "や.める",
+      "いな.む"
+    ],
+    "meaning_vi": "TỪ (từ ngữ; ngôn ngữ)",
+    "mnemonic_vi": "Thật vất vả(辛) để tìm 1000(千) từ trong từ điển.",
+    "radicals": [
+      {
+        "character": "辛",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "舌",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "腰",
+    "stroke_count": 13,
+    "onyomi": [
+      "ヨウ"
+    ],
+    "kunyomi": [
+      "こし"
+    ],
+    "meaning_vi": "Lưng, Eo",
+    "mnemonic_vi": "Chữ 腰 có nghĩa là \"Lưng, Eo\".",
+    "radicals": []
+  },
+  {
+    "character": "歳",
+    "stroke_count": 13,
+    "onyomi": [
+      "サイ",
+      "セイ"
+    ],
+    "kunyomi": [
+      "とし",
+      "とせ",
+      "よわい"
+    ],
+    "meaning_vi": "TUẾ (năm; thời gian)",
+    "mnemonic_vi": "Hãy dừng(止) hỏi về tuổi của tôi.",
+    "radicals": [
+      {
+        "character": "止",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "小",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "戌",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "詰",
+    "stroke_count": 13,
+    "onyomi": [
+      "キツ",
+      "キチ"
+    ],
+    "kunyomi": [
+      "つ.める",
+      "つ.め",
+      "づ.め",
+      "つ.まる",
+      "つ.む"
+    ],
+    "meaning_vi": "Hỏi vặn",
+    "mnemonic_vi": "Chữ 詰 có nghĩa là \"Hỏi vặn\".",
+    "radicals": []
+  },
+  {
+    "character": "靴",
+    "stroke_count": 13,
+    "onyomi": [
+      "カ"
+    ],
+    "kunyomi": [
+      "くつ"
+    ],
+    "meaning_vi": "NGOA (giày; giày làm bằng da)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "化",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "革",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "群",
+    "stroke_count": 13,
+    "onyomi": [
+      "グン"
+    ],
+    "kunyomi": [
+      "む.れる",
+      "む.れ",
+      "むら"
+    ],
+    "meaning_vi": "Bè bạn, Đàn, bầy",
+    "mnemonic_vi": "Chữ 群 có nghĩa là \"Bè bạn, Đàn, bầy\".",
+    "radicals": []
+  },
+  {
+    "character": "傾",
+    "stroke_count": 13,
+    "onyomi": [
+      "ケイ"
+    ],
+    "kunyomi": [
+      "かたむ.く",
+      "かたむ.ける",
+      "かたぶ.く",
+      "かた.げる",
+      "かし.げる"
+    ],
+    "meaning_vi": "khuynh đảo",
+    "mnemonic_vi": "Chữ 傾 có nghĩa là \"khuynh đảo\".",
+    "radicals": []
+  },
+  {
+    "character": "鉱",
+    "stroke_count": 13,
+    "onyomi": [
+      "コウ"
+    ],
+    "kunyomi": [
+      "あらがね"
+    ],
+    "meaning_vi": "Khai khoáng",
+    "mnemonic_vi": "Chữ 鉱 có nghĩa là \"Khai khoáng\".",
+    "radicals": []
+  },
+  {
+    "character": "違",
+    "stroke_count": 13,
+    "onyomi": [
+      "イ"
+    ],
+    "kunyomi": [
+      "ちが.う",
+      "ちが.い",
+      "ちが.える",
+      "-ちが.える",
+      "たが.う",
+      "たが.える"
+    ],
+    "meaning_vi": "VI (sai; khác biệt)",
+    "mnemonic_vi": "Các đường phố thì phức tạp.Tôi nghĩ rằng tôi đang trên một con đường khác",
+    "radicals": [
+      {
+        "character": "韋",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "⻌",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "煙",
+    "stroke_count": 13,
+    "onyomi": [
+      "エン"
+    ],
+    "kunyomi": [
+      "けむ.る",
+      "けむり",
+      "けむ.い"
+    ],
+    "meaning_vi": "YÊN (thuốc lá)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "覀",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "土",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "火",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "較",
+    "stroke_count": 13,
+    "onyomi": [
+      "カク",
+      "コウ"
+    ],
+    "kunyomi": [
+      "くら.べる"
+    ],
+    "meaning_vi": "GIÁC, GIẾU, GIẢO (so sánh; đối chiếu)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "交",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "車",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "誤",
+    "stroke_count": 14,
+    "onyomi": [
+      "ゴ"
+    ],
+    "kunyomi": [
+      "あやま.る",
+      "-あやま.る"
+    ],
+    "meaning_vi": "NGỘ (nhầm lẫn; sai sót; lỗi lầm)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "言",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "呉",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "疑",
+    "stroke_count": 14,
+    "onyomi": [
+      "ギ"
+    ],
+    "kunyomi": [
+      "うたが.う"
+    ],
+    "meaning_vi": "NGHI (nghi ngờ; sự nghi ngờ; đáng ngờ)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "匕",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "矢",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "マ",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "疋",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "誌",
+    "stroke_count": 14,
+    "onyomi": [
+      "シ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "Ghi nhớ",
+    "mnemonic_vi": "Chữ 誌 có nghĩa là \"Ghi nhớ\".",
+    "radicals": []
+  },
+  {
+    "character": "緒",
+    "stroke_count": 14,
+    "onyomi": [
+      "ショ",
+      "チョ"
+    ],
+    "kunyomi": [
+      "お",
+      "いとぐち"
+    ],
+    "meaning_vi": "TỰ (sợi dây; tiếp nối; liên kết)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "者",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "糸",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "憎",
+    "stroke_count": 14,
+    "onyomi": [
+      "ゾウ"
+    ],
+    "kunyomi": [
+      "にく.む",
+      "にく.い",
+      "にく.らしい",
+      "にく.しみ"
+    ],
+    "meaning_vi": "Ghét",
+    "mnemonic_vi": "Chữ 憎 có nghĩa là \"Ghét\".",
+    "radicals": []
+  },
+  {
+    "character": "層",
+    "stroke_count": 14,
+    "onyomi": [
+      "ソウ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "Từng, lớp, hai lần",
+    "mnemonic_vi": "Chữ 層 có nghĩa là \"Từng, lớp, hai lần\".",
+    "radicals": []
+  },
+  {
+    "character": "踊",
+    "stroke_count": 14,
+    "onyomi": [
+      "ヨウ"
+    ],
+    "kunyomi": [
+      "おど.る"
+    ],
+    "meaning_vi": "nhảy",
+    "mnemonic_vi": "Chữ 踊 có nghĩa là \"nhảy\".",
+    "radicals": []
+  },
+  {
+    "character": "暮",
+    "stroke_count": 14,
+    "onyomi": [
+      "ボ"
+    ],
+    "kunyomi": [
+      "く.れる",
+      "く.らす"
+    ],
+    "meaning_vi": "MỘ (lặn; kết thúc)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "日",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "莫",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "滴",
+    "stroke_count": 14,
+    "onyomi": [
+      "テキ"
+    ],
+    "kunyomi": [
+      "しずく",
+      "したた.る"
+    ],
+    "meaning_vi": "Giọt nƣớc",
+    "mnemonic_vi": "Chữ 滴 có nghĩa là \"Giọt nƣớc\".",
+    "radicals": []
+  },
+  {
+    "character": "認",
+    "stroke_count": 14,
+    "onyomi": [
+      "ニン"
+    ],
+    "kunyomi": [
+      "みと.める",
+      "したた.める"
+    ],
+    "meaning_vi": "NHẬN (dấu xác nhận; viết tắt của 認め印 (con dấu cá nhân dùng để xác nhận))",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "忍",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "言",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "髪",
+    "stroke_count": 14,
+    "onyomi": [
+      "ハツ"
+    ],
+    "kunyomi": [
+      "かみ"
+    ],
+    "meaning_vi": "PHÁT (tóc)",
+    "mnemonic_vi": "Bạn(友) tôi có tóc dài(長)",
+    "radicals": [
+      {
+        "character": "友",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "髟",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "暴",
+    "stroke_count": 15,
+    "onyomi": [
+      "ボウ",
+      "バク"
+    ],
+    "kunyomi": [
+      "あば.く",
+      "あば.れる"
+    ],
+    "meaning_vi": "Tàn bạo",
+    "mnemonic_vi": "Chữ 暴 có nghĩa là \"Tàn bạo\".",
+    "radicals": []
+  },
+  {
+    "character": "標",
+    "stroke_count": 15,
+    "onyomi": [
+      "ヒョウ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "tiêu chuẩn, mục tiêu, vật mẫu",
+    "mnemonic_vi": "Chữ 標 có nghĩa là \"tiêu chuẩn, mục tiêu, vật mẫu\".",
+    "radicals": []
+  },
+  {
+    "character": "膚",
+    "stroke_count": 15,
+    "onyomi": [
+      "フ"
+    ],
+    "kunyomi": [
+      "はだ"
+    ],
+    "meaning_vi": "Da ngoài, thịt lợn, thịt thái",
+    "mnemonic_vi": "Chữ 膚 có nghĩa là \"Da ngoài, thịt lợn, thịt thái\".",
+    "radicals": []
+  },
+  {
+    "character": "舞",
+    "stroke_count": 15,
+    "onyomi": [
+      "ブ"
+    ],
+    "kunyomi": [
+      "ま.う",
+      "-ま.う",
+      "まい"
+    ],
+    "meaning_vi": "VŨ (múa; nhảy múa; điệu múa)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "無",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "舛",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "論",
+    "stroke_count": 15,
+    "onyomi": [
+      "ロン"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "LUẬN, LUÂN (bàn luận; giải thích; thảo luận về đạo lý; trình bày về đúng sai hay thiện ác)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "侖",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "言",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "蔵",
+    "stroke_count": 15,
+    "onyomi": [
+      "ゾウ",
+      "ソウ"
+    ],
+    "kunyomi": [
+      "くら",
+      "おさ.める",
+      "かく.れる"
+    ],
+    "meaning_vi": "Bảo tàng, tàng trữ",
+    "mnemonic_vi": "Chữ 蔵 có nghĩa là \"Bảo tàng, tàng trữ\".",
+    "radicals": []
+  },
+  {
+    "character": "駐",
+    "stroke_count": 15,
+    "onyomi": [
+      "チュウ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "Đóng",
+    "mnemonic_vi": "Chữ 駐 có nghĩa là \"Đóng\".",
+    "radicals": []
+  },
+  {
+    "character": "震",
+    "stroke_count": 15,
+    "onyomi": [
+      "シン"
+    ],
+    "kunyomi": [
+      "ふる.う",
+      "ふる.える"
+    ],
+    "meaning_vi": "Sét đánh",
+    "mnemonic_vi": "Chữ 震 có nghĩa là \"Sét đánh\".",
+    "radicals": []
+  },
+  {
+    "character": "諸",
+    "stroke_count": 15,
+    "onyomi": [
+      "ショ"
+    ],
+    "kunyomi": [
+      "もろ"
+    ],
+    "meaning_vi": "chư quân",
+    "mnemonic_vi": "Chữ 諸 có nghĩa là \"chư quân\".",
+    "radicals": []
+  },
+  {
+    "character": "劇",
+    "stroke_count": 15,
+    "onyomi": [
+      "ゲキ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "Quá lắm, Trò đùa",
+    "mnemonic_vi": "Chữ 劇 có nghĩa là \"Quá lắm, Trò đùa\".",
+    "radicals": []
+  },
+  {
+    "character": "権",
+    "stroke_count": 15,
+    "onyomi": [
+      "ケン",
+      "ゴン"
+    ],
+    "kunyomi": [
+      "おもり",
+      "かり",
+      "はか.る"
+    ],
+    "meaning_vi": "QUYỀN (quyền)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "𠂉",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "一",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "隹",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "木",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "億",
+    "stroke_count": 15,
+    "onyomi": [
+      "オク"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "Ức,Liệu lường, Yên",
+    "mnemonic_vi": "Chữ 億 có nghĩa là \"Ức,Liệu lường, Yên\".",
+    "radicals": []
+  },
+  {
+    "character": "鋭",
+    "stroke_count": 15,
+    "onyomi": [
+      "エイ"
+    ],
+    "kunyomi": [
+      "するど.い"
+    ],
+    "meaning_vi": "Tinh duệ, mũi nhọn, nhanh nhẹn",
+    "mnemonic_vi": "Chữ 鋭 có nghĩa là \"Tinh duệ, mũi nhọn, nhanh nhẹn\".",
+    "radicals": []
+  },
+  {
+    "character": "賢",
+    "stroke_count": 16,
+    "onyomi": [
+      "ケン"
+    ],
+    "kunyomi": [
+      "かしこ.い"
+    ],
+    "meaning_vi": "Hiền, đức hạnh",
+    "mnemonic_vi": "Chữ 賢 có nghĩa là \"Hiền, đức hạnh\".",
+    "radicals": []
+  },
+  {
+    "character": "整",
+    "stroke_count": 16,
+    "onyomi": [
+      "セイ"
+    ],
+    "kunyomi": [
+      "ととの.う"
+    ],
+    "meaning_vi": "được sắp xếp trật tự, gọn gàng",
+    "mnemonic_vi": "Chữ 整 có nghĩa là \"được sắp xếp trật tự, gọn gàng\".",
+    "radicals": []
+  },
+  {
+    "character": "操",
+    "stroke_count": 16,
+    "onyomi": [
+      "ソウ",
+      "サン"
+    ],
+    "kunyomi": [
+      "みさお",
+      "あやつ.る"
+    ],
+    "meaning_vi": "THAO, THÁO (điều khiển; vận hành)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "扌",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "喿",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "頼",
+    "stroke_count": 16,
+    "onyomi": [
+      "ライ"
+    ],
+    "kunyomi": [
+      "たの.む",
+      "たの.もしい",
+      "たよ.る"
+    ],
+    "meaning_vi": "LẠI (dựa dẫm; nhờ cậy; trông cậy vào)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "頁",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "束",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "壁",
+    "stroke_count": 16,
+    "onyomi": [
+      "ヘキ"
+    ],
+    "kunyomi": [
+      "かべ"
+    ],
+    "meaning_vi": "BÍCH (tường; vách ngăn)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "辟",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "土",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "磨",
+    "stroke_count": 16,
+    "onyomi": [
+      "マ",
+      "ス."
+    ],
+    "kunyomi": [
+      "みが.く"
+    ],
+    "meaning_vi": "Mài, xát",
+    "mnemonic_vi": "Chữ 磨 có nghĩa là \"Mài, xát\".",
+    "radicals": []
+  },
+  {
+    "character": "薄",
+    "stroke_count": 16,
+    "onyomi": [
+      "ハク"
+    ],
+    "kunyomi": [
+      "うす.い",
+      "うす",
+      "うす",
+      "うす.める",
+      "うす.まる",
+      "うす.らぐ",
+      "うす.ら",
+      "うす.れる",
+      "すすき"
+    ],
+    "meaning_vi": "cái rèm, bạc mệnh",
+    "mnemonic_vi": "Chữ 薄 có nghĩa là \"cái rèm, bạc mệnh\".",
+    "radicals": []
+  },
+  {
+    "character": "燃",
+    "stroke_count": 16,
+    "onyomi": [
+      "ネン"
+    ],
+    "kunyomi": [
+      "も.える",
+      "も.やす",
+      "も.す"
+    ],
+    "meaning_vi": "Đốt",
+    "mnemonic_vi": "Chữ 燃 có nghĩa là \"Đốt\".",
+    "radicals": []
+  },
+  {
+    "character": "濃",
+    "stroke_count": 16,
+    "onyomi": [
+      "ノウ"
+    ],
+    "kunyomi": [
+      "こ.い"
+    ],
+    "meaning_vi": "NÙNG - dày đặc",
+    "mnemonic_vi": "",
+    "radicals": []
+  },
+  {
+    "character": "曇",
+    "stroke_count": 16,
+    "onyomi": [
+      "ドン"
+    ],
+    "kunyomi": [
+      "くも.る"
+    ],
+    "meaning_vi": "Mây chùm (mây bủa)",
+    "mnemonic_vi": "Chữ 曇 có nghĩa là \"Mây chùm (mây bủa)\".",
+    "radicals": []
+  },
+  {
+    "character": "優",
+    "stroke_count": 17,
+    "onyomi": [
+      "ユウ",
+      "ウ"
+    ],
+    "kunyomi": [
+      "やさ.しい",
+      "すぐ.れる",
+      "まさ.る"
+    ],
+    "meaning_vi": "ƯU (diễn viên; nghệ sĩ)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "憂",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "亻",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "齢",
+    "stroke_count": 17,
+    "onyomi": [
+      "レイ"
+    ],
+    "kunyomi": [
+      "よわ.い",
+      "とし"
+    ],
+    "meaning_vi": "Tuổi",
+    "mnemonic_vi": "Chữ 齢 có nghĩa là \"Tuổi\".",
+    "radicals": []
+  },
+  {
+    "character": "療",
+    "stroke_count": 17,
+    "onyomi": [
+      "リョウ"
+    ],
+    "kunyomi": [],
+    "meaning_vi": "Chữa bệnh",
+    "mnemonic_vi": "Chữ 療 có nghĩa là \"Chữa bệnh\".",
+    "radicals": []
+  },
+  {
+    "character": "燥",
+    "stroke_count": 17,
+    "onyomi": [
+      "ソウ"
+    ],
+    "kunyomi": [
+      "はしゃ.ぐ"
+    ],
+    "meaning_vi": "Khô, ráo, hanh hao",
+    "mnemonic_vi": "Chữ 燥 có nghĩa là \"Khô, ráo, hanh hao\".",
+    "radicals": []
+  },
+  {
+    "character": "濯",
+    "stroke_count": 17,
+    "onyomi": [
+      "タク"
+    ],
+    "kunyomi": [
+      "すす.ぐ",
+      "ゆす.ぐ"
+    ],
+    "meaning_vi": "Rửa, giặt",
+    "mnemonic_vi": "Chữ 濯 có nghĩa là \"Rửa, giặt\".",
+    "radicals": []
+  },
+  {
+    "character": "環",
+    "stroke_count": 17,
+    "onyomi": [
+      "カン"
+    ],
+    "kunyomi": [
+      "わ"
+    ],
+    "meaning_vi": "HOÀN (vòng; hình vòng tròn)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "睘",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "王",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "簡",
+    "stroke_count": 18,
+    "onyomi": [
+      "カン",
+      "ケン"
+    ],
+    "kunyomi": [
+      "えら.ぶ",
+      "ふだ"
+    ],
+    "meaning_vi": "giản đơn, đơn giản",
+    "mnemonic_vi": "Chữ 簡 có nghĩa là \"giản đơn, đơn giản\".",
+    "radicals": []
+  },
+  {
+    "character": "贈",
+    "stroke_count": 18,
+    "onyomi": [
+      "ゾウ",
+      "ソウ"
+    ],
+    "kunyomi": [
+      "おく.る"
+    ],
+    "meaning_vi": "Đưa tặng",
+    "mnemonic_vi": "Chữ 贈 có nghĩa là \"Đưa tặng\".",
+    "radicals": []
+  },
+  {
+    "character": "難",
+    "stroke_count": 18,
+    "onyomi": [
+      "ナン"
+    ],
+    "kunyomi": [
+      "かた.い",
+      "-がた.い",
+      "むずか.しい",
+      "むづか.しい",
+      "むつか.しい",
+      "-にく.い"
+    ],
+    "meaning_vi": "NAN, NẠN (khó; cứng; không dễ dàng)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "𦰩",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "隹",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  },
+  {
+    "character": "爆",
+    "stroke_count": 19,
+    "onyomi": [
+      "バク"
+    ],
+    "kunyomi": [
+      "は.ぜる"
+    ],
+    "meaning_vi": "nổ nứt ra vì lửa",
+    "mnemonic_vi": "Chữ 爆 có nghĩa là \"nổ nứt ra vì lửa\".",
+    "radicals": []
+  },
+  {
+    "character": "臓",
+    "stroke_count": 19,
+    "onyomi": [
+      "ゾウ"
+    ],
+    "kunyomi": [
+      "はらわた"
+    ],
+    "meaning_vi": "Nội tạng",
+    "mnemonic_vi": "Chữ 臓 có nghĩa là \"Nội tạng\".",
+    "radicals": []
+  },
+  {
+    "character": "警",
+    "stroke_count": 19,
+    "onyomi": [
+      "ケイ"
+    ],
+    "kunyomi": [
+      "いまし.める"
+    ],
+    "meaning_vi": "CẢNH (nhanh nhẹn; ưu tú; nhạy bén)",
+    "mnemonic_vi": "",
+    "radicals": [
+      {
+        "character": "敬",
+        "is_main": false,
+        "position": null
+      },
+      {
+        "character": "言",
+        "is_main": false,
+        "position": null
+      }
+    ]
+  }
+]

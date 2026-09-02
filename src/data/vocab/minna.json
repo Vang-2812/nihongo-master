@@ -1,0 +1,830 @@
+[
+  {
+    "lesson_number": 1,
+    "book": "minna_i",
+    "word_jp": "私",
+    "reading": "わたし",
+    "word_type": "noun",
+    "meaning_vi": "Tôi",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 1,
+    "book": "minna_i",
+    "word_jp": "私たち",
+    "reading": "わたしたち",
+    "word_type": "noun",
+    "meaning_vi": "Chúng tôi",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 1,
+    "book": "minna_i",
+    "word_jp": "あなた",
+    "reading": "あなた",
+    "word_type": "noun",
+    "meaning_vi": "Anh/chị, ông/bà, bạn (ngôi thứ 2 số ít)",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 1,
+    "book": "minna_i",
+    "word_jp": "あの人",
+    "reading": "あのひと",
+    "word_type": "noun",
+    "meaning_vi": "Người kia",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 1,
+    "book": "minna_i",
+    "word_jp": "あの方",
+    "reading": "あのかた",
+    "word_type": "noun",
+    "meaning_vi": "Vị này Lịch sự tương đương với あのひと",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 1,
+    "book": "minna_i",
+    "word_jp": "みなさん",
+    "reading": "みなさん",
+    "word_type": "noun",
+    "meaning_vi": "Các bạn, các anh, các chị, mọi người",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 1,
+    "book": "minna_i",
+    "word_jp": "～さん",
+    "reading": "～さん",
+    "word_type": "noun",
+    "meaning_vi": "Anh ～, Chị ～, Ông～, Bà ～ (cách gọi người khác 1 cách lịch sự)",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 1,
+    "book": "minna_i",
+    "word_jp": "～ちゃん",
+    "reading": "～ちゃん",
+    "word_type": "noun",
+    "meaning_vi": "Bé ( dùng cho nữ) hoặc gọi thân mật cho trẻ con ( cả nam lẫn nữ)",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 1,
+    "book": "minna_i",
+    "word_jp": "～くん",
+    "reading": "～くん",
+    "word_type": "noun",
+    "meaning_vi": "Bé (dùng cho nam) hoặc gọi thân mật",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 1,
+    "book": "minna_i",
+    "word_jp": "～人",
+    "reading": "～じん",
+    "word_type": "noun",
+    "meaning_vi": "Người nước ～",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 1,
+    "book": "minna_i",
+    "word_jp": "先生",
+    "reading": "せんせい",
+    "word_type": "noun",
+    "meaning_vi": "Giáo viên",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 1,
+    "book": "minna_i",
+    "word_jp": "教師",
+    "reading": "きょうし",
+    "word_type": "noun",
+    "meaning_vi": "Giáo viên ( dùng để nói đến nghề nghiệp)",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 1,
+    "book": "minna_i",
+    "word_jp": "学生",
+    "reading": "がくせい",
+    "word_type": "noun",
+    "meaning_vi": "học sinh, sinh viên",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 1,
+    "book": "minna_i",
+    "word_jp": "会社員",
+    "reading": "かいしゃいん",
+    "word_type": "noun",
+    "meaning_vi": "nhân viên công ty",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 1,
+    "book": "minna_i",
+    "word_jp": "社員",
+    "reading": "～しゃいん",
+    "word_type": "noun",
+    "meaning_vi": "nhân viên công ty ～",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 1,
+    "book": "minna_i",
+    "word_jp": "銀行員",
+    "reading": "ぎんこういん",
+    "word_type": "noun",
+    "meaning_vi": "nhân viên ngân hàng",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 1,
+    "book": "minna_i",
+    "word_jp": "医者",
+    "reading": "いしゃ",
+    "word_type": "noun",
+    "meaning_vi": "bác sĩ",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 1,
+    "book": "minna_i",
+    "word_jp": "研究者",
+    "reading": "けんきゅうしゃ",
+    "word_type": "noun",
+    "meaning_vi": "nhà nghiên cứu",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 1,
+    "book": "minna_i",
+    "word_jp": "エンジニア",
+    "reading": "エンジニア",
+    "word_type": "noun",
+    "meaning_vi": "kỹ sư",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 1,
+    "book": "minna_i",
+    "word_jp": "大学",
+    "reading": "だいがく",
+    "word_type": "noun",
+    "meaning_vi": "trường đại học",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 1,
+    "book": "minna_i",
+    "word_jp": "病院",
+    "reading": "びょういん",
+    "word_type": "noun",
+    "meaning_vi": "bệnh viện",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 1,
+    "book": "minna_i",
+    "word_jp": "電気",
+    "reading": "でんき",
+    "word_type": "noun",
+    "meaning_vi": "Điện, đèn điện",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 1,
+    "book": "minna_i",
+    "word_jp": "誰",
+    "reading": "だれ（どなた）",
+    "word_type": "noun",
+    "meaning_vi": "ai (ngài nào, vị nào)",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 1,
+    "book": "minna_i",
+    "word_jp": "～歳",
+    "reading": "―さい",
+    "word_type": "noun",
+    "meaning_vi": "tuổi",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 1,
+    "book": "minna_i",
+    "word_jp": "何歳",
+    "reading": "なんさい",
+    "word_type": "noun",
+    "meaning_vi": "mấy tuổi",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 1,
+    "book": "minna_i",
+    "word_jp": "はい",
+    "reading": "はい",
+    "word_type": "noun",
+    "meaning_vi": "vâng",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 1,
+    "book": "minna_i",
+    "word_jp": "いいえ",
+    "reading": "いいえ",
+    "word_type": "noun",
+    "meaning_vi": "không",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 1,
+    "book": "minna_i",
+    "word_jp": "失礼ですが",
+    "reading": "しつれいですが",
+    "word_type": "noun",
+    "meaning_vi": "Xin lỗi ( khi muốn nhờ ai việc gì đó)",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 1,
+    "book": "minna_i",
+    "word_jp": "お名前は",
+    "reading": "おなまえは？",
+    "word_type": "noun",
+    "meaning_vi": "Bạn tên gì?",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 1,
+    "book": "minna_i",
+    "word_jp": "初めて",
+    "reading": "はじめまして。",
+    "word_type": "noun",
+    "meaning_vi": "chào lần đầu gặp nhau",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 1,
+    "book": "minna_i",
+    "word_jp": "どうぞよろしく「お願いします」。",
+    "reading": "どうぞよろしく[おねがいします]。",
+    "word_type": "noun",
+    "meaning_vi": "rất hân hạnh được làm quen",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 1,
+    "book": "minna_i",
+    "word_jp": "こちらは～さんです。",
+    "reading": "こちらは～さんです。",
+    "word_type": "noun",
+    "meaning_vi": "đây là ngài",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 1,
+    "book": "minna_i",
+    "word_jp": "～から来ました",
+    "reading": "～からきました。",
+    "word_type": "noun",
+    "meaning_vi": "đến từ ～",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 1,
+    "book": "minna_i",
+    "word_jp": "アメリカ",
+    "reading": "アメリカ",
+    "word_type": "noun",
+    "meaning_vi": "Mỹ",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 1,
+    "book": "minna_i",
+    "word_jp": "イギリス",
+    "reading": "イギリス",
+    "word_type": "noun",
+    "meaning_vi": "Anh",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 1,
+    "book": "minna_i",
+    "word_jp": "インド",
+    "reading": "インド",
+    "word_type": "noun",
+    "meaning_vi": "Ấn Độ",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 1,
+    "book": "minna_i",
+    "word_jp": "インドネシア",
+    "reading": "インドネシア",
+    "word_type": "noun",
+    "meaning_vi": "Indonesia",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 1,
+    "book": "minna_i",
+    "word_jp": "韓国",
+    "reading": "かんこく",
+    "word_type": "noun",
+    "meaning_vi": "Hàn quốc",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 1,
+    "book": "minna_i",
+    "word_jp": "タイ",
+    "reading": "タイ",
+    "word_type": "noun",
+    "meaning_vi": "Thái Lan",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 1,
+    "book": "minna_i",
+    "word_jp": "中国",
+    "reading": "ちゅうごく",
+    "word_type": "noun",
+    "meaning_vi": "Trung Quốc",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 1,
+    "book": "minna_i",
+    "word_jp": "ドイツ",
+    "reading": "ドイツ",
+    "word_type": "noun",
+    "meaning_vi": "Đức",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 1,
+    "book": "minna_i",
+    "word_jp": "日本",
+    "reading": "にほん",
+    "word_type": "noun",
+    "meaning_vi": "Nhật",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 1,
+    "book": "minna_i",
+    "word_jp": "フランス",
+    "reading": "フランス",
+    "word_type": "noun",
+    "meaning_vi": "Pháp",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 1,
+    "book": "minna_i",
+    "word_jp": "ブラジル",
+    "reading": "ブラジル",
+    "word_type": "noun",
+    "meaning_vi": "Brazil",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 1,
+    "book": "minna_i",
+    "word_jp": "さ‌く‌ら‌大‌学",
+    "reading": "さくらだいがく",
+    "word_type": "noun",
+    "meaning_vi": "Trường ĐH Sakura (Hoa Anh Đào)",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "これ",
+    "reading": "これ",
+    "word_type": "noun",
+    "meaning_vi": "Cái này, đây (vật ở gần người nói)",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "それ",
+    "reading": "それ",
+    "word_type": "noun",
+    "meaning_vi": "Cái đó, đó (vật ở gần người nghe)",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "あれ",
+    "reading": "あれ",
+    "word_type": "noun",
+    "meaning_vi": "Cái kia, kia (vật ở xa cả người nói và người nghe)",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "この~",
+    "reading": "この~",
+    "word_type": "noun",
+    "meaning_vi": "~ này",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "その~",
+    "reading": "その~",
+    "word_type": "noun",
+    "meaning_vi": "~ đó",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "あの~",
+    "reading": "あの~",
+    "word_type": "noun",
+    "meaning_vi": "~ kia",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "本",
+    "reading": "ほん",
+    "word_type": "noun",
+    "meaning_vi": "Sách",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "辞書",
+    "reading": "じしょ",
+    "word_type": "noun",
+    "meaning_vi": "Từ điển",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "雑誌",
+    "reading": "ざっし",
+    "word_type": "noun",
+    "meaning_vi": "Tạp chí",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "新聞",
+    "reading": "しんぶん",
+    "word_type": "noun",
+    "meaning_vi": "Báo",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "ノート",
+    "reading": "ノート",
+    "word_type": "noun",
+    "meaning_vi": "Vở",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "手帳",
+    "reading": "てちょう",
+    "word_type": "noun",
+    "meaning_vi": "Sổ tay",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "名詞",
+    "reading": "めいし",
+    "word_type": "noun",
+    "meaning_vi": "Danh thiếp",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "カード",
+    "reading": "カード",
+    "word_type": "noun",
+    "meaning_vi": "Thẻ, cạc",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "テレホンカード",
+    "reading": "テレホンカード",
+    "word_type": "noun",
+    "meaning_vi": "Thẻ điện thoại",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "鉛筆",
+    "reading": "えんぴつ",
+    "word_type": "noun",
+    "meaning_vi": "Bút chì",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "ボールペン",
+    "reading": "ボールペン",
+    "word_type": "noun",
+    "meaning_vi": "Bút bi",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "シャープペンシル",
+    "reading": "シャープペンシル",
+    "word_type": "noun",
+    "meaning_vi": "Bút chì kim, bút chì bấm",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "かぎ",
+    "reading": "かぎ",
+    "word_type": "noun",
+    "meaning_vi": "Chìa khóa",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "時計",
+    "reading": "とけい",
+    "word_type": "noun",
+    "meaning_vi": "Đồng hồ",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "傘",
+    "reading": "かさ",
+    "word_type": "noun",
+    "meaning_vi": "ô, dù",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "かばん",
+    "reading": "かばん",
+    "word_type": "noun",
+    "meaning_vi": "Cặp sách, túi sách",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "[カセット] テーブ",
+    "reading": "[カセット] テーブ",
+    "word_type": "noun",
+    "meaning_vi": "Băng [cát-xét]",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "テープレコーダー",
+    "reading": "テープレコーダー",
+    "word_type": "noun",
+    "meaning_vi": "Máy ghi âm",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "テレビ",
+    "reading": "テレビ",
+    "word_type": "noun",
+    "meaning_vi": "Tivi",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "ラジオ",
+    "reading": "ラジオ",
+    "word_type": "noun",
+    "meaning_vi": "Radio",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "カメラ",
+    "reading": "カメラ",
+    "word_type": "noun",
+    "meaning_vi": "Máy ảnh",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "コンピュータ",
+    "reading": "コンピュータ",
+    "word_type": "noun",
+    "meaning_vi": "Máy vi tính",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "自動車",
+    "reading": "じどうしゃ",
+    "word_type": "noun",
+    "meaning_vi": "Ô tô, xe hơi",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "机",
+    "reading": "つくえ",
+    "word_type": "noun",
+    "meaning_vi": "Cái bàn",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "いす",
+    "reading": "いす",
+    "word_type": "noun",
+    "meaning_vi": "Ghế",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "チョコレート",
+    "reading": "チョコレート",
+    "word_type": "noun",
+    "meaning_vi": "Chocolate",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "コーヒー",
+    "reading": "コーヒー",
+    "word_type": "noun",
+    "meaning_vi": "Cà phê",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "英語",
+    "reading": "えいご",
+    "word_type": "noun",
+    "meaning_vi": "Tiếng Anh",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "日本語",
+    "reading": "にほんご",
+    "word_type": "noun",
+    "meaning_vi": "Tiếng Nhật",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "∼語",
+    "reading": "∼ご",
+    "word_type": "noun",
+    "meaning_vi": "Tiếng~",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "何",
+    "reading": "なん",
+    "word_type": "noun",
+    "meaning_vi": "Cái gì",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "そう",
+    "reading": "そう",
+    "word_type": "noun",
+    "meaning_vi": "Đúng vậy",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "違います。",
+    "reading": "ちがいます。",
+    "word_type": "noun",
+    "meaning_vi": "Nhầm rồi",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "そうですか。",
+    "reading": "そうですか。",
+    "word_type": "noun",
+    "meaning_vi": "Thế à?",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "あのう",
+    "reading": "あのう",
+    "word_type": "noun",
+    "meaning_vi": "À…(được sử dụng để thể hiện sự do dự)",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "ほんの気持ちです",
+    "reading": "ほんのきもちです",
+    "word_type": "noun",
+    "meaning_vi": "Đây là chút quà nhỏ của tôi",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "どうぞ",
+    "reading": "どうぞ",
+    "word_type": "noun",
+    "meaning_vi": "Xin mời",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "どうも",
+    "reading": "どうも",
+    "word_type": "noun",
+    "meaning_vi": "Cảm ơn",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "[どうも] ありがとう[ございます]",
+    "reading": "[どうも] ありがとう[ございます]",
+    "word_type": "noun",
+    "meaning_vi": "Cảm ơn nhiều",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "これから お世話になります",
+    "reading": "これから おせわになります",
+    "word_type": "noun",
+    "meaning_vi": "Từ này mong được anh/chị giúp đỡ",
+    "level": "N5"
+  },
+  {
+    "lesson_number": 2,
+    "book": "minna_i",
+    "word_jp": "こちらこそ よろしく",
+    "reading": "こちらこそ よろしく",
+    "word_type": "noun",
+    "meaning_vi": "Chính tôi mới mong được anh/chị giúp đỡ",
+    "level": "N5"
+  }
+]

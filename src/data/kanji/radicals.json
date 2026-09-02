@@ -1,0 +1,1928 @@
+[
+  {
+    "radical": "一",
+    "variants": null,
+    "stroke_count": 1,
+    "meaning_vi": "Nhất (số một)",
+    "meaning_en": "One",
+    "reading_ja": "いち",
+    "kangxi_number": 1
+  },
+  {
+    "radical": "丨",
+    "variants": null,
+    "stroke_count": 1,
+    "meaning_vi": "Cổn (nét sổ dọc)",
+    "meaning_en": "Line",
+    "reading_ja": "ぼう",
+    "kangxi_number": 2
+  },
+  {
+    "radical": "丶",
+    "variants": null,
+    "stroke_count": 1,
+    "meaning_vi": "Chủ (điểm, chấm)",
+    "meaning_en": "Dot",
+    "reading_ja": "てん",
+    "kangxi_number": 3
+  },
+  {
+    "radical": "丿",
+    "variants": null,
+    "stroke_count": 1,
+    "meaning_vi": "Phiệt (nét phẩy trái)",
+    "meaning_en": "Slash",
+    "reading_ja": "の",
+    "kangxi_number": 4
+  },
+  {
+    "radical": "乙",
+    "variants": "乚",
+    "stroke_count": 1,
+    "meaning_vi": "Ất (vị trí thứ hai)",
+    "meaning_en": "Second",
+    "reading_ja": "おつ",
+    "kangxi_number": 5
+  },
+  {
+    "radical": "亅",
+    "variants": null,
+    "stroke_count": 1,
+    "meaning_vi": "Quyết (nét móc)",
+    "meaning_en": "Hook",
+    "reading_ja": "はねぼう",
+    "kangxi_number": 6
+  },
+  {
+    "radical": "二",
+    "variants": null,
+    "stroke_count": 2,
+    "meaning_vi": "Nhị (số hai)",
+    "meaning_en": "Two",
+    "reading_ja": "に",
+    "kangxi_number": 7
+  },
+  {
+    "radical": "亠",
+    "variants": null,
+    "stroke_count": 2,
+    "meaning_vi": "Đầu (không có nghĩa)",
+    "meaning_en": "Lid",
+    "reading_ja": "なべぶた",
+    "kangxi_number": 8
+  },
+  {
+    "radical": "人",
+    "variants": "亻,𠆢",
+    "stroke_count": 2,
+    "meaning_vi": "Nhân (người)",
+    "meaning_en": "Man",
+    "reading_ja": "ひと",
+    "kangxi_number": 9
+  },
+  {
+    "radical": "儿",
+    "variants": null,
+    "stroke_count": 2,
+    "meaning_vi": "Nhân đi (chân người)",
+    "meaning_en": "Legs",
+    "reading_ja": "にんにょう",
+    "kangxi_number": 10
+  },
+  {
+    "radical": "入",
+    "variants": null,
+    "stroke_count": 2,
+    "meaning_vi": "Nhập (vào)",
+    "meaning_en": "Enter",
+    "reading_ja": "いる",
+    "kangxi_number": 11
+  },
+  {
+    "radical": "八",
+    "variants": "ハ",
+    "stroke_count": 2,
+    "meaning_vi": "Bát (số tám)",
+    "meaning_en": "Eight",
+    "reading_ja": "はち",
+    "kangxi_number": 12
+  },
+  {
+    "radical": "冂",
+    "variants": null,
+    "stroke_count": 2,
+    "meaning_vi": "Quynh (vùng biên giới)",
+    "meaning_en": "Down box",
+    "reading_ja": "まきがまえ",
+    "kangxi_number": 13
+  },
+  {
+    "radical": "冖",
+    "variants": null,
+    "stroke_count": 2,
+    "meaning_vi": "Mịch (trùm khăn lên)",
+    "meaning_en": "Cover",
+    "reading_ja": "わかんむり",
+    "kangxi_number": 14
+  },
+  {
+    "radical": "冫",
+    "variants": null,
+    "stroke_count": 2,
+    "meaning_vi": "Băng (nước đá)",
+    "meaning_en": "Ice",
+    "reading_ja": "にすい",
+    "kangxi_number": 15
+  },
+  {
+    "radical": "几",
+    "variants": null,
+    "stroke_count": 2,
+    "meaning_vi": "Kỷ (ghế tựa, bàn nhỏ)",
+    "meaning_en": "Table",
+    "reading_ja": "つくえ",
+    "kangxi_number": 16
+  },
+  {
+    "radical": "凵",
+    "variants": null,
+    "stroke_count": 2,
+    "meaning_vi": "Khảm (há miệng, hố sâu)",
+    "meaning_en": "Open box",
+    "reading_ja": "うけばこ",
+    "kangxi_number": 17
+  },
+  {
+    "radical": "刀",
+    "variants": "刂",
+    "stroke_count": 2,
+    "meaning_vi": "Đao (con dao)",
+    "meaning_en": "Knife",
+    "reading_ja": "かたな",
+    "kangxi_number": 18
+  },
+  {
+    "radical": "力",
+    "variants": null,
+    "stroke_count": 2,
+    "meaning_vi": "Lực (sức mạnh)",
+    "meaning_en": "Power",
+    "reading_ja": "ちから",
+    "kangxi_number": 19
+  },
+  {
+    "radical": "勹",
+    "variants": null,
+    "stroke_count": 2,
+    "meaning_vi": "Bao (bọc, bao quanh)",
+    "meaning_en": "Wrap",
+    "reading_ja": "つつみがまえ",
+    "kangxi_number": 20
+  },
+  {
+    "radical": "匕",
+    "variants": null,
+    "stroke_count": 2,
+    "meaning_vi": "Chủy (cái thìa)",
+    "meaning_en": "Spoon",
+    "reading_ja": "さじのひ",
+    "kangxi_number": 21
+  },
+  {
+    "radical": "匚",
+    "variants": null,
+    "stroke_count": 2,
+    "meaning_vi": "Phương (tủ đựng)",
+    "meaning_en": "Right open box",
+    "reading_ja": "はこがまえ",
+    "kangxi_number": 22
+  },
+  {
+    "radical": "匸",
+    "variants": null,
+    "stroke_count": 2,
+    "meaning_vi": "Hệ (che đậy)",
+    "meaning_en": "Hiding enclosure",
+    "reading_ja": "かくしがまえ",
+    "kangxi_number": 23
+  },
+  {
+    "radical": "十",
+    "variants": null,
+    "stroke_count": 2,
+    "meaning_vi": "Thập (số mười)",
+    "meaning_en": "Ten",
+    "reading_ja": "じゅう",
+    "kangxi_number": 24
+  },
+  {
+    "radical": "卜",
+    "variants": "⺊",
+    "stroke_count": 2,
+    "meaning_vi": "Bốc (xem bói)",
+    "meaning_en": "Divination",
+    "reading_ja": "ぼく",
+    "kangxi_number": 25
+  },
+  {
+    "radical": "卩",
+    "variants": "㔾",
+    "stroke_count": 2,
+    "meaning_vi": "Tiết (đốt tre, thẻ tre)",
+    "meaning_en": "Seal",
+    "reading_ja": "ふしづくり",
+    "kangxi_number": 26
+  },
+  {
+    "radical": "厂",
+    "variants": null,
+    "stroke_count": 2,
+    "meaning_vi": "Hán (sườn núi, vách đá)",
+    "meaning_en": "Cliff",
+    "reading_ja": "がんだれ",
+    "kangxi_number": 27
+  },
+  {
+    "radical": "厶",
+    "variants": null,
+    "stroke_count": 2,
+    "meaning_vi": "Khư (riêng tư)",
+    "meaning_en": "Private",
+    "reading_ja": "む",
+    "kangxi_number": 28
+  },
+  {
+    "radical": "又",
+    "variants": null,
+    "stroke_count": 2,
+    "meaning_vi": "Hựu (lại một lần nữa)",
+    "meaning_en": "Again",
+    "reading_ja": "また",
+    "kangxi_number": 29
+  },
+  {
+    "radical": "口",
+    "variants": null,
+    "stroke_count": 3,
+    "meaning_vi": "Khẩu (cái miệng)",
+    "meaning_en": "Mouth",
+    "reading_ja": "くち",
+    "kangxi_number": 30
+  },
+  {
+    "radical": "囗",
+    "variants": null,
+    "stroke_count": 3,
+    "meaning_vi": "Vi (vây quanh)",
+    "meaning_en": "Enclosure",
+    "reading_ja": "くにがまえ",
+    "kangxi_number": 31
+  },
+  {
+    "radical": "土",
+    "variants": null,
+    "stroke_count": 3,
+    "meaning_vi": "Thổ (đất)",
+    "meaning_en": "Earth",
+    "reading_ja": "つち",
+    "kangxi_number": 32
+  },
+  {
+    "radical": "士",
+    "variants": null,
+    "stroke_count": 3,
+    "meaning_vi": "Sĩ (kẻ sĩ, học giả)",
+    "meaning_en": "Scholar",
+    "reading_ja": "さむらい",
+    "kangxi_number": 33
+  },
+  {
+    "radical": "夂",
+    "variants": null,
+    "stroke_count": 3,
+    "meaning_vi": "Truy (đi chậm)",
+    "meaning_en": "Go slowly",
+    "reading_ja": "ふゆがしら",
+    "kangxi_number": 34
+  },
+  {
+    "radical": "夊",
+    "variants": null,
+    "stroke_count": 3,
+    "meaning_vi": "Suy (đi chậm sau cùng)",
+    "meaning_en": "Go slowly",
+    "reading_ja": "すいにょう",
+    "kangxi_number": 35
+  },
+  {
+    "radical": "夕",
+    "variants": null,
+    "stroke_count": 3,
+    "meaning_vi": "Tịch (buổi tối)",
+    "meaning_en": "Evening",
+    "reading_ja": "ゆうべ",
+    "kangxi_number": 36
+  },
+  {
+    "radical": "大",
+    "variants": null,
+    "stroke_count": 3,
+    "meaning_vi": "Đại (lớn)",
+    "meaning_en": "Big",
+    "reading_ja": "おおきい",
+    "kangxi_number": 37
+  },
+  {
+    "radical": "女",
+    "variants": null,
+    "stroke_count": 3,
+    "meaning_vi": "Nữ (phụ nữ)",
+    "meaning_en": "Woman",
+    "reading_ja": "おんな",
+    "kangxi_number": 38
+  },
+  {
+    "radical": "子",
+    "variants": null,
+    "stroke_count": 3,
+    "meaning_vi": "Tử (con cái)",
+    "meaning_en": "Child",
+    "reading_ja": "こ",
+    "kangxi_number": 39
+  },
+  {
+    "radical": "宀",
+    "variants": null,
+    "stroke_count": 3,
+    "meaning_vi": "Miên (mái nhà)",
+    "meaning_en": "Roof",
+    "reading_ja": "うかんむり",
+    "kangxi_number": 40
+  },
+  {
+    "radical": "寸",
+    "variants": null,
+    "stroke_count": 3,
+    "meaning_vi": "Thốn (đơn vị đo tấc)",
+    "meaning_en": "Inch",
+    "reading_ja": "すん",
+    "kangxi_number": 41
+  },
+  {
+    "radical": "小",
+    "variants": "⺌,⺍",
+    "stroke_count": 3,
+    "meaning_vi": "Tiểu (nhỏ bé)",
+    "meaning_en": "Small",
+    "reading_ja": "ちいさい",
+    "kangxi_number": 42
+  },
+  {
+    "radical": "尢",
+    "variants": "尣",
+    "stroke_count": 3,
+    "meaning_vi": "Uông (yếu ớt, què quặt)",
+    "meaning_en": "Lame",
+    "reading_ja": "まげあし",
+    "kangxi_number": 43
+  },
+  {
+    "radical": "尸",
+    "variants": null,
+    "stroke_count": 3,
+    "meaning_vi": "Thi (thân xác, xác chết)",
+    "meaning_en": "Corpse",
+    "reading_ja": "しかばね",
+    "kangxi_number": 44
+  },
+  {
+    "radical": "屮",
+    "variants": null,
+    "stroke_count": 3,
+    "meaning_vi": "Triệt (cỏ mới mọc)",
+    "meaning_en": "Sprout",
+    "reading_ja": "てつ",
+    "kangxi_number": 45
+  },
+  {
+    "radical": "山",
+    "variants": null,
+    "stroke_count": 3,
+    "meaning_vi": "Sơn (núi)",
+    "meaning_en": "Mountain",
+    "reading_ja": "やま",
+    "kangxi_number": 46
+  },
+  {
+    "radical": "巛",
+    "variants": "川",
+    "stroke_count": 3,
+    "meaning_vi": "Xuyên (sông ngòi)",
+    "meaning_en": "River",
+    "reading_ja": "かわ",
+    "kangxi_number": 47
+  },
+  {
+    "radical": "工",
+    "variants": null,
+    "stroke_count": 3,
+    "meaning_vi": "Công (công việc, thợ)",
+    "meaning_en": "Work",
+    "reading_ja": "たくみ",
+    "kangxi_number": 48
+  },
+  {
+    "radical": "己",
+    "variants": "已,巳",
+    "stroke_count": 3,
+    "meaning_vi": "Kỷ (bản thân mình)",
+    "meaning_en": "Oneself",
+    "reading_ja": "おのれ",
+    "kangxi_number": 49
+  },
+  {
+    "radical": "巾",
+    "variants": null,
+    "stroke_count": 3,
+    "meaning_vi": "Cân (khăn lau, vải)",
+    "meaning_en": "Turban",
+    "reading_ja": "はば",
+    "kangxi_number": 50
+  },
+  {
+    "radical": "干",
+    "variants": null,
+    "stroke_count": 3,
+    "meaning_vi": "Can (thiên can, lá chắn)",
+    "meaning_en": "Dry",
+    "reading_ja": "ほす",
+    "kangxi_number": 51
+  },
+  {
+    "radical": "幺",
+    "variants": null,
+    "stroke_count": 3,
+    "meaning_vi": "Yêu (nhỏ ngắn)",
+    "meaning_en": "Short thread",
+    "reading_ja": "いとがしら",
+    "kangxi_number": 52
+  },
+  {
+    "radical": "广",
+    "variants": null,
+    "stroke_count": 3,
+    "meaning_vi": "Quảng (nhà rộng bên sườn núi)",
+    "meaning_en": "Dotted cliff",
+    "reading_ja": "まだれ",
+    "kangxi_number": 53
+  },
+  {
+    "radical": "廴",
+    "variants": null,
+    "stroke_count": 3,
+    "meaning_vi": "Dẫn (đi dài, bước dài)",
+    "meaning_en": "Long stride",
+    "reading_ja": "いんにょう",
+    "kangxi_number": 54
+  },
+  {
+    "radical": "廾",
+    "variants": null,
+    "stroke_count": 3,
+    "meaning_vi": "Củng (chắp tay nâng lên)",
+    "meaning_en": "Two hands",
+    "reading_ja": "こまぬき",
+    "kangxi_number": 55
+  },
+  {
+    "radical": "弋",
+    "variants": null,
+    "stroke_count": 3,
+    "meaning_vi": "Dực (bắn tên có dây buộc)",
+    "meaning_en": "Shoot",
+    "reading_ja": "しきがまえ",
+    "kangxi_number": 56
+  },
+  {
+    "radical": "弓",
+    "variants": null,
+    "stroke_count": 3,
+    "meaning_vi": "Cung (cây cung)",
+    "meaning_en": "Bow",
+    "reading_ja": "ゆみ",
+    "kangxi_number": 57
+  },
+  {
+    "radical": "彐",
+    "variants": "彑",
+    "stroke_count": 3,
+    "meaning_vi": "Ký (đầu con heo đất)",
+    "meaning_en": "Snout",
+    "reading_ja": "けいがしら",
+    "kangxi_number": 58
+  },
+  {
+    "radical": "彡",
+    "variants": null,
+    "stroke_count": 3,
+    "meaning_vi": "Sâm (tóc dài, lông sam)",
+    "meaning_en": "Bristle",
+    "reading_ja": "さんづくり",
+    "kangxi_number": 59
+  },
+  {
+    "radical": "彳",
+    "variants": null,
+    "stroke_count": 3,
+    "meaning_vi": "Sách (bước chân trái, đi chậm)",
+    "meaning_en": "Step",
+    "reading_ja": "ぎょうにんべん",
+    "kangxi_number": 60
+  },
+  {
+    "radical": "心",
+    "variants": "忄,⺗",
+    "stroke_count": 4,
+    "meaning_vi": "Tâm (quả tim, tâm trí)",
+    "meaning_en": "Heart",
+    "reading_ja": "こころ",
+    "kangxi_number": 61
+  },
+  {
+    "radical": "戈",
+    "variants": null,
+    "stroke_count": 4,
+    "meaning_vi": "Qua (cái mác, vũ khí)",
+    "meaning_en": "Spear",
+    "reading_ja": "ほこ",
+    "kangxi_number": 62
+  },
+  {
+    "radical": "戶",
+    "variants": "户,戸",
+    "stroke_count": 4,
+    "meaning_vi": "Hộ (cánh cửa)",
+    "meaning_en": "Door",
+    "reading_ja": "と",
+    "kangxi_number": 63
+  },
+  {
+    "radical": "手",
+    "variants": "扌",
+    "stroke_count": 4,
+    "meaning_vi": "Thủ (bàn tay)",
+    "meaning_en": "Hand",
+    "reading_ja": "て",
+    "kangxi_number": 64
+  },
+  {
+    "radical": "支",
+    "variants": null,
+    "stroke_count": 4,
+    "meaning_vi": "Chi (cành cây, nâng đỡ)",
+    "meaning_en": "Branch",
+    "reading_ja": "しにょう",
+    "kangxi_number": 65
+  },
+  {
+    "radical": "攴",
+    "variants": "攵",
+    "stroke_count": 4,
+    "meaning_vi": "Phộc (đánh khẽ, gõ)",
+    "meaning_en": "Rap",
+    "reading_ja": "ぼくづくり",
+    "kangxi_number": 66
+  },
+  {
+    "radical": "文",
+    "variants": null,
+    "stroke_count": 4,
+    "meaning_vi": "Văn (văn chương, chữ viết)",
+    "meaning_en": "Script",
+    "reading_ja": "ぶん",
+    "kangxi_number": 67
+  },
+  {
+    "radical": "斗",
+    "variants": null,
+    "stroke_count": 4,
+    "meaning_vi": "Đấu (cái đấu đo lường)",
+    "meaning_en": "Dipper",
+    "reading_ja": "ます",
+    "kangxi_number": 68
+  },
+  {
+    "radical": "斤",
+    "variants": null,
+    "stroke_count": 4,
+    "meaning_vi": "Cân (cái rìu, cân đo)",
+    "meaning_en": "Axe",
+    "reading_ja": "おの",
+    "kangxi_number": 69
+  },
+  {
+    "radical": "方",
+    "variants": null,
+    "stroke_count": 4,
+    "meaning_vi": "Phương (phương hướng, hình vuông)",
+    "meaning_en": "Direction",
+    "reading_ja": "ほう",
+    "kangxi_number": 70
+  },
+  {
+    "radical": "无",
+    "variants": "旡",
+    "stroke_count": 4,
+    "meaning_vi": "Vô (không có)",
+    "meaning_en": "Have not",
+    "reading_ja": "む",
+    "kangxi_number": 71
+  },
+  {
+    "radical": "日",
+    "variants": null,
+    "stroke_count": 4,
+    "meaning_vi": "Nhật (ngày, mặt trời)",
+    "meaning_en": "Sun",
+    "reading_ja": "ひ",
+    "kangxi_number": 72
+  },
+  {
+    "radical": "曰",
+    "variants": null,
+    "stroke_count": 4,
+    "meaning_vi": "Viết (nói rằng)",
+    "meaning_en": "Say",
+    "reading_ja": "ひらび",
+    "kangxi_number": 73
+  },
+  {
+    "radical": "月",
+    "variants": null,
+    "stroke_count": 4,
+    "meaning_vi": "Nguyệt (tháng, mặt trăng)",
+    "meaning_en": "Moon",
+    "reading_ja": "つき",
+    "kangxi_number": 74
+  },
+  {
+    "radical": "木",
+    "variants": null,
+    "stroke_count": 4,
+    "meaning_vi": "Mộc (cây cối)",
+    "meaning_en": "Tree",
+    "reading_ja": "き",
+    "kangxi_number": 75
+  },
+  {
+    "radical": "欠",
+    "variants": null,
+    "stroke_count": 4,
+    "meaning_vi": "Khiếm (thiếu thốn, ngáp)",
+    "meaning_en": "Lack",
+    "reading_ja": "あくび",
+    "kangxi_number": 76
+  },
+  {
+    "radical": "止",
+    "variants": null,
+    "stroke_count": 4,
+    "meaning_vi": "Chỉ (dừng lại)",
+    "meaning_en": "Stop",
+    "reading_ja": "とめる",
+    "kangxi_number": 77
+  },
+  {
+    "radical": "歹",
+    "variants": "歺",
+    "stroke_count": 4,
+    "meaning_vi": "Đãi (xương tàn, chết chóc)",
+    "meaning_en": "Death",
+    "reading_ja": "いちがつへん",
+    "kangxi_number": 78
+  },
+  {
+    "radical": "殳",
+    "variants": null,
+    "stroke_count": 4,
+    "meaning_vi": "Thù (cây gậy có mũi nhọn)",
+    "meaning_en": "Weapon",
+    "reading_ja": "ほこづくり",
+    "kangxi_number": 79
+  },
+  {
+    "radical": "毋",
+    "variants": "母",
+    "stroke_count": 4,
+    "meaning_vi": "Vô (chớ, đừng, mẹ)",
+    "meaning_en": "Do not",
+    "reading_ja": "なかれ",
+    "kangxi_number": 80
+  },
+  {
+    "radical": "比",
+    "variants": null,
+    "stroke_count": 4,
+    "meaning_vi": "Tỉ (so sánh)",
+    "meaning_en": "Compare",
+    "reading_ja": "くらべる",
+    "kangxi_number": 81
+  },
+  {
+    "radical": "毛",
+    "variants": null,
+    "stroke_count": 4,
+    "meaning_vi": "Mao (lông cừu, tóc)",
+    "meaning_en": "Hair",
+    "reading_ja": "け",
+    "kangxi_number": 82
+  },
+  {
+    "radical": "氏",
+    "variants": null,
+    "stroke_count": 4,
+    "meaning_vi": "Thị (họ tên, dòng tộc)",
+    "meaning_en": "Clan",
+    "reading_ja": "うじ",
+    "kangxi_number": 83
+  },
+  {
+    "radical": "气",
+    "variants": null,
+    "stroke_count": 4,
+    "meaning_vi": "Khí (hơi nước, khí chất)",
+    "meaning_en": "Steam",
+    "reading_ja": "きがまえ",
+    "kangxi_number": 84
+  },
+  {
+    "radical": "水",
+    "variants": "氵,氺",
+    "stroke_count": 4,
+    "meaning_vi": "Thủy (nước)",
+    "meaning_en": "Water",
+    "reading_ja": "みず",
+    "kangxi_number": 85
+  },
+  {
+    "radical": "火",
+    "variants": "灬",
+    "stroke_count": 4,
+    "meaning_vi": "Hỏa (lửa)",
+    "meaning_en": "Fire",
+    "reading_ja": "ひ",
+    "kangxi_number": 86
+  },
+  {
+    "radical": "爪",
+    "variants": "爫",
+    "stroke_count": 4,
+    "meaning_vi": "Trảo (móng vuốt chim thú)",
+    "meaning_en": "Claw",
+    "reading_ja": "つめ",
+    "kangxi_number": 87
+  },
+  {
+    "radical": "父",
+    "variants": null,
+    "stroke_count": 4,
+    "meaning_vi": "Phụ (cha)",
+    "meaning_en": "Father",
+    "reading_ja": "ちち",
+    "kangxi_number": 88
+  },
+  {
+    "radical": "爻",
+    "variants": null,
+    "stroke_count": 4,
+    "meaning_vi": "Hào (nét quẻ dịch)",
+    "meaning_en": "Double x",
+    "reading_ja": "こう",
+    "kangxi_number": 89
+  },
+  {
+    "radical": "爿",
+    "variants": null,
+    "stroke_count": 4,
+    "meaning_vi": "Tường (mảnh gỗ xẻ trái)",
+    "meaning_en": "Left-half trunk",
+    "reading_ja": "しょうへん",
+    "kangxi_number": 90
+  },
+  {
+    "radical": "片",
+    "variants": null,
+    "stroke_count": 4,
+    "meaning_vi": "Phiến (mảnh gỗ xẻ phải, lát mỏng)",
+    "meaning_en": "Slice",
+    "reading_ja": "かた",
+    "kangxi_number": 91
+  },
+  {
+    "radical": "牙",
+    "variants": null,
+    "stroke_count": 4,
+    "meaning_vi": "Nha (răng nanh)",
+    "meaning_en": "Fang",
+    "reading_ja": "きば",
+    "kangxi_number": 92
+  },
+  {
+    "radical": "牛",
+    "variants": "牜",
+    "stroke_count": 4,
+    "meaning_vi": "Ngưu (con trâu, bò)",
+    "meaning_en": "Cow",
+    "reading_ja": "うし",
+    "kangxi_number": 93
+  },
+  {
+    "radical": "犬",
+    "variants": "犭",
+    "stroke_count": 4,
+    "meaning_vi": "Khuyển (con chó)",
+    "meaning_en": "Dog",
+    "reading_ja": "いぬ",
+    "kangxi_number": 94
+  },
+  {
+    "radical": "玄",
+    "variants": null,
+    "stroke_count": 5,
+    "meaning_vi": "Huyền (màu đen huyền bí)",
+    "meaning_en": "Dark red",
+    "reading_ja": "げん",
+    "kangxi_number": 95
+  },
+  {
+    "radical": "玉",
+    "variants": "玊,王",
+    "stroke_count": 5,
+    "meaning_vi": "Ngọc (ngọc quý)",
+    "meaning_en": "Jade",
+    "reading_ja": "たま",
+    "kangxi_number": 96
+  },
+  {
+    "radical": "瓜",
+    "variants": null,
+    "stroke_count": 5,
+    "meaning_vi": "Qua (quả dưa)",
+    "meaning_en": "Melon",
+    "reading_ja": "うり",
+    "kangxi_number": 97
+  },
+  {
+    "radical": "瓦",
+    "variants": null,
+    "stroke_count": 5,
+    "meaning_vi": "Ngõa (ngói lợp nhà, đồ nung)",
+    "meaning_en": "Tile",
+    "reading_ja": "かわら",
+    "kangxi_number": 98
+  },
+  {
+    "radical": "甘",
+    "variants": null,
+    "stroke_count": 5,
+    "meaning_vi": "Cam (ngọt)",
+    "meaning_en": "Sweet",
+    "reading_ja": "あまい",
+    "kangxi_number": 99
+  },
+  {
+    "radical": "生",
+    "variants": null,
+    "stroke_count": 5,
+    "meaning_vi": "Sinh (sinh đẻ, sống, học sinh)",
+    "meaning_en": "Life",
+    "reading_ja": "うまれる",
+    "kangxi_number": 100
+  },
+  {
+    "radical": "用",
+    "variants": "甩",
+    "stroke_count": 5,
+    "meaning_vi": "Dụng (sử dụng, dùng)",
+    "meaning_en": "Use",
+    "reading_ja": "もちいる",
+    "kangxi_number": 101
+  },
+  {
+    "radical": "田",
+    "variants": null,
+    "stroke_count": 5,
+    "meaning_vi": "Điền (ruộng lúa)",
+    "meaning_en": "Field",
+    "reading_ja": "た",
+    "kangxi_number": 102
+  },
+  {
+    "radical": "疋",
+    "variants": "⺪",
+    "stroke_count": 5,
+    "meaning_vi": "Sơ (cuộn vải, cái chân)",
+    "meaning_en": "Bolt of cloth",
+    "reading_ja": "ひき",
+    "kangxi_number": 103
+  },
+  {
+    "radical": "疒",
+    "variants": null,
+    "stroke_count": 5,
+    "meaning_vi": "Nạch (giường người bệnh, bệnh tật)",
+    "meaning_en": "Sickness",
+    "reading_ja": "やまいだれ",
+    "kangxi_number": 104
+  },
+  {
+    "radical": "癶",
+    "variants": null,
+    "stroke_count": 5,
+    "meaning_vi": "Bát (gót chân đạp lên nhau)",
+    "meaning_en": "Footsteps",
+    "reading_ja": "はつがしら",
+    "kangxi_number": 105
+  },
+  {
+    "radical": "白",
+    "variants": null,
+    "stroke_count": 5,
+    "meaning_vi": "Bạch (màu trắng)",
+    "meaning_en": "White",
+    "reading_ja": "しろ",
+    "kangxi_number": 106
+  },
+  {
+    "radical": "皮",
+    "variants": null,
+    "stroke_count": 5,
+    "meaning_vi": "Bì (da thú, vỏ cây)",
+    "meaning_en": "Skin",
+    "reading_ja": "かわ",
+    "kangxi_number": 107
+  },
+  {
+    "radical": "皿",
+    "variants": null,
+    "stroke_count": 5,
+    "meaning_vi": "Mãnh (bát dĩa đựng thức ăn)",
+    "meaning_en": "Dish",
+    "reading_ja": "さら",
+    "kangxi_number": 108
+  },
+  {
+    "radical": "目",
+    "variants": " 目",
+    "stroke_count": 5,
+    "meaning_vi": "Mục (con mắt)",
+    "meaning_en": "Eye",
+    "reading_ja": "め",
+    "kangxi_number": 109
+  },
+  {
+    "radical": "矛",
+    "variants": null,
+    "stroke_count": 5,
+    "meaning_vi": "Mâu (cây mâu, vũ khí tấn công)",
+    "meaning_en": "Spear",
+    "reading_ja": "ほこ",
+    "kangxi_number": 110
+  },
+  {
+    "radical": "矢",
+    "variants": null,
+    "stroke_count": 5,
+    "meaning_vi": "Thỉ (mũi tên)",
+    "meaning_en": "Arrow",
+    "reading_ja": "や",
+    "kangxi_number": 111
+  },
+  {
+    "radical": "石",
+    "variants": null,
+    "stroke_count": 5,
+    "meaning_vi": "Thạch (đá)",
+    "meaning_en": "Stone",
+    "reading_ja": "いし",
+    "kangxi_number": 112
+  },
+  {
+    "radical": "示",
+    "variants": "礻",
+    "stroke_count": 5,
+    "meaning_vi": "Thị (tỏ bày, thần linh)",
+    "meaning_en": "Show",
+    "reading_ja": "しめす",
+    "kangxi_number": 113
+  },
+  {
+    "radical": "禸",
+    "variants": null,
+    "stroke_count": 5,
+    "meaning_vi": "Nhựu (vết chân thú)",
+    "meaning_en": "Track",
+    "reading_ja": "ぐうのあし",
+    "kangxi_number": 114
+  },
+  {
+    "radical": "禾",
+    "variants": null,
+    "stroke_count": 5,
+    "meaning_vi": "Hòa (cây lúa chín trĩu bông)",
+    "meaning_en": "Grain",
+    "reading_ja": "のぎ",
+    "kangxi_number": 115
+  },
+  {
+    "radical": "穴",
+    "variants": null,
+    "stroke_count": 5,
+    "meaning_vi": "Huyệt (hang động, lỗ hổng)",
+    "meaning_en": "Cave",
+    "reading_ja": "あな",
+    "kangxi_number": 116
+  },
+  {
+    "radical": "立",
+    "variants": null,
+    "stroke_count": 5,
+    "meaning_vi": "Lập (đứng thẳng, kiến lập)",
+    "meaning_en": "Stand",
+    "reading_ja": "たつ",
+    "kangxi_number": 117
+  },
+  {
+    "radical": "竹",
+    "variants": "⺮",
+    "stroke_count": 6,
+    "meaning_vi": "Trúc (cây tre trúc)",
+    "meaning_en": "Bamboo",
+    "reading_ja": "たけ",
+    "kangxi_number": 118
+  },
+  {
+    "radical": "米",
+    "variants": null,
+    "stroke_count": 6,
+    "meaning_vi": "Mễ (gạo chín, lúa gạo)",
+    "meaning_en": "Rice",
+    "reading_ja": "こめ",
+    "kangxi_number": 119
+  },
+  {
+    "radical": "糸",
+    "variants": "糹",
+    "stroke_count": 6,
+    "meaning_vi": "Mịch (sợi tơ sợi chỉ)",
+    "meaning_en": "Silk",
+    "reading_ja": "いと",
+    "kangxi_number": 120
+  },
+  {
+    "radical": "缶",
+    "variants": null,
+    "stroke_count": 6,
+    "meaning_vi": "Phẫu (sành sứ, bình đựng)",
+    "meaning_en": "Jar",
+    "reading_ja": "ほとぎ",
+    "kangxi_number": 121
+  },
+  {
+    "radical": "网",
+    "variants": "罒,⺲,⺳",
+    "stroke_count": 6,
+    "meaning_vi": "Võng (tấm lưới đánh cá)",
+    "meaning_en": "Net",
+    "reading_ja": "あみがしら",
+    "kangxi_number": 122
+  },
+  {
+    "radical": "羊",
+    "variants": "⺷",
+    "stroke_count": 6,
+    "meaning_vi": "Dương (con dê, cừu)",
+    "meaning_en": "Sheep",
+    "reading_ja": "ひつじ",
+    "kangxi_number": 123
+  },
+  {
+    "radical": "羽",
+    "variants": null,
+    "stroke_count": 6,
+    "meaning_vi": "Vũ (lông vũ, cánh chim)",
+    "meaning_en": "Feather",
+    "reading_ja": "hane",
+    "kangxi_number": 124
+  },
+  {
+    "radical": "老",
+    "variants": "耂",
+    "stroke_count": 6,
+    "meaning_vi": "Lão (người già)",
+    "meaning_en": "Old",
+    "reading_ja": "おい",
+    "kangxi_number": 125
+  },
+  {
+    "radical": "而",
+    "variants": null,
+    "stroke_count": 6,
+    "meaning_vi": "Nhi (ria mép, và, mà lại)",
+    "meaning_en": "And",
+    "reading_ja": "しかして",
+    "kangxi_number": 126
+  },
+  {
+    "radical": "耒",
+    "variants": null,
+    "stroke_count": 6,
+    "meaning_vi": "Lỗi (cái cày ruộng)",
+    "meaning_en": "Plow",
+    "reading_ja": "らいすき",
+    "kangxi_number": 127
+  },
+  {
+    "radical": "耳",
+    "variants": null,
+    "stroke_count": 6,
+    "meaning_vi": "Nhĩ (cái tai)",
+    "meaning_en": "Ear",
+    "reading_ja": "みみ",
+    "kangxi_number": 128
+  },
+  {
+    "radical": "聿",
+    "variants": "⺿",
+    "stroke_count": 6,
+    "meaning_vi": "Duật (cây bút viết)",
+    "meaning_en": "Brush",
+    "reading_ja": "ふでづくり",
+    "kangxi_number": 129
+  },
+  {
+    "radical": "肉",
+    "variants": "月",
+    "stroke_count": 6,
+    "meaning_vi": "Nhục (thịt thú)",
+    "meaning_en": "Meat",
+    "reading_ja": "にく",
+    "kangxi_number": 130
+  },
+  {
+    "radical": "臣",
+    "variants": null,
+    "stroke_count": 6,
+    "meaning_vi": "Thần (bầy tôi, triều thần)",
+    "meaning_en": "Minister",
+    "reading_ja": "しん",
+    "kangxi_number": 131
+  },
+  {
+    "radical": "自",
+    "variants": null,
+    "stroke_count": 6,
+    "meaning_vi": "Tự (bản thân mình, tự do)",
+    "meaning_en": "Self",
+    "reading_ja": "みずから",
+    "kangxi_number": 132
+  },
+  {
+    "radical": "至",
+    "variants": null,
+    "stroke_count": 6,
+    "meaning_vi": "Chí (đến nơi, cực điểm)",
+    "meaning_en": "Arrive",
+    "reading_ja": "いたる",
+    "kangxi_number": 133
+  },
+  {
+    "radical": "臼",
+    "variants": null,
+    "stroke_count": 6,
+    "meaning_vi": "Cữu (cái cối giã gạo)",
+    "meaning_en": "Mortar",
+    "reading_ja": "うす",
+    "kangxi_number": 134
+  },
+  {
+    "radical": "舌",
+    "variants": null,
+    "stroke_count": 6,
+    "meaning_vi": "Thiệt (cái lưỡi)",
+    "meaning_en": "Tongue",
+    "reading_ja": "した",
+    "kangxi_number": 135
+  },
+  {
+    "radical": "舛",
+    "variants": null,
+    "stroke_count": 6,
+    "meaning_vi": "Suyễn (sai lệch, nhầm lẫn)",
+    "meaning_en": "Oppose",
+    "reading_ja": "ます",
+    "kangxi_number": 136
+  },
+  {
+    "radical": "舟",
+    "variants": null,
+    "stroke_count": 6,
+    "meaning_vi": "Chu (chiếc thuyền nhỏ)",
+    "meaning_en": "Boat",
+    "reading_ja": "ふね",
+    "kangxi_number": 137
+  },
+  {
+    "radical": "艮",
+    "variants": null,
+    "stroke_count": 6,
+    "meaning_vi": "Cấn (quẻ Cấn: giữ lại vững vàng)",
+    "meaning_en": "Stopping",
+    "reading_ja": "うしとら",
+    "kangxi_number": 138
+  },
+  {
+    "radical": "色",
+    "variants": null,
+    "stroke_count": 6,
+    "meaning_vi": "Sắc (màu sắc, nữ sắc)",
+    "meaning_en": "Color",
+    "reading_ja": "いろ",
+    "kangxi_number": 139
+  },
+  {
+    "radical": "艸",
+    "variants": "艹",
+    "stroke_count": 6,
+    "meaning_vi": "Thảo (cỏ cây, thực vật hoa cỏ)",
+    "meaning_en": "Grass",
+    "reading_ja": "くさ",
+    "kangxi_number": 140
+  },
+  {
+    "radical": "虍",
+    "variants": null,
+    "stroke_count": 6,
+    "meaning_vi": "Hô (vằn vện của con hổ)",
+    "meaning_en": "Tiger stripe",
+    "reading_ja": "とらかんむり",
+    "kangxi_number": 141
+  },
+  {
+    "radical": "虫",
+    "variants": null,
+    "stroke_count": 6,
+    "meaning_vi": "Trùng (côn trùng, sâu bọ)",
+    "meaning_en": "Insect",
+    "reading_ja": "むし",
+    "kangxi_number": 142
+  },
+  {
+    "radical": "血",
+    "variants": null,
+    "stroke_count": 6,
+    "meaning_vi": "Huyết (máu)",
+    "meaning_en": "Blood",
+    "reading_ja": "ち",
+    "kangxi_number": 143
+  },
+  {
+    "radical": "行",
+    "variants": null,
+    "stroke_count": 6,
+    "meaning_vi": "Hành (đi lại, hành động)",
+    "meaning_en": "Walk",
+    "reading_ja": "ぎょう",
+    "kangxi_number": 144
+  },
+  {
+    "radical": "衣",
+    "variants": "衤",
+    "stroke_count": 6,
+    "meaning_vi": "Y (y phục, quần áo)",
+    "meaning_en": "Clothes",
+    "reading_ja": "ころも",
+    "kangxi_number": 145
+  },
+  {
+    "radical": "襾",
+    "variants": "西",
+    "stroke_count": 6,
+    "meaning_vi": "Á (che đậy, hướng Tây)",
+    "meaning_en": "Cover",
+    "reading_ja": "おおい",
+    "kangxi_number": 146
+  },
+  {
+    "radical": "見",
+    "variants": null,
+    "stroke_count": 7,
+    "meaning_vi": "Kiến (trông thấy, kiến thức)",
+    "meaning_en": "See",
+    "reading_ja": "みる",
+    "kangxi_number": 147
+  },
+  {
+    "radical": "角",
+    "variants": null,
+    "stroke_count": 7,
+    "meaning_vi": "Giác (sừng thú, góc vuông)",
+    "meaning_en": "Horn",
+    "reading_ja": "つの",
+    "kangxi_number": 148
+  },
+  {
+    "radical": "言",
+    "variants": "訁",
+    "stroke_count": 7,
+    "meaning_vi": "Ngôn (lời nói, ngôn ngữ)",
+    "meaning_en": "Speech",
+    "reading_ja": "ことば",
+    "kangxi_number": 149
+  },
+  {
+    "radical": "谷",
+    "variants": null,
+    "stroke_count": 7,
+    "meaning_vi": "Cốc (khe núi, thung lũng)",
+    "meaning_en": "Valley",
+    "reading_ja": "たに",
+    "kangxi_number": 150
+  },
+  {
+    "radical": "豆",
+    "variants": null,
+    "stroke_count": 7,
+    "meaning_vi": "Đậu (hạt đậu, cái thố)",
+    "meaning_en": "Bean",
+    "reading_ja": "まめ",
+    "kangxi_number": 151
+  },
+  {
+    "radical": "豕",
+    "variants": null,
+    "stroke_count": 7,
+    "meaning_vi": "Thỉ (con heo, lợn)",
+    "meaning_en": "Pig",
+    "reading_ja": "いのこ",
+    "kangxi_number": 152
+  },
+  {
+    "radical": "豸",
+    "variants": null,
+    "stroke_count": 7,
+    "meaning_vi": "Trĩ (loài sâu không chân, thú bò sát)",
+    "meaning_en": "Badger",
+    "reading_ja": "むじな",
+    "kangxi_number": 153
+  },
+  {
+    "radical": "貝",
+    "variants": "貝",
+    "stroke_count": 7,
+    "meaning_vi": "Bối (con sò, bảo bối quý giá)",
+    "meaning_en": "Shell",
+    "reading_ja": "かい",
+    "kangxi_number": 154
+  },
+  {
+    "radical": "赤",
+    "variants": null,
+    "stroke_count": 7,
+    "meaning_vi": "Xích (màu đỏ)",
+    "meaning_en": "Red",
+    "reading_ja": "あか",
+    "kangxi_number": 155
+  },
+  {
+    "radical": "走",
+    "variants": null,
+    "stroke_count": 7,
+    "meaning_vi": "Tẩu (chạy đi)",
+    "meaning_en": "Run",
+    "reading_ja": "はしる",
+    "kangxi_number": 156
+  },
+  {
+    "radical": "足",
+    "variants": "⻊",
+    "stroke_count": 7,
+    "meaning_vi": "Túc (cái chân, đầy đủ)",
+    "meaning_en": "Foot",
+    "reading_ja": "あし",
+    "kangxi_number": 157
+  },
+  {
+    "radical": "身",
+    "variants": null,
+    "stroke_count": 7,
+    "meaning_vi": "Thân (thân thể, bản thân)",
+    "meaning_en": "Body",
+    "reading_ja": "み",
+    "kangxi_number": 158
+  },
+  {
+    "radical": "車",
+    "variants": null,
+    "stroke_count": 7,
+    "meaning_vi": "Xa (xe cộ)",
+    "meaning_en": "Cart",
+    "reading_ja": "くるま",
+    "kangxi_number": 159
+  },
+  {
+    "radical": "辛",
+    "variants": null,
+    "stroke_count": 7,
+    "meaning_vi": "Tân (cay, gian khổ)",
+    "meaning_en": "Bitter",
+    "reading_ja": "からい",
+    "kangxi_number": 160
+  },
+  {
+    "radical": "辰",
+    "variants": null,
+    "stroke_count": 7,
+    "meaning_vi": "Thần (nhật nguyệt tinh thần, địa chi Thìn)",
+    "meaning_en": "Morning",
+    "reading_ja": "しんのたつ",
+    "kangxi_number": 161
+  },
+  {
+    "radical": "辵",
+    "variants": "辶",
+    "stroke_count": 7,
+    "meaning_vi": "Sước (chợt đi chợt dừng, bộ sước)",
+    "meaning_en": "Walk",
+    "reading_ja": "しんにょう",
+    "kangxi_number": 162
+  },
+  {
+    "radical": "邑",
+    "variants": "阝",
+    "stroke_count": 7,
+    "meaning_vi": "Ấp (vùng đất phong cho quan, bộ ấp bên phải)",
+    "meaning_en": "Town",
+    "reading_ja": "おおざと",
+    "kangxi_number": 163
+  },
+  {
+    "radical": "酉",
+    "variants": null,
+    "stroke_count": 7,
+    "meaning_vi": "Dậu (bình rượu, địa chi Dậu)",
+    "meaning_en": "Wine",
+    "reading_ja": "とり",
+    "kangxi_number": 164
+  },
+  {
+    "radical": "采",
+    "variants": null,
+    "stroke_count": 7,
+    "meaning_vi": "Thải (hái lượm, sắc mặt)",
+    "meaning_en": "Distinguish",
+    "reading_ja": "のごめ",
+    "kangxi_number": 165
+  },
+  {
+    "radical": "里",
+    "variants": null,
+    "stroke_count": 7,
+    "meaning_vi": "Lý (dặm đường, làng mạc)",
+    "meaning_en": "Village",
+    "reading_ja": "さと",
+    "kangxi_number": 166
+  },
+  {
+    "radical": "金",
+    "variants": "釒",
+    "stroke_count": 8,
+    "meaning_vi": "Kim (kim loại, tiền vàng)",
+    "meaning_en": "Gold",
+    "reading_ja": "かね",
+    "kangxi_number": 167
+  },
+  {
+    "radical": "長",
+    "variants": "镸",
+    "stroke_count": 8,
+    "meaning_vi": "Trường (dài, trưởng quản)",
+    "meaning_en": "Long",
+    "reading_ja": "ながい",
+    "kangxi_number": 168
+  },
+  {
+    "radical": "門",
+    "variants": "門",
+    "stroke_count": 8,
+    "meaning_vi": "Môn (cánh cổng ngõ)",
+    "meaning_en": "Gate",
+    "reading_ja": "もん",
+    "kangxi_number": 169
+  },
+  {
+    "radical": "阜",
+    "variants": "阝",
+    "stroke_count": 8,
+    "meaning_vi": "Phụ (gò đất cao, bộ phụ bên trái)",
+    "meaning_en": "Mound",
+    "reading_ja": "こざとへん",
+    "kangxi_number": 170
+  },
+  {
+    "radical": "隶",
+    "variants": null,
+    "stroke_count": 8,
+    "meaning_vi": "Lệ (kịp đến, nô lệ)",
+    "meaning_en": "Slave",
+    "reading_ja": "れいづくり",
+    "kangxi_number": 171
+  },
+  {
+    "radical": "隹",
+    "variants": null,
+    "stroke_count": 8,
+    "meaning_vi": "Chuy (loài chim đuôi ngắn)",
+    "meaning_en": "Short-tailed bird",
+    "reading_ja": "ふるとり",
+    "kangxi_number": 172
+  },
+  {
+    "radical": "雨",
+    "variants": null,
+    "stroke_count": 8,
+    "meaning_vi": "Vũ (mưa)",
+    "meaning_en": "Rain",
+    "reading_ja": "あめ",
+    "kangxi_number": 173
+  },
+  {
+    "radical": "靑",
+    "variants": "青",
+    "stroke_count": 8,
+    "meaning_vi": "Thanh (màu xanh tươi mát)",
+    "meaning_en": "Blue",
+    "reading_ja": "あお",
+    "kangxi_number": 174
+  },
+  {
+    "radical": "非",
+    "variants": null,
+    "stroke_count": 8,
+    "meaning_vi": "Phi (sai lầm, không phải)",
+    "meaning_en": "Wrong",
+    "reading_ja": "あらず",
+    "kangxi_number": 175
+  },
+  {
+    "radical": "面",
+    "variants": null,
+    "stroke_count": 9,
+    "meaning_vi": "Diện (khuôn mặt, bề mặt)",
+    "meaning_en": "Face",
+    "reading_ja": "めん",
+    "kangxi_number": 176
+  },
+  {
+    "radical": "革",
+    "variants": null,
+    "stroke_count": 9,
+    "meaning_vi": "Cách (da thuộc, cải cách)",
+    "meaning_en": "Leather",
+    "reading_ja": "かわ",
+    "kangxi_number": 177
+  },
+  {
+    "radical": "韋",
+    "variants": "韦",
+    "stroke_count": 9,
+    "meaning_vi": "Vi (da thuộc đã chế biến)",
+    "meaning_en": "Tanned leather",
+    "reading_ja": "なめしがわ",
+    "kangxi_number": 178
+  },
+  {
+    "radical": "韭",
+    "variants": null,
+    "stroke_count": 9,
+    "meaning_vi": "Cửu (cây hẹ)",
+    "meaning_en": "Leek",
+    "reading_ja": "にら",
+    "kangxi_number": 179
+  },
+  {
+    "radical": "音",
+    "variants": null,
+    "stroke_count": 9,
+    "meaning_vi": "Âm (âm thanh, tiếng nhạc)",
+    "meaning_en": "Sound",
+    "reading_ja": "おと",
+    "kangxi_number": 180
+  },
+  {
+    "radical": "頁",
+    "variants": "页",
+    "stroke_count": 9,
+    "meaning_vi": "Hiệt (trang sách, đầu người)",
+    "meaning_en": "Leaf",
+    "reading_ja": "おおがい",
+    "kangxi_number": 181
+  },
+  {
+    "radical": "風",
+    "variants": "风",
+    "stroke_count": 9,
+    "meaning_vi": "Phong (gió, phong trào)",
+    "meaning_en": "Wind",
+    "reading_ja": "かぜ",
+    "kangxi_number": 182
+  },
+  {
+    "radical": "飛",
+    "variants": "飞",
+    "stroke_count": 9,
+    "meaning_vi": "Phi (bay lượn)",
+    "meaning_en": "Fly",
+    "reading_ja": "とぶ",
+    "kangxi_number": 183
+  },
+  {
+    "radical": "食",
+    "variants": "飠",
+    "stroke_count": 9,
+    "meaning_vi": "Thực (ăn uống, đồ ăn)",
+    "meaning_en": "Eat",
+    "reading_ja": "しょく",
+    "kangxi_number": 184
+  },
+  {
+    "radical": "首",
+    "variants": null,
+    "stroke_count": 9,
+    "meaning_vi": "Thủ (cái đầu, thủ lĩnh)",
+    "meaning_en": "Head",
+    "reading_ja": "くび",
+    "kangxi_number": 185
+  },
+  {
+    "radical": "香",
+    "variants": null,
+    "stroke_count": 9,
+    "meaning_vi": "Hương (mùi hương thơm ngon)",
+    "meaning_en": "Fragrant",
+    "reading_ja": "かおり",
+    "kangxi_number": 186
+  },
+  {
+    "radical": "馬",
+    "variants": "马",
+    "stroke_count": 10,
+    "meaning_vi": "Mã (con ngựa)",
+    "meaning_en": "Horse",
+    "reading_ja": "うま",
+    "kangxi_number": 187
+  },
+  {
+    "radical": "骨",
+    "variants": null,
+    "stroke_count": 10,
+    "meaning_vi": "Cốt (xương cốt)",
+    "meaning_en": "Bone",
+    "reading_ja": "ほね",
+    "kangxi_number": 188
+  },
+  {
+    "radical": "高",
+    "variants": null,
+    "stroke_count": 10,
+    "meaning_vi": "Cao (chiều cao, thanh cao)",
+    "meaning_en": "High",
+    "reading_ja": "たかい",
+    "kangxi_number": 189
+  },
+  {
+    "radical": "髟",
+    "variants": null,
+    "stroke_count": 10,
+    "meaning_vi": "Bưu (tóc dài lòa xòa)",
+    "meaning_en": "Hair",
+    "reading_ja": "かみがしら",
+    "kangxi_number": 190
+  },
+  {
+    "radical": "鬥",
+    "variants": null,
+    "stroke_count": 10,
+    "meaning_vi": "Đấu (tranh đấu, đánh nhau)",
+    "meaning_en": "Fight",
+    "reading_ja": "たたかい",
+    "kangxi_number": 191
+  },
+  {
+    "radical": "鬯",
+    "variants": null,
+    "stroke_count": 10,
+    "meaning_vi": "Sướng (rượu nghệ dùng cúng lễ)",
+    "meaning_en": "Sacrificial wine",
+    "reading_ja": "ちょう",
+    "kangxi_number": 192
+  },
+  {
+    "radical": "鬲",
+    "variants": null,
+    "stroke_count": 10,
+    "meaning_vi": "Cách (cái đỉnh, nồi ba chân)",
+    "meaning_en": "Cauldron",
+    "reading_ja": "れき",
+    "kangxi_number": 193
+  },
+  {
+    "radical": "鬼",
+    "variants": null,
+    "stroke_count": 10,
+    "meaning_vi": "Quỷ (con quỷ, linh hồn)",
+    "meaning_en": "Ghost",
+    "reading_ja": "おに",
+    "kangxi_number": 194
+  },
+  {
+    "radical": "魚",
+    "variants": "鱼",
+    "stroke_count": 11,
+    "meaning_vi": "Ngư (con cá)",
+    "meaning_en": "Fish",
+    "reading_ja": "さかな",
+    "kangxi_number": 195
+  },
+  {
+    "radical": "鳥",
+    "variants": "鸟",
+    "stroke_count": 11,
+    "meaning_vi": "Điểu (con chim)",
+    "meaning_en": "Bird",
+    "reading_ja": "とり",
+    "kangxi_number": 196
+  },
+  {
+    "radical": "鹵",
+    "variants": "卤",
+    "stroke_count": 11,
+    "meaning_vi": "Lỗ (đất mặn, muối)",
+    "meaning_en": "Salt",
+    "reading_ja": "ろ",
+    "kangxi_number": 197
+  },
+  {
+    "radical": "鹿",
+    "variants": null,
+    "stroke_count": 11,
+    "meaning_vi": "Lộc (con hươu, nai)",
+    "meaning_en": "Deer",
+    "reading_ja": "しか",
+    "kangxi_number": 198
+  },
+  {
+    "radical": "麥",
+    "variants": "麦",
+    "stroke_count": 11,
+    "meaning_vi": "Mạch (lúa mạch, lúa mì)",
+    "meaning_en": "Wheat",
+    "reading_ja": "むぎ",
+    "kangxi_number": 199
+  },
+  {
+    "radical": "麻",
+    "variants": null,
+    "stroke_count": 11,
+    "meaning_vi": "Ma (cây gai dùng dệt vải)",
+    "meaning_en": "Hemp",
+    "reading_ja": "あさ",
+    "kangxi_number": 200
+  },
+  {
+    "radical": "黃",
+    "variants": "黄",
+    "stroke_count": 12,
+    "meaning_vi": "Hoàng (màu vàng)",
+    "meaning_en": "Yellow",
+    "reading_ja": "きいろ",
+    "kangxi_number": 201
+  },
+  {
+    "radical": "黍",
+    "variants": null,
+    "stroke_count": 12,
+    "meaning_vi": "Thử (cây kê)",
+    "meaning_en": "Millet",
+    "reading_ja": "きび",
+    "kangxi_number": 202
+  },
+  {
+    "radical": "黑",
+    "variants": "黒",
+    "stroke_count": 12,
+    "meaning_vi": "Hắc (màu đen)",
+    "meaning_en": "Black",
+    "reading_ja": "くろ",
+    "kangxi_number": 203
+  },
+  {
+    "radical": "黹",
+    "variants": null,
+    "stroke_count": 12,
+    "meaning_vi": "Chỉ (may thêu quần áo)",
+    "meaning_en": "Embroidery",
+    "reading_ja": "ぬいとり",
+    "kangxi_number": 204
+  },
+  {
+    "radical": "黽",
+    "variants": "黾",
+    "stroke_count": 13,
+    "meaning_vi": "Mãnh (con ếch, loài lưỡng cư)",
+    "meaning_en": "Frog",
+    "reading_ja": "べん",
+    "kangxi_number": 205
+  },
+  {
+    "radical": "鼎",
+    "variants": null,
+    "stroke_count": 13,
+    "meaning_vi": "Đỉnh (cái vạc đồng ba chân)",
+    "meaning_en": "Tripod",
+    "reading_ja": "かなえ",
+    "kangxi_number": 206
+  },
+  {
+    "radical": "鼓",
+    "variants": null,
+    "stroke_count": 13,
+    "meaning_vi": "Cổ (cái trống)",
+    "meaning_en": "Drum",
+    "reading_ja": "つづみ",
+    "kangxi_number": 207
+  },
+  {
+    "radical": "鼠",
+    "variants": "鼡",
+    "stroke_count": 13,
+    "meaning_vi": "Thử (con chuột)",
+    "meaning_en": "Rat",
+    "reading_ja": "ねずみ",
+    "kangxi_number": 208
+  },
+  {
+    "radical": "鼻",
+    "variants": null,
+    "stroke_count": 14,
+    "meaning_vi": "Tị (cái mũi)",
+    "meaning_en": "Nose",
+    "reading_ja": "はな",
+    "kangxi_number": 209
+  },
+  {
+    "radical": "齊",
+    "variants": "斉",
+    "stroke_count": 14,
+    "meaning_vi": "Tề (bằng phẳng, ngay ngắn)",
+    "meaning_en": "Even",
+    "reading_ja": "せい",
+    "kangxi_number": 210
+  },
+  {
+    "radical": "齒",
+    "variants": "歯",
+    "stroke_count": 15,
+    "meaning_vi": "Sỉ (cái răng)",
+    "meaning_en": "Tooth",
+    "reading_ja": "は",
+    "kangxi_number": 211
+  },
+  {
+    "radical": "龍",
+    "variants": "竜",
+    "stroke_count": 16,
+    "meaning_vi": "Long (con rồng)",
+    "meaning_en": "Dragon",
+    "reading_ja": "りゅう",
+    "kangxi_number": 212
+  },
+  {
+    "radical": "龜",
+    "variants": "亀",
+    "stroke_count": 16,
+    "meaning_vi": "Qui (con rùa)",
+    "meaning_en": "Turtle",
+    "reading_ja": "かめ",
+    "kangxi_number": 213
+  },
+  {
+    "radical": "龠",
+    "variants": null,
+    "stroke_count": 17,
+    "meaning_vi": "Dược (sáo nhạc cụ thổi hơi)",
+    "meaning_en": "Flute",
+    "reading_ja": "やく",
+    "kangxi_number": 214
+  }
+]
