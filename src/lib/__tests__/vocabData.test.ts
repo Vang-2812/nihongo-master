@@ -1,4 +1,4 @@
-﻿import { describe, it } from 'node:test';
+import { describe, it } from 'node:test';
 import assert from 'node:assert';
 import {
   getAllTextbooks,
@@ -117,5 +117,17 @@ describe('Vocab Data Helper & Indexer', () => {
     const lessonResults = searchVocab('tôi', 'minna_1');
     assert.ok(lessonResults.length > 0);
     assert.ok(lessonResults.every((r) => r.lessonId === 'minna_1'));
+  });
+
+  it('should load all 45 vocabulary items for Minna Lesson 1 from minna.json', () => {
+    const lesson1 = getLessonById('minna_1');
+    assert.ok(lesson1);
+    assert.strictEqual(lesson1?.items.length, 45, 'Minna Lesson 1 should have exactly 45 items from minna.json');
+
+    const words = lesson1?.items.map((it) => it.word);
+    assert.ok(words?.includes('誰'));
+    assert.ok(words?.includes('アメリカ'));
+    assert.ok(words?.includes('日本'));
+    assert.ok(words?.includes('中国'));
   });
 });

@@ -358,6 +358,17 @@ function buildAllVocabAndLessons(): {
   const lessonMap = new Map<string, LessonInfo>();
   const allVocab: VocabItem[] = [];
 
+  // Group minna.json by lesson_number
+  const minnaByLesson = new Map<number, any[]>();
+  for (const item of (minnaData || []) as any[]) {
+    const l = Number(item.lesson_number || item.lesson);
+    if (!l) continue;
+    if (!minnaByLesson.has(l)) {
+      minnaByLesson.set(l, []);
+    }
+    minnaByLesson.get(l)!.push(item);
+  }
+
   // Group tango.json by lesson "1".."50"
   const tangoByLesson = new Map<string, any[]>();
   for (const item of tangoData as any[]) {
@@ -373,19 +384,37 @@ function buildAllVocabAndLessons(): {
   for (let i = 1; i <= 25; i++) {
     const lessonKey = String(i);
     const lessonId = `minna_${i}`;
-    const rawItems = tangoByLesson.get(lessonKey) || [];
+    const hasMinna = minnaByLesson.has(i) && minnaByLesson.get(i)!.length > 0;
+    const rawItems = hasMinna ? minnaByLesson.get(i)! : (tangoByLesson.get(lessonKey) || []);
     const meta = MINNA_LESSON_TITLES[i] || {
       title: `Bài ${i}`,
       subtitle: `Từ vựng Minna no Nihongo N5 Bài ${i}`,
     };
 
     const items: VocabItem[] = rawItems.map((item, idx) => {
-      const word = (item.kanji || item.kana || '').trim();
-      const reading = (item.kana || item.kanji || '').trim();
+      let word: string;
+      let reading: string;
+      let meaning: string;
+      let meaningEn: string | undefined = undefined;
+      let romaji: string | undefined = undefined;
+      let wordType: string | undefined = undefined;
+
+      if (hasMinna) {
+        word = (item.word_jp || item.word || item.reading || '').trim();
+        reading = (item.reading || item.word_jp || item.word || '').trim();
+        meaning = (item.meaning_vi || item.meaning || '').trim();
+        meaningEn = (item.meaning_en || item.english || '').trim() || undefined;
+        romaji = (item.romaji || '').trim() || undefined;
+        wordType = (item.word_type || '').trim() || undefined;
+      } else {
+        word = (item.kanji || item.kana || '').trim();
+        reading = (item.kana || item.kanji || '').trim();
+        meaning = (item.vietnamese || '').trim();
+        meaningEn = (item.english || '').trim() || undefined;
+        romaji = (item.romaji || '').trim() || undefined;
+      }
+
       const sino = getSinoVietnamese(word);
-      const meaning = (item.vietnamese || '').trim();
-      const meaningEn = (item.english || '').trim() || undefined;
-      const romaji = (item.romaji || '').trim() || undefined;
       const vId = `${lessonId}_${idx}`;
 
       return {
@@ -398,7 +427,7 @@ function buildAllVocabAndLessons(): {
         meaning,
         meaningEn,
         romaji,
-        wordType: undefined,
+        wordType,
         level: 'N5',
         example: undefined,
       };
@@ -424,19 +453,37 @@ function buildAllVocabAndLessons(): {
   for (let i = 26; i <= 50; i++) {
     const lessonKey = String(i);
     const lessonId = `minna_${i}`;
-    const rawItems = tangoByLesson.get(lessonKey) || [];
+    const hasMinna = minnaByLesson.has(i) && minnaByLesson.get(i)!.length > 0;
+    const rawItems = hasMinna ? minnaByLesson.get(i)! : (tangoByLesson.get(lessonKey) || []);
     const meta = MINNA_LESSON_TITLES[i] || {
       title: `Bài ${i}`,
       subtitle: `Từ vựng Minna no Nihongo N4 Bài ${i}`,
     };
 
     const items: VocabItem[] = rawItems.map((item, idx) => {
-      const word = (item.kanji || item.kana || '').trim();
-      const reading = (item.kana || item.kanji || '').trim();
+      let word: string;
+      let reading: string;
+      let meaning: string;
+      let meaningEn: string | undefined = undefined;
+      let romaji: string | undefined = undefined;
+      let wordType: string | undefined = undefined;
+
+      if (hasMinna) {
+        word = (item.word_jp || item.word || item.reading || '').trim();
+        reading = (item.reading || item.word_jp || item.word || '').trim();
+        meaning = (item.meaning_vi || item.meaning || '').trim();
+        meaningEn = (item.meaning_en || item.english || '').trim() || undefined;
+        romaji = (item.romaji || '').trim() || undefined;
+        wordType = (item.word_type || '').trim() || undefined;
+      } else {
+        word = (item.kanji || item.kana || '').trim();
+        reading = (item.kana || item.kanji || '').trim();
+        meaning = (item.vietnamese || '').trim();
+        meaningEn = (item.english || '').trim() || undefined;
+        romaji = (item.romaji || '').trim() || undefined;
+      }
+
       const sino = getSinoVietnamese(word);
-      const meaning = (item.vietnamese || '').trim();
-      const meaningEn = (item.english || '').trim() || undefined;
-      const romaji = (item.romaji || '').trim() || undefined;
       const vId = `${lessonId}_${idx}`;
 
       return {
@@ -449,7 +496,7 @@ function buildAllVocabAndLessons(): {
         meaning,
         meaningEn,
         romaji,
-        wordType: undefined,
+        wordType,
         level: 'N4',
         example: undefined,
       };
