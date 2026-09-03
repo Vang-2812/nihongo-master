@@ -12,9 +12,18 @@ import { Volume2, Plus, Check, BookmarkCheck, Sparkles } from 'lucide-react';
 export interface KanjiCardProps {
   kanji: KanjiItem;
   level?: KanjiLevel;
+  isSelecting?: boolean;
+  isSelected?: boolean;
+  onToggleSelect?: (character: string) => void;
 }
 
-export const KanjiCard: React.FC<KanjiCardProps> = ({ kanji, level }) => {
+export const KanjiCard: React.FC<KanjiCardProps> = ({
+  kanji,
+  level,
+  isSelecting = false,
+  isSelected = false,
+  onToggleSelect,
+}) => {
   const { kanjiStatus, setStatus } = useKanjiStore();
   const { cards, addCard, removeCard } = useSRSStore();
 
@@ -92,17 +101,50 @@ export const KanjiCard: React.FC<KanjiCardProps> = ({ kanji, level }) => {
   const onPreview = kanji.onyomi?.slice(0, 2).join('・');
   const kunPreview = kanji.kunyomi?.slice(0, 2).join('・');
 
+  const handleCardClick = (e: React.MouseEvent) => {
+    if (isSelecting) {
+      e.preventDefault();
+      onToggleSelect?.(kanji.character);
+    }
+  };
+
   return (
     <Link
       href={`/kanji/${encodeURIComponent(kanji.character)}`}
-      className={`group relative flex flex-col justify-between p-4 rounded-2xl bg-white dark:bg-slate-900 border-2 ${currentConfig.border} shadow-sm hover:shadow-lg ${currentConfig.glow} transition-all duration-200 hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-indigo-500`}
+      onClick={handleCardClick}
+      className={`group relative flex flex-col justify-between p-4 rounded-2xl bg-white dark:bg-slate-900 border-2 ${
+        isSelected
+          ? 'border-indigo-600 ring-2 ring-indigo-500/40 bg-indigo-50/20 dark:bg-indigo-950/20'
+          : currentConfig.border
+      } shadow-sm hover:shadow-lg ${currentConfig.glow} transition-all duration-200 hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-indigo-500`}
     >
       {/* Top action row */}
       <div className="flex items-center justify-between gap-1 mb-2">
-        {/* Stroke count badge */}
-        <span className="text-[11px] font-medium px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 border border-slate-200/60 dark:border-slate-700/60">
-          {kanji.stroke_count} nét
-        </span>
+        <div className="flex items-center gap-1.5">
+          {/* Selection Checkbox */}
+          {isSelecting && (
+            <button
+              type="button"
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                onToggleSelect?.(kanji.character);
+              }}
+              className={`w-5 h-5 rounded-md border flex items-center justify-center transition-colors shrink-0 ${
+                isSelected
+                  ? 'bg-indigo-600 border-indigo-600 text-white'
+                  : 'border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800'
+              }`}
+            >
+              {isSelected && <Check className="w-3.5 h-3.5 stroke-[3]" />}
+            </button>
+          )}
+
+          {/* Stroke count badge */}
+          <span className="text-[11px] font-medium px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 border border-slate-200/60 dark:border-slate-700/60">
+            {kanji.stroke_count} nét
+          </span>
+        </div>
 
         <div className="flex items-center gap-1">
           {/* Audio button */}

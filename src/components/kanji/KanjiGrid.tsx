@@ -10,12 +10,18 @@ export interface KanjiGridProps {
   kanjiList: KanjiItem[];
   level?: KanjiLevel;
   onResetFilter?: () => void;
+  isSelecting?: boolean;
+  selectedChars?: Set<string>;
+  onToggleSelect?: (character: string) => void;
 }
 
 export const KanjiGrid: React.FC<KanjiGridProps> = ({
   kanjiList,
   level,
   onResetFilter,
+  isSelecting = false,
+  selectedChars = new Set(),
+  onToggleSelect,
 }) => {
   if (kanjiList.length === 0) {
     return (
@@ -51,6 +57,9 @@ export const KanjiGrid: React.FC<KanjiGridProps> = ({
           key={`${kanji.level || level || ''}_${kanji.character}`}
           kanji={kanji}
           level={level}
+          isSelecting={isSelecting}
+          isSelected={selectedChars.has(kanji.character)}
+          onToggleSelect={onToggleSelect}
         />
       ))}
     </div>

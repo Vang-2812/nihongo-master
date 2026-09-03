@@ -5,6 +5,7 @@ import { useKanjiStore, KanjiLevel, KanjiFilter, KanjiStatus } from '@/stores/ka
 import { useSRSStore } from '@/stores/srsStore';
 import { getKanjiByLevel, parseKanjiMeaning, KanjiItem } from '@/lib/kanjiData';
 import KanjiGrid from '@/components/kanji/KanjiGrid';
+import KanjiQuizModal from '@/components/kanji/KanjiQuizModal';
 import ProgressBar from '@/components/ui/ProgressBar';
 import {
   Search,
@@ -15,6 +16,8 @@ import {
   X,
   Languages,
   PlusCircle,
+  Dices,
+  CheckSquare,
 } from 'lucide-react';
 import { toast } from '@/stores/toastStore';
 
@@ -37,9 +40,33 @@ export default function KanjiCatalogPage() {
   const { cards, addCards } = useSRSStore();
 
   const [mounted, setMounted] = useState(false);
+  const [isQuizModalOpen, setIsQuizModalOpen] = useState(false);
+  const [isSelecting, setIsSelecting] = useState(false);
+  const [selectedChars, setSelectedChars] = useState<Set<string>>(new Set());
+
   useEffect(() => {
     setMounted(true);
   }, []);
+
+  const handleToggleSelectChar = (char: string) => {
+    setSelectedChars((prev) => {
+      const next = new Set(prev);
+      if (next.has(char)) {
+        next.delete(char);
+      } else {
+        next.add(char);
+      }
+      return next;
+    });
+  };
+
+  const handleSelectAllFiltered = () => {
+    setSelectedChars(new Set(filteredKanji.map((k) => k.character)));
+  };
+
+  const handleClearSelection = () => {
+    setSelectedChars(new Set());
+  };
 
   // Raw list for active JLPT level
   const currentLevelKanji = useMemo(() => {
@@ -193,16 +220,43 @@ export default function KanjiCatalogPage() {
           </p>
         </div>
 
-        {/* Quick Batch Action */}
-        <div className="flex items-center gap-3">
+        {/* Quick Batch Actions */}
+        <div className="flex flex-wrap items-center gap-2 sm:gap-3">
+          <button
+            type="button"
+            onClick={() => setIsQuizModalOpen(true)}
+            className="inline-flex items-center gap-1.5 px-3.5 sm:px-4 py-2 sm:py-2.5 text-xs sm:text-sm font-bold rounded-xl bg-gradient-to-r from-amber-500 to-indigo-600 hover:from-amber-600 hover:to-indigo-700 text-white shadow-md shadow-indigo-500/20 active:scale-95 transition-all"
+            title={`Luyện tập Quizlet cho Kanji ${level}`}
+          >
+            <Sparkles className="w-4 h-4 fill-white/20" />
+            <span>Luyện tập Quizlet</span>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => {
+              setIsSelecting(!isSelecting);
+              if (isSelecting) setSelectedChars(new Set());
+            }}
+            className={`inline-flex items-center gap-1.5 px-3 sm:px-3.5 py-2 sm:py-2.5 text-xs sm:text-sm font-semibold rounded-xl border transition-all ${
+              isSelecting
+                ? 'bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 border-indigo-300 dark:border-indigo-700'
+                : 'bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-800 hover:bg-slate-50'
+            }`}
+          >
+            <CheckSquare className="w-4 h-4" />
+            <span className="hidden sm:inline">{isSelecting ? 'Hủy chọn' : 'Chọn chữ'}</span>
+          </button>
+
           <button
             type="button"
             onClick={handleAddAllToSRS}
-            className="inline-flex items-center gap-2 px-4 py-2.5 text-xs sm:text-sm font-semibold rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 shadow-md shadow-indigo-500/20 active:scale-95 transition-all"
+            className="inline-flex items-center gap-1.5 px-3.5 sm:px-4 py-2 sm:py-2.5 text-xs sm:text-sm font-semibold rounded-xl bg-slate-900 dark:bg-slate-800 text-white hover:bg-slate-800 dark:hover:bg-slate-700 border border-slate-800 active:scale-95 transition-all"
             title="Thêm toàn bộ Kanji đang hiển thị vào hàng đợi SRS"
           >
             <PlusCircle className="w-4 h-4" />
-            <span>Thêm trang này vào SRS</span>
+            <span className="hidden sm:inline">Thêm vào SRS</span>
+            <span className="sm:hidden">+SRS</span>
           </button>
         </div>
       </div>
@@ -217,7 +271,10 @@ export default function KanjiCatalogPage() {
             <button
               key={lvl}
               type="button"
-              onClick={() => setLevel(lvl)}
+              onClick={() => {
+                setLevel(lvl);
+                setSelectedChars(new Set());
+              }}
               className={`flex-1 min-w-[90px] py-2.5 px-3 rounded-xl font-bold text-sm sm:text-base transition-all flex items-center justify-center gap-2 ${
                 isActive
                   ? 'bg-white dark:bg-indigo-600 text-indigo-600 dark:text-white shadow-sm ring-1 ring-slate-200/50 dark:ring-0 scale-100'
@@ -393,8 +450,57 @@ export default function KanjiCatalogPage() {
           kanjiList={filteredKanji}
           level={level}
           onResetFilter={handleResetFilters}
+          isSelecting={isSelecting}
+          selectedChars={selectedChars}
+          onToggleSelect={handleToggleSelectChar}
         />
       </div>
+
+      {/* Floating Selection Bar */}
+      {isSelecting && (
+        <div className="sticky bottom-4 z-30 mx-auto max-w-xl w-full p-3.5 rounded-2xl bg-slate-900/95 dark:bg-slate-950/95 text-white backdrop-blur-md shadow-2xl border border-slate-800 flex items-center justify-between gap-3 animate-slideUp">
+          <div className="flex items-center gap-2 min-w-0">
+            <span className="px-2 py-0.5 rounded-md bg-indigo-600 text-xs font-bold shrink-0">
+              {selectedChars.size}
+            </span>
+            <span className="text-xs sm:text-sm font-medium truncate">
+              chữ Hán đã chọn
+            </span>
+          </div>
+
+          <div className="flex items-center gap-2">
+            <button
+              type="button"
+              onClick={selectedChars.size === filteredKanji.length ? handleClearSelection : handleSelectAllFiltered}
+              className="px-2.5 py-1.5 rounded-xl text-xs font-semibold text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 transition-colors"
+            >
+              {selectedChars.size === filteredKanji.length ? 'Bỏ chọn hết' : 'Chọn tất cả'}
+            </button>
+
+            <button
+              type="button"
+              disabled={selectedChars.size < 4}
+              onClick={() => setIsQuizModalOpen(true)}
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs sm:text-sm font-bold shadow-md shadow-indigo-500/20 active:scale-95 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+              title={selectedChars.size < 4 ? 'Cần chọn tối thiểu 4 chữ để luyện tập' : ''}
+            >
+              <Sparkles className="w-3.5 h-3.5" />
+              <span>Luyện tập</span>
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Kanji Quizlet Modal */}
+      <KanjiQuizModal
+        isOpen={isQuizModalOpen}
+        onClose={() => setIsQuizModalOpen(false)}
+        level={level}
+        filteredKanji={filteredKanji}
+        allLevelKanji={currentLevelKanji}
+        selectedKanjiChars={selectedChars}
+        onClearSelection={handleClearSelection}
+      />
     </div>
   );
 }
