@@ -192,6 +192,7 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
   const handleSelectTile = (tileId: string) => {
     if (isChecked || isFinished) return;
     if (selectedTileIds.includes(tileId)) return; // already placed
+    if (selectedTileIds.length >= targetChars.length) return; // cannot exceed target word length
 
     setSelectedTileIds((prev) => [...prev, tileId]);
   };
@@ -604,15 +605,11 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
         }`}
       >
         <div className="flex items-center justify-center gap-1.5 sm:gap-3 flex-wrap min-h-[3rem] sm:min-h-[3.5rem]">
-          {selectedTileIds.length === 0 ? (
-            <span className="text-xs sm:text-sm text-slate-400 italic">
-              Nhấn các ô ký tự bên dưới để ghép từ...
-            </span>
-          ) : (
-            selectedTileIds.map((tileId, idx) => {
-              const tile = tilePool.find((t) => t.id === tileId);
-              if (!tile) return null;
+          {targetChars.map((_, idx) => {
+            const tileId = selectedTileIds[idx];
+            const tile = tileId ? tilePool.find((t) => t.id === tileId) : null;
 
+            if (tile) {
               return (
                 <button
                   key={`placed-${tile.id}-${idx}`}
@@ -631,8 +628,21 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
                   {tile.char}
                 </button>
               );
-            })
-          )}
+            }
+
+            // Empty slot placeholder
+            return (
+              <div
+                key={`empty-slot-${idx}`}
+                className="w-11 h-11 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl border-2 border-dashed border-slate-300 dark:border-slate-700 bg-white/40 dark:bg-slate-800/30 flex items-center justify-center transition-all select-none"
+                title={`Vị trí ký tự thứ ${idx + 1}`}
+              >
+                <span className="text-xs font-semibold text-slate-300 dark:text-slate-600 font-mono">
+                  {idx + 1}
+                </span>
+              </div>
+            );
+          })}
         </div>
 
         {/* Construction Line Controls: Undo & Reset */}
