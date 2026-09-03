@@ -16,6 +16,7 @@ import {
   Dices,
   Home,
 } from 'lucide-react';
+import ThemeToggle from '@/components/ui/ThemeToggle';
 
 export const Navbar: React.FC = () => {
   const pathname = usePathname();
@@ -151,6 +152,9 @@ export const Navbar: React.FC = () => {
                 <span>{totalXp} XP</span>
               </div>
 
+              {/* Theme Toggle Button */}
+              <ThemeToggle />
+
               {/* Mobile hamburger toggle */}
               <button
                 type="button"
@@ -193,6 +197,12 @@ export const Navbar: React.FC = () => {
                 </Link>
               );
             })}
+
+            {/* Mobile Theme Switcher Row */}
+            <div className="pt-3 mt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between px-2">
+              <span className="text-xs font-semibold text-slate-600 dark:text-slate-400">Chế độ giao diện:</span>
+              <ThemeToggle variant="segmented" />
+            </div>
           </div>
         )}
       </header>

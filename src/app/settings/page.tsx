@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useSRSStore } from '@/stores/srsStore';
 import { useKanjiStore } from '@/stores/kanjiStore';
 import { useVocabStore } from '@/stores/vocabStore';
+import { useThemeStore } from '@/stores/themeStore';
 import { toast } from '@/stores/toastStore';
 import { exportBackupData, validateAndParseBackup, BackupData } from '@/lib/storage';
 import Modal from '@/components/ui/Modal';
@@ -28,10 +29,15 @@ import {
   Layers,
   Calendar,
   Sliders,
+  Palette,
+  Sun,
+  Moon,
+  Laptop,
 } from 'lucide-react';
 
 export default function SettingsPage() {
   const [mounted, setMounted] = useState(false);
+  const { theme, setTheme } = useThemeStore();
 
   // SRS Store
   const {
@@ -290,6 +296,132 @@ export default function SettingsPage() {
           </div>
         )}
       </div>
+
+      {/* ==================== THEME & APPEARANCE SECTION ==================== */}
+      <section
+        aria-labelledby="theme-appearance-heading"
+        className="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-xs overflow-hidden"
+      >
+        <div className="p-5 sm:p-6 border-b border-slate-100 dark:border-slate-800 flex items-center gap-3">
+          <div className="p-2 rounded-xl bg-purple-50 dark:bg-purple-950/60 text-purple-600 dark:text-purple-400">
+            <Palette className="w-5 h-5" />
+          </div>
+          <div>
+            <h2
+              id="theme-appearance-heading"
+              className="text-lg font-bold text-slate-900 dark:text-white"
+            >
+              Giao Diện & Chủ Đề (Appearance)
+            </h2>
+            <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+              Tùy chỉnh chế độ hiển thị Sáng / Tối để bảo vệ mắt và tối ưu trải nghiệm học tập.
+            </p>
+          </div>
+        </div>
+
+        <div className="p-5 sm:p-6">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            {/* Light Theme Card */}
+            <button
+              type="button"
+              onClick={() => {
+                setTheme('light');
+                toast.success('Đã chuyển sang Giao diện Sáng (Light Mode)');
+              }}
+              className={`p-4 rounded-2xl border-2 text-left transition-all relative flex flex-col justify-between ${
+                theme === 'light'
+                  ? 'border-indigo-600 bg-indigo-50/20 dark:bg-slate-800 shadow-md ring-2 ring-indigo-600/20'
+                  : 'border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 bg-slate-50/50 dark:bg-slate-900/50'
+              }`}
+            >
+              <div>
+                <div className="flex items-center justify-between mb-3">
+                  <div className="w-9 h-9 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center">
+                    <Sun className="w-5 h-5" />
+                  </div>
+                  {theme === 'light' && (
+                    <span className="w-5 h-5 rounded-full bg-indigo-600 text-white flex items-center justify-center">
+                      <Check className="w-3 h-3 stroke-[3]" />
+                    </span>
+                  )}
+                </div>
+                <h3 className="font-bold text-sm text-slate-900 dark:text-white">
+                  Giao diện Sáng
+                </h3>
+                <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
+                  Nền trắng xám dịu mắt, độ tương phản cao, tối ưu khi học ban ngày hoặc không gian sáng.
+                </p>
+              </div>
+            </button>
+
+            {/* Dark Theme Card */}
+            <button
+              type="button"
+              onClick={() => {
+                setTheme('dark');
+                toast.success('Đã chuyển sang Giao diện Tối (Dark Mode)');
+              }}
+              className={`p-4 rounded-2xl border-2 text-left transition-all relative flex flex-col justify-between ${
+                theme === 'dark'
+                  ? 'border-indigo-600 bg-indigo-50/20 dark:bg-slate-800 shadow-md ring-2 ring-indigo-600/20'
+                  : 'border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 bg-slate-50/50 dark:bg-slate-900/50'
+              }`}
+            >
+              <div>
+                <div className="flex items-center justify-between mb-3">
+                  <div className="w-9 h-9 rounded-xl bg-indigo-950 text-indigo-400 flex items-center justify-center border border-indigo-800">
+                    <Moon className="w-5 h-5" />
+                  </div>
+                  {theme === 'dark' && (
+                    <span className="w-5 h-5 rounded-full bg-indigo-600 text-white flex items-center justify-center">
+                      <Check className="w-3 h-3 stroke-[3]" />
+                    </span>
+                  )}
+                </div>
+                <h3 className="font-bold text-sm text-slate-900 dark:text-white">
+                  Giao diện Tối
+                </h3>
+                <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
+                  Tông màu slate tối mượt mà, giảm mỏi mắt khi học ban đêm hoặc phòng tối.
+                </p>
+              </div>
+            </button>
+
+            {/* System Theme Card */}
+            <button
+              type="button"
+              onClick={() => {
+                setTheme('system');
+                toast.success('Đã đặt chế độ Giao diện theo thiết bị');
+              }}
+              className={`p-4 rounded-2xl border-2 text-left transition-all relative flex flex-col justify-between ${
+                theme === 'system'
+                  ? 'border-indigo-600 bg-indigo-50/20 dark:bg-slate-800 shadow-md ring-2 ring-indigo-600/20'
+                  : 'border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 bg-slate-50/50 dark:bg-slate-900/50'
+              }`}
+            >
+              <div>
+                <div className="flex items-center justify-between mb-3">
+                  <div className="w-9 h-9 rounded-xl bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 flex items-center justify-center">
+                    <Laptop className="w-5 h-5" />
+                  </div>
+                  {theme === 'system' && (
+                    <span className="w-5 h-5 rounded-full bg-indigo-600 text-white flex items-center justify-center">
+                      <Check className="w-3 h-3 stroke-[3]" />
+                    </span>
+                  )}
+                </div>
+                <h3 className="font-bold text-sm text-slate-900 dark:text-white">
+                  Theo thiết bị (System)
+                </h3>
+                <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
+                  Tự động đồng bộ theo cài đặt giao diện Sáng/Tối của hệ điều hành trên máy.
+                </p>
+              </div>
+            </button>
+          </div>
+        </div>
+      </section>
 
       {/* ==================== SECTION 1: STUDY PREFERENCES ==================== */}
       <section
