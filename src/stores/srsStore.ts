@@ -1,6 +1,7 @@
 import { create } from 'zustand';
 import { persist, createJSONStorage } from 'zustand/middleware';
 import { calculateSM2 } from '@/lib/sm2';
+import { useVocabStore } from './vocabStore';
 
 export type CardType = 'vocab' | 'kanji';
 export type CardStatus = 'new' | 'learning' | 'review';
@@ -48,6 +49,12 @@ export interface SRSState {
   getDueCards: () => SRSCard[];
   getDueCount: () => number;
   reviewCard: (cardId: string, rating: 1 | 2 | 3 | 4) => { xpEarned: number; nextDueDate: string };
+  recordReview: (
+    cardType: CardType,
+    contentId: string | number,
+    rating: 1 | 2 | 3 | 4,
+    level?: 'N5' | 'N4' | 'N3' | 'N2' | 'N1'
+  ) => { xpEarned: number; nextDueDate: string };
   addXp: (amount: number) => void;
   importData: (data: any) => void;
   exportData: () => any;
@@ -228,10 +235,35 @@ export const useSRSStore = create<SRSState>()(
           stats: updatedStats,
         });
 
+        // Automatically sync unified learning status to vocabStore
+        if (card.cardType === 'vocab') {
+          const vocabId = String(card.contentId);
+          const learningStatus = newStatus === 'review' ? 'known' : 'learning';
+          try {
+            useVocabStore.getState().setVocabStatus(vocabId, learningStatus);
+          } catch (e) {
+            // ignore
+          }
+        }
+
         return {
           xpEarned: sm2Result.xpEarned,
           nextDueDate: sm2Result.dueDate,
         };
+      },
+
+      recordReview: (cardType, contentId, rating, level = 'N5') => {
+        const cardId = `${cardType}_${contentId}`;
+        const state = get();
+        if (!state.cards[cardId]) {
+          state.addCard({
+            id: cardId,
+            cardType,
+            contentId,
+            level,
+          });
+        }
+        return get().reviewCard(cardId, rating);
       },
 
       addXp: (amount) => {

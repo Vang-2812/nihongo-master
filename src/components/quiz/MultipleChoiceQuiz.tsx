@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import Link from 'next/link';
@@ -38,6 +38,8 @@ export interface MultipleChoiceQuizProps {
   allPool?: QuizItem[];
   title?: string;
   subtitle?: string;
+  direction?: 'ja_to_vi' | 'vi_to_ja';
+  showKana?: boolean;
   onRestart?: () => void;
   onExit?: () => void;
   className?: string;
@@ -54,7 +56,9 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
   items,
   allPool,
   title = 'Trắc Nghiệm 4 Đáp Án',
-  subtitle = 'Chọn nghĩa tiếng Việt chính xác cho từ vựng / Hán tự',
+  subtitle = 'Chọn đáp án chính xác cho từ vựng / Hán tự',
+  direction = 'ja_to_vi',
+  showKana = true,
   onRestart,
   onExit,
   className = '',
@@ -79,14 +83,33 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
 
   const currentItem = items[currentIndex];
 
+  // Helper to format options based on direction and showKana
+  const getOptionLabel = useCallback(
+    (item: QuizItem) => {
+      if (direction === 'vi_to_ja') {
+        if (showKana && item.reading && item.reading !== item.word) {
+          return `${item.word} (${item.reading})`;
+        }
+        return item.word;
+      }
+      return item.meaning.trim();
+    },
+    [direction, showKana]
+  );
+
+  const correctTarget = useMemo(() => {
+    if (!currentItem) return '';
+    return getOptionLabel(currentItem);
+  }, [currentItem, getOptionLabel]);
+
   // Generate 4 randomized options for the current question
   const currentOptions = useMemo(() => {
     if (!currentItem) return [];
 
-    const correctMeaning = currentItem.meaning.trim();
+    const target = getOptionLabel(currentItem);
     const otherMeanings = pool
-      .filter((p) => p.id !== currentItem.id && p.meaning.trim() !== correctMeaning)
-      .map((p) => p.meaning.trim());
+      .filter((p) => p.id !== currentItem.id && getOptionLabel(p) !== target)
+      .map(getOptionLabel);
 
     // Deduplicate and shuffle distractors
     const uniqueDistractors = Array.from(new Set(otherMeanings)).sort(
@@ -95,17 +118,20 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
     const chosenDistractors = uniqueDistractors.slice(0, 3);
 
     // Fallback if not enough distractors in pool
-    const fallbackList = ['Nghĩa khác A', 'Nghĩa khác B', 'Nghĩa khác C'];
+    const fallbackList =
+      direction === 'vi_to_ja'
+        ? ['ことば A', 'ことば B', 'ことば C']
+        : ['Nghĩa khác A', 'Nghĩa khác B', 'Nghĩa khác C'];
     while (chosenDistractors.length < 3) {
       chosenDistractors.push(fallbackList[chosenDistractors.length]);
     }
 
     // Combine and shuffle 4 options
-    const allFour = [correctMeaning, ...chosenDistractors].sort(
+    const allFour = [target, ...chosenDistractors].sort(
       () => Math.random() - 0.5
     );
     return allFour;
-  }, [currentItem, pool]);
+  }, [currentItem, pool, direction, getOptionLabel]);
 
   // Handle Option Selection
   const handleSelectOption = useCallback(
@@ -115,7 +141,7 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
       setSelectedOption(option);
       setIsChecked(true);
 
-      const isCorrect = option === currentItem.meaning.trim();
+      const isCorrect = option === correctTarget;
 
       if (isCorrect) {
         const newStreak = streak + 1;
@@ -141,17 +167,31 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
         setStreak(0);
       }
 
+      // Unified SRS SM-2 Record & sync to vocabStore
+      try {
+        useSRSStore
+          .getState()
+          .recordReview(
+            currentItem.type || 'vocab',
+            currentItem.id,
+            isCorrect ? 3 : 1,
+            (currentItem.level as any) || 'N5'
+          );
+      } catch (err) {
+        // ignore
+      }
+
       setHistory((prev) => [
         ...prev,
         {
           item: currentItem,
           selectedMeaning: option,
-          correctMeaning: currentItem.meaning.trim(),
+          correctMeaning: correctTarget,
           isCorrect,
         },
       ]);
     },
-    [isChecked, currentItem, streak, addXp]
+    [isChecked, currentItem, correctTarget, streak, addXp]
   );
 
   // Next Question
@@ -448,29 +488,66 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
           </button>
         </div>
 
-        {/* Word Display */}
+        {/* Word / Prompt Display */}
         <div className="pt-4 pb-2">
-          <h2 className="text-4xl sm:text-5xl font-black text-slate-900 dark:text-white font-japanese tracking-tight">
-            {currentItem.word}
-          </h2>
+          {direction === 'vi_to_ja' ? (
+            <div>
+              <span className="text-xs font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider block mb-1">
+                Nghĩa Tiếng Việt
+              </span>
+              <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+                {currentItem.meaning}
+              </h2>
+            </div>
+          ) : (
+            <div>
+              <h2 className="text-4xl sm:text-5xl font-black text-slate-900 dark:text-white font-japanese tracking-tight">
+                {currentItem.word}
+              </h2>
+            </div>
+          )}
 
           {/* Reading and Sino-Vietnamese */}
           <div className="min-h-[2rem] flex items-center justify-center gap-2 mt-2">
-            {(showHint || isChecked) ? (
-              <div className="flex items-center gap-2 animate-fadeIn flex-wrap justify-center">
-                {currentItem.reading && currentItem.reading !== currentItem.word && (
-                  <span className="text-base font-semibold text-indigo-600 dark:text-indigo-400 font-japanese">
-                    {currentItem.reading}
+            {direction === 'vi_to_ja' ? (
+              (showHint || isChecked) ? (
+                <div className="flex items-center gap-2 animate-fadeIn flex-wrap justify-center font-japanese text-sm">
+                  <span className="font-bold text-indigo-600 dark:text-indigo-400">
+                    {currentItem.word}
                   </span>
-                )}
-                {currentItem.sinoVietnamese && (
-                  <span className="text-xs font-bold px-2 py-0.5 rounded bg-amber-50 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300 border border-amber-200/80 dark:border-amber-800/60 font-mono">
-                    {currentItem.sinoVietnamese}
-                  </span>
-                )}
-              </div>
+                  {showKana && currentItem.reading && currentItem.reading !== currentItem.word && (
+                    <span className="text-slate-500 dark:text-slate-400">
+                      ({currentItem.reading})
+                    </span>
+                  )}
+                  {currentItem.sinoVietnamese && (
+                    <span className="text-xs font-bold px-2 py-0.5 rounded bg-amber-50 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300 border border-amber-200/80 dark:border-amber-800/60 font-mono">
+                      {currentItem.sinoVietnamese}
+                    </span>
+                  )}
+                </div>
+              ) : (
+                <span className="text-xs text-slate-400 italic">Chọn từ tiếng Nhật tương ứng bên dưới</span>
+              )
             ) : (
-              <span className="text-xs text-slate-400 italic">Chọn nghĩa tiếng Việt chính xác bên dưới</span>
+              (showKana || showHint || isChecked) ? (
+                <div className="flex items-center gap-2 animate-fadeIn flex-wrap justify-center">
+                  {currentItem.reading && currentItem.reading !== currentItem.word && (
+                    <span className="text-base font-semibold text-indigo-600 dark:text-indigo-400 font-japanese">
+                      {currentItem.reading}
+                    </span>
+                  )}
+                  {currentItem.sinoVietnamese && (
+                    <span className="text-xs font-bold px-2 py-0.5 rounded bg-amber-50 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300 border border-amber-200/80 dark:border-amber-800/60 font-mono">
+                      {currentItem.sinoVietnamese}
+                    </span>
+                  )}
+                </div>
+              ) : (
+                <span className="text-xs text-slate-400 italic">
+                  (Đã ẩn Kana) Chọn nghĩa tiếng Việt chính xác bên dưới
+                </span>
+              )
             )}
           </div>
         </div>
@@ -480,7 +557,7 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         {currentOptions.map((option, idx) => {
           const isSelected = selectedOption === option;
-          const isCorrect = option === currentItem.meaning.trim();
+          const isCorrect = option === correctTarget;
 
           let buttonStyle =
             'border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 hover:border-indigo-400 hover:bg-indigo-50/50 dark:hover:bg-slate-800';

@@ -83,7 +83,37 @@ export const VocabCard: React.FC<VocabCardProps> = ({
     }
 
     if (nextStatus === 'known') {
+      if (!isInSRS) {
+        addCard({
+          id: srsCardId,
+          cardType: 'vocab',
+          contentId: vocab.id,
+          level: vocab.level,
+        });
+      }
+      try {
+        useSRSStore.getState().reviewCard(srsCardId, 3);
+        useSRSStore.getState().reviewCard(srsCardId, 3);
+      } catch (err) {}
       toast.success(`Đã đánh dấu "${vocab.word}" là Đã thuộc!`);
+    } else if (nextStatus === 'learning') {
+      if (!isInSRS) {
+        addCard({
+          id: srsCardId,
+          cardType: 'vocab',
+          contentId: vocab.id,
+          level: vocab.level,
+        });
+      }
+      try {
+        useSRSStore.getState().reviewCard(srsCardId, 1);
+      } catch (err) {}
+      toast.info(`Đã chuyển "${vocab.word}" sang Đang học`);
+    } else {
+      if (isInSRS) {
+        removeCard(srsCardId);
+      }
+      toast.info(`Đã đặt lại "${vocab.word}" về Chưa học`);
     }
   };
 

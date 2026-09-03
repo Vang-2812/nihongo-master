@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import Link from 'next/link';
@@ -35,6 +35,7 @@ export interface WordBuilderQuizProps {
   items: QuizItem[];
   title?: string;
   subtitle?: string;
+  showKana?: boolean;
   onRestart?: () => void;
   onExit?: () => void;
   className?: string;
@@ -119,6 +120,7 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
   items,
   title = 'Ghép Ký Tự (Word Builder)',
   subtitle = 'Xếp các ký tự thành từ tiếng Nhật chính xác theo nghĩa',
+  showKana = true,
   onRestart,
   onExit,
   className = '',
@@ -250,6 +252,20 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
       setStreak(0);
       setIsShaking(true);
       setTimeout(() => setIsShaking(false), 600);
+    }
+
+    // Unified SRS SM-2 Record & sync to vocabStore
+    try {
+      useSRSStore
+        .getState()
+        .recordReview(
+          currentItem.type || 'vocab',
+          currentItem.id,
+          correct ? 3 : 1,
+          (currentItem.level as any) || 'N5'
+        );
+    } catch (err) {
+      // ignore
     }
 
     setHistory((prev) => [

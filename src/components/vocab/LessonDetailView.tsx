@@ -50,7 +50,7 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
   const [selectedItemIds, setSelectedItemIds] = useState<Set<string>>(new Set());
 
   const { lessonProgress, vocabStatus, setLessonStatus, setVocabStatus } = useVocabStore();
-  const { cards, addCards } = useSRSStore();
+  const { cards, addCard, addCards } = useSRSStore();
 
   useEffect(() => {
     setMounted(true);
@@ -119,6 +119,17 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
   const handleMarkAllKnown = () => {
     lesson.items.forEach((item) => {
       setVocabStatus(item.id, 'known');
+      const sId = `vocab_${item.id}`;
+      addCard({
+        id: sId,
+        cardType: 'vocab',
+        contentId: item.id,
+        level: item.level,
+      });
+      try {
+        useSRSStore.getState().reviewCard(sId, 3);
+        useSRSStore.getState().reviewCard(sId, 3);
+      } catch (e) {}
     });
     setLessonStatus(lesson.id, 'complete');
     toast.success(`Đã đánh dấu toàn bộ ${lesson.items.length} từ là Đã thuộc!`);

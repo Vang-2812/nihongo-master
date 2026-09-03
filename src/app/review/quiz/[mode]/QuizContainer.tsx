@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import Link from 'next/link';
@@ -26,6 +26,8 @@ export default function QuizContainer({ mode }: QuizContainerProps) {
   const lessonId = searchParams.get('lessonId') || 'minna_1';
   const rawCount = parseInt(searchParams.get('count') || '15', 10);
   const count = isNaN(rawCount) || rawCount <= 0 ? 15 : rawCount;
+  const direction = (searchParams.get('direction') as 'ja_to_vi' | 'vi_to_ja') || 'ja_to_vi';
+  const showKana = searchParams.get('kana') !== 'false';
 
   const [sessionKey, setSessionKey] = useState(0);
 
@@ -183,6 +185,7 @@ export default function QuizContainer({ mode }: QuizContainerProps) {
         <WordBuilderQuiz
           key={`builder_${sessionKey}`}
           items={items}
+          showKana={showKana}
           onRestart={handleRestart}
         />
       ) : mode === 'matching' ? (
@@ -190,6 +193,7 @@ export default function QuizContainer({ mode }: QuizContainerProps) {
           key={`matching_${sessionKey}`}
           items={items}
           pairCount={count <= 8 ? count : 6}
+          showKana={showKana}
           onRestart={handleRestart}
         />
       ) : (
@@ -197,6 +201,8 @@ export default function QuizContainer({ mode }: QuizContainerProps) {
           key={`choice_${sessionKey}`}
           items={items}
           allPool={fullPool}
+          direction={direction}
+          showKana={showKana}
           onRestart={handleRestart}
         />
       )}

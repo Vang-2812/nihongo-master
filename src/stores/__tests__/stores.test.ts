@@ -311,4 +311,38 @@ describe('useVocabStore', () => {
     assert.equal(useVocabStore.getState().getVocabStatus(1), 'known');
     assert.equal(useVocabStore.getState().getVocabStatus(2), 'learning');
   });
+
+  it('should synchronize SM-2 recordReview with vocabStore learning status', () => {
+    useVocabStore.getState().resetVocabProgress();
+    useSRSStore.getState().resetProgress();
+
+    const vocabId = 'minna_1_0';
+    assert.equal(useVocabStore.getState().getVocabStatus(vocabId), 'not_started');
+
+    // First review with rating 3 (Good) -> repetitions = 1 -> 'learning'
+    useSRSStore.getState().recordReview('vocab', vocabId, 3, 'N5');
+
+    const card = useSRSStore.getState().cards[`vocab_${vocabId}`];
+    assert.ok(card);
+    assert.equal(card.repetitions, 1);
+    assert.equal(card.status, 'learning');
+    assert.equal(useVocabStore.getState().getVocabStatus(vocabId), 'learning');
+
+    // Second review with rating 3 (Good) -> repetitions = 2 -> graduates to 'review' -> 'known'
+    useSRSStore.getState().recordReview('vocab', vocabId, 3, 'N5');
+
+    const cardAfter2 = useSRSStore.getState().cards[`vocab_${vocabId}`];
+    assert.equal(cardAfter2.repetitions, 2);
+    assert.equal(cardAfter2.status, 'review');
+    assert.equal(useVocabStore.getState().getVocabStatus(vocabId), 'known');
+
+    // Third review with rating 1 (Again) -> resets repetitions = 0 -> 'learning'
+    useSRSStore.getState().recordReview('vocab', vocabId, 1, 'N5');
+
+    const cardAfterFail = useSRSStore.getState().cards[`vocab_${vocabId}`];
+    assert.equal(cardAfterFail.repetitions, 0);
+    assert.equal(cardAfterFail.interval, 1);
+    assert.equal(cardAfterFail.status, 'learning');
+    assert.equal(useVocabStore.getState().getVocabStatus(vocabId), 'learning');
+  });
 });

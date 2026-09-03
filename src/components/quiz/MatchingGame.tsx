@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import Link from 'next/link';
@@ -32,6 +32,7 @@ export interface MatchingGameProps {
   pairCount?: number; // 6 or 8 pairs (12 or 16 cards grid)
   title?: string;
   subtitle?: string;
+  showKana?: boolean;
   onRestart?: () => void;
   onExit?: () => void;
   className?: string;
@@ -42,6 +43,7 @@ export const MatchingGame: React.FC<MatchingGameProps> = ({
   pairCount = 6,
   title = 'Ghép Thẻ Từ Vựng & Nghĩa',
   subtitle = 'Nối các cặp thẻ tiếng Nhật và tiếng Việt tương ứng',
+  showKana = true,
   onRestart,
   onExit,
   className = '',
@@ -93,7 +95,7 @@ export const MatchingGame: React.FC<MatchingGameProps> = ({
         pairId: item.id,
         type: 'japanese',
         text: item.word,
-        subText: item.reading !== item.word ? item.reading : undefined,
+        subText: showKana && item.reading !== item.word ? item.reading : undefined,
         isMatched: false,
       });
 
@@ -196,6 +198,21 @@ export const MatchingGame: React.FC<MatchingGameProps> = ({
       const nextMatchedCount = matchedPairsCount + 1;
       setMatchedPairsCount(nextMatchedCount);
       setSelectedCardId(null);
+
+      // Unified SRS SM-2 Record & sync to vocabStore
+      try {
+        const item = items.find((it) => it.id === card.pairId);
+        useSRSStore
+          .getState()
+          .recordReview(
+            item?.type || 'vocab',
+            card.pairId,
+            3,
+            (item?.level as any) || 'N5'
+          );
+      } catch (err) {
+        // ignore
+      }
 
       // Check Game Victory
       if (nextMatchedCount === totalPairs) {
