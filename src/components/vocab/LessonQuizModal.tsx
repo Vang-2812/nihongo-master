@@ -42,7 +42,8 @@ export const LessonQuizModal: React.FC<LessonQuizModalProps> = ({
   const [selectedScope, setSelectedScope] = useState<LessonQuizScope>(
     selectedItemIds.size > 0 ? 'selected' : 'all'
   );
-  const [direction, setDirection] = useState<'ja_to_vi' | 'vi_to_ja'>('ja_to_vi');
+  const [direction, setDirection] = useState<'ja_to_vi' | 'vi_to_ja' | 'mixed'>('ja_to_vi');
+  const [shuffleQuestions, setShuffleQuestions] = useState<boolean>(true);
   const [showKana, setShowKana] = useState<boolean>(true);
   const [questionCount, setQuestionCount] = useState<number>(15);
   const [pairCount, setPairCount] = useState<number>(6);
@@ -93,14 +94,29 @@ export const LessonQuizModal: React.FC<LessonQuizModalProps> = ({
     return allLessonQuizItems;
   }, [selectedScope, selectedQuizItems, allLessonQuizItems]);
 
+  // Final prepared quiz items (shuffled & sliced)
+  const quizItems = useMemo(() => {
+    let pool = [...activePool];
+    if (shuffleQuestions) {
+      for (let i = pool.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [pool[i], pool[j]] = [pool[j], pool[i]];
+      }
+    }
+    if (selectedMode !== 'matching' && questionCount < pool.length) {
+      pool = pool.slice(0, questionCount);
+    }
+    return pool;
+  }, [activePool, shuffleQuestions, selectedMode, questionCount, isPlaying]);
+
   if (!isOpen) return null;
 
   // Active playing view (Fullscreen overlay)
   if (isPlaying) {
     const titleText = `${lesson.title} - ${
       selectedScope === 'selected'
-        ? `Các từ chỉ định (${activePool.length} từ)`
-        : `Toàn bài (${activePool.length} từ)`
+        ? `Các từ chỉ định (${quizItems.length} từ)`
+        : `Toàn bài (${quizItems.length} từ)`
     }`;
 
     return (
@@ -116,8 +132,8 @@ export const LessonQuizModal: React.FC<LessonQuizModalProps> = ({
             </span>
             <span className="hidden sm:inline-flex text-xs px-2 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700">
               {selectedScope === 'selected'
-                ? `Đang luyện ${activePool.length} từ chọn lọc`
-                : `Đang luyện toàn bộ ${activePool.length} từ`}
+                ? `Đang luyện ${quizItems.length} từ chọn lọc`
+                : `Đang luyện toàn bộ ${quizItems.length} từ`}
             </span>
           </div>
 
@@ -136,7 +152,7 @@ export const LessonQuizModal: React.FC<LessonQuizModalProps> = ({
         <div className="flex-1 max-w-4xl w-full mx-auto p-3 sm:p-6 flex flex-col justify-center">
           {selectedMode === 'builder' && (
             <WordBuilderQuiz
-              items={activePool}
+              items={quizItems}
               title="Ghép Ký Tự Tạo Từ"
               subtitle={titleText}
               showKana={showKana}
@@ -146,7 +162,7 @@ export const LessonQuizModal: React.FC<LessonQuizModalProps> = ({
 
           {selectedMode === 'choice' && (
             <MultipleChoiceQuiz
-              items={activePool}
+              items={quizItems}
               allPool={allLessonQuizItems}
               title="Trắc Nghiệm 4 Đáp Án"
               subtitle={titleText}
@@ -158,8 +174,8 @@ export const LessonQuizModal: React.FC<LessonQuizModalProps> = ({
 
           {selectedMode === 'matching' && (
             <MatchingGame
-              items={activePool}
-              pairCount={Math.min(activePool.length, pairCount)}
+              items={quizItems}
+              pairCount={Math.min(quizItems.length, pairCount)}
               title="Ghép Thẻ Từ Vựng & Nghĩa"
               subtitle={titleText}
               showKana={showKana}
@@ -366,17 +382,17 @@ export const LessonQuizModal: React.FC<LessonQuizModalProps> = ({
             </div>
           </div>
 
-          {/* Step 3: Tùy chọn học tập (Chiều câu hỏi & Phiên âm Kana) */}
+          {/* Step 3: Tùy chọn học tập (Chiều câu hỏi, Trộn câu & Phiên âm Kana) */}
           <div className="space-y-3 p-3.5 sm:p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-700/60">
             <div>
               <label className="block text-[11px] sm:text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">
                 3. Chiều câu hỏi / đáp án:
               </label>
-              <div className="grid grid-cols-2 gap-2">
+              <div className="grid grid-cols-3 gap-1.5 sm:gap-2">
                 <button
                   type="button"
                   onClick={() => setDirection('ja_to_vi')}
-                  className={`px-3 py-2 rounded-xl text-xs font-bold border text-center transition-all flex items-center justify-center gap-1.5 ${
+                  className={`px-2 sm:px-3 py-2 rounded-xl text-xs font-bold border text-center transition-all flex items-center justify-center gap-1 ${
                     direction === 'ja_to_vi'
                       ? 'bg-indigo-600 text-white border-indigo-600 shadow-xs'
                       : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:bg-slate-100'
@@ -389,7 +405,7 @@ export const LessonQuizModal: React.FC<LessonQuizModalProps> = ({
                 <button
                   type="button"
                   onClick={() => setDirection('vi_to_ja')}
-                  className={`px-3 py-2 rounded-xl text-xs font-bold border text-center transition-all flex items-center justify-center gap-1.5 ${
+                  className={`px-2 sm:px-3 py-2 rounded-xl text-xs font-bold border text-center transition-all flex items-center justify-center gap-1 ${
                     direction === 'vi_to_ja'
                       ? 'bg-indigo-600 text-white border-indigo-600 shadow-xs'
                       : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:bg-slate-100'
@@ -397,6 +413,52 @@ export const LessonQuizModal: React.FC<LessonQuizModalProps> = ({
                 >
                   <span className="truncate">Việt → Nhật</span>
                   {direction === 'vi_to_ja' && <Check className="w-3.5 h-3.5 stroke-[3] shrink-0" />}
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => setDirection('mixed')}
+                  className={`px-2 sm:px-3 py-2 rounded-xl text-xs font-bold border text-center transition-all flex items-center justify-center gap-1 ${
+                    direction === 'mixed'
+                      ? 'bg-purple-600 text-white border-purple-600 shadow-xs'
+                      : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:bg-slate-100'
+                  }`}
+                >
+                  <span className="truncate">🔀 Lộn xộn</span>
+                  {direction === 'mixed' && <Check className="w-3.5 h-3.5 stroke-[3] shrink-0" />}
+                </button>
+              </div>
+            </div>
+
+            <div>
+              <label className="block text-[11px] sm:text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">
+                Thứ tự các câu hỏi:
+              </label>
+              <div className="grid grid-cols-2 gap-2">
+                <button
+                  type="button"
+                  onClick={() => setShuffleQuestions(true)}
+                  className={`px-3 py-2 rounded-xl text-xs font-bold border text-center transition-all flex items-center justify-center gap-1.5 ${
+                    shuffleQuestions
+                      ? 'bg-indigo-600 text-white border-indigo-600 shadow-xs'
+                      : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:bg-slate-100'
+                  }`}
+                >
+                  <span className="truncate">🔀 Trộn ngẫu nhiên</span>
+                  {shuffleQuestions && <Check className="w-3.5 h-3.5 stroke-[3] shrink-0" />}
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => setShuffleQuestions(false)}
+                  className={`px-3 py-2 rounded-xl text-xs font-bold border text-center transition-all flex items-center justify-center gap-1.5 ${
+                    !shuffleQuestions
+                      ? 'bg-indigo-600 text-white border-indigo-600 shadow-xs'
+                      : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:bg-slate-100'
+                  }`}
+                >
+                  <span className="truncate">Theo bài học</span>
+                  {!shuffleQuestions && <Check className="w-3.5 h-3.5 stroke-[3] shrink-0" />}
                 </button>
               </div>
             </div>

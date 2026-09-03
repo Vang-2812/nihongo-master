@@ -26,7 +26,7 @@ export default function QuizContainer({ mode }: QuizContainerProps) {
   const lessonId = searchParams.get('lessonId') || 'minna_1';
   const rawCount = parseInt(searchParams.get('count') || '15', 10);
   const count = isNaN(rawCount) || rawCount <= 0 ? 15 : rawCount;
-  const direction = (searchParams.get('direction') as 'ja_to_vi' | 'vi_to_ja') || 'ja_to_vi';
+  const direction = (searchParams.get('direction') as 'ja_to_vi' | 'vi_to_ja' | 'mixed') || 'ja_to_vi';
   const showKana = searchParams.get('kana') !== 'false';
 
   const [sessionKey, setSessionKey] = useState(0);

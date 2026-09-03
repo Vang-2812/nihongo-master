@@ -38,7 +38,7 @@ export interface MultipleChoiceQuizProps {
   allPool?: QuizItem[];
   title?: string;
   subtitle?: string;
-  direction?: 'ja_to_vi' | 'vi_to_ja';
+  direction?: 'ja_to_vi' | 'vi_to_ja' | 'mixed';
   showKana?: boolean;
   onRestart?: () => void;
   onExit?: () => void;
@@ -65,28 +65,35 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
 }) => {
   const { addXp } = useSRSStore();
 
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState<number>(0);
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
-  const [isChecked, setIsChecked] = useState(false);
-  const [streak, setStreak] = useState(0);
-  const [maxStreak, setMaxStreak] = useState(0);
-  const [score, setScore] = useState(0);
-  const [earnedXp, setEarnedXp] = useState(0);
-  const [showHint, setShowHint] = useState(false);
+  const [isChecked, setIsChecked] = useState<boolean>(false);
+  const [score, setScore] = useState<number>(0);
+  const [streak, setStreak] = useState<number>(0);
+  const [maxStreak, setMaxStreak] = useState<number>(0);
+  const [earnedXp, setEarnedXp] = useState<number>(0);
+  const [showHint, setShowHint] = useState<boolean>(false);
+  const [isFinished, setIsFinished] = useState<boolean>(false);
   const [history, setHistory] = useState<QuestionHistory[]>([]);
-  const [isFinished, setIsFinished] = useState(false);
 
-  // Fallback pool for distractors
+  // Pool of all items for generating distractors
   const pool = useMemo(() => {
     return allPool && allPool.length >= 4 ? allPool : items;
   }, [allPool, items]);
 
   const currentItem = items[currentIndex];
 
+  // Dynamic direction per question when 'mixed' is selected
+  const activeDirection = useMemo<'ja_to_vi' | 'vi_to_ja'>(() => {
+    if (direction === 'vi_to_ja') return 'vi_to_ja';
+    if (direction === 'ja_to_vi') return 'ja_to_vi';
+    return currentIndex % 2 === 0 ? 'ja_to_vi' : 'vi_to_ja';
+  }, [direction, currentIndex]);
+
   // Helper to format options based on direction and showKana
   const getOptionLabel = useCallback(
     (item: QuizItem) => {
-      if (direction === 'vi_to_ja') {
+      if (activeDirection === 'vi_to_ja') {
         if (showKana && item.reading && item.reading !== item.word) {
           return `${item.word} (${item.reading})`;
         }
@@ -94,7 +101,7 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
       }
       return item.meaning.trim();
     },
-    [direction, showKana]
+    [activeDirection, showKana]
   );
 
   const correctTarget = useMemo(() => {
@@ -119,7 +126,7 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
 
     // Fallback if not enough distractors in pool
     const fallbackList =
-      direction === 'vi_to_ja'
+      activeDirection === 'vi_to_ja'
         ? ['ことば A', 'ことば B', 'ことば C']
         : ['Nghĩa khác A', 'Nghĩa khác B', 'Nghĩa khác C'];
     while (chosenDistractors.length < 3) {
@@ -131,7 +138,7 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
       () => Math.random() - 0.5
     );
     return allFour;
-  }, [currentItem, pool, direction, getOptionLabel]);
+  }, [currentItem, pool, activeDirection, getOptionLabel]);
 
   // Handle Option Selection
   const handleSelectOption = useCallback(
@@ -151,18 +158,6 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
         setEarnedXp((prev) => prev + 10);
         addXp(10);
         speakJapanese(currentItem.word);
-
-        if (newStreak >= 3 && typeof window !== 'undefined') {
-          try {
-            confetti({
-              particleCount: 35,
-              spread: 45,
-              origin: { y: 0.7 },
-            });
-          } catch (e) {
-            // ignore
-          }
-        }
       } else {
         setStreak(0);
       }
@@ -490,7 +485,7 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
 
         {/* Word / Prompt Display */}
         <div className="pt-4 pb-1 sm:pb-2">
-          {direction === 'vi_to_ja' ? (
+          {activeDirection === 'vi_to_ja' ? (
             <div>
               <span className="text-xs font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider block mb-1">
                 Nghĩa Tiếng Việt
@@ -509,7 +504,7 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
 
           {/* Reading and Sino-Vietnamese */}
           <div className="min-h-[2rem] flex items-center justify-center gap-2 mt-2">
-            {direction === 'vi_to_ja' ? (
+            {activeDirection === 'vi_to_ja' ? (
               (showHint || isChecked) ? (
                 <div className="flex items-center gap-2 animate-fadeIn flex-wrap justify-center font-japanese text-sm">
                   <span className="font-bold text-indigo-600 dark:text-indigo-400">
@@ -567,11 +562,11 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
           if (isChecked) {
             if (isCorrect) {
               buttonStyle =
-                'border-emerald-500 bg-emerald-50 dark:bg-emerald-950/50 text-emerald-900 dark:text-emerald-100 shadow-md shadow-emerald-500/10 ring-2 ring-emerald-500';
+                'border-emerald-500 bg-emerald-50 dark:bg-emerald-950/50 text-emerald-900 dark:text-emerald-100 shadow-sm ring-1 ring-emerald-500';
               indicatorStyle = 'bg-emerald-500 text-white';
             } else if (isSelected) {
               buttonStyle =
-                'border-rose-500 bg-rose-50 dark:bg-rose-950/50 text-rose-900 dark:text-rose-100 shadow-md shadow-rose-500/10 ring-2 ring-rose-500 animate-shake';
+                'border-rose-500 bg-rose-50 dark:bg-rose-950/50 text-rose-900 dark:text-rose-100 shadow-sm ring-1 ring-rose-500';
               indicatorStyle = 'bg-rose-500 text-white';
             } else {
               buttonStyle =

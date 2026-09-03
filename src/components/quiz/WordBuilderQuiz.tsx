@@ -236,22 +236,10 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
       setEarnedXp((prev) => prev + 15);
       addXp(15); // +15 XP for Word Builder
       speakJapanese(currentItem.word);
-
-      if (newStreak >= 3 && typeof window !== 'undefined') {
-        try {
-          confetti({
-            particleCount: 40,
-            spread: 50,
-            origin: { y: 0.7 },
-          });
-        } catch (e) {
-          // ignore
-        }
-      }
     } else {
       setStreak(0);
       setIsShaking(true);
-      setTimeout(() => setIsShaking(false), 600);
+      setTimeout(() => setIsShaking(false), 500);
     }
 
     // Unified SRS SM-2 Record & sync to vocabStore
@@ -606,7 +594,7 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
       {/* Answer Construction Line (Slots) */}
       <div
         className={`rounded-2xl sm:rounded-3xl border-2 p-4 sm:p-6 bg-slate-50/70 dark:bg-slate-900/50 flex flex-col items-center justify-center min-h-[6.5rem] sm:min-h-[7.5rem] transition-all space-y-2 sm:space-y-3 ${
-          isShaking ? 'border-rose-500 bg-rose-50/50 dark:bg-rose-950/30 animate-shake' : ''
+          isShaking ? 'border-rose-500 bg-rose-50/50 dark:bg-rose-950/30' : ''
         } ${
           isChecked && isCorrect
             ? 'border-emerald-500 bg-emerald-50/50 dark:bg-emerald-950/30 ring-2 ring-emerald-500'

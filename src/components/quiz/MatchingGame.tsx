@@ -252,7 +252,7 @@ export const MatchingGame: React.FC<MatchingGameProps> = ({
       setTimeout(() => {
         setMismatchedCardIds([]);
         setSelectedCardId(null);
-      }, 700);
+      }, 500);
     }
   };
 
@@ -433,7 +433,7 @@ export const MatchingGame: React.FC<MatchingGameProps> = ({
               'border-emerald-500 bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-100 ring-2 ring-emerald-500 scale-102';
           } else if (isMismatched) {
             cardStyle =
-              'border-rose-500 bg-rose-50 dark:bg-rose-950/70 text-rose-800 dark:text-rose-100 ring-2 ring-rose-500 animate-shake';
+              'border-rose-500 bg-rose-50 dark:bg-rose-950/70 text-rose-800 dark:text-rose-100 ring-1 ring-rose-500';
           } else if (isSelected) {
             cardStyle =
               'border-indigo-600 bg-indigo-50 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-200 ring-2 ring-indigo-600 shadow-lg shadow-indigo-500/10 scale-102';
