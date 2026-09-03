@@ -360,43 +360,43 @@ export const MatchingGame: React.FC<MatchingGameProps> = ({
   const gridColsClass = totalPairs === 8 ? 'grid-cols-2 sm:grid-cols-4' : 'grid-cols-2 sm:grid-cols-3 md:grid-cols-4';
 
   return (
-    <div className={`w-full max-w-3xl mx-auto space-y-6 ${className}`}>
+    <div className={`w-full max-w-3xl mx-auto space-y-4 sm:space-y-6 ${className}`}>
       {/* Game Stats Header */}
-      <div className="flex items-center justify-between gap-3 p-4 rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm">
+      <div className="flex items-center justify-between gap-2 sm:gap-3 p-3 sm:p-4 rounded-2xl sm:rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-xs sm:shadow-sm">
         {/* Progress */}
-        <div className="flex items-center gap-2">
-          <div className="p-2 rounded-xl bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400">
-            <CheckCircle2 className="w-5 h-5" />
+        <div className="flex items-center gap-1.5 sm:gap-2">
+          <div className="p-1.5 sm:p-2 rounded-lg sm:rounded-xl bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400">
+            <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5" />
           </div>
           <div>
-            <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">Đã ghép</span>
-            <p className="text-sm sm:text-base font-bold text-slate-900 dark:text-white">
-              {matchedPairsCount}/{totalPairs} <span className="text-xs font-normal text-slate-500">cặp</span>
+            <span className="text-[10px] sm:text-xs text-slate-500 dark:text-slate-400 font-medium">Đã ghép</span>
+            <p className="text-xs sm:text-base font-bold text-slate-900 dark:text-white">
+              {matchedPairsCount}/{totalPairs} <span className="text-[10px] sm:text-xs font-normal text-slate-500">cặp</span>
             </p>
           </div>
         </div>
 
         {/* Turns */}
-        <div className="flex items-center gap-2">
-          <div className="p-2 rounded-xl bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400">
-            <MousePointerClick className="w-5 h-5" />
+        <div className="flex items-center gap-1.5 sm:gap-2">
+          <div className="p-1.5 sm:p-2 rounded-lg sm:rounded-xl bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400">
+            <MousePointerClick className="w-4 h-4 sm:w-5 sm:h-5" />
           </div>
           <div>
-            <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">Lượt lật</span>
-            <p className="text-sm sm:text-base font-bold text-slate-900 dark:text-white font-mono">
+            <span className="text-[10px] sm:text-xs text-slate-500 dark:text-slate-400 font-medium">Lượt lật</span>
+            <p className="text-xs sm:text-base font-bold text-slate-900 dark:text-white font-mono">
               {turns}
             </p>
           </div>
         </div>
 
         {/* Timer */}
-        <div className="flex items-center gap-2">
-          <div className="p-2 rounded-xl bg-amber-50 dark:bg-amber-950/60 text-amber-600 dark:text-amber-400">
-            <Timer className="w-5 h-5" />
+        <div className="flex items-center gap-1.5 sm:gap-2">
+          <div className="p-1.5 sm:p-2 rounded-lg sm:rounded-xl bg-amber-50 dark:bg-amber-950/60 text-amber-600 dark:text-amber-400">
+            <Timer className="w-4 h-4 sm:w-5 sm:h-5" />
           </div>
           <div>
-            <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">Thời gian</span>
-            <p className="text-sm sm:text-base font-bold text-slate-900 dark:text-white font-mono">
+            <span className="text-[10px] sm:text-xs text-slate-500 dark:text-slate-400 font-medium">Thời gian</span>
+            <p className="text-xs sm:text-base font-bold text-slate-900 dark:text-white font-mono">
               {formatTime(timeSeconds)}
             </p>
           </div>
@@ -406,7 +406,7 @@ export const MatchingGame: React.FC<MatchingGameProps> = ({
         <button
           type="button"
           onClick={initializeGame}
-          className="p-2.5 rounded-2xl border border-slate-200 dark:border-slate-800 text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+          className="p-2 sm:p-2.5 rounded-xl sm:rounded-2xl border border-slate-200 dark:border-slate-800 text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors shrink-0"
           title="Xáo bài và chơi lại"
         >
           <RotateCcw className="w-4 h-4" />
@@ -414,7 +414,7 @@ export const MatchingGame: React.FC<MatchingGameProps> = ({
       </div>
 
       {/* Cards Grid */}
-      <div className={`grid ${gridColsClass} gap-3 sm:gap-4`}>
+      <div className={`grid ${gridColsClass} gap-2 sm:gap-4`}>
         {cards.map((card) => {
           const isSelected = selectedCardId === card.id;
           const isMismatched = mismatchedCardIds.includes(card.id);
@@ -445,11 +445,11 @@ export const MatchingGame: React.FC<MatchingGameProps> = ({
               type="button"
               disabled={isMatched}
               onClick={() => handleCardClick(card)}
-              className={`relative min-h-[5.5rem] sm:min-h-[6.5rem] p-3 rounded-2xl sm:rounded-3xl border-2 flex flex-col items-center justify-center text-center transition-all select-none active:scale-95 ${cardStyle}`}
+              className={`relative min-h-[4.75rem] sm:min-h-[6.5rem] p-2 sm:p-3 rounded-xl sm:rounded-2xl border-2 flex flex-col items-center justify-center text-center transition-all select-none active:scale-95 ${cardStyle}`}
             >
               {/* Type Badge Tag */}
               <span
-                className={`absolute top-2 left-2 text-[9px] font-bold px-1.5 py-0.5 rounded-md uppercase tracking-wider ${
+                className={`absolute top-1.5 left-1.5 sm:top-2 sm:left-2 text-[8px] sm:text-[9px] font-bold px-1 sm:px-1.5 py-0.5 rounded uppercase tracking-wider ${
                   card.type === 'japanese'
                     ? 'bg-indigo-100 dark:bg-indigo-900/60 text-indigo-700 dark:text-indigo-300'
                     : 'bg-emerald-100 dark:bg-emerald-900/60 text-emerald-700 dark:text-emerald-300'
@@ -460,9 +460,9 @@ export const MatchingGame: React.FC<MatchingGameProps> = ({
 
               {/* Card Main Text */}
               <span
-                className={`font-bold transition-all line-clamp-2 ${
+                className={`font-bold transition-all line-clamp-2 px-1 ${
                   card.type === 'japanese'
-                    ? 'text-lg sm:text-xl font-japanese'
+                    ? 'text-base sm:text-xl font-japanese'
                     : 'text-xs sm:text-sm font-medium'
                 }`}
               >

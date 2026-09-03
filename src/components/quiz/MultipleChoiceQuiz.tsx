@@ -468,8 +468,8 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
       </div>
 
       {/* Main Question Card */}
-      <div className="relative rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-6 sm:p-8 text-center shadow-lg space-y-4">
-        <div className="flex justify-between items-center absolute top-4 left-4 right-4">
+      <div className="relative rounded-2xl sm:rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-8 text-center shadow-md sm:shadow-lg space-y-3 sm:space-y-4">
+        <div className="flex justify-between items-center absolute top-3.5 left-3.5 right-3.5 sm:top-4 sm:left-4 sm:right-4">
           {/* Audio Button */}
           <AudioButton text={currentItem.word} size="md" variant="subtle" />
 
@@ -489,19 +489,19 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
         </div>
 
         {/* Word / Prompt Display */}
-        <div className="pt-4 pb-2">
+        <div className="pt-4 pb-1 sm:pb-2">
           {direction === 'vi_to_ja' ? (
             <div>
               <span className="text-xs font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider block mb-1">
                 Nghĩa Tiếng Việt
               </span>
-              <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+              <h2 className="text-xl sm:text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight">
                 {currentItem.meaning}
               </h2>
             </div>
           ) : (
             <div>
-              <h2 className="text-4xl sm:text-5xl font-black text-slate-900 dark:text-white font-japanese tracking-tight">
+              <h2 className="text-3xl sm:text-5xl font-black text-slate-900 dark:text-white font-japanese tracking-tight">
                 {currentItem.word}
               </h2>
             </div>
@@ -554,7 +554,7 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
       </div>
 
       {/* 4 Choices Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3">
         {currentOptions.map((option, idx) => {
           const isSelected = selectedOption === option;
           const isCorrect = option === correctTarget;
@@ -585,7 +585,7 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
               type="button"
               disabled={isChecked}
               onClick={() => handleSelectOption(option)}
-              className={`relative flex items-center gap-3 p-4 rounded-2xl border-2 text-left font-medium transition-all active:scale-98 ${buttonStyle}`}
+              className={`relative flex items-center gap-3 p-3.5 sm:p-4 rounded-xl sm:rounded-2xl border-2 text-left font-medium transition-all active:scale-98 ${buttonStyle}`}
             >
               {/* Option Number Key (1, 2, 3, 4) */}
               <span

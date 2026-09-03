@@ -106,12 +106,12 @@ export const LessonQuizModal: React.FC<LessonQuizModalProps> = ({
     return (
       <div className="fixed inset-0 z-50 bg-slate-950/95 backdrop-blur-md overflow-y-auto flex flex-col">
         {/* Sticky top control bar */}
-        <div className="sticky top-0 z-40 bg-slate-900/90 border-b border-slate-800 px-4 sm:px-6 py-3 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <span className="px-2.5 py-1 rounded-md text-xs font-bold bg-indigo-950 text-indigo-300 border border-indigo-800">
+        <div className="sticky top-0 z-40 bg-slate-900/90 border-b border-slate-800 px-3 sm:px-6 py-2.5 sm:py-3 flex items-center justify-between">
+          <div className="flex items-center gap-2 sm:gap-3 min-w-0 pr-2">
+            <span className="px-2 py-0.5 rounded-md text-[11px] sm:text-xs font-bold bg-indigo-950 text-indigo-300 border border-indigo-800 shrink-0">
               {lesson.bookTitle}
             </span>
-            <span className="text-sm sm:text-base font-semibold text-white truncate max-w-[240px] sm:max-w-md">
+            <span className="text-xs sm:text-base font-semibold text-white truncate max-w-[160px] sm:max-w-md">
               {lesson.title}
             </span>
             <span className="hidden sm:inline-flex text-xs px-2 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700">
@@ -124,15 +124,16 @@ export const LessonQuizModal: React.FC<LessonQuizModalProps> = ({
           <button
             type="button"
             onClick={() => setIsPlaying(false)}
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs sm:text-sm font-semibold text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 border border-slate-700 transition-all active:scale-95"
+            className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 border border-slate-700 transition-all active:scale-95 shrink-0"
           >
-            <X className="w-4 h-4" />
-            <span>Thoát ra bài học</span>
+            <X className="w-3.5 h-3.5" />
+            <span className="hidden sm:inline">Thoát ra bài học</span>
+            <span className="sm:hidden">Thoát</span>
           </button>
         </div>
 
         {/* Embedded Quiz Component */}
-        <div className="flex-1 max-w-4xl w-full mx-auto p-4 sm:p-6 flex flex-col justify-center">
+        <div className="flex-1 max-w-4xl w-full mx-auto p-3 sm:p-6 flex flex-col justify-center">
           {selectedMode === 'builder' && (
             <WordBuilderQuiz
               items={activePool}
@@ -207,293 +208,319 @@ export const LessonQuizModal: React.FC<LessonQuizModalProps> = ({
   ];
 
   return (
-    <div className="fixed inset-0 z-50 bg-slate-950/70 backdrop-blur-sm flex items-center justify-center p-4 sm:p-6 overflow-y-auto">
-      <div className="bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-2xl max-w-2xl w-full p-6 sm:p-8 my-8 relative animate-in fade-in zoom-in-95 duration-200">
-        {/* Close Button */}
-        <button
-          type="button"
-          onClick={onClose}
-          className="absolute top-5 right-5 p-2 rounded-xl text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
-        >
-          <X className="w-5 h-5" />
-        </button>
+    <div className="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-end sm:items-center justify-center p-0 sm:p-4 overflow-hidden animate-in fade-in duration-200">
+      <div className="bg-white dark:bg-slate-900 rounded-t-3xl sm:rounded-3xl border border-slate-200 dark:border-slate-800 shadow-2xl max-w-2xl w-full flex flex-col max-h-[92vh] sm:max-h-[88vh] overflow-hidden animate-in slide-in-from-bottom sm:slide-in-from-bottom-0 sm:zoom-in-95 duration-200">
+        {/* Mobile pull indicator bar */}
+        <div className="w-12 h-1 rounded-full bg-slate-300 dark:bg-slate-700 mx-auto mt-2.5 sm:hidden shrink-0" />
 
-        {/* Modal Header */}
-        <div className="mb-6 pr-8">
-          <div className="flex items-center gap-2 text-xs font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider mb-1">
-            <Dices className="w-4 h-4" />
-            <span>Luyện tập Quizlet cho bài học</span>
+        {/* Modal Sticky Header */}
+        <div className="px-4 sm:px-6 py-3 sm:py-4 border-b border-slate-100 dark:border-slate-800 flex items-center justify-between shrink-0 bg-white/95 dark:bg-slate-900/95 backdrop-blur-sm">
+          <div className="min-w-0 pr-2">
+            <div className="flex items-center gap-1.5 text-[11px] font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider">
+              <Dices className="w-3.5 h-3.5 shrink-0" />
+              <span className="truncate">Luyện tập Quizlet</span>
+            </div>
+            <h2 className="text-base sm:text-xl font-bold text-slate-900 dark:text-white truncate">
+              {lesson.title}
+            </h2>
           </div>
-          <h2 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">
-            {lesson.title}
-          </h2>
-          <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-1">
-            {lesson.bookTitle} • Tổng số {lesson.items.length} từ vựng
-          </p>
+
+          <button
+            type="button"
+            onClick={onClose}
+            className="p-2 rounded-xl text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors shrink-0"
+            aria-label="Đóng cửa sổ"
+          >
+            <X className="w-5 h-5" />
+          </button>
         </div>
 
-        {/* Step 1: Chọn Phạm vi từ vựng */}
-        <div className="mb-6">
-          <label className="block text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-2.5">
-            1. Chọn phạm vi từ vựng muốn luyện:
-          </label>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {/* Option A: Full Lesson */}
-            <button
-              type="button"
-              onClick={() => setSelectedScope('all')}
-              className={`flex items-start gap-3 p-4 rounded-2xl border text-left transition-all ${
-                selectedScope === 'all'
-                  ? 'border-indigo-600 ring-2 ring-indigo-600/20 bg-indigo-50/50 dark:bg-indigo-950/30'
-                  : 'border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 bg-white dark:bg-slate-900/60'
-              }`}
-            >
-              <div
-                className={`w-5 h-5 rounded-full border flex items-center justify-center mt-0.5 flex-shrink-0 ${
+        {/* Scrollable Configuration Body */}
+        <div className="p-4 sm:p-6 overflow-y-auto flex-1 space-y-4 sm:space-y-5 overscroll-contain">
+          {/* Step 1: Chọn Phạm vi từ vựng */}
+          <div>
+            <label className="block text-[11px] sm:text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-2">
+              1. Chọn phạm vi từ vựng:
+            </label>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3">
+              {/* Option A: Full Lesson */}
+              <button
+                type="button"
+                onClick={() => setSelectedScope('all')}
+                className={`flex items-center sm:items-start gap-2.5 sm:gap-3 p-3 sm:p-3.5 rounded-2xl border text-left transition-all ${
                   selectedScope === 'all'
-                    ? 'border-indigo-600 bg-indigo-600 text-white'
-                    : 'border-slate-300 dark:border-slate-600'
+                    ? 'border-indigo-600 ring-2 ring-indigo-600/20 bg-indigo-50/50 dark:bg-indigo-950/30'
+                    : 'border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 bg-white dark:bg-slate-900/60'
                 }`}
               >
-                {selectedScope === 'all' && <div className="w-2 h-2 rounded-full bg-white" />}
-              </div>
-              <div>
-                <div className="font-bold text-sm text-slate-900 dark:text-white flex items-center gap-1.5">
-                  <BookOpen className="w-4 h-4 text-indigo-600 dark:text-indigo-400" />
-                  <span>Toàn bộ từ trong bài</span>
+                <div
+                  className={`w-4 h-4 rounded-full border flex items-center justify-center shrink-0 ${
+                    selectedScope === 'all'
+                      ? 'border-indigo-600 bg-indigo-600 text-white'
+                      : 'border-slate-300 dark:border-slate-600'
+                  }`}
+                >
+                  {selectedScope === 'all' && <div className="w-1.5 h-1.5 rounded-full bg-white" />}
                 </div>
-                <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
-                  Luyện tập toàn bộ <strong className="text-slate-700 dark:text-slate-200">{lesson.items.length} từ</strong> trong bài học này.
-                </p>
-              </div>
-            </button>
+                <div className="min-w-0">
+                  <div className="font-bold text-xs sm:text-sm text-slate-900 dark:text-white flex items-center gap-1.5">
+                    <BookOpen className="w-3.5 h-3.5 text-indigo-600 dark:text-indigo-400 shrink-0" />
+                    <span className="truncate">Toàn bài ({lesson.items.length} từ)</span>
+                  </div>
+                  <p className="text-[11px] text-slate-500 dark:text-slate-400 hidden sm:block mt-0.5">
+                    Luyện tập toàn bộ {lesson.items.length} từ trong bài học này.
+                  </p>
+                </div>
+              </button>
 
-            {/* Option B: Selected Words */}
-            <button
-              type="button"
-              disabled={isSelectedScopeDisabled}
-              onClick={() => setSelectedScope('selected')}
-              className={`flex items-start gap-3 p-4 rounded-2xl border text-left transition-all ${
-                isSelectedScopeDisabled
-                  ? 'opacity-60 cursor-not-allowed border-dashed border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/20'
-                  : selectedScope === 'selected'
-                  ? 'border-indigo-600 ring-2 ring-indigo-600/20 bg-indigo-50/50 dark:bg-indigo-950/30'
-                  : 'border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 bg-white dark:bg-slate-900/60'
-              }`}
-            >
-              <div
-                className={`w-5 h-5 rounded-full border flex items-center justify-center mt-0.5 flex-shrink-0 ${
-                  selectedScope === 'selected' && !isSelectedScopeDisabled
-                    ? 'border-indigo-600 bg-indigo-600 text-white'
-                    : 'border-slate-300 dark:border-slate-600'
+              {/* Option B: Selected Words */}
+              <button
+                type="button"
+                disabled={isSelectedScopeDisabled}
+                onClick={() => setSelectedScope('selected')}
+                className={`flex items-center sm:items-start gap-2.5 sm:gap-3 p-3 sm:p-3.5 rounded-2xl border text-left transition-all ${
+                  isSelectedScopeDisabled
+                    ? 'opacity-60 cursor-not-allowed border-dashed border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/20'
+                    : selectedScope === 'selected'
+                    ? 'border-indigo-600 ring-2 ring-indigo-600/20 bg-indigo-50/50 dark:bg-indigo-950/30'
+                    : 'border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 bg-white dark:bg-slate-900/60'
                 }`}
               >
-                {selectedScope === 'selected' && !isSelectedScopeDisabled && (
-                  <div className="w-2 h-2 rounded-full bg-white" />
-                )}
-              </div>
-              <div>
-                <div className="font-bold text-sm text-slate-900 dark:text-white flex items-center gap-1.5">
-                  <CheckSquare className="w-4 h-4 text-indigo-600 dark:text-indigo-400" />
-                  <span>Các từ chỉ định</span>
-                  {selectedItemIds.size > 0 && (
-                    <span className="text-[11px] px-2 py-0.5 rounded-full bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 font-mono font-bold">
-                      {selectedItemIds.size} từ
-                    </span>
+                <div
+                  className={`w-4 h-4 rounded-full border flex items-center justify-center shrink-0 ${
+                    selectedScope === 'selected' && !isSelectedScopeDisabled
+                      ? 'border-indigo-600 bg-indigo-600 text-white'
+                      : 'border-slate-300 dark:border-slate-600'
+                  }`}
+                >
+                  {selectedScope === 'selected' && !isSelectedScopeDisabled && (
+                    <div className="w-1.5 h-1.5 rounded-full bg-white" />
                   )}
                 </div>
-                <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
-                  {isSelectedScopeDisabled
-                    ? `(Bạn đã chọn ${selectedItemIds.size}/4 từ tối thiểu. Hãy tick chọn các từ trong danh sách)`
-                    : `Chỉ luyện ${selectedItemIds.size} từ bạn đã tick chọn thủ công.`}
-                </p>
-              </div>
-            </button>
-          </div>
-        </div>
-
-        {/* Step 2: Chọn Chế độ Quizlet */}
-        <div className="mb-6">
-          <label className="block text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-2.5">
-            2. Chọn chế độ Quizlet:
-          </label>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-            {modeCards.map((mode) => {
-              const Icon = mode.icon;
-              const isSelected = selectedMode === mode.id;
-
-              return (
-                <button
-                  key={mode.id}
-                  type="button"
-                  onClick={() => setSelectedMode(mode.id)}
-                  className={`p-4 rounded-2xl border text-left transition-all relative flex flex-col justify-between ${
-                    isSelected
-                      ? `border-2 ${mode.accentColor} bg-indigo-50/20 dark:bg-slate-800 shadow-md`
-                      : 'border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 bg-white dark:bg-slate-900/60'
-                  }`}
-                >
-                  <div>
-                    <div className="flex items-center justify-between mb-2">
-                      <div className={`p-2 rounded-xl ${mode.iconColor}`}>
-                        <Icon className="w-4 h-4" />
-                      </div>
-                      <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded border ${mode.badgeColor}`}>
-                        {mode.badge}
-                      </span>
-                    </div>
-                    <h3 className="font-bold text-sm text-slate-900 dark:text-white leading-snug">
-                      {mode.title}
-                    </h3>
+                <div className="min-w-0">
+                  <div className="font-bold text-xs sm:text-sm text-slate-900 dark:text-white flex items-center gap-1.5">
+                    <CheckSquare className="w-3.5 h-3.5 text-indigo-600 dark:text-indigo-400 shrink-0" />
+                    <span className="truncate">Từ chỉ định ({selectedItemIds.size} từ)</span>
                   </div>
-                  <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-2 line-clamp-2">
-                    {mode.description}
+                  <p className="text-[11px] text-slate-500 dark:text-slate-400 hidden sm:block mt-0.5">
+                    {isSelectedScopeDisabled
+                      ? `(Chọn ít nhất 4 từ trong danh sách)`
+                      : `Chỉ luyện ${selectedItemIds.size} từ bạn đã tick chọn.`}
                   </p>
-                </button>
-              );
-            })}
+                </div>
+              </button>
+            </div>
           </div>
-        </div>
 
-        {/* Step 3: Tùy chọn học tập (Chiều câu hỏi & Phiên âm Kana) */}
-        <div className="mb-6 space-y-4 p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-700/60">
+          {/* Step 2: Chọn Chế độ Quizlet */}
           <div>
-            <label className="block text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-2">
-              3. Chiều câu hỏi / đáp án:
+            <label className="block text-[11px] sm:text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-2">
+              2. Chọn chế độ Quizlet:
             </label>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-              <button
-                type="button"
-                onClick={() => setDirection('ja_to_vi')}
-                className={`px-3.5 py-2.5 rounded-xl text-xs font-bold border text-left transition-all flex items-center justify-between ${
-                  direction === 'ja_to_vi'
-                    ? 'bg-indigo-600 text-white border-indigo-600 shadow-xs'
-                    : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:bg-slate-100'
-                }`}
-              >
-                <span>🇯🇵 Tiếng Nhật → 🇻🇳 Tiếng Việt</span>
-                {direction === 'ja_to_vi' && <Check className="w-4 h-4 stroke-[3]" />}
-              </button>
-
-              <button
-                type="button"
-                onClick={() => setDirection('vi_to_ja')}
-                className={`px-3.5 py-2.5 rounded-xl text-xs font-bold border text-left transition-all flex items-center justify-between ${
-                  direction === 'vi_to_ja'
-                    ? 'bg-indigo-600 text-white border-indigo-600 shadow-xs'
-                    : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:bg-slate-100'
-                }`}
-              >
-                <span>🇻🇳 Tiếng Việt → 🇯🇵 Tiếng Nhật</span>
-                {direction === 'vi_to_ja' && <Check className="w-4 h-4 stroke-[3]" />}
-              </button>
-            </div>
-          </div>
-
-          <div>
-            <label className="block text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-2">
-              Hiển thị phiên âm Kana (Furigana):
-            </label>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-              <button
-                type="button"
-                onClick={() => setShowKana(true)}
-                className={`px-3.5 py-2 rounded-xl text-xs font-bold border text-left transition-all flex items-center justify-between ${
-                  showKana
-                    ? 'bg-emerald-600 text-white border-emerald-600 shadow-xs'
-                    : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:bg-slate-100'
-                }`}
-              >
-                <span>Bật Kana (Có cách đọc Furigana)</span>
-                {showKana && <Check className="w-4 h-4 stroke-[3]" />}
-              </button>
-
-              <button
-                type="button"
-                onClick={() => setShowKana(false)}
-                className={`px-3.5 py-2 rounded-xl text-xs font-bold border text-left transition-all flex items-center justify-between ${
-                  !showKana
-                    ? 'bg-emerald-600 text-white border-emerald-600 shadow-xs'
-                    : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:bg-slate-100'
-                }`}
-              >
-                <span>Tắt Kana (Chỉ hiện Kanji thực chiến)</span>
-                {!showKana && <Check className="w-4 h-4 stroke-[3]" />}
-              </button>
-            </div>
-          </div>
-        </div>
-
-        {/* Step 4: Tùy chỉnh số lượng câu / thẻ */}
-        {selectedMode === 'matching' ? (
-          <div className="mb-6 p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-700/60 flex items-center justify-between gap-4">
-            <span className="text-xs font-semibold text-slate-700 dark:text-slate-300">
-              Số cặp thẻ ghép (Grid):
-            </span>
-            <div className="flex items-center gap-2">
-              {[6, 8].map((n) => (
-                <button
-                  key={n}
-                  type="button"
-                  onClick={() => setPairCount(n)}
-                  className={`px-3 py-1 rounded-lg text-xs font-bold border transition-colors ${
-                    pairCount === n
-                      ? 'bg-emerald-600 text-white border-emerald-600 shadow-xs'
-                      : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:bg-slate-50'
-                  }`}
-                >
-                  {n} cặp ({n * 2} ô)
-                </button>
-              ))}
-            </div>
-          </div>
-        ) : (
-          <div className="mb-6 p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-700/60 flex items-center justify-between gap-4">
-            <span className="text-xs font-semibold text-slate-700 dark:text-slate-300">
-              Số lượng câu hỏi:
-            </span>
-            <div className="flex items-center gap-1.5">
-              {[10, 20, activePool.length].map((n, i) => {
-                const label = i === 2 ? 'Tất cả' : `${n} câu`;
-                const isChosen = questionCount === n || (i === 2 && questionCount >= activePool.length);
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-3">
+              {modeCards.map((mode) => {
+                const Icon = mode.icon;
+                const isSelected = selectedMode === mode.id;
 
                 return (
                   <button
-                    key={label}
+                    key={mode.id}
                     type="button"
-                    onClick={() => setQuestionCount(n)}
-                    className={`px-3 py-1 rounded-lg text-xs font-bold border transition-colors ${
-                      isChosen
-                        ? 'bg-indigo-600 text-white border-indigo-600 shadow-xs'
-                        : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:bg-slate-50'
+                    onClick={() => setSelectedMode(mode.id)}
+                    className={`p-3 sm:p-4 rounded-2xl border text-left transition-all relative flex items-center sm:flex-col sm:items-start justify-between gap-3 ${
+                      isSelected
+                        ? `border-2 ${mode.accentColor} bg-indigo-50/20 dark:bg-slate-800 shadow-sm ring-1 ring-indigo-500/20`
+                        : 'border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 bg-white dark:bg-slate-900/60'
                     }`}
                   >
-                    {label}
+                    <div className="flex items-center sm:block gap-2.5 min-w-0 flex-1">
+                      <div className="flex items-center justify-between sm:mb-2 shrink-0">
+                        <div className={`p-2 rounded-xl ${mode.iconColor}`}>
+                          <Icon className="w-4 h-4" />
+                        </div>
+                        <span className={`hidden sm:inline-block text-[10px] font-bold px-1.5 py-0.5 rounded border ${mode.badgeColor}`}>
+                          {mode.badge}
+                        </span>
+                      </div>
+                      <div className="min-w-0">
+                        <div className="flex items-center gap-1.5">
+                          <h3 className="font-bold text-xs sm:text-sm text-slate-900 dark:text-white leading-tight truncate">
+                            {mode.title}
+                          </h3>
+                          <span className={`sm:hidden text-[9px] font-bold px-1.5 py-0.2 rounded border shrink-0 ${mode.badgeColor}`}>
+                            {mode.badge}
+                          </span>
+                        </div>
+                        <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 line-clamp-1 sm:line-clamp-2">
+                          {mode.description}
+                        </p>
+                      </div>
+                    </div>
+
+                    {isSelected && (
+                      <Check className="w-4 h-4 text-indigo-600 dark:text-indigo-400 stroke-[3] sm:hidden shrink-0" />
+                    )}
                   </button>
                 );
               })}
             </div>
           </div>
-        )}
 
-        {/* Modal Footer Actions */}
-        <div className="pt-4 border-t border-slate-100 dark:border-slate-800 flex items-center justify-end gap-3">
-          <button
-            type="button"
-            onClick={onClose}
-            className="px-4 py-2.5 rounded-xl text-sm font-semibold text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
-          >
-            Hủy
-          </button>
+          {/* Step 3: Tùy chọn học tập (Chiều câu hỏi & Phiên âm Kana) */}
+          <div className="space-y-3 p-3.5 sm:p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-700/60">
+            <div>
+              <label className="block text-[11px] sm:text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">
+                3. Chiều câu hỏi / đáp án:
+              </label>
+              <div className="grid grid-cols-2 gap-2">
+                <button
+                  type="button"
+                  onClick={() => setDirection('ja_to_vi')}
+                  className={`px-3 py-2 rounded-xl text-xs font-bold border text-center transition-all flex items-center justify-center gap-1.5 ${
+                    direction === 'ja_to_vi'
+                      ? 'bg-indigo-600 text-white border-indigo-600 shadow-xs'
+                      : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:bg-slate-100'
+                  }`}
+                >
+                  <span className="truncate">Nhật → Việt</span>
+                  {direction === 'ja_to_vi' && <Check className="w-3.5 h-3.5 stroke-[3] shrink-0" />}
+                </button>
 
-          <button
-            type="button"
-            onClick={() => setIsPlaying(true)}
-            className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl text-sm font-bold bg-indigo-600 hover:bg-indigo-700 text-white shadow-md shadow-indigo-600/20 active:scale-95 transition-all"
-          >
-            <Play className="w-4 h-4 fill-white" />
-            <span>Bắt đầu làm bài</span>
-          </button>
+                <button
+                  type="button"
+                  onClick={() => setDirection('vi_to_ja')}
+                  className={`px-3 py-2 rounded-xl text-xs font-bold border text-center transition-all flex items-center justify-center gap-1.5 ${
+                    direction === 'vi_to_ja'
+                      ? 'bg-indigo-600 text-white border-indigo-600 shadow-xs'
+                      : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:bg-slate-100'
+                  }`}
+                >
+                  <span className="truncate">Việt → Nhật</span>
+                  {direction === 'vi_to_ja' && <Check className="w-3.5 h-3.5 stroke-[3] shrink-0" />}
+                </button>
+              </div>
+            </div>
+
+            <div>
+              <label className="block text-[11px] sm:text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">
+                Hiển thị phiên âm Kana:
+              </label>
+              <div className="grid grid-cols-2 gap-2">
+                <button
+                  type="button"
+                  onClick={() => setShowKana(true)}
+                  className={`px-3 py-2 rounded-xl text-xs font-bold border text-center transition-all flex items-center justify-center gap-1.5 ${
+                    showKana
+                      ? 'bg-emerald-600 text-white border-emerald-600 shadow-xs'
+                      : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:bg-slate-100'
+                  }`}
+                >
+                  <span className="truncate">Bật Kana (Furigana)</span>
+                  {showKana && <Check className="w-3.5 h-3.5 stroke-[3] shrink-0" />}
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => setShowKana(false)}
+                  className={`px-3 py-2 rounded-xl text-xs font-bold border text-center transition-all flex items-center justify-center gap-1.5 ${
+                    !showKana
+                      ? 'bg-emerald-600 text-white border-emerald-600 shadow-xs'
+                      : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:bg-slate-100'
+                  }`}
+                >
+                  <span className="truncate">Tắt Kana (Chỉ Kanji)</span>
+                  {!showKana && <Check className="w-3.5 h-3.5 stroke-[3] shrink-0" />}
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* Step 4: Tùy chỉnh số lượng câu / thẻ */}
+          {selectedMode === 'matching' ? (
+            <div className="p-3.5 sm:p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-700/60 flex items-center justify-between gap-3">
+              <span className="text-xs font-semibold text-slate-700 dark:text-slate-300">
+                Số cặp thẻ ghép:
+              </span>
+              <div className="flex items-center gap-2">
+                {[6, 8].map((n) => (
+                  <button
+                    key={n}
+                    type="button"
+                    onClick={() => setPairCount(n)}
+                    className={`px-3 py-1.5 rounded-lg text-xs font-bold border transition-colors ${
+                      pairCount === n
+                        ? 'bg-emerald-600 text-white border-emerald-600 shadow-xs'
+                        : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:bg-slate-50'
+                    }`}
+                  >
+                    {n} cặp ({n * 2} ô)
+                  </button>
+                ))}
+              </div>
+            </div>
+          ) : (
+            <div className="p-3.5 sm:p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-700/60 flex items-center justify-between gap-3">
+              <span className="text-xs font-semibold text-slate-700 dark:text-slate-300">
+                Số câu hỏi:
+              </span>
+              <div className="flex items-center gap-1.5">
+                {[10, 20, activePool.length].map((n, i) => {
+                  const label = i === 2 ? 'Tất cả' : `${n} câu`;
+                  const isChosen = questionCount === n || (i === 2 && questionCount >= activePool.length);
+
+                  return (
+                    <button
+                      key={label}
+                      type="button"
+                      onClick={() => setQuestionCount(n)}
+                      className={`px-2.5 py-1.5 rounded-lg text-xs font-bold border transition-colors ${
+                        isChosen
+                          ? 'bg-indigo-600 text-white border-indigo-600 shadow-xs'
+                          : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:bg-slate-50'
+                      }`}
+                    >
+                      {label}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+        </div>
+
+        {/* Modal Sticky Footer Actions */}
+        <div className="px-4 sm:px-6 py-3 border-t border-slate-100 dark:border-slate-800 bg-white/95 dark:bg-slate-900/95 backdrop-blur-sm flex items-center justify-between gap-3 shrink-0">
+          <div className="flex flex-col min-w-0">
+            <span className="text-xs font-bold text-slate-900 dark:text-white truncate">
+              {activePool.length} từ vựng
+            </span>
+            <span className="text-[11px] text-slate-500 dark:text-slate-400 truncate">
+              {selectedMode === 'builder'
+                ? 'Ghép ký tự'
+                : selectedMode === 'choice'
+                ? 'Trắc nghiệm 4 đáp án'
+                : 'Ghép thẻ'}
+            </span>
+          </div>
+
+          <div className="flex items-center gap-2">
+            <button
+              type="button"
+              onClick={onClose}
+              className="px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+            >
+              Hủy
+            </button>
+
+            <button
+              type="button"
+              onClick={() => setIsPlaying(true)}
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-indigo-600 hover:bg-indigo-700 text-white shadow-md shadow-indigo-600/25 active:scale-95 transition-all shrink-0"
+            >
+              <Play className="w-4 h-4 fill-white" />
+              <span>Bắt đầu làm bài</span>
+            </button>
+          </div>
         </div>
       </div>
     </div>

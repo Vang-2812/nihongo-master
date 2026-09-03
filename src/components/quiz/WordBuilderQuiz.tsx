@@ -605,7 +605,7 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
 
       {/* Answer Construction Line (Slots) */}
       <div
-        className={`rounded-3xl border-2 p-5 sm:p-6 bg-slate-50/70 dark:bg-slate-900/50 flex flex-col items-center justify-center min-h-[7.5rem] transition-all space-y-3 ${
+        className={`rounded-2xl sm:rounded-3xl border-2 p-4 sm:p-6 bg-slate-50/70 dark:bg-slate-900/50 flex flex-col items-center justify-center min-h-[6.5rem] sm:min-h-[7.5rem] transition-all space-y-2 sm:space-y-3 ${
           isShaking ? 'border-rose-500 bg-rose-50/50 dark:bg-rose-950/30 animate-shake' : ''
         } ${
           isChecked && isCorrect
@@ -615,7 +615,7 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
             : 'border-dashed border-slate-300 dark:border-slate-700'
         }`}
       >
-        <div className="flex items-center justify-center gap-2 sm:gap-3 flex-wrap min-h-[3.5rem]">
+        <div className="flex items-center justify-center gap-1.5 sm:gap-3 flex-wrap min-h-[3rem] sm:min-h-[3.5rem]">
           {selectedTileIds.length === 0 ? (
             <span className="text-xs sm:text-sm text-slate-400 italic">
               Nhấn các ô ký tự bên dưới để ghép từ...
@@ -631,7 +631,7 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
                   type="button"
                   disabled={isChecked}
                   onClick={() => handleRemovePlacedTile(idx)}
-                  className={`w-12 h-12 sm:w-14 sm:h-14 rounded-2xl border-2 flex items-center justify-center font-japanese font-bold text-xl sm:text-2xl shadow-sm transition-all select-none active:scale-90 ${
+                  className={`w-11 h-11 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl border-2 flex items-center justify-center font-japanese font-bold text-lg sm:text-2xl shadow-sm transition-all select-none active:scale-90 ${
                     isChecked && isCorrect
                       ? 'border-emerald-500 bg-emerald-500 text-white shadow-emerald-500/20'
                       : isChecked && !isCorrect
@@ -673,12 +673,12 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
       </div>
 
       {/* Scrambled Character Tiles Bank */}
-      <div className="p-4 sm:p-6 rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm space-y-3">
+      <div className="p-3.5 sm:p-6 rounded-2xl sm:rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm space-y-2.5 sm:space-y-3">
         <div className="text-xs font-semibold text-slate-400 uppercase tracking-wider text-center">
           Kho Ký Tự Gợi Ý
         </div>
 
-        <div className="flex items-center justify-center gap-2.5 sm:gap-3.5 flex-wrap pt-2">
+        <div className="flex items-center justify-center gap-2 sm:gap-3 flex-wrap pt-1 sm:pt-2">
           {tilePool.map((tile) => {
             const isUsed = selectedTileIds.includes(tile.id);
 
@@ -688,7 +688,7 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
                 type="button"
                 disabled={isUsed || isChecked}
                 onClick={() => handleSelectTile(tile.id)}
-                className={`w-12 h-12 sm:w-14 sm:h-14 rounded-2xl border-2 flex items-center justify-center font-japanese font-bold text-xl sm:text-2xl transition-all select-none ${
+                className={`w-11 h-11 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl border-2 flex items-center justify-center font-japanese font-bold text-lg sm:text-2xl transition-all select-none ${
                   isUsed
                     ? 'border-transparent bg-slate-100 dark:bg-slate-800/40 text-transparent opacity-25 cursor-default'
                     : 'border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white hover:border-amber-500 hover:bg-amber-50 dark:hover:bg-amber-950/50 shadow-sm active:scale-95'

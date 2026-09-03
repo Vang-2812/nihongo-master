@@ -259,10 +259,10 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 pt-4 sm:pt-6">
         {/* Lesson Header Card */}
-        <div className="bg-white dark:bg-slate-900 rounded-3xl p-6 sm:p-8 border border-slate-200/80 dark:border-slate-800 shadow-sm mb-6">
-          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+        <div className="bg-white dark:bg-slate-900 rounded-2xl sm:rounded-3xl p-4 sm:p-8 border border-slate-200/80 dark:border-slate-800 shadow-sm mb-4 sm:mb-6">
+          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-5 sm:gap-6">
             <div className="flex-1">
               <div className="flex items-center gap-2 mb-2">
                 <span
@@ -283,7 +283,7 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
                 )}
               </div>
 
-              <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+              <h1 className="text-xl sm:text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight">
                 {lesson.title}
               </h1>
 
@@ -370,8 +370,8 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
         </div>
 
         {/* Filter & Search Bar */}
-        <div className="bg-white dark:bg-slate-900 rounded-2xl p-4 border border-slate-200/80 dark:border-slate-800 shadow-xs mb-6">
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div className="bg-white dark:bg-slate-900 rounded-2xl p-3 sm:p-4 border border-slate-200/80 dark:border-slate-800 shadow-xs mb-4 sm:mb-6">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-3 sm:gap-4">
             {/* Search within lesson */}
             <div className="relative flex-1">
               <Search className="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
@@ -423,11 +423,11 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
         </div>
 
         {/* Selection Toolbar for Quizlet */}
-        <div className="flex flex-wrap items-center justify-between gap-3 mb-4 px-4 py-3 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-xs text-xs">
-          <div className="flex items-center gap-2.5">
-            <CheckSquare className="w-4 h-4 text-indigo-600 dark:text-indigo-400" />
+        <div className="flex flex-wrap items-center justify-between gap-2.5 sm:gap-3 mb-4 px-3 sm:px-4 py-2.5 sm:py-3 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-xs text-xs">
+          <div className="flex items-center gap-2 sm:gap-2.5">
+            <CheckSquare className="w-4 h-4 text-indigo-600 dark:text-indigo-400 shrink-0" />
             <span className="font-bold text-slate-800 dark:text-slate-200">
-              Chọn từ luyện tập:
+              Chọn từ luyện:
             </span>
             <span className="px-2 py-0.5 rounded-full font-mono font-bold bg-indigo-50 dark:bg-indigo-950/80 text-indigo-700 dark:text-indigo-300 border border-indigo-200/70 dark:border-indigo-800">
               Đã chọn {selectedItemIds.size} / {filteredItems.length} từ
