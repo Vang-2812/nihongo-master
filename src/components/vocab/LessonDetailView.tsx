@@ -7,6 +7,7 @@ import { useVocabStore, VocabLearningStatus, LessonProgressStatus } from '@/stor
 import { useSRSStore } from '@/stores/srsStore';
 import { toast } from '@/stores/toastStore';
 import VocabCard from './VocabCard';
+import LessonQuizModal from './LessonQuizModal';
 import ProgressBar from '@/components/ui/ProgressBar';
 import {
   ArrowLeft,
@@ -25,6 +26,7 @@ import {
   Check,
   Bookmark,
   GraduationCap,
+  CheckSquare,
 } from 'lucide-react';
 
 export interface LessonDetailViewProps {
@@ -44,6 +46,8 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
   const [mounted, setMounted] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [activeFilter, setActiveFilter] = useState<FilterTab>('all');
+  const [isQuizModalOpen, setIsQuizModalOpen] = useState(false);
+  const [selectedItemIds, setSelectedItemIds] = useState<Set<string>>(new Set());
 
   const { lessonProgress, vocabStatus, setLessonStatus, setVocabStatus } = useVocabStore();
   const { cards, addCards } = useSRSStore();
@@ -164,6 +168,33 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
     });
   }, [lesson.items, activeFilter, searchQuery, vocabStatus, cards, mounted]);
 
+  // Selection handlers
+  const handleSelectAllVisible = () => {
+    setSelectedItemIds(new Set(filteredItems.map((item) => item.id)));
+    toast.info(`Đã chọn ${filteredItems.length} từ vựng`);
+  };
+
+  const handleSelectUnmastered = () => {
+    const unmastered = lesson.items.filter((item) => {
+      const st = mounted ? vocabStatus[item.id] || 'not_started' : 'not_started';
+      return st !== 'known';
+    });
+    setSelectedItemIds(new Set(unmastered.map((item) => item.id)));
+    toast.info(`Đã chọn ${unmastered.length} từ chưa thuộc`);
+  };
+
+  const handleToggleSelect = (id: string) => {
+    setSelectedItemIds((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) {
+        next.delete(id);
+      } else {
+        next.add(id);
+      }
+      return next;
+    });
+  };
+
   const getLevelBadgeClass = (level: string) => {
     switch (level) {
       case 'N5':
@@ -201,14 +232,19 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
             </span>
           </div>
 
-          {/* Quick Quizlet Link */}
-          <Link
-            href={`/review/quiz?source=lesson&id=${lesson.id}`}
-            className="inline-flex items-center gap-1 px-3 py-1 rounded-lg text-xs font-semibold bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 border border-indigo-200/80 dark:border-indigo-800/60 hover:bg-indigo-100 transition-colors"
+          {/* Quick Quizlet Button */}
+          <button
+            type="button"
+            onClick={() => setIsQuizModalOpen(true)}
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 border border-indigo-200/80 dark:border-indigo-800/60 hover:bg-indigo-100 dark:hover:bg-indigo-900/60 transition-colors active:scale-95"
           >
             <Dices className="w-3.5 h-3.5" />
-            <span>Luyện bài này trên Quizlet</span>
-          </Link>
+            <span>
+              {selectedItemIds.size > 0
+                ? `Luyện Quizlet (${selectedItemIds.size} từ)`
+                : 'Luyện Quizlet bài này'}
+            </span>
+          </button>
         </div>
       </div>
 
@@ -266,6 +302,20 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
 
             {/* Action Buttons Toolbar */}
             <div className="flex flex-wrap sm:flex-nowrap lg:flex-col gap-2.5 flex-shrink-0">
+              {/* Luyện Quizlet Button */}
+              <button
+                type="button"
+                onClick={() => setIsQuizModalOpen(true)}
+                className="flex-1 sm:flex-none inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-indigo-600 hover:bg-indigo-700 text-white shadow-sm shadow-indigo-500/20 active:scale-95 transition-all"
+              >
+                <Dices className="w-4 h-4" />
+                <span>
+                  {selectedItemIds.size > 0
+                    ? `Luyện Quizlet (${selectedItemIds.size} từ)`
+                    : 'Luyện Quizlet'}
+                </span>
+              </button>
+
               {/* Add All to SRS */}
               <button
                 type="button"
@@ -361,6 +411,57 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
           </div>
         </div>
 
+        {/* Selection Toolbar for Quizlet */}
+        <div className="flex flex-wrap items-center justify-between gap-3 mb-4 px-4 py-3 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-xs text-xs">
+          <div className="flex items-center gap-2.5">
+            <CheckSquare className="w-4 h-4 text-indigo-600 dark:text-indigo-400" />
+            <span className="font-bold text-slate-800 dark:text-slate-200">
+              Chọn từ luyện tập:
+            </span>
+            <span className="px-2 py-0.5 rounded-full font-mono font-bold bg-indigo-50 dark:bg-indigo-950/80 text-indigo-700 dark:text-indigo-300 border border-indigo-200/70 dark:border-indigo-800">
+              Đã chọn {selectedItemIds.size} / {filteredItems.length} từ
+            </span>
+          </div>
+
+          <div className="flex items-center gap-2 flex-wrap">
+            <button
+              type="button"
+              onClick={handleSelectAllVisible}
+              className="px-2.5 py-1.5 rounded-lg font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors border border-slate-200/80 dark:border-slate-700"
+            >
+              Chọn tất cả ({filteredItems.length})
+            </button>
+            <button
+              type="button"
+              onClick={handleSelectUnmastered}
+              className="px-2.5 py-1.5 rounded-lg font-medium text-amber-700 dark:text-amber-300 hover:bg-amber-50 dark:hover:bg-amber-950/40 transition-colors border border-amber-200/80 dark:border-amber-800/60"
+            >
+              Chỉ chọn từ chưa thuộc
+            </button>
+            {selectedItemIds.size > 0 && (
+              <button
+                type="button"
+                onClick={() => setSelectedItemIds(new Set())}
+                className="px-2.5 py-1.5 rounded-lg font-medium text-rose-600 dark:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-950/40 transition-colors border border-rose-200/60 dark:border-rose-900/40"
+              >
+                Bỏ chọn
+              </button>
+            )}
+            <button
+              type="button"
+              onClick={() => setIsQuizModalOpen(true)}
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg font-bold bg-indigo-600 text-white hover:bg-indigo-700 transition-all shadow-xs active:scale-95"
+            >
+              <Dices className="w-3.5 h-3.5" />
+              <span>
+                {selectedItemIds.size > 0
+                  ? `Luyện (${selectedItemIds.size})`
+                  : 'Luyện toàn bài'}
+              </span>
+            </button>
+          </div>
+        </div>
+
         {/* Vocabulary Cards Grid */}
         {filteredItems.length === 0 ? (
           <div className="bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 p-12 text-center">
@@ -385,7 +486,12 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {filteredItems.map((item) => (
-              <VocabCard key={item.id} vocab={item} />
+              <VocabCard
+                key={item.id}
+                vocab={item}
+                selected={selectedItemIds.has(item.id)}
+                onToggleSelect={handleToggleSelect}
+              />
             ))}
           </div>
         )}
@@ -430,6 +536,15 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
           )}
         </div>
       </div>
+
+      {/* Lesson Quizlet Modal */}
+      <LessonQuizModal
+        isOpen={isQuizModalOpen}
+        onClose={() => setIsQuizModalOpen(false)}
+        lesson={lesson}
+        selectedItemIds={selectedItemIds}
+        onClearSelection={() => setSelectedItemIds(new Set())}
+      />
     </div>
   );
 };

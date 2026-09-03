@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React, { useState, useEffect } from 'react';
 import { VocabItem } from '@/lib/vocabData';
@@ -20,12 +20,16 @@ export interface VocabCardProps {
   vocab: VocabItem;
   className?: string;
   onStatusChange?: (vocabId: string, status: VocabLearningStatus) => void;
+  selected?: boolean;
+  onToggleSelect?: (vocabId: string) => void;
 }
 
 export const VocabCard: React.FC<VocabCardProps> = ({
   vocab,
   className = '',
   onStatusChange,
+  selected = false,
+  onToggleSelect,
 }) => {
   const [mounted, setMounted] = useState(false);
   const { vocabStatus, setVocabStatus } = useVocabStore();
@@ -115,16 +119,37 @@ export const VocabCard: React.FC<VocabCardProps> = ({
   return (
     <div
       className={`group relative rounded-2xl border bg-white dark:bg-slate-900 p-4 sm:p-5 transition-all duration-200 hover:shadow-md hover:border-indigo-200 dark:hover:border-indigo-800 flex flex-col justify-between ${
-        currentStatus === 'known'
+        selected
+          ? 'ring-2 ring-indigo-500 border-indigo-500 bg-indigo-50/20 dark:bg-indigo-950/20 shadow-sm'
+          : currentStatus === 'known'
           ? 'border-emerald-200/80 dark:border-emerald-900/40'
           : currentStatus === 'learning'
           ? 'border-amber-200/80 dark:border-amber-900/40'
           : 'border-slate-200/80 dark:border-slate-800'
       } ${className}`}
     >
-      {/* Top Header: Word & Audio & SRS & Status */}
+      {/* Top Header: Checkbox & Word & Audio & SRS & Status */}
       <div>
         <div className="flex items-start justify-between gap-2 mb-3">
+          {/* Checkbox for custom quiz selection */}
+          {onToggleSelect && (
+            <button
+              type="button"
+              onClick={(e) => {
+                e.stopPropagation();
+                onToggleSelect(vocab.id);
+              }}
+              className={`w-5 h-5 rounded-md border flex items-center justify-center mt-1 flex-shrink-0 transition-all ${
+                selected
+                  ? 'bg-indigo-600 border-indigo-600 text-white shadow-xs'
+                  : 'border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 hover:border-indigo-400'
+              }`}
+              title={selected ? 'Bỏ chọn từ này' : 'Chọn từ này để luyện Quizlet'}
+            >
+              {selected && <Check className="w-3.5 h-3.5 stroke-[3]" />}
+            </button>
+          )}
+
           {/* Japanese Display with Furigana / Reading */}
           <div className="flex-1">
             <div className="flex items-baseline flex-wrap gap-x-2 gap-y-1">
