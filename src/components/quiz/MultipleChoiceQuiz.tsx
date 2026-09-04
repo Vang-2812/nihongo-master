@@ -16,6 +16,7 @@ import {
   Check,
   X,
   Dices,
+  VolumeX,
 } from 'lucide-react';
 import { speakJapanese } from '@/lib/tts';
 import { useSRSStore } from '@/stores/srsStore';
@@ -40,6 +41,7 @@ export interface MultipleChoiceQuizProps {
   subtitle?: string;
   direction?: 'ja_to_vi' | 'vi_to_ja' | 'mixed';
   showKana?: boolean;
+  autoPlayAudio?: boolean;
   onRestart?: () => void;
   onExit?: () => void;
   className?: string;
@@ -59,11 +61,15 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
   subtitle = 'Chọn đáp án chính xác cho từ vựng / Hán tự',
   direction = 'ja_to_vi',
   showKana = true,
+  autoPlayAudio,
   onRestart,
   onExit,
   className = '',
 }) => {
-  const { addXp } = useSRSStore();
+  const { addXp, autoPlayAudio: globalAutoPlay } = useSRSStore();
+  const [autoPlay, setAutoPlay] = useState<boolean>(
+    autoPlayAudio !== undefined ? autoPlayAudio : (globalAutoPlay !== undefined ? globalAutoPlay : true)
+  );
 
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
@@ -89,6 +95,16 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
     if (direction === 'ja_to_vi') return 'ja_to_vi';
     return currentIndex % 2 === 0 ? 'ja_to_vi' : 'vi_to_ja';
   }, [direction, currentIndex]);
+
+  // Auto-play audio for ja_to_vi direction as soon as the question appears
+  useEffect(() => {
+    if (autoPlay && activeDirection === 'ja_to_vi' && currentItem && !isFinished && !isChecked) {
+      const timer = setTimeout(() => {
+        speakJapanese(currentItem.word);
+      }, 150);
+      return () => clearTimeout(timer);
+    }
+  }, [currentIndex, activeDirection, autoPlay, isFinished, isChecked]);
 
   // Helper to format options based on direction and showKana
   const getOptionLabel = useCallback(
@@ -157,9 +173,13 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
         setScore((prev) => prev + 1);
         setEarnedXp((prev) => prev + 10);
         addXp(10);
-        speakJapanese(currentItem.word);
       } else {
         setStreak(0);
+      }
+
+      // Automatically pronounce the correct answer's Japanese word upon selection
+      if (autoPlay) {
+        speakJapanese(currentItem.word);
       }
 
       // Unified SRS SM-2 Record & sync to vocabStore
@@ -465,8 +485,22 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
       {/* Main Question Card */}
       <div className="relative rounded-2xl sm:rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-8 text-center shadow-md sm:shadow-lg space-y-3 sm:space-y-4">
         <div className="flex justify-between items-center absolute top-3.5 left-3.5 right-3.5 sm:top-4 sm:left-4 sm:right-4">
-          {/* Audio Button */}
-          <AudioButton text={currentItem.word} size="md" variant="subtle" />
+          {/* Audio Controls */}
+          <div className="flex items-center gap-1.5">
+            <AudioButton text={currentItem.word} size="md" variant="subtle" />
+            <button
+              type="button"
+              onClick={() => setAutoPlay(!autoPlay)}
+              className={`p-1.5 rounded-full border text-xs font-medium transition-all active:scale-95 ${
+                autoPlay
+                  ? 'bg-indigo-50 dark:bg-indigo-950/60 border-indigo-300 dark:border-indigo-800 text-indigo-600 dark:text-indigo-400 shadow-xs'
+                  : 'text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 border-slate-200 dark:border-slate-800'
+              }`}
+              title={autoPlay ? 'Tự động phát âm: Đang BẬT (nhấn để Tắt)' : 'Tự động phát âm: Đang TẮT (nhấn để Bật)'}
+            >
+              {autoPlay ? <Volume2 className="w-4 h-4" /> : <VolumeX className="w-4 h-4" />}
+            </button>
+          </div>
 
           {/* Hint Button */}
           <button

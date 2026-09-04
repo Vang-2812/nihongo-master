@@ -51,6 +51,7 @@ export const KanjiQuizModal: React.FC<KanjiQuizModalProps> = ({
   const [direction, setDirection] = useState<'ja_to_vi' | 'vi_to_ja' | 'mixed'>('ja_to_vi');
   const [shuffleQuestions, setShuffleQuestions] = useState<boolean>(true);
   const [showKana, setShowKana] = useState<boolean>(true);
+  const [autoPlayAudio, setAutoPlayAudio] = useState<boolean>(true);
   const [questionCount, setQuestionCount] = useState<number>(20);
   const [pairCount, setPairCount] = useState<number>(6);
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
@@ -208,6 +209,7 @@ export const KanjiQuizModal: React.FC<KanjiQuizModalProps> = ({
               subtitle={titleText}
               direction={direction}
               showKana={showKana}
+              autoPlayAudio={autoPlayAudio}
               onExit={() => setIsPlaying(false)}
             />
           )}
@@ -553,6 +555,39 @@ export const KanjiQuizModal: React.FC<KanjiQuizModalProps> = ({
                 >
                   <span className="truncate">Ẩn âm (Chỉ Hán tự)</span>
                   {!showKana && <Check className="w-3.5 h-3.5 stroke-[3] shrink-0" />}
+                </button>
+              </div>
+            </div>
+
+            <div>
+              <label className="block text-[11px] sm:text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">
+                Tự động phát âm:
+              </label>
+              <div className="grid grid-cols-2 gap-2">
+                <button
+                  type="button"
+                  onClick={() => setAutoPlayAudio(true)}
+                  className={`px-3 py-2 rounded-xl text-xs font-bold border text-center transition-all flex items-center justify-center gap-1.5 ${
+                    autoPlayAudio
+                      ? 'bg-indigo-600 text-white border-indigo-600 shadow-xs'
+                      : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:bg-slate-100'
+                  }`}
+                >
+                  <span className="truncate">🔊 Bật tự động</span>
+                  {autoPlayAudio && <Check className="w-3.5 h-3.5 stroke-[3] shrink-0" />}
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => setAutoPlayAudio(false)}
+                  className={`px-3 py-2 rounded-xl text-xs font-bold border text-center transition-all flex items-center justify-center gap-1.5 ${
+                    !autoPlayAudio
+                      ? 'bg-indigo-600 text-white border-indigo-600 shadow-xs'
+                      : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:bg-slate-100'
+                  }`}
+                >
+                  <span className="truncate">🔇 Tắt tự động</span>
+                  {!autoPlayAudio && <Check className="w-3.5 h-3.5 stroke-[3] shrink-0" />}
                 </button>
               </div>
             </div>
