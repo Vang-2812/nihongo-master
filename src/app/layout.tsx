@@ -7,6 +7,7 @@ import ThemeInitializer from '@/components/ui/ThemeInitializer';
 export const metadata: Metadata = {
   title: 'Nihongo Master - Luyện Từ Vựng & Kanji',
   description: 'Nền tảng học tiếng Nhật toàn diện: Từ vựng & Kanji N5-N1 với phương pháp Lặp lại ngắt quãng (SRS)',
+  referrer: 'no-referrer',
 };
 
 const themeBlockingScript = `
@@ -38,6 +39,7 @@ export default function RootLayout({
   return (
     <html lang="vi" suppressHydrationWarning>
       <head>
+        <meta name="referrer" content="no-referrer" />
         <script dangerouslySetInnerHTML={{ __html: themeBlockingScript }} />
       </head>
       <body className="min-h-screen flex flex-col bg-background text-foreground antialiased selection:bg-indigo-500/20 selection:text-indigo-700 dark:selection:text-indigo-300">

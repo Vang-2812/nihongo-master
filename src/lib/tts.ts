@@ -1,22 +1,49 @@
 /**
- * Speaks the given Japanese text using Web Speech API or high-reliability Audio Fallback.
- * Specifically handles Chinese domestic ROM devices (Oppo, Xiaomi, Vivo) where SpeechSynthesis
- * might lack Japanese voice packages or default to Chinese TTS voices.
+ * High-reliability Japanese Text-to-Speech (TTS) Engine.
+ *
+ * Specifically engineered for mobile compatibility and domestic China ROM devices
+ * (such as Oppo ColorOS China, Xiaomi HyperOS China, Vivo OriginOS), where:
+ * 1. Offline Japanese voice packs are absent in Web Speech API and default system TTS
+ *    engines (Breeno / Xiaobu / iFlytek) mistakenly read Kanji characters in Mandarin Chinese.
+ * 2. Direct requests to some foreign services may be restricted or blocked by Referer policies.
+ *
+ * Architecture:
+ * - Primary: High-fidelity native Japanese audio stream via NetEase Youdao (unblocked, studio Tokyo accent).
+ * - Secondary: Google Translate TTS endpoint with no-referrer policy (full sentences and phrases).
+ * - Tertiary Fallback: Client Web Speech API ONLY IF a verified native Japanese voice is installed on device.
+ *   (Strictly refuses to use Web Speech API if only Chinese/English voices exist).
  */
 
+let sharedAudio: HTMLAudioElement | null = null;
 let cachedVoices: SpeechSynthesisVoice[] = [];
-let activeAudio: HTMLAudioElement | null = null;
 
+/**
+ * Remove pronunciation dots, hyphens, and normalize whitespace
+ * e.g. "た.べる" -> "たべる", "-やま" -> "やま"
+ */
+export function sanitizeJapaneseText(text: string): string {
+  if (!text) return '';
+  return text
+    .trim()
+    .replace(/[.・\-]/g, '')
+    .replace(/\s+/g, ' ');
+}
+
+/**
+ * Validates whether a SpeechSynthesisVoice is genuinely Japanese and NOT Chinese
+ */
 function isJapaneseVoice(voice: SpeechSynthesisVoice): boolean {
   const lang = (voice.lang || '').toLowerCase().replace('_', '-');
   const name = (voice.name || '').toLowerCase();
 
-  // Strictly eliminate Chinese voices
+  // Strictly eliminate Chinese voices (Mandarin, Cantonese, etc.)
   if (
     lang.startsWith('zh') ||
     name.includes('chinese') ||
     name.includes('mandarin') ||
-    name.includes('cantonese')
+    name.includes('cantonese') ||
+    name.includes('xiaobu') ||
+    name.includes('breeno')
   ) {
     return false;
   }
@@ -32,7 +59,7 @@ function isJapaneseVoice(voice: SpeechSynthesisVoice): boolean {
   );
 }
 
-function initVoices() {
+function initVoices(): void {
   if (typeof window === 'undefined' || !window.speechSynthesis) return;
 
   try {
@@ -47,119 +74,162 @@ function initVoices() {
       };
     }
   } catch {
-    // Ignore errors in restricted environments
+    // Ignore restricted environments
   }
 }
 
-// Eager initialization if in browser
+// Preload voices in browser
 if (typeof window !== 'undefined') {
   initVoices();
 }
 
 /**
- * Fallback to playing audio via standard Google Translate TTS endpoint.
- * Highly dependable on devices without offline Japanese TTS voice packs.
+ * Returns or initializes a singleton HTML5 Audio element attached to the DOM
+ * (attaching to DOM prevents mobile browsers from garbage-collecting during buffering)
  */
-function playAudioFallback(text: string, rate: number = 1.0): void {
-  if (typeof window === 'undefined') return;
+function getSharedAudio(): HTMLAudioElement | null {
+  if (typeof window === 'undefined') return null;
+
+  if (!sharedAudio) {
+    try {
+      const audio = document.createElement('audio');
+      audio.setAttribute('referrerpolicy', 'no-referrer');
+      audio.preload = 'auto';
+      audio.style.display = 'none';
+      document.body.appendChild(audio);
+      sharedAudio = audio;
+    } catch {
+      sharedAudio = new Audio();
+    }
+  }
+  return sharedAudio;
+}
+
+/**
+ * Determines primary audio URL for text:
+ * - Single words / Kanji / terms (< 25 chars without sentence punctuation): Youdao (unblocked, studio MP3)
+ * - Full sentences / long text: Google Translate TTS with no-referrer
+ */
+function getPrimaryAudioUrl(cleanText: string): string {
+  const isShortWord = cleanText.length <= 25 && !/[。！？!?,\n]/.test(cleanText);
+  if (isShortWord) {
+    return `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(cleanText)}&le=jap`;
+  }
+  return `https://translate.google.com/translate_tts?ie=UTF-8&tl=ja&client=tw-ob&q=${encodeURIComponent(cleanText)}`;
+}
+
+/**
+ * Alternate backup audio URL
+ */
+function getBackupAudioUrl(cleanText: string): string {
+  const isShortWord = cleanText.length <= 25 && !/[。！？!?,\n]/.test(cleanText);
+  if (isShortWord) {
+    return `https://translate.google.com/translate_tts?ie=UTF-8&tl=ja&client=tw-ob&q=${encodeURIComponent(cleanText)}`;
+  }
+  // For sentences that fail, try first 25 chars on Youdao
+  return `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(cleanText.slice(0, 25))}&le=jap`;
+}
+
+/**
+ * Web Speech API fallback - ONLY called if a native Japanese voice exists
+ */
+function tryWebSpeech(text: string, rate: number = 1.0): void {
+  if (typeof window === 'undefined' || !window.speechSynthesis) return;
 
   try {
-    if (activeAudio) {
-      activeAudio.pause();
-      activeAudio.currentTime = 0;
-      activeAudio = null;
-    }
+    const voices = cachedVoices.length > 0 ? cachedVoices : window.speechSynthesis.getVoices();
+    const jaVoice = (voices || []).find(isJapaneseVoice);
 
-    const cleanText = text.trim();
-    if (!cleanText) return;
+    // CRITICAL: NEVER call speak if no native Japanese voice exists on device
+    if (!jaVoice) return;
 
-    // Use Google TTS API endpoint
-    const url = `https://translate.google.com/translate_tts?ie=UTF-8&tl=ja&client=tw-ob&q=${encodeURIComponent(cleanText)}`;
-    const audio = new Audio(url);
-    audio.playbackRate = rate;
-
-    activeAudio = audio;
-    audio.play().catch(() => {
-      // Audio playback might be restricted by browser autoplay policy
-    });
+    window.speechSynthesis.cancel();
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = 'ja-JP';
+    utterance.voice = jaVoice;
+    utterance.rate = rate;
+    window.speechSynthesis.speak(utterance);
   } catch {
-    // Fallback gracefully
+    // Ignore speech errors
   }
 }
 
 /**
  * Speaks the given Japanese text.
- * Cancels ongoing speech before starting a new utterance.
+ * Safely plays across all mobile devices, tablets, and desktop browsers.
  *
- * @param text The Japanese text to speak
+ * @param text The Japanese word, kanji, or sentence
  * @param rate Playback rate (default: 1.0)
  */
 export function speakJapanese(text: string, rate: number = 1.0): void {
-  if (typeof window === 'undefined') {
+  if (typeof window === 'undefined') return;
+
+  const clean = sanitizeJapaneseText(text);
+  if (!clean) return;
+
+  // Stop any ongoing speech
+  stopJapaneseSpeech();
+
+  const audio = getSharedAudio();
+  if (!audio) {
+    tryWebSpeech(clean, rate);
     return;
   }
 
-  // Cancel any active audio playback
-  if (activeAudio) {
-    activeAudio.pause();
-    activeAudio.currentTime = 0;
-    activeAudio = null;
-  }
+  const primaryUrl = getPrimaryAudioUrl(clean);
+  const backupUrl = getBackupAudioUrl(clean);
 
-  const cleanText = text ? text.trim() : '';
-  if (!cleanText) return;
+  let hasFallenBack = false;
 
-  if (!window.speechSynthesis) {
-    playAudioFallback(cleanText, rate);
-    return;
-  }
+  // Error listener to switch to backup stream
+  audio.onerror = () => {
+    if (!hasFallenBack && backupUrl && backupUrl !== primaryUrl) {
+      hasFallenBack = true;
+      audio.src = backupUrl;
+      audio.load();
+      audio.play().catch(() => {
+        tryWebSpeech(clean, rate);
+      });
+    } else {
+      tryWebSpeech(clean, rate);
+    }
+  };
 
   try {
-    window.speechSynthesis.cancel();
-  } catch {}
+    audio.playbackRate = rate;
+    audio.src = primaryUrl;
+    audio.load();
 
-  const voices = cachedVoices.length > 0 ? cachedVoices : window.speechSynthesis.getVoices();
-  if (voices && voices.length > 0) {
-    cachedVoices = voices;
-  }
-
-  const jaVoice = (cachedVoices || []).find(isJapaneseVoice);
-
-  // If no native Japanese voice exists on this device (e.g. Oppo China domestic ROM),
-  // DO NOT allow the device to fall back to its system default voice (which would be Chinese!).
-  // Use online Japanese TTS audio stream instead.
-  if (!jaVoice) {
-    playAudioFallback(cleanText, rate);
-    return;
-  }
-
-  try {
-    const utterance = new SpeechSynthesisUtterance(cleanText);
-    utterance.lang = 'ja-JP';
-    utterance.rate = rate;
-    utterance.voice = jaVoice;
-
-    // In case utterance errors out, try audio fallback
-    utterance.onerror = () => {
-      playAudioFallback(cleanText, rate);
-    };
-
-    window.speechSynthesis.speak(utterance);
+    const playPromise = audio.play();
+    if (playPromise !== undefined) {
+      playPromise.catch(() => {
+        // Fallback on autoplay rejection or stream error
+        if (!hasFallenBack && backupUrl && backupUrl !== primaryUrl) {
+          hasFallenBack = true;
+          audio.src = backupUrl;
+          audio.load();
+          audio.play().catch(() => {
+            tryWebSpeech(clean, rate);
+          });
+        }
+      });
+    }
   } catch {
-    playAudioFallback(cleanText, rate);
+    tryWebSpeech(clean, rate);
   }
 }
 
 /**
- * Stop any ongoing speech or audio.
+ * Stops any active Japanese speech or audio playback.
  */
 export function stopJapaneseSpeech(): void {
   if (typeof window === 'undefined') return;
 
-  if (activeAudio) {
-    activeAudio.pause();
-    activeAudio.currentTime = 0;
-    activeAudio = null;
+  if (sharedAudio) {
+    try {
+      sharedAudio.pause();
+      sharedAudio.currentTime = 0;
+    } catch {}
   }
 
   if (window.speechSynthesis) {
