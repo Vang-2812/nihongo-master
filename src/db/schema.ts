@@ -60,3 +60,18 @@ export const vocabItems = sqliteTable('vocab_items', {
   romaji: text('romaji'),
   level: text('level'),
 });
+
+/**
+ * AI Generated Lesson Exercises (Cloze questions)
+ */
+export const aiLessonExercises = sqliteTable('ai_lesson_exercises', {
+  id: text('id').primaryKey(), // `${lessonId}_${syncCode}`
+  lessonId: text('lesson_id').notNull(),
+  syncCode: text('sync_code').notNull(),
+  model: text('model').notNull(),
+  totalExercises: integer('total_exercises').notNull(),
+  exercisesData: text('exercises_data').notNull(), // JSON stringified ClozeExerciseItem[]
+  createdAt: integer('created_at').notNull(),
+  updatedAt: integer('updated_at').notNull(),
+});
+

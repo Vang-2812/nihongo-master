@@ -74,8 +74,22 @@ export async function ensureDbInitialized() {
       );
     `);
 
+    await client.execute(`
+      CREATE TABLE IF NOT EXISTS ai_lesson_exercises (
+        id TEXT PRIMARY KEY,
+        lesson_id TEXT NOT NULL,
+        sync_code TEXT NOT NULL,
+        model TEXT NOT NULL,
+        total_exercises INTEGER NOT NULL,
+        exercises_data TEXT NOT NULL,
+        created_at INTEGER NOT NULL,
+        updated_at INTEGER NOT NULL
+      );
+    `);
+
     isInitialized = true;
   } catch (err) {
     console.error('Failed to initialize database tables:', err);
   }
 }
+
