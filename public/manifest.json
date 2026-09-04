@@ -1,0 +1,57 @@
+{
+  "name": "Nihongo Master - Luyện Từ Vựng & Kanji",
+  "short_name": "Nihongo Master",
+  "description": "Nền tảng học tiếng Nhật toàn diện: Từ vựng & Kanji N5-N1 với phương pháp Lặp lại ngắt quãng (SRS)",
+  "start_url": "/",
+  "id": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0f172a",
+  "theme_color": "#4f46e5",
+  "lang": "vi",
+  "scope": "/",
+  "categories": ["education", "productivity"],
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/maskable-icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Kho Hán Tự (Kanji)",
+      "short_name": "Kanji",
+      "description": "Tra cứu và tập viết Hán tự N5-N1",
+      "url": "/kanji",
+      "icons": [{ "src": "/icons/icon-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Kho Từ Vựng (Tango)",
+      "short_name": "Từ vựng",
+      "description": "Kho từ vựng Minna, Mimikara, Somatome",
+      "url": "/tango",
+      "icons": [{ "src": "/icons/icon-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Ôn Tập Flashcard SRS",
+      "short_name": "Ôn tập",
+      "description": "Ôn tập thẻ flashcard hôm nay",
+      "url": "/review",
+      "icons": [{ "src": "/icons/icon-192x192.png", "sizes": "192x192" }]
+    }
+  ]
+}

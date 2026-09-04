@@ -90,9 +90,11 @@ export const Navbar: React.FC = () => {
                 href="/"
                 className="flex items-center gap-2.5 group focus:outline-none focus:ring-2 focus:ring-indigo-500 rounded-lg p-1"
               >
-                <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-indigo-600 to-purple-600 flex items-center justify-center text-white font-bold shadow-md shadow-indigo-500/20 group-hover:scale-105 transition-transform">
-                  日
-                </div>
+                <img
+                  src="/icons/icon-192x192.png"
+                  alt="Nihongo Master Logo"
+                  className="w-9 h-9 rounded-xl shadow-md shadow-indigo-500/20 group-hover:scale-105 transition-transform"
+                />
                 <div className="flex flex-col">
                   <div className="flex items-center gap-1.5">
                     <span className="font-bold text-lg text-slate-900 dark:text-white tracking-tight leading-tight">
