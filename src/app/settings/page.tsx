@@ -9,6 +9,7 @@ import { toast } from '@/stores/toastStore';
 import { exportBackupData, validateAndParseBackup, BackupData } from '@/lib/storage';
 import Modal from '@/components/ui/Modal';
 import SyncSettingsSection from '@/components/sync/SyncSettingsSection';
+import AISettingsSection from '@/components/settings/AISettingsSection';
 import {
   Settings,
   Download,
@@ -577,6 +578,9 @@ export default function SettingsPage() {
           </div>
         </div>
       </section>
+
+      {/* ==================== AI ASSISTANT CONFIGURATION SECTION ==================== */}
+      <AISettingsSection />
 
       {/* ==================== MULTI-DEVICE CLOUD SYNC SECTION ==================== */}
       <SyncSettingsSection />
