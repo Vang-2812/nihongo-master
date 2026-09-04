@@ -6,8 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "test": "tsx --test src/lib/__tests__/*.test.ts src/stores/__tests__/*.test.ts"
+    "test": "tsx --test src/lib/__tests__/*.test.ts src/stores/__tests__/*.test.ts src/app/api/**/__tests__/*.test.ts"
+
   },
   "dependencies": {
     "@libsql/client": "^0.18.0",

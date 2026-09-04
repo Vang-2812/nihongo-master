@@ -8,6 +8,10 @@ import { useSRSStore } from '@/stores/srsStore';
 import { toast } from '@/stores/toastStore';
 import VocabCard from './VocabCard';
 import LessonQuizModal from './LessonQuizModal';
+import AIClozeQuizModal from './AIClozeQuizModal';
+import { useAIStore } from '@/stores/aiStore';
+import { syncService } from '@/services/syncService';
+import { ClozeExerciseItem } from '@/types/ai';
 import ProgressBar from '@/components/ui/ProgressBar';
 import {
   ArrowLeft,
@@ -27,7 +31,10 @@ import {
   Bookmark,
   GraduationCap,
   CheckSquare,
+  Bot,
+  Loader2,
 } from 'lucide-react';
+
 
 export interface LessonDetailViewProps {
   lesson: LessonInfo;
@@ -49,12 +56,124 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
   const [isQuizModalOpen, setIsQuizModalOpen] = useState(false);
   const [selectedItemIds, setSelectedItemIds] = useState<Set<string>>(new Set());
 
+  // AI Exercises state
+  const [isAIModalOpen, setIsAIModalOpen] = useState(false);
+  const [isGeneratingAI, setIsGeneratingAI] = useState(false);
+  const [aiExercises, setAiExercises] = useState<ClozeExerciseItem[]>([]);
+
   const { lessonProgress, vocabStatus, setLessonStatus, setVocabStatus } = useVocabStore();
   const { cards, addCard, addCards } = useSRSStore();
+  const { config: aiConfig, getExercisesFromCache, saveExercisesToCache } = useAIStore();
 
   useEffect(() => {
     setMounted(true);
   }, []);
+
+  // Load AI exercises from local cache or SQLite Turso cloud
+  useEffect(() => {
+    if (!mounted) return;
+
+    // 1. Check local cache
+    const cached = getExercisesFromCache(lesson.id);
+    if (cached && cached.exercises && cached.exercises.length > 0) {
+      setAiExercises(cached.exercises);
+    }
+
+    // 2. Fetch from DB
+    const syncCode = syncService.getSyncCode() || 'local';
+    fetch(`/api/ai/exercises?lessonId=${lesson.id}&syncCode=${syncCode}`)
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.success && data.found && Array.isArray(data.exercises) && data.exercises.length > 0) {
+          setAiExercises(data.exercises);
+          saveExercisesToCache(lesson.id, data.exercises, data.model || 'deepseek-chat', syncCode);
+        }
+      })
+      .catch((err) => {
+        console.warn('Could not load AI exercises from DB:', err);
+      });
+  }, [lesson.id, mounted, getExercisesFromCache, saveExercisesToCache]);
+
+  // Handle Generate / Regenerate AI Exercises
+  const handleGenerateAIExercises = async (isRegenerate: boolean = false) => {
+    if (!aiConfig.apiKey.trim()) {
+      toast.warning('Vui lòng vào Cài đặt để thêm API Key trước khi tạo bài tập AI!');
+      return;
+    }
+
+    if (isRegenerate) {
+      const confirmed = window.confirm(
+        'Bạn có chắc chắn muốn tạo lại bài tập AI không? Thao tác này sẽ làm mới toàn bộ câu hỏi hiện tại của bài.'
+      );
+      if (!confirmed) return;
+    }
+
+    const targetItems =
+      selectedItemIds.size > 0
+        ? lesson.items.filter((item) => selectedItemIds.has(item.id))
+        : lesson.items;
+
+    if (targetItems.length === 0) {
+      toast.warning('Không có từ vựng nào để tạo bài tập.');
+      return;
+    }
+
+    setIsGeneratingAI(true);
+    toast.info(`Đang gọi AI (${aiConfig.modelName}) tạo bài tập cho ${targetItems.length} từ vựng...`);
+
+    try {
+      const res = await fetch('/api/ai/generate-exercises', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          endpointUrl: aiConfig.endpointUrl,
+          apiKey: aiConfig.apiKey,
+          model: aiConfig.modelName,
+          lessonTitle: lesson.title,
+          level: lesson.level,
+          words: targetItems.map((item) => ({
+            id: item.id,
+            word: item.word,
+            reading: item.reading,
+            meaning: item.meaning,
+          })),
+        }),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok || !data.success) {
+        throw new Error(data.error || 'Không thể tạo bài tập từ AI.');
+      }
+
+      const generated: ClozeExerciseItem[] = data.exercises;
+      const syncCode = syncService.getSyncCode() || 'local';
+
+      // Save to local cache
+      saveExercisesToCache(lesson.id, generated, data.model || aiConfig.modelName, syncCode);
+      setAiExercises(generated);
+
+      // Persist to SQLite Cloud
+      fetch('/api/ai/exercises', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          lessonId: lesson.id,
+          syncCode,
+          model: data.model || aiConfig.modelName,
+          exercises: generated,
+        }),
+      }).catch((e) => console.warn('Could not persist exercises to SQLite:', e));
+
+      toast.success(`Đã tạo thành công ${generated.length} câu bài tập AI!`);
+      setIsAIModalOpen(true);
+    } catch (err: any) {
+      toast.error(err.message || 'Lỗi khi tạo bài tập AI');
+    } finally {
+      setIsGeneratingAI(false);
+    }
+  };
+
 
   const currentLessonStatus: LessonProgressStatus = mounted
     ? lessonProgress[lesson.id] || 'not_started'
@@ -243,19 +362,48 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
             </span>
           </div>
 
-          {/* Quick Quizlet Button */}
-          <button
-            type="button"
-            onClick={() => setIsQuizModalOpen(true)}
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 border border-indigo-200/80 dark:border-indigo-800/60 hover:bg-indigo-100 dark:hover:bg-indigo-900/60 transition-colors active:scale-95"
-          >
-            <Dices className="w-3.5 h-3.5" />
-            <span>
-              {selectedItemIds.size > 0
-                ? `Luyện Quizlet (${selectedItemIds.size} từ)`
-                : 'Luyện Quizlet bài này'}
-            </span>
-          </button>
+          <div className="flex items-center gap-2">
+            {/* Quick AI Exercise Button */}
+            <button
+              type="button"
+              disabled={isGeneratingAI}
+              onClick={() => {
+                if (aiExercises.length > 0) {
+                  setIsAIModalOpen(true);
+                } else {
+                  handleGenerateAIExercises(false);
+                }
+              }}
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-purple-50 dark:bg-purple-950/60 text-purple-600 dark:text-purple-400 border border-purple-200/80 dark:border-purple-800/60 hover:bg-purple-100 dark:hover:bg-purple-900/60 transition-colors active:scale-95 disabled:opacity-50"
+            >
+              {isGeneratingAI ? (
+                <Loader2 className="w-3.5 h-3.5 animate-spin" />
+              ) : (
+                <Sparkles className="w-3.5 h-3.5" />
+              )}
+              <span>
+                {isGeneratingAI
+                  ? 'Đang tạo...'
+                  : aiExercises.length > 0
+                  ? `Bài tập AI (${aiExercises.length})`
+                  : 'Bài tập AI'}
+              </span>
+            </button>
+
+            {/* Quick Quizlet Button */}
+            <button
+              type="button"
+              onClick={() => setIsQuizModalOpen(true)}
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 border border-indigo-200/80 dark:border-indigo-800/60 hover:bg-indigo-100 dark:hover:bg-indigo-900/60 transition-colors active:scale-95"
+            >
+              <Dices className="w-3.5 h-3.5" />
+              <span>
+                {selectedItemIds.size > 0
+                  ? `Luyện Quizlet (${selectedItemIds.size} từ)`
+                  : 'Luyện Quizlet'}
+              </span>
+            </button>
+          </div>
         </div>
       </div>
 
@@ -313,6 +461,55 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
 
             {/* Action Buttons Toolbar */}
             <div className="flex flex-wrap sm:flex-nowrap lg:flex-col gap-2.5 flex-shrink-0">
+              {/* AI Cloze Exercise Main Buttons */}
+              {aiExercises.length > 0 ? (
+                <>
+                  <button
+                    type="button"
+                    onClick={() => setIsAIModalOpen(true)}
+                    className="flex-1 sm:flex-none inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white shadow-sm shadow-purple-500/20 active:scale-95 transition-all"
+                  >
+                    <Sparkles className="w-4 h-4 text-purple-200" />
+                    <span>Luyện bài tập AI ({aiExercises.length} câu)</span>
+                  </button>
+
+                  <button
+                    type="button"
+                    disabled={isGeneratingAI}
+                    onClick={() => handleGenerateAIExercises(true)}
+                    className="flex-1 sm:flex-none inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-purple-50 dark:bg-purple-950/40 text-purple-700 dark:text-purple-300 border border-purple-200 dark:border-purple-800/60 hover:bg-purple-100 dark:hover:bg-purple-900/60 transition-colors disabled:opacity-50 active:scale-95"
+                    title="Tạo lại bộ câu hỏi bài tập bằng AI cho bài học này"
+                  >
+                    {isGeneratingAI ? (
+                      <Loader2 className="w-3.5 h-3.5 animate-spin text-purple-600" />
+                    ) : (
+                      <RotateCcw className="w-3.5 h-3.5 text-purple-600 dark:text-purple-400" />
+                    )}
+                    <span>{isGeneratingAI ? 'Đang tạo lại...' : 'Tạo lại bài tập bằng AI'}</span>
+                  </button>
+                </>
+              ) : (
+                <button
+                  type="button"
+                  disabled={isGeneratingAI}
+                  onClick={() => handleGenerateAIExercises(false)}
+                  className="flex-1 sm:flex-none inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white shadow-sm shadow-purple-500/20 active:scale-95 transition-all disabled:opacity-50"
+                >
+                  {isGeneratingAI ? (
+                    <Loader2 className="w-4 h-4 animate-spin text-white" />
+                  ) : (
+                    <Sparkles className="w-4 h-4 text-purple-200" />
+                  )}
+                  <span>
+                    {isGeneratingAI
+                      ? 'Đang tạo bài tập AI...'
+                      : selectedItemIds.size > 0
+                      ? `Tạo bài tập AI (${selectedItemIds.size} từ)`
+                      : '✨ Tạo bài tập bằng AI'}
+                  </span>
+                </button>
+              )}
+
               {/* Luyện Quizlet Button */}
               <button
                 type="button"
@@ -556,7 +753,17 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
         selectedItemIds={selectedItemIds}
         onClearSelection={() => setSelectedItemIds(new Set())}
       />
+
+      {/* AI Cloze Exercise Modal */}
+      <AIClozeQuizModal
+        isOpen={isAIModalOpen}
+        onClose={() => setIsAIModalOpen(false)}
+        exercises={aiExercises}
+        lessonTitle={lesson.title}
+        onRegenerate={() => handleGenerateAIExercises(true)}
+      />
     </div>
+
   );
 };
 

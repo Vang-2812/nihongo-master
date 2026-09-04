@@ -44,8 +44,16 @@ const ToastCard: React.FC<ToastCardProps> = ({ item, onDismiss }) => {
           bg: 'bg-white dark:bg-slate-900',
           bar: 'bg-rose-500',
         };
+      case 'warning':
+        return {
+          icon: <AlertCircle className="w-5 h-5 text-amber-500 flex-shrink-0" />,
+          border: 'border-amber-500/30 dark:border-amber-500/40',
+          bg: 'bg-white dark:bg-slate-900',
+          bar: 'bg-amber-500',
+        };
       case 'info':
       default:
+
         return {
           icon: <Info className="w-5 h-5 text-indigo-500 flex-shrink-0" />,
           border: 'border-indigo-500/30 dark:border-indigo-500/40',
