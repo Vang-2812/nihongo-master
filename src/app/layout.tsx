@@ -3,6 +3,7 @@ import './globals.css';
 import Navbar from '@/components/layout/Navbar';
 import ToastContainer from '@/components/ui/ToastContainer';
 import ThemeInitializer from '@/components/ui/ThemeInitializer';
+import SyncInitializer from '@/components/sync/SyncInitializer';
 
 export const metadata: Metadata = {
   title: 'Nihongo Master - Luyện Từ Vựng & Kanji',
@@ -44,6 +45,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen flex flex-col bg-background text-foreground antialiased selection:bg-indigo-500/20 selection:text-indigo-700 dark:selection:text-indigo-300">
         <ThemeInitializer />
+        <SyncInitializer />
         <Navbar />
         <main className="flex-1 pb-20 lg:pb-10">
           {children}

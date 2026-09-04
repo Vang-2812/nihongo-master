@@ -8,6 +8,7 @@ import { useThemeStore } from '@/stores/themeStore';
 import { toast } from '@/stores/toastStore';
 import { exportBackupData, validateAndParseBackup, BackupData } from '@/lib/storage';
 import Modal from '@/components/ui/Modal';
+import SyncSettingsSection from '@/components/sync/SyncSettingsSection';
 import {
   Settings,
   Download,
@@ -576,6 +577,9 @@ export default function SettingsPage() {
           </div>
         </div>
       </section>
+
+      {/* ==================== MULTI-DEVICE CLOUD SYNC SECTION ==================== */}
+      <SyncSettingsSection />
 
       {/* ==================== SECTION 2: BACKUP & RESTORE ==================== */}
       <section
