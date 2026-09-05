@@ -17,6 +17,9 @@ import {
 import { speakJapanese } from '@/lib/tts';
 import { useSRSStore } from '@/stores/srsStore';
 import ProgressBar from '@/components/ui/ProgressBar';
+import { selectDistractors } from '@/lib/distractorSelector';
+import { getAllVocab } from '@/lib/vocabData';
+import { getAllKanji, parseKanjiMeaning } from '@/lib/kanjiData';
 
 export interface QuizItem {
   id: string;
@@ -32,6 +35,7 @@ export interface QuizItem {
 export interface MultipleChoiceQuizProps {
   items: QuizItem[];
   allPool?: QuizItem[];
+  globalPool?: QuizItem[];
   title?: string;
   subtitle?: string;
   direction?: 'ja_to_vi' | 'vi_to_ja' | 'mixed';
@@ -52,6 +56,7 @@ interface QuestionHistory {
 export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
   items,
   allPool,
+  globalPool: propGlobalPool,
   title = 'Trắc Nghiệm 4 Đáp Án',
   subtitle = 'Chọn đáp án chính xác cho từ vựng / Hán tự',
   direction = 'ja_to_vi',
@@ -83,6 +88,35 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
   }, [allPool, items]);
 
   const currentItem = items[currentIndex];
+
+  // Memoized global candidate pool for smart distractors
+  const effectiveGlobalPool = useMemo<QuizItem[]>(() => {
+    if (propGlobalPool && propGlobalPool.length > 0) return propGlobalPool;
+    const isKanji = currentItem?.type === 'kanji' || items[0]?.type === 'kanji';
+    if (isKanji) {
+      return getAllKanji().map((k) => {
+        const parsed = parseKanjiMeaning(k.meaning_vi, k.character);
+        return {
+          id: `global_kanji_${k.character}`,
+          word: k.character,
+          reading: (k.onyomi || k.kunyomi || [])[0] || k.character,
+          meaning: parsed.meaning || k.meaning_vi || '',
+          sinoVietnamese: parsed.sinoVietnamese,
+          level: k.level,
+          type: 'kanji' as const,
+        };
+      });
+    }
+    return getAllVocab().map((v) => ({
+      id: `global_vocab_${v.id}`,
+      word: v.word,
+      reading: v.reading,
+      meaning: v.meaning,
+      sinoVietnamese: v.sinoVietnamese,
+      level: v.level,
+      type: 'vocab' as const,
+    }));
+  }, [propGlobalPool, currentItem?.type, items]);
 
   // Dynamic direction per question when 'mixed' is selected
   const activeDirection = useMemo<'ja_to_vi' | 'vi_to_ja'>(() => {
@@ -120,36 +154,33 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
     return getOptionLabel(currentItem);
   }, [currentItem, getOptionLabel]);
 
-  // Generate 4 randomized options for the current question
+  // Generate 4 smart distractor options for the current question
   const currentOptions = useMemo(() => {
     if (!currentItem) return [];
 
     const target = getOptionLabel(currentItem);
-    const otherMeanings = pool
-      .filter((p) => p.id !== currentItem.id && getOptionLabel(p) !== target)
-      .map(getOptionLabel);
-
-    // Deduplicate and shuffle distractors
-    const uniqueDistractors = Array.from(new Set(otherMeanings)).sort(
-      () => Math.random() - 0.5
-    );
-    const chosenDistractors = uniqueDistractors.slice(0, 3);
-
-    // Fallback if not enough distractors in pool
     const fallbackList =
       activeDirection === 'vi_to_ja'
         ? ['ことば A', 'ことば B', 'ことば C']
         : ['Nghĩa khác A', 'Nghĩa khác B', 'Nghĩa khác C'];
-    while (chosenDistractors.length < 3) {
-      chosenDistractors.push(fallbackList[chosenDistractors.length]);
-    }
 
-    // Combine and shuffle 4 options
+    const chosenDistractors = selectDistractors(
+      currentItem,
+      pool,
+      effectiveGlobalPool,
+      {
+        count: 3,
+        getOptionLabel,
+        fallbackDistractors: fallbackList,
+      }
+    );
+
+    // Combine target and 3 distractors, then shuffle
     const allFour = [target, ...chosenDistractors].sort(
       () => Math.random() - 0.5
     );
     return allFour;
-  }, [currentItem, pool, activeDirection, getOptionLabel]);
+  }, [currentItem, pool, effectiveGlobalPool, activeDirection, getOptionLabel]);
 
   // Handle Option Selection
   const handleSelectOption = useCallback(

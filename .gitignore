@@ -37,3 +37,6 @@ next-env.d.ts
 *.db-shm
 *.db-wal
 *.sqlite
+
+# superpowers
+.superpowers/
