@@ -33,21 +33,21 @@ export const KanjiGrid: React.FC<KanjiGridProps> = ({
 }) => {
   if (kanjiList.length === 0) {
     return (
-      <div className="border-2 border-dashed border-black bg-white p-12 text-center my-6 rounded-none shadow-none">
-        <div className="w-12 h-12 border-2 border-black mx-auto mb-4 flex items-center justify-center text-black">
+      <div className="border border-dashed border-stone-300 bg-white p-12 text-center my-6 rounded-none shadow-none">
+        <div className="w-12 h-12 border border-stone-300 mx-auto mb-4 flex items-center justify-center text-stone-500">
           <SearchX className="w-6 h-6 stroke-[1.5]" />
         </div>
-        <h3 className="font-serif text-xl sm:text-2xl font-normal text-black uppercase tracking-tight mb-2">
+        <h3 className="font-serif text-xl sm:text-2xl font-normal text-stone-900 uppercase tracking-tight mb-2">
           KHÔNG TÌM THẤY CHỮ HÁN NÀO
         </h3>
-        <p className="font-sans text-xs text-mutedForeground max-w-md mx-auto mb-6">
+        <p className="font-sans text-xs text-stone-500 max-w-md mx-auto mb-6">
           Không có chữ Hán nào khớp với từ khóa hoặc bộ lọc hiện tại.
         </p>
         {onResetFilter && (
           <button
             type="button"
             onClick={onResetFilter}
-            className="inline-flex items-center gap-2 px-5 py-2.5 border border-black bg-black text-white hover:bg-white hover:text-black font-sans font-semibold text-xs uppercase tracking-wider transition-colors duration-100 rounded-none shadow-none"
+            className="inline-flex items-center gap-2 px-5 py-2.5 border border-stone-900 bg-stone-900 text-white hover:bg-stone-800 font-sans font-semibold text-xs uppercase tracking-wider transition-colors duration-100 rounded-none shadow-none"
           >
             <RotateCcw className="w-3.5 h-3.5 stroke-[2]" />
             <span>ĐẶT LẠI BỘ LỌC</span>
@@ -61,9 +61,9 @@ export const KanjiGrid: React.FC<KanjiGridProps> = ({
     <div>
       {/* Batch Action Bar */}
       {isSelecting && (
-        <div className="bg-white border-2 border-black p-4 mb-6 flex flex-wrap items-center justify-between gap-4 font-sans text-xs rounded-none shadow-none">
+        <div className="bg-white border border-stone-200 p-4 mb-6 shadow-xs flex flex-wrap items-center justify-between gap-4 font-sans text-xs rounded-none">
           <div className="flex items-center gap-2">
-            <span className="font-bold uppercase tracking-wider text-black">
+            <span className="font-bold uppercase tracking-wider text-stone-800">
               ĐÃ CHỌN: {selectedChars.size} / {kanjiList.length}
             </span>
           </div>
@@ -72,7 +72,7 @@ export const KanjiGrid: React.FC<KanjiGridProps> = ({
             <button
               type="button"
               onClick={selectedChars.size === kanjiList.length ? onClearSelection : onSelectAll}
-              className="border border-black bg-white hover:bg-black hover:text-white px-3 py-1.5 font-sans font-semibold uppercase tracking-wider transition-colors duration-100 rounded-none"
+              className="border border-stone-300 bg-white hover:bg-stone-100 text-stone-800 px-3 py-1.5 font-sans font-semibold uppercase tracking-wider transition-colors duration-100 rounded-none"
             >
               {selectedChars.size === kanjiList.length ? 'BỎ CHỌN TẤT CẢ' : 'CHỌN TẤT CẢ'}
             </button>
@@ -82,7 +82,7 @@ export const KanjiGrid: React.FC<KanjiGridProps> = ({
                 type="button"
                 disabled={selectedChars.size === 0}
                 onClick={onBatchAction}
-                className="border border-black bg-black text-white hover:bg-white hover:text-black px-3 py-1.5 font-sans font-semibold uppercase tracking-wider transition-colors duration-100 rounded-none disabled:opacity-40 disabled:cursor-not-allowed"
+                className="border border-stone-900 bg-stone-900 text-white hover:bg-stone-800 px-3 py-1.5 font-sans font-semibold uppercase tracking-wider transition-colors duration-100 rounded-none disabled:opacity-40 disabled:cursor-not-allowed"
               >
                 {batchActionLabel || 'LUYỆN TẬP'}
               </button>

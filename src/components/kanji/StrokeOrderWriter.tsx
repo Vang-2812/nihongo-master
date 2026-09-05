@@ -57,10 +57,10 @@ export const StrokeOrderWriter: React.FC<StrokeOrderWriterProps> = ({
         showOutline: true,
         strokeAnimationSpeed: 1.2,
         delayBetweenStrokes: 180,
-        strokeColor: '#000000',
-        radicalColor: '#000000',
-        outlineColor: '#E5E5E5',
-        drawingColor: '#000000',
+        strokeColor: '#1C1917',
+        radicalColor: '#1C1917',
+        outlineColor: '#E7E5E4',
+        drawingColor: '#1C1917',
         drawingWidth: 20,
         showHintAfterMisses: 2,
         highlightOnComplete: true,
@@ -163,16 +163,16 @@ export const StrokeOrderWriter: React.FC<StrokeOrderWriterProps> = ({
 
   return (
     <div
-      className={`flex flex-col items-center bg-white p-5 border-2 border-black rounded-none shadow-none ${className}`}
+      className={`flex flex-col items-center border border-stone-200 bg-white p-5 shadow-xs rounded-none ${className}`}
     >
       {/* Canvas Area with Kanji practice grid lines */}
       <div
-        className="relative flex items-center justify-center border-2 border-black bg-white rounded-none shadow-none overflow-hidden select-none"
+        className="relative flex items-center justify-center border border-stone-300 bg-white rounded-none shadow-none overflow-hidden select-none"
         style={{ width: size, height: size }}
       >
-        {/* Traditional Kanji Grid Lines in #E5E5E5 */}
+        {/* Traditional Kanji Grid Lines in #E7E5E4 */}
         <svg
-          className="absolute inset-0 w-full h-full pointer-events-none stroke-[#E5E5E5]"
+          className="absolute inset-0 w-full h-full pointer-events-none stroke-[#E7E5E4]"
           strokeWidth="1"
           strokeDasharray="4,4"
         >
@@ -188,7 +188,7 @@ export const StrokeOrderWriter: React.FC<StrokeOrderWriterProps> = ({
         {/* Loading Spinner */}
         {loading && (
           <div className="absolute inset-0 flex items-center justify-center bg-white/80 z-10">
-            <div className="w-8 h-8 border-2 border-black border-t-transparent animate-spin" />
+            <div className="w-8 h-8 border-2 border-stone-800 border-t-transparent animate-spin" />
           </div>
         )}
 
@@ -204,12 +204,12 @@ export const StrokeOrderWriter: React.FC<StrokeOrderWriterProps> = ({
         {error && (
           <div className="flex flex-col items-center justify-center text-center p-4">
             <span
-              className="font-serif text-black select-none"
+              className="font-serif text-stone-900 select-none"
               style={{ fontSize: size * 0.55 }}
             >
               {character}
             </span>
-            <span className="font-mono text-[10px] text-mutedForeground uppercase tracking-wider mt-2">
+            <span className="font-mono text-[10px] text-stone-500 uppercase tracking-wider mt-2">
               HIỂN THỊ NÉT CHUẨN
             </span>
           </div>
@@ -218,7 +218,15 @@ export const StrokeOrderWriter: React.FC<StrokeOrderWriterProps> = ({
 
       {/* Quiz / Animation Status Banner */}
       {(quizMessage || quizCompleted) && (
-        <div className="w-full mt-3.5 p-3 border border-black bg-white text-black font-sans font-medium text-xs uppercase tracking-wide rounded-none flex items-center gap-2">
+        <div
+          className={`w-full mt-3.5 p-3 border font-sans font-medium text-xs uppercase tracking-wide rounded-none flex items-center gap-2 ${
+            quizCompleted
+              ? 'bg-emerald-50 text-emerald-800 border-emerald-200'
+              : quizMessage.includes('CHƯA CHÍNH XÁC') || quizMessage.includes('LỖI:')
+              ? 'bg-rose-50 text-rose-800 border-rose-200'
+              : 'bg-stone-50 text-stone-700 border-stone-200'
+          }`}
+        >
           <span className="flex-1 leading-tight text-center">{quizMessage}</span>
         </div>
       )}
@@ -230,7 +238,7 @@ export const StrokeOrderWriter: React.FC<StrokeOrderWriterProps> = ({
           type="button"
           onClick={handleAnimate}
           disabled={loading || error || isAnimating}
-          className="flex-1 min-w-[90px] inline-flex items-center justify-center gap-1.5 px-3 py-2 border border-black bg-white hover:bg-black hover:text-white font-sans font-medium text-xs uppercase tracking-wider rounded-none transition-colors duration-100 disabled:opacity-40 disabled:cursor-not-allowed"
+          className="flex-1 min-w-[90px] inline-flex items-center justify-center gap-1.5 px-3 py-2 border border-stone-300 bg-white text-stone-800 hover:bg-stone-100 font-sans font-medium text-xs uppercase tracking-wider rounded-none transition-colors duration-100 disabled:opacity-40 disabled:cursor-not-allowed"
         >
           <Play className="w-3.5 h-3.5 fill-current" />
           <span>HOẠT HỌA</span>
@@ -241,10 +249,10 @@ export const StrokeOrderWriter: React.FC<StrokeOrderWriterProps> = ({
           type="button"
           onClick={handleStartQuiz}
           disabled={loading || error}
-          className={`flex-1 min-w-[90px] inline-flex items-center justify-center gap-1.5 px-3 py-2 border border-black font-sans font-medium text-xs uppercase tracking-wider rounded-none transition-colors duration-100 disabled:opacity-40 disabled:cursor-not-allowed ${
+          className={`flex-1 min-w-[90px] inline-flex items-center justify-center gap-1.5 px-3 py-2 border font-sans font-medium text-xs uppercase tracking-wider rounded-none transition-colors duration-100 disabled:opacity-40 disabled:cursor-not-allowed ${
             isQuiz
-              ? 'bg-black text-white hover:bg-white hover:text-black'
-              : 'bg-white hover:bg-black hover:text-white'
+              ? 'border-stone-900 bg-stone-900 text-white hover:bg-stone-800'
+              : 'border-stone-300 bg-white text-stone-800 hover:bg-stone-100'
           }`}
         >
           <Pencil className="w-3.5 h-3.5" />
@@ -257,7 +265,7 @@ export const StrokeOrderWriter: React.FC<StrokeOrderWriterProps> = ({
           onClick={handleReset}
           disabled={loading || error}
           title="Xem lại / Đặt lại"
-          className="p-2 border border-black bg-white hover:bg-black hover:text-white font-mono text-xs uppercase tracking-wider rounded-none transition-colors duration-100 disabled:opacity-40"
+          className="p-2 border border-stone-300 bg-white text-stone-800 hover:bg-stone-100 font-mono text-xs uppercase tracking-wider rounded-none transition-colors duration-100 disabled:opacity-40"
         >
           <RotateCcw className="w-3.5 h-3.5" />
         </button>
@@ -267,7 +275,7 @@ export const StrokeOrderWriter: React.FC<StrokeOrderWriterProps> = ({
           type="button"
           onClick={handlePronounce}
           title="Phát âm chữ này"
-          className="p-2 border border-black bg-white hover:bg-black hover:text-white font-mono text-xs uppercase tracking-wider rounded-none transition-colors duration-100"
+          className="p-2 border border-stone-300 bg-white text-stone-800 hover:bg-stone-100 font-mono text-xs uppercase tracking-wider rounded-none transition-colors duration-100"
         >
           <Volume2 className="w-3.5 h-3.5" />
         </button>

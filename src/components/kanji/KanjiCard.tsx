@@ -17,6 +17,14 @@ export interface KanjiCardProps {
   onToggleSelect?: (character: string) => void;
 }
 
+const LEVEL_BADGE_STYLES: Record<string, string> = {
+  N5: 'bg-emerald-50 text-emerald-800 border-emerald-200',
+  N4: 'bg-sky-50 text-sky-800 border-sky-200',
+  N3: 'bg-amber-50 text-amber-800 border-amber-200',
+  N2: 'bg-purple-50 text-purple-800 border-purple-200',
+  N1: 'bg-rose-50 text-rose-800 border-rose-200',
+};
+
 export const KanjiCard: React.FC<KanjiCardProps> = ({
   kanji,
   level,
@@ -39,6 +47,8 @@ export const KanjiCard: React.FC<KanjiCardProps> = ({
     status = 'learning';
   }
 
+  const effectiveLevel = kanji.level || level || 'N5';
+
   const { sinoVietnamese, meaning } = parseKanjiMeaning(
     kanji.meaning_vi,
     kanji.character
@@ -57,7 +67,7 @@ export const KanjiCard: React.FC<KanjiCardProps> = ({
         id: cardId,
         cardType: 'kanji',
         contentId: kanji.character,
-        level: kanji.level || level || 'N5',
+        level: effectiveLevel,
       });
       setStatus(kanji.character, 'learning');
       toast.success(`Đã thêm ${kanji.character} (${sinoVietnamese}) vào SRS`);
@@ -89,8 +99,8 @@ export const KanjiCard: React.FC<KanjiCardProps> = ({
       href={`/kanji/${encodeURIComponent(kanji.character)}`}
       onClick={handleCardClick}
       className={`group relative flex flex-col justify-between p-4 ${
-        isSelected ? 'border-2 border-black bg-neutral-100' : 'border border-black bg-white'
-      } transition-colors duration-100 hover:bg-black hover:text-white rounded-none shadow-none focus:outline-none focus:ring-2 focus:ring-black`}
+        isSelected ? 'border-2 border-stone-800 bg-stone-50' : 'border border-stone-200 bg-white'
+      } hover:border-stone-400 hover:shadow-xs transition-all duration-150 rounded-none shadow-none focus:outline-none focus:ring-1 focus:ring-stone-400`}
     >
       {/* Top action row */}
       <div className="flex items-center justify-between gap-1 mb-2">
@@ -104,10 +114,10 @@ export const KanjiCard: React.FC<KanjiCardProps> = ({
                 e.stopPropagation();
                 onToggleSelect?.(kanji.character);
               }}
-              className={`w-5 h-5 border border-black rounded-none flex items-center justify-center transition-colors duration-100 shrink-0 ${
+              className={`w-5 h-5 border rounded-none flex items-center justify-center shrink-0 transition-colors duration-100 ${
                 isSelected
-                  ? 'bg-black text-white group-hover:bg-white group-hover:text-black group-hover:border-white'
-                  : 'bg-white text-black group-hover:bg-black group-hover:text-white group-hover:border-white'
+                  ? 'bg-stone-900 text-white border-stone-900'
+                  : 'border-stone-300 bg-white text-stone-900 hover:border-stone-400'
               }`}
             >
               {isSelected && <Check className="w-3.5 h-3.5 stroke-[2.5]" />}
@@ -115,7 +125,7 @@ export const KanjiCard: React.FC<KanjiCardProps> = ({
           )}
 
           {/* Stroke count badge */}
-          <span className="font-mono text-[10px] tracking-wider uppercase border border-black px-1.5 py-0.5 text-black group-hover:text-white group-hover:border-white">
+          <span className="bg-stone-100 text-stone-600 border border-stone-200 font-mono text-[10px] uppercase px-1.5 py-0.5">
             {kanji.stroke_count} NÉT
           </span>
         </div>
@@ -126,7 +136,7 @@ export const KanjiCard: React.FC<KanjiCardProps> = ({
             type="button"
             onClick={handleSpeak}
             title={`Nghe phát âm ${kanji.character}`}
-            className="border border-black p-1 bg-transparent text-black hover:bg-black hover:text-white group-hover:border-white group-hover:text-white group-hover:hover:bg-white group-hover:hover:text-black transition-colors duration-100 rounded-none"
+            className="border border-stone-300 p-1 bg-white text-stone-600 hover:text-stone-900 hover:bg-stone-100 transition-colors rounded-none"
           >
             <Volume2 className="w-3.5 h-3.5 stroke-[1.5]" />
           </button>
@@ -136,10 +146,10 @@ export const KanjiCard: React.FC<KanjiCardProps> = ({
             type="button"
             onClick={handleToggleSRS}
             title={isSrsAdded || status === 'learning' ? 'Xóa khỏi SRS' : 'Thêm vào SRS'}
-            className={`font-mono text-[10px] uppercase tracking-wider px-2 py-0.5 border border-black group-hover:border-white transition-colors duration-100 rounded-none ${
+            className={`font-mono text-[10px] uppercase tracking-wider px-2 py-0.5 rounded-none transition-colors duration-100 ${
               isSrsAdded || status === 'learning'
-                ? 'bg-black text-white group-hover:bg-white group-hover:text-black'
-                : 'bg-transparent text-black hover:bg-black hover:text-white group-hover:text-white group-hover:hover:bg-white group-hover:hover:text-black'
+                ? 'bg-indigo-50 text-indigo-800 border border-indigo-200'
+                : 'border border-stone-300 bg-white text-stone-700 hover:bg-stone-100'
             }`}
           >
             {isSrsAdded || status === 'learning' ? 'SRS' : '+ SRS'}
@@ -149,34 +159,34 @@ export const KanjiCard: React.FC<KanjiCardProps> = ({
 
       {/* Main character display */}
       <div className="flex flex-col items-center justify-center my-4 text-center">
-        <span className="font-serif text-5xl sm:text-6xl text-black group-hover:text-white select-none">
+        <span className="font-serif text-5xl sm:text-6xl text-stone-900 select-none">
           {kanji.character}
         </span>
 
         {/* Sino-Vietnamese reading (âm Hán Việt) */}
-        <span className="mt-2 font-serif text-sm sm:text-base font-bold uppercase tracking-widest text-black group-hover:text-white">
+        <span className="mt-2 font-serif text-sm sm:text-base font-bold uppercase tracking-widest text-stone-900">
           {sinoVietnamese || kanji.character}
         </span>
 
         {/* Meaning in Vietnamese */}
-        <p className="mt-1 font-sans text-xs sm:text-sm text-mutedForeground group-hover:text-neutral-300 line-clamp-1 text-center">
+        <p className="mt-1 font-sans text-xs sm:text-sm text-stone-600 line-clamp-1 text-center">
           {meaning || kanji.meaning_vi}
         </p>
       </div>
 
       {/* Footer readings and status badge */}
-      <div className="pt-2 mt-2 border-t border-borderLight group-hover:border-neutral-800 font-mono text-[11px] space-y-1">
+      <div className="pt-2 mt-2 border-t border-stone-200 font-mono text-[11px] space-y-1">
         {onPreview && (
-          <div className="flex items-baseline gap-1 text-neutral-600 group-hover:text-neutral-300 truncate">
-            <span className="font-bold text-[10px] text-black group-hover:text-white uppercase shrink-0">
+          <div className="flex items-baseline gap-1 text-stone-600 truncate">
+            <span className="text-[10px] text-stone-900 font-semibold uppercase shrink-0">
               ON:
             </span>
             <span className="truncate">{onPreview}</span>
           </div>
         )}
         {kunPreview && (
-          <div className="flex items-baseline gap-1 text-neutral-600 group-hover:text-neutral-300 truncate">
-            <span className="font-bold text-[10px] text-black group-hover:text-white uppercase shrink-0">
+          <div className="flex items-baseline gap-1 text-stone-600 truncate">
+            <span className="text-[10px] text-stone-900 font-semibold uppercase shrink-0">
               KUN:
             </span>
             <span className="truncate">{kunPreview}</span>
@@ -185,14 +195,29 @@ export const KanjiCard: React.FC<KanjiCardProps> = ({
 
         {/* Status indicator bottom badge */}
         <div className="pt-1 flex items-center justify-between">
-          <span className="font-sans font-medium text-[11px] uppercase tracking-wider text-black group-hover:text-white">
-            {status === 'known' && 'ĐÃ THUỘC'}
-            {status === 'learning' && 'ĐANG HỌC'}
-            {status === 'new' && 'CHƯA HỌC'}
-          </span>
+          {status === 'known' && (
+            <span className="bg-emerald-50 text-emerald-800 border border-emerald-200 px-1.5 py-0.5 font-sans font-medium text-[10px] uppercase tracking-wider">
+              ĐÃ THUỘC
+            </span>
+          )}
+          {status === 'learning' && (
+            <span className="bg-indigo-50 text-indigo-800 border border-indigo-200 px-1.5 py-0.5 font-sans font-medium text-[10px] uppercase tracking-wider">
+              ĐANG HỌC
+            </span>
+          )}
+          {status === 'new' && (
+            <span className="bg-stone-100 text-stone-600 border border-stone-200 px-1.5 py-0.5 font-sans font-medium text-[10px] uppercase tracking-wider">
+              CHƯA HỌC
+            </span>
+          )}
 
-          <span className="font-mono font-bold text-[10px] border border-black px-1 text-black group-hover:text-white group-hover:border-white">
-            {kanji.level || level}
+          <span
+            className={`font-mono font-bold text-[10px] border px-1.5 py-0.5 ${
+              LEVEL_BADGE_STYLES[effectiveLevel] ||
+              'bg-stone-100 text-stone-600 border-stone-200'
+            }`}
+          >
+            {effectiveLevel}
           </span>
         </div>
       </div>

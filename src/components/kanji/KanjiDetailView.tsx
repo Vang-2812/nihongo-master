@@ -91,10 +91,10 @@ export const KanjiDetailView: React.FC<KanjiDetailViewProps> = ({
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
       {/* Navigation Header */}
-      <div className="flex flex-wrap items-center justify-between gap-4 border-b border-black pb-5">
+      <div className="flex flex-wrap items-center justify-between gap-4 border-b border-stone-200 pb-5">
         <Link
           href="/kanji"
-          className="font-sans font-semibold text-xs uppercase tracking-wider inline-flex items-center gap-2 hover:underline text-black"
+          className="font-sans font-semibold text-xs uppercase tracking-wider inline-flex items-center gap-2 hover:underline text-stone-700 hover:text-stone-900"
         >
           <span>← QUAY LẠI KHO HÁN TỰ</span>
         </Link>
@@ -104,34 +104,34 @@ export const KanjiDetailView: React.FC<KanjiDetailViewProps> = ({
           {adjacent.prev ? (
             <Link
               href={`/kanji/${encodeURIComponent(adjacent.prev.character)}`}
-              className="border border-black bg-white hover:bg-black hover:text-white px-3 py-1.5 font-sans font-semibold text-xs uppercase tracking-wider rounded-none transition-colors duration-100 flex items-center gap-1"
+              className="border border-stone-300 bg-white hover:bg-stone-100 text-stone-800 px-3 py-1.5 font-sans font-semibold text-xs uppercase tracking-wider rounded-none transition-colors duration-100 flex items-center gap-1"
               title={`Trước: ${adjacent.prev.character}`}
             >
               <ChevronLeft className="w-3.5 h-3.5" />
               <span>{adjacent.prev.character}</span>
             </Link>
           ) : (
-            <span className="opacity-30 border border-black px-3 py-1.5 font-sans text-xs uppercase flex items-center gap-1 cursor-not-allowed">
+            <span className="opacity-30 border border-stone-200 bg-stone-50 text-stone-400 px-3 py-1.5 font-sans text-xs uppercase flex items-center gap-1 cursor-not-allowed">
               <ChevronLeft className="w-3.5 h-3.5" />
               <span>TRƯỚC</span>
             </span>
           )}
 
-          <span className="font-sans font-bold text-xs px-3 py-1.5 border border-black bg-black text-white">
+          <span className="font-sans font-bold text-xs px-3 py-1.5 border border-stone-300 bg-stone-100 text-stone-800">
             {kanji.level}
           </span>
 
           {adjacent.next ? (
             <Link
               href={`/kanji/${encodeURIComponent(adjacent.next.character)}`}
-              className="border border-black bg-white hover:bg-black hover:text-white px-3 py-1.5 font-sans font-semibold text-xs uppercase tracking-wider rounded-none transition-colors duration-100 flex items-center gap-1"
+              className="border border-stone-300 bg-white hover:bg-stone-100 text-stone-800 px-3 py-1.5 font-sans font-semibold text-xs uppercase tracking-wider rounded-none transition-colors duration-100 flex items-center gap-1"
               title={`Sau: ${adjacent.next.character}`}
             >
               <span>{adjacent.next.character}</span>
               <ChevronRight className="w-3.5 h-3.5" />
             </Link>
           ) : (
-            <span className="opacity-30 border border-black px-3 py-1.5 font-sans text-xs uppercase flex items-center gap-1 cursor-not-allowed">
+            <span className="opacity-30 border border-stone-200 bg-stone-50 text-stone-400 px-3 py-1.5 font-sans text-xs uppercase flex items-center gap-1 cursor-not-allowed">
               <span>SAU</span>
               <ChevronRight className="w-3.5 h-3.5" />
             </span>
@@ -151,8 +151,8 @@ export const KanjiDetailView: React.FC<KanjiDetailViewProps> = ({
           />
 
           {/* Quick Actions Card */}
-          <div className="p-5 border-2 border-black bg-white rounded-none shadow-none space-y-4">
-            <h4 className="font-sans text-xs font-bold uppercase tracking-wider text-black">
+          <div className="p-5 border border-stone-200 bg-white rounded-none shadow-xs space-y-4">
+            <h4 className="font-sans text-xs font-bold uppercase tracking-wider text-stone-900">
               TRẠNG THÁI & ÔN TẬP
             </h4>
 
@@ -161,10 +161,10 @@ export const KanjiDetailView: React.FC<KanjiDetailViewProps> = ({
               <button
                 type="button"
                 onClick={handleToggleSRS}
-                className={`flex items-center justify-center gap-2 py-3 px-3 border-2 border-black font-sans font-semibold text-xs uppercase tracking-wider rounded-none transition-colors duration-100 ${
+                className={`flex items-center justify-center gap-2 py-3 px-3 font-sans font-semibold text-xs uppercase tracking-wider rounded-none transition-colors duration-100 ${
                   isSrsAdded || currentStatus === 'learning'
-                    ? 'bg-black text-white hover:bg-white hover:text-black'
-                    : 'bg-white text-black hover:bg-black hover:text-white'
+                    ? 'bg-indigo-50 text-indigo-800 border border-indigo-200 hover:bg-indigo-100'
+                    : 'border border-stone-300 bg-white text-stone-800 hover:bg-stone-100'
                 }`}
               >
                 <span>{isSrsAdded || currentStatus === 'learning' ? 'SRS: ĐANG HỌC' : '+ THÊM VÀO SRS'}</span>
@@ -174,10 +174,10 @@ export const KanjiDetailView: React.FC<KanjiDetailViewProps> = ({
               <button
                 type="button"
                 onClick={handleToggleKnown}
-                className={`flex items-center justify-center gap-2 py-3 px-3 border-2 border-black font-sans font-semibold text-xs uppercase tracking-wider rounded-none transition-colors duration-100 ${
+                className={`flex items-center justify-center gap-2 py-3 px-3 font-sans font-semibold text-xs uppercase tracking-wider rounded-none transition-colors duration-100 ${
                   currentStatus === 'known'
-                    ? 'bg-black text-white hover:bg-white hover:text-black'
-                    : 'bg-white text-black hover:bg-black hover:text-white'
+                    ? 'bg-emerald-50 text-emerald-800 border border-emerald-200 hover:bg-emerald-100'
+                    : 'border border-stone-300 bg-white text-stone-800 hover:bg-stone-100'
                 }`}
               >
                 <span>{currentStatus === 'known' ? 'ĐÃ THUỘC' : 'ĐÁNH DẤU THUỘC'}</span>
@@ -187,11 +187,11 @@ export const KanjiDetailView: React.FC<KanjiDetailViewProps> = ({
 
           {/* Mnemonic Card (Gợi ý ghi nhớ) */}
           {kanji.mnemonic_vi && (
-            <div className="p-5 border border-black bg-neutral-50 rounded-none shadow-none space-y-2">
-              <span className="font-sans text-xs font-bold uppercase tracking-wider text-black block">
+            <div className="p-5 border border-amber-200 bg-amber-50/50 text-stone-800 rounded-none shadow-xs space-y-2">
+              <span className="font-sans text-xs font-bold uppercase tracking-wider text-amber-800 block">
                 GỢI Ý GHI NHỚ · MNEMONIC
               </span>
-              <p className="font-sans text-sm text-black leading-relaxed">
+              <p className="font-sans text-sm text-stone-800 leading-relaxed">
                 {kanji.mnemonic_vi}
               </p>
             </div>
@@ -201,25 +201,25 @@ export const KanjiDetailView: React.FC<KanjiDetailViewProps> = ({
         {/* Right Column (7 cols) */}
         <div className="lg:col-span-7 space-y-6">
           {/* Main Title & Sino-Vietnamese Banner */}
-          <div className="p-6 sm:p-8 border-2 border-black bg-white rounded-none shadow-none space-y-6">
+          <div className="p-6 sm:p-8 border border-stone-200 bg-white rounded-none shadow-xs space-y-6">
             <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
               <div>
                 <div className="flex items-baseline gap-4">
-                  <span className="font-serif text-7xl sm:text-8xl lg:text-9xl font-normal text-black leading-none select-none">
+                  <span className="font-serif text-7xl sm:text-8xl lg:text-9xl font-normal text-stone-900 leading-none select-none">
                     {kanji.character}
                   </span>
                   <div>
-                    <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal text-black uppercase tracking-tight">
+                    <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal text-stone-900 uppercase tracking-tight">
                       {sinoVietnamese}
                     </h1>
-                    <span className="font-sans font-semibold text-xs uppercase tracking-wider text-mutedForeground mt-1 block">
+                    <span className="font-sans font-semibold text-xs uppercase tracking-wider text-stone-500 mt-1 block">
                       JLPT {kanji.level}
                     </span>
                   </div>
                 </div>
 
                 {/* Detailed Meaning */}
-                <p className="mt-4 font-sans text-base sm:text-lg text-neutral-800 font-normal">
+                <p className="mt-4 font-sans text-base sm:text-lg text-stone-700 font-normal">
                   {meaning || kanji.meaning_vi}
                 </p>
               </div>
@@ -228,7 +228,7 @@ export const KanjiDetailView: React.FC<KanjiDetailViewProps> = ({
               <button
                 type="button"
                 onClick={() => handleSpeak(kanji.character)}
-                className="border border-black bg-white hover:bg-black hover:text-white px-4 py-2 font-sans font-semibold text-xs uppercase tracking-wider rounded-none transition-colors duration-100 inline-flex items-center gap-2 self-start"
+                className="border border-stone-300 bg-white hover:bg-stone-100 text-stone-800 px-4 py-2 font-sans font-semibold text-xs uppercase tracking-wider rounded-none transition-colors duration-100 inline-flex items-center gap-2 self-start"
               >
                 <Volume2 className="w-3.5 h-3.5 stroke-[1.5]" />
                 <span>PHÁT ÂM</span>
@@ -236,18 +236,18 @@ export const KanjiDetailView: React.FC<KanjiDetailViewProps> = ({
             </div>
 
             {/* Quick Metrics Bar */}
-            <div className="border-t border-b border-black divide-x divide-black grid grid-cols-3 py-3 font-sans text-xs">
+            <div className="border-t border-b border-stone-200 divide-x divide-stone-200 grid grid-cols-3 py-3 font-sans text-xs">
               <div className="px-3 text-center">
-                <span className="text-mutedForeground block text-[10px] uppercase tracking-wider font-semibold">SỐ NÉT</span>
-                <span className="font-bold text-black text-sm mt-0.5 block">{kanji.stroke_count} NÉT</span>
+                <span className="text-stone-500 block text-[10px] uppercase tracking-wider font-semibold">SỐ NÉT</span>
+                <span className="font-bold text-stone-900 text-sm mt-0.5 block">{kanji.stroke_count} NÉT</span>
               </div>
               <div className="px-3 text-center">
-                <span className="text-mutedForeground block text-[10px] uppercase tracking-wider font-semibold">BỘ THỦ CHÍNH</span>
-                <span className="font-bold text-black text-sm mt-0.5 block">{kanji.radicals?.[0]?.character || '—'}</span>
+                <span className="text-stone-500 block text-[10px] uppercase tracking-wider font-semibold">BỘ THỦ CHÍNH</span>
+                <span className="font-bold text-stone-900 text-sm mt-0.5 block">{kanji.radicals?.[0]?.character || '—'}</span>
               </div>
               <div className="px-3 text-center">
-                <span className="text-mutedForeground block text-[10px] uppercase tracking-wider font-semibold">CẤP ĐỘ</span>
-                <span className="font-bold text-black text-sm mt-0.5 block">JLPT {kanji.level}</span>
+                <span className="text-stone-500 block text-[10px] uppercase tracking-wider font-semibold">CẤP ĐỘ</span>
+                <span className="font-bold text-stone-900 text-sm mt-0.5 block">JLPT {kanji.level}</span>
               </div>
             </div>
           </div>
@@ -255,12 +255,12 @@ export const KanjiDetailView: React.FC<KanjiDetailViewProps> = ({
           {/* Onyomi & Kunyomi Card */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {/* Onyomi Card */}
-            <div className="p-5 border border-black bg-white rounded-none shadow-none space-y-3">
-              <div className="flex items-center justify-between border-b border-black pb-2">
-                <span className="font-sans text-xs font-bold uppercase tracking-wider text-black">
+            <div className="p-5 border border-stone-200 bg-white rounded-none shadow-xs space-y-3">
+              <div className="flex items-center justify-between border-b border-stone-200 pb-2">
+                <span className="font-sans text-xs font-bold uppercase tracking-wider text-stone-900">
                   ÂM ON · ONYOMI
                 </span>
-                <span className="font-sans text-[10px] text-mutedForeground uppercase font-semibold">ÂM HÁN NHẬT</span>
+                <span className="font-sans text-[10px] text-stone-500 uppercase font-semibold">ÂM HÁN NHẬT</span>
               </div>
 
               {kanji.onyomi && kanji.onyomi.length > 0 ? (
@@ -270,25 +270,25 @@ export const KanjiDetailView: React.FC<KanjiDetailViewProps> = ({
                       key={idx}
                       type="button"
                       onClick={() => handleSpeak(on)}
-                      className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-black bg-white hover:bg-black hover:text-white font-sans text-sm font-bold rounded-none transition-colors duration-100 group"
+                      className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-stone-200 bg-stone-50 hover:bg-stone-100 text-stone-900 font-sans text-sm font-bold rounded-none transition-colors duration-100 group"
                     >
                       <span>{on}</span>
-                      <Volume2 className="w-3 h-3 stroke-[1.5]" />
+                      <Volume2 className="w-3 h-3 stroke-[1.5] text-stone-500 group-hover:text-stone-900" />
                     </button>
                   ))}
                 </div>
               ) : (
-                <p className="font-sans text-xs text-mutedForeground italic">Không có âm On</p>
+                <p className="font-sans text-xs text-stone-500 italic">Không có âm On</p>
               )}
             </div>
 
             {/* Kunyomi Card */}
-            <div className="p-5 border border-black bg-white rounded-none shadow-none space-y-3">
-              <div className="flex items-center justify-between border-b border-black pb-2">
-                <span className="font-sans text-xs font-bold uppercase tracking-wider text-black">
+            <div className="p-5 border border-stone-200 bg-white rounded-none shadow-xs space-y-3">
+              <div className="flex items-center justify-between border-b border-stone-200 pb-2">
+                <span className="font-sans text-xs font-bold uppercase tracking-wider text-stone-900">
                   ÂM KUN · KUNYOMI
                 </span>
-                <span className="font-sans text-[10px] text-mutedForeground uppercase font-semibold">ÂM THUẦN NHẬT</span>
+                <span className="font-sans text-[10px] text-stone-500 uppercase font-semibold">ÂM THUẦN NHẬT</span>
               </div>
 
               {kanji.kunyomi && kanji.kunyomi.length > 0 ? (
@@ -298,51 +298,51 @@ export const KanjiDetailView: React.FC<KanjiDetailViewProps> = ({
                       key={idx}
                       type="button"
                       onClick={() => handleSpeak(kun.replace(/[-.]/g, ''))}
-                      className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-black bg-white hover:bg-black hover:text-white font-sans text-sm font-bold rounded-none transition-colors duration-100 group"
+                      className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-stone-200 bg-stone-50 hover:bg-stone-100 text-stone-900 font-sans text-sm font-bold rounded-none transition-colors duration-100 group"
                     >
                       <span>{kun}</span>
-                      <Volume2 className="w-3 h-3 stroke-[1.5]" />
+                      <Volume2 className="w-3 h-3 stroke-[1.5] text-stone-500 group-hover:text-stone-900" />
                     </button>
                   ))}
                 </div>
               ) : (
-                <p className="font-sans text-xs text-mutedForeground italic">Không có âm Kun</p>
+                <p className="font-sans text-xs text-stone-500 italic">Không có âm Kun</p>
               )}
             </div>
           </div>
 
           {/* Radicals (Bộ thủ cấu thành) */}
-          <div className="p-5 border border-black bg-white rounded-none shadow-none space-y-4">
-            <div className="flex items-center justify-between border-b border-black pb-2">
-              <span className="font-sans text-xs font-bold uppercase tracking-wider text-black">
+          <div className="p-5 border border-stone-200 bg-white rounded-none shadow-xs space-y-4">
+            <div className="flex items-center justify-between border-b border-stone-200 pb-2">
+              <span className="font-sans text-xs font-bold uppercase tracking-wider text-stone-900">
                 BỘ THỦ CẤU THÀNH · RADICALS
               </span>
-              <span className="font-sans text-[10px] text-mutedForeground uppercase font-semibold">
+              <span className="font-sans text-[10px] text-stone-500 uppercase font-semibold">
                 {radicalsWithDetails.length} BỘ
               </span>
             </div>
 
             {radicalsWithDetails.length > 0 ? (
-              <div className="divide-y divide-borderLight border-t border-b border-black">
+              <div className="divide-y divide-stone-200 border-t border-b border-stone-200">
                 {radicalsWithDetails.map(({ ref, detail }, idx) => (
                   <div key={idx} className="py-3 flex items-center justify-between gap-4">
                     <div className="flex items-center gap-4">
-                      <span className="font-serif text-3xl font-normal text-black select-none">
+                      <span className="font-serif text-3xl font-normal text-stone-900 select-none">
                         {ref.character}
                       </span>
                       <div>
                         <div className="flex items-center gap-2">
-                          <span className="font-sans text-xs font-bold uppercase text-black">
+                          <span className="font-sans text-xs font-bold uppercase text-stone-900">
                             {detail?.meaning_vi || detail?.meaning_en || 'BỘ THỦ'}
                           </span>
                           {ref.is_main && (
-                            <span className="border border-black font-sans text-[9px] uppercase px-1 py-0.5 text-black font-semibold">
+                            <span className="border border-stone-300 bg-stone-100 font-sans text-[9px] uppercase px-1 py-0.5 text-stone-700 font-semibold">
                               BỘ CHÍNH
                             </span>
                           )}
                         </div>
                         {detail?.reading_ja && (
-                          <div className="font-sans text-xs text-mutedForeground mt-0.5">
+                          <div className="font-sans text-xs text-stone-500 mt-0.5">
                             Tên bộ: {detail.reading_ja}
                           </div>
                         )}
@@ -350,7 +350,7 @@ export const KanjiDetailView: React.FC<KanjiDetailViewProps> = ({
                     </div>
 
                     {detail?.stroke_count && (
-                      <span className="font-sans text-xs text-mutedForeground">
+                      <span className="font-sans text-xs text-stone-500">
                         {detail.stroke_count} nét
                       </span>
                     )}
@@ -358,54 +358,54 @@ export const KanjiDetailView: React.FC<KanjiDetailViewProps> = ({
                 ))}
               </div>
             ) : (
-              <p className="font-sans text-xs text-mutedForeground italic">
+              <p className="font-sans text-xs text-stone-500 italic">
                 Chưa có dữ liệu phân tách bộ thủ
               </p>
             )}
           </div>
 
           {/* Compounds (Từ ghép thông dụng) */}
-          <div className="p-5 border border-black bg-white rounded-none shadow-none space-y-4">
-            <div className="flex items-center justify-between border-b border-black pb-2">
-              <span className="font-sans text-xs font-bold uppercase tracking-wider text-black">
+          <div className="p-5 border border-stone-200 bg-white rounded-none shadow-xs space-y-4">
+            <div className="flex items-center justify-between border-b border-stone-200 pb-2">
+              <span className="font-sans text-xs font-bold uppercase tracking-wider text-stone-900">
                 TỪ VỰNG GHÉP THÔNG DỤNG · COMPOUNDS
               </span>
-              <span className="font-sans text-[10px] text-mutedForeground uppercase font-semibold">
+              <span className="font-sans text-[10px] text-stone-500 uppercase font-semibold">
                 {compounds.length} TỪ
               </span>
             </div>
 
             {compounds.length > 0 ? (
-              <div className="border-t border-b border-black divide-y divide-borderLight max-h-[440px] overflow-y-auto">
+              <div className="border-t border-b border-stone-200 divide-y divide-stone-200 max-h-[440px] overflow-y-auto">
                 {compounds.map((comp, idx) => (
                   <div
                     key={idx}
-                    className="py-3 px-2 flex items-center justify-between gap-3 hover:bg-neutral-50 transition-colors duration-100"
+                    className="py-3 px-2 flex items-center justify-between gap-3 hover:bg-stone-50 transition-colors duration-100"
                   >
                     <div className="flex-1 min-w-0">
                       <div className="flex items-baseline gap-2 flex-wrap">
-                        <span className="font-serif text-lg font-bold text-black">
+                        <span className="font-serif text-lg font-bold text-stone-900">
                           {comp.word}
                         </span>
                         {comp.reading && (
-                          <span className="font-sans text-xs text-neutral-600">
+                          <span className="font-sans text-xs text-stone-600">
                             【{comp.reading}】
                           </span>
                         )}
                         {comp.hanviet && (
-                          <span className="font-sans text-xs font-bold text-black uppercase tracking-wider">
+                          <span className="font-sans text-xs font-bold text-stone-800 uppercase tracking-wider">
                             ({comp.hanviet})
                           </span>
                         )}
                       </div>
-                      <p className="font-sans text-xs sm:text-sm text-neutral-700 mt-1 line-clamp-1">
+                      <p className="font-sans text-xs sm:text-sm text-stone-600 mt-1 line-clamp-1">
                         {comp.meaning}
                       </p>
                     </div>
 
                     <div className="flex items-center gap-2 shrink-0">
                       {comp.source && (
-                        <span className="hidden sm:inline-block font-sans text-[10px] font-semibold border border-black px-1.5 py-0.5 text-black">
+                        <span className="hidden sm:inline-block font-sans text-[10px] font-semibold border border-stone-200 bg-stone-100 px-1.5 py-0.5 text-stone-700">
                           {comp.source}
                         </span>
                       )}
@@ -413,7 +413,7 @@ export const KanjiDetailView: React.FC<KanjiDetailViewProps> = ({
                         type="button"
                         onClick={() => handleSpeak(comp.word)}
                         title={`Nghe phát âm: ${comp.word}`}
-                        className="border border-black p-1.5 bg-white text-black hover:bg-black hover:text-white transition-colors duration-100 rounded-none"
+                        className="border border-stone-300 p-1.5 bg-white text-stone-700 hover:bg-stone-100 hover:text-stone-900 transition-colors duration-100 rounded-none"
                       >
                         <Volume2 className="w-3.5 h-3.5 stroke-[1.5]" />
                       </button>
@@ -422,7 +422,7 @@ export const KanjiDetailView: React.FC<KanjiDetailViewProps> = ({
                 ))}
               </div>
             ) : (
-              <div className="text-center py-6 font-sans text-xs text-mutedForeground">
+              <div className="text-center py-6 font-sans text-xs text-stone-500">
                 Chưa có từ ghép mẫu trong kho từ vựng hiện tại
               </div>
             )}
