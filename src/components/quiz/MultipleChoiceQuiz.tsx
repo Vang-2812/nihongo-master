@@ -556,7 +556,7 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
             </div>
           )}
 
-          {/* Reading and Sino-Vietnamese */}
+          {/* Reading display (without Sino-Vietnamese leak) */}
           <div className="min-h-[2rem] flex items-center justify-center gap-2 mt-3">
             {activeDirection === 'vi_to_ja' ? (
               (showHint || isChecked) ? (
@@ -569,11 +569,6 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
                       ({currentItem.reading})
                     </span>
                   )}
-                  {currentItem.sinoVietnamese && (
-                    <span className="text-xs font-medium px-2 py-0.5 bg-indigo-50 text-indigo-800 border border-indigo-200 uppercase">
-                      {currentItem.sinoVietnamese}
-                    </span>
-                  )}
                 </div>
               ) : (
                 <span className="text-xs font-sans font-medium text-stone-500 uppercase tracking-wider">
@@ -581,18 +576,11 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
                 </span>
               )
             ) : (
-              (showKana || showHint || isChecked) ? (
+              (showKana || showHint) && currentItem.reading && currentItem.reading !== currentItem.word ? (
                 <div className="flex items-center gap-2 animate-fadeIn flex-wrap justify-center font-mono">
-                  {currentItem.reading && currentItem.reading !== currentItem.word && (
-                    <span className="text-base font-medium text-stone-500">
-                      {currentItem.reading}
-                    </span>
-                  )}
-                  {currentItem.sinoVietnamese && (
-                    <span className="text-xs font-medium px-2 py-0.5 bg-indigo-50 text-indigo-800 border border-indigo-200 uppercase">
-                      {currentItem.sinoVietnamese}
-                    </span>
-                  )}
+                  <span className="text-base font-medium text-stone-500">
+                    {currentItem.reading}
+                  </span>
                 </div>
               ) : (
                 <span className="text-xs font-sans font-medium text-stone-500 uppercase tracking-wider">
