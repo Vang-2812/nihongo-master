@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import {
@@ -24,13 +24,13 @@ export function generateMetadata({
 
   if (!lesson) {
     return {
-      title: 'Bài học từ vựng - Nihongo Master',
+      title: 'TANGO ARCHIVE | Nihongo Master',
     };
   }
 
   return {
-    title: `${lesson.title} - ${lesson.bookTitle} | Nihongo Master`,
-    description: `Học từ vựng tiếng Nhật ${lesson.title} thuộc giáo trình ${lesson.bookTitle} (${lesson.items.length} từ). Kèm phát âm giọng chuẩn bản xứ, âm Hán Việt và hệ thống ôn tập SRS thông minh.`,
+    title: `[ ${lesson.level} ] ${lesson.title} · ${lesson.bookTitle} | TANGO ARCHIVE`,
+    description: `Từ vựng tiếng Nhật: ${lesson.title} (${lesson.bookTitle}) gồm ${lesson.items.length} từ. Phát âm chuẩn bản xứ, âm Hán Việt, bài tập AI và chu kỳ ôn tập SRS.`,
   };
 }
 

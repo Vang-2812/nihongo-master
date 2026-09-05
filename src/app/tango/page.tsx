@@ -5,25 +5,13 @@ import Link from 'next/link';
 import {
   getAllTextbooks,
   getAllLessons,
-  getLessonsByTextbook,
-  LessonInfo,
   TextbookId,
-  TextbookInfo,
 } from '@/lib/vocabData';
 import { useVocabStore, LessonProgressStatus } from '@/stores/vocabStore';
 import { useSRSStore } from '@/stores/srsStore';
-import ProgressBar from '@/components/ui/ProgressBar';
 import {
-  BookOpen,
   Search,
-  Sparkles,
-  CheckCircle2,
-  Clock,
-  CircleDot,
-  ArrowRight,
   ChevronRight,
-  GraduationCap,
-  Layers,
   X,
   BookMarked,
   Filter,
@@ -156,340 +144,334 @@ export default function TangoCatalogPage() {
     return result;
   }, [lessonsWithStats, selectedBook, statusFilter, searchQuery]);
 
-  const getStatusBadge = (status: LessonProgressStatus) => {
-    switch (status) {
-      case 'complete':
-        return (
-          <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border border-emerald-200/80 dark:border-emerald-800/60">
-            <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500" />
-            Hoàn thành
-          </span>
-        );
-      case 'learning':
-        return (
-          <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-amber-50 dark:bg-amber-950/60 text-amber-700 dark:text-amber-300 border border-amber-200/80 dark:border-amber-800/60">
-            <Clock className="w-3.5 h-3.5 text-amber-500" />
-            Đang học
-          </span>
-        );
-      case 'not_started':
-      default:
-        return (
-          <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-700">
-            <CircleDot className="w-3.5 h-3.5 text-slate-400" />
-            Chưa học
-          </span>
-        );
-    }
-  };
-
-  const getLevelBadgeClass = (level: string) => {
-    switch (level) {
-      case 'N5':
-        return 'bg-emerald-500 text-white';
-      case 'N4':
-        return 'bg-blue-500 text-white';
-      case 'N3':
-        return 'bg-amber-500 text-white';
-      default:
-        return 'bg-indigo-500 text-white';
-    }
-  };
-
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 pb-20">
-      {/* Hero Banner & Stats Overview */}
-      <div className="border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-xs">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-            <div>
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 border border-indigo-200/80 dark:border-indigo-800/60 mb-3">
-                <BookOpen className="w-3.5 h-3.5" />
-                <span>Kho Từ Vựng Giáo Trình Toàn Diện</span>
-              </div>
-              <h1 className="text-2xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-                Học Từ Vựng Theo Giáo Trình (Tango)
-              </h1>
-              <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300 mt-2 max-w-2xl">
-                Trọn bộ 4 giáo trình chuẩn Minna no Nihongo (N5/N4), Mimikara Oboeru N3 và
-                Soumatome N3 với phát âm chuẩn bản xứ và hệ thống Flashcard SRS.
-              </p>
-            </div>
-
-            {/* Quick Stats Grid */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 bg-slate-50 dark:bg-slate-800/60 p-4 rounded-2xl border border-slate-200/80 dark:border-slate-700/60">
-              <div className="flex flex-col">
-                <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">
-                  Tổng giáo trình
-                </span>
-                <span className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white">
-                  4 bộ sách
-                </span>
-              </div>
-              <div className="flex flex-col">
-                <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">
-                  Tổng bài học
-                </span>
-                <span className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white">
-                  {overallStats.totalLessonsCount} bài
-                </span>
-              </div>
-              <div className="flex flex-col">
-                <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">
-                  Tổng từ vựng
-                </span>
-                <span className="text-lg sm:text-xl font-bold text-indigo-600 dark:text-indigo-400">
-                  {overallStats.totalVocab.toLocaleString()} từ
-                </span>
-              </div>
-              <div className="flex flex-col">
-                <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">
-                  Đã thuộc
-                </span>
-                <span className="text-lg sm:text-xl font-bold text-emerald-600 dark:text-emerald-400">
-                  {overallStats.totalKnown.toLocaleString()} ({overallStats.progressPercent}%)
-                </span>
-              </div>
-            </div>
-          </div>
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8 min-h-screen bg-white text-black">
+      {/* Editorial Header Section */}
+      <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+        <div>
+          <span className="font-mono text-xs uppercase tracking-widest text-mutedForeground block mb-2">
+            [ VOCABULARY ARCHIVE · 単語アーカイブ ]
+          </span>
+          <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl font-normal tracking-tight text-black uppercase leading-none">
+            VOCABULARY ARCHIVE / 単語帳
+          </h1>
+          <p className="font-mono text-xs sm:text-sm tracking-widest text-mutedForeground uppercase mt-3">
+            [ 4 STANDARD TEXTBOOKS · {overallStats.totalLessonsCount} LESSONS · {overallStats.totalVocab.toLocaleString()} VOCABULARY ENTRIES · SRS ]
+          </p>
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
-        {/* Textbook Selector Cards / Tabs */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-          {textbooks.map((book) => {
-            const isSelected = selectedBook === book.id;
-            const bookLessons = lessonsWithStats.filter((l) => l.bookId === book.id);
-            const bookTotalVocab = book.vocabCount;
-            const bookKnownVocab = bookLessons.reduce((sum, l) => sum + l.knownCount, 0);
-            const bookPercent =
-              bookTotalVocab > 0
-                ? Math.round((bookKnownVocab / bookTotalVocab) * 100)
-                : 0;
+      {/* 4px Heavy Black Rule */}
+      <div className="h-1 bg-black w-full" />
 
-            return (
-              <button
-                key={book.id}
-                type="button"
-                onClick={() => setSelectedBook(isSelected ? 'all' : book.id)}
-                className={`text-left p-5 rounded-2xl border transition-all duration-200 relative overflow-hidden flex flex-col justify-between ${
-                  isSelected
-                    ? 'bg-indigo-50/80 dark:bg-indigo-950/40 border-indigo-500 ring-2 ring-indigo-500/20 shadow-md'
-                    : 'bg-white dark:bg-slate-900 border-slate-200/80 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 hover:shadow-sm'
-                }`}
-              >
-                <div>
-                  <div className="flex items-center justify-between mb-2">
-                    <span
-                      className={`text-[11px] font-bold px-2 py-0.5 rounded-full ${getLevelBadgeClass(
-                        book.level
-                      )}`}
-                    >
-                      {book.level}
-                    </span>
-                    <span className="text-xs font-semibold text-slate-500 dark:text-slate-400">
-                      {book.lessonCount} bài
-                    </span>
-                  </div>
-
-                  <h2 className="font-bold text-base text-slate-900 dark:text-white leading-tight mb-1">
-                    {book.title}
-                  </h2>
-                  <p className="text-xs text-slate-500 dark:text-slate-400 line-clamp-2">
-                    {book.description}
-                  </p>
-                </div>
-
-                <div className="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800/80">
-                  <div className="flex items-center justify-between text-xs mb-1.5">
-                    <span className="text-slate-500 dark:text-slate-400">Tiến độ</span>
-                    <span className="font-bold text-slate-700 dark:text-slate-300">
-                      {bookKnownVocab} / {bookTotalVocab} từ ({bookPercent}%)
-                    </span>
-                  </div>
-                  <ProgressBar value={bookPercent} size="sm" variant="primary" />
-                </div>
-              </button>
-            );
-          })}
+      {/* Overall Stats Strip with Hairline Dividers */}
+      <div className="border-t-2 border-b-2 border-black divide-y sm:divide-y-0 sm:divide-x divide-black py-4 grid grid-cols-2 lg:grid-cols-4">
+        {/* Textbooks */}
+        <div className="p-4 flex flex-col justify-between">
+          <span className="font-mono text-[10px] uppercase tracking-widest text-mutedForeground">
+            [ TEXTBOOKS · 教科書 ]
+          </span>
+          <span className="font-serif text-4xl sm:text-5xl font-light text-black tracking-tight leading-none mt-3">
+            4 BỘ SÁCH
+          </span>
         </div>
 
-        {/* Search & Filter Bar */}
-        <div className="bg-white dark:bg-slate-900 rounded-2xl p-4 border border-slate-200/80 dark:border-slate-800 shadow-xs mb-6">
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-            {/* Search Input */}
-            <div className="relative flex-1">
-              <Search className="w-5 h-5 absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
-              <input
-                type="text"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Tìm bài học, tiêu đề, từ vựng tiếng Nhật, nghĩa tiếng Việt..."
-                className="w-full pl-10 pr-10 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/60 text-slate-900 dark:text-slate-100 placeholder-slate-400 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
-              />
-              {searchQuery && (
-                <button
-                  type="button"
-                  onClick={() => setSearchQuery('')}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 p-1 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 rounded-full"
-                >
-                  <X className="w-4 h-4" />
-                </button>
-              )}
-            </div>
-
-            {/* Status Filter Chips */}
-            <div className="flex items-center gap-1.5 overflow-x-auto pb-1 md:pb-0">
-              <span className="text-xs font-semibold text-slate-400 mr-1 flex items-center gap-1">
-                <Filter className="w-3.5 h-3.5" /> Lọc:
-              </span>
-              {[
-                { id: 'all', label: 'Tất cả' },
-                { id: 'not_started', label: 'Chưa học' },
-                { id: 'learning', label: 'Đang học' },
-                { id: 'complete', label: 'Hoàn thành' },
-              ].map((chip) => {
-                const active = statusFilter === chip.id;
-                return (
-                  <button
-                    key={chip.id}
-                    type="button"
-                    onClick={() => setStatusFilter(chip.id as StatusFilter)}
-                    className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all whitespace-nowrap ${
-                      active
-                        ? 'bg-indigo-600 text-white shadow-xs'
-                        : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700'
-                    }`}
-                  >
-                    {chip.label}
-                  </button>
-                );
-              })}
-            </div>
-          </div>
+        {/* Total Lessons */}
+        <div className="p-4 flex flex-col justify-between">
+          <span className="font-mono text-[10px] uppercase tracking-widest text-mutedForeground">
+            [ TOTAL LESSONS · 全課 ]
+          </span>
+          <span className="font-serif text-4xl sm:text-5xl font-light text-black tracking-tight leading-none mt-3">
+            {overallStats.totalLessonsCount} BÀI
+          </span>
         </div>
 
-        {/* Lesson List Header */}
-        <div className="flex items-center justify-between mb-4">
-          <div className="flex items-center gap-2">
-            <h2 className="text-lg font-bold text-slate-900 dark:text-white">
-              Danh sách bài học
-            </h2>
-            <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400">
-              {filteredLessons.length} bài
+        {/* Total Words */}
+        <div className="p-4 flex flex-col justify-between">
+          <span className="font-mono text-[10px] uppercase tracking-widest text-mutedForeground">
+            [ TOTAL VOCABULARY · 総語彙 ]
+          </span>
+          <span className="font-serif text-4xl sm:text-5xl font-light text-black tracking-tight leading-none mt-3">
+            {overallStats.totalVocab.toLocaleString()}
+          </span>
+        </div>
+
+        {/* Mastered */}
+        <div className="p-4 flex flex-col justify-between">
+          <div className="flex items-baseline justify-between">
+            <span className="font-mono text-[10px] uppercase tracking-widest text-mutedForeground">
+              [ MASTERED · 習得済み ]
+            </span>
+            <span className="font-mono text-xs font-bold text-black">
+              [{overallStats.progressPercent}%]
             </span>
           </div>
+          <span className="font-serif text-4xl sm:text-5xl font-light text-black tracking-tight leading-none mt-3">
+            {overallStats.totalKnown.toLocaleString()}
+          </span>
+        </div>
+      </div>
 
-          {selectedBook !== 'all' && (
+      {/* Textbook Monograph Cards (High-fashion book covers) */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+        {textbooks.map((book, idx) => {
+          const isSelected = selectedBook === book.id;
+          const bookLessons = lessonsWithStats.filter((l) => l.bookId === book.id);
+          const bookTotalVocab = book.vocabCount;
+          const bookKnownVocab = bookLessons.reduce((sum, l) => sum + l.knownCount, 0);
+          const bookPercent =
+            bookTotalVocab > 0
+              ? Math.round((bookKnownVocab / bookTotalVocab) * 100)
+              : 0;
+
+          return (
+            <button
+              key={book.id}
+              type="button"
+              onClick={() => setSelectedBook(isSelected ? 'all' : book.id)}
+              className={`text-left border-2 border-black p-6 sm:p-7 flex flex-col justify-between transition-colors duration-100 rounded-none shadow-none group relative cursor-pointer ${
+                isSelected
+                  ? 'bg-black text-white'
+                  : 'bg-white text-black hover:bg-black hover:text-white'
+              }`}
+            >
+              {/* Monograph Top: Book Volume Index & Level Badge */}
+              <div className="flex items-center justify-between gap-2">
+                <span
+                  className={`font-mono text-xs uppercase tracking-widest border px-2 py-0.5 ${
+                    isSelected
+                      ? 'border-white text-white'
+                      : 'border-black text-black group-hover:border-white group-hover:text-white'
+                  }`}
+                >
+                  [ {book.level} ]
+                </span>
+                <span
+                  className={`font-mono text-[11px] uppercase tracking-wider ${
+                    isSelected ? 'text-neutral-400' : 'text-mutedForeground group-hover:text-neutral-400'
+                  }`}
+                >
+                  VOL. 0{idx + 1}
+                </span>
+              </div>
+
+              {/* Monograph Center: Giant Serif Number & Editorial Book Title */}
+              <div className="my-8">
+                <span
+                  className={`font-serif text-6xl sm:text-7xl font-light leading-none block select-none mb-3 ${
+                    isSelected ? 'text-white' : 'text-black group-hover:text-white'
+                  }`}
+                >
+                  0{idx + 1}
+                </span>
+                <h2
+                  className={`font-serif text-xl sm:text-2xl font-bold uppercase tracking-tight leading-snug ${
+                    isSelected ? 'text-white' : 'text-black group-hover:text-white'
+                  }`}
+                >
+                  {book.title}
+                </h2>
+                <p
+                  className={`font-body text-xs sm:text-sm mt-2 line-clamp-2 ${
+                    isSelected ? 'text-neutral-300' : 'text-mutedForeground group-hover:text-neutral-300'
+                  }`}
+                >
+                  {book.description}
+                </p>
+              </div>
+
+              {/* Monograph Bottom: Metadata & Monospace Progress */}
+              <div
+                className={`pt-3 border-t font-mono text-xs uppercase tracking-wider space-y-2 ${
+                  isSelected ? 'border-white' : 'border-black group-hover:border-white'
+                }`}
+              >
+                <div
+                  className={`flex items-center justify-between text-[11px] ${
+                    isSelected ? 'text-neutral-300' : 'text-mutedForeground group-hover:text-neutral-300'
+                  }`}
+                >
+                  <span>{book.lessonCount} BÀI HỌC</span>
+                  <span>{book.vocabCount} TỪ VỰNG</span>
+                </div>
+                <div
+                  className={`flex items-center justify-between font-bold text-xs ${
+                    isSelected ? 'text-white' : 'text-black group-hover:text-white'
+                  }`}
+                >
+                  <span>TIẾN ĐỘ</span>
+                  <span>[{bookKnownVocab}/{bookTotalVocab} · {bookPercent}%]</span>
+                </div>
+                {isSelected && (
+                  <div className="text-[10px] tracking-widest text-center pt-1 border-t border-white/40">
+                    [ ĐANG LỌC BỘ SÁCH NÀY ]
+                  </div>
+                )}
+              </div>
+            </button>
+          );
+        })}
+      </div>
+
+      {/* Search & Filter Bar */}
+      <div className="border-2 border-black p-4 mb-6 bg-white rounded-none shadow-none flex flex-col md:flex-row md:items-center justify-between gap-4">
+        {/* Search Input */}
+        <div className="relative flex-1">
+          <Search className="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-mutedForeground pointer-events-none" />
+          <input
+            type="text"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            placeholder="Tìm kiếm bài học, Kanji, Hiragana hoặc nghĩa tiếng Việt..."
+            className="w-full pl-9 pr-9 py-2 border border-black bg-white text-black placeholder-neutral-400 font-mono text-xs sm:text-sm rounded-none focus:outline-none focus:ring-1 focus:ring-black"
+          />
+          {searchQuery && (
             <button
               type="button"
-              onClick={() => setSelectedBook('all')}
-              className="text-xs font-semibold text-indigo-600 dark:text-indigo-400 hover:underline flex items-center gap-1"
+              onClick={() => setSearchQuery('')}
+              className="absolute right-3 top-1/2 -translate-y-1/2 p-1 text-black hover:bg-neutral-200"
             >
-              <span>Xem tất cả giáo trình</span>
-              <ChevronRight className="w-3.5 h-3.5" />
+              <X className="w-3.5 h-3.5" />
             </button>
           )}
         </div>
 
-        {/* Lesson Cards Grid */}
-        {filteredLessons.length === 0 ? (
-          <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-12 text-center">
-            <BookMarked className="w-12 h-12 text-slate-300 dark:text-slate-600 mx-auto mb-3" />
-            <h3 className="text-base font-bold text-slate-800 dark:text-slate-200">
-              Không tìm thấy bài học nào phù hợp
-            </h3>
-            <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">
-              Vui lòng thử thay đổi từ khóa tìm kiếm hoặc bỏ chọn các bộ lọc.
-            </p>
-            <button
-              type="button"
-              onClick={() => {
-                setSearchQuery('');
-                setSelectedBook('all');
-                setStatusFilter('all');
-              }}
-              className="mt-4 inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 border border-indigo-200/80 dark:border-indigo-800/60 hover:bg-indigo-100"
-            >
-              Xóa bộ lọc
-            </button>
-          </div>
-        ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {filteredLessons.map((lesson) => {
-              return (
-                <Link
-                  key={lesson.id}
-                  href={`/tango/${lesson.id}`}
-                  className="group block rounded-2xl border border-slate-200/80 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 transition-all duration-200 hover:border-indigo-300 dark:hover:border-indigo-700 hover:shadow-md relative flex flex-col justify-between"
-                >
-                  <div>
-                    {/* Header: Book badge & Status badge */}
-                    <div className="flex items-center justify-between gap-2 mb-2">
-                      <div className="flex items-center gap-1.5">
-                        <span
-                          className={`text-[10px] font-bold px-1.5 py-0.5 rounded ${getLevelBadgeClass(
-                            lesson.level
-                          )}`}
-                        >
-                          {lesson.level}
-                        </span>
-                        <span className="text-xs font-medium text-slate-500 dark:text-slate-400 truncate max-w-[150px]">
-                          {lesson.bookTitle}
-                        </span>
-                      </div>
-                      {getStatusBadge(lesson.status)}
-                    </div>
+        {/* Status Filter Chips */}
+        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 md:pb-0">
+          <span className="font-mono text-xs uppercase tracking-wider text-mutedForeground mr-1 flex items-center gap-1 shrink-0">
+            <Filter className="w-3.5 h-3.5" /> TRẠNG THÁI:
+          </span>
+          {[
+            { id: 'all', label: 'TẤT CẢ' },
+            { id: 'not_started', label: 'CHƯA HỌC' },
+            { id: 'learning', label: 'ĐANG HỌC' },
+            { id: 'complete', label: 'HOÀN THÀNH' },
+          ].map((chip) => {
+            const active = statusFilter === chip.id;
+            return (
+              <button
+                key={chip.id}
+                type="button"
+                onClick={() => setStatusFilter(chip.id as StatusFilter)}
+                className={`border border-black font-mono text-xs uppercase tracking-wider px-3 py-1.5 rounded-none transition-colors duration-100 whitespace-nowrap ${
+                  active
+                    ? 'bg-black text-white'
+                    : 'bg-white text-black hover:bg-muted'
+                }`}
+              >
+                [ {chip.label} ]
+              </button>
+            );
+          })}
+        </div>
+      </div>
 
-                    {/* Lesson Title */}
-                    <h3 className="text-base font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors leading-snug">
-                      {lesson.title}
-                    </h3>
+      {/* Lesson List Header */}
+      <div className="flex items-center justify-between mb-4">
+        <div className="flex items-center gap-2">
+          <h2 className="font-serif text-xl sm:text-2xl font-normal text-black uppercase">
+            DANH SÁCH BÀI HỌC
+          </h2>
+          <span className="font-mono text-xs border border-black px-2 py-0.5 text-black">
+            [{filteredLessons.length} BÀI]
+          </span>
+        </div>
 
-                    {/* Lesson Subtitle / Theme */}
-                    {lesson.subtitle && (
-                      <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 line-clamp-2">
-                        {lesson.subtitle}
-                      </p>
-                    )}
-                  </div>
-
-                  {/* Footer: Vocab Count & Progress Bar */}
-                  <div className="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800/80">
-                    <div className="flex items-center justify-between text-xs mb-1.5">
-                      <span className="font-semibold text-slate-700 dark:text-slate-300">
-                        {lesson.items.length} từ vựng
-                      </span>
-                      <span className="text-slate-500 dark:text-slate-400">
-                        Đã thuộc {lesson.knownCount}/{lesson.items.length} (
-                        {lesson.progressPercent}%)
-                      </span>
-                    </div>
-
-                    <ProgressBar
-                      value={lesson.progressPercent}
-                      size="sm"
-                      variant={
-                        lesson.status === 'complete'
-                          ? 'emerald'
-                          : lesson.status === 'learning'
-                          ? 'amber'
-                          : 'primary'
-                      }
-                    />
-
-                    <div className="flex items-center justify-end mt-3 text-xs font-semibold text-indigo-600 dark:text-indigo-400 group-hover:translate-x-1 transition-transform">
-                      <span>Vào học bài này</span>
-                      <ArrowRight className="w-3.5 h-3.5 ml-1" />
-                    </div>
-                  </div>
-                </Link>
-              );
-            })}
-          </div>
+        {selectedBook !== 'all' && (
+          <button
+            type="button"
+            onClick={() => setSelectedBook('all')}
+            className="font-mono text-xs uppercase tracking-wider text-black hover:underline flex items-center gap-1"
+          >
+            <span>[ XEM TẤT CẢ GIÁO TRÌNH ]</span>
+            <ChevronRight className="w-3.5 h-3.5" />
+          </button>
         )}
       </div>
+
+      {/* Lesson Cards Grid */}
+      {filteredLessons.length === 0 ? (
+        <div className="border-2 border-dashed border-black bg-white p-12 text-center rounded-none">
+          <BookMarked className="w-10 h-10 text-black mx-auto mb-3 stroke-[1.5]" />
+          <h3 className="font-serif text-lg font-normal text-black uppercase">
+            KHÔNG TÌM THẤY BÀI HỌC NÀO PHÙ HỢP
+          </h3>
+          <p className="font-body text-sm text-mutedForeground mt-1">
+            Vui lòng thử thay đổi từ khóa tìm kiếm hoặc bỏ chọn các bộ lọc.
+          </p>
+          <button
+            type="button"
+            onClick={() => {
+              setSearchQuery('');
+              setSelectedBook('all');
+              setStatusFilter('all');
+            }}
+            className="mt-4 border border-black bg-black text-white hover:bg-white hover:text-black px-4 py-2 font-mono text-xs uppercase tracking-wider transition-colors duration-100 rounded-none"
+          >
+            [ XÓA TẤT CẢ BỘ LỌC ]
+          </button>
+        </div>
+      ) : (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {filteredLessons.map((lesson) => {
+            return (
+              <Link
+                key={lesson.id}
+                href={`/tango/${lesson.id}`}
+                className="group block border border-black bg-white p-5 transition-colors duration-100 hover:bg-black hover:text-white rounded-none shadow-none relative flex flex-col justify-between"
+              >
+                <div>
+                  {/* Header: Book badge & Status badge */}
+                  <div className="flex items-center justify-between gap-2 mb-2">
+                    <div className="flex items-center gap-1.5">
+                      <span className="font-mono text-[10px] uppercase tracking-widest border border-black group-hover:border-white px-1.5 py-0.5 text-black group-hover:text-white">
+                        {lesson.level}
+                      </span>
+                      <span className="font-mono text-xs text-mutedForeground group-hover:text-neutral-300 truncate max-w-[150px]">
+                        {lesson.bookTitle}
+                      </span>
+                    </div>
+                    <span className="font-mono text-[10px] uppercase tracking-wider border border-black group-hover:border-white px-1.5 py-0.5 text-black group-hover:text-white">
+                      {lesson.status === 'complete' && '[ COMPLETED ]'}
+                      {lesson.status === 'learning' && '[ LEARNING ]'}
+                      {lesson.status === 'not_started' && '[ NEW ]'}
+                    </span>
+                  </div>
+
+                  {/* Lesson Title */}
+                  <h3 className="font-serif text-lg sm:text-xl font-bold text-black group-hover:text-white leading-snug mt-2">
+                    {lesson.title}
+                  </h3>
+
+                  {/* Lesson Subtitle */}
+                  {lesson.subtitle && (
+                    <p className="font-body text-xs text-mutedForeground group-hover:text-neutral-300 mt-1 line-clamp-2">
+                      {lesson.subtitle}
+                    </p>
+                  )}
+                </div>
+
+                {/* Footer: Vocab Count & Progress in Mono */}
+                <div className="mt-4 pt-3 border-t border-borderLight group-hover:border-neutral-800">
+                  <div className="flex items-center justify-between font-mono text-xs mb-1.5">
+                    <span className="text-black group-hover:text-white">
+                      {lesson.items.length} TỪ VỰNG
+                    </span>
+                    <span className="font-bold text-black group-hover:text-white">
+                      [{lesson.knownCount}/{lesson.items.length} · {lesson.progressPercent}%]
+                    </span>
+                  </div>
+
+                  <div className="flex items-center justify-end mt-3 font-mono text-xs uppercase tracking-wider text-black group-hover:text-white group-hover:translate-x-1 transition-transform">
+                    <span>[ VÀO HỌC BÀI → ]</span>
+                  </div>
+                </div>
+              </Link>
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 }
+
