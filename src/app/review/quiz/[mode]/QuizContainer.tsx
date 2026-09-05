@@ -135,8 +135,8 @@ export default function QuizContainer({ mode }: QuizContainerProps) {
     return (
       <div className="min-h-[calc(100vh-4rem)] flex items-center justify-center">
         <div className="flex flex-col items-center gap-3">
-          <div className="w-8 h-8 border-2 border-black border-t-transparent animate-spin rounded-none" />
-          <p className="text-xs font-mono uppercase tracking-widest text-muted-foreground">
+          <div className="w-8 h-8 border-2 border-stone-800 border-t-transparent animate-spin rounded-none" />
+          <p className="text-xs font-mono uppercase tracking-widest text-stone-500">
             INITIALIZING QUIZ SESSION...
           </p>
         </div>
@@ -153,10 +153,10 @@ export default function QuizContainer({ mode }: QuizContainerProps) {
   return (
     <div className="min-h-[calc(100vh-4rem)] py-4 sm:py-8 px-4 max-w-4xl mx-auto space-y-6 animate-fadeIn">
       {/* Top Header Navigation */}
-      <div className="flex items-center justify-between pb-3 border-b-2 border-black">
+      <div className="flex items-center justify-between pb-3 border-b border-stone-200">
         <Link
           href="/review/quiz"
-          className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-black bg-white hover:bg-black hover:text-white text-xs font-sans font-medium uppercase tracking-wider transition-colors duration-100 rounded-none shadow-none"
+          className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-stone-300 bg-white hover:bg-stone-100 text-stone-800 text-xs font-sans font-medium uppercase tracking-wider transition-colors duration-100 rounded-none shadow-xs"
           title="Thoát và đổi chế độ"
         >
           <ArrowLeft className="w-3.5 h-3.5" />
@@ -164,10 +164,10 @@ export default function QuizContainer({ mode }: QuizContainerProps) {
         </Link>
 
         <div className="text-center">
-          <h1 className="text-sm sm:text-base font-serif font-bold uppercase tracking-wide text-black">
+          <h1 className="text-sm sm:text-base font-serif font-medium uppercase tracking-wide text-stone-900">
             {modeTitles[mode] || 'PRACTICE QUIZ'}
           </h1>
-          <p className="text-[11px] font-mono uppercase tracking-wider text-muted-foreground">
+          <p className="text-[11px] font-mono uppercase tracking-wider text-stone-500">
             {titleDescription}
           </p>
         </div>
@@ -175,7 +175,7 @@ export default function QuizContainer({ mode }: QuizContainerProps) {
         <button
           type="button"
           onClick={handleRestart}
-          className="p-2 border border-black bg-white hover:bg-black hover:text-white transition-colors duration-100 rounded-none shadow-none"
+          className="p-2 border border-stone-300 bg-white text-stone-700 hover:bg-stone-100 transition-colors duration-100 rounded-none shadow-xs"
           title="Tạo lại bộ câu hỏi mới"
         >
           <RefreshCw className="w-3.5 h-3.5" />

@@ -260,11 +260,11 @@ export const MatchingGame: React.FC<MatchingGameProps> = ({
 
   if (!items || items.length === 0) {
     return (
-      <div className="max-w-md mx-auto p-6 text-center space-y-4 border-2 border-black bg-white rounded-none shadow-none">
-        <p className="font-sans text-sm text-black">KHÔNG CÓ ĐỦ THẺ TỪ VỰNG ĐỂ CHƠI GHÉP THẺ</p>
+      <div className="max-w-md mx-auto p-6 text-center space-y-4 border border-stone-200 bg-white rounded-none shadow-sm">
+        <p className="font-sans text-sm text-stone-800">KHÔNG CÓ ĐỦ THẺ TỪ VỰNG ĐỂ CHƠI GHÉP THẺ</p>
         <Link
           href="/review/quiz"
-          className="inline-flex items-center gap-2 px-5 py-2.5 border-2 border-black bg-black text-white font-sans text-xs uppercase font-bold hover:bg-white hover:text-black transition-colors duration-100 rounded-none shadow-none"
+          className="inline-flex items-center gap-2 px-5 py-2.5 border border-stone-900 bg-stone-900 text-white font-sans text-xs uppercase font-medium hover:bg-stone-800 transition-colors duration-100 rounded-none shadow-xs"
         >
           <Dices className="w-4 h-4" />
           <span>QUAY LẠI MENU QUIZ</span>
@@ -277,63 +277,63 @@ export const MatchingGame: React.FC<MatchingGameProps> = ({
   if (isFinished) {
     return (
       <div className={`w-full max-w-3xl mx-auto p-4 sm:p-6 space-y-8 animate-fadeIn ${className}`}>
-        {/* High-Fashion Editorial Title Banner */}
-        <div className="text-center space-y-2 pb-6 border-b-4 border-black">
-          <div className="font-mono text-xs uppercase tracking-widest text-mutedForeground">
+        {/* Editorial Title Banner */}
+        <div className="text-center space-y-2 pb-6 border-b border-stone-200">
+          <div className="font-mono text-xs uppercase tracking-widest text-stone-500">
             HOÀN THÀNH TRÒ CHƠI GHÉP THẺ
           </div>
-          <h1 className="font-serif font-black text-4xl sm:text-6xl text-black tracking-tight uppercase">
+          <h1 className="font-serif font-light text-4xl sm:text-6xl text-stone-900 tracking-tight uppercase">
             MATCHING COMPLETED
           </h1>
-          <p className="font-serif text-lg sm:text-2xl text-black tracking-widest">
+          <p className="font-serif text-lg sm:text-2xl text-stone-700 tracking-widest">
             神経衰弱完了
           </p>
-          <p className="font-sans text-xs uppercase tracking-wider text-mutedForeground mt-1 font-medium">
+          <p className="font-sans text-xs uppercase tracking-wider text-stone-500 mt-1 font-medium">
             BẠN ĐÃ GHÉP CHÍNH XÁC {totalPairs} CẶP THẺ
           </p>
         </div>
 
-        {/* 3 Core Stats Grid with 4px black rules and 6xl serif numbers */}
-        <div className="grid grid-cols-3 border-b-4 border-black divide-x-2 divide-black text-center">
-          <div className="p-4 sm:p-6 flex flex-col items-center justify-center bg-white">
-            <span className="font-mono text-xs uppercase tracking-widest text-mutedForeground">
+        {/* 3 Core Stats Grid with 1px stone borders and light serif numbers */}
+        <div className="grid grid-cols-3 border-t border-b border-stone-200 divide-x divide-stone-200 text-center bg-white">
+          <div className="p-4 sm:p-6 flex flex-col items-center justify-center">
+            <span className="font-mono text-xs uppercase tracking-widest text-stone-500">
               THỜI GIAN
             </span>
-            <span className="font-mono text-3xl sm:text-5xl font-black text-black my-1">
+            <span className="font-mono text-3xl sm:text-5xl font-light text-stone-900 my-1">
               {formatTime(timeSeconds)}
             </span>
-            <span className="font-mono text-[11px] text-mutedForeground uppercase tracking-wider">
+            <span className="font-mono text-[11px] text-stone-500 uppercase tracking-wider">
               PHÚT:GIÂY
             </span>
           </div>
 
-          <div className="p-4 sm:p-6 flex flex-col items-center justify-center bg-white">
-            <span className="font-mono text-xs uppercase tracking-widest text-mutedForeground">
+          <div className="p-4 sm:p-6 flex flex-col items-center justify-center">
+            <span className="font-mono text-xs uppercase tracking-widest text-stone-500">
               LƯỢT LẬT
             </span>
-            <span className="font-serif text-3xl sm:text-5xl font-black text-black my-1">
+            <span className="font-serif text-3xl sm:text-5xl font-light text-stone-900 my-1">
               {turns}
             </span>
-            <span className="font-mono text-[11px] text-mutedForeground uppercase tracking-wider">
+            <span className="font-mono text-[11px] text-stone-500 uppercase tracking-wider">
               LƯỢT THỬ
             </span>
           </div>
 
-          <div className="p-4 sm:p-6 flex flex-col items-center justify-center bg-white">
-            <span className="font-mono text-xs uppercase tracking-widest text-mutedForeground">
+          <div className="p-4 sm:p-6 flex flex-col items-center justify-center">
+            <span className="font-mono text-xs uppercase tracking-widest text-stone-500">
               ĐIỂM THƯỞNG
             </span>
-            <span className="font-serif text-3xl sm:text-5xl font-black text-black my-1">
+            <span className="font-serif text-3xl sm:text-5xl font-light text-stone-900 my-1">
               +25
             </span>
-            <span className="font-mono text-[11px] text-mutedForeground uppercase tracking-wider">
+            <span className="font-mono text-[11px] text-stone-500 uppercase tracking-wider">
               XP
             </span>
           </div>
         </div>
 
         {bestTime && (
-          <div className="text-center font-mono text-xs uppercase tracking-wider text-black border-2 border-black p-3 bg-muted">
+          <div className="text-center font-mono text-xs uppercase tracking-wider text-amber-900 border border-amber-200 p-3 bg-amber-50">
             KỶ LỤC TỐT NHẤT CỦA BẠN: {formatTime(bestTime)}
           </div>
         )}
@@ -343,7 +343,7 @@ export const MatchingGame: React.FC<MatchingGameProps> = ({
           <button
             type="button"
             onClick={initializeGame}
-            className="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-black bg-white text-black font-sans text-xs font-bold uppercase tracking-wider hover:bg-black hover:text-white transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
+            className="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 px-6 py-3.5 border border-stone-300 bg-white text-stone-800 font-sans text-xs font-medium uppercase tracking-wider hover:bg-stone-100 transition-colors duration-100 rounded-none shadow-xs active:scale-[0.98]"
           >
             <RotateCcw className="w-4 h-4" />
             <span>CHƠI LẠI VÁN KHÁC</span>
@@ -351,7 +351,7 @@ export const MatchingGame: React.FC<MatchingGameProps> = ({
 
           <Link
             href="/review/quiz"
-            className="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-black bg-white text-black font-sans text-xs font-bold uppercase tracking-wider hover:bg-black hover:text-white transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
+            className="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 px-6 py-3.5 border border-stone-300 bg-white text-stone-800 font-sans text-xs font-medium uppercase tracking-wider hover:bg-stone-100 transition-colors duration-100 rounded-none shadow-xs active:scale-[0.98]"
           >
             <Dices className="w-4 h-4" />
             <span>ĐỔI CHẾ ĐỘ QUIZ</span>
@@ -359,7 +359,7 @@ export const MatchingGame: React.FC<MatchingGameProps> = ({
 
           <Link
             href="/"
-            className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-black bg-black text-white font-sans text-xs font-bold uppercase tracking-wider hover:bg-white hover:text-black transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
+            className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3.5 border border-stone-900 bg-stone-900 text-white font-sans text-xs font-medium uppercase tracking-wider hover:bg-stone-800 transition-colors duration-100 rounded-none shadow-xs active:scale-[0.98]"
           >
             <Home className="w-4 h-4" />
             <span>TRANG CHỦ</span>
@@ -375,30 +375,30 @@ export const MatchingGame: React.FC<MatchingGameProps> = ({
   return (
     <div className={`w-full max-w-3xl mx-auto space-y-6 ${className}`}>
       {/* Game Stats Header */}
-      <div className="flex items-center justify-between gap-2 p-3 sm:p-4 border-2 border-black bg-white rounded-none shadow-none">
+      <div className="flex items-center justify-between gap-2 p-3 sm:p-4 border border-stone-200 bg-white rounded-none shadow-sm">
         {/* Progress */}
-        <div className="font-mono text-xs sm:text-sm font-bold uppercase">
-          <span className="text-mutedForeground mr-1">ĐÃ GHÉP:</span>
-          <span className="text-black">{matchedPairsCount}/{totalPairs} CẶP</span>
+        <div className="font-mono text-xs sm:text-sm font-medium uppercase">
+          <span className="text-stone-500 mr-1">ĐÃ GHÉP:</span>
+          <span className="text-stone-900 font-bold">{matchedPairsCount}/{totalPairs} CẶP</span>
         </div>
 
         {/* Turns */}
-        <div className="font-mono text-xs sm:text-sm font-bold uppercase">
-          <span className="text-mutedForeground mr-1">LƯỢT:</span>
-          <span className="text-black">{turns}</span>
+        <div className="font-mono text-xs sm:text-sm font-medium uppercase">
+          <span className="text-stone-500 mr-1">LƯỢT:</span>
+          <span className="text-stone-900 font-bold">{turns}</span>
         </div>
 
         {/* Timer */}
-        <div className="font-mono text-xs sm:text-sm font-bold uppercase">
-          <span className="text-mutedForeground mr-1">THỜI GIAN:</span>
-          <span className="text-black">{formatTime(timeSeconds)}</span>
+        <div className="font-mono text-xs sm:text-sm font-medium uppercase">
+          <span className="text-stone-500 mr-1">THỜI GIAN:</span>
+          <span className="text-stone-900 font-bold">{formatTime(timeSeconds)}</span>
         </div>
 
         {/* Restart Button */}
         <button
           type="button"
           onClick={initializeGame}
-          className="p-1.5 border border-black bg-white text-black hover:bg-black hover:text-white transition-colors duration-100 rounded-none shadow-none shrink-0"
+          className="p-1.5 border border-stone-300 bg-white text-stone-700 hover:bg-stone-100 transition-colors duration-100 rounded-none shadow-xs shrink-0"
           title="Xáo bài và chơi lại"
         >
           <RotateCcw className="w-4 h-4" />
@@ -413,26 +413,36 @@ export const MatchingGame: React.FC<MatchingGameProps> = ({
           const isJustMatched = justMatchedCardIds.includes(card.id);
           const isMatched = card.isMatched;
 
-          // Compute Dynamic Card Styling with monochrome feedback states
+          // Compute Dynamic Card Styling with semantic muted feedback states
           let cardStyle =
-            'border-2 border-black bg-white text-black hover:bg-muted hover:border-black';
+            'border border-stone-300 bg-white text-stone-900 hover:border-stone-400 hover:bg-stone-50 shadow-xs';
+          let tagBadgeStyle = 'border-stone-300 text-stone-600 bg-stone-50';
+          let subTextColor = 'text-stone-500';
 
           if (isMatched) {
-            // Matched pair: Inverted solid black with opacity and smooth strike/checkmark
+            // Matched pair: Muted emerald
             cardStyle =
-              'border-2 border-black bg-black text-white opacity-40 cursor-default line-through';
+              'border border-emerald-300 bg-emerald-50 text-emerald-800 pointer-events-none opacity-80';
+            tagBadgeStyle = 'border-emerald-300 text-emerald-700 bg-emerald-100';
+            subTextColor = 'text-emerald-700';
           } else if (isJustMatched) {
-            // Just matched pair: Inverted solid black with border
+            // Just matched pair: Highlighted emerald
             cardStyle =
-              'border-2 border-black bg-black text-white ring-2 ring-black scale-102';
+              'border-2 border-emerald-500 bg-emerald-100 text-emerald-900 scale-102 shadow-sm';
+            tagBadgeStyle = 'border-emerald-400 text-emerald-800 bg-emerald-200';
+            subTextColor = 'text-emerald-800';
           } else if (isMismatched) {
-            // Mismatch: Heavy 4px black border / shake feedback without red color
+            // Mismatch: Soft rose feedback with shake
             cardStyle =
-              'border-4 border-black bg-muted text-black animate-shake';
+              'border border-rose-300 bg-rose-50 text-rose-800 animate-shake';
+            tagBadgeStyle = 'border-rose-300 text-rose-700 bg-rose-100';
+            subTextColor = 'text-rose-700';
           } else if (isSelected) {
-            // Selected state: ring-2 ring-black bg-muted
+            // Selected state: Indigo focus
             cardStyle =
-              'border-2 border-black ring-2 ring-black bg-muted text-black scale-102 shadow-none';
+              'border-2 border-indigo-500 bg-indigo-50 text-indigo-900 scale-102 shadow-xs';
+            tagBadgeStyle = 'border-indigo-300 text-indigo-700 bg-indigo-100';
+            subTextColor = 'text-indigo-700';
           }
 
           return (
@@ -441,29 +451,25 @@ export const MatchingGame: React.FC<MatchingGameProps> = ({
               type="button"
               disabled={isMatched}
               onClick={() => handleCardClick(card)}
-              className={`relative min-h-[5.5rem] sm:min-h-[7rem] p-3 border-2 flex flex-col items-center justify-center text-center transition-all select-none active:scale-95 rounded-none shadow-none ${cardStyle}`}
+              className={`relative min-h-[5.5rem] sm:min-h-[7rem] p-3 flex flex-col items-center justify-center text-center transition-all select-none active:scale-95 rounded-none ${cardStyle}`}
             >
               {/* Type Badge Tag */}
               <span
-                className={`absolute top-1.5 left-1.5 font-mono text-[9px] font-bold px-1.5 py-0.2 border uppercase tracking-wider rounded-none ${
-                  isMatched || isJustMatched
-                    ? 'border-white text-white'
-                    : 'border-black text-black'
-                }`}
+                className={`absolute top-1.5 left-1.5 font-mono text-[9px] font-medium px-1.5 py-0.5 border uppercase tracking-wider rounded-none ${tagBadgeStyle}`}
               >
                 {card.type === 'japanese' ? 'JA' : 'VI'}
               </span>
 
               {/* Matched checkmark icon */}
               {(isMatched || isJustMatched) && (
-                <span className="absolute top-1.5 right-1.5 text-white">
-                  <Check className="w-3.5 h-3.5 stroke-[3]" />
+                <span className="absolute top-1.5 right-1.5 text-emerald-600">
+                  <Check className="w-3.5 h-3.5 stroke-[2.5]" />
                 </span>
               )}
 
               {/* Card Main Text */}
               <span
-                className={`font-bold transition-all line-clamp-2 px-1 ${
+                className={`font-medium transition-all line-clamp-2 px-1 ${
                   card.type === 'japanese'
                     ? 'font-serif text-lg sm:text-2xl tracking-tight'
                     : 'font-sans text-sm sm:text-base leading-snug'
@@ -474,9 +480,7 @@ export const MatchingGame: React.FC<MatchingGameProps> = ({
 
               {/* Optional Subtext */}
               {card.subText && (
-                <span className={`text-[10px] font-mono mt-1 line-clamp-1 opacity-75 ${
-                  isMatched || isJustMatched ? 'text-white' : 'text-mutedForeground'
-                }`}>
+                <span className={`text-[10px] font-mono mt-1 line-clamp-1 opacity-80 ${subTextColor}`}>
                   {card.subText}
                 </span>
               )}

@@ -121,27 +121,27 @@ export default function SyncSettingsSection() {
   return (
     <section
       aria-labelledby="cloud-sync-heading"
-      className="border-2 border-black p-6 sm:p-8 bg-white rounded-none shadow-none mb-8"
+      className="border border-stone-200 p-6 sm:p-8 bg-white shadow-sm mb-8"
     >
       {/* Header */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-5 border-b border-black">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-5 border-b border-stone-200">
         <div>
           <div className="flex items-center gap-2 mb-1">
-            <span className="border border-black px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-black">
+            <span className="border border-stone-300 bg-stone-100/60 px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-stone-600">
               CLOUD SYNC
             </span>
-            <span className="border border-black px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-black">
+            <span className="border border-stone-300 bg-stone-100/60 px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-stone-600">
               SQLITE REPOSITORY
             </span>
           </div>
           <h2
             id="cloud-sync-heading"
-            className="font-serif text-xl sm:text-2xl font-bold uppercase tracking-tight text-black flex items-center gap-2"
+            className="font-serif text-xl sm:text-2xl font-light uppercase tracking-tight text-stone-900 flex items-center gap-2"
           >
-            <Cloud className="w-5 h-5 text-black" />
+            <Cloud className="w-5 h-5 text-stone-700" />
             Đồng Bộ Đa Thiết Bị (Multi-Device Sync)
           </h2>
-          <p className="font-mono text-xs uppercase tracking-wider text-mutedForeground mt-1">
+          <p className="font-mono text-xs uppercase tracking-wider text-stone-500 mt-1">
             Đồng bộ tiến độ học tập, thẻ SRS, chuỗi streak và XP tức thì giữa Máy tính & Điện thoại
           </p>
         </div>
@@ -151,7 +151,7 @@ export default function SyncSettingsSection() {
             type="button"
             onClick={handleForceSync}
             disabled={isSyncing}
-            className="border border-black px-3 py-1.5 font-mono text-xs uppercase tracking-wider hover:bg-black hover:text-white rounded-none transition-colors duration-100 inline-flex items-center gap-1.5 disabled:opacity-50 self-start sm:self-auto"
+            className="border border-stone-300 bg-white text-stone-800 hover:bg-stone-100 hover:border-stone-400 px-3 py-1.5 font-mono text-xs uppercase tracking-wider transition-colors duration-100 inline-flex items-center gap-1.5 disabled:opacity-50 self-start sm:self-auto shadow-xs"
             title="Đồng bộ ngay dữ liệu mới nhất"
           >
             <RefreshCw className={`w-3.5 h-3.5 ${isSyncing ? 'animate-spin' : ''}`} />
@@ -164,36 +164,36 @@ export default function SyncSettingsSection() {
         {syncCode ? (
           /* State 1: Device is already connected */
           <div className="space-y-6">
-            <div className="border-2 border-black p-6 bg-white space-y-4">
+            <div className="border border-stone-200 p-6 bg-white space-y-4 shadow-xs">
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                 <div className="space-y-1">
-                  <span className="font-mono text-[10px] uppercase tracking-widest text-mutedForeground block">
+                  <span className="font-mono text-[10px] uppercase tracking-widest text-stone-500 block">
                     MÃ ĐỒNG BỘ CỦA BẠN
                   </span>
                   <div className="flex items-center gap-3">
-                    <span className="font-mono text-3xl sm:text-4xl font-black text-black tracking-widest">
+                    <span className="font-mono text-3xl sm:text-4xl font-light text-stone-900 tracking-widest">
                       {syncCode}
                     </span>
                     <button
                       type="button"
                       onClick={handleCopyCode}
-                      className="border border-black px-3 py-1.5 font-mono text-xs uppercase tracking-wider hover:bg-black hover:text-white transition-colors duration-100 rounded-none inline-flex items-center gap-1.5"
+                      className="border border-stone-300 bg-white text-stone-800 hover:bg-stone-100 hover:border-stone-400 px-3 py-1.5 font-mono text-xs uppercase tracking-wider transition-colors duration-100 inline-flex items-center gap-1.5 shadow-xs"
                       title="Sao chép mã"
                     >
                       {copied ? (
                         <>
-                          <Check className="w-3.5 h-3.5" />
-                          <span>Đã chép</span>
+                          <Check className="w-3.5 h-3.5 text-emerald-600" />
+                          <span className="text-emerald-700 font-medium">Đã chép</span>
                         </>
                       ) : (
                         <>
-                          <Copy className="w-3.5 h-3.5" />
+                          <Copy className="w-3.5 h-3.5 text-stone-600" />
                           <span>Sao chép</span>
                         </>
                       )}
                     </button>
                   </div>
-                  <p className="font-sans text-xs text-mutedForeground pt-1">
+                  <p className="font-sans text-xs text-stone-500 pt-1">
                     💡 <strong>Cách đồng bộ với điện thoại:</strong> Mở điện thoại của bạn, vào trang <em>Cài đặt</em> và nhập mã <strong>{syncCode}</strong> ở mục bên dưới.
                   </p>
                 </div>
@@ -203,7 +203,7 @@ export default function SyncSettingsSection() {
                     type="button"
                     onClick={handleForceSync}
                     disabled={isSyncing}
-                    className="border-2 border-black bg-black text-white hover:bg-white hover:text-black px-4 py-2 font-mono text-xs uppercase tracking-widest transition-colors duration-100 rounded-none shadow-none inline-flex items-center gap-2 disabled:opacity-50"
+                    className="border border-stone-900 bg-stone-900 text-white hover:bg-stone-800 px-4 py-2 font-mono text-xs uppercase tracking-widest transition-colors duration-100 inline-flex items-center gap-2 disabled:opacity-50 shadow-xs"
                   >
                     <RefreshCw className={`w-3.5 h-3.5 ${isSyncing ? 'animate-spin' : ''}`} />
                     <span>{isSyncing ? 'Đang đồng bộ...' : 'Đồng bộ ngay'}</span>
@@ -212,9 +212,9 @@ export default function SyncSettingsSection() {
                   <button
                     type="button"
                     onClick={handleUnlink}
-                    className="border border-black px-3 py-2 font-mono text-xs uppercase tracking-wider text-black hover:bg-black hover:text-white transition-colors duration-100 rounded-none inline-flex items-center gap-1.5"
+                    className="border border-stone-300 bg-white text-stone-700 hover:bg-stone-100 hover:border-stone-400 px-3 py-2 font-mono text-xs uppercase tracking-wider transition-colors duration-100 inline-flex items-center gap-1.5 shadow-xs"
                   >
-                    <Unlink className="w-3.5 h-3.5" />
+                    <Unlink className="w-3.5 h-3.5 text-stone-500" />
                     <span>Hủy liên kết</span>
                   </button>
                 </div>
@@ -222,18 +222,18 @@ export default function SyncSettingsSection() {
             </div>
 
             {/* Sync status table with hairline dividers */}
-            <div className="border border-black divide-y divide-black font-mono text-xs">
+            <div className="border border-stone-200 divide-y divide-stone-200 font-mono text-xs shadow-xs">
               <div className="p-3 flex items-center justify-between bg-white">
-                <span className="text-mutedForeground uppercase tracking-wider">TRẠNG THÁI KẾT NỐI</span>
-                <span className="text-black font-bold uppercase">ĐANG HOẠT ĐỘNG · TỰ ĐỘNG ĐỒNG BỘ NỀN</span>
+                <span className="text-stone-500 uppercase tracking-wider">TRẠNG THÁI KẾT NỐI</span>
+                <span className="text-emerald-700 font-medium uppercase">ĐANG HOẠT ĐỘNG · TỰ ĐỘNG ĐỒNG BỘ NỀN</span>
               </div>
               <div className="p-3 flex items-center justify-between bg-white">
-                <span className="text-mutedForeground uppercase tracking-wider">LẦN ĐỒNG BỘ GẦN NHẤT</span>
-                <span className="text-black font-bold uppercase">{formatLastSync(lastSyncTime)}</span>
+                <span className="text-stone-500 uppercase tracking-wider">LẦN ĐỒNG BỘ GẦN NHẤT</span>
+                <span className="text-stone-800 font-medium uppercase">{formatLastSync(lastSyncTime)}</span>
               </div>
               <div className="p-3 flex items-center justify-between bg-white">
-                <span className="text-mutedForeground uppercase tracking-wider">CƠ CHẾ ĐỒNG BỘ</span>
-                <span className="text-black font-bold uppercase">TWO-WAY STATE MERGE · SQLITE CLOUD</span>
+                <span className="text-stone-500 uppercase tracking-wider">CƠ CHẾ ĐỒNG BỘ</span>
+                <span className="text-stone-800 font-medium uppercase">TWO-WAY STATE MERGE · SQLITE CLOUD</span>
               </div>
             </div>
           </div>
@@ -241,16 +241,16 @@ export default function SyncSettingsSection() {
           /* State 2: Device has no sync code yet */
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Option A: Generate new code */}
-            <div className="border-2 border-black p-6 bg-white flex flex-col justify-between space-y-4 rounded-none shadow-none">
+            <div className="border border-stone-200 p-6 bg-white flex flex-col justify-between space-y-4 shadow-xs">
               <div className="space-y-2">
-                <span className="border border-black px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-black block w-fit">
+                <span className="border border-stone-300 bg-stone-100/60 px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-stone-600 block w-fit">
                   01 · PRIMARY DEVICE
                 </span>
-                <h3 className="font-serif text-lg font-bold uppercase tracking-tight text-black flex items-center gap-2">
-                  <Sparkles className="w-4 h-4 text-black" />
+                <h3 className="font-serif text-lg font-medium uppercase tracking-tight text-stone-900 flex items-center gap-2">
+                  <Sparkles className="w-4 h-4 text-stone-700" />
                   Thiết Bị Đầu Tiên / Tạo Mã Mới
                 </h3>
-                <p className="font-sans text-xs text-mutedForeground leading-relaxed">
+                <p className="font-sans text-xs text-stone-500 leading-relaxed">
                   Nếu bạn bắt đầu học trên máy tính này, hãy bấm tạo một <strong>Mã đồng bộ cá nhân</strong>. Sau đó bạn chỉ cần dùng mã này để liên kết với điện thoại.
                 </p>
               </div>
@@ -259,7 +259,7 @@ export default function SyncSettingsSection() {
                 type="button"
                 onClick={handleGenerateCode}
                 disabled={isGenerating}
-                className="w-full border-2 border-black bg-black text-white hover:bg-white hover:text-black px-4 py-3 font-mono text-xs uppercase tracking-widest transition-colors duration-100 rounded-none shadow-none inline-flex items-center justify-center gap-2 disabled:opacity-50"
+                className="w-full border border-stone-900 bg-stone-900 text-white hover:bg-stone-800 px-4 py-3 font-mono text-xs uppercase tracking-widest transition-colors duration-100 inline-flex items-center justify-center gap-2 disabled:opacity-50 shadow-xs"
               >
                 <KeyRound className="w-4 h-4" />
                 <span>{isGenerating ? 'Đang tạo mã...' : 'Khởi Tạo Mã Đồng Bộ Đám Mây'}</span>
@@ -267,16 +267,16 @@ export default function SyncSettingsSection() {
             </div>
 
             {/* Option B: Link with existing code */}
-            <div className="border-2 border-black p-6 bg-white flex flex-col justify-between space-y-4 rounded-none shadow-none">
+            <div className="border border-stone-200 p-6 bg-white flex flex-col justify-between space-y-4 shadow-xs">
               <div className="space-y-2">
-                <span className="border border-black px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-black block w-fit">
+                <span className="border border-stone-300 bg-stone-100/60 px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-stone-600 block w-fit">
                   02 · SECONDARY DEVICE
                 </span>
-                <h3 className="font-serif text-lg font-bold uppercase tracking-tight text-black flex items-center gap-2">
-                  <Smartphone className="w-4 h-4 text-black" />
+                <h3 className="font-serif text-lg font-medium uppercase tracking-tight text-stone-900 flex items-center gap-2">
+                  <Smartphone className="w-4 h-4 text-stone-700" />
                   Đã Có Mã Từ Thiết Bị Khác?
                 </h3>
-                <p className="font-sans text-xs text-mutedForeground leading-relaxed">
+                <p className="font-sans text-xs text-stone-500 leading-relaxed">
                   Nhập mã đồng bộ hiển thị trên máy tính hoặc điện thoại khác vào đây để nạp toàn bộ tiến độ học sang thiết bị này.
                 </p>
               </div>
@@ -288,12 +288,12 @@ export default function SyncSettingsSection() {
                     value={inputCode}
                     onChange={(e) => setInputCode(e.target.value.toUpperCase())}
                     placeholder="VÍ DỤ: NH-12345"
-                    className="border-2 border-black p-2.5 font-mono text-xs sm:text-sm uppercase focus:outline-none focus:ring-2 focus:ring-black bg-white rounded-none shadow-none flex-1 text-black"
+                    className="border border-stone-300 p-2.5 font-mono text-xs sm:text-sm uppercase focus:outline-none focus:ring-1 focus:ring-stone-400 bg-white flex-1 text-stone-900 shadow-xs"
                   />
                   <button
                     type="submit"
                     disabled={isLinking || !inputCode.trim()}
-                    className="border-2 border-black bg-black text-white hover:bg-white hover:text-black px-4 py-2.5 font-mono text-xs uppercase tracking-widest transition-colors duration-100 rounded-none shadow-none inline-flex items-center justify-center gap-1.5 disabled:opacity-50 flex-shrink-0"
+                    className="border border-stone-900 bg-stone-900 text-white hover:bg-stone-800 px-4 py-2.5 font-mono text-xs uppercase tracking-widest transition-colors duration-100 inline-flex items-center justify-center gap-1.5 disabled:opacity-50 flex-shrink-0 shadow-xs"
                   >
                     <span>{isLinking ? 'Đang kết nối...' : 'Liên Kết'}</span>
                     <ArrowRight className="w-3.5 h-3.5" />

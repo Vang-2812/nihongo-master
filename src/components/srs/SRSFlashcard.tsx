@@ -57,22 +57,22 @@ export const SRSFlashcard: React.FC<SRSFlashcardProps> = ({
             onFlip();
           }
         }}
-        className={`relative w-full h-full min-h-[420px] sm:min-h-[460px] transition-transform duration-500 transform-style-3d cursor-pointer rounded-none focus:outline-none focus:ring-2 focus:ring-black ${
+        className={`relative w-full h-full min-h-[420px] sm:min-h-[460px] transition-transform duration-500 transform-style-3d cursor-pointer rounded-none focus:outline-none focus:ring-1 focus:ring-stone-400 ${
           isFlipped ? 'rotate-y-180' : ''
         }`}
       >
         {/* ==================== FRONT FACE ==================== */}
         <div
-          className="absolute inset-0 w-full h-full backface-hidden rounded-none border-2 border-black bg-white text-black shadow-none p-6 sm:p-8 flex flex-col justify-between"
+          className="absolute inset-0 w-full h-full backface-hidden rounded-none border border-stone-200 bg-white text-stone-900 shadow-xs p-6 sm:p-8 flex flex-col justify-between"
         >
           {/* Front Header */}
-          <div className="flex items-center justify-between gap-2 pb-4 border-b-2 border-black">
+          <div className="flex items-center justify-between gap-2 pb-4 border-b border-stone-200">
             <div className="flex items-center gap-2">
-              <span className="inline-flex items-center gap-1 px-2.5 py-1 text-xs font-mono font-bold tracking-widest uppercase border border-black bg-white text-black rounded-none">
+              <span className="inline-flex items-center gap-1 px-2.5 py-1 text-xs font-mono font-bold tracking-widest uppercase border border-stone-200 bg-stone-50 text-stone-700 rounded-none">
                 <span>{isKanji ? 'HÁN TỰ' : 'TỪ VỰNG'}</span>
               </span>
 
-              <span className="px-2 py-1 text-xs font-mono font-bold tracking-wider bg-black text-white border border-black rounded-none">
+              <span className="px-2 py-1 text-xs font-mono font-bold tracking-wider bg-stone-100 text-stone-700 border border-stone-200 rounded-none">
                 {content.level}
               </span>
             </div>
@@ -81,7 +81,7 @@ export const SRSFlashcard: React.FC<SRSFlashcardProps> = ({
             <button
               type="button"
               onClick={(e) => handleAudio(e)}
-              className="p-2 border border-black bg-white text-black hover:bg-black hover:text-white transition-colors duration-100 rounded-none shadow-none flex items-center gap-1.5 font-mono text-xs uppercase"
+              className="p-2 border border-stone-300 bg-white text-stone-800 hover:bg-stone-100 transition-colors duration-100 rounded-none shadow-none flex items-center gap-1.5 font-mono text-xs uppercase"
               title="Nghe phát âm (Phím R)"
             >
               <Volume2 className="w-4 h-4" />
@@ -93,14 +93,14 @@ export const SRSFlashcard: React.FC<SRSFlashcardProps> = ({
           <div className="flex-1 flex flex-col items-center justify-center my-6 text-center">
             {/* Optional Hint Reading */}
             {showFrontReading && content.reading && (
-              <span className="text-base sm:text-lg font-mono font-bold text-mutedForeground tracking-widest mb-3 animate-fadeIn">
+              <span className="text-base sm:text-lg font-mono font-bold text-stone-500 tracking-widest mb-3 animate-fadeIn">
                 {content.reading}
               </span>
             )}
 
-            {/* Main Word / Character in high-contrast Playfair Display Serif */}
+            {/* Main Word / Character */}
             <h2
-              className={`font-serif font-bold tracking-tight text-black select-none leading-none py-2 ${
+              className={`font-serif font-bold tracking-tight text-stone-900 select-none leading-none py-2 ${
                 isKanji
                   ? 'text-6xl sm:text-8xl'
                   : 'text-4xl sm:text-6xl lg:text-7xl'
@@ -114,7 +114,7 @@ export const SRSFlashcard: React.FC<SRSFlashcardProps> = ({
               <button
                 type="button"
                 onClick={toggleFrontReading}
-                className="mt-4 inline-flex items-center gap-1.5 px-3 py-1 text-xs font-sans font-medium uppercase tracking-wider text-black border border-black bg-white hover:bg-black hover:text-white transition-colors duration-100 rounded-none"
+                className="mt-4 inline-flex items-center gap-1.5 px-3 py-1 text-xs font-sans font-medium uppercase tracking-wider text-stone-700 border border-stone-300 bg-white hover:bg-stone-100 transition-colors duration-100 rounded-none"
               >
                 {showFrontReading ? (
                   <>
@@ -132,30 +132,32 @@ export const SRSFlashcard: React.FC<SRSFlashcardProps> = ({
           </div>
 
           {/* Front Footer: Action hints */}
-          <div className="pt-3 border-t-2 border-black flex items-center justify-between text-xs font-mono text-mutedForeground uppercase tracking-wider">
-            <span className="flex items-center gap-1.5 text-black font-bold">
-              <span>SPACE TO FLIP</span>
+          <div className="pt-3 border-t border-stone-200 flex items-center justify-between text-xs font-mono text-stone-500 uppercase tracking-wider">
+            <span className="flex items-center gap-1.5">
+              <kbd className="bg-stone-100 text-stone-700 border border-stone-200 font-mono text-[10px] px-1.5 py-0.5">SPACE</kbd>
+              <span>TO FLIP</span>
               <RotateCw className="w-3.5 h-3.5" />
             </span>
-            <span className="flex items-center gap-1 text-black font-bold">
-              <span>R TO LISTEN</span>
+            <span className="flex items-center gap-1">
+              <kbd className="bg-stone-100 text-stone-700 border border-stone-200 font-mono text-[10px] px-1.5 py-0.5">R</kbd>
+              <span>TO LISTEN</span>
             </span>
           </div>
         </div>
 
         {/* ==================== BACK FACE ==================== */}
         <div
-          className="absolute inset-0 w-full h-full backface-hidden rotate-y-180 rounded-none border-2 border-black bg-white text-black shadow-none p-6 sm:p-8 flex flex-col justify-between overflow-y-auto"
+          className="absolute inset-0 w-full h-full backface-hidden rotate-y-180 rounded-none border border-stone-200 bg-white text-stone-900 shadow-xs p-6 sm:p-8 flex flex-col justify-between overflow-y-auto"
         >
           {/* Back Header: Badges & SRS Info */}
-          <div className="flex items-center justify-between gap-2 border-b-2 border-black pb-3">
+          <div className="flex items-center justify-between gap-2 border-b border-stone-200 pb-3">
             <div className="flex items-center flex-wrap gap-2">
-              <span className="inline-flex items-center gap-1 px-2.5 py-1 text-xs font-mono font-bold uppercase tracking-wider border border-black bg-white text-black rounded-none">
+              <span className="inline-flex items-center gap-1 px-2.5 py-1 text-xs font-mono font-bold uppercase tracking-wider border border-stone-200 bg-stone-50 text-stone-700 rounded-none">
                 {isKanji ? 'HÁN TỰ' : 'TỪ VỰNG'} · {content.level}
               </span>
 
               {/* Repetition & Interval metadata badge */}
-              <span className="inline-flex items-center gap-1 px-2 py-1 text-[11px] font-mono font-bold tracking-wider bg-black text-white border border-black rounded-none">
+              <span className="inline-flex items-center gap-1 px-2 py-1 text-[11px] font-mono font-bold tracking-wider bg-indigo-50 text-indigo-800 border border-indigo-200 rounded-none">
                 <Layers className="w-3 h-3" />
                 <span>LẶP {card.repetitions} · {card.interval} NGÀY</span>
               </span>
@@ -165,7 +167,7 @@ export const SRSFlashcard: React.FC<SRSFlashcardProps> = ({
             <button
               type="button"
               onClick={(e) => handleAudio(e)}
-              className="p-2 border border-black bg-white text-black hover:bg-black hover:text-white transition-colors duration-100 rounded-none shadow-none flex items-center gap-1.5 font-mono text-xs uppercase shrink-0"
+              className="p-2 border border-stone-300 bg-white text-stone-800 hover:bg-stone-100 transition-colors duration-100 rounded-none shadow-none flex items-center gap-1.5 font-mono text-xs uppercase shrink-0"
               title="Nghe lại phát âm (Phím R)"
             >
               <Volume2 className="w-4 h-4" />
@@ -178,23 +180,23 @@ export const SRSFlashcard: React.FC<SRSFlashcardProps> = ({
             {/* Word & Reading & Sino-Vietnamese */}
             <div className="text-center">
               {content.reading && (
-                <div className="text-sm sm:text-base font-mono font-bold text-mutedForeground tracking-widest">
+                <div className="text-sm sm:text-base font-mono font-bold text-stone-500 tracking-widest">
                   {content.reading}
                 </div>
               )}
 
               <h2
-                className={`font-serif font-bold text-black tracking-tight ${
+                className={`font-serif font-bold text-stone-900 tracking-tight ${
                   isKanji ? 'text-4xl sm:text-6xl' : 'text-3xl sm:text-5xl'
                 }`}
               >
                 {content.title}
               </h2>
 
-              {/* Sino-Vietnamese reading (âm Hán Việt) in bold solid black badge */}
+              {/* Sino-Vietnamese reading (âm Hán Việt) */}
               {content.sinoVietnamese && (
                 <div className="mt-2">
-                  <span className="inline-flex items-center px-3 py-1 rounded-none text-xs sm:text-sm font-mono font-bold tracking-widest bg-black text-white border border-black uppercase">
+                  <span className="inline-flex items-center px-3 py-1 rounded-none text-xs sm:text-sm font-mono font-bold tracking-widest bg-indigo-50 text-indigo-800 border border-indigo-200 uppercase">
                     ÂM HÁN: {content.sinoVietnamese}
                   </span>
                 </div>
@@ -202,26 +204,26 @@ export const SRSFlashcard: React.FC<SRSFlashcardProps> = ({
             </div>
 
             {/* Vietnamese Meaning & Details */}
-            <div className="rounded-none bg-muted p-4 border border-black">
-              <p className="font-sans text-base sm:text-lg font-bold text-black leading-snug text-center">
+            <div className="rounded-none bg-stone-50 p-4 border border-stone-200">
+              <p className="font-sans text-base sm:text-lg font-bold text-stone-900 leading-snug text-center">
                 {content.meaning}
               </p>
 
               {content.meaningEn && (
-                <p className="font-sans text-xs text-mutedForeground text-center mt-1 italic">
+                <p className="font-sans text-xs text-stone-500 text-center mt-1 italic">
                   {content.meaningEn}
                 </p>
               )}
 
               {/* Kanji Specifics: Onyomi, Kunyomi, Stroke count */}
               {isKanji && (
-                <div className="mt-3 pt-2.5 border-t border-black text-xs space-y-1.5">
+                <div className="mt-3 pt-2.5 border-t border-stone-200 text-xs space-y-1.5">
                   {content.onyomi && content.onyomi.length > 0 && (
                     <div className="flex items-start gap-2">
-                      <span className="font-mono font-bold text-black shrink-0 uppercase">
+                      <span className="font-mono font-bold text-stone-700 shrink-0 uppercase">
                         ÂM ON:
                       </span>
-                      <span className="font-serif font-medium text-black">
+                      <span className="font-serif font-medium text-stone-900">
                         {content.onyomi.join('・')}
                       </span>
                     </div>
@@ -229,18 +231,18 @@ export const SRSFlashcard: React.FC<SRSFlashcardProps> = ({
 
                   {content.kunyomi && content.kunyomi.length > 0 && (
                     <div className="flex items-start gap-2">
-                      <span className="font-mono font-bold text-black shrink-0 uppercase">
+                      <span className="font-mono font-bold text-stone-700 shrink-0 uppercase">
                         ÂM KUN:
                       </span>
-                      <span className="font-serif font-medium text-black">
+                      <span className="font-serif font-medium text-stone-900">
                         {content.kunyomi.join('・')}
                       </span>
                     </div>
                   )}
 
                   {content.strokeCount !== undefined && (
-                    <div className="flex items-center gap-2 font-mono text-mutedForeground">
-                      <span>SỐ NÉT: <strong className="text-black">{content.strokeCount}</strong></span>
+                    <div className="flex items-center gap-2 font-mono text-stone-500">
+                      <span>SỐ NÉT: <strong className="text-stone-900">{content.strokeCount}</strong></span>
                       {content.mnemonic && (
                         <span className="italic truncate ml-2">
                           Mẹo: {content.mnemonic}
@@ -254,21 +256,21 @@ export const SRSFlashcard: React.FC<SRSFlashcardProps> = ({
 
             {/* Example sentence (if available) */}
             {content.example && (
-              <div className="p-3 rounded-none bg-white border-l-4 border-black border-y border-r border-black text-xs sm:text-sm">
+              <div className="p-3 rounded-none bg-white border-l-4 border-stone-300 border-y border-r border-stone-200 text-xs sm:text-sm">
                 <div className="flex items-start justify-between gap-2">
-                  <span className="font-serif font-medium text-black">
+                  <span className="font-serif font-medium text-stone-900">
                     {content.example.japanese}
                   </span>
                   <button
                     type="button"
                     onClick={(e) => handleAudio(e, content.example?.japanese)}
-                    className="p-1 border border-black text-black hover:bg-black hover:text-white transition-colors duration-100 shrink-0"
+                    className="p-1 border border-stone-300 text-stone-700 hover:bg-stone-100 transition-colors duration-100 shrink-0"
                     title="Nghe câu ví dụ"
                   >
                     <Volume2 className="w-3.5 h-3.5" />
                   </button>
                 </div>
-                <p className="font-sans text-mutedForeground mt-1 text-xs">
+                <p className="font-sans text-stone-500 mt-1 text-xs">
                   {content.example.vietnamese}
                 </p>
               </div>
@@ -276,9 +278,15 @@ export const SRSFlashcard: React.FC<SRSFlashcardProps> = ({
           </div>
 
           {/* Back Footer */}
-          <div className="pt-2.5 border-t-2 border-black flex items-center justify-between text-xs font-mono text-mutedForeground uppercase tracking-wider">
-            <span className="text-black font-bold">1 - 4 ĐỂ ĐÁNH GIÁ</span>
-            <span>R TO LISTEN</span>
+          <div className="pt-2.5 border-t border-stone-200 flex items-center justify-between text-xs font-mono text-stone-500 uppercase tracking-wider">
+            <span className="flex items-center gap-1.5">
+              <kbd className="bg-stone-100 text-stone-700 border border-stone-200 font-mono text-[10px] px-1.5 py-0.5">1-4</kbd>
+              <span>ĐỂ ĐÁNH GIÁ</span>
+            </span>
+            <span className="flex items-center gap-1">
+              <kbd className="bg-stone-100 text-stone-700 border border-stone-200 font-mono text-[10px] px-1.5 py-0.5">R</kbd>
+              <span>TO LISTEN</span>
+            </span>
           </div>
         </div>
       </div>

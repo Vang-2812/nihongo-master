@@ -218,83 +218,83 @@ export default function SettingsPage() {
       {/* ==================== EDITORIAL PAGE HEADER ==================== */}
       <section>
         <div className="flex items-center gap-3 mb-4 sm:mb-6">
-          <span className="font-mono text-xs uppercase tracking-widest text-mutedForeground border border-black px-2 py-0.5">
+          <span className="font-mono text-xs uppercase tracking-widest text-stone-600 border border-stone-300 bg-stone-100/60 px-2 py-0.5">
             ARCHIVE CONTROL
           </span>
-          <span className="font-mono text-xs uppercase tracking-widest text-mutedForeground">
+          <span className="font-mono text-xs uppercase tracking-widest text-stone-500">
             SM-2 ENGINE CONFIGURATION & REPOSITORY
           </span>
         </div>
 
-        <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl font-normal tracking-tighter text-black uppercase leading-tight">
+        <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl font-light tracking-tight text-stone-900 uppercase leading-tight">
           PREFERENCES & ARCHIVE MANAGEMENT
-          <span className="block font-serif text-3xl sm:text-5xl lg:text-6xl mt-2 tracking-normal">
+          <span className="block font-serif text-3xl sm:text-5xl lg:text-6xl mt-2 tracking-normal text-stone-800">
             設定と管理
           </span>
         </h1>
 
-        <p className="font-mono text-xs sm:text-sm tracking-widest text-mutedForeground uppercase mt-4 max-w-2xl">
+        <p className="font-mono text-xs sm:text-sm tracking-widest text-stone-500 uppercase mt-4 max-w-2xl">
           TÙY CHỈNH HỆ THỐNG · LƯU TRỮ DỮ LIỆU NỘI BỘ · ĐỒNG BỘ ĐÁM MÂY & BẢO MẬT
         </p>
 
-        {/* Heavy 4px black section rule */}
-        <div className="h-1 bg-black w-full my-8 sm:my-10" />
+        {/* Hairline stone section rule */}
+        <div className="h-px bg-stone-300 w-full my-8 sm:my-10" />
 
         {/* Current Storage Snapshot Bar */}
         {mounted && (
-          <div className="border-2 border-black divide-y sm:divide-y-0 sm:divide-x divide-black grid grid-cols-2 sm:grid-cols-4 bg-white mb-10">
+          <div className="border border-stone-200 bg-white shadow-sm divide-y sm:divide-y-0 sm:divide-x divide-stone-200 grid grid-cols-2 sm:grid-cols-4 mb-10">
             <div className="p-4 sm:p-5 flex flex-col justify-between">
-              <span className="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-mutedForeground block">
+              <span className="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-stone-500 block">
                 SRS CARDS
               </span>
               <div className="my-3">
-                <span className="font-serif text-3xl sm:text-4xl font-normal text-black tracking-tight leading-none">
+                <span className="font-serif text-3xl sm:text-4xl font-light text-stone-900 tracking-tight leading-none">
                   {cardCount}
                 </span>
               </div>
-              <span className="font-mono text-[10px] text-mutedForeground uppercase tracking-wider">
+              <span className="font-mono text-[10px] text-stone-400 uppercase tracking-wider">
                 Thẻ SRS trong kho
               </span>
             </div>
 
             <div className="p-4 sm:p-5 flex flex-col justify-between">
-              <span className="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-mutedForeground block">
+              <span className="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-stone-500 block">
                 STREAK
               </span>
               <div className="my-3">
-                <span className="font-serif text-3xl sm:text-4xl font-normal text-black tracking-tight leading-none">
+                <span className="font-serif text-3xl sm:text-4xl font-light text-stone-900 tracking-tight leading-none">
                   {streak}
                 </span>
               </div>
-              <span className="font-mono text-[10px] text-mutedForeground uppercase tracking-wider">
+              <span className="font-mono text-[10px] text-stone-400 uppercase tracking-wider">
                 Ngày liên tục
               </span>
             </div>
 
             <div className="p-4 sm:p-5 flex flex-col justify-between">
-              <span className="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-mutedForeground block">
+              <span className="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-stone-500 block">
                 EXPERIENCE
               </span>
               <div className="my-3">
-                <span className="font-serif text-3xl sm:text-4xl font-normal text-black tracking-tight leading-none">
+                <span className="font-serif text-3xl sm:text-4xl font-light text-stone-900 tracking-tight leading-none">
                   {totalXp}
                 </span>
               </div>
-              <span className="font-mono text-[10px] text-mutedForeground uppercase tracking-wider">
+              <span className="font-mono text-[10px] text-stone-400 uppercase tracking-wider">
                 Tổng điểm XP
               </span>
             </div>
 
             <div className="p-4 sm:p-5 flex flex-col justify-between">
-              <span className="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-mutedForeground block">
+              <span className="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-stone-500 block">
                 KANJI & VOCAB
               </span>
               <div className="my-3">
-                <span className="font-serif text-3xl sm:text-4xl font-normal text-black tracking-tight leading-none">
+                <span className="font-serif text-3xl sm:text-4xl font-light text-stone-900 tracking-tight leading-none">
                   {kanjiCount + vocabCount}
                 </span>
               </div>
-              <span className="font-mono text-[10px] text-mutedForeground uppercase tracking-wider">
+              <span className="font-mono text-[10px] text-stone-400 uppercase tracking-wider">
                 Mục đã học
               </span>
             </div>
@@ -305,26 +305,26 @@ export default function SettingsPage() {
       {/* ==================== THEME & APPEARANCE SECTION ==================== */}
       <section
         aria-labelledby="theme-appearance-heading"
-        className="border-2 border-black p-6 sm:p-8 bg-white rounded-none shadow-none"
+        className="border border-stone-200 p-6 sm:p-8 bg-white shadow-sm"
       >
-        <div className="pb-5 border-b border-black flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="pb-5 border-b border-stone-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div>
             <div className="flex items-center gap-2 mb-1">
-              <span className="border border-black px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-black">
+              <span className="border border-stone-300 bg-stone-100/60 px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-stone-600">
                 INTERFACE
               </span>
-              <span className="border border-black px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-black">
-                HIGH-CONTRAST MONOCHROME
+              <span className="border border-stone-300 bg-stone-100/60 px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-stone-600">
+                MUTED CONTRAST
               </span>
             </div>
             <h2
               id="theme-appearance-heading"
-              className="font-serif text-xl sm:text-2xl font-bold uppercase tracking-tight text-black flex items-center gap-2"
+              className="font-serif text-xl sm:text-2xl font-light uppercase tracking-tight text-stone-900 flex items-center gap-2"
             >
-              <Palette className="w-5 h-5 text-black" />
+              <Palette className="w-5 h-5 text-stone-700" />
               Giao Diện & Chủ Đề (Appearance)
             </h2>
-            <p className="font-mono text-xs uppercase tracking-wider text-mutedForeground mt-1">
+            <p className="font-mono text-xs uppercase tracking-wider text-stone-500 mt-1">
               Tùy chỉnh chế độ hiển thị Sáng / Tối để tối ưu tương phản thị giác
             </p>
           </div>
@@ -339,30 +339,30 @@ export default function SettingsPage() {
                 setTheme('light');
                 toast.success('Đã chuyển sang Giao diện Sáng (Light Mode)');
               }}
-              className={`p-5 text-left transition-colors duration-100 flex flex-col justify-between border-2 border-black rounded-none shadow-none ${
+              className={`p-5 text-left transition-all duration-150 flex flex-col justify-between border ${
                 theme === 'light'
-                  ? 'bg-black text-white'
-                  : 'bg-white text-black hover:bg-black/5'
+                  ? 'border-stone-900 bg-stone-900 text-white shadow-sm'
+                  : 'border-stone-200 bg-white text-stone-800 hover:border-stone-400 hover:bg-stone-50'
               }`}
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <Sun className={`w-5 h-5 ${theme === 'light' ? 'text-white' : 'text-black'}`} />
+                  <Sun className={`w-5 h-5 ${theme === 'light' ? 'text-white' : 'text-stone-700'}`} />
                   {theme === 'light' ? (
-                    <span className="border border-white px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-white">
+                    <span className="border border-white/40 px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-white">
                       ACTIVE
                     </span>
                   ) : (
-                    <span className="font-mono text-[10px] uppercase tracking-widest text-mutedForeground">
+                    <span className="font-mono text-[10px] uppercase tracking-widest text-stone-400">
                       CHỌN
                     </span>
                   )}
                 </div>
-                <h3 className="font-serif text-base sm:text-lg font-bold uppercase tracking-tight">
+                <h3 className="font-serif text-base sm:text-lg font-medium uppercase tracking-tight">
                   Giao Diện Sáng
                 </h3>
-                <p className={`font-sans text-xs mt-2 leading-relaxed ${theme === 'light' ? 'text-white/80' : 'text-mutedForeground'}`}>
-                  Nền giấy trắng cao cấp, độ tương phản cao, tối ưu khi học tập ban ngày.
+                <p className={`font-sans text-xs mt-2 leading-relaxed ${theme === 'light' ? 'text-stone-300' : 'text-stone-500'}`}>
+                  Nền giấy trắng cao cấp, độ tương phản dịu mắt, tối ưu khi học tập ban ngày.
                 </p>
               </div>
             </button>
@@ -374,30 +374,30 @@ export default function SettingsPage() {
                 setTheme('dark');
                 toast.success('Đã chuyển sang Giao diện Tối (Dark Mode)');
               }}
-              className={`p-5 text-left transition-colors duration-100 flex flex-col justify-between border-2 border-black rounded-none shadow-none ${
+              className={`p-5 text-left transition-all duration-150 flex flex-col justify-between border ${
                 theme === 'dark'
-                  ? 'bg-black text-white'
-                  : 'bg-white text-black hover:bg-black/5'
+                  ? 'border-stone-900 bg-stone-900 text-white shadow-sm'
+                  : 'border-stone-200 bg-white text-stone-800 hover:border-stone-400 hover:bg-stone-50'
               }`}
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <Moon className={`w-5 h-5 ${theme === 'dark' ? 'text-white' : 'text-black'}`} />
+                  <Moon className={`w-5 h-5 ${theme === 'dark' ? 'text-white' : 'text-stone-700'}`} />
                   {theme === 'dark' ? (
-                    <span className="border border-white px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-white">
+                    <span className="border border-white/40 px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-white">
                       ACTIVE
                     </span>
                   ) : (
-                    <span className="font-mono text-[10px] uppercase tracking-widest text-mutedForeground">
+                    <span className="font-mono text-[10px] uppercase tracking-widest text-stone-400">
                       CHỌN
                     </span>
                   )}
                 </div>
-                <h3 className="font-serif text-base sm:text-lg font-bold uppercase tracking-tight">
+                <h3 className="font-serif text-base sm:text-lg font-medium uppercase tracking-tight">
                   Giao Diện Tối
                 </h3>
-                <p className={`font-sans text-xs mt-2 leading-relaxed ${theme === 'dark' ? 'text-white/80' : 'text-mutedForeground'}`}>
-                  Tông màu đen thuần khiết, giảm mỏi mắt khi học tập trong không gian tối.
+                <p className={`font-sans text-xs mt-2 leading-relaxed ${theme === 'dark' ? 'text-stone-300' : 'text-stone-500'}`}>
+                  Tông màu trầm ấm, giảm mỏi mắt khi học tập trong không gian tối.
                 </p>
               </div>
             </button>
@@ -409,29 +409,29 @@ export default function SettingsPage() {
                 setTheme('system');
                 toast.success('Đã đặt chế độ Giao diện theo thiết bị');
               }}
-              className={`p-5 text-left transition-colors duration-100 flex flex-col justify-between border-2 border-black rounded-none shadow-none ${
+              className={`p-5 text-left transition-all duration-150 flex flex-col justify-between border ${
                 theme === 'system'
-                  ? 'bg-black text-white'
-                  : 'bg-white text-black hover:bg-black/5'
+                  ? 'border-stone-900 bg-stone-900 text-white shadow-sm'
+                  : 'border-stone-200 bg-white text-stone-800 hover:border-stone-400 hover:bg-stone-50'
               }`}
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <Laptop className={`w-5 h-5 ${theme === 'system' ? 'text-white' : 'text-black'}`} />
+                  <Laptop className={`w-5 h-5 ${theme === 'system' ? 'text-white' : 'text-stone-700'}`} />
                   {theme === 'system' ? (
-                    <span className="border border-white px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-white">
+                    <span className="border border-white/40 px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-white">
                       ACTIVE
                     </span>
                   ) : (
-                    <span className="font-mono text-[10px] uppercase tracking-widest text-mutedForeground">
+                    <span className="font-mono text-[10px] uppercase tracking-widest text-stone-400">
                       CHỌN
                     </span>
                   )}
                 </div>
-                <h3 className="font-serif text-base sm:text-lg font-bold uppercase tracking-tight">
+                <h3 className="font-serif text-base sm:text-lg font-medium uppercase tracking-tight">
                   Theo Thiết Bị
                 </h3>
-                <p className={`font-sans text-xs mt-2 leading-relaxed ${theme === 'system' ? 'text-white/80' : 'text-mutedForeground'}`}>
+                <p className={`font-sans text-xs mt-2 leading-relaxed ${theme === 'system' ? 'text-stone-300' : 'text-stone-500'}`}>
                   Tự động đồng bộ theo cấu hình giao diện Sáng / Tối của hệ điều hành.
                 </p>
               </div>
@@ -443,45 +443,45 @@ export default function SettingsPage() {
       {/* ==================== SECTION 1: STUDY PREFERENCES ==================== */}
       <section
         aria-labelledby="study-preferences-heading"
-        className="border-2 border-black p-6 sm:p-8 bg-white rounded-none shadow-none"
+        className="border border-stone-200 p-6 sm:p-8 bg-white shadow-sm"
       >
-        <div className="pb-5 border-b border-black flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="pb-5 border-b border-stone-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div>
             <div className="flex items-center gap-2 mb-1">
-              <span className="border border-black px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-black">
+              <span className="border border-stone-300 bg-stone-100/60 px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-stone-600">
                 SM-2 ENGINE
               </span>
-              <span className="border border-black px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-black">
+              <span className="border border-stone-300 bg-stone-100/60 px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-stone-600">
                 REPETITION PARAMS
               </span>
             </div>
             <h2
               id="study-preferences-heading"
-              className="font-serif text-xl sm:text-2xl font-bold uppercase tracking-tight text-black flex items-center gap-2"
+              className="font-serif text-xl sm:text-2xl font-light uppercase tracking-tight text-stone-900 flex items-center gap-2"
             >
-              <Sliders className="w-5 h-5 text-black" />
+              <Sliders className="w-5 h-5 text-stone-700" />
               Cài Đặt Học Tập (Study Preferences)
             </h2>
-            <p className="font-mono text-xs uppercase tracking-wider text-mutedForeground mt-1">
+            <p className="font-mono text-xs uppercase tracking-wider text-stone-500 mt-1">
               Cấu hình thuật toán lặp lại ngắt quãng SM-2 và hành vi ôn tập
             </p>
           </div>
         </div>
 
-        <div className="mt-6 space-y-6 divide-y divide-black">
+        <div className="mt-6 space-y-6 divide-y divide-stone-200">
           {/* Daily New Limit */}
           <div className="pt-0 space-y-3">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
               <div>
-                <label className="font-serif text-base font-bold uppercase tracking-tight text-black block">
+                <label className="font-serif text-base font-medium uppercase tracking-tight text-stone-900 block">
                   Số Thẻ Mới Mỗi Ngày (Daily New Cards)
                 </label>
-                <p className="font-sans text-xs text-mutedForeground mt-0.5">
+                <p className="font-sans text-xs text-stone-500 mt-0.5">
                   Giới hạn số lượng thẻ mới xuất hiện trong mỗi phiên ôn tập để tránh quá tải.
                 </p>
               </div>
 
-              {/* Sharp Rectangular Mono Buttons */}
+              {/* Muted Stone Rectangular Buttons */}
               <div className="flex items-center gap-2 flex-wrap self-start sm:self-auto">
                 {limitOptions.map((opt) => (
                   <button
@@ -491,10 +491,10 @@ export default function SettingsPage() {
                       setDailyNewLimit(opt);
                       toast.info(`Đã đổi giới hạn thẻ mới sang ${opt} thẻ/ngày`);
                     }}
-                    className={`border border-black px-3 py-1.5 font-mono text-xs uppercase transition-colors duration-100 rounded-none shadow-none ${
+                    className={`border px-3 py-1.5 font-mono text-xs uppercase transition-colors duration-100 ${
                       dailyNewLimit === opt
-                        ? 'bg-black text-white'
-                        : 'bg-white text-black hover:bg-black hover:text-white'
+                        ? 'bg-stone-900 text-white border-stone-900 shadow-xs'
+                        : 'bg-white text-stone-800 border-stone-300 hover:bg-stone-100 hover:border-stone-400'
                     }`}
                   >
                     {opt} THẺ
@@ -507,10 +507,10 @@ export default function SettingsPage() {
           {/* Auto-Play Audio Toggle */}
           <div className="pt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div>
-              <label className="font-serif text-base font-bold uppercase tracking-tight text-black block">
+              <label className="font-serif text-base font-medium uppercase tracking-tight text-stone-900 block">
                 Tự Động Phát Âm Thanh Khi Lật Thẻ
               </label>
-              <p className="font-sans text-xs text-mutedForeground mt-0.5">
+              <p className="font-sans text-xs text-stone-500 mt-0.5">
                 Tự động đọc to từ vựng/kanji tiếng Nhật qua Web Speech API khi lật sang mặt sau.
               </p>
             </div>
@@ -522,10 +522,10 @@ export default function SettingsPage() {
                   setAutoPlayAudio(true);
                   toast.info('Đã bật tự động phát âm thanh khi lật thẻ');
                 }}
-                className={`border border-black px-4 py-1.5 font-mono text-xs uppercase font-bold transition-colors duration-100 rounded-none shadow-none ${
+                className={`border px-4 py-1.5 font-mono text-xs uppercase font-medium transition-colors duration-100 ${
                   autoPlayAudio
-                    ? 'bg-black text-white'
-                    : 'bg-white text-black hover:bg-black hover:text-white'
+                    ? 'bg-stone-900 text-white border-stone-900 shadow-xs'
+                    : 'bg-white text-stone-800 border-stone-300 hover:bg-stone-100 hover:border-stone-400'
                 }`}
               >
                 BẬT
@@ -536,10 +536,10 @@ export default function SettingsPage() {
                   setAutoPlayAudio(false);
                   toast.info('Đã tắt tự động phát âm thanh');
                 }}
-                className={`border border-black px-4 py-1.5 font-mono text-xs uppercase font-bold transition-colors duration-100 rounded-none shadow-none ${
+                className={`border px-4 py-1.5 font-mono text-xs uppercase font-medium transition-colors duration-100 ${
                   !autoPlayAudio
-                    ? 'bg-black text-white'
-                    : 'bg-white text-black hover:bg-black hover:text-white'
+                    ? 'bg-stone-900 text-white border-stone-900 shadow-xs'
+                    : 'bg-white text-stone-800 border-stone-300 hover:bg-stone-100 hover:border-stone-400'
                 }`}
               >
                 TẮT
@@ -550,10 +550,10 @@ export default function SettingsPage() {
           {/* Sound Effects Toggle */}
           <div className="pt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div>
-              <label className="font-serif text-base font-bold uppercase tracking-tight text-black block">
+              <label className="font-serif text-base font-medium uppercase tracking-tight text-stone-900 block">
                 Âm Thanh Thông Báo Khi Làm Đúng/Sai
               </label>
-              <p className="font-sans text-xs text-mutedForeground mt-0.5">
+              <p className="font-sans text-xs text-stone-500 mt-0.5">
                 Phát hiệu ứng âm thanh phản hồi trong các bài trắc nghiệm Quiz và ghép thẻ.
               </p>
             </div>
@@ -565,10 +565,10 @@ export default function SettingsPage() {
                   setSoundEffects(true);
                   toast.info('Đã bật âm thanh phản hồi quiz');
                 }}
-                className={`border border-black px-4 py-1.5 font-mono text-xs uppercase font-bold transition-colors duration-100 rounded-none shadow-none ${
+                className={`border px-4 py-1.5 font-mono text-xs uppercase font-medium transition-colors duration-100 ${
                   soundEffects
-                    ? 'bg-black text-white'
-                    : 'bg-white text-black hover:bg-black hover:text-white'
+                    ? 'bg-stone-900 text-white border-stone-900 shadow-xs'
+                    : 'bg-white text-stone-800 border-stone-300 hover:bg-stone-100 hover:border-stone-400'
                 }`}
               >
                 BẬT
@@ -579,10 +579,10 @@ export default function SettingsPage() {
                   setSoundEffects(false);
                   toast.info('Đã tắt âm thanh phản hồi quiz');
                 }}
-                className={`border border-black px-4 py-1.5 font-mono text-xs uppercase font-bold transition-colors duration-100 rounded-none shadow-none ${
+                className={`border px-4 py-1.5 font-mono text-xs uppercase font-medium transition-colors duration-100 ${
                   !soundEffects
-                    ? 'bg-black text-white'
-                    : 'bg-white text-black hover:bg-black hover:text-white'
+                    ? 'bg-stone-900 text-white border-stone-900 shadow-xs'
+                    : 'bg-white text-stone-800 border-stone-300 hover:bg-stone-100 hover:border-stone-400'
                 }`}
               >
                 TẮT
@@ -601,26 +601,26 @@ export default function SettingsPage() {
       {/* ==================== SECTION 2: BACKUP & RESTORE ==================== */}
       <section
         aria-labelledby="backup-restore-heading"
-        className="border-2 border-black p-6 sm:p-8 bg-white rounded-none shadow-none"
+        className="border border-stone-200 p-6 sm:p-8 bg-white shadow-sm"
       >
-        <div className="pb-5 border-b border-black flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="pb-5 border-b border-stone-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div>
             <div className="flex items-center gap-2 mb-1">
-              <span className="border border-black px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-black">
+              <span className="border border-stone-300 bg-stone-100/60 px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-stone-600">
                 REPOSITORY
               </span>
-              <span className="border border-black px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-black">
+              <span className="border border-stone-300 bg-stone-100/60 px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-stone-600">
                 LOCAL SNAPSHOT ARCHIVE
               </span>
             </div>
             <h2
               id="backup-restore-heading"
-              className="font-serif text-xl sm:text-2xl font-bold uppercase tracking-tight text-black flex items-center gap-2"
+              className="font-serif text-xl sm:text-2xl font-light uppercase tracking-tight text-stone-900 flex items-center gap-2"
             >
-              <Database className="w-5 h-5 text-black" />
+              <Database className="w-5 h-5 text-stone-700" />
               Sao Lưu & Khôi Phục Dữ Liệu (Backup & Restore)
             </h2>
-            <p className="font-mono text-xs uppercase tracking-wider text-mutedForeground mt-1">
+            <p className="font-mono text-xs uppercase tracking-wider text-stone-500 mt-1">
               Xuất tệp JSON để lưu trữ ngoại tuyến hoặc khôi phục tiến độ từ tệp sao lưu
             </p>
           </div>
@@ -628,46 +628,46 @@ export default function SettingsPage() {
 
         <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Card 1: Export Backup */}
-          <div className="border-2 border-black p-6 bg-white flex flex-col justify-between space-y-4 rounded-none shadow-none">
+          <div className="border border-stone-200 p-6 bg-white flex flex-col justify-between space-y-4 shadow-xs">
             <div className="space-y-2">
-              <span className="border border-black px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-black block w-fit">
+              <span className="border border-stone-300 bg-stone-100/60 px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-stone-600 block w-fit">
                 EXPORT ARCHIVE
               </span>
-              <h3 className="font-serif text-lg font-bold uppercase tracking-tight text-black flex items-center gap-2">
-                <Download className="w-4 h-4 text-black" />
+              <h3 className="font-serif text-lg font-medium uppercase tracking-tight text-stone-900 flex items-center gap-2">
+                <Download className="w-4 h-4 text-stone-700" />
                 Xuất Tệp Sao Lưu JSON
               </h3>
-              <p className="font-sans text-xs text-mutedForeground leading-relaxed">
-                Tải về tệp <code className="px-1.5 py-0.5 border border-black font-mono text-xs text-black font-bold">jp_study_backup.json</code> chứa toàn bộ thẻ SRS, lịch sử ôn tập, chuỗi streak, kinh nghiệm XP, tiến độ Hán tự và cài đặt học tập.
+              <p className="font-sans text-xs text-stone-500 leading-relaxed">
+                Tải về tệp <code className="px-1.5 py-0.5 border border-stone-300 bg-stone-100 font-mono text-xs text-stone-800 font-medium">jp_study_backup.json</code> chứa toàn bộ thẻ SRS, lịch sử ôn tập, chuỗi streak, kinh nghiệm XP, tiến độ Hán tự và cài đặt học tập.
               </p>
             </div>
 
-            <div className="pt-4 border-t border-black flex flex-col gap-2">
+            <div className="pt-4 border-t border-stone-200 flex flex-col gap-2">
               <button
                 type="button"
                 onClick={handleExportBackup}
-                className="border-2 border-black bg-white text-black hover:bg-black hover:text-white px-6 py-3 font-mono text-xs uppercase tracking-widest transition-colors duration-100 rounded-none shadow-none inline-flex items-center justify-center gap-2 w-full"
+                className="border border-stone-900 bg-stone-900 text-white hover:bg-stone-800 px-6 py-3 font-mono text-xs uppercase tracking-widest transition-colors duration-100 inline-flex items-center justify-center gap-2 w-full shadow-xs"
               >
                 <Download className="w-4 h-4" />
                 <span>Xuất File Sao Lưu (JSON)</span>
               </button>
-              <span className="font-mono text-[10px] text-mutedForeground uppercase tracking-wider text-center">
+              <span className="font-mono text-[10px] text-stone-400 uppercase tracking-wider text-center">
                 ĐỊNH DẠNG JSON TIÊU CHUẨN • KHÔNG GIỚI HẠN SỐ LẦN
               </span>
             </div>
           </div>
 
           {/* Card 2: Import Backup */}
-          <div className="border-2 border-black p-6 bg-white flex flex-col justify-between space-y-4 rounded-none shadow-none">
+          <div className="border border-stone-200 p-6 bg-white flex flex-col justify-between space-y-4 shadow-xs">
             <div className="space-y-2">
-              <span className="border border-black px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-black block w-fit">
+              <span className="border border-stone-300 bg-stone-100/60 px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-stone-600 block w-fit">
                 IMPORT ARCHIVE
               </span>
-              <h3 className="font-serif text-lg font-bold uppercase tracking-tight text-black flex items-center gap-2">
-                <Upload className="w-4 h-4 text-black" />
+              <h3 className="font-serif text-lg font-medium uppercase tracking-tight text-stone-900 flex items-center gap-2">
+                <Upload className="w-4 h-4 text-stone-700" />
                 Nhập Dữ Liệu Sao Lưu
               </h3>
-              <p className="font-sans text-xs text-mutedForeground leading-relaxed">
+              <p className="font-sans text-xs text-stone-500 leading-relaxed">
                 Khôi phục hoặc đồng bộ tiến độ học tập từ tệp JSON đã lưu trước đây. Hệ thống sẽ tự động kiểm tra tính toàn vẹn và hiển thị bảng xem trước chi tiết trước khi áp dụng.
               </p>
             </div>
@@ -682,16 +682,16 @@ export default function SettingsPage() {
               aria-label="Chọn tệp JSON sao lưu để nhập"
             />
 
-            <div className="pt-4 border-t border-black flex flex-col gap-2">
+            <div className="pt-4 border-t border-stone-200 flex flex-col gap-2">
               <button
                 type="button"
                 onClick={handleTriggerFilePicker}
-                className="border-2 border-black bg-white text-black hover:bg-black hover:text-white px-6 py-3 font-mono text-xs uppercase tracking-widest transition-colors duration-100 rounded-none shadow-none inline-flex items-center justify-center gap-2 w-full"
+                className="border border-stone-300 bg-white text-stone-800 hover:bg-stone-100 hover:border-stone-400 px-6 py-3 font-mono text-xs uppercase tracking-widest transition-colors duration-100 inline-flex items-center justify-center gap-2 w-full shadow-xs"
               >
                 <Upload className="w-4 h-4" />
                 <span>Chọn Tệp Sao Lưu (.json)</span>
               </button>
-              <span className="font-mono text-[10px] text-mutedForeground uppercase tracking-wider text-center">
+              <span className="font-mono text-[10px] text-stone-400 uppercase tracking-wider text-center">
                 TỰ ĐỘNG KIỂM TRA CÚ PHÁP VÀ SCHEMA TRƯỚC KHI KHÔI PHỤC
               </span>
             </div>
@@ -702,26 +702,26 @@ export default function SettingsPage() {
       {/* ==================== SECTION 3: DANGER ZONE ==================== */}
       <section
         aria-labelledby="danger-zone-heading"
-        className="border-4 border-black p-6 sm:p-8 bg-white rounded-none shadow-none"
+        className="border border-rose-200 bg-rose-50/40 p-6 sm:p-8 shadow-sm"
       >
-        <div className="pb-5 border-b-2 border-black flex items-center justify-between gap-4">
+        <div className="pb-5 border-b border-rose-200/80 flex items-center justify-between gap-4">
           <div>
             <div className="flex items-center gap-2 mb-1">
-              <span className="border border-black px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-black">
+              <span className="border border-rose-300 bg-rose-100/60 px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-rose-700">
                 CRITICAL OPERATION
               </span>
-              <span className="border border-black px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-black">
+              <span className="border border-rose-300 bg-rose-100/60 px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-rose-700">
                 IRREVERSIBLE
               </span>
             </div>
             <h2
               id="danger-zone-heading"
-              className="font-serif text-2xl font-bold uppercase tracking-tight text-black flex items-center gap-2"
+              className="font-serif text-2xl font-light uppercase tracking-tight text-rose-900 flex items-center gap-2"
             >
-              <ShieldAlert className="w-6 h-6 text-black" />
+              <ShieldAlert className="w-6 h-6 text-rose-700" />
               Vùng Nguy Hiểm (Danger Zone)
             </h2>
-            <p className="font-sans text-sm text-mutedForeground mt-1">
+            <p className="font-sans text-sm text-rose-700 mt-1">
               Các thao tác nhạy cảm có thể ảnh hưởng vĩnh viễn tới dữ liệu học tập của bạn.
             </p>
           </div>
@@ -729,10 +729,10 @@ export default function SettingsPage() {
 
         <div className="mt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
           <div className="space-y-1 max-w-xl">
-            <h3 className="font-serif text-base sm:text-lg font-bold uppercase tracking-tight text-black">
+            <h3 className="font-serif text-base sm:text-lg font-medium uppercase tracking-tight text-stone-900">
               Xóa Toàn Bộ Dữ Liệu Học Tập (Reset Everything)
             </h3>
-            <p className="font-sans text-sm text-mutedForeground leading-relaxed">
+            <p className="font-sans text-sm text-stone-600 leading-relaxed">
               Xóa sạch tất cả thẻ Flashcard SRS, chuỗi ngày streak ({streak} ngày), điểm kinh nghiệm ({totalXp} XP), tiến độ Hán tự và từ vựng về trạng thái ban đầu. Thao tác này không thể hoàn tác.
             </p>
           </div>
@@ -743,7 +743,7 @@ export default function SettingsPage() {
               setResetConfirmInput('');
               setIsResetModalOpen(true);
             }}
-            className="border-2 border-black bg-black text-white hover:bg-white hover:text-black font-mono text-xs uppercase tracking-widest px-6 py-3 transition-colors duration-100 rounded-none shadow-none shrink-0 inline-flex items-center justify-center gap-2"
+            className="border border-rose-600 bg-rose-600 text-white hover:bg-rose-700 font-mono text-xs uppercase tracking-widest px-6 py-3 transition-colors duration-100 shrink-0 inline-flex items-center justify-center gap-2 shadow-xs"
           >
             <Trash2 className="w-4 h-4" />
             <span>Xóa Toàn Bộ Dữ Liệu</span>
@@ -754,43 +754,43 @@ export default function SettingsPage() {
       {/* ==================== SECTION 4: ABOUT & TIPS ==================== */}
       <section
         aria-labelledby="about-app-heading"
-        className="border-2 border-black p-6 sm:p-8 bg-white rounded-none shadow-none space-y-6"
+        className="border border-stone-200 p-6 sm:p-8 bg-white shadow-sm space-y-6"
       >
-        <div className="pb-4 border-b border-black flex items-center gap-2.5">
-          <Info className="w-5 h-5 text-black" />
-          <h2 id="about-app-heading" className="font-serif text-xl sm:text-2xl font-bold uppercase tracking-tight text-black">
+        <div className="pb-4 border-b border-stone-200 flex items-center gap-2.5">
+          <Info className="w-5 h-5 text-stone-700" />
+          <h2 id="about-app-heading" className="font-serif text-xl sm:text-2xl font-light uppercase tracking-tight text-stone-900">
             Kiến Trúc Offline-First & Hướng Dẫn Lưu Trữ
           </h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="border border-black p-5 bg-white space-y-2">
-            <span className="font-mono text-xs uppercase tracking-widest text-black font-bold block">
+          <div className="border border-stone-200 p-5 bg-stone-50/50 space-y-2">
+            <span className="font-mono text-xs uppercase tracking-widest text-stone-500 font-medium block">
               01 · OFFLINE-FIRST ARCHITECTURE
             </span>
-            <h3 className="font-serif text-base font-bold text-black uppercase">
+            <h3 className="font-serif text-base font-medium text-stone-900 uppercase">
               Không Cần Máy Chủ Lưu Trữ Riêng
             </h3>
-            <p className="font-sans text-xs text-mutedForeground leading-relaxed">
+            <p className="font-sans text-xs text-stone-500 leading-relaxed">
               Nihongo Master hoạt động 100% trên trình duyệt của bạn với công nghệ Static Web và LocalStorage. Ứng dụng không thu thập thông tin cá nhân và hoàn toàn có thể sử dụng khi không có mạng Internet.
             </p>
           </div>
 
-          <div className="border border-black p-5 bg-white space-y-2">
-            <span className="font-mono text-xs uppercase tracking-widest text-black font-bold block">
+          <div className="border border-stone-200 p-5 bg-stone-50/50 space-y-2">
+            <span className="font-mono text-xs uppercase tracking-widest text-stone-500 font-medium block">
               02 · DATA PRESERVATION POLICY
             </span>
-            <h3 className="font-serif text-base font-bold text-black uppercase">
+            <h3 className="font-serif text-base font-medium text-stone-900 uppercase">
               Mẹo Bảo Vệ Chuỗi Học Tập
             </h3>
-            <p className="font-sans text-xs text-mutedForeground leading-relaxed">
+            <p className="font-sans text-xs text-stone-500 leading-relaxed">
               Do dữ liệu nằm tại trình duyệt thiết bị, việc dọn dẹp cache hoặc đổi trình duyệt có thể làm mất dữ liệu. Hãy bấm <strong>Xuất File Sao Lưu (JSON)</strong> định kỳ để lưu trữ an toàn trên Google Drive hoặc máy tính cá nhân.
             </p>
           </div>
         </div>
 
-        <div className="pt-4 border-t border-black font-mono text-xs uppercase tracking-wider text-mutedForeground flex flex-col sm:flex-row items-center justify-between gap-2">
-          <span>NIHONGO MASTER · PHIÊN BẢN V1.0.0 (MONOCHROME ARCHIVE)</span>
+        <div className="pt-4 border-t border-stone-200 font-mono text-xs uppercase tracking-wider text-stone-500 flex flex-col sm:flex-row items-center justify-between gap-2">
+          <span>NIHONGO MASTER · PHIÊN BẢN V1.0.0 (MUTED JAPANESE ARCHIVE)</span>
           <span>THUẬT TOÁN SM-2 SPACED REPETITION · HỖ TRỢ JLPT N5 ~ N1</span>
         </div>
       </section>
@@ -803,9 +803,9 @@ export default function SettingsPage() {
           setPendingBackup(null);
         }}
         title={
-          <div className="flex items-center gap-2 text-black">
-            <FileJson className="w-5 h-5 text-black" />
-            <span className="font-serif uppercase tracking-tight">Xác Nhận Khôi Phục Dữ Liệu</span>
+          <div className="flex items-center gap-2 text-stone-900">
+            <FileJson className="w-5 h-5 text-stone-700" />
+            <span className="font-serif font-medium uppercase tracking-tight">Xác Nhận Khôi Phục Dữ Liệu</span>
           </div>
         }
         description="Kiểm tra thông tin chi tiết của bản sao lưu trước khi tiến hành cập nhật vào hệ thống."
@@ -818,14 +818,14 @@ export default function SettingsPage() {
                 setIsImportModalOpen(false);
                 setPendingBackup(null);
               }}
-              className="border border-black bg-white text-black hover:bg-black hover:text-white px-4 py-2 font-mono text-xs uppercase tracking-widest transition-colors duration-100 rounded-none shadow-none"
+              className="border border-stone-300 bg-white text-stone-700 hover:bg-stone-100 hover:border-stone-400 px-4 py-2 font-mono text-xs uppercase tracking-widest transition-colors duration-100"
             >
               Hủy Bỏ
             </button>
             <button
               type="button"
               onClick={handleConfirmImport}
-              className="border-2 border-black bg-black text-white hover:bg-white hover:text-black px-4 py-2 font-mono text-xs uppercase tracking-widest transition-colors duration-100 rounded-none shadow-none inline-flex items-center gap-1.5"
+              className="border border-stone-900 bg-stone-900 text-white hover:bg-stone-800 px-4 py-2 font-mono text-xs uppercase tracking-widest transition-colors duration-100 inline-flex items-center gap-1.5 shadow-xs"
             >
               <Check className="w-4 h-4" />
               <span>Xác Nhận Khôi Phục</span>
@@ -836,8 +836,8 @@ export default function SettingsPage() {
         {pendingBackup && (
           <div className="space-y-4">
             {/* Backup Timestamp Info */}
-            <div className="border border-black p-3.5 bg-white flex items-center justify-between font-mono text-xs text-black">
-              <span className="uppercase tracking-wider text-mutedForeground">
+            <div className="border border-stone-200 p-3.5 bg-stone-50 flex items-center justify-between font-mono text-xs text-stone-800">
+              <span className="uppercase tracking-wider text-stone-500">
                 THỜI GIAN XUẤT SAO LƯU:
               </span>
               <span className="font-bold">
@@ -848,61 +848,61 @@ export default function SettingsPage() {
             </div>
 
             {/* Backup Statistics Table Grid */}
-            <div className="border border-black divide-x divide-y divide-black grid grid-cols-2 sm:grid-cols-3 bg-white">
+            <div className="border border-stone-200 divide-x divide-y divide-stone-200 grid grid-cols-2 sm:grid-cols-3 bg-white">
               <div className="p-3 text-center">
-                <span className="font-mono text-[10px] text-mutedForeground uppercase tracking-wider block">
+                <span className="font-mono text-[10px] text-stone-500 uppercase tracking-wider block">
                   Số Thẻ SRS
                 </span>
-                <span className="font-serif text-2xl font-bold text-black mt-0.5 block">
+                <span className="font-serif text-2xl font-light text-stone-900 mt-0.5 block">
                   {pendingBackup.cards
                     ? Array.isArray(pendingBackup.cards)
-                      ? pendingBackup.cards.length
-                      : Object.keys(pendingBackup.cards).length
+                    ? pendingBackup.cards.length
+                    : Object.keys(pendingBackup.cards).length
                     : 0}
                 </span>
               </div>
 
               <div className="p-3 text-center">
-                <span className="font-mono text-[10px] text-mutedForeground uppercase tracking-wider block">
+                <span className="font-mono text-[10px] text-stone-500 uppercase tracking-wider block">
                   Chuỗi Streak
                 </span>
-                <span className="font-serif text-2xl font-bold text-black mt-0.5 block">
+                <span className="font-serif text-2xl font-light text-stone-900 mt-0.5 block">
                   {pendingBackup.stats?.streak ?? 0} ngày
                 </span>
               </div>
 
               <div className="p-3 text-center">
-                <span className="font-mono text-[10px] text-mutedForeground uppercase tracking-wider block">
+                <span className="font-mono text-[10px] text-stone-500 uppercase tracking-wider block">
                   Tổng Điểm XP
                 </span>
-                <span className="font-serif text-2xl font-bold text-black mt-0.5 block">
+                <span className="font-serif text-2xl font-light text-stone-900 mt-0.5 block">
                   {pendingBackup.stats?.totalXp ?? pendingBackup.stats?.totalXP ?? 0} XP
                 </span>
               </div>
 
               <div className="p-3 text-center">
-                <span className="font-mono text-[10px] text-mutedForeground uppercase tracking-wider block">
+                <span className="font-mono text-[10px] text-stone-500 uppercase tracking-wider block">
                   Lượt Ôn Tập
                 </span>
-                <span className="font-serif text-2xl font-bold text-black mt-0.5 block">
+                <span className="font-serif text-2xl font-light text-stone-900 mt-0.5 block">
                   {pendingBackup.stats?.totalReviews ?? 0} lượt
                 </span>
               </div>
 
               <div className="p-3 text-center">
-                <span className="font-mono text-[10px] text-mutedForeground uppercase tracking-wider block">
+                <span className="font-mono text-[10px] text-stone-500 uppercase tracking-wider block">
                   Hán Tự (Kanji)
                 </span>
-                <span className="font-serif text-2xl font-bold text-black mt-0.5 block">
+                <span className="font-serif text-2xl font-light text-stone-900 mt-0.5 block">
                   {Object.keys(pendingBackup.kanjiProgress || {}).length} chữ
                 </span>
               </div>
 
               <div className="p-3 text-center">
-                <span className="font-mono text-[10px] text-mutedForeground uppercase tracking-wider block">
+                <span className="font-mono text-[10px] text-stone-500 uppercase tracking-wider block">
                   Từ Vựng (Tango)
                 </span>
-                <span className="font-serif text-2xl font-bold text-black mt-0.5 block">
+                <span className="font-serif text-2xl font-light text-stone-900 mt-0.5 block">
                   {Object.keys(
                     pendingBackup.vocabProgress || pendingBackup.vocabStatus || {}
                   ).length}{' '}
@@ -912,8 +912,8 @@ export default function SettingsPage() {
             </div>
 
             {/* Warning Note */}
-            <div className="border border-black p-3.5 bg-white font-mono text-xs text-black leading-relaxed flex items-start gap-2.5">
-              <AlertTriangle className="w-4 h-4 shrink-0 text-black mt-0.5" />
+            <div className="border border-amber-200 bg-amber-50/60 p-3.5 font-mono text-xs text-amber-900 leading-relaxed flex items-start gap-2.5">
+              <AlertTriangle className="w-4 h-4 shrink-0 text-amber-600 mt-0.5" />
               <span>
                 <strong>LƯU Ý:</strong> Dữ liệu hiện có trên trình duyệt này sẽ được cập nhật đồng bộ với bản sao lưu. Các thẻ SRS và tiến độ trong tệp sao lưu sẽ được áp dụng vào hệ thống.
               </span>
@@ -930,9 +930,9 @@ export default function SettingsPage() {
           setResetConfirmInput('');
         }}
         title={
-          <div className="flex items-center gap-2 text-black">
-            <AlertTriangle className="w-5 h-5 text-black" />
-            <span className="font-serif uppercase tracking-tight">Xác Nhận Xóa Toàn Bộ Dữ Liệu</span>
+          <div className="flex items-center gap-2 text-rose-900">
+            <AlertTriangle className="w-5 h-5 text-rose-600" />
+            <span className="font-serif font-medium uppercase tracking-tight">Xác Nhận Xóa Toàn Bộ Dữ Liệu</span>
           </div>
         }
         description="Thao tác này sẽ xóa vĩnh viễn toàn bộ tiến trình học tập trên thiết bị này."
@@ -945,7 +945,7 @@ export default function SettingsPage() {
                 setIsResetModalOpen(false);
                 setResetConfirmInput('');
               }}
-              className="border border-black bg-white text-black hover:bg-black hover:text-white px-4 py-2 font-mono text-xs uppercase tracking-widest transition-colors duration-100 rounded-none shadow-none"
+              className="border border-stone-300 bg-white text-stone-700 hover:bg-stone-100 hover:border-stone-400 px-4 py-2 font-mono text-xs uppercase tracking-widest transition-colors duration-100"
             >
               Hủy Bỏ
             </button>
@@ -956,7 +956,7 @@ export default function SettingsPage() {
                 resetConfirmInput.trim().toUpperCase() !== 'RESET'
               }
               onClick={handleConfirmReset}
-              className="border-2 border-black bg-black text-white hover:bg-white hover:text-black disabled:opacity-30 disabled:hover:bg-black disabled:hover:text-white px-4 py-2 font-mono text-xs uppercase tracking-widest transition-colors duration-100 rounded-none shadow-none inline-flex items-center gap-1.5"
+              className="border border-rose-600 bg-rose-600 text-white hover:bg-rose-700 disabled:opacity-40 disabled:hover:bg-rose-600 px-4 py-2 font-mono text-xs uppercase tracking-widest transition-colors duration-100 inline-flex items-center gap-1.5 shadow-xs"
             >
               <Trash2 className="w-4 h-4" />
               <span>Xóa Vĩnh Viễn Dữ Liệu</span>
@@ -965,7 +965,7 @@ export default function SettingsPage() {
         }
       >
         <div className="space-y-4">
-          <div className="border-2 border-black p-4 bg-white font-mono text-xs text-black leading-relaxed space-y-2">
+          <div className="border border-rose-200 bg-rose-50/70 p-4 font-mono text-xs text-rose-900 leading-relaxed space-y-2">
             <p className="font-bold">CẢNH BÁO: BẠN CHUẨN BỊ XÓA TOÀN BỘ:</p>
             <ul className="list-disc list-inside space-y-1 pl-1">
               <li>{cardCount} thẻ Spaced Repetition (SRS)</li>
@@ -977,9 +977,9 @@ export default function SettingsPage() {
           <div className="space-y-2">
             <label
               htmlFor="reset-confirm-input"
-              className="font-mono text-xs font-bold text-black uppercase tracking-wider block"
+              className="font-mono text-xs font-medium text-stone-800 uppercase tracking-wider block"
             >
-              Để xác nhận, vui lòng nhập <code className="border border-black px-1.5 py-0.5 font-bold font-mono">XÓA</code> hoặc <code className="border border-black px-1.5 py-0.5 font-bold font-mono">RESET</code> vào ô bên dưới:
+              Để xác nhận, vui lòng nhập <code className="border border-stone-300 bg-stone-100 px-1.5 py-0.5 font-bold font-mono text-stone-800">XÓA</code> hoặc <code className="border border-stone-300 bg-stone-100 px-1.5 py-0.5 font-bold font-mono text-stone-800">RESET</code> vào ô bên dưới:
             </label>
             <input
               id="reset-confirm-input"
@@ -987,7 +987,7 @@ export default function SettingsPage() {
               value={resetConfirmInput}
               onChange={(e) => setResetConfirmInput(e.target.value)}
               placeholder='NHẬP "XÓA" HOẶC "RESET"'
-              className="border-2 border-black p-3 font-mono text-sm focus:outline-none focus:ring-2 focus:ring-black rounded-none shadow-none w-full text-black bg-white"
+              className="border border-stone-300 p-3 font-mono text-sm focus:outline-none focus:ring-1 focus:ring-stone-400 w-full text-stone-900 bg-white"
               autoFocus
             />
           </div>

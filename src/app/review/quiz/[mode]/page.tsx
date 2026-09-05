@@ -37,8 +37,8 @@ export default function QuizModeDynamicPage({
       fallback={
         <div className="min-h-[calc(100vh-4rem)] flex items-center justify-center">
           <div className="flex flex-col items-center gap-3">
-            <div className="w-8 h-8 border-2 border-black border-t-transparent animate-spin" />
-            <p className="font-sans text-xs uppercase tracking-wider text-mutedForeground">ĐANG CHUẨN BỊ BÀI THI...</p>
+            <div className="w-8 h-8 border-2 border-stone-800 border-t-transparent animate-spin rounded-none" />
+            <p className="font-sans text-xs uppercase tracking-wider text-stone-500">ĐANG CHUẨN BỊ BÀI THI...</p>
           </div>
         </div>
       }
