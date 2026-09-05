@@ -335,13 +335,13 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
   if (!items || items.length === 0) {
     return (
       <div className="max-w-md mx-auto p-6 text-center space-y-4 border-2 border-black bg-white rounded-none shadow-none">
-        <p className="font-mono text-sm text-black">[ KHÔNG CÓ CÂU HỎI NÀO TRONG BỘ BÀI NÀY ]</p>
+        <p className="font-sans text-sm text-black">KHÔNG CÓ CÂU HỎI NÀO TRONG BỘ BÀI NÀY</p>
         <Link
           href="/review/quiz"
-          className="inline-flex items-center gap-2 px-5 py-2.5 border-2 border-black bg-black text-white font-mono text-xs uppercase font-bold hover:bg-white hover:text-black transition-colors duration-100 rounded-none shadow-none"
+          className="inline-flex items-center gap-2 px-5 py-2.5 border-2 border-black bg-black text-white font-sans text-xs uppercase font-bold hover:bg-white hover:text-black transition-colors duration-100 rounded-none shadow-none"
         >
           <Dices className="w-4 h-4" />
-          <span>[ QUAY LẠI MENU QUIZ ]</span>
+          <span>QUAY LẠI MENU QUIZ</span>
         </Link>
       </div>
     );
@@ -356,7 +356,7 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
         {/* High-Fashion Editorial Title Banner */}
         <div className="text-center space-y-2 pb-6 border-b-4 border-black">
           <div className="font-mono text-xs uppercase tracking-widest text-mutedForeground">
-            [ HOÀN THÀNH GHÉP KÝ TỰ WORD BUILDER ]
+            HOÀN THÀNH GHÉP KÝ TỰ WORD BUILDER
           </div>
           <h1 className="font-serif font-black text-4xl sm:text-6xl text-black tracking-tight uppercase">
             WORD BUILDER COMPLETED
@@ -364,7 +364,7 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
           <p className="font-serif text-lg sm:text-2xl text-black tracking-widest">
             文字組み立て完了
           </p>
-          <p className="font-mono text-xs uppercase tracking-wider text-mutedForeground mt-1">
+          <p className="font-sans text-xs uppercase tracking-wider text-mutedForeground mt-1 font-medium">
             BẠN ĐÃ GHÉP ĐÚNG {score}/{items.length} TỪ VỰNG
           </p>
         </div>
@@ -425,26 +425,26 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
           <button
             type="button"
             onClick={handleRestartInternal}
-            className="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-black bg-white text-black font-mono text-xs font-bold uppercase tracking-widest hover:bg-black hover:text-white transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
+            className="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-black bg-white text-black font-sans text-xs font-bold uppercase tracking-wider hover:bg-black hover:text-white transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
           >
             <RotateCcw className="w-4 h-4" />
-            <span>[ LUYỆN LẠI BỘ NÀY ]</span>
+            <span>LUYỆN LẠI BỘ NÀY</span>
           </button>
 
           <Link
             href="/review/quiz"
-            className="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-black bg-white text-black font-mono text-xs font-bold uppercase tracking-widest hover:bg-black hover:text-white transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
+            className="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-black bg-white text-black font-sans text-xs font-bold uppercase tracking-wider hover:bg-black hover:text-white transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
           >
             <Dices className="w-4 h-4" />
-            <span>[ ĐỔI CHẾ ĐỘ QUIZ ]</span>
+            <span>ĐỔI CHẾ ĐỘ QUIZ</span>
           </Link>
 
           <Link
             href="/"
-            className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-black bg-black text-white font-mono text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
+            className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-black bg-black text-white font-sans text-xs font-bold uppercase tracking-wider hover:bg-white hover:text-black transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
           >
             <Home className="w-4 h-4" />
-            <span>[ TRANG CHỦ ]</span>
+            <span>TRANG CHỦ</span>
           </Link>
         </div>
 
@@ -452,7 +452,7 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
         <div className="border-2 border-black bg-white p-5 sm:p-6 rounded-none shadow-none space-y-4">
           <div className="flex items-center justify-between pb-3 border-b-2 border-black">
             <h2 className="font-mono text-xs font-bold uppercase tracking-widest text-black">
-              [ CHI TIẾT CÂU GHÉP TỪ · {history.length} CÂU ]
+              CHI TIẾT CÂU GHÉP TỪ · {history.length} CÂU
             </h2>
           </div>
 
@@ -464,13 +464,13 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
               >
                 <div className="flex items-center gap-3 min-w-0">
                   <span
-                    className={`inline-flex items-center justify-center px-2 py-0.5 font-mono text-xs font-bold uppercase shrink-0 border border-black ${
+                    className={`inline-flex items-center justify-center px-2 py-0.5 font-sans text-xs font-bold uppercase shrink-0 border border-black ${
                       h.isCorrect
                         ? 'bg-black text-white'
                         : 'bg-white text-black line-through'
                     }`}
                   >
-                    {h.isCorrect ? '[ ĐÚNG ] ✓' : '[ SAI ] ✕'}
+                    {h.isCorrect ? 'ĐÚNG ✓' : 'SAI ✕'}
                   </span>
 
                   <div className="min-w-0">
@@ -489,11 +489,11 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
                         </span>
                       )}
                     </div>
-                    <p className="font-body text-xs text-mutedForeground truncate mt-0.5">
+                    <p className="font-sans text-xs text-mutedForeground truncate mt-0.5">
                       {h.item.meaning}
                     </p>
                     {!h.isCorrect && (
-                      <p className="font-mono text-[11px] text-black font-semibold mt-0.5">
+                      <p className="font-sans text-[11px] text-black font-semibold mt-0.5">
                         Bạn ghép: {h.constructedWord}
                       </p>
                     )}
@@ -538,12 +538,12 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
           <div className="flex items-center gap-2.5">
             {/* Streak Counter */}
             <div className="flex items-center gap-1 px-3 py-1 border border-black bg-white text-black font-mono text-xs font-bold rounded-none uppercase">
-              <span>[ STREAK: {streak} ]</span>
+              <span>CHUỖI: {streak}</span>
             </div>
 
             {/* XP Earned */}
             <div className="flex items-center gap-1 px-3 py-1 border border-black bg-black text-white font-mono text-xs font-bold rounded-none uppercase">
-              <span>[ +{earnedXp} XP ]</span>
+              <span>+{earnedXp} XP</span>
             </div>
           </div>
         </div>
@@ -556,29 +556,29 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
         />
       </div>
 
-      {/* Main Prompt Card (Vietnamese Meaning in Playfair Display Serif) */}
+      {/* Main Prompt Card (Vietnamese Meaning in high-contrast sans) */}
       <div className="relative border-2 border-black bg-white p-6 sm:p-8 text-center rounded-none shadow-none space-y-3">
         <div className="flex justify-between items-center absolute top-4 left-4 right-4">
-          <div className="text-xs font-mono font-bold text-mutedForeground uppercase tracking-wider">
-            [ GHÉP TỪ CHO NGHĨA ]
+          <div className="text-xs font-sans font-semibold text-mutedForeground uppercase tracking-wider">
+            GHÉP TỪ CHO NGHĨA
           </div>
 
           {/* Hint Button */}
           <button
             type="button"
             onClick={() => setShowHint(!showHint)}
-            className={`px-2 py-1 border border-black text-xs font-mono font-bold transition-colors duration-100 rounded-none ${
+            className={`px-2 py-1 border border-black text-xs font-sans font-medium transition-colors duration-100 rounded-none ${
               showHint ? 'bg-black text-white' : 'bg-white text-black'
             }`}
             title="Xem gợi ý Furigana / Âm Hán Việt"
           >
-            {showHint ? '[ HINT: ON ]' : '[ HINT ]'}
+            {showHint ? 'GỢI Ý: BẬT' : 'GỢI Ý'}
           </button>
         </div>
 
-        {/* Vietnamese Meaning Prompt in Playfair Display Serif */}
+        {/* Vietnamese Meaning Prompt */}
         <div className="pt-6 pb-2">
-          <h2 className="text-2xl sm:text-4xl font-serif font-black text-black tracking-tight">
+          <h2 className="text-2xl sm:text-4xl font-sans font-bold text-black tracking-tight leading-snug">
             {currentItem.meaning}
           </h2>
 
@@ -657,24 +657,24 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
 
         {/* Construction Line Controls: Undo & Reset */}
         {!isChecked && selectedTileIds.length > 0 && (
-          <div className="flex items-center gap-2 pt-1 animate-fadeIn font-mono text-xs">
+          <div className="flex items-center gap-2 pt-1 animate-fadeIn font-sans text-xs">
             <button
               type="button"
               onClick={handleUndo}
-              className="inline-flex items-center gap-1.5 px-3 py-1 border border-black bg-white text-black hover:bg-black hover:text-white transition-colors duration-100 rounded-none uppercase font-bold"
+              className="inline-flex items-center gap-1.5 px-3 py-1 border border-black bg-white text-black hover:bg-black hover:text-white transition-colors duration-100 rounded-none uppercase font-semibold"
               title="Gỡ ký tự cuối (Backspace)"
             >
               <Undo2 className="w-3.5 h-3.5" />
-              <span>[ GỠ Ô CUỐI ]</span>
+              <span>GỠ Ô CUỐI</span>
             </button>
             <button
               type="button"
               onClick={handleResetTiles}
-              className="inline-flex items-center gap-1.5 px-3 py-1 border border-black bg-white text-black hover:bg-black hover:text-white transition-colors duration-100 rounded-none uppercase font-bold"
+              className="inline-flex items-center gap-1.5 px-3 py-1 border border-black bg-white text-black hover:bg-black hover:text-white transition-colors duration-100 rounded-none uppercase font-semibold"
               title="Xóa hết làm lại"
             >
               <Trash2 className="w-3.5 h-3.5" />
-              <span>[ LÀM LẠI ]</span>
+              <span>LÀM LẠI</span>
             </button>
           </div>
         )}
@@ -682,8 +682,8 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
 
       {/* Scrambled Character Tiles Bank: Sharp square letter blocks */}
       <div className="p-4 sm:p-6 border-2 border-black bg-white rounded-none shadow-none space-y-3">
-        <div className="text-xs font-mono font-bold uppercase tracking-widest text-mutedForeground text-center">
-          [ KHO KÝ TỰ GỢI Ý ]
+        <div className="text-xs font-sans font-semibold uppercase tracking-wider text-mutedForeground text-center">
+          KHO KÝ TỰ GỢI Ý
         </div>
 
         <div className="flex items-center justify-center gap-2 sm:gap-3 flex-wrap pt-2">
@@ -714,22 +714,22 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
         <div className="pt-2 flex items-center justify-between gap-3 animate-fadeIn">
           <div className="flex items-center gap-2">
             <span
-              className={`inline-flex items-center justify-center px-3 py-1.5 font-mono text-xs font-bold uppercase border-2 border-black ${
+              className={`inline-flex items-center justify-center px-3 py-1.5 font-sans text-xs font-bold uppercase border-2 border-black ${
                 isCorrect
                   ? 'bg-black text-white'
                   : 'bg-white text-black line-through'
               }`}
             >
-              {isCorrect ? '[ CORRECT ] ✓ (+15 XP)' : `[ INCORRECT ] ✕ (ĐÁP ÁN: ${targetWord})`}
+              {isCorrect ? 'CHÍNH XÁC ✓ (+15 XP)' : `CHƯA ĐÚNG ✕ (ĐÁP ÁN: ${targetWord})`}
             </span>
           </div>
 
           <button
             type="button"
             onClick={handleNext}
-            className="flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-black bg-black text-white hover:bg-white hover:text-black font-mono text-xs uppercase font-bold tracking-widest transition-colors duration-100 rounded-none shadow-none active:scale-[0.98] ml-auto"
+            className="flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-black bg-black text-white hover:bg-white hover:text-black font-sans text-xs uppercase font-bold tracking-wider transition-colors duration-100 rounded-none shadow-none active:scale-[0.98] ml-auto"
           >
-            <span>{currentIndex < items.length - 1 ? '[ CÂU TIẾP THEO ]' : '[ XEM KẾT QUẢ ]'}</span>
+            <span>{currentIndex < items.length - 1 ? 'CÂU TIẾP THEO' : 'XEM KẾT QUẢ'}</span>
             <ArrowRight className="w-4 h-4" />
           </button>
         </div>

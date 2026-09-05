@@ -83,7 +83,7 @@ export const Modal: React.FC<ModalProps> = ({
                 </h3>
               )}
               {description && (
-                <p className="mt-1 font-body text-sm text-mutedForeground">
+                <p className="mt-1 font-sans text-sm text-mutedForeground">
                   {description}
                 </p>
               )}
@@ -92,17 +92,17 @@ export const Modal: React.FC<ModalProps> = ({
               <button
                 type="button"
                 onClick={onClose}
-                className="border border-black px-2 py-1 font-mono text-xs hover:bg-black hover:text-white transition-colors duration-100 ml-auto flex-shrink-0"
+                className="w-7 h-7 border border-black flex items-center justify-center font-mono text-xs hover:bg-black hover:text-white transition-colors duration-100 ml-auto flex-shrink-0"
                 aria-label="Đóng cửa sổ"
               >
-                [ X ]
+                ✕
               </button>
             )}
           </div>
         )}
 
         {/* Content Body */}
-        <div className="max-h-[calc(85vh-8rem)] overflow-y-auto font-body text-black text-sm">
+        <div className="max-h-[calc(85vh-8rem)] overflow-y-auto font-sans text-black text-sm">
           {children}
         </div>
 

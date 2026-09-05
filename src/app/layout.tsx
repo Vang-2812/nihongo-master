@@ -1,19 +1,19 @@
 import type { Metadata } from 'next';
-import { Playfair_Display, Source_Serif_4, JetBrains_Mono } from 'next/font/google';
+import { Inter, Playfair_Display, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/layout/Navbar';
 import ToastContainer from '@/components/ui/ToastContainer';
 import SyncInitializer from '@/components/sync/SyncInitializer';
 
-const playfair = Playfair_Display({
+const inter = Inter({
   subsets: ['latin', 'vietnamese'],
-  variable: '--font-playfair',
+  variable: '--font-inter',
   display: 'swap',
 });
 
-const sourceSerif = Source_Serif_4({
+const playfair = Playfair_Display({
   subsets: ['latin', 'vietnamese'],
-  variable: '--font-source-serif',
+  variable: '--font-playfair',
   display: 'swap',
 });
 
@@ -54,7 +54,7 @@ export default function RootLayout({
     <html
       lang="vi"
       suppressHydrationWarning
-      className={`${playfair.variable} ${sourceSerif.variable} ${jetbrainsMono.variable}`}
+      className={`${inter.variable} ${playfair.variable} ${jetbrainsMono.variable}`}
     >
       <head>
         <meta name="referrer" content="no-referrer" />
@@ -65,7 +65,7 @@ export default function RootLayout({
         <link rel="manifest" href="/manifest.json" />
         <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
       </head>
-      <body className="min-h-screen flex flex-col bg-background text-foreground font-body antialiased selection:bg-black selection:text-white">
+      <body className="min-h-screen flex flex-col bg-background text-foreground font-sans antialiased selection:bg-black selection:text-white">
         <SyncInitializer />
         <Navbar />
         <main className="flex-1 pb-20 lg:pb-10">

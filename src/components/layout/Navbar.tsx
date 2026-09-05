@@ -92,8 +92,8 @@ export const Navbar: React.FC = () => {
                 <span className="font-serif tracking-tight font-extrabold text-xl sm:text-2xl text-black">
                   NIHONGO MASTER
                 </span>
-                <span className="font-mono text-[10px] tracking-widest uppercase border border-black px-1.5 py-0.5 ml-2 text-black">
-                  [ ARCHIVE ]
+                <span className="font-sans font-semibold text-[10px] tracking-widest uppercase border border-black px-1.5 py-0.5 ml-2 text-black">
+                  ARCHIVE
                 </span>
               </Link>
             </div>
@@ -106,7 +106,7 @@ export const Navbar: React.FC = () => {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className={`font-mono text-xs uppercase tracking-widest px-3 py-1.5 transition-colors duration-100 flex items-center gap-1.5 ${
+                    className={`font-sans font-medium text-xs uppercase tracking-wider px-3 py-1.5 transition-colors duration-100 flex items-center gap-1.5 ${
                       active
                         ? 'bg-black text-white'
                         : 'text-black hover:bg-muted'
@@ -115,7 +115,7 @@ export const Navbar: React.FC = () => {
                     <span>{link.label}</span>
                     {link.badge !== undefined && (
                       <span
-                        className={`text-[10px] font-mono border px-1 py-0.2 ml-1 ${
+                        className={`text-[10px] font-mono border px-1 py-0.5 ml-1 ${
                           active ? 'border-white text-white' : 'border-black text-black'
                         }`}
                       >
@@ -171,7 +171,7 @@ export const Navbar: React.FC = () => {
                   key={link.href}
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className={`flex items-center justify-between px-3 py-2 font-mono text-xs uppercase tracking-widest rounded-none transition-colors duration-100 ${
+                  className={`flex items-center justify-between px-3 py-2 font-sans font-medium text-xs uppercase tracking-wider rounded-none transition-colors duration-100 ${
                     active
                       ? 'bg-black text-white'
                       : 'text-black hover:bg-muted'
@@ -205,7 +205,7 @@ export const Navbar: React.FC = () => {
             <Link
               key={link.href}
               href={link.href}
-              className={`relative flex flex-col items-center justify-center py-1 px-2 font-mono text-[10px] uppercase tracking-wider transition-colors duration-100 rounded-none ${
+              className={`relative flex flex-col items-center justify-center py-1 px-2 font-sans font-medium text-[10px] uppercase tracking-wider transition-colors duration-100 rounded-none ${
                 active
                   ? 'bg-black text-white'
                   : 'text-black hover:bg-muted'

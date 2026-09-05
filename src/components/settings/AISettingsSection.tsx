@@ -60,7 +60,7 @@ export default function AISettingsSection() {
         <div>
           <div className="flex items-center gap-2 mb-1">
             <span className="border border-black px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-black">
-              [ AI ENGINE ]
+              AI ENGINE
             </span>
             <span className="border border-black px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-black">
               OPENAI COMPATIBLE
@@ -111,7 +111,7 @@ export default function AISettingsSection() {
               API Key
             </label>
             <span className="font-mono text-[10px] uppercase tracking-wider text-mutedForeground">
-              [ CLIENT-SIDE STORAGE ONLY ]
+              LƯU CỤC BỘ TRÊN THIẾT BỊ
             </span>
           </div>
           <div className="relative">
@@ -131,7 +131,7 @@ export default function AISettingsSection() {
               {showKey ? <EyeOff className="w-3.5 h-3.5" /> : <Eye className="w-3.5 h-3.5" />}
             </button>
           </div>
-          <p className="font-body text-xs text-mutedForeground mt-1">
+          <p className="font-sans text-xs text-mutedForeground mt-1">
             Khóa bí mật chỉ được lưu trên trình duyệt của bạn (localStorage), tuyệt đối không lưu trữ trên máy chủ.
           </p>
         </div>
@@ -157,7 +157,7 @@ export default function AISettingsSection() {
               <label className="block font-mono text-xs font-bold text-black uppercase tracking-wider">
                 Bản Dịch Tiếng Việt Trong Bài Tập
               </label>
-              <p className="font-body text-xs text-mutedForeground">
+              <p className="font-sans text-xs text-mutedForeground">
                 {config.showTranslationInQuiz
                   ? 'Mặc định hiển thị nghĩa tiếng Việt hỗ trợ.'
                   : 'Mặc định ẩn bản dịch để tăng độ thử thách.'}
@@ -167,24 +167,24 @@ export default function AISettingsSection() {
               <button
                 type="button"
                 onClick={() => setConfig({ showTranslationInQuiz: true })}
-                className={`border border-black px-3 py-1.5 font-mono text-xs uppercase rounded-none transition-colors duration-100 ${
+                className={`border border-black px-3.5 py-1.5 font-mono text-xs font-bold uppercase rounded-none transition-colors duration-100 ${
                   config.showTranslationInQuiz
                     ? 'bg-black text-white'
                     : 'bg-white text-black hover:bg-black hover:text-white'
                 }`}
               >
-                [ ON ] HIỂN THỊ
+                HIỂN THỊ
               </button>
               <button
                 type="button"
                 onClick={() => setConfig({ showTranslationInQuiz: false })}
-                className={`border border-black px-3 py-1.5 font-mono text-xs uppercase rounded-none transition-colors duration-100 ${
+                className={`border border-black px-3.5 py-1.5 font-mono text-xs font-bold uppercase rounded-none transition-colors duration-100 ${
                   !config.showTranslationInQuiz
                     ? 'bg-black text-white'
                     : 'bg-white text-black hover:bg-black hover:text-white'
                 }`}
               >
-                [ OFF ] ẨN DỊCH
+                ẨN DỊCH
               </button>
             </div>
           </div>

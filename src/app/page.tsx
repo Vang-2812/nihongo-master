@@ -99,11 +99,11 @@ export default function HomePage() {
       {/* 1. Editorial Hero Section */}
       <section>
         <div className="flex items-center gap-3 mb-4 sm:mb-6">
-          <span className="font-mono text-xs uppercase tracking-widest text-mutedForeground border border-black px-2 py-0.5">
-            [ ARCHIVE EDITION 2026 ]
+          <span className="font-sans text-xs font-semibold uppercase tracking-widest text-black border border-black px-2 py-0.5">
+            ARCHIVE EDITION 2026
           </span>
-          <span className="font-mono text-xs uppercase tracking-widest text-mutedForeground">
-            SM-2 SPACED REPETITION ENGINE
+          <span className="font-sans text-xs uppercase tracking-wider text-mutedForeground">
+            SM-2 Spaced Repetition Engine
           </span>
         </div>
 
@@ -114,8 +114,8 @@ export default function HomePage() {
           </span>
         </h1>
 
-        <p className="font-mono text-xs sm:text-sm tracking-widest text-mutedForeground uppercase mt-4 max-w-xl">
-          [ REPOSITORY OF JAPANESE VOCABULARY & KANJI · SPACED REPETITION SYSTEM · JLPT N5–N1 ]
+        <p className="font-sans text-xs sm:text-sm tracking-widest text-mutedForeground uppercase mt-4 max-w-xl font-medium">
+          REPOSITORY OF JAPANESE VOCABULARY & KANJI · SPACED REPETITION SYSTEM · JLPT N5–N1
         </p>
 
         {/* Heavy 4px black section rule */}
@@ -127,61 +127,61 @@ export default function HomePage() {
         <div className="border-t-2 border-b-2 border-black divide-y sm:divide-y-0 sm:divide-x divide-black py-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
           {/* Card 1: Reviews Due */}
           <div className="p-6 sm:p-8 flex flex-col justify-between">
-            <div className="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-mutedForeground">
-              [ REVIEWS DUE ]
+            <div className="font-sans text-xs font-semibold uppercase tracking-wider text-mutedForeground">
+              CẦN ÔN TẬP
             </div>
             <div className="my-4">
               <div className="font-serif text-5xl sm:text-7xl font-light text-black tracking-tight leading-none">
                 {dueCount}
               </div>
             </div>
-            <div className="font-mono text-[11px] text-mutedForeground uppercase tracking-wider">
-              {dueCount > 0 ? `${vocabDueCount} vocab · ${kanjiDueCount} kanji` : 'All reviews done'}
+            <div className="font-sans text-xs text-mutedForeground">
+              {dueCount > 0 ? `${vocabDueCount} từ vựng · ${kanjiDueCount} Hán tự` : 'Đã hoàn thành hôm nay'}
             </div>
           </div>
 
           {/* Card 2: Day Streak */}
           <div className="p-6 sm:p-8 flex flex-col justify-between">
-            <div className="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-mutedForeground">
-              [ DAY STREAK ]
+            <div className="font-sans text-xs font-semibold uppercase tracking-wider text-mutedForeground">
+              CHUỖI NGÀY LIÊN TIẾP
             </div>
             <div className="my-4">
               <div className="font-serif text-5xl sm:text-7xl font-light text-black tracking-tight leading-none">
                 {streak}
               </div>
             </div>
-            <div className="font-mono text-[11px] text-mutedForeground uppercase tracking-wider">
-              {streak > 0 ? 'Consecutive days active' : 'Start streak today'}
+            <div className="font-sans text-xs text-mutedForeground">
+              {streak > 0 ? 'Duy trì học đều đặn' : 'Bắt đầu chuỗi hôm nay'}
             </div>
           </div>
 
           {/* Card 3: Total XP */}
           <div className="p-6 sm:p-8 flex flex-col justify-between">
-            <div className="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-mutedForeground">
-              [ XP ACCUMULATED ]
+            <div className="font-sans text-xs font-semibold uppercase tracking-wider text-mutedForeground">
+              ĐIỂM TÍCH LŨY
             </div>
             <div className="my-4">
               <div className="font-serif text-5xl sm:text-7xl font-light text-black tracking-tight leading-none">
                 {totalXp}
               </div>
             </div>
-            <div className="font-mono text-[11px] text-mutedForeground uppercase tracking-wider">
-              Level {currentLevel} · {xpInCurrentLevel}/100 XP
+            <div className="font-sans text-xs text-mutedForeground">
+              Cấp độ {currentLevel} · {xpInCurrentLevel}/100 XP
             </div>
           </div>
 
           {/* Card 4: Cards in SRS */}
           <div className="p-6 sm:p-8 flex flex-col justify-between">
-            <div className="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-mutedForeground">
-              [ CARDS IN SRS ]
+            <div className="font-sans text-xs font-semibold uppercase tracking-wider text-mutedForeground">
+              TỔNG THẺ TRONG SRS
             </div>
             <div className="my-4">
               <div className="font-serif text-5xl sm:text-7xl font-light text-black tracking-tight leading-none">
                 {totalCards}
               </div>
             </div>
-            <div className="font-mono text-[11px] text-mutedForeground uppercase tracking-wider">
-              {reviewCount} reviewed · {learningCount} learning
+            <div className="font-sans text-xs text-mutedForeground">
+              {reviewCount} đã ôn · {learningCount} đang học
             </div>
           </div>
         </div>
@@ -191,22 +191,22 @@ export default function HomePage() {
       {dueCount > 0 ? (
         <section className="border-2 border-black bg-black text-white p-6 sm:p-10 my-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 rounded-none shadow-none">
           <div className="space-y-2">
-            <div className="font-mono text-xs uppercase tracking-widest text-neutral-400">
-              [ ACTION REQUIRED · SM-2 INTERVAL ]
+            <div className="font-sans text-xs uppercase tracking-widest text-neutral-400 font-semibold">
+              CẦN XỬ LÝ · CHU KỲ SM-2
             </div>
             <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal tracking-tight uppercase">
               HÔM NAY CÓ {dueCount} THẺ CẦN ÔN TẬP
             </h2>
-            <p className="font-body text-sm sm:text-base text-neutral-300 max-w-2xl leading-relaxed">
+            <p className="font-sans text-sm sm:text-base text-neutral-300 max-w-2xl leading-relaxed">
               Ôn tập đúng thời điểm giúp củng cố vùng nhớ dài hạn và tăng hiệu quả ghi nhớ Hán tự và Từ vựng theo thuật toán SM-2.
             </p>
-            <div className="font-mono text-xs text-neutral-400 pt-1">
+            <div className="font-sans text-xs text-neutral-400 pt-1">
               Từ vựng: {vocabDueCount} · Hán tự: {kanjiDueCount} {newCount > 0 ? `· Thẻ mới: ${newCount}` : ''}
             </div>
           </div>
           <Link
             href="/review"
-            className="border border-white bg-white text-black hover:bg-black hover:text-white px-8 py-3.5 font-mono text-xs uppercase tracking-widest transition-colors duration-100 inline-flex items-center justify-center gap-3 shrink-0 rounded-none shadow-none"
+            className="border border-white bg-white text-black hover:bg-black hover:text-white px-8 py-3.5 font-sans font-semibold text-xs uppercase tracking-widest transition-colors duration-100 inline-flex items-center justify-center gap-3 shrink-0 rounded-none shadow-none"
           >
             <span>BẮT ĐẦU ÔN TẬP NGAY</span>
             <ArrowRight className="w-4 h-4" />
@@ -215,34 +215,34 @@ export default function HomePage() {
       ) : (
         <section className="border-2 border-black bg-white text-black p-6 sm:p-10 my-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 rounded-none shadow-none">
           <div className="space-y-2">
-            <div className="font-mono text-xs uppercase tracking-widest text-mutedForeground">
-              [ STATUS · COMPLETED ]
+            <div className="font-sans text-xs uppercase tracking-widest text-mutedForeground font-semibold">
+              TRẠNG THÁI · ĐÃ HOÀN THÀNH
             </div>
             <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal tracking-tight uppercase">
               ĐÃ HOÀN THÀNH TẤT CẢ ÔN TẬP HÔM NAY
             </h2>
-            <p className="font-body text-sm sm:text-base text-mutedForeground max-w-2xl leading-relaxed">
+            <p className="font-sans text-sm sm:text-base text-mutedForeground max-w-2xl leading-relaxed">
               Hiện không có thẻ nào đến hạn ôn tập. Hãy khám phá kho kiến thức để bổ sung thẻ mới hoặc thử thách bản thân trong phòng Quizlet.
             </p>
           </div>
           <div className="flex flex-wrap gap-3 shrink-0">
             <Link
               href="/tango"
-              className="border border-black bg-white text-black hover:bg-black hover:text-white px-6 py-3 font-mono text-xs uppercase tracking-widest transition-colors duration-100 inline-flex items-center justify-center gap-2 rounded-none shadow-none"
+              className="border border-black bg-white text-black hover:bg-black hover:text-white px-6 py-3 font-sans font-semibold text-xs uppercase tracking-wider transition-colors duration-100 inline-flex items-center justify-center gap-2 rounded-none shadow-none"
             >
               <span>TỪ VỰNG</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </Link>
             <Link
               href="/kanji"
-              className="border border-black bg-white text-black hover:bg-black hover:text-white px-6 py-3 font-mono text-xs uppercase tracking-widest transition-colors duration-100 inline-flex items-center justify-center gap-2 rounded-none shadow-none"
+              className="border border-black bg-white text-black hover:bg-black hover:text-white px-6 py-3 font-sans font-semibold text-xs uppercase tracking-wider transition-colors duration-100 inline-flex items-center justify-center gap-2 rounded-none shadow-none"
             >
               <span>KANJI</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </Link>
             <Link
               href="/review/quiz"
-              className="border border-black bg-black text-white hover:bg-white hover:text-black px-6 py-3 font-mono text-xs uppercase tracking-widest transition-colors duration-100 inline-flex items-center justify-center gap-2 rounded-none shadow-none"
+              className="border border-black bg-black text-white hover:bg-white hover:text-black px-6 py-3 font-sans font-semibold text-xs uppercase tracking-wider transition-colors duration-100 inline-flex items-center justify-center gap-2 rounded-none shadow-none"
             >
               <span>QUIZLET</span>
               <ArrowRight className="w-3.5 h-3.5" />
@@ -257,8 +257,8 @@ export default function HomePage() {
           <h2 className="font-serif text-2xl sm:text-3xl font-normal tracking-tight uppercase text-black">
             DANH MỤC TRỌNG TÂM
           </h2>
-          <span className="font-mono text-xs uppercase tracking-widest text-mutedForeground">
-            [ 04 SECTIONS ]
+          <span className="font-sans text-xs font-semibold uppercase tracking-wider text-mutedForeground">
+            4 PHÂN HỆ CHÍNH
           </span>
         </div>
 
@@ -417,13 +417,13 @@ export default function HomePage() {
       <section aria-label="Quản lý dữ liệu" className="border-t-2 border-black pt-8 sm:pt-10">
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div>
-            <div className="font-mono text-xs uppercase tracking-widest text-mutedForeground">
-              [ SYSTEM UTILITIES · DATA PRESERVATION ]
+            <div className="font-sans text-xs uppercase tracking-widest text-mutedForeground font-semibold">
+              QUẢN TRỊ DỮ LIỆU & TIẾN TRÌNH
             </div>
             <h3 className="font-serif text-xl sm:text-2xl font-normal tracking-tight uppercase mt-1 text-black">
               QUẢN LÝ DỮ LIỆU & TIẾN TRÌNH
             </h3>
-            <p className="font-body text-xs sm:text-sm text-mutedForeground mt-1 max-w-xl">
+            <p className="font-sans text-xs sm:text-sm text-mutedForeground mt-1 max-w-xl">
               Xuất hoặc nhập bản ghi tiến độ học tập dạng tệp JSON để bảo lưu hoặc đồng bộ trên thiết bị cá nhân.
             </p>
           </div>
@@ -432,7 +432,7 @@ export default function HomePage() {
             <button
               type="button"
               onClick={handleExport}
-              className="inline-flex items-center gap-2 px-4 py-2.5 border border-black bg-white text-black hover:bg-black hover:text-white font-mono text-xs uppercase tracking-widest transition-colors duration-100 rounded-none shadow-none"
+              className="inline-flex items-center gap-2 px-4 py-2.5 border border-black bg-white text-black hover:bg-black hover:text-white font-sans font-semibold text-xs uppercase tracking-wider transition-colors duration-100 rounded-none shadow-none"
             >
               <Download className="w-3.5 h-3.5" />
               <span>XUẤT JSON</span>
@@ -440,14 +440,14 @@ export default function HomePage() {
             <button
               type="button"
               onClick={() => setIsBackupModalOpen(true)}
-              className="inline-flex items-center gap-2 px-4 py-2.5 border border-black bg-white text-black hover:bg-black hover:text-white font-mono text-xs uppercase tracking-widest transition-colors duration-100 rounded-none shadow-none"
+              className="inline-flex items-center gap-2 px-4 py-2.5 border border-black bg-white text-black hover:bg-black hover:text-white font-sans font-semibold text-xs uppercase tracking-wider transition-colors duration-100 rounded-none shadow-none"
             >
               <Upload className="w-3.5 h-3.5" />
               <span>NHẬP SAO LƯU</span>
             </button>
             <Link
               href="/settings"
-              className="inline-flex items-center gap-2 px-4 py-2.5 border border-black bg-black text-white hover:bg-white hover:text-black font-mono text-xs uppercase tracking-widest transition-colors duration-100 rounded-none shadow-none"
+              className="inline-flex items-center gap-2 px-4 py-2.5 border border-black bg-black text-white hover:bg-white hover:text-black font-sans font-semibold text-xs uppercase tracking-wider transition-colors duration-100 rounded-none shadow-none"
             >
               <Settings className="w-3.5 h-3.5" />
               <span>CÀI ĐẶT HỆ THỐNG</span>
@@ -467,14 +467,14 @@ export default function HomePage() {
             <button
               type="button"
               onClick={() => setIsBackupModalOpen(false)}
-              className="border border-black bg-white text-black hover:bg-black hover:text-white px-5 py-2 font-mono text-xs uppercase tracking-widest transition-colors duration-100 rounded-none shadow-none"
+              className="border border-black bg-white text-black hover:bg-black hover:text-white px-5 py-2 font-sans font-semibold text-xs uppercase tracking-wider transition-colors duration-100 rounded-none shadow-none"
             >
               HỦY
             </button>
             <button
               type="button"
               onClick={handleImportJson}
-              className="border border-black bg-black text-white hover:bg-white hover:text-black px-5 py-2 font-mono text-xs uppercase tracking-widest transition-colors duration-100 rounded-none shadow-none"
+              className="border border-black bg-black text-white hover:bg-white hover:text-black px-5 py-2 font-sans font-semibold text-xs uppercase tracking-wider transition-colors duration-100 rounded-none shadow-none"
             >
               ÁP DỤNG KHÔI PHỤC
             </button>
@@ -483,23 +483,23 @@ export default function HomePage() {
       >
         <div className="space-y-6">
           <div>
-            <label className="block font-mono text-xs uppercase tracking-wider text-black mb-2 font-bold">
-              [ 01 ] TẢI TỆP JSON TỪ THIẾT BỊ:
+            <label className="block font-sans text-xs uppercase tracking-wider text-black mb-2 font-bold">
+              01. TẢI TỆP JSON TỪ THIẾT BỊ:
             </label>
             <input
               type="file"
               accept=".json"
               onChange={handleFileUpload}
-              className="block w-full text-xs text-black font-mono file:mr-4 file:py-2.5 file:px-4 file:rounded-none file:border-2 file:border-black file:text-xs file:font-mono file:uppercase file:tracking-wider file:bg-black file:text-white hover:file:bg-white hover:file:text-black file:transition-colors file:duration-100 cursor-pointer border border-black p-1"
+              className="block w-full text-xs text-black font-sans file:mr-4 file:py-2.5 file:px-4 file:rounded-none file:border-2 file:border-black file:text-xs file:font-sans file:font-semibold file:uppercase file:tracking-wider file:bg-black file:text-white hover:file:bg-white hover:file:text-black file:transition-colors file:duration-100 cursor-pointer border border-black p-1"
             />
           </div>
 
           <div>
             <label
               htmlFor={importJsonTextareaId}
-              className="block font-mono text-xs uppercase tracking-wider text-black mb-2 font-bold"
+              className="block font-sans text-xs uppercase tracking-wider text-black mb-2 font-bold"
             >
-              [ 02 ] HOẶC DÁN NỘI DUNG JSON:
+              02. HOẶC DÁN NỘI DUNG JSON:
             </label>
             <textarea
               id={importJsonTextareaId}

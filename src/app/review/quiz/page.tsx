@@ -117,7 +117,7 @@ export default function QuizHubPage() {
               <span>QUIZ & GAME HUB · 練習</span>
             </h1>
           </div>
-          <p className="text-neutral-600 font-serif text-sm sm:text-base mt-1 ml-11">
+          <p className="text-neutral-600 font-sans text-sm sm:text-base mt-1 ml-11">
             Củng cố phản xạ ngôn ngữ qua các bài tập kiểm tra trắc nghiệm, ghép cặp thẻ và cấu trúc từ.
           </p>
         </div>
@@ -143,7 +143,7 @@ export default function QuizHubPage() {
           <span className="w-6 h-6 border border-black bg-black text-white font-mono font-bold text-xs flex items-center justify-center rounded-none">
             1
           </span>
-          <h2 className="text-sm font-mono uppercase tracking-widest font-bold text-black">
+          <h2 className="text-sm font-sans uppercase tracking-wider font-bold text-black">
             CHỌN CHẾ ĐỘ THỬ THÁCH · SELECT MODE
           </h2>
         </div>
@@ -168,25 +168,25 @@ export default function QuizHubPage() {
                     <div className="p-2 border border-black bg-black text-white rounded-none">
                       <Icon className="w-5 h-5" />
                     </div>
-                    <span className="text-[10px] font-mono font-bold px-2 py-0.5 border border-black bg-white text-black rounded-none uppercase tracking-wider">
-                      [{m.badge}]
+                    <span className="text-[10px] font-sans font-bold px-2 py-0.5 border border-black bg-white text-black rounded-none uppercase tracking-wider">
+                      {m.badge}
                     </span>
                   </div>
 
                   <h3 className="text-base font-serif font-bold text-black uppercase tracking-wide">
                     {m.title}
                   </h3>
-                  <p className="text-xs font-mono text-muted-foreground mt-0.5 uppercase tracking-wider">
+                  <p className="text-xs font-sans text-muted-foreground mt-0.5 uppercase tracking-wider">
                     {m.subtitle}
                   </p>
-                  <p className="text-xs text-neutral-600 mt-2 leading-relaxed">
+                  <p className="text-xs font-sans text-neutral-600 mt-2 leading-relaxed">
                     {m.description}
                   </p>
                 </div>
 
-                <div className="pt-3 border-t border-black flex items-center justify-between text-xs font-mono uppercase tracking-wider">
+                <div className="pt-3 border-t border-black flex items-center justify-between text-xs font-sans font-medium uppercase tracking-wider">
                   <span className={isSelected ? 'font-bold text-black' : 'text-neutral-400'}>
-                    {isSelected ? '[ SELECTED ] ✓' : '[ SELECT ]'}
+                    {isSelected ? 'ĐÃ CHỌN ✓' : 'CHỌN'}
                   </span>
                   <div
                     className={`w-4 h-4 border border-black flex items-center justify-center rounded-none ${
@@ -327,12 +327,12 @@ export default function QuizHubPage() {
           {/* Tab 3 Content: SRS Overview */}
           {selectedSource === 'srs' && (
             <div className="p-4 border-2 border-black bg-white text-sm text-black space-y-1 animate-fadeIn rounded-none">
-              <p className="font-mono text-xs uppercase tracking-wider font-bold">
+              <p className="font-sans text-xs uppercase tracking-wider font-bold">
                 {totalSRSCards > 0
-                  ? `[ SRS ACTIVE: ${totalSRSCards} CARDS IN PERSONAL REPOSITORY ]`
-                  : '[ SRS EMPTY: AUTO-LOADING N5 STARTER VOCABULARY ]'}
+                  ? `SRS: ${totalSRSCards} THẺ TRONG HÀNG ĐỢI ÔN TẬP`
+                  : 'SRS TRỐNG: TỰ ĐỘNG NẠP TỪ VỰNG N5 KHỞI ĐẦU'}
               </p>
-              <p className="text-xs text-neutral-600 font-serif">
+              <p className="text-xs text-neutral-600 font-sans">
                 Các câu hỏi trắc nghiệm và trò chơi sẽ ưu tiên lấy từ các thẻ bạn đã lưu hoặc đang ôn tập.
               </p>
             </div>
@@ -346,7 +346,7 @@ export default function QuizHubPage() {
           <span className="w-6 h-6 border border-black bg-black text-white font-mono font-bold text-xs flex items-center justify-center rounded-none">
             3
           </span>
-          <h2 className="text-sm font-mono uppercase tracking-widest font-bold text-black">
+          <h2 className="text-sm font-sans uppercase tracking-wider font-bold text-black">
             SỐ LƯỢNG MỤC THỬ THÁCH · COUNT
           </h2>
         </div>
@@ -359,13 +359,13 @@ export default function QuizHubPage() {
                   key={count}
                   type="button"
                   onClick={() => setPairCount(count)}
-                  className={`flex-1 sm:flex-initial px-5 py-2.5 font-mono font-bold text-xs sm:text-sm border-2 transition-colors duration-100 rounded-none ${
+                  className={`flex-1 sm:flex-initial px-5 py-2.5 font-sans font-medium text-xs sm:text-sm border-2 transition-colors duration-100 rounded-none ${
                     pairCount === count
                       ? 'border-black bg-black text-white'
                       : 'border-black bg-white text-black hover:bg-muted'
                   }`}
                 >
-                  [{count} PAIRS · {count * 2} TILES]
+                  {count} CẶP · {count * 2} THẺ
                 </button>
               ))}
             </div>
@@ -376,13 +376,13 @@ export default function QuizHubPage() {
                   key={count}
                   type="button"
                   onClick={() => setQuestionCount(count)}
-                  className={`flex-1 sm:flex-initial px-5 py-2.5 font-mono font-bold text-xs sm:text-sm border-2 transition-colors duration-100 rounded-none ${
+                  className={`flex-1 sm:flex-initial px-5 py-2.5 font-sans font-medium text-xs sm:text-sm border-2 transition-colors duration-100 rounded-none ${
                     questionCount === count
                       ? 'border-black bg-black text-white'
                       : 'border-black bg-white text-black hover:bg-muted'
                   }`}
                 >
-                  [{count} QUESTIONS]
+                  {count} CÂU HỎI
                 </button>
               ))}
             </div>
@@ -392,10 +392,10 @@ export default function QuizHubPage() {
           <button
             type="button"
             onClick={handleStartQuiz}
-            className="w-full sm:w-auto flex items-center justify-center gap-2.5 px-8 py-3.5 border-2 border-black bg-black text-white hover:bg-white hover:text-black font-mono font-bold text-xs sm:text-sm uppercase tracking-widest transition-colors duration-100 rounded-none shadow-none"
+            className="w-full sm:w-auto flex items-center justify-center gap-2.5 px-8 py-3.5 border-2 border-black bg-black text-white hover:bg-white hover:text-black font-sans font-medium text-xs sm:text-sm uppercase tracking-wider transition-colors duration-100 rounded-none shadow-none"
           >
             <Play className="w-4 h-4 fill-current" />
-            <span>START SESSION · 開始</span>
+            <span>BẮT ĐẦU LUYỆN TẬP · 開始</span>
             <ArrowRight className="w-4 h-4" />
           </button>
         </div>

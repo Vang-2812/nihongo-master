@@ -346,7 +346,7 @@ export default function ReviewPage() {
             <h1 className="text-2xl sm:text-3xl font-serif font-bold text-black tracking-tight uppercase">
               All Caught Up · 学習完了
             </h1>
-            <p className="text-neutral-600 font-serif text-sm sm:text-base mt-2">
+            <p className="text-neutral-600 font-sans text-sm sm:text-base mt-2">
               Bạn đã hoàn thành tất cả thẻ cần ôn tập theo thuật toán SM-2.
             </p>
           </div>
@@ -382,46 +382,46 @@ export default function ReviewPage() {
               <button
                 type="button"
                 onClick={handleStartCramMode}
-                className="w-full flex items-center justify-center gap-2 px-5 py-3 border-2 border-black bg-black text-white hover:bg-white hover:text-black font-mono text-xs uppercase tracking-widest transition-colors duration-100 rounded-none shadow-none"
+                className="w-full flex items-center justify-center gap-2 px-5 py-3 border-2 border-black bg-black text-white hover:bg-white hover:text-black font-sans font-medium text-xs uppercase tracking-wider transition-colors duration-100 rounded-none shadow-none"
               >
                 <Layers className="w-4 h-4" />
-                <span>CRAM SESSION ({totalCardsInSRS} CARDS)</span>
+                <span>ÔN TẬP TỰ DO ({totalCardsInSRS} THẺ)</span>
               </button>
             ) : (
               <button
                 type="button"
                 onClick={handleQuickAddSampleCards}
-                className="w-full flex items-center justify-center gap-2 px-5 py-3 border-2 border-black bg-black text-white hover:bg-white hover:text-black font-mono text-xs uppercase tracking-widest transition-colors duration-100 rounded-none shadow-none"
+                className="w-full flex items-center justify-center gap-2 px-5 py-3 border-2 border-black bg-black text-white hover:bg-white hover:text-black font-sans font-medium text-xs uppercase tracking-wider transition-colors duration-100 rounded-none shadow-none"
               >
                 <PlusCircle className="w-4 h-4" />
-                <span>INITIALIZE N5 STARTER DECK (20 CARDS)</span>
+                <span>THÊM 20 THẺ N5 KHỞI ĐẦU</span>
               </button>
             )}
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
               <Link
                 href="/tango"
-                className="flex items-center justify-center gap-2 px-4 py-2.5 border-2 border-black bg-white text-black hover:bg-black hover:text-white transition-colors duration-100 text-xs font-mono uppercase tracking-widest rounded-none"
+                className="flex items-center justify-center gap-2 px-4 py-2.5 border-2 border-black bg-white text-black hover:bg-black hover:text-white transition-colors duration-100 text-xs font-sans font-medium uppercase tracking-wider rounded-none"
               >
                 <BookOpen className="w-4 h-4" />
-                <span>VOCABULARY DECK</span>
+                <span>KHO TỪ VỰNG</span>
               </Link>
 
               <Link
                 href="/kanji"
-                className="flex items-center justify-center gap-2 px-4 py-2.5 border-2 border-black bg-white text-black hover:bg-black hover:text-white transition-colors duration-100 text-xs font-mono uppercase tracking-widest rounded-none"
+                className="flex items-center justify-center gap-2 px-4 py-2.5 border-2 border-black bg-white text-black hover:bg-black hover:text-white transition-colors duration-100 text-xs font-sans font-medium uppercase tracking-wider rounded-none"
               >
                 <Languages className="w-4 h-4" />
-                <span>KANJI REPOSITORY</span>
+                <span>KHO HÁN TỰ</span>
               </Link>
             </div>
 
             <Link
               href="/review/quiz"
-              className="w-full flex items-center justify-center gap-2 px-4 py-2.5 border-2 border-black bg-white text-black hover:bg-black hover:text-white transition-colors duration-100 text-xs font-mono uppercase tracking-widest rounded-none"
+              className="w-full flex items-center justify-center gap-2 px-4 py-2.5 border-2 border-black bg-white text-black hover:bg-black hover:text-white transition-colors duration-100 text-xs font-sans font-medium uppercase tracking-wider rounded-none"
             >
               <Dices className="w-4 h-4" />
-              <span>PRACTICE QUIZZES & GAMES</span>
+              <span>LUYỆN TẬP QUIZ & TRÒ CHƠI</span>
             </Link>
           </div>
         </div>
@@ -440,11 +440,11 @@ export default function ReviewPage() {
           {/* Back button */}
           <Link
             href="/"
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-black bg-white hover:bg-black hover:text-white text-xs font-mono uppercase tracking-widest transition-colors duration-100 rounded-none shadow-none"
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-black bg-white hover:bg-black hover:text-white text-xs font-sans font-medium uppercase tracking-wider transition-colors duration-100 rounded-none shadow-none"
             title="Thoát phiên ôn tập"
           >
             <ArrowLeft className="w-3.5 h-3.5" />
-            <span>EXIT</span>
+            <span>THOÁT</span>
           </Link>
 
           {/* Session Title & Mode */}
@@ -452,7 +452,7 @@ export default function ReviewPage() {
             <h1 className="text-xs sm:text-sm font-serif font-bold tracking-widest uppercase text-black flex items-center justify-center gap-2">
               <span>{isCramMode ? 'CRAM SESSION · 自由学習' : 'SRS REVIEW · 復習'}</span>
               <span className="text-xs px-2 py-0.5 border border-black bg-muted font-mono font-bold text-black rounded-none">
-                [{currentIndex + 1} / {sessionQueue.length}]
+                {currentIndex + 1} / {sessionQueue.length}
               </span>
             </h1>
           </div>

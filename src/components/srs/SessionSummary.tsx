@@ -83,7 +83,7 @@ export const SessionSummary: React.FC<SessionSummaryProps> = ({
       {/* High-Fashion Editorial Title Banner */}
       <div className="text-center space-y-2 pb-6 border-b-4 border-black">
         <div className="font-mono text-xs uppercase tracking-widest text-mutedForeground">
-          [ PHIÊN ÔN TẬP FLASHCARD SRS HOÀN TẤT ]
+          PHIÊN ÔN TẬP FLASHCARD SRS HOÀN TẤT
         </div>
         <h1 className="font-serif font-black text-4xl sm:text-6xl text-black tracking-tight uppercase">
           SESSION COMPLETED
@@ -153,25 +153,25 @@ export const SessionSummary: React.FC<SessionSummaryProps> = ({
         <div className="border-2 border-black p-3 sm:p-4 bg-white text-center rounded-none">
           <p className="font-mono text-xs font-bold uppercase tracking-wider text-mutedForeground">1 · AGAIN</p>
           <p className="font-serif text-2xl sm:text-3xl font-black text-black mt-1">{againCount}</p>
-          <span className="font-mono text-[10px] uppercase tracking-widest opacity-70">Học lại</span>
+          <span className="font-sans text-[11px] uppercase tracking-wider opacity-70">Học lại</span>
         </div>
 
         <div className="border-2 border-black p-3 sm:p-4 bg-white text-center rounded-none">
           <p className="font-mono text-xs font-bold uppercase tracking-wider text-mutedForeground">2 · HARD</p>
           <p className="font-serif text-2xl sm:text-3xl font-black text-black mt-1">{hardCount}</p>
-          <span className="font-mono text-[10px] uppercase tracking-widest opacity-70">Khó</span>
+          <span className="font-sans text-[11px] uppercase tracking-wider opacity-70">Khó</span>
         </div>
 
         <div className="border-2 border-black p-3 sm:p-4 bg-white text-center rounded-none">
           <p className="font-mono text-xs font-bold uppercase tracking-wider text-mutedForeground">3 · GOOD</p>
           <p className="font-serif text-2xl sm:text-3xl font-black text-black mt-1">{goodCount}</p>
-          <span className="font-mono text-[10px] uppercase tracking-widest opacity-70">Tốt</span>
+          <span className="font-sans text-[11px] uppercase tracking-wider opacity-70">Tốt</span>
         </div>
 
         <div className="border-2 border-black p-3 sm:p-4 bg-white text-center rounded-none">
           <p className="font-mono text-xs font-bold uppercase tracking-wider text-mutedForeground">4 · EASY</p>
           <p className="font-serif text-2xl sm:text-3xl font-black text-black mt-1">{easyCount}</p>
-          <span className="font-mono text-[10px] uppercase tracking-widest opacity-70">Dễ</span>
+          <span className="font-sans text-[11px] uppercase tracking-wider opacity-70">Dễ</span>
         </div>
       </div>
 
@@ -182,37 +182,37 @@ export const SessionSummary: React.FC<SessionSummaryProps> = ({
           <button
             type="button"
             onClick={onReviewAgainCards}
-            className="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-black bg-white text-black font-mono text-xs font-bold uppercase tracking-widest hover:bg-black hover:text-white transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
+            className="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-black bg-white text-black font-sans text-xs font-bold uppercase tracking-wider hover:bg-black hover:text-white transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
           >
             <RotateCcw className="w-4 h-4" />
-            <span>[ REVIEW AGAIN ({againCount} FAILED) ]</span>
+            <span>ÔN LẠI ({againCount} TỪ CHƯA THUỘC)</span>
           </button>
         ) : onRestartSession ? (
           <button
             type="button"
             onClick={onRestartSession}
-            className="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-black bg-white text-black font-mono text-xs font-bold uppercase tracking-widest hover:bg-black hover:text-white transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
+            className="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-black bg-white text-black font-sans text-xs font-bold uppercase tracking-wider hover:bg-black hover:text-white transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
           >
             <RotateCcw className="w-4 h-4" />
-            <span>[ REVIEW AGAIN ]</span>
+            <span>ÔN TẬP LẠI</span>
           </button>
         ) : null}
 
         <Link
           href="/review/quiz"
-          className="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-black bg-white text-black font-mono text-xs font-bold uppercase tracking-widest hover:bg-black hover:text-white transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
+          className="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-black bg-white text-black font-sans text-xs font-bold uppercase tracking-wider hover:bg-black hover:text-white transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
         >
           <Dices className="w-4 h-4" />
-          <span>[ PRACTICE QUIZ ]</span>
+          <span>LUYỆN TẬP QUIZ</span>
         </Link>
 
         {/* Primary inverted black button: [ CONTINUE TO DASHBOARD ] */}
         <Link
           href="/"
-          className="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-black bg-black text-white font-mono text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
+          className="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-black bg-black text-white font-sans text-xs font-bold uppercase tracking-wider hover:bg-white hover:text-black transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
         >
           <Home className="w-4 h-4" />
-          <span>[ CONTINUE TO DASHBOARD ]</span>
+          <span>TRỞ VỀ TRANG CHỦ</span>
         </Link>
       </div>
 
@@ -221,7 +221,7 @@ export const SessionSummary: React.FC<SessionSummaryProps> = ({
         <div className="border-2 border-black bg-white p-5 sm:p-6 rounded-none shadow-none space-y-4">
           <div className="flex items-center justify-between pb-3 border-b-2 border-black">
             <h2 className="font-mono text-xs font-bold uppercase tracking-widest text-black">
-              [ DANH SÁCH THẺ VỪA ÔN · {stats.reviewedItems.length} THẺ ]
+              DANH SÁCH THẺ VỪA ÔN · {stats.reviewedItems.length} THẺ
             </h2>
           </div>
 

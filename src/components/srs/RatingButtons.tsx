@@ -38,10 +38,10 @@ export const RatingButtons: React.FC<RatingButtonsProps> = ({
         easeFactor: card.easeFactor,
       });
 
-      const text = output.interval === 1 ? '[ +1 DAY ]' : `[ +${output.interval} DAYS ]`;
+      const text = output.interval === 1 ? '+1 NGÀY' : `+${output.interval} NGÀY`;
       return { text, xp: output.xpEarned };
     } catch {
-      return { text: '[ +1 DAY ]', xp: 1 };
+      return { text: '+1 NGÀY', xp: 1 };
     }
   };
 
@@ -77,8 +77,8 @@ export const RatingButtons: React.FC<RatingButtonsProps> = ({
       {/* Reminder if not flipped */}
       {!isFlipped && (
         <div className="text-center mb-3">
-          <span className="inline-flex items-center gap-1.5 text-xs font-mono uppercase tracking-wider text-black border border-black bg-white px-3 py-1 rounded-none">
-            [ LẬT THẺ HOẶC BẤM 1 - 4 ĐỂ ĐÁNH GIÁ TRỰC TIẾP ]
+          <span className="inline-flex items-center gap-1.5 text-xs font-sans font-medium uppercase tracking-wider text-black border border-black bg-white px-3 py-1 rounded-none">
+            LẬT THẺ HOẶC BẤM 1 - 4 ĐỂ ĐÁNH GIÁ TRỰC TIẾP
           </span>
         </div>
       )}
@@ -99,8 +99,8 @@ export const RatingButtons: React.FC<RatingButtonsProps> = ({
             >
               {/* Top Row: Hotkey Badge & XP */}
               <div className="w-full flex items-center justify-between gap-1 mb-1.5 font-mono text-xs">
-                <span className="inline-flex items-center justify-center px-1.5 py-0.5 border border-black group-hover:border-white font-bold transition-colors duration-100">
-                  [ {opt.keyLabel} ]
+                <span className="inline-flex items-center justify-center w-5 h-5 border border-black group-hover:border-white font-bold transition-colors duration-100">
+                  {opt.keyLabel}
                 </span>
 
                 <span className="text-[10px] font-bold font-mono">
@@ -113,14 +113,14 @@ export const RatingButtons: React.FC<RatingButtonsProps> = ({
                 <span className="font-mono font-bold text-sm sm:text-base leading-tight uppercase tracking-wider">
                   {opt.label}
                 </span>
-                <span className="text-[11px] font-mono opacity-75 mt-0.5">
+                <span className="text-[11px] font-sans opacity-75 mt-0.5">
                   {opt.subLabel}
                 </span>
               </div>
 
               {/* Bottom: Next Interval Preview */}
               <div className="mt-2 pt-1.5 border-t border-black group-hover:border-white w-full text-center transition-colors duration-100">
-                <span className="font-mono text-xs font-bold tracking-tight">
+                <span className="font-sans text-xs font-semibold tracking-tight">
                   {intervalText}
                 </span>
               </div>

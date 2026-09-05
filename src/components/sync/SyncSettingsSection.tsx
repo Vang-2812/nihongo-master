@@ -128,7 +128,7 @@ export default function SyncSettingsSection() {
         <div>
           <div className="flex items-center gap-2 mb-1">
             <span className="border border-black px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-black">
-              [ CLOUD SYNC ]
+              CLOUD SYNC
             </span>
             <span className="border border-black px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-black">
               SQLITE REPOSITORY
@@ -168,7 +168,7 @@ export default function SyncSettingsSection() {
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                 <div className="space-y-1">
                   <span className="font-mono text-[10px] uppercase tracking-widest text-mutedForeground block">
-                    [ MÃ ĐỒNG BỘ CỦA BẠN ]
+                    MÃ ĐỒNG BỘ CỦA BẠN
                   </span>
                   <div className="flex items-center gap-3">
                     <span className="font-mono text-3xl sm:text-4xl font-black text-black tracking-widest">
@@ -193,7 +193,7 @@ export default function SyncSettingsSection() {
                       )}
                     </button>
                   </div>
-                  <p className="font-body text-xs text-mutedForeground pt-1">
+                  <p className="font-sans text-xs text-mutedForeground pt-1">
                     💡 <strong>Cách đồng bộ với điện thoại:</strong> Mở điện thoại của bạn, vào trang <em>Cài đặt</em> và nhập mã <strong>{syncCode}</strong> ở mục bên dưới.
                   </p>
                 </div>
@@ -225,7 +225,7 @@ export default function SyncSettingsSection() {
             <div className="border border-black divide-y divide-black font-mono text-xs">
               <div className="p-3 flex items-center justify-between bg-white">
                 <span className="text-mutedForeground uppercase tracking-wider">TRẠNG THÁI KẾT NỐI</span>
-                <span className="text-black font-bold uppercase">[ ĐANG HOẠT ĐỘNG · TỰ ĐỘNG ĐỒNG BỘ NỀN ]</span>
+                <span className="text-black font-bold uppercase">ĐANG HOẠT ĐỘNG · TỰ ĐỘNG ĐỒNG BỘ NỀN</span>
               </div>
               <div className="p-3 flex items-center justify-between bg-white">
                 <span className="text-mutedForeground uppercase tracking-wider">LẦN ĐỒNG BỘ GẦN NHẤT</span>
@@ -244,13 +244,13 @@ export default function SyncSettingsSection() {
             <div className="border-2 border-black p-6 bg-white flex flex-col justify-between space-y-4 rounded-none shadow-none">
               <div className="space-y-2">
                 <span className="border border-black px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-black block w-fit">
-                  [ OPTION A · PRIMARY DEVICE ]
+                  01 · PRIMARY DEVICE
                 </span>
                 <h3 className="font-serif text-lg font-bold uppercase tracking-tight text-black flex items-center gap-2">
                   <Sparkles className="w-4 h-4 text-black" />
                   Thiết Bị Đầu Tiên / Tạo Mã Mới
                 </h3>
-                <p className="font-body text-xs text-mutedForeground leading-relaxed">
+                <p className="font-sans text-xs text-mutedForeground leading-relaxed">
                   Nếu bạn bắt đầu học trên máy tính này, hãy bấm tạo một <strong>Mã đồng bộ cá nhân</strong>. Sau đó bạn chỉ cần dùng mã này để liên kết với điện thoại.
                 </p>
               </div>
@@ -270,13 +270,13 @@ export default function SyncSettingsSection() {
             <div className="border-2 border-black p-6 bg-white flex flex-col justify-between space-y-4 rounded-none shadow-none">
               <div className="space-y-2">
                 <span className="border border-black px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-black block w-fit">
-                  [ OPTION B · SECONDARY DEVICE ]
+                  02 · SECONDARY DEVICE
                 </span>
                 <h3 className="font-serif text-lg font-bold uppercase tracking-tight text-black flex items-center gap-2">
                   <Smartphone className="w-4 h-4 text-black" />
                   Đã Có Mã Từ Thiết Bị Khác?
                 </h3>
-                <p className="font-body text-xs text-mutedForeground leading-relaxed">
+                <p className="font-sans text-xs text-mutedForeground leading-relaxed">
                   Nhập mã đồng bộ hiển thị trên máy tính hoặc điện thoại khác vào đây để nạp toàn bộ tiến độ học sang thiết bị này.
                 </p>
               </div>

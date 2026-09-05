@@ -219,7 +219,7 @@ export default function SettingsPage() {
       <section>
         <div className="flex items-center gap-3 mb-4 sm:mb-6">
           <span className="font-mono text-xs uppercase tracking-widest text-mutedForeground border border-black px-2 py-0.5">
-            [ ARCHIVE CONTROL ]
+            ARCHIVE CONTROL
           </span>
           <span className="font-mono text-xs uppercase tracking-widest text-mutedForeground">
             SM-2 ENGINE CONFIGURATION & REPOSITORY
@@ -234,7 +234,7 @@ export default function SettingsPage() {
         </h1>
 
         <p className="font-mono text-xs sm:text-sm tracking-widest text-mutedForeground uppercase mt-4 max-w-2xl">
-          [ TÙY CHỈNH HỆ THỐNG · LƯU TRỮ DỮ LIỆU NỘI BỘ · ĐỒNG BỘ ĐÁM MÂY & BẢO MẬT ]
+          TÙY CHỈNH HỆ THỐNG · LƯU TRỮ DỮ LIỆU NỘI BỘ · ĐỒNG BỘ ĐÁM MÂY & BẢO MẬT
         </p>
 
         {/* Heavy 4px black section rule */}
@@ -245,7 +245,7 @@ export default function SettingsPage() {
           <div className="border-2 border-black divide-y sm:divide-y-0 sm:divide-x divide-black grid grid-cols-2 sm:grid-cols-4 bg-white mb-10">
             <div className="p-4 sm:p-5 flex flex-col justify-between">
               <span className="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-mutedForeground block">
-                [ SRS CARDS ]
+                SRS CARDS
               </span>
               <div className="my-3">
                 <span className="font-serif text-3xl sm:text-4xl font-normal text-black tracking-tight leading-none">
@@ -259,7 +259,7 @@ export default function SettingsPage() {
 
             <div className="p-4 sm:p-5 flex flex-col justify-between">
               <span className="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-mutedForeground block">
-                [ STREAK ]
+                STREAK
               </span>
               <div className="my-3">
                 <span className="font-serif text-3xl sm:text-4xl font-normal text-black tracking-tight leading-none">
@@ -273,7 +273,7 @@ export default function SettingsPage() {
 
             <div className="p-4 sm:p-5 flex flex-col justify-between">
               <span className="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-mutedForeground block">
-                [ EXPERIENCE ]
+                EXPERIENCE
               </span>
               <div className="my-3">
                 <span className="font-serif text-3xl sm:text-4xl font-normal text-black tracking-tight leading-none">
@@ -287,7 +287,7 @@ export default function SettingsPage() {
 
             <div className="p-4 sm:p-5 flex flex-col justify-between">
               <span className="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-mutedForeground block">
-                [ KANJI & VOCAB ]
+                KANJI & VOCAB
               </span>
               <div className="my-3">
                 <span className="font-serif text-3xl sm:text-4xl font-normal text-black tracking-tight leading-none">
@@ -311,7 +311,7 @@ export default function SettingsPage() {
           <div>
             <div className="flex items-center gap-2 mb-1">
               <span className="border border-black px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-black">
-                [ INTERFACE ]
+                INTERFACE
               </span>
               <span className="border border-black px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-black">
                 HIGH-CONTRAST MONOCHROME
@@ -350,18 +350,18 @@ export default function SettingsPage() {
                   <Sun className={`w-5 h-5 ${theme === 'light' ? 'text-white' : 'text-black'}`} />
                   {theme === 'light' ? (
                     <span className="border border-white px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-white">
-                      [ ACTIVE ]
+                      ACTIVE
                     </span>
                   ) : (
                     <span className="font-mono text-[10px] uppercase tracking-widest text-mutedForeground">
-                      [ SELECT ]
+                      CHỌN
                     </span>
                   )}
                 </div>
                 <h3 className="font-serif text-base sm:text-lg font-bold uppercase tracking-tight">
                   Giao Diện Sáng
                 </h3>
-                <p className={`font-body text-xs mt-2 leading-relaxed ${theme === 'light' ? 'text-white/80' : 'text-mutedForeground'}`}>
+                <p className={`font-sans text-xs mt-2 leading-relaxed ${theme === 'light' ? 'text-white/80' : 'text-mutedForeground'}`}>
                   Nền giấy trắng cao cấp, độ tương phản cao, tối ưu khi học tập ban ngày.
                 </p>
               </div>
@@ -385,18 +385,18 @@ export default function SettingsPage() {
                   <Moon className={`w-5 h-5 ${theme === 'dark' ? 'text-white' : 'text-black'}`} />
                   {theme === 'dark' ? (
                     <span className="border border-white px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-white">
-                      [ ACTIVE ]
+                      ACTIVE
                     </span>
                   ) : (
                     <span className="font-mono text-[10px] uppercase tracking-widest text-mutedForeground">
-                      [ SELECT ]
+                      CHỌN
                     </span>
                   )}
                 </div>
                 <h3 className="font-serif text-base sm:text-lg font-bold uppercase tracking-tight">
                   Giao Diện Tối
                 </h3>
-                <p className={`font-body text-xs mt-2 leading-relaxed ${theme === 'dark' ? 'text-white/80' : 'text-mutedForeground'}`}>
+                <p className={`font-sans text-xs mt-2 leading-relaxed ${theme === 'dark' ? 'text-white/80' : 'text-mutedForeground'}`}>
                   Tông màu đen thuần khiết, giảm mỏi mắt khi học tập trong không gian tối.
                 </p>
               </div>
@@ -420,18 +420,18 @@ export default function SettingsPage() {
                   <Laptop className={`w-5 h-5 ${theme === 'system' ? 'text-white' : 'text-black'}`} />
                   {theme === 'system' ? (
                     <span className="border border-white px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-white">
-                      [ ACTIVE ]
+                      ACTIVE
                     </span>
                   ) : (
                     <span className="font-mono text-[10px] uppercase tracking-widest text-mutedForeground">
-                      [ SELECT ]
+                      CHỌN
                     </span>
                   )}
                 </div>
                 <h3 className="font-serif text-base sm:text-lg font-bold uppercase tracking-tight">
                   Theo Thiết Bị
                 </h3>
-                <p className={`font-body text-xs mt-2 leading-relaxed ${theme === 'system' ? 'text-white/80' : 'text-mutedForeground'}`}>
+                <p className={`font-sans text-xs mt-2 leading-relaxed ${theme === 'system' ? 'text-white/80' : 'text-mutedForeground'}`}>
                   Tự động đồng bộ theo cấu hình giao diện Sáng / Tối của hệ điều hành.
                 </p>
               </div>
@@ -449,7 +449,7 @@ export default function SettingsPage() {
           <div>
             <div className="flex items-center gap-2 mb-1">
               <span className="border border-black px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-black">
-                [ SM-2 ENGINE ]
+                SM-2 ENGINE
               </span>
               <span className="border border-black px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-black">
                 REPETITION PARAMS
@@ -476,7 +476,7 @@ export default function SettingsPage() {
                 <label className="font-serif text-base font-bold uppercase tracking-tight text-black block">
                   Số Thẻ Mới Mỗi Ngày (Daily New Cards)
                 </label>
-                <p className="font-body text-xs text-mutedForeground mt-0.5">
+                <p className="font-sans text-xs text-mutedForeground mt-0.5">
                   Giới hạn số lượng thẻ mới xuất hiện trong mỗi phiên ôn tập để tránh quá tải.
                 </p>
               </div>
@@ -510,7 +510,7 @@ export default function SettingsPage() {
               <label className="font-serif text-base font-bold uppercase tracking-tight text-black block">
                 Tự Động Phát Âm Thanh Khi Lật Thẻ
               </label>
-              <p className="font-body text-xs text-mutedForeground mt-0.5">
+              <p className="font-sans text-xs text-mutedForeground mt-0.5">
                 Tự động đọc to từ vựng/kanji tiếng Nhật qua Web Speech API khi lật sang mặt sau.
               </p>
             </div>
@@ -522,13 +522,13 @@ export default function SettingsPage() {
                   setAutoPlayAudio(true);
                   toast.info('Đã bật tự động phát âm thanh khi lật thẻ');
                 }}
-                className={`border border-black px-3 py-1.5 font-mono text-xs uppercase transition-colors duration-100 rounded-none shadow-none ${
+                className={`border border-black px-4 py-1.5 font-mono text-xs uppercase font-bold transition-colors duration-100 rounded-none shadow-none ${
                   autoPlayAudio
                     ? 'bg-black text-white'
                     : 'bg-white text-black hover:bg-black hover:text-white'
                 }`}
               >
-                [ ON ] BẬT
+                BẬT
               </button>
               <button
                 type="button"
@@ -536,13 +536,13 @@ export default function SettingsPage() {
                   setAutoPlayAudio(false);
                   toast.info('Đã tắt tự động phát âm thanh');
                 }}
-                className={`border border-black px-3 py-1.5 font-mono text-xs uppercase transition-colors duration-100 rounded-none shadow-none ${
+                className={`border border-black px-4 py-1.5 font-mono text-xs uppercase font-bold transition-colors duration-100 rounded-none shadow-none ${
                   !autoPlayAudio
                     ? 'bg-black text-white'
                     : 'bg-white text-black hover:bg-black hover:text-white'
                 }`}
               >
-                [ OFF ] TẮT
+                TẮT
               </button>
             </div>
           </div>
@@ -553,7 +553,7 @@ export default function SettingsPage() {
               <label className="font-serif text-base font-bold uppercase tracking-tight text-black block">
                 Âm Thanh Thông Báo Khi Làm Đúng/Sai
               </label>
-              <p className="font-body text-xs text-mutedForeground mt-0.5">
+              <p className="font-sans text-xs text-mutedForeground mt-0.5">
                 Phát hiệu ứng âm thanh phản hồi trong các bài trắc nghiệm Quiz và ghép thẻ.
               </p>
             </div>
@@ -565,13 +565,13 @@ export default function SettingsPage() {
                   setSoundEffects(true);
                   toast.info('Đã bật âm thanh phản hồi quiz');
                 }}
-                className={`border border-black px-3 py-1.5 font-mono text-xs uppercase transition-colors duration-100 rounded-none shadow-none ${
+                className={`border border-black px-4 py-1.5 font-mono text-xs uppercase font-bold transition-colors duration-100 rounded-none shadow-none ${
                   soundEffects
                     ? 'bg-black text-white'
                     : 'bg-white text-black hover:bg-black hover:text-white'
                 }`}
               >
-                [ ON ] BẬT
+                BẬT
               </button>
               <button
                 type="button"
@@ -579,13 +579,13 @@ export default function SettingsPage() {
                   setSoundEffects(false);
                   toast.info('Đã tắt âm thanh phản hồi quiz');
                 }}
-                className={`border border-black px-3 py-1.5 font-mono text-xs uppercase transition-colors duration-100 rounded-none shadow-none ${
+                className={`border border-black px-4 py-1.5 font-mono text-xs uppercase font-bold transition-colors duration-100 rounded-none shadow-none ${
                   !soundEffects
                     ? 'bg-black text-white'
                     : 'bg-white text-black hover:bg-black hover:text-white'
                 }`}
               >
-                [ OFF ] TẮT
+                TẮT
               </button>
             </div>
           </div>
@@ -607,7 +607,7 @@ export default function SettingsPage() {
           <div>
             <div className="flex items-center gap-2 mb-1">
               <span className="border border-black px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-black">
-                [ REPOSITORY ]
+                REPOSITORY
               </span>
               <span className="border border-black px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-black">
                 LOCAL SNAPSHOT ARCHIVE
@@ -631,13 +631,13 @@ export default function SettingsPage() {
           <div className="border-2 border-black p-6 bg-white flex flex-col justify-between space-y-4 rounded-none shadow-none">
             <div className="space-y-2">
               <span className="border border-black px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-black block w-fit">
-                [ EXPORT ARCHIVE ]
+                EXPORT ARCHIVE
               </span>
               <h3 className="font-serif text-lg font-bold uppercase tracking-tight text-black flex items-center gap-2">
                 <Download className="w-4 h-4 text-black" />
                 Xuất Tệp Sao Lưu JSON
               </h3>
-              <p className="font-body text-xs text-mutedForeground leading-relaxed">
+              <p className="font-sans text-xs text-mutedForeground leading-relaxed">
                 Tải về tệp <code className="px-1.5 py-0.5 border border-black font-mono text-xs text-black font-bold">jp_study_backup.json</code> chứa toàn bộ thẻ SRS, lịch sử ôn tập, chuỗi streak, kinh nghiệm XP, tiến độ Hán tự và cài đặt học tập.
               </p>
             </div>
@@ -661,13 +661,13 @@ export default function SettingsPage() {
           <div className="border-2 border-black p-6 bg-white flex flex-col justify-between space-y-4 rounded-none shadow-none">
             <div className="space-y-2">
               <span className="border border-black px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-black block w-fit">
-                [ IMPORT ARCHIVE ]
+                IMPORT ARCHIVE
               </span>
               <h3 className="font-serif text-lg font-bold uppercase tracking-tight text-black flex items-center gap-2">
                 <Upload className="w-4 h-4 text-black" />
                 Nhập Dữ Liệu Sao Lưu
               </h3>
-              <p className="font-body text-xs text-mutedForeground leading-relaxed">
+              <p className="font-sans text-xs text-mutedForeground leading-relaxed">
                 Khôi phục hoặc đồng bộ tiến độ học tập từ tệp JSON đã lưu trước đây. Hệ thống sẽ tự động kiểm tra tính toàn vẹn và hiển thị bảng xem trước chi tiết trước khi áp dụng.
               </p>
             </div>
@@ -708,7 +708,7 @@ export default function SettingsPage() {
           <div>
             <div className="flex items-center gap-2 mb-1">
               <span className="border border-black px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-black">
-                [ CRITICAL OPERATION ]
+                CRITICAL OPERATION
               </span>
               <span className="border border-black px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-black">
                 IRREVERSIBLE
@@ -721,7 +721,7 @@ export default function SettingsPage() {
               <ShieldAlert className="w-6 h-6 text-black" />
               Vùng Nguy Hiểm (Danger Zone)
             </h2>
-            <p className="font-body text-sm text-mutedForeground mt-1">
+            <p className="font-sans text-sm text-mutedForeground mt-1">
               Các thao tác nhạy cảm có thể ảnh hưởng vĩnh viễn tới dữ liệu học tập của bạn.
             </p>
           </div>
@@ -732,7 +732,7 @@ export default function SettingsPage() {
             <h3 className="font-serif text-base sm:text-lg font-bold uppercase tracking-tight text-black">
               Xóa Toàn Bộ Dữ Liệu Học Tập (Reset Everything)
             </h3>
-            <p className="font-body text-sm text-mutedForeground leading-relaxed">
+            <p className="font-sans text-sm text-mutedForeground leading-relaxed">
               Xóa sạch tất cả thẻ Flashcard SRS, chuỗi ngày streak ({streak} ngày), điểm kinh nghiệm ({totalXp} XP), tiến độ Hán tự và từ vựng về trạng thái ban đầu. Thao tác này không thể hoàn tác.
             </p>
           </div>
@@ -766,24 +766,24 @@ export default function SettingsPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="border border-black p-5 bg-white space-y-2">
             <span className="font-mono text-xs uppercase tracking-widest text-black font-bold block">
-              [ 01 · OFFLINE-FIRST ARCHITECTURE ]
+              01 · OFFLINE-FIRST ARCHITECTURE
             </span>
             <h3 className="font-serif text-base font-bold text-black uppercase">
               Không Cần Máy Chủ Lưu Trữ Riêng
             </h3>
-            <p className="font-body text-xs text-mutedForeground leading-relaxed">
+            <p className="font-sans text-xs text-mutedForeground leading-relaxed">
               Nihongo Master hoạt động 100% trên trình duyệt của bạn với công nghệ Static Web và LocalStorage. Ứng dụng không thu thập thông tin cá nhân và hoàn toàn có thể sử dụng khi không có mạng Internet.
             </p>
           </div>
 
           <div className="border border-black p-5 bg-white space-y-2">
             <span className="font-mono text-xs uppercase tracking-widest text-black font-bold block">
-              [ 02 · DATA PRESERVATION POLICY ]
+              02 · DATA PRESERVATION POLICY
             </span>
             <h3 className="font-serif text-base font-bold text-black uppercase">
               Mẹo Bảo Vệ Chuỗi Học Tập
             </h3>
-            <p className="font-body text-xs text-mutedForeground leading-relaxed">
+            <p className="font-sans text-xs text-mutedForeground leading-relaxed">
               Do dữ liệu nằm tại trình duyệt thiết bị, việc dọn dẹp cache hoặc đổi trình duyệt có thể làm mất dữ liệu. Hãy bấm <strong>Xuất File Sao Lưu (JSON)</strong> định kỳ để lưu trữ an toàn trên Google Drive hoặc máy tính cá nhân.
             </p>
           </div>
@@ -915,7 +915,7 @@ export default function SettingsPage() {
             <div className="border border-black p-3.5 bg-white font-mono text-xs text-black leading-relaxed flex items-start gap-2.5">
               <AlertTriangle className="w-4 h-4 shrink-0 text-black mt-0.5" />
               <span>
-                <strong>[ LƯU Ý ]</strong> Dữ liệu hiện có trên trình duyệt này sẽ được cập nhật đồng bộ với bản sao lưu. Các thẻ SRS và tiến độ trong tệp sao lưu sẽ được áp dụng vào hệ thống.
+                <strong>LƯU Ý:</strong> Dữ liệu hiện có trên trình duyệt này sẽ được cập nhật đồng bộ với bản sao lưu. Các thẻ SRS và tiến độ trong tệp sao lưu sẽ được áp dụng vào hệ thống.
               </span>
             </div>
           </div>
@@ -966,7 +966,7 @@ export default function SettingsPage() {
       >
         <div className="space-y-4">
           <div className="border-2 border-black p-4 bg-white font-mono text-xs text-black leading-relaxed space-y-2">
-            <p className="font-bold">[ CẢNH BÁO ] BẠN CHUẨN BỊ XÓA TOÀN BỘ:</p>
+            <p className="font-bold">CẢNH BÁO: BẠN CHUẨN BỊ XÓA TOÀN BỘ:</p>
             <ul className="list-disc list-inside space-y-1 pl-1">
               <li>{cardCount} thẻ Spaced Repetition (SRS)</li>
               <li>Chuỗi streak {streak} ngày và {totalXp} XP</li>

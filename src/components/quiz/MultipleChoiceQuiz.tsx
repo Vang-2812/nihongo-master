@@ -273,13 +273,13 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
   if (!items || items.length === 0) {
     return (
       <div className="max-w-md mx-auto p-6 text-center space-y-4 border-2 border-black bg-white rounded-none shadow-none">
-        <p className="font-mono text-sm text-black">[ KHÔNG CÓ CÂU HỎI NÀO TRONG BỘ BÀI NÀY ]</p>
+        <p className="font-sans text-sm text-black">KHÔNG CÓ CÂU HỎI NÀO TRONG BỘ BÀI NÀY</p>
         <Link
           href="/review/quiz"
-          className="inline-flex items-center gap-2 px-5 py-2.5 border-2 border-black bg-black text-white font-mono text-xs uppercase font-bold hover:bg-white hover:text-black transition-colors duration-100 rounded-none shadow-none"
+          className="inline-flex items-center gap-2 px-5 py-2.5 border-2 border-black bg-black text-white font-sans text-xs uppercase font-bold hover:bg-white hover:text-black transition-colors duration-100 rounded-none shadow-none"
         >
           <Dices className="w-4 h-4" />
-          <span>[ MENU QUIZ ]</span>
+          <span>MENU QUIZ</span>
         </Link>
       </div>
     );
@@ -294,7 +294,7 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
         {/* High-Fashion Editorial Title Banner */}
         <div className="text-center space-y-2 pb-6 border-b-4 border-black">
           <div className="font-mono text-xs uppercase tracking-widest text-mutedForeground">
-            [ HOÀN THÀNH BỘ CÂU HỎI TRẮC NGHIỆM ]
+            HOÀN THÀNH BỘ CÂU HỎI TRẮC NGHIỆM
           </div>
           <h1 className="font-serif font-black text-4xl sm:text-6xl text-black tracking-tight uppercase">
             MULTIPLE CHOICE COMPLETED
@@ -302,7 +302,7 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
           <p className="font-serif text-lg sm:text-2xl text-black tracking-widest">
             選択問題完了
           </p>
-          <p className="font-mono text-xs uppercase tracking-wider text-mutedForeground mt-1">
+          <p className="font-sans text-xs uppercase tracking-wider text-mutedForeground mt-1 font-medium">
             BẠN ĐÃ TRẢ LỜI ĐÚNG {score}/{items.length} CÂU HỎI
           </p>
         </div>
@@ -363,26 +363,26 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
           <button
             type="button"
             onClick={handleRestartInternal}
-            className="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-black bg-white text-black font-mono text-xs font-bold uppercase tracking-widest hover:bg-black hover:text-white transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
+            className="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-black bg-white text-black font-sans text-xs font-bold uppercase tracking-wider hover:bg-black hover:text-white transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
           >
             <RotateCcw className="w-4 h-4" />
-            <span>[ LÀM LẠI BỘ NÀY ]</span>
+            <span>LÀM LẠI BỘ NÀY</span>
           </button>
 
           <Link
             href="/review/quiz"
-            className="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-black bg-white text-black font-mono text-xs font-bold uppercase tracking-widest hover:bg-black hover:text-white transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
+            className="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-black bg-white text-black font-sans text-xs font-bold uppercase tracking-wider hover:bg-black hover:text-white transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
           >
             <Dices className="w-4 h-4" />
-            <span>[ ĐỔI CHẾ ĐỘ QUIZ ]</span>
+            <span>ĐỔI CHẾ ĐỘ QUIZ</span>
           </Link>
 
           <Link
             href="/"
-            className="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-black bg-black text-white font-mono text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
+            className="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-black bg-black text-white font-sans text-xs font-bold uppercase tracking-wider hover:bg-white hover:text-black transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
           >
             <Home className="w-4 h-4" />
-            <span>[ TRANG CHỦ ]</span>
+            <span>TRANG CHỦ</span>
           </Link>
         </div>
 
@@ -390,7 +390,7 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
         <div className="border-2 border-black bg-white p-5 sm:p-6 rounded-none shadow-none space-y-4">
           <div className="flex items-center justify-between pb-3 border-b-2 border-black">
             <h2 className="font-mono text-xs font-bold uppercase tracking-widest text-black">
-              [ CHI TIẾT CÂU TRẢ LỜI · {history.length} CÂU ]
+              CHI TIẾT CÂU TRẢ LỜI · {history.length} CÂU
             </h2>
           </div>
 
@@ -402,13 +402,13 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
               >
                 <div className="flex items-center gap-3 min-w-0">
                   <span
-                    className={`inline-flex items-center justify-center px-2 py-0.5 font-mono text-xs font-bold uppercase shrink-0 border border-black ${
+                    className={`inline-flex items-center justify-center px-2 py-0.5 font-sans text-xs font-bold uppercase shrink-0 border border-black ${
                       h.isCorrect
                         ? 'bg-black text-white'
                         : 'bg-white text-black line-through'
                     }`}
                   >
-                    {h.isCorrect ? '[ ĐÚNG ] ✓' : '[ SAI ] ✕'}
+                    {h.isCorrect ? 'ĐÚNG ✓' : 'SAI ✕'}
                   </span>
 
                   <div className="min-w-0">
@@ -427,11 +427,11 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
                         </span>
                       )}
                     </div>
-                    <p className="font-body text-xs text-mutedForeground truncate mt-0.5">
+                    <p className="font-sans text-xs text-mutedForeground truncate mt-0.5">
                       {h.item.meaning}
                     </p>
                     {!h.isCorrect && (
-                      <p className="font-mono text-[11px] text-black font-semibold mt-0.5">
+                      <p className="font-sans text-[11px] text-black font-semibold mt-0.5">
                         Bạn chọn: {h.selectedMeaning}
                       </p>
                     )}
@@ -476,12 +476,12 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
           <div className="flex items-center gap-2.5">
             {/* Streak Counter Badge */}
             <div className="flex items-center gap-1 px-3 py-1 border border-black bg-white text-black font-mono text-xs font-bold rounded-none uppercase">
-              <span>[ STREAK: {streak} ]</span>
+              <span>CHUỖI: {streak}</span>
             </div>
 
             {/* XP Earned Badge */}
             <div className="flex items-center gap-1 px-3 py-1 border border-black bg-black text-white font-mono text-xs font-bold rounded-none uppercase">
-              <span>[ +{earnedXp} XP ]</span>
+              <span>+{earnedXp} XP</span>
             </div>
           </div>
         </div>
@@ -511,12 +511,12 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
             <button
               type="button"
               onClick={() => setAutoPlay(!autoPlay)}
-              className={`px-2 py-1 border border-black text-xs font-mono font-bold transition-colors duration-100 rounded-none ${
+              className={`px-2 py-1 border border-black text-xs font-sans font-medium transition-colors duration-100 rounded-none ${
                 autoPlay ? 'bg-black text-white' : 'bg-white text-black'
               }`}
               title={autoPlay ? 'Tự động phát âm: Đang BẬT' : 'Tự động phát âm: Đang TẮT'}
             >
-              {autoPlay ? '[ AUTO: ON ]' : '[ AUTO: OFF ]'}
+              {autoPlay ? 'PHÁT ÂM: BẬT' : 'PHÁT ÂM: TẮT'}
             </button>
           </div>
 
@@ -524,12 +524,12 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
           <button
             type="button"
             onClick={() => setShowHint(!showHint)}
-            className={`px-2 py-1 border border-black text-xs font-mono font-bold transition-colors duration-100 rounded-none ${
+            className={`px-2 py-1 border border-black text-xs font-sans font-medium transition-colors duration-100 rounded-none ${
               showHint ? 'bg-black text-white' : 'bg-white text-black'
             }`}
             title="Xem gợi ý Furigana / Âm Hán Việt"
           >
-            {showHint ? '[ HINT: ON ]' : '[ HINT ]'}
+            {showHint ? 'GỢI Ý: BẬT' : 'GỢI Ý'}
           </button>
         </div>
 
@@ -537,8 +537,8 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
         <div className="pt-6 pb-2">
           {activeDirection === 'vi_to_ja' ? (
             <div>
-              <span className="text-xs font-mono font-bold uppercase tracking-widest text-mutedForeground block mb-2">
-                [ NGHĨA TIẾNG VIỆT ]
+              <span className="text-xs font-sans font-semibold uppercase tracking-wider text-mutedForeground block mb-2">
+                NGHĨA TIẾNG VIỆT
               </span>
               <h2 className="text-2xl sm:text-4xl font-serif font-black text-black tracking-tight">
                 {currentItem.meaning}
@@ -572,8 +572,8 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
                   )}
                 </div>
               ) : (
-                <span className="text-xs font-mono text-mutedForeground uppercase tracking-wider">
-                  [ CHỌN TỪ TIẾNG NHẬT TƯƠNG ỨNG ]
+                <span className="text-xs font-sans font-medium text-mutedForeground uppercase tracking-wider">
+                  CHỌN TỪ TIẾNG NHẬT TƯƠNG ỨNG
                 </span>
               )
             ) : (
@@ -591,8 +591,8 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
                   )}
                 </div>
               ) : (
-                <span className="text-xs font-mono text-mutedForeground uppercase tracking-wider">
-                  [ CHỌN NGHĨA TIẾNG VIỆT CHÍNH XÁC ]
+                <span className="text-xs font-sans font-medium text-mutedForeground uppercase tracking-wider">
+                  CHỌN NGHĨA TIẾNG VIỆT CHÍNH XÁC
                 </span>
               )
             )}
@@ -615,11 +615,11 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
             if (isCorrect) {
               buttonStyle =
                 'border-2 border-black bg-black text-white rounded-none shadow-none';
-              feedbackLabel = '[ CORRECT ] ✓';
+              feedbackLabel = 'CHÍNH XÁC ✓';
             } else if (isSelected) {
               buttonStyle =
                 'border-4 border-black bg-white text-black line-through rounded-none shadow-none font-bold';
-              feedbackLabel = '[ INCORRECT ] ✕';
+              feedbackLabel = 'CHƯA ĐÚNG ✕';
             } else {
               buttonStyle =
                 'border-2 border-black bg-white text-mutedForeground opacity-40 rounded-none shadow-none';
@@ -632,7 +632,7 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
               type="button"
               disabled={isChecked}
               onClick={() => handleSelectOption(option)}
-              className={`relative flex items-center justify-between p-4 text-left font-mono text-sm sm:text-base font-medium active:scale-[0.99] ${buttonStyle}`}
+              className={`relative flex items-center justify-between p-4 text-left font-sans text-sm sm:text-base font-medium active:scale-[0.99] ${buttonStyle}`}
             >
               <div className="flex items-center gap-3 min-w-0">
                 {/* Option Number Key (1, 2, 3, 4) */}
@@ -654,7 +654,7 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
 
               {/* Feedback Label */}
               {feedbackLabel && (
-                <span className="font-mono text-xs font-bold shrink-0 ml-2">
+                <span className="font-sans text-xs font-bold shrink-0 ml-2">
                   {feedbackLabel}
                 </span>
               )}
@@ -666,16 +666,16 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
       {/* Bottom Bar / Next Action */}
       {isChecked && (
         <div className="pt-2 flex items-center justify-between gap-3 animate-fadeIn">
-          <div className="text-xs font-mono text-mutedForeground uppercase tracking-wider hidden sm:block">
-            [ NHẤN SPACE HOẶC ENTER ĐỂ TIẾP TỤC ]
+          <div className="text-xs font-sans font-medium text-mutedForeground uppercase tracking-wider hidden sm:block">
+            NHẤN SPACE HOẶC ENTER ĐỂ TIẾP TỤC
           </div>
 
           <button
             type="button"
             onClick={handleNext}
-            className="w-full sm:w-auto ml-auto flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-black bg-black text-white hover:bg-white hover:text-black font-mono text-xs uppercase font-bold tracking-widest transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
+            className="w-full sm:w-auto ml-auto flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-black bg-black text-white hover:bg-white hover:text-black font-sans text-xs uppercase font-bold tracking-wider transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
           >
-            <span>{currentIndex < items.length - 1 ? '[ CÂU TIẾP THEO ]' : '[ XEM KẾT QUẢ ]'}</span>
+            <span>{currentIndex < items.length - 1 ? 'CÂU TIẾP THEO' : 'XEM KẾT QUẢ'}</span>
             <ArrowRight className="w-4 h-4" />
           </button>
         </div>

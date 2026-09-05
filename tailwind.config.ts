@@ -42,10 +42,12 @@ const config: Config = {
         accent: "#000000",
       },
       fontFamily: {
+        sans: ["var(--font-inter)", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "sans-serif"],
+        body: ["var(--font-inter)", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "sans-serif"],
         serif: ["var(--font-playfair)", "Georgia", "serif"],
         display: ["var(--font-playfair)", "Georgia", "serif"],
-        body: ["var(--font-source-serif)", "Times New Roman", "serif"],
         mono: ["var(--font-jetbrains-mono)", "Menlo", "monospace"],
+        japanese: ['"Hiragino Sans"', '"Meiryo"', '"Yu Gothic"', 'sans-serif'],
       },
     },
   },

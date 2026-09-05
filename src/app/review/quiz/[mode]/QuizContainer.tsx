@@ -156,7 +156,7 @@ export default function QuizContainer({ mode }: QuizContainerProps) {
       <div className="flex items-center justify-between pb-3 border-b-2 border-black">
         <Link
           href="/review/quiz"
-          className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-black bg-white hover:bg-black hover:text-white text-xs font-mono uppercase tracking-widest transition-colors duration-100 rounded-none shadow-none"
+          className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-black bg-white hover:bg-black hover:text-white text-xs font-sans font-medium uppercase tracking-wider transition-colors duration-100 rounded-none shadow-none"
           title="Thoát và đổi chế độ"
         >
           <ArrowLeft className="w-3.5 h-3.5" />
@@ -167,8 +167,8 @@ export default function QuizContainer({ mode }: QuizContainerProps) {
           <h1 className="text-sm sm:text-base font-serif font-bold uppercase tracking-wide text-black">
             {modeTitles[mode] || 'PRACTICE QUIZ'}
           </h1>
-          <p className="text-[11px] font-mono uppercase tracking-widest text-muted-foreground">
-            [{titleDescription}]
+          <p className="text-[11px] font-mono uppercase tracking-wider text-muted-foreground">
+            {titleDescription}
           </p>
         </div>
 

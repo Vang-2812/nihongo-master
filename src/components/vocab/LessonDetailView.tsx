@@ -317,10 +317,10 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
           <Link
             href="/tango"
-            className="font-mono text-xs uppercase tracking-widest inline-flex items-center gap-1.5 text-black hover:underline"
+            className="font-sans font-medium text-xs uppercase tracking-wider inline-flex items-center gap-1.5 text-black hover:underline"
           >
             <ArrowLeft className="w-3.5 h-3.5" />
-            <span>[ ← BACK TO ARCHIVE ]</span>
+            <span>← QUAY LẠI KHO TỪ VỰNG</span>
           </Link>
 
           {/* Breadcrumbs trail */}
@@ -346,14 +346,14 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
                   handleGenerateAIExercises(false);
                 }
               }}
-              className="border border-black bg-white hover:bg-black hover:text-white text-black font-mono text-xs uppercase tracking-wider px-3 py-1.5 transition-colors duration-100 rounded-none disabled:opacity-50"
+              className="border border-black bg-white hover:bg-black hover:text-white text-black font-sans font-medium text-xs uppercase tracking-wider px-3 py-1.5 transition-colors duration-100 rounded-none disabled:opacity-50"
             >
               <span>
                 {isGeneratingAI
-                  ? '[ AI: GENERATING... ]'
+                  ? 'AI: ĐANG TẠO...'
                   : aiExercises.length > 0
-                  ? `[ AI EXERCISES (${aiExercises.length}) ]`
-                  : '[ AI EXERCISES ]'}
+                  ? `BÀI TẬP AI (${aiExercises.length})`
+                  : 'BÀI TẬP AI'}
               </span>
             </button>
 
@@ -361,12 +361,12 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
             <button
               type="button"
               onClick={() => setIsQuizModalOpen(true)}
-              className="border border-black bg-black text-white hover:bg-white hover:text-black font-mono text-xs uppercase tracking-wider px-3 py-1.5 transition-colors duration-100 rounded-none"
+              className="border border-black bg-black text-white hover:bg-white hover:text-black font-sans font-medium text-xs uppercase tracking-wider px-3 py-1.5 transition-colors duration-100 rounded-none"
             >
               <span>
                 {selectedItemIds.size > 0
-                  ? `[ QUIZ (${selectedItemIds.size}) ]`
-                  : '[ PRACTICE QUIZ ]'}
+                  ? `LUYỆN TẬP (${selectedItemIds.size})`
+                  : 'LUYỆN TẬP QUIZ'}
               </span>
             </button>
           </div>
@@ -378,17 +378,17 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
         <div>
           <div className="flex flex-wrap items-center gap-2 mb-3">
             <span className="font-mono text-xs uppercase tracking-widest border border-black px-2 py-0.5 text-black">
-              [ {lesson.level} ]
+              {lesson.level}
             </span>
             <span className="font-mono text-xs uppercase tracking-widest border border-black px-2 py-0.5 text-black">
-              [ LESSON {String(lesson.lessonNumber).padStart(2, '0')} ]
+              BÀI {String(lesson.lessonNumber).padStart(2, '0')}
             </span>
-            <span className="font-mono text-xs uppercase tracking-widest text-mutedForeground">
+            <span className="font-sans text-xs uppercase tracking-wider text-mutedForeground">
               {lesson.bookTitle}
             </span>
             {currentLessonStatus === 'complete' && (
-              <span className="font-mono text-xs uppercase tracking-widest bg-black text-white border border-black px-2 py-0.5">
-                [ COMPLETED ]
+              <span className="font-sans font-medium text-xs uppercase tracking-wider bg-black text-white border border-black px-2 py-0.5">
+                ĐÃ HOÀN THÀNH
               </span>
             )}
           </div>
@@ -398,7 +398,7 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
           </h1>
 
           {lesson.subtitle && (
-            <p className="font-body text-sm sm:text-base text-mutedForeground mt-2 max-w-3xl">
+            <p className="font-sans text-sm sm:text-base text-mutedForeground mt-2 max-w-3xl">
               {lesson.subtitle}
             </p>
           )}
@@ -412,7 +412,7 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
           {/* Total Words */}
           <div className="p-4 flex flex-col justify-between">
             <span className="font-mono text-[10px] uppercase tracking-widest text-mutedForeground">
-              [ TOTAL WORDS · 総単語数 ]
+              TỔNG TỪ VỰNG · 総単語数
             </span>
             <span className="font-serif text-4xl sm:text-5xl font-light text-black tracking-tight leading-none mt-3">
               {stats.total}
@@ -423,10 +423,10 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
           <div className="p-4 flex flex-col justify-between">
             <div className="flex items-baseline justify-between">
               <span className="font-mono text-[10px] uppercase tracking-widest text-mutedForeground">
-                [ MASTERED · 習得済み ]
+                ĐÃ THUỘC · 習得済み
               </span>
               <span className="font-mono text-xs font-bold text-black">
-                [{stats.progressPercent}%]
+                {stats.progressPercent}%
               </span>
             </div>
             <span className="font-serif text-4xl sm:text-5xl font-light text-black tracking-tight leading-none mt-3">
@@ -437,7 +437,7 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
           {/* Learning */}
           <div className="p-4 flex flex-col justify-between">
             <span className="font-mono text-[10px] uppercase tracking-widest text-mutedForeground">
-              [ LEARNING · 学習中 ]
+              ĐANG HỌC · 学習中
             </span>
             <span className="font-serif text-4xl sm:text-5xl font-light text-black tracking-tight leading-none mt-3">
               {stats.learningCount}
@@ -447,7 +447,7 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
           {/* In SRS Queue */}
           <div className="p-4 flex flex-col justify-between">
             <span className="font-mono text-[10px] uppercase tracking-widest text-mutedForeground">
-              [ SRS QUEUE · 復習対象 ]
+              HÀNG ĐỢI SRS · 復習対象
             </span>
             <span className="font-serif text-4xl sm:text-5xl font-light text-black tracking-tight leading-none mt-3">
               {stats.srsCount}
@@ -458,10 +458,10 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
         {/* Batch Control Toolbar */}
         <div className="border-2 border-black p-4 mb-6 flex flex-wrap items-center justify-between gap-4 bg-white rounded-none shadow-none">
           {/* Selection tools */}
-          <div className="flex flex-wrap items-center gap-2 sm:gap-3 font-mono text-xs uppercase tracking-wider">
+          <div className="flex flex-wrap items-center gap-2 sm:gap-3 font-sans font-medium text-xs uppercase tracking-wider">
             <div className="flex items-center gap-1.5 font-bold text-black mr-2">
               <CheckSquare className="w-4 h-4 stroke-[2]" />
-              <span>SELECTED: [{selectedItemIds.size} / {filteredItems.length}]</span>
+              <span>ĐÃ CHỌN: {selectedItemIds.size} / {filteredItems.length}</span>
             </div>
 
             <button
@@ -469,7 +469,7 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
               onClick={handleSelectAllVisible}
               className="border border-black bg-white hover:bg-black hover:text-white px-2.5 py-1.5 transition-colors duration-100 rounded-none text-black"
             >
-              [ SELECT ALL ({filteredItems.length}) ]
+              CHỌN TẤT CẢ ({filteredItems.length})
             </button>
 
             <button
@@ -477,7 +477,7 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
               onClick={handleSelectUnmastered}
               className="border border-black bg-white hover:bg-black hover:text-white px-2.5 py-1.5 transition-colors duration-100 rounded-none text-black"
             >
-              [ ONLY UNMASTERED ]
+              TỪ CHƯA THUỘC
             </button>
 
             {selectedItemIds.size > 0 && (
@@ -486,7 +486,7 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
                 onClick={() => setSelectedItemIds(new Set())}
                 className="border border-black bg-white hover:bg-black hover:text-white px-2.5 py-1.5 transition-colors duration-100 rounded-none text-black"
               >
-                [ CLEAR SELECTION ]
+                BỎ CHỌN TẤT CẢ
               </button>
             )}
           </div>
@@ -497,21 +497,21 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
             <button
               type="button"
               onClick={handleAddAllToSRS}
-              className="border-2 border-black bg-white hover:bg-black hover:text-white font-mono text-xs uppercase tracking-wider font-bold px-3.5 py-2 transition-colors duration-100 rounded-none shadow-none"
+              className="border-2 border-black bg-white hover:bg-black hover:text-white font-sans font-medium text-xs uppercase tracking-wider font-bold px-3.5 py-2 transition-colors duration-100 rounded-none shadow-none"
             >
-              [ + ADD ALL TO SRS ]
+              + THÊM TẤT CẢ VÀO SRS
             </button>
 
             {/* PRACTICE QUIZ */}
             <button
               type="button"
               onClick={() => setIsQuizModalOpen(true)}
-              className="border-2 border-black bg-black text-white hover:bg-white hover:text-black font-mono text-xs uppercase tracking-wider font-bold px-3.5 py-2 transition-colors duration-100 rounded-none shadow-none"
+              className="border-2 border-black bg-black text-white hover:bg-white hover:text-black font-sans font-medium text-xs uppercase tracking-wider font-bold px-3.5 py-2 transition-colors duration-100 rounded-none shadow-none"
             >
               <span>
                 {selectedItemIds.size > 0
-                  ? `[ PRACTICE QUIZ (${selectedItemIds.size}) ]`
-                  : '[ PRACTICE QUIZ ]'}
+                  ? `LUYỆN TẬP (${selectedItemIds.size})`
+                  : 'LUYỆN TẬP QUIZ'}
               </span>
             </button>
 
@@ -520,23 +520,23 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
               <button
                 type="button"
                 onClick={() => setIsAIModalOpen(true)}
-                className="border-2 border-black bg-white hover:bg-black hover:text-white font-mono text-xs uppercase tracking-wider font-bold px-3.5 py-2 transition-colors duration-100 rounded-none shadow-none"
+                className="border-2 border-black bg-white hover:bg-black hover:text-white font-sans font-medium text-xs uppercase tracking-wider font-bold px-3.5 py-2 transition-colors duration-100 rounded-none shadow-none"
               >
-                [ AI CLOZE EXERCISES ({aiExercises.length}) ]
+                BÀI TẬP AI ({aiExercises.length})
               </button>
             ) : (
               <button
                 type="button"
                 disabled={isGeneratingAI}
                 onClick={() => handleGenerateAIExercises(false)}
-                className="border-2 border-black bg-white hover:bg-black hover:text-white font-mono text-xs uppercase tracking-wider font-bold px-3.5 py-2 transition-colors duration-100 rounded-none shadow-none disabled:opacity-50"
+                className="border-2 border-black bg-white hover:bg-black hover:text-white font-sans font-medium text-xs uppercase tracking-wider font-bold px-3.5 py-2 transition-colors duration-100 rounded-none shadow-none disabled:opacity-50"
               >
                 <span>
                   {isGeneratingAI
-                    ? '[ GENERATING AI EXERCISES... ]'
+                    ? 'ĐANG TẠO BÀI TẬP AI...'
                     : selectedItemIds.size > 0
-                    ? `[ AI CLOZE EXERCISES (${selectedItemIds.size}) ]`
-                    : '[ AI CLOZE EXERCISES ]'}
+                    ? `BÀI TẬP AI (${selectedItemIds.size})`
+                    : 'BÀI TẬP AI'}
                 </span>
               </button>
             )}
@@ -545,23 +545,23 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
             <button
               type="button"
               onClick={handleToggleCompleteLesson}
-              className={`border border-black px-2.5 py-1.5 font-mono text-xs uppercase tracking-wider transition-colors duration-100 rounded-none ${
+              className={`border border-black px-2.5 py-1.5 font-sans font-medium text-xs uppercase tracking-wider transition-colors duration-100 rounded-none ${
                 currentLessonStatus === 'complete'
-                  ? 'bg-black text-white hover:bg-white hover:text-black'
+                  ? 'bg-black text-white hover:bg-neutral-800'
                   : 'bg-white text-black hover:bg-black hover:text-white'
               }`}
             >
-              {currentLessonStatus === 'complete' ? '[ ✓ COMPLETED ]' : '[ MARK COMPLETE ]'}
+              {currentLessonStatus === 'complete' ? '✓ ĐÃ HOÀN THÀNH' : 'ĐÁNH DẤU HOÀN THÀNH'}
             </button>
 
             {/* Mark All Known */}
             <button
               type="button"
               onClick={handleMarkAllKnown}
-              className="border border-black bg-white hover:bg-black hover:text-white px-2.5 py-1.5 font-mono text-xs uppercase tracking-wider transition-colors duration-100 rounded-none text-black"
+              className="border border-black bg-white hover:bg-black hover:text-white px-2.5 py-1.5 font-sans font-medium text-xs uppercase tracking-wider transition-colors duration-100 rounded-none text-black"
               title="Đánh dấu nhanh tất cả từ vựng trong bài này là Đã thuộc"
             >
-              [ MASTER ALL ]
+              ĐÃ THUỘC TẤT CẢ
             </button>
           </div>
         </div>
@@ -592,10 +592,10 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
           {/* Filter Tabs */}
           <div className="flex items-center gap-1.5 overflow-x-auto pb-1 md:pb-0">
             {[
-              { id: 'all', label: `ALL (${stats.total})` },
-              { id: 'not_started', label: `NEW (${stats.notStartedCount})` },
-              { id: 'learning', label: `LEARNING (${stats.learningCount})` },
-              { id: 'known', label: `MASTERED (${stats.knownCount})` },
+              { id: 'all', label: `TẤT CẢ (${stats.total})` },
+              { id: 'not_started', label: `CHƯA HỌC (${stats.notStartedCount})` },
+              { id: 'learning', label: `ĐANG HỌC (${stats.learningCount})` },
+              { id: 'known', label: `ĐÃ THUỘC (${stats.knownCount})` },
               { id: 'srs', label: `SRS (${stats.srsCount})` },
             ].map((tab) => {
               const active = activeFilter === tab.id;
@@ -604,13 +604,13 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
                   key={tab.id}
                   type="button"
                   onClick={() => setActiveFilter(tab.id as FilterTab)}
-                  className={`border border-black font-mono text-xs uppercase tracking-wider px-3 py-1.5 rounded-none transition-colors duration-100 whitespace-nowrap ${
+                  className={`border border-black font-sans font-medium text-xs uppercase tracking-wider px-3 py-1.5 rounded-none transition-colors duration-100 whitespace-nowrap ${
                     active
                       ? 'bg-black text-white'
                       : 'bg-white text-black hover:bg-muted'
                   }`}
                 >
-                  [ {tab.label} ]
+                  {tab.label}
                 </button>
               );
             })}
@@ -624,7 +624,7 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
             <h3 className="font-serif text-lg font-normal text-black uppercase">
               KHÔNG TÌM THẤY TỪ VỰNG NÀO
             </h3>
-            <p className="font-body text-sm text-mutedForeground mt-1">
+            <p className="font-sans text-sm text-mutedForeground mt-1">
               Vui lòng thử thay đổi từ khóa tìm kiếm hoặc chọn bộ lọc khác.
             </p>
             <button
@@ -633,9 +633,9 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
                 setSearchQuery('');
                 setActiveFilter('all');
               }}
-              className="mt-4 border border-black bg-black text-white hover:bg-white hover:text-black px-4 py-2 font-mono text-xs uppercase tracking-wider transition-colors duration-100 rounded-none"
+              className="mt-4 border border-black bg-black text-white hover:bg-white hover:text-black px-4 py-2 font-sans font-medium text-xs uppercase tracking-wider transition-colors duration-100 rounded-none"
             >
-              [ HIỂN THỊ TẤT CẢ {stats.total} TỪ ]
+              HIỂN THỊ TẤT CẢ {stats.total} TỪ
             </button>
           </div>
         ) : (
@@ -652,14 +652,14 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
         )}
 
         {/* Bottom Adjacent Lesson Navigation */}
-        <div className="mt-12 pt-6 border-t-2 border-black flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-xs uppercase tracking-wider">
+        <div className="mt-12 pt-6 border-t-2 border-black flex flex-col sm:flex-row items-center justify-between gap-4 font-sans font-medium text-xs uppercase tracking-wider">
           {adjacent.prev ? (
             <Link
               href={`/tango/${adjacent.prev.id}`}
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 py-2.5 border border-black bg-white text-black hover:bg-black hover:text-white transition-colors duration-100 rounded-none"
             >
               <ChevronLeft className="w-4 h-4" />
-              <span>[ ← BÀI TRƯỚC: {adjacent.prev.title} ]</span>
+              <span>← BÀI TRƯỚC: {adjacent.prev.title}</span>
             </Link>
           ) : (
             <div className="hidden sm:block" />
@@ -669,7 +669,7 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
             href="/tango"
             className="text-black hover:underline tracking-widest"
           >
-            [ ↑ TRỞ VỀ DANH MỤC ]
+            ↑ TRỞ VỀ DANH MỤC
           </Link>
 
           {adjacent.next ? (
@@ -677,7 +677,7 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
               href={`/tango/${adjacent.next.id}`}
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 py-2.5 border border-black bg-white text-black hover:bg-black hover:text-white transition-colors duration-100 rounded-none"
             >
-              <span>[ BÀI TIẾP: {adjacent.next.title} → ]</span>
+              <span>BÀI TIẾP: {adjacent.next.title} →</span>
               <ChevronRight className="w-4 h-4" />
             </Link>
           ) : (

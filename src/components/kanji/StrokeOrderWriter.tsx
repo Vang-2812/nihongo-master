@@ -98,7 +98,7 @@ export const StrokeOrderWriter: React.FC<StrokeOrderWriterProps> = ({
     setIsQuiz(false);
     setQuizCompleted(false);
     setIsAnimating(true);
-    setQuizMessage('[ ĐANG PHÁT THỨ TỰ NÉT VIẾT... ]');
+    setQuizMessage('ĐANG PHÁT THỨ TỰ NÉT VIẾT...');
 
     writerRef.current.cancelQuiz?.();
     writerRef.current.showCharacter();
@@ -117,27 +117,27 @@ export const StrokeOrderWriter: React.FC<StrokeOrderWriterProps> = ({
     setQuizCompleted(false);
     setMistakes(0);
     setCurrentStroke(1);
-    setQuizMessage('[ DÙNG CHUỘT HOẶC CẢM ỨNG ĐỂ VẼ TỪNG NÉT THEO THỨ TỰ ]');
+    setQuizMessage('DÙNG CHUỘT HOẶC CẢM ỨNG ĐỂ VẼ TỪNG NÉT THEO THỨ TỰ');
 
     writerRef.current.quiz({
       onMistake: (strokeData: any) => {
         setMistakes((m) => m + 1);
         setQuizMessage(
-          `[ NÉT CHƯA CHÍNH XÁC (LỖI: ${strokeData.mistakesOnStroke}). THỬ LẠI ]`
+          `NÉT CHƯA CHÍNH XÁC (LỖI: ${strokeData.mistakesOnStroke}). THỬ LẠI`
         );
       },
       onCorrectStroke: (strokeData: any) => {
         setCurrentStroke(strokeData.strokeNum + 2);
         setTotalStrokes(strokeData.totalStrokes);
         setQuizMessage(
-          `[ CHÍNH XÁC: NÉT ${strokeData.strokeNum + 1}/${strokeData.totalStrokes} ]`
+          `CHÍNH XÁC: NÉT ${strokeData.strokeNum + 1}/${strokeData.totalStrokes}`
         );
       },
       onComplete: (summaryData: any) => {
         setIsQuiz(false);
         setQuizCompleted(true);
         setQuizMessage(
-          `[ HOÀN THÀNH: ĐÃ VIẾT ĐÚNG CHỮ HÁN VỚI ${summaryData.totalMistakes} LỖI ]`
+          `HOÀN THÀNH: ĐÃ VIẾT ĐÚNG CHỮ HÁN VỚI ${summaryData.totalMistakes} LỖI`
         );
       },
     });
@@ -209,8 +209,8 @@ export const StrokeOrderWriter: React.FC<StrokeOrderWriterProps> = ({
             >
               {character}
             </span>
-            <span className="font-mono text-[10px] text-mutedForeground uppercase mt-2">
-              [ HIỂN THỊ NÉT CHUẨN ]
+            <span className="font-mono text-[10px] text-mutedForeground uppercase tracking-wider mt-2">
+              HIỂN THỊ NÉT CHUẨN
             </span>
           </div>
         )}
@@ -218,7 +218,7 @@ export const StrokeOrderWriter: React.FC<StrokeOrderWriterProps> = ({
 
       {/* Quiz / Animation Status Banner */}
       {(quizMessage || quizCompleted) && (
-        <div className="w-full mt-3.5 p-3 border border-black bg-white text-black font-mono text-xs uppercase tracking-wide rounded-none flex items-center gap-2">
+        <div className="w-full mt-3.5 p-3 border border-black bg-white text-black font-sans font-medium text-xs uppercase tracking-wide rounded-none flex items-center gap-2">
           <span className="flex-1 leading-tight text-center">{quizMessage}</span>
         </div>
       )}
@@ -230,7 +230,7 @@ export const StrokeOrderWriter: React.FC<StrokeOrderWriterProps> = ({
           type="button"
           onClick={handleAnimate}
           disabled={loading || error || isAnimating}
-          className="flex-1 min-w-[90px] inline-flex items-center justify-center gap-1.5 px-3 py-2 border border-black bg-white hover:bg-black hover:text-white font-mono text-xs uppercase tracking-wider rounded-none transition-colors duration-100 disabled:opacity-40 disabled:cursor-not-allowed"
+          className="flex-1 min-w-[90px] inline-flex items-center justify-center gap-1.5 px-3 py-2 border border-black bg-white hover:bg-black hover:text-white font-sans font-medium text-xs uppercase tracking-wider rounded-none transition-colors duration-100 disabled:opacity-40 disabled:cursor-not-allowed"
         >
           <Play className="w-3.5 h-3.5 fill-current" />
           <span>HOẠT HỌA</span>
@@ -241,7 +241,7 @@ export const StrokeOrderWriter: React.FC<StrokeOrderWriterProps> = ({
           type="button"
           onClick={handleStartQuiz}
           disabled={loading || error}
-          className={`flex-1 min-w-[90px] inline-flex items-center justify-center gap-1.5 px-3 py-2 border border-black font-mono text-xs uppercase tracking-wider rounded-none transition-colors duration-100 disabled:opacity-40 disabled:cursor-not-allowed ${
+          className={`flex-1 min-w-[90px] inline-flex items-center justify-center gap-1.5 px-3 py-2 border border-black font-sans font-medium text-xs uppercase tracking-wider rounded-none transition-colors duration-100 disabled:opacity-40 disabled:cursor-not-allowed ${
             isQuiz
               ? 'bg-black text-white hover:bg-white hover:text-black'
               : 'bg-white hover:bg-black hover:text-white'

@@ -200,14 +200,14 @@ export default function KanjiCatalogPage() {
       {/* Editorial Header Section */}
       <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
         <div>
-          <span className="font-mono text-xs uppercase tracking-widest text-mutedForeground block mb-2">
-            [ KANJI REPOSITORY · 漢字アーカイブ ]
+          <span className="font-sans text-xs font-semibold uppercase tracking-widest text-mutedForeground block mb-2">
+            KANJI REPOSITORY · 漢字アーカイブ
           </span>
           <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl font-normal tracking-tight text-black uppercase leading-none">
             KHO HÁN TỰ
           </h1>
-          <p className="font-mono text-xs sm:text-sm tracking-widest text-mutedForeground uppercase mt-3">
-            [ 2,136 THƯỜNG DỤNG HÁN TỰ · JLPT N5–N1 · BỘ THỦ & THỨ TỰ NÉT · SRS ]
+          <p className="font-sans text-xs sm:text-sm tracking-wider text-mutedForeground uppercase mt-3 font-medium">
+            2,136 THƯỜNG DỤNG HÁN TỰ · JLPT N5–N1 · BỘ THỦ & THỨ TỰ NÉT · SRS
           </p>
         </div>
 
@@ -216,10 +216,10 @@ export default function KanjiCatalogPage() {
           <button
             type="button"
             onClick={() => setIsQuizModalOpen(true)}
-            className="border-2 border-black bg-black text-white hover:bg-white hover:text-black font-mono text-xs uppercase tracking-wider px-4 py-2.5 rounded-none shadow-none transition-colors duration-100"
+            className="border-2 border-black bg-black text-white hover:bg-white hover:text-black font-sans font-semibold text-xs uppercase tracking-wider px-4 py-2.5 rounded-none shadow-none transition-colors duration-100"
             title={`Luyện tập Quizlet cho Kanji ${level}`}
           >
-            <span>[ LUYỆN TẬP QUIZLET ]</span>
+            <span>LUYỆN TẬP QUIZLET</span>
           </button>
 
           <button
@@ -228,7 +228,7 @@ export default function KanjiCatalogPage() {
               setIsSelecting(!isSelecting);
               if (isSelecting) setSelectedChars(new Set());
             }}
-            className={`border-2 border-black font-mono text-xs uppercase tracking-wider px-4 py-2.5 rounded-none shadow-none transition-colors duration-100 ${
+            className={`border-2 border-black font-sans font-semibold text-xs uppercase tracking-wider px-4 py-2.5 rounded-none shadow-none transition-colors duration-100 ${
               isSelecting
                 ? 'bg-black text-white'
                 : 'bg-white text-black hover:bg-neutral-100'
@@ -236,19 +236,19 @@ export default function KanjiCatalogPage() {
           >
             <span className="inline-flex items-center gap-1.5">
               <CheckSquare className="w-3.5 h-3.5 stroke-[2]" />
-              <span>{isSelecting ? '[ HỦY CHỌN ]' : '[ CHỌN CHỮ ]'}</span>
+              <span>{isSelecting ? 'HỦY CHỌN' : 'CHỌN CHỮ'}</span>
             </span>
           </button>
 
           <button
             type="button"
             onClick={handleAddAllToSRS}
-            className="border-2 border-black bg-white text-black hover:bg-black hover:text-white font-mono text-xs uppercase tracking-wider px-4 py-2.5 rounded-none shadow-none transition-colors duration-100"
+            className="border-2 border-black bg-white text-black hover:bg-black hover:text-white font-sans font-semibold text-xs uppercase tracking-wider px-4 py-2.5 rounded-none shadow-none transition-colors duration-100"
             title="Thêm toàn bộ Kanji đang hiển thị vào hàng đợi SRS"
           >
             <span className="inline-flex items-center gap-1.5">
               <PlusCircle className="w-3.5 h-3.5 stroke-[2]" />
-              <span>[ + THÊM VÀO SRS ]</span>
+              <span>+ THÊM VÀO SRS</span>
             </span>
           </button>
         </div>
@@ -271,14 +271,14 @@ export default function KanjiCatalogPage() {
                 setLevel(lvl);
                 setSelectedChars(new Set());
               }}
-              className={`border border-black font-mono text-xs uppercase tracking-widest px-4 py-2.5 rounded-none transition-colors duration-100 flex items-center gap-2 ${
+              className={`border border-black font-sans font-semibold text-xs uppercase tracking-wider px-4 py-2.5 rounded-none transition-colors duration-100 flex items-center gap-2 ${
                 isActive
                   ? 'bg-black text-white'
                   : 'bg-white text-black hover:bg-muted'
               }`}
             >
               <span>{lvl}</span>
-              <span className="text-[10px] opacity-75">[{levelCount}]</span>
+              <span className="text-[11px] opacity-70">({levelCount})</span>
             </button>
           );
         })}
@@ -288,8 +288,8 @@ export default function KanjiCatalogPage() {
       <div className="border-t-2 border-b-2 border-black divide-y sm:divide-y-0 sm:divide-x divide-black py-4 grid grid-cols-2 lg:grid-cols-4">
         {/* Total */}
         <div className="p-4 flex flex-col justify-between">
-          <span className="font-mono text-[10px] uppercase tracking-widest text-mutedForeground">
-            [ TỔNG SỐ KANJI {level} ]
+          <span className="font-sans text-xs font-semibold uppercase tracking-wider text-mutedForeground">
+            TỔNG SỐ KANJI {level}
           </span>
           <span className="font-serif text-4xl sm:text-5xl font-light text-black tracking-tight leading-none mt-3">
             {stats.total}
@@ -299,8 +299,8 @@ export default function KanjiCatalogPage() {
         {/* Known */}
         <div className="p-4 flex flex-col justify-between">
           <div className="flex items-baseline justify-between">
-            <span className="font-mono text-[10px] uppercase tracking-widest text-mutedForeground">
-              [ ĐÃ THUỘC ]
+            <span className="font-sans text-xs font-semibold uppercase tracking-wider text-mutedForeground">
+              ĐÃ THUỘC
             </span>
             <span className="font-mono text-xs font-bold text-black">
               {stats.progressPercentage}%
@@ -313,8 +313,8 @@ export default function KanjiCatalogPage() {
 
         {/* Learning */}
         <div className="p-4 flex flex-col justify-between">
-          <span className="font-mono text-[10px] uppercase tracking-widest text-mutedForeground">
-            [ ĐANG HỌC SRS ]
+          <span className="font-sans text-xs font-semibold uppercase tracking-wider text-mutedForeground">
+            ĐANG HỌC SRS
           </span>
           <span className="font-serif text-4xl sm:text-5xl font-light text-black tracking-tight leading-none mt-3">
             {stats.learningCount}
@@ -323,8 +323,8 @@ export default function KanjiCatalogPage() {
 
         {/* New */}
         <div className="p-4 flex flex-col justify-between">
-          <span className="font-mono text-[10px] uppercase tracking-widest text-mutedForeground">
-            [ CHƯA HỌC ]
+          <span className="font-sans text-xs font-semibold uppercase tracking-wider text-mutedForeground">
+            CHƯA HỌC
           </span>
           <span className="font-serif text-4xl sm:text-5xl font-light text-black tracking-tight leading-none mt-3">
             {stats.newCount}
@@ -342,7 +342,7 @@ export default function KanjiCatalogPage() {
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             placeholder="TÌM CHỮ HÁN, HÁN VIỆT, NGHĨA, ON, KUN..."
-            className="w-full pl-10 pr-10 py-2.5 border-2 border-black bg-white text-black font-mono text-xs uppercase placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-black rounded-none shadow-none"
+            className="w-full pl-10 pr-10 py-2.5 border-2 border-black bg-white text-black font-sans text-xs uppercase placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-black rounded-none shadow-none"
           />
           {search && (
             <button
@@ -364,14 +364,14 @@ export default function KanjiCatalogPage() {
                 key={st.id}
                 type="button"
                 onClick={() => setFilter(st.id)}
-                className={`px-3 py-2 border border-black font-mono text-xs uppercase tracking-wider rounded-none transition-colors duration-100 flex items-center gap-1.5 ${
+                className={`px-3 py-2 border border-black font-sans font-semibold text-xs uppercase tracking-wider rounded-none transition-colors duration-100 flex items-center gap-1.5 ${
                   isSelected
                     ? 'bg-black text-white'
                     : 'bg-white text-black hover:bg-neutral-100'
                 }`}
               >
                 <span>{st.label}</span>
-                <span className="text-[10px] opacity-75">[{st.count}]</span>
+                <span className="text-[11px] opacity-70">({st.count})</span>
               </button>
             );
           })}
@@ -380,7 +380,7 @@ export default function KanjiCatalogPage() {
 
       {/* Result Count and Grid */}
       <div className="space-y-4">
-        <div className="flex items-center justify-between text-xs font-mono text-mutedForeground uppercase tracking-wider">
+        <div className="flex items-center justify-between text-xs font-sans text-mutedForeground uppercase tracking-wider">
           <span>
             HIỂN THỊ <strong className="text-black">{filteredKanji.length}</strong> / {stats.total} CHỮ KANJI {level}
           </span>
@@ -388,9 +388,9 @@ export default function KanjiCatalogPage() {
             <button
               type="button"
               onClick={handleResetFilters}
-              className="text-black underline uppercase hover:opacity-70"
+              className="text-black underline uppercase hover:opacity-70 font-semibold"
             >
-              [ XÓA BỘ LỌC ]
+              XÓA BỘ LỌC
             </button>
           )}
         </div>
@@ -406,18 +406,18 @@ export default function KanjiCatalogPage() {
           onSelectAll={handleSelectAllFiltered}
           onClearSelection={handleClearSelection}
           onBatchAction={() => setIsQuizModalOpen(true)}
-          batchActionLabel="[ LUYỆN TẬP ]"
+          batchActionLabel="LUYỆN TẬP"
         />
       </div>
 
       {/* Floating Selection Bar */}
       {isSelecting && (
-        <div className="sticky bottom-4 z-30 mx-auto max-w-xl w-full p-4 border-2 border-black bg-white text-black font-mono text-xs rounded-none shadow-none flex items-center justify-between gap-3">
+        <div className="sticky bottom-4 z-30 mx-auto max-w-xl w-full p-4 border-2 border-black bg-white text-black font-sans text-xs rounded-none shadow-none flex items-center justify-between gap-3">
           <div className="flex items-center gap-2 min-w-0">
             <span className="px-2 py-0.5 bg-black text-white font-bold shrink-0">
               {selectedChars.size}
             </span>
-            <span className="truncate uppercase tracking-wider">
+            <span className="truncate uppercase tracking-wider font-semibold">
               CHỮ HÁN ĐÃ CHỌN
             </span>
           </div>
@@ -426,19 +426,19 @@ export default function KanjiCatalogPage() {
             <button
               type="button"
               onClick={selectedChars.size === filteredKanji.length ? handleClearSelection : handleSelectAllFiltered}
-              className="px-3 py-1.5 border border-black bg-white text-black hover:bg-black hover:text-white uppercase tracking-wider transition-colors duration-100 rounded-none"
+              className="px-3 py-1.5 border border-black bg-white text-black hover:bg-black hover:text-white uppercase tracking-wider transition-colors duration-100 font-semibold rounded-none"
             >
-              {selectedChars.size === filteredKanji.length ? '[ BỎ CHỌN ]' : '[ CHỌN TẤT CẢ ]'}
+              {selectedChars.size === filteredKanji.length ? 'BỎ CHỌN' : 'CHỌN TẤT CẢ'}
             </button>
 
             <button
               type="button"
               disabled={selectedChars.size < 4}
               onClick={() => setIsQuizModalOpen(true)}
-              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 border border-black bg-black text-white hover:bg-white hover:text-black uppercase tracking-wider transition-colors duration-100 rounded-none disabled:opacity-40 disabled:cursor-not-allowed"
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 border border-black bg-black text-white hover:bg-white hover:text-black uppercase tracking-wider transition-colors duration-100 font-semibold rounded-none disabled:opacity-40 disabled:cursor-not-allowed"
               title={selectedChars.size < 4 ? 'Cần chọn tối thiểu 4 chữ để luyện tập' : ''}
             >
-              <span>[ LUYỆN TẬP ]</span>
+              <span>LUYỆN TẬP</span>
             </button>
           </div>
         </div>

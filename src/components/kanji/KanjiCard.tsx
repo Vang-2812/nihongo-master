@@ -142,7 +142,7 @@ export const KanjiCard: React.FC<KanjiCardProps> = ({
                 : 'bg-transparent text-black hover:bg-black hover:text-white group-hover:text-white group-hover:hover:bg-white group-hover:hover:text-black'
             }`}
           >
-            {isSrsAdded || status === 'learning' ? '[ SRS: IN ]' : '[ + SRS ]'}
+            {isSrsAdded || status === 'learning' ? 'SRS' : '+ SRS'}
           </button>
         </div>
       </div>
@@ -159,7 +159,7 @@ export const KanjiCard: React.FC<KanjiCardProps> = ({
         </span>
 
         {/* Meaning in Vietnamese */}
-        <p className="mt-1 font-body text-xs sm:text-sm text-mutedForeground group-hover:text-neutral-300 line-clamp-1 text-center">
+        <p className="mt-1 font-sans text-xs sm:text-sm text-mutedForeground group-hover:text-neutral-300 line-clamp-1 text-center">
           {meaning || kanji.meaning_vi}
         </p>
       </div>
@@ -185,10 +185,10 @@ export const KanjiCard: React.FC<KanjiCardProps> = ({
 
         {/* Status indicator bottom badge */}
         <div className="pt-1 flex items-center justify-between">
-          <span className="font-mono text-[10px] uppercase tracking-wider text-black group-hover:text-white">
-            {status === 'known' && '[ MASTERED ]'}
-            {status === 'learning' && '[ IN SRS ]'}
-            {status === 'new' && '[ NEW ]'}
+          <span className="font-sans font-medium text-[11px] uppercase tracking-wider text-black group-hover:text-white">
+            {status === 'known' && 'ĐÃ THUỘC'}
+            {status === 'learning' && 'ĐANG HỌC'}
+            {status === 'new' && 'CHƯA HỌC'}
           </span>
 
           <span className="font-mono font-bold text-[10px] border border-black px-1 text-black group-hover:text-white group-hover:border-white">

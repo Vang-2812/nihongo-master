@@ -29,7 +29,7 @@ export function generateMetadata({
   }
 
   return {
-    title: `[ ${lesson.level} ] ${lesson.title} · ${lesson.bookTitle} | TANGO ARCHIVE`,
+    title: `${lesson.level} · ${lesson.title} · ${lesson.bookTitle} | Nihongo Master`,
     description: `Từ vựng tiếng Nhật: ${lesson.title} (${lesson.bookTitle}) gồm ${lesson.items.length} từ. Phát âm chuẩn bản xứ, âm Hán Việt, bài tập AI và chu kỳ ôn tập SRS.`,
   };
 }

@@ -113,18 +113,18 @@ export const VocabCard: React.FC<VocabCardProps> = ({
     switch (currentStatus) {
       case 'known':
         return {
-          label: '[ STATUS: MASTERED ]',
-          classes: 'bg-black text-white hover:bg-white hover:text-black',
+          label: 'ĐÃ THUỘC',
+          classes: 'bg-black text-white hover:bg-neutral-800',
         };
       case 'learning':
         return {
-          label: '[ STATUS: LEARNING ]',
+          label: 'ĐANG HỌC',
           classes: 'bg-neutral-100 text-black hover:bg-black hover:text-white',
         };
       case 'not_started':
       default:
         return {
-          label: '[ STATUS: NOT STARTED ]',
+          label: 'CHƯA HỌC',
           classes: 'bg-white text-black hover:bg-black hover:text-white',
         };
     }
@@ -209,13 +209,13 @@ export const VocabCard: React.FC<VocabCardProps> = ({
 
         {/* Vietnamese Meaning */}
         <div className="my-3">
-          <p className="font-body text-base sm:text-lg text-black leading-snug">
+          <p className="font-sans font-medium text-base sm:text-lg text-black leading-snug">
             {vocab.meaning}
           </p>
 
           {/* English Meaning (Optional) */}
           {vocab.meaningEn && (
-            <p className="font-body text-xs text-mutedForeground mt-0.5 italic">
+            <p className="font-sans text-xs text-mutedForeground mt-0.5 italic">
               {vocab.meaningEn}
             </p>
           )}
@@ -235,7 +235,7 @@ export const VocabCard: React.FC<VocabCardProps> = ({
                 className="opacity-70 hover:opacity-100 -mt-0.5"
               />
             </div>
-            <p className="font-body text-xs text-mutedForeground mt-1">
+            <p className="font-sans text-xs text-mutedForeground mt-1">
               {vocab.example.vietnamese}
             </p>
           </div>
@@ -248,7 +248,7 @@ export const VocabCard: React.FC<VocabCardProps> = ({
         <button
           type="button"
           onClick={handleStatusCycle}
-          className={`border border-black px-2 py-1 font-mono text-xs uppercase tracking-wider transition-colors duration-100 rounded-none ${statusInfo.classes}`}
+          className={`border border-black px-2.5 py-1 font-sans font-medium text-xs uppercase tracking-wider transition-colors duration-100 rounded-none ${statusInfo.classes}`}
           title="Bấm để chuyển trạng thái: Chưa học → Đang học → Đã thuộc"
         >
           {statusInfo.label}
@@ -258,14 +258,14 @@ export const VocabCard: React.FC<VocabCardProps> = ({
         <button
           type="button"
           onClick={handleToggleSRS}
-          className={`border border-black px-2 py-1 font-mono text-xs uppercase tracking-wider transition-colors duration-100 rounded-none ${
+          className={`border border-black px-2.5 py-1 font-sans font-medium text-xs uppercase tracking-wider transition-colors duration-100 rounded-none ${
             isInSRS
-              ? 'bg-black text-white hover:bg-white hover:text-black'
+              ? 'bg-black text-white hover:bg-neutral-800'
               : 'bg-white text-black hover:bg-black hover:text-white'
           }`}
           title={isInSRS ? 'Đã lưu trong SRS. Bấm để xóa' : 'Thêm từ này vào chu kỳ ôn tập SRS'}
         >
-          {isInSRS ? '[ SRS: ACTIVE ]' : '[ + SRS ]'}
+          {isInSRS ? 'SRS ✓' : '+ SRS'}
         </button>
       </div>
     </div>

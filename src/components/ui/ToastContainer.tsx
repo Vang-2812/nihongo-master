@@ -29,14 +29,14 @@ interface ToastCardProps {
 const getBadgeText = (type: string) => {
   switch (type) {
     case 'success':
-      return '[ SUCCESS ]';
+      return 'THÀNH CÔNG';
     case 'error':
-      return '[ ERROR ]';
+      return 'LỖI';
     case 'warning':
-      return '[ WARNING ]';
+      return 'CẢNH BÁO';
     case 'info':
     default:
-      return '[ INFO ]';
+      return 'THÔNG BÁO';
   }
 };
 
@@ -44,19 +44,19 @@ const ToastCard: React.FC<ToastCardProps> = ({ item, onDismiss }) => {
   return (
     <div
       role="alert"
-      className="pointer-events-auto flex items-start justify-between gap-3 bg-white border-2 border-black p-4 text-black font-mono text-xs shadow-none rounded-none transition-all duration-100"
+      className="pointer-events-auto flex items-start justify-between gap-3 bg-white border-2 border-black p-4 text-black font-sans text-xs shadow-none rounded-none transition-all duration-100"
     >
       <div className="flex flex-col gap-1 flex-1">
-        <span className="font-bold tracking-wider">{getBadgeText(item.type)}</span>
-        <div className="break-words leading-relaxed">{item.message}</div>
+        <span className="font-bold tracking-wider text-[11px] font-mono">{getBadgeText(item.type)}</span>
+        <div className="break-words leading-relaxed text-xs">{item.message}</div>
       </div>
       <button
         type="button"
         onClick={onDismiss}
-        className="border border-black px-1.5 py-0.5 font-mono text-xs hover:bg-black hover:text-white transition-colors duration-100 -mr-1 -mt-1 flex-shrink-0"
+        className="w-6 h-6 border border-black flex items-center justify-center font-mono text-xs hover:bg-black hover:text-white transition-colors duration-100 -mr-1 -mt-1 flex-shrink-0"
         aria-label="Đóng thông báo"
       >
-        [ X ]
+        ✕
       </button>
     </div>
   );

@@ -142,7 +142,7 @@ export default function AIClozeQuizModal({
         <div className="px-5 py-4 border-b-2 border-black flex items-center justify-between gap-3 bg-white">
           <div className="min-w-0">
             <h3 className="text-xs sm:text-sm font-mono font-bold text-black uppercase tracking-wider truncate">
-              [ BÀI TẬP AI: {lessonTitle} ]
+              BÀI TẬP AI: {lessonTitle}
             </h3>
             {!isComplete && (
               <p className="text-[11px] font-mono text-mutedForeground uppercase tracking-wider">
@@ -152,7 +152,7 @@ export default function AIClozeQuizModal({
           </div>
 
           <div className="flex items-center gap-2 flex-shrink-0">
-            {/* Translation Toggle Button: [ TRANSLATE: ON / OFF ] */}
+            {/* Translation Toggle Button */}
             {!isComplete && (
               <button
                 type="button"
@@ -164,18 +164,18 @@ export default function AIClozeQuizModal({
                 }`}
                 title={isTranslationVisible ? 'Đang hiện nghĩa tiếng Việt' : 'Đang ẩn nghĩa tiếng Việt'}
               >
-                <span>{isTranslationVisible ? '[ TRANSLATE: ON ]' : '[ TRANSLATE: OFF ]'}</span>
+                <span>{isTranslationVisible ? 'DỊCH: BẬT' : 'DỊCH: TẮT'}</span>
               </button>
             )}
 
-            {/* Close Modal: [ X ] */}
+            {/* Close Modal */}
             <button
               type="button"
               onClick={onClose}
-              className="border border-black px-2 py-1 font-mono text-xs font-bold text-black hover:bg-black hover:text-white transition-colors duration-100 rounded-none"
+              className="border border-black px-2.5 py-1 font-mono text-xs font-bold text-black hover:bg-black hover:text-white transition-colors duration-100 rounded-none"
               title="Đóng cửa sổ"
             >
-              [ X ]
+              ✕
             </button>
           </div>
         </div>
@@ -208,7 +208,7 @@ export default function AIClozeQuizModal({
                 </button>
 
                 <span className="inline-block text-[11px] font-mono font-bold uppercase tracking-widest text-mutedForeground mb-3">
-                  [ ĐIỀN TỪ THÍCH HỢP VÀO CHỖ TRỐNG ]
+                  ĐIỀN TỪ THÍCH HỢP VÀO CHỖ TRỐNG
                 </span>
 
                 {/* Japanese Sentence */}
@@ -236,7 +236,7 @@ export default function AIClozeQuizModal({
                 {/* Vietnamese Translation (Toggleable) */}
                 <div className="mt-3 min-h-[24px]">
                   {isTranslationVisible ? (
-                    <p className="font-body text-xs sm:text-sm text-black italic">
+                    <p className="font-sans text-xs sm:text-sm text-black italic">
                       "{currentExercise.translation}"
                     </p>
                   ) : (
@@ -245,7 +245,7 @@ export default function AIClozeQuizModal({
                       onClick={() => setIsTranslationVisible(true)}
                       className="font-mono text-xs text-mutedForeground hover:text-black border border-black px-2 py-0.5 rounded-none uppercase transition-colors"
                     >
-                      [ XEM NGHĨA TIẾNG VIỆT ]
+                      XEM NGHĨA TIẾNG VIỆT
                     </button>
                   )}
                 </div>
@@ -267,11 +267,11 @@ export default function AIClozeQuizModal({
                     if (isCorrect) {
                       buttonStyle = 'border-2 border-black bg-black text-white';
                       badgeStyle = 'bg-white text-black border-white';
-                      feedbackLabel = '[ CORRECT ] ✓';
+                      feedbackLabel = 'CHÍNH XÁC ✓';
                     } else if (isSelected && !isCorrect) {
                       buttonStyle = 'border-4 border-black bg-white text-black line-through font-bold';
                       badgeStyle = 'bg-black text-white border-black';
-                      feedbackLabel = '[ INCORRECT ] ✕';
+                      feedbackLabel = 'CHƯA ĐÚNG ✕';
                     } else {
                       buttonStyle = 'border-2 border-black bg-white text-mutedForeground opacity-40';
                       badgeStyle = 'border-black text-mutedForeground';
@@ -314,10 +314,10 @@ export default function AIClozeQuizModal({
                     <div>
                       <h4 className="font-mono text-xs font-bold uppercase tracking-wider mb-1 text-black">
                         {selectedOptionIndex === currentExercise.correctIndex
-                          ? '[ CHÍNH XÁC! (+5 XP) ]'
-                          : `[ CHƯA CHÍNH XÁC · ĐÁP ÁN ĐÚNG: ${currentExercise.targetWord} ]`}
+                          ? 'CHÍNH XÁC! (+5 XP)'
+                          : `CHƯA CHÍNH XÁC · ĐÁP ÁN ĐÚNG: ${currentExercise.targetWord}`}
                       </h4>
-                      <p className="font-body text-xs sm:text-sm text-black leading-relaxed">
+                      <p className="font-sans text-xs sm:text-sm text-black leading-relaxed">
                         {currentExercise.explanation}
                       </p>
                     </div>
@@ -339,7 +339,7 @@ export default function AIClozeQuizModal({
             <div className="py-6 text-center space-y-6 animate-fadeIn">
               <div className="space-y-2 pb-6 border-b-4 border-black">
                 <div className="font-mono text-xs uppercase tracking-widest text-mutedForeground">
-                  [ HOÀN THÀNH BỘ BÀI TẬP ĐIỀN TỪ AI ]
+                  HOÀN THÀNH BỘ BÀI TẬP ĐIỀN TỪ AI
                 </div>
                 <h3 className="font-serif font-black text-3xl sm:text-5xl text-black tracking-tight uppercase">
                   AI CLOZE EXERCISES COMPLETED
@@ -381,7 +381,7 @@ export default function AIClozeQuizModal({
               {wrongAnswers.length > 0 && (
                 <div className="text-left mt-6 pt-4 border-t-2 border-black max-h-48 overflow-y-auto space-y-2">
                   <h4 className="font-mono text-xs font-bold text-black uppercase tracking-wider">
-                    [ CÁC CÂU CẦN ÔN LẠI ({wrongAnswers.length}) ]:
+                    CÁC CÂU CẦN ÔN LẠI ({wrongAnswers.length}):
                   </h4>
                   <div className="space-y-2">
                     {wrongAnswers.map((item, idx) => (
@@ -393,7 +393,7 @@ export default function AIClozeQuizModal({
                           <p className="font-serif font-bold text-black text-sm">
                             {item.fullSentence}
                           </p>
-                          <p className="font-body text-mutedForeground mt-0.5">
+                          <p className="font-sans text-mutedForeground mt-0.5">
                             Đáp án: <strong className="font-mono text-black">{item.targetWord}</strong> — {item.translation}
                           </p>
                         </div>
@@ -421,7 +421,7 @@ export default function AIClozeQuizModal({
                 onClick={handleNext}
                 className="w-full inline-flex items-center justify-center gap-2 py-3.5 border-2 border-black bg-black text-white hover:bg-white hover:text-black disabled:opacity-30 disabled:cursor-not-allowed font-mono text-xs uppercase font-bold tracking-widest transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
               >
-                <span>{currentIndex + 1 === total ? '[ XEM KẾT QUẢ TỔNG KẾT ]' : '[ CÂU TIẾP THEO ]'}</span>
+                <span>{currentIndex + 1 === total ? 'XEM KẾT QUẢ TỔNG KẾT' : 'CÂU TIẾP THEO'}</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
             ) : (
@@ -432,7 +432,7 @@ export default function AIClozeQuizModal({
                   className="flex-1 inline-flex items-center justify-center gap-2 py-3.5 border-2 border-black bg-white text-black hover:bg-black hover:text-white font-mono text-xs uppercase font-bold tracking-widest transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
                 >
                   <RotateCcw className="w-4 h-4" />
-                  <span>[ LUYỆN LẠI BÀI NÀY ]</span>
+                  <span>LUYỆN LẠI BÀI NÀY</span>
                 </button>
                 <button
                   type="button"
@@ -440,7 +440,7 @@ export default function AIClozeQuizModal({
                   className="flex-1 inline-flex items-center justify-center gap-2 py-3.5 border-2 border-black bg-black text-white hover:bg-white hover:text-black font-mono text-xs uppercase font-bold tracking-widest transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
                 >
                   <BookOpen className="w-4 h-4" />
-                  <span>[ QUAY VỀ BÀI HỌC ]</span>
+                  <span>QUAY VỀ BÀI HỌC</span>
                 </button>
               </div>
             )}

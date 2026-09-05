@@ -150,13 +150,13 @@ export default function TangoCatalogPage() {
       <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
         <div>
           <span className="font-mono text-xs uppercase tracking-widest text-mutedForeground block mb-2">
-            [ VOCABULARY ARCHIVE · 単語アーカイブ ]
+            VOCABULARY ARCHIVE · 単語アーカイブ
           </span>
           <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl font-normal tracking-tight text-black uppercase leading-none">
             VOCABULARY ARCHIVE / 単語帳
           </h1>
-          <p className="font-mono text-xs sm:text-sm tracking-widest text-mutedForeground uppercase mt-3">
-            [ 4 STANDARD TEXTBOOKS · {overallStats.totalLessonsCount} LESSONS · {overallStats.totalVocab.toLocaleString()} VOCABULARY ENTRIES · SRS ]
+          <p className="font-sans text-xs sm:text-sm tracking-wider text-mutedForeground uppercase mt-3">
+            4 GIÁO TRÌNH CHUẨN · {overallStats.totalLessonsCount} BÀI HỌC · {overallStats.totalVocab.toLocaleString()} TỪ VỰNG · SRS
           </p>
         </div>
       </div>
@@ -169,7 +169,7 @@ export default function TangoCatalogPage() {
         {/* Textbooks */}
         <div className="p-4 flex flex-col justify-between">
           <span className="font-mono text-[10px] uppercase tracking-widest text-mutedForeground">
-            [ TEXTBOOKS · 教科書 ]
+            GIÁO TRÌNH · 教科書
           </span>
           <span className="font-serif text-4xl sm:text-5xl font-light text-black tracking-tight leading-none mt-3">
             4 BỘ SÁCH
@@ -179,7 +179,7 @@ export default function TangoCatalogPage() {
         {/* Total Lessons */}
         <div className="p-4 flex flex-col justify-between">
           <span className="font-mono text-[10px] uppercase tracking-widest text-mutedForeground">
-            [ TOTAL LESSONS · 全課 ]
+            TỔNG SỐ BÀI · 全課
           </span>
           <span className="font-serif text-4xl sm:text-5xl font-light text-black tracking-tight leading-none mt-3">
             {overallStats.totalLessonsCount} BÀI
@@ -189,7 +189,7 @@ export default function TangoCatalogPage() {
         {/* Total Words */}
         <div className="p-4 flex flex-col justify-between">
           <span className="font-mono text-[10px] uppercase tracking-widest text-mutedForeground">
-            [ TOTAL VOCABULARY · 総語彙 ]
+            TỔNG TỪ VỰNG · 総語彙
           </span>
           <span className="font-serif text-4xl sm:text-5xl font-light text-black tracking-tight leading-none mt-3">
             {overallStats.totalVocab.toLocaleString()}
@@ -200,10 +200,10 @@ export default function TangoCatalogPage() {
         <div className="p-4 flex flex-col justify-between">
           <div className="flex items-baseline justify-between">
             <span className="font-mono text-[10px] uppercase tracking-widest text-mutedForeground">
-              [ MASTERED · 習得済み ]
+              ĐÃ THUỘC · 習得済み
             </span>
             <span className="font-mono text-xs font-bold text-black">
-              [{overallStats.progressPercent}%]
+              {overallStats.progressPercent}%
             </span>
           </div>
           <span className="font-serif text-4xl sm:text-5xl font-light text-black tracking-tight leading-none mt-3">
@@ -244,7 +244,7 @@ export default function TangoCatalogPage() {
                       : 'border-black text-black group-hover:border-white group-hover:text-white'
                   }`}
                 >
-                  [ {book.level} ]
+                  {book.level}
                 </span>
                 <span
                   className={`font-mono text-[11px] uppercase tracking-wider ${
@@ -272,7 +272,7 @@ export default function TangoCatalogPage() {
                   {book.title}
                 </h2>
                 <p
-                  className={`font-body text-xs sm:text-sm mt-2 line-clamp-2 ${
+                  className={`font-sans text-xs sm:text-sm mt-2 line-clamp-2 ${
                     isSelected ? 'text-neutral-300' : 'text-mutedForeground group-hover:text-neutral-300'
                   }`}
                 >
@@ -300,11 +300,11 @@ export default function TangoCatalogPage() {
                   }`}
                 >
                   <span>TIẾN ĐỘ</span>
-                  <span>[{bookKnownVocab}/{bookTotalVocab} · {bookPercent}%]</span>
+                  <span>{bookKnownVocab}/{bookTotalVocab} · {bookPercent}%</span>
                 </div>
                 {isSelected && (
-                  <div className="text-[10px] tracking-widest text-center pt-1 border-t border-white/40">
-                    [ ĐANG LỌC BỘ SÁCH NÀY ]
+                  <div className="font-sans font-medium text-[10px] tracking-wider uppercase text-center pt-1 border-t border-white/40">
+                    ĐANG LỌC BỘ SÁCH NÀY
                   </div>
                 )}
               </div>
@@ -338,7 +338,7 @@ export default function TangoCatalogPage() {
 
         {/* Status Filter Chips */}
         <div className="flex items-center gap-1.5 overflow-x-auto pb-1 md:pb-0">
-          <span className="font-mono text-xs uppercase tracking-wider text-mutedForeground mr-1 flex items-center gap-1 shrink-0">
+          <span className="font-sans font-medium text-xs uppercase tracking-wider text-mutedForeground mr-1 flex items-center gap-1 shrink-0">
             <Filter className="w-3.5 h-3.5" /> TRẠNG THÁI:
           </span>
           {[
@@ -353,13 +353,13 @@ export default function TangoCatalogPage() {
                 key={chip.id}
                 type="button"
                 onClick={() => setStatusFilter(chip.id as StatusFilter)}
-                className={`border border-black font-mono text-xs uppercase tracking-wider px-3 py-1.5 rounded-none transition-colors duration-100 whitespace-nowrap ${
+                className={`border border-black font-sans font-medium text-xs uppercase tracking-wider px-3 py-1.5 rounded-none transition-colors duration-100 whitespace-nowrap ${
                   active
                     ? 'bg-black text-white'
                     : 'bg-white text-black hover:bg-muted'
                 }`}
               >
-                [ {chip.label} ]
+                {chip.label}
               </button>
             );
           })}
@@ -373,7 +373,7 @@ export default function TangoCatalogPage() {
             DANH SÁCH BÀI HỌC
           </h2>
           <span className="font-mono text-xs border border-black px-2 py-0.5 text-black">
-            [{filteredLessons.length} BÀI]
+            {filteredLessons.length} BÀI
           </span>
         </div>
 
@@ -381,9 +381,9 @@ export default function TangoCatalogPage() {
           <button
             type="button"
             onClick={() => setSelectedBook('all')}
-            className="font-mono text-xs uppercase tracking-wider text-black hover:underline flex items-center gap-1"
+            className="font-sans font-medium text-xs uppercase tracking-wider text-black hover:underline flex items-center gap-1"
           >
-            <span>[ XEM TẤT CẢ GIÁO TRÌNH ]</span>
+            <span>XEM TẤT CẢ GIÁO TRÌNH</span>
             <ChevronRight className="w-3.5 h-3.5" />
           </button>
         )}
@@ -396,7 +396,7 @@ export default function TangoCatalogPage() {
           <h3 className="font-serif text-lg font-normal text-black uppercase">
             KHÔNG TÌM THẤY BÀI HỌC NÀO PHÙ HỢP
           </h3>
-          <p className="font-body text-sm text-mutedForeground mt-1">
+          <p className="font-sans text-sm text-mutedForeground mt-1">
             Vui lòng thử thay đổi từ khóa tìm kiếm hoặc bỏ chọn các bộ lọc.
           </p>
           <button
@@ -406,9 +406,9 @@ export default function TangoCatalogPage() {
               setSelectedBook('all');
               setStatusFilter('all');
             }}
-            className="mt-4 border border-black bg-black text-white hover:bg-white hover:text-black px-4 py-2 font-mono text-xs uppercase tracking-wider transition-colors duration-100 rounded-none"
+            className="mt-4 border border-black bg-black text-white hover:bg-white hover:text-black px-4 py-2 font-sans font-medium text-xs uppercase tracking-wider transition-colors duration-100 rounded-none"
           >
-            [ XÓA TẤT CẢ BỘ LỌC ]
+            XÓA TẤT CẢ BỘ LỌC
           </button>
         </div>
       ) : (
@@ -427,14 +427,14 @@ export default function TangoCatalogPage() {
                       <span className="font-mono text-[10px] uppercase tracking-widest border border-black group-hover:border-white px-1.5 py-0.5 text-black group-hover:text-white">
                         {lesson.level}
                       </span>
-                      <span className="font-mono text-xs text-mutedForeground group-hover:text-neutral-300 truncate max-w-[150px]">
+                      <span className="font-sans text-xs text-mutedForeground group-hover:text-neutral-300 truncate max-w-[150px]">
                         {lesson.bookTitle}
                       </span>
                     </div>
-                    <span className="font-mono text-[10px] uppercase tracking-wider border border-black group-hover:border-white px-1.5 py-0.5 text-black group-hover:text-white">
-                      {lesson.status === 'complete' && '[ COMPLETED ]'}
-                      {lesson.status === 'learning' && '[ LEARNING ]'}
-                      {lesson.status === 'not_started' && '[ NEW ]'}
+                    <span className="font-sans font-medium text-[10px] uppercase tracking-wider border border-black group-hover:border-white px-1.5 py-0.5 text-black group-hover:text-white">
+                      {lesson.status === 'complete' && 'ĐÃ HOÀN THÀNH'}
+                      {lesson.status === 'learning' && 'ĐANG HỌC'}
+                      {lesson.status === 'not_started' && 'CHƯA HỌC'}
                     </span>
                   </div>
 
@@ -445,7 +445,7 @@ export default function TangoCatalogPage() {
 
                   {/* Lesson Subtitle */}
                   {lesson.subtitle && (
-                    <p className="font-body text-xs text-mutedForeground group-hover:text-neutral-300 mt-1 line-clamp-2">
+                    <p className="font-sans text-xs text-mutedForeground group-hover:text-neutral-300 mt-1 line-clamp-2">
                       {lesson.subtitle}
                     </p>
                   )}
@@ -458,12 +458,12 @@ export default function TangoCatalogPage() {
                       {lesson.items.length} TỪ VỰNG
                     </span>
                     <span className="font-bold text-black group-hover:text-white">
-                      [{lesson.knownCount}/{lesson.items.length} · {lesson.progressPercent}%]
+                      {lesson.knownCount}/{lesson.items.length} · {lesson.progressPercent}%
                     </span>
                   </div>
 
-                  <div className="flex items-center justify-end mt-3 font-mono text-xs uppercase tracking-wider text-black group-hover:text-white group-hover:translate-x-1 transition-transform">
-                    <span>[ VÀO HỌC BÀI → ]</span>
+                  <div className="flex items-center justify-end mt-3 font-sans font-medium text-xs uppercase tracking-wider text-black group-hover:text-white group-hover:translate-x-1 transition-transform">
+                    <span>VÀO HỌC BÀI →</span>
                   </div>
                 </div>
               </Link>

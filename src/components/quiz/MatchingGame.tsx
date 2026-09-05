@@ -261,13 +261,13 @@ export const MatchingGame: React.FC<MatchingGameProps> = ({
   if (!items || items.length === 0) {
     return (
       <div className="max-w-md mx-auto p-6 text-center space-y-4 border-2 border-black bg-white rounded-none shadow-none">
-        <p className="font-mono text-sm text-black">[ KHÔNG CÓ ĐỦ THẺ TỪ VỰNG ĐỂ CHƠI GHÉP THẺ ]</p>
+        <p className="font-sans text-sm text-black">KHÔNG CÓ ĐỦ THẺ TỪ VỰNG ĐỂ CHƠI GHÉP THẺ</p>
         <Link
           href="/review/quiz"
-          className="inline-flex items-center gap-2 px-5 py-2.5 border-2 border-black bg-black text-white font-mono text-xs uppercase font-bold hover:bg-white hover:text-black transition-colors duration-100 rounded-none shadow-none"
+          className="inline-flex items-center gap-2 px-5 py-2.5 border-2 border-black bg-black text-white font-sans text-xs uppercase font-bold hover:bg-white hover:text-black transition-colors duration-100 rounded-none shadow-none"
         >
           <Dices className="w-4 h-4" />
-          <span>[ QUAY LẠI MENU QUIZ ]</span>
+          <span>QUAY LẠI MENU QUIZ</span>
         </Link>
       </div>
     );
@@ -280,7 +280,7 @@ export const MatchingGame: React.FC<MatchingGameProps> = ({
         {/* High-Fashion Editorial Title Banner */}
         <div className="text-center space-y-2 pb-6 border-b-4 border-black">
           <div className="font-mono text-xs uppercase tracking-widest text-mutedForeground">
-            [ HOÀN THÀNH TRÒ CHƠI GHÉP THẺ ]
+            HOÀN THÀNH TRÒ CHƠI GHÉP THẺ
           </div>
           <h1 className="font-serif font-black text-4xl sm:text-6xl text-black tracking-tight uppercase">
             MATCHING COMPLETED
@@ -288,7 +288,7 @@ export const MatchingGame: React.FC<MatchingGameProps> = ({
           <p className="font-serif text-lg sm:text-2xl text-black tracking-widest">
             神経衰弱完了
           </p>
-          <p className="font-mono text-xs uppercase tracking-wider text-mutedForeground mt-1">
+          <p className="font-sans text-xs uppercase tracking-wider text-mutedForeground mt-1 font-medium">
             BẠN ĐÃ GHÉP CHÍNH XÁC {totalPairs} CẶP THẺ
           </p>
         </div>
@@ -333,8 +333,8 @@ export const MatchingGame: React.FC<MatchingGameProps> = ({
         </div>
 
         {bestTime && (
-          <div className="text-center font-mono text-xs uppercase tracking-widest text-black border-2 border-black p-3 bg-muted">
-            [ KỶ LỤC TỐT NHẤT CỦA BẠN: {formatTime(bestTime)} ]
+          <div className="text-center font-mono text-xs uppercase tracking-wider text-black border-2 border-black p-3 bg-muted">
+            KỶ LỤC TỐT NHẤT CỦA BẠN: {formatTime(bestTime)}
           </div>
         )}
 
@@ -343,26 +343,26 @@ export const MatchingGame: React.FC<MatchingGameProps> = ({
           <button
             type="button"
             onClick={initializeGame}
-            className="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-black bg-white text-black font-mono text-xs font-bold uppercase tracking-widest hover:bg-black hover:text-white transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
+            className="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-black bg-white text-black font-sans text-xs font-bold uppercase tracking-wider hover:bg-black hover:text-white transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
           >
             <RotateCcw className="w-4 h-4" />
-            <span>[ CHƠI LẠI VÁN KHÁC ]</span>
+            <span>CHƠI LẠI VÁN KHÁC</span>
           </button>
 
           <Link
             href="/review/quiz"
-            className="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-black bg-white text-black font-mono text-xs font-bold uppercase tracking-widest hover:bg-black hover:text-white transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
+            className="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-black bg-white text-black font-sans text-xs font-bold uppercase tracking-wider hover:bg-black hover:text-white transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
           >
             <Dices className="w-4 h-4" />
-            <span>[ ĐỔI CHẾ ĐỘ QUIZ ]</span>
+            <span>ĐỔI CHẾ ĐỘ QUIZ</span>
           </Link>
 
           <Link
             href="/"
-            className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-black bg-black text-white font-mono text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
+            className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-black bg-black text-white font-sans text-xs font-bold uppercase tracking-wider hover:bg-white hover:text-black transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
           >
             <Home className="w-4 h-4" />
-            <span>[ TRANG CHỦ ]</span>
+            <span>TRANG CHỦ</span>
           </Link>
         </div>
       </div>
@@ -378,20 +378,20 @@ export const MatchingGame: React.FC<MatchingGameProps> = ({
       <div className="flex items-center justify-between gap-2 p-3 sm:p-4 border-2 border-black bg-white rounded-none shadow-none">
         {/* Progress */}
         <div className="font-mono text-xs sm:text-sm font-bold uppercase">
-          <span className="text-mutedForeground mr-1">[ ĐÃ GHÉP:</span>
-          <span className="text-black">{matchedPairsCount}/{totalPairs} CẶP ]</span>
+          <span className="text-mutedForeground mr-1">ĐÃ GHÉP:</span>
+          <span className="text-black">{matchedPairsCount}/{totalPairs} CẶP</span>
         </div>
 
         {/* Turns */}
         <div className="font-mono text-xs sm:text-sm font-bold uppercase">
-          <span className="text-mutedForeground mr-1">[ LƯỢT:</span>
-          <span className="text-black">{turns} ]</span>
+          <span className="text-mutedForeground mr-1">LƯỢT:</span>
+          <span className="text-black">{turns}</span>
         </div>
 
         {/* Timer */}
         <div className="font-mono text-xs sm:text-sm font-bold uppercase">
-          <span className="text-mutedForeground mr-1">[ THỜI GIAN:</span>
-          <span className="text-black">{formatTime(timeSeconds)} ]</span>
+          <span className="text-mutedForeground mr-1">THỜI GIAN:</span>
+          <span className="text-black">{formatTime(timeSeconds)}</span>
         </div>
 
         {/* Restart Button */}
@@ -463,10 +463,10 @@ export const MatchingGame: React.FC<MatchingGameProps> = ({
 
               {/* Card Main Text */}
               <span
-                className={`font-serif font-bold transition-all line-clamp-2 px-1 ${
+                className={`font-bold transition-all line-clamp-2 px-1 ${
                   card.type === 'japanese'
-                    ? 'text-lg sm:text-2xl tracking-tight'
-                    : 'text-sm sm:text-base'
+                    ? 'font-serif text-lg sm:text-2xl tracking-tight'
+                    : 'font-sans text-sm sm:text-base leading-snug'
                 }`}
               >
                 {card.text}

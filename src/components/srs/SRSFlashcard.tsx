@@ -85,7 +85,7 @@ export const SRSFlashcard: React.FC<SRSFlashcardProps> = ({
               title="Nghe phát âm (Phím R)"
             >
               <Volume2 className="w-4 h-4" />
-              <span className="hidden sm:inline">[ R ]</span>
+              <span className="hidden sm:inline font-bold">R</span>
             </button>
           </div>
 
@@ -114,17 +114,17 @@ export const SRSFlashcard: React.FC<SRSFlashcardProps> = ({
               <button
                 type="button"
                 onClick={toggleFrontReading}
-                className="mt-4 inline-flex items-center gap-1.5 px-3 py-1 text-xs font-mono uppercase tracking-wider text-black border border-black bg-white hover:bg-black hover:text-white transition-colors duration-100 rounded-none"
+                className="mt-4 inline-flex items-center gap-1.5 px-3 py-1 text-xs font-sans font-medium uppercase tracking-wider text-black border border-black bg-white hover:bg-black hover:text-white transition-colors duration-100 rounded-none"
               >
                 {showFrontReading ? (
                   <>
                     <EyeOff className="w-3.5 h-3.5" />
-                    <span>[ ẨN GỢI Ý CÁCH ĐỌC ]</span>
+                    <span>ẨN GỢI Ý CÁCH ĐỌC</span>
                   </>
                 ) : (
                   <>
                     <Eye className="w-3.5 h-3.5" />
-                    <span>[ GỢI Ý CÁCH ĐỌC ]</span>
+                    <span>GỢI Ý CÁCH ĐỌC</span>
                   </>
                 )}
               </button>
@@ -134,11 +134,11 @@ export const SRSFlashcard: React.FC<SRSFlashcardProps> = ({
           {/* Front Footer: Action hints */}
           <div className="pt-3 border-t-2 border-black flex items-center justify-between text-xs font-mono text-mutedForeground uppercase tracking-wider">
             <span className="flex items-center gap-1.5 text-black font-bold">
-              <span>[ SPACE TO FLIP ]</span>
+              <span>SPACE TO FLIP</span>
               <RotateCw className="w-3.5 h-3.5" />
             </span>
             <span className="flex items-center gap-1 text-black font-bold">
-              <span>[ R TO LISTEN ]</span>
+              <span>R TO LISTEN</span>
             </span>
           </div>
         </div>
@@ -169,7 +169,7 @@ export const SRSFlashcard: React.FC<SRSFlashcardProps> = ({
               title="Nghe lại phát âm (Phím R)"
             >
               <Volume2 className="w-4 h-4" />
-              <span className="hidden sm:inline">[ R ]</span>
+              <span className="hidden sm:inline font-bold">R</span>
             </button>
           </div>
 
@@ -203,12 +203,12 @@ export const SRSFlashcard: React.FC<SRSFlashcardProps> = ({
 
             {/* Vietnamese Meaning & Details */}
             <div className="rounded-none bg-muted p-4 border border-black">
-              <p className="font-body text-base sm:text-lg font-bold text-black leading-snug text-center">
+              <p className="font-sans text-base sm:text-lg font-bold text-black leading-snug text-center">
                 {content.meaning}
               </p>
 
               {content.meaningEn && (
-                <p className="font-body text-xs text-mutedForeground text-center mt-1 italic">
+                <p className="font-sans text-xs text-mutedForeground text-center mt-1 italic">
                   {content.meaningEn}
                 </p>
               )}
@@ -268,7 +268,7 @@ export const SRSFlashcard: React.FC<SRSFlashcardProps> = ({
                     <Volume2 className="w-3.5 h-3.5" />
                   </button>
                 </div>
-                <p className="font-body text-mutedForeground mt-1 text-xs">
+                <p className="font-sans text-mutedForeground mt-1 text-xs">
                   {content.example.vietnamese}
                 </p>
               </div>
@@ -277,8 +277,8 @@ export const SRSFlashcard: React.FC<SRSFlashcardProps> = ({
 
           {/* Back Footer */}
           <div className="pt-2.5 border-t-2 border-black flex items-center justify-between text-xs font-mono text-mutedForeground uppercase tracking-wider">
-            <span className="text-black font-bold">[ 1 - 4 ĐỂ ĐÁNH GIÁ ]</span>
-            <span>[ R TO LISTEN ]</span>
+            <span className="text-black font-bold">1 - 4 ĐỂ ĐÁNH GIÁ</span>
+            <span>R TO LISTEN</span>
           </div>
         </div>
       </div>
