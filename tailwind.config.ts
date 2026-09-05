@@ -8,13 +8,48 @@ const config: Config = {
   ],
   darkMode: 'class',
   theme: {
+    borderRadius: {
+      none: '0px',
+      sm: '0px',
+      DEFAULT: '0px',
+      md: '0px',
+      lg: '0px',
+      xl: '0px',
+      '2xl': '0px',
+      '3xl': '0px',
+      full: '0px',
+    },
+    boxShadow: {
+      none: 'none',
+      sm: 'none',
+      DEFAULT: 'none',
+      md: 'none',
+      lg: 'none',
+      xl: 'none',
+      '2xl': 'none',
+      inner: 'none',
+    },
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: "#FFFFFF",
+        foreground: "#000000",
+        muted: "#F5F5F5",
+        mutedForeground: "#525252",
+        "muted-foreground": "#525252",
+        border: "#000000",
+        borderLight: "#E5E5E5",
+        "border-light": "#E5E5E5",
+        accent: "#000000",
+      },
+      fontFamily: {
+        serif: ["var(--font-playfair)", "Georgia", "serif"],
+        display: ["var(--font-playfair)", "Georgia", "serif"],
+        body: ["var(--font-source-serif)", "Times New Roman", "serif"],
+        mono: ["var(--font-jetbrains-mono)", "Menlo", "monospace"],
       },
     },
   },
   plugins: [],
 };
 export default config;
+

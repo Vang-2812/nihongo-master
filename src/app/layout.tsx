@@ -1,9 +1,27 @@
 import type { Metadata } from 'next';
+import { Playfair_Display, Source_Serif_4, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/layout/Navbar';
 import ToastContainer from '@/components/ui/ToastContainer';
-import ThemeInitializer from '@/components/ui/ThemeInitializer';
 import SyncInitializer from '@/components/sync/SyncInitializer';
+
+const playfair = Playfair_Display({
+  subsets: ['latin', 'vietnamese'],
+  variable: '--font-playfair',
+  display: 'swap',
+});
+
+const sourceSerif = Source_Serif_4({
+  subsets: ['latin', 'vietnamese'],
+  variable: '--font-source-serif',
+  display: 'swap',
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ['latin', 'vietnamese'],
+  variable: '--font-jetbrains-mono',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: 'Nihongo Master - Luyện Từ Vựng & Kanji',
@@ -27,46 +45,27 @@ export const metadata: Metadata = {
   },
 };
 
-const themeBlockingScript = `
-  (function() {
-    try {
-      var stored = localStorage.getItem('nihongo_theme');
-      var theme = 'system';
-      if (stored) {
-        var parsed = JSON.parse(stored);
-        if (parsed && parsed.state && parsed.state.theme) {
-          theme = parsed.state.theme;
-        }
-      }
-      var isDark = theme === 'dark' || (theme === 'system' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
-      if (isDark) {
-        document.documentElement.classList.add('dark');
-      } else {
-        document.documentElement.classList.remove('dark');
-      }
-    } catch (e) {}
-  })();
-`;
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="vi" suppressHydrationWarning>
+    <html
+      lang="vi"
+      suppressHydrationWarning
+      className={`${playfair.variable} ${sourceSerif.variable} ${jetbrainsMono.variable}`}
+    >
       <head>
         <meta name="referrer" content="no-referrer" />
-        <meta name="theme-color" content="#4f46e5" />
+        <meta name="theme-color" content="#000000" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <link rel="manifest" href="/manifest.json" />
         <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
-        <script dangerouslySetInnerHTML={{ __html: themeBlockingScript }} />
       </head>
-      <body className="min-h-screen flex flex-col bg-background text-foreground antialiased selection:bg-indigo-500/20 selection:text-indigo-700 dark:selection:text-indigo-300">
-        <ThemeInitializer />
+      <body className="min-h-screen flex flex-col bg-background text-foreground font-body antialiased selection:bg-black selection:text-white">
         <SyncInitializer />
         <Navbar />
         <main className="flex-1 pb-20 lg:pb-10">
