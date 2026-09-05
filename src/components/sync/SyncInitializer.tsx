@@ -13,6 +13,15 @@ export default function SyncInitializer() {
     // Start auto sync listeners (window focus, online)
     const cleanup = syncService.initAutoSync();
 
+    // Lock screen orientation to portrait on mobile/PWA if supported
+    if (typeof window !== 'undefined' && 'screen' in window && 'orientation' in window.screen) {
+      try {
+        (window.screen.orientation as any)?.lock?.('portrait').catch(() => {});
+      } catch {
+        // ignore if not supported
+      }
+    }
+
     // Pull latest data on first page load if sync code exists
     if (syncService.getSyncCode()) {
       syncService.pull().catch(() => {});

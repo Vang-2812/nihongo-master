@@ -622,20 +622,34 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
             const tile = tileId ? tilePool.find((t) => t.id === tileId) : null;
 
             if (tile) {
+              const isSlotCorrect = isChecked ? tile.char === targetChars[idx] : false;
+
+              let slotStyle =
+                'border border-stone-300 bg-white text-stone-900 hover:border-stone-400 hover:bg-stone-50';
+              if (isChecked) {
+                if (isSlotCorrect) {
+                  slotStyle =
+                    'border-2 border-emerald-500 bg-emerald-100 text-emerald-900 font-bold';
+                } else {
+                  slotStyle =
+                    'border-2 border-rose-500 bg-rose-100 text-rose-900 line-through font-bold';
+                }
+              }
+
               return (
                 <button
                   key={`placed-${tile.id}-${idx}`}
                   type="button"
                   disabled={isChecked}
                   onClick={() => handleRemovePlacedTile(idx)}
-                  className={`w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center font-serif font-medium text-xl sm:text-2xl transition-all select-none rounded-none shadow-xs active:scale-95 ${
-                    isChecked && isCorrect
-                      ? 'border-2 border-emerald-500 bg-emerald-100 text-emerald-900 font-bold'
-                      : isChecked && !isCorrect
-                      ? 'border-2 border-rose-400 bg-rose-100 text-rose-900 line-through font-bold'
-                      : 'border border-stone-300 bg-white text-stone-900 hover:border-stone-400 hover:bg-stone-50'
-                  }`}
-                  title="Nhấn để gỡ ký tự này"
+                  className={`w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center font-serif font-medium text-xl sm:text-2xl transition-all select-none rounded-none shadow-xs active:scale-95 ${slotStyle}`}
+                  title={
+                    isChecked
+                      ? isSlotCorrect
+                        ? 'Ký tự chính xác'
+                        : 'Ký tự chưa đúng'
+                      : 'Nhấn để gỡ ký tự này'
+                  }
                 >
                   {tile.char}
                 </button>
@@ -719,7 +733,7 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
               className={`inline-flex items-center justify-center px-3 py-1.5 font-sans text-xs font-medium uppercase border ${
                 isCorrect
                   ? 'border-emerald-300 bg-emerald-50 text-emerald-900'
-                  : 'border-rose-300 bg-rose-50 text-rose-900 line-through'
+                  : 'border-rose-300 bg-rose-50 text-rose-900'
               }`}
             >
               {isCorrect ? 'CHÍNH XÁC ✓ (+15 XP)' : `CHƯA ĐÚNG ✕ (ĐÁP ÁN: ${targetWord})`}
