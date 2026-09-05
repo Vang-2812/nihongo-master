@@ -3,12 +3,25 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #000000;
-  --muted: #f5f5f5;
-  --muted-foreground: #525252;
-  --border: #000000;
-  --border-light: #e5e5e5;
+  --background: #FAFAF9;
+  --foreground: #1C1917;
+  --card: #FFFFFF;
+  --card-foreground: #1C1917;
+  --muted: #F5F5F4;
+  --muted-foreground: #78716C;
+  --border: #E7E5E4;
+  --border-light: #F5F5F4;
+}
+
+.dark {
+  --background: #1C1917;
+  --foreground: #FAFAF9;
+  --card: #292524;
+  --card-foreground: #FAFAF9;
+  --muted: #44403C;
+  --muted-foreground: #A8A29E;
+  --border: #44403C;
+  --border-light: #292524;
 }
 
 *, *::before, *::after {
@@ -17,7 +30,7 @@
 }
 
 *:focus-visible {
-  outline: 3px solid #000000 !important;
+  outline: 3px solid var(--foreground) !important;
   outline-offset: 2px !important;
 }
 

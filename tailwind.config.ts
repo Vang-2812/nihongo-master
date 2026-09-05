@@ -31,15 +31,23 @@ const config: Config = {
     },
     extend: {
       colors: {
-        background: "#FFFFFF",
-        foreground: "#000000",
-        muted: "#F5F5F5",
-        mutedForeground: "#525252",
-        "muted-foreground": "#525252",
-        border: "#000000",
-        borderLight: "#E5E5E5",
-        "border-light": "#E5E5E5",
-        accent: "#000000",
+        background: "var(--background)",
+        foreground: "var(--foreground)",
+        card: {
+          DEFAULT: "var(--card)",
+          foreground: "var(--card-foreground)",
+        },
+        "card-foreground": "var(--card-foreground)",
+        muted: {
+          DEFAULT: "var(--muted)",
+          foreground: "var(--muted-foreground)",
+        },
+        mutedForeground: "var(--muted-foreground)",
+        "muted-foreground": "var(--muted-foreground)",
+        border: "var(--border)",
+        borderLight: "var(--border-light, #E7E5E4)",
+        "border-light": "var(--border-light, #E7E5E4)",
+        accent: "#1C1917",
       },
       fontFamily: {
         sans: ["var(--font-inter)", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "sans-serif"],
