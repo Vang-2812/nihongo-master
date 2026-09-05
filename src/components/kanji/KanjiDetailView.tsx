@@ -15,19 +15,9 @@ import { toast } from '@/stores/toastStore';
 import { speakJapanese } from '@/lib/tts';
 import StrokeOrderWriter from './StrokeOrderWriter';
 import {
-  ArrowLeft,
   ChevronLeft,
   ChevronRight,
   Volume2,
-  BookmarkCheck,
-  Sparkles,
-  Plus,
-  Check,
-  Layers,
-  Lightbulb,
-  BookOpen,
-  Info,
-  Hash,
 } from 'lucide-react';
 
 export interface KanjiDetailViewProps {
@@ -101,13 +91,12 @@ export const KanjiDetailView: React.FC<KanjiDetailViewProps> = ({
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
       {/* Navigation Header */}
-      <div className="flex flex-wrap items-center justify-between gap-4 border-b border-slate-200 dark:border-slate-800 pb-5">
+      <div className="flex flex-wrap items-center justify-between gap-4 border-b border-black pb-5">
         <Link
           href="/kanji"
-          className="inline-flex items-center gap-2 text-sm font-semibold text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+          className="font-mono text-xs uppercase tracking-widest inline-flex items-center gap-2 hover:underline text-black"
         >
-          <ArrowLeft className="w-4 h-4" />
-          <span>Danh sách Kanji {kanji.level}</span>
+          <span>[ ← BACK TO ARCHIVE ]</span>
         </Link>
 
         {/* Prev / Next Kanji buttons */}
@@ -115,36 +104,36 @@ export const KanjiDetailView: React.FC<KanjiDetailViewProps> = ({
           {adjacent.prev ? (
             <Link
               href={`/kanji/${encodeURIComponent(adjacent.prev.character)}`}
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-xs font-semibold text-slate-700 dark:text-slate-300 hover:border-indigo-400 hover:text-indigo-600 transition-all"
+              className="border border-black bg-white hover:bg-black hover:text-white px-3 py-1.5 font-mono text-xs uppercase tracking-wider rounded-none transition-colors duration-100 flex items-center gap-1"
               title={`Trước: ${adjacent.prev.character}`}
             >
-              <ChevronLeft className="w-4 h-4" />
+              <ChevronLeft className="w-3.5 h-3.5" />
               <span>{adjacent.prev.character}</span>
             </Link>
           ) : (
-            <span className="opacity-30 px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 text-xs font-semibold flex items-center gap-1 cursor-not-allowed">
-              <ChevronLeft className="w-4 h-4" />
-              <span>Trước</span>
+            <span className="opacity-30 border border-black px-3 py-1.5 font-mono text-xs uppercase flex items-center gap-1 cursor-not-allowed">
+              <ChevronLeft className="w-3.5 h-3.5" />
+              <span>TRƯỚC</span>
             </span>
           )}
 
-          <span className="text-xs font-bold px-2.5 py-1 rounded-lg bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 border border-indigo-200/60 dark:border-indigo-800/60">
+          <span className="font-mono text-xs font-bold px-3 py-1.5 border border-black bg-black text-white">
             {kanji.level}
           </span>
 
           {adjacent.next ? (
             <Link
               href={`/kanji/${encodeURIComponent(adjacent.next.character)}`}
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-xs font-semibold text-slate-700 dark:text-slate-300 hover:border-indigo-400 hover:text-indigo-600 transition-all"
+              className="border border-black bg-white hover:bg-black hover:text-white px-3 py-1.5 font-mono text-xs uppercase tracking-wider rounded-none transition-colors duration-100 flex items-center gap-1"
               title={`Sau: ${adjacent.next.character}`}
             >
               <span>{adjacent.next.character}</span>
-              <ChevronRight className="w-4 h-4" />
+              <ChevronRight className="w-3.5 h-3.5" />
             </Link>
           ) : (
-            <span className="opacity-30 px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 text-xs font-semibold flex items-center gap-1 cursor-not-allowed">
-              <span>Sau</span>
-              <ChevronRight className="w-4 h-4" />
+            <span className="opacity-30 border border-black px-3 py-1.5 font-mono text-xs uppercase flex items-center gap-1 cursor-not-allowed">
+              <span>SAU</span>
+              <ChevronRight className="w-3.5 h-3.5" />
             </span>
           )}
         </div>
@@ -162,59 +151,47 @@ export const KanjiDetailView: React.FC<KanjiDetailViewProps> = ({
           />
 
           {/* Quick Actions Card */}
-          <div className="p-4 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm space-y-3">
-            <h4 className="text-xs font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500">
-              Trạng thái & Ôn tập
+          <div className="p-5 border-2 border-black bg-white rounded-none shadow-none space-y-4">
+            <h4 className="font-mono text-xs font-bold uppercase tracking-widest text-black">
+              [ TRẠNG THÁI & ÔN TẬP ]
             </h4>
 
-            <div className="grid grid-cols-2 gap-2.5">
+            <div className="grid grid-cols-2 gap-3">
               {/* SRS Add / Remove Button */}
               <button
                 type="button"
                 onClick={handleToggleSRS}
-                className={`flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl font-bold text-xs sm:text-sm border transition-all active:scale-95 ${
+                className={`flex items-center justify-center gap-2 py-3 px-3 border-2 border-black font-mono text-xs uppercase tracking-wider rounded-none transition-colors duration-100 ${
                   isSrsAdded || currentStatus === 'learning'
-                    ? 'bg-amber-500 text-white border-amber-600 hover:bg-amber-600 shadow-md shadow-amber-500/20'
-                    : 'bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 border-indigo-200 dark:border-indigo-800 hover:bg-indigo-600 hover:text-white'
+                    ? 'bg-black text-white hover:bg-white hover:text-black'
+                    : 'bg-white text-black hover:bg-black hover:text-white'
                 }`}
               >
-                {isSrsAdded || currentStatus === 'learning' ? (
-                  <>
-                    <Check className="w-4 h-4 stroke-[3]" />
-                    <span>Đang học SRS</span>
-                  </>
-                ) : (
-                  <>
-                    <Plus className="w-4 h-4 stroke-[3]" />
-                    <span>Thêm vào SRS</span>
-                  </>
-                )}
+                <span>{isSrsAdded || currentStatus === 'learning' ? '[ SRS: ĐANG HỌC ]' : '[ + THÊM VÀO SRS ]'}</span>
               </button>
 
               {/* Mastered / Known Button */}
               <button
                 type="button"
                 onClick={handleToggleKnown}
-                className={`flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl font-bold text-xs sm:text-sm border transition-all active:scale-95 ${
+                className={`flex items-center justify-center gap-2 py-3 px-3 border-2 border-black font-mono text-xs uppercase tracking-wider rounded-none transition-colors duration-100 ${
                   currentStatus === 'known'
-                    ? 'bg-emerald-600 text-white border-emerald-700 shadow-md shadow-emerald-500/20'
-                    : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:bg-emerald-50 hover:text-emerald-700 dark:hover:bg-emerald-950/40 dark:hover:text-emerald-300'
+                    ? 'bg-black text-white hover:bg-white hover:text-black'
+                    : 'bg-white text-black hover:bg-black hover:text-white'
                 }`}
               >
-                <BookmarkCheck className="w-4 h-4" />
-                <span>{currentStatus === 'known' ? 'Đã thuộc' : 'Đánh dấu thuộc'}</span>
+                <span>{currentStatus === 'known' ? '[ ĐÃ THUỘC ]' : '[ ĐÁNH DẤU THUỘC ]'}</span>
               </button>
             </div>
           </div>
 
           {/* Mnemonic Card (Gợi ý ghi nhớ) */}
           {kanji.mnemonic_vi && (
-            <div className="p-5 rounded-2xl bg-amber-50/70 dark:bg-amber-950/30 border border-amber-200/80 dark:border-amber-900/60 shadow-xs">
-              <div className="flex items-center gap-2 text-amber-800 dark:text-amber-400 font-bold text-sm mb-2">
-                <Lightbulb className="w-4 h-4 text-amber-500" />
-                <span>Mẹo nhớ chữ Hán</span>
-              </div>
-              <p className="text-sm text-amber-900/90 dark:text-amber-200/90 leading-relaxed font-medium">
+            <div className="p-5 border border-black bg-neutral-50 rounded-none shadow-none space-y-2">
+              <span className="font-mono text-xs font-bold uppercase tracking-widest text-black block">
+                [ GỢI Ý GHI NHỚ · MNEMONIC ]
+              </span>
+              <p className="font-body text-sm text-black leading-relaxed">
                 {kanji.mnemonic_vi}
               </p>
             </div>
@@ -224,25 +201,25 @@ export const KanjiDetailView: React.FC<KanjiDetailViewProps> = ({
         {/* Right Column (7 cols) */}
         <div className="lg:col-span-7 space-y-6">
           {/* Main Title & Sino-Vietnamese Banner */}
-          <div className="p-6 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
-            <div className="flex flex-wrap items-start justify-between gap-4">
+          <div className="p-6 sm:p-8 border-2 border-black bg-white rounded-none shadow-none space-y-6">
+            <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
               <div>
-                <div className="flex items-center gap-3">
-                  <h1 className="font-serif text-6xl sm:text-7xl font-bold text-slate-900 dark:text-white leading-none">
+                <div className="flex items-baseline gap-4">
+                  <span className="font-serif text-7xl sm:text-8xl lg:text-9xl font-normal text-black leading-none select-none">
                     {kanji.character}
-                  </h1>
+                  </span>
                   <div>
-                    <h2 className="text-2xl sm:text-3xl font-extrabold text-indigo-600 dark:text-indigo-400 uppercase tracking-tight">
+                    <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal text-black uppercase tracking-tight">
                       {sinoVietnamese}
-                    </h2>
-                    <span className="inline-flex items-center gap-1 text-xs font-semibold px-2 py-0.5 mt-1 rounded-md bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 border border-indigo-200/60 dark:border-indigo-800/60">
-                      JLPT {kanji.level}
+                    </h1>
+                    <span className="font-mono text-xs uppercase tracking-widest text-mutedForeground mt-1 block">
+                      [ JLPT {kanji.level} ]
                     </span>
                   </div>
                 </div>
 
                 {/* Detailed Meaning */}
-                <p className="mt-3 text-base sm:text-lg text-slate-700 dark:text-slate-200 font-medium">
+                <p className="mt-4 font-body text-base sm:text-lg text-neutral-800 font-normal">
                   {meaning || kanji.meaning_vi}
                 </p>
               </div>
@@ -251,43 +228,26 @@ export const KanjiDetailView: React.FC<KanjiDetailViewProps> = ({
               <button
                 type="button"
                 onClick={() => handleSpeak(kanji.character)}
-                className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 border border-indigo-200/80 dark:border-indigo-800/80 hover:bg-indigo-600 hover:text-white transition-all text-xs font-semibold active:scale-95"
+                className="border border-black bg-white hover:bg-black hover:text-white px-4 py-2 font-mono text-xs uppercase tracking-wider rounded-none transition-colors duration-100 inline-flex items-center gap-2 self-start"
               >
-                <Volume2 className="w-4 h-4" />
-                <span>Phát âm</span>
+                <Volume2 className="w-3.5 h-3.5 stroke-[1.5]" />
+                <span>PHÁT ÂM</span>
               </button>
             </div>
 
             {/* Quick Metrics Bar */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-3 border-t border-slate-100 dark:border-slate-800">
-              <div className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 dark:bg-slate-800/60">
-                <Hash className="w-4 h-4 text-indigo-500" />
-                <div>
-                  <div className="text-[11px] text-slate-400 font-medium">Số nét</div>
-                  <div className="text-sm font-bold text-slate-800 dark:text-slate-200">
-                    {kanji.stroke_count} nét
-                  </div>
-                </div>
+            <div className="border-t border-b border-black divide-x divide-black grid grid-cols-3 py-3 font-mono text-xs">
+              <div className="px-3 text-center">
+                <span className="text-mutedForeground block text-[10px] uppercase tracking-wider">SỐ NÉT</span>
+                <span className="font-bold text-black text-sm mt-0.5 block">{kanji.stroke_count} NÉT</span>
               </div>
-
-              <div className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 dark:bg-slate-800/60">
-                <Layers className="w-4 h-4 text-rose-500" />
-                <div>
-                  <div className="text-[11px] text-slate-400 font-medium">Bộ thủ chính</div>
-                  <div className="text-sm font-bold text-slate-800 dark:text-slate-200">
-                    {kanji.radicals?.[0]?.character || '—'}
-                  </div>
-                </div>
+              <div className="px-3 text-center">
+                <span className="text-mutedForeground block text-[10px] uppercase tracking-wider">BỘ THỦ CHÍNH</span>
+                <span className="font-bold text-black text-sm mt-0.5 block">{kanji.radicals?.[0]?.character || '—'}</span>
               </div>
-
-              <div className="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 dark:bg-slate-800/60 col-span-2 sm:col-span-1">
-                <Sparkles className="w-4 h-4 text-amber-500" />
-                <div>
-                  <div className="text-[11px] text-slate-400 font-medium">Cấp độ</div>
-                  <div className="text-sm font-bold text-slate-800 dark:text-slate-200">
-                    JLPT {kanji.level}
-                  </div>
-                </div>
+              <div className="px-3 text-center">
+                <span className="text-mutedForeground block text-[10px] uppercase tracking-wider">CẤP ĐỘ</span>
+                <span className="font-bold text-black text-sm mt-0.5 block">JLPT {kanji.level}</span>
               </div>
             </div>
           </div>
@@ -295,158 +255,157 @@ export const KanjiDetailView: React.FC<KanjiDetailViewProps> = ({
           {/* Onyomi & Kunyomi Card */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {/* Onyomi Card */}
-            <div className="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm space-y-3">
-              <div className="flex items-center justify-between">
-                <h3 className="text-xs font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400">
-                  Âm On (Onyomi)
-                </h3>
-                <span className="text-[10px] text-slate-400">Âm Hán Nhật</span>
+            <div className="p-5 border border-black bg-white rounded-none shadow-none space-y-3">
+              <div className="flex items-center justify-between border-b border-black pb-2">
+                <span className="font-mono text-xs font-bold uppercase tracking-widest text-black">
+                  [ ÂM ON · ONYOMI ]
+                </span>
+                <span className="font-mono text-[10px] text-mutedForeground uppercase">ÂM HÁN NHẬT</span>
               </div>
 
               {kanji.onyomi && kanji.onyomi.length > 0 ? (
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 pt-1">
                   {kanji.onyomi.map((on, idx) => (
                     <button
                       key={idx}
                       type="button"
                       onClick={() => handleSpeak(on)}
-                      className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-indigo-50/80 dark:bg-indigo-950/50 text-indigo-700 dark:text-indigo-300 border border-indigo-200/80 dark:border-indigo-800/80 hover:bg-indigo-600 hover:text-white transition-all text-sm font-bold active:scale-95 group"
+                      className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-black bg-white hover:bg-black hover:text-white font-mono text-sm font-bold rounded-none transition-colors duration-100 group"
                     >
                       <span>{on}</span>
-                      <Volume2 className="w-3 h-3 text-indigo-400 group-hover:text-white" />
+                      <Volume2 className="w-3 h-3 stroke-[1.5]" />
                     </button>
                   ))}
                 </div>
               ) : (
-                <p className="text-xs text-slate-400 italic">Không có âm On</p>
+                <p className="font-mono text-xs text-mutedForeground uppercase italic">[ KHÔNG CÓ ÂM ON ]</p>
               )}
             </div>
 
             {/* Kunyomi Card */}
-            <div className="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm space-y-3">
-              <div className="flex items-center justify-between">
-                <h3 className="text-xs font-bold uppercase tracking-wider text-rose-600 dark:text-rose-400">
-                  Âm Kun (Kunyomi)
-                </h3>
-                <span className="text-[10px] text-slate-400">Âm Thuần Nhật</span>
+            <div className="p-5 border border-black bg-white rounded-none shadow-none space-y-3">
+              <div className="flex items-center justify-between border-b border-black pb-2">
+                <span className="font-mono text-xs font-bold uppercase tracking-widest text-black">
+                  [ ÂM KUN · KUNYOMI ]
+                </span>
+                <span className="font-mono text-[10px] text-mutedForeground uppercase">ÂM THUẦN NHẬT</span>
               </div>
 
               {kanji.kunyomi && kanji.kunyomi.length > 0 ? (
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 pt-1">
                   {kanji.kunyomi.map((kun, idx) => (
                     <button
                       key={idx}
                       type="button"
                       onClick={() => handleSpeak(kun.replace(/[-.]/g, ''))}
-                      className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-rose-50/80 dark:bg-rose-950/50 text-rose-700 dark:text-rose-300 border border-rose-200/80 dark:border-rose-800/80 hover:bg-rose-600 hover:text-white transition-all text-sm font-bold active:scale-95 group"
+                      className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-black bg-white hover:bg-black hover:text-white font-mono text-sm font-bold rounded-none transition-colors duration-100 group"
                     >
                       <span>{kun}</span>
-                      <Volume2 className="w-3 h-3 text-rose-400 group-hover:text-white" />
+                      <Volume2 className="w-3 h-3 stroke-[1.5]" />
                     </button>
                   ))}
                 </div>
               ) : (
-                <p className="text-xs text-slate-400 italic">Không có âm Kun</p>
+                <p className="font-mono text-xs text-mutedForeground uppercase italic">[ KHÔNG CÓ ÂM KUN ]</p>
               )}
             </div>
           </div>
 
           {/* Radicals (Bộ thủ cấu thành) */}
-          <div className="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm space-y-3">
-            <div className="flex items-center gap-2">
-              <Layers className="w-4 h-4 text-indigo-500" />
-              <h3 className="text-sm font-bold text-slate-900 dark:text-white">
-                Bộ thủ cấu thành (Radicals)
-              </h3>
+          <div className="p-5 border border-black bg-white rounded-none shadow-none space-y-4">
+            <div className="flex items-center justify-between border-b border-black pb-2">
+              <span className="font-mono text-xs font-bold uppercase tracking-widest text-black">
+                [ BỘ THỦ CẤU THÀNH · RADICALS ]
+              </span>
+              <span className="font-mono text-[10px] text-mutedForeground uppercase">
+                {radicalsWithDetails.length} BỘ
+              </span>
             </div>
 
             {radicalsWithDetails.length > 0 ? (
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+              <div className="divide-y divide-borderLight border-t border-b border-black">
                 {radicalsWithDetails.map(({ ref, detail }, idx) => (
-                  <div
-                    key={idx}
-                    className="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-800 flex items-start gap-3"
-                  >
-                    <div className="w-10 h-10 rounded-xl bg-indigo-50 dark:bg-indigo-950/80 flex items-center justify-center font-serif text-2xl font-bold text-indigo-600 dark:text-indigo-400 shrink-0">
-                      {ref.character}
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <div className="flex items-center gap-1.5 flex-wrap">
-                        <span className="font-bold text-sm text-slate-800 dark:text-slate-200">
-                          {detail?.meaning_vi || detail?.meaning_en || 'Bộ thủ'}
-                        </span>
-                        {ref.is_main && (
-                          <span className="text-[10px] font-bold px-1.5 py-0.2 rounded bg-rose-50 text-rose-600 dark:bg-rose-950/60 dark:text-rose-400 border border-rose-200/60 dark:border-rose-800/60">
-                            Bộ chính
+                  <div key={idx} className="py-3 flex items-center justify-between gap-4">
+                    <div className="flex items-center gap-4">
+                      <span className="font-serif text-3xl font-normal text-black select-none">
+                        {ref.character}
+                      </span>
+                      <div>
+                        <div className="flex items-center gap-2">
+                          <span className="font-mono text-xs font-bold uppercase text-black">
+                            {detail?.meaning_vi || detail?.meaning_en || 'BỘ THỦ'}
                           </span>
+                          {ref.is_main && (
+                            <span className="border border-black font-mono text-[9px] uppercase px-1 py-0.2 text-black">
+                              BỘ CHÍNH
+                            </span>
+                          )}
+                        </div>
+                        {detail?.reading_ja && (
+                          <div className="font-mono text-[11px] text-mutedForeground mt-0.5">
+                            TÊN BỘ: {detail.reading_ja}
+                          </div>
                         )}
                       </div>
-                      {detail?.reading_ja && (
-                        <div className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
-                          Tên bộ: <span className="font-medium">{detail.reading_ja}</span>
-                        </div>
-                      )}
-                      {detail?.stroke_count && (
-                        <div className="text-[11px] text-slate-400">
-                          {detail.stroke_count} nét
-                        </div>
-                      )}
                     </div>
+
+                    {detail?.stroke_count && (
+                      <span className="font-mono text-[11px] text-mutedForeground">
+                        {detail.stroke_count} NÉT
+                      </span>
+                    )}
                   </div>
                 ))}
               </div>
             ) : (
-              <p className="text-xs text-slate-400 italic">
-                Chưa có dữ liệu phân tách bộ thủ cho chữ này.
+              <p className="font-mono text-xs text-mutedForeground uppercase italic">
+                [ CHƯA CÓ DỮ LIỆU PHÂN TÁCH BỘ THỦ ]
               </p>
             )}
           </div>
 
           {/* Compounds (Từ ghép thông dụng) */}
-          <div className="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-2">
-                <BookOpen className="w-4 h-4 text-indigo-500" />
-                <h3 className="text-sm font-bold text-slate-900 dark:text-white">
-                  Từ vựng ghép thông dụng (Compounds)
-                </h3>
-              </div>
-              <span className="text-xs font-semibold text-slate-400">
-                {compounds.length} từ
+          <div className="p-5 border border-black bg-white rounded-none shadow-none space-y-4">
+            <div className="flex items-center justify-between border-b border-black pb-2">
+              <span className="font-mono text-xs font-bold uppercase tracking-widest text-black">
+                [ TỪ VỰNG GHÉP THÔNG DỤNG · COMPOUNDS ]
+              </span>
+              <span className="font-mono text-[10px] text-mutedForeground uppercase">
+                {compounds.length} TỪ
               </span>
             </div>
 
             {compounds.length > 0 ? (
-              <div className="grid grid-cols-1 gap-2.5 max-h-[420px] overflow-y-auto pr-1">
+              <div className="border-t border-b border-black divide-y divide-borderLight max-h-[440px] overflow-y-auto">
                 {compounds.map((comp, idx) => (
                   <div
                     key={idx}
-                    className="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-800/80 flex items-center justify-between gap-3 hover:border-indigo-300 dark:hover:border-indigo-800 transition-colors"
+                    className="py-3 px-2 flex items-center justify-between gap-3 hover:bg-neutral-50 transition-colors duration-100"
                   >
                     <div className="flex-1 min-w-0">
                       <div className="flex items-baseline gap-2 flex-wrap">
-                        <span className="font-bold text-base text-slate-900 dark:text-white">
+                        <span className="font-serif text-lg font-bold text-black">
                           {comp.word}
                         </span>
                         {comp.reading && (
-                          <span className="text-xs font-medium text-indigo-600 dark:text-indigo-400">
+                          <span className="font-mono text-xs text-neutral-600">
                             【{comp.reading}】
                           </span>
                         )}
                         {comp.hanviet && (
-                          <span className="text-xs font-semibold text-amber-600 dark:text-amber-400 uppercase">
+                          <span className="font-serif text-xs font-bold text-black uppercase tracking-wider">
                             ({comp.hanviet})
                           </span>
                         )}
                       </div>
-                      <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 mt-0.5 line-clamp-1 font-medium">
+                      <p className="font-body text-xs sm:text-sm text-neutral-700 mt-1 line-clamp-1">
                         {comp.meaning}
                       </p>
                     </div>
 
                     <div className="flex items-center gap-2 shrink-0">
                       {comp.source && (
-                        <span className="hidden sm:inline-block text-[10px] px-1.5 py-0.5 rounded bg-slate-200/60 dark:bg-slate-700 text-slate-500 dark:text-slate-400">
+                        <span className="hidden sm:inline-block font-mono text-[10px] border border-black px-1.5 py-0.5 text-black">
                           {comp.source}
                         </span>
                       )}
@@ -454,18 +413,17 @@ export const KanjiDetailView: React.FC<KanjiDetailViewProps> = ({
                         type="button"
                         onClick={() => handleSpeak(comp.word)}
                         title={`Nghe phát âm: ${comp.word}`}
-                        className="p-2 rounded-lg text-slate-400 hover:text-indigo-600 hover:bg-indigo-50 dark:hover:bg-indigo-950/60 dark:hover:text-indigo-400 transition-colors"
+                        className="border border-black p-1.5 bg-white text-black hover:bg-black hover:text-white transition-colors duration-100 rounded-none"
                       >
-                        <Volume2 className="w-4 h-4" />
+                        <Volume2 className="w-3.5 h-3.5 stroke-[1.5]" />
                       </button>
                     </div>
                   </div>
                 ))}
               </div>
             ) : (
-              <div className="text-center py-6 text-xs text-slate-400">
-                <Info className="w-5 h-5 mx-auto mb-1 text-slate-300" />
-                <span>Chưa có từ ghép mẫu trong kho từ vựng hiện tại.</span>
+              <div className="text-center py-6 font-mono text-xs text-mutedForeground uppercase">
+                [ CHƯA CÓ TỪ GHÉP MẪU TRONG KHO TỪ VỰNG HIỆN TẠI ]
               </div>
             )}
           </div>

@@ -3,20 +3,13 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { useKanjiStore, KanjiLevel, KanjiFilter, KanjiStatus } from '@/stores/kanjiStore';
 import { useSRSStore } from '@/stores/srsStore';
-import { getKanjiByLevel, parseKanjiMeaning, KanjiItem } from '@/lib/kanjiData';
+import { getKanjiByLevel, parseKanjiMeaning } from '@/lib/kanjiData';
 import KanjiGrid from '@/components/kanji/KanjiGrid';
 import KanjiQuizModal from '@/components/kanji/KanjiQuizModal';
-import ProgressBar from '@/components/ui/ProgressBar';
 import {
   Search,
-  BookOpen,
-  CheckCircle2,
-  Sparkles,
-  Layers,
   X,
-  Languages,
   PlusCircle,
-  Dices,
   CheckSquare,
 } from 'lucide-react';
 import { toast } from '@/stores/toastStore';
@@ -196,40 +189,37 @@ export default function KanjiCatalogPage() {
   };
 
   const statusFilters: { id: KanjiFilter; label: string; count: number }[] = [
-    { id: 'all', label: 'Tất cả', count: stats.total },
-    { id: 'known', label: 'Đã thuộc', count: stats.knownCount },
-    { id: 'learning', label: 'Đang học (SRS)', count: stats.learningCount },
-    { id: 'new', label: 'Chưa học', count: stats.newCount },
+    { id: 'all', label: 'TẤT CẢ', count: stats.total },
+    { id: 'known', label: 'ĐÃ THUỘC', count: stats.knownCount },
+    { id: 'learning', label: 'ĐANG HỌC (SRS)', count: stats.learningCount },
+    { id: 'new', label: 'CHƯA HỌC', count: stats.newCount },
   ];
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
-      {/* Header Section */}
-      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 border-b border-slate-200 dark:border-slate-800 pb-6">
+      {/* Editorial Header Section */}
+      <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
         <div>
-          <div className="flex items-center gap-2 mb-1.5">
-            <span className="p-2 rounded-xl bg-indigo-500/10 text-indigo-600 dark:text-indigo-400">
-              <Languages className="w-6 h-6" />
-            </span>
-            <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-              Kho Hán Tự (Kanji)
-            </h1>
-          </div>
-          <p className="text-sm text-slate-500 dark:text-slate-400">
-            Tra cứu hơn 2.000 chữ Hán N5 - N1, tập viết thuận tay và ôn tập lặp lại ngắt quãng SRS.
+          <span className="font-mono text-xs uppercase tracking-widest text-mutedForeground block mb-2">
+            [ KANJI REPOSITORY · 漢字アーカイブ ]
+          </span>
+          <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl font-normal tracking-tight text-black uppercase leading-none">
+            KHO HÁN TỰ
+          </h1>
+          <p className="font-mono text-xs sm:text-sm tracking-widest text-mutedForeground uppercase mt-3">
+            [ 2,136 THƯỜNG DỤNG HÁN TỰ · JLPT N5–N1 · BỘ THỦ & THỨ TỰ NÉT · SRS ]
           </p>
         </div>
 
-        {/* Quick Batch Actions */}
+        {/* Action Buttons */}
         <div className="flex flex-wrap items-center gap-2 sm:gap-3">
           <button
             type="button"
             onClick={() => setIsQuizModalOpen(true)}
-            className="inline-flex items-center gap-1.5 px-3.5 sm:px-4 py-2 sm:py-2.5 text-xs sm:text-sm font-bold rounded-xl bg-gradient-to-r from-amber-500 to-indigo-600 hover:from-amber-600 hover:to-indigo-700 text-white shadow-md shadow-indigo-500/20 active:scale-95 transition-all"
+            className="border-2 border-black bg-black text-white hover:bg-white hover:text-black font-mono text-xs uppercase tracking-wider px-4 py-2.5 rounded-none shadow-none transition-colors duration-100"
             title={`Luyện tập Quizlet cho Kanji ${level}`}
           >
-            <Sparkles className="w-4 h-4 fill-white/20" />
-            <span>Luyện tập Quizlet</span>
+            <span>[ LUYỆN TẬP QUIZLET ]</span>
           </button>
 
           <button
@@ -238,31 +228,37 @@ export default function KanjiCatalogPage() {
               setIsSelecting(!isSelecting);
               if (isSelecting) setSelectedChars(new Set());
             }}
-            className={`inline-flex items-center gap-1.5 px-3 sm:px-3.5 py-2 sm:py-2.5 text-xs sm:text-sm font-semibold rounded-xl border transition-all ${
+            className={`border-2 border-black font-mono text-xs uppercase tracking-wider px-4 py-2.5 rounded-none shadow-none transition-colors duration-100 ${
               isSelecting
-                ? 'bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 border-indigo-300 dark:border-indigo-700'
-                : 'bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-800 hover:bg-slate-50'
+                ? 'bg-black text-white'
+                : 'bg-white text-black hover:bg-neutral-100'
             }`}
           >
-            <CheckSquare className="w-4 h-4" />
-            <span className="hidden sm:inline">{isSelecting ? 'Hủy chọn' : 'Chọn chữ'}</span>
+            <span className="inline-flex items-center gap-1.5">
+              <CheckSquare className="w-3.5 h-3.5 stroke-[2]" />
+              <span>{isSelecting ? '[ HỦY CHỌN ]' : '[ CHỌN CHỮ ]'}</span>
+            </span>
           </button>
 
           <button
             type="button"
             onClick={handleAddAllToSRS}
-            className="inline-flex items-center gap-1.5 px-3.5 sm:px-4 py-2 sm:py-2.5 text-xs sm:text-sm font-semibold rounded-xl bg-slate-900 dark:bg-slate-800 text-white hover:bg-slate-800 dark:hover:bg-slate-700 border border-slate-800 active:scale-95 transition-all"
+            className="border-2 border-black bg-white text-black hover:bg-black hover:text-white font-mono text-xs uppercase tracking-wider px-4 py-2.5 rounded-none shadow-none transition-colors duration-100"
             title="Thêm toàn bộ Kanji đang hiển thị vào hàng đợi SRS"
           >
-            <PlusCircle className="w-4 h-4" />
-            <span className="hidden sm:inline">Thêm vào SRS</span>
-            <span className="sm:hidden">+SRS</span>
+            <span className="inline-flex items-center gap-1.5">
+              <PlusCircle className="w-3.5 h-3.5 stroke-[2]" />
+              <span>[ + THÊM VÀO SRS ]</span>
+            </span>
           </button>
         </div>
       </div>
 
+      {/* 4px Heavy Black Rule */}
+      <div className="h-1 bg-black w-full" />
+
       {/* JLPT Level Tabs */}
-      <div className="flex flex-wrap items-center gap-2 p-1.5 rounded-2xl bg-slate-100 dark:bg-slate-900/90 border border-slate-200/80 dark:border-slate-800">
+      <div className="flex flex-wrap items-center gap-2">
         {JLPT_LEVELS.map((lvl) => {
           const isActive = level === lvl;
           const levelCount = getKanjiByLevel(lvl).length;
@@ -275,98 +271,64 @@ export default function KanjiCatalogPage() {
                 setLevel(lvl);
                 setSelectedChars(new Set());
               }}
-              className={`flex-1 min-w-[90px] py-2.5 px-3 rounded-xl font-bold text-sm sm:text-base transition-all flex items-center justify-center gap-2 ${
+              className={`border border-black font-mono text-xs uppercase tracking-widest px-4 py-2.5 rounded-none transition-colors duration-100 flex items-center gap-2 ${
                 isActive
-                  ? 'bg-white dark:bg-indigo-600 text-indigo-600 dark:text-white shadow-sm ring-1 ring-slate-200/50 dark:ring-0 scale-100'
-                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-white/50 dark:hover:bg-slate-800/50'
+                  ? 'bg-black text-white'
+                  : 'bg-white text-black hover:bg-muted'
               }`}
             >
               <span>{lvl}</span>
-              <span
-                className={`text-[11px] px-1.5 py-0.5 rounded-full font-semibold ${
-                  isActive
-                    ? 'bg-indigo-50 text-indigo-700 dark:bg-indigo-950 dark:text-indigo-200'
-                    : 'bg-slate-200/70 text-slate-600 dark:bg-slate-800 dark:text-slate-400'
-                }`}
-              >
-                {levelCount}
-              </span>
+              <span className="text-[10px] opacity-75">[{levelCount}]</span>
             </button>
           );
         })}
       </div>
 
-      {/* Stats and Progress bar banner */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        {/* Total card */}
-        <div className="p-4 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xs flex items-center gap-4">
-          <div className="w-12 h-12 rounded-xl bg-indigo-50 dark:bg-indigo-950/60 flex items-center justify-center text-indigo-600 dark:text-indigo-400 font-bold">
-            <Layers className="w-6 h-6" />
-          </div>
-          <div>
-            <div className="text-2xl font-black text-slate-900 dark:text-white">
-              {stats.total}
-            </div>
-            <div className="text-xs text-slate-500 dark:text-slate-400 font-medium">
-              Tổng số Kanji {level}
-            </div>
-          </div>
+      {/* Stats Grid */}
+      <div className="border-t-2 border-b-2 border-black divide-y sm:divide-y-0 sm:divide-x divide-black py-4 grid grid-cols-2 lg:grid-cols-4">
+        {/* Total */}
+        <div className="p-4 flex flex-col justify-between">
+          <span className="font-mono text-[10px] uppercase tracking-widest text-mutedForeground">
+            [ TỔNG SỐ KANJI {level} ]
+          </span>
+          <span className="font-serif text-4xl sm:text-5xl font-light text-black tracking-tight leading-none mt-3">
+            {stats.total}
+          </span>
         </div>
 
-        {/* Known card */}
-        <div className="p-4 rounded-2xl bg-white dark:bg-slate-900 border border-emerald-200/60 dark:border-emerald-900/40 shadow-xs flex items-center gap-4">
-          <div className="w-12 h-12 rounded-xl bg-emerald-50 dark:bg-emerald-950/60 flex items-center justify-center text-emerald-600 dark:text-emerald-400 font-bold">
-            <CheckCircle2 className="w-6 h-6" />
+        {/* Known */}
+        <div className="p-4 flex flex-col justify-between">
+          <div className="flex items-baseline justify-between">
+            <span className="font-mono text-[10px] uppercase tracking-widest text-mutedForeground">
+              [ ĐÃ THUỘC ]
+            </span>
+            <span className="font-mono text-xs font-bold text-black">
+              {stats.progressPercentage}%
+            </span>
           </div>
-          <div className="flex-1">
-            <div className="flex items-baseline justify-between">
-              <span className="text-2xl font-black text-emerald-600 dark:text-emerald-400">
-                {stats.knownCount}
-              </span>
-              <span className="text-xs font-bold text-emerald-600 dark:text-emerald-400">
-                {stats.progressPercentage}%
-              </span>
-            </div>
-            <div className="text-xs text-slate-500 dark:text-slate-400 font-medium mb-1.5">
-              Đã thuộc
-            </div>
-            <ProgressBar
-              value={stats.knownCount}
-              max={stats.total}
-              variant="emerald"
-              size="xs"
-            />
-          </div>
+          <span className="font-serif text-4xl sm:text-5xl font-light text-black tracking-tight leading-none mt-3">
+            {stats.knownCount}
+          </span>
         </div>
 
-        {/* Learning (SRS) card */}
-        <div className="p-4 rounded-2xl bg-white dark:bg-slate-900 border border-amber-200/60 dark:border-amber-900/40 shadow-xs flex items-center gap-4">
-          <div className="w-12 h-12 rounded-xl bg-amber-50 dark:bg-amber-950/60 flex items-center justify-center text-amber-600 dark:text-amber-400 font-bold">
-            <Sparkles className="w-6 h-6" />
-          </div>
-          <div>
-            <div className="text-2xl font-black text-amber-600 dark:text-amber-400">
-              {stats.learningCount}
-            </div>
-            <div className="text-xs text-slate-500 dark:text-slate-400 font-medium">
-              Đang học trong SRS
-            </div>
-          </div>
+        {/* Learning */}
+        <div className="p-4 flex flex-col justify-between">
+          <span className="font-mono text-[10px] uppercase tracking-widest text-mutedForeground">
+            [ ĐANG HỌC SRS ]
+          </span>
+          <span className="font-serif text-4xl sm:text-5xl font-light text-black tracking-tight leading-none mt-3">
+            {stats.learningCount}
+          </span>
         </div>
 
-        {/* New card */}
-        <div className="p-4 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xs flex items-center gap-4">
-          <div className="w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-300 font-bold">
-            <BookOpen className="w-6 h-6" />
-          </div>
-          <div>
-            <div className="text-2xl font-black text-slate-800 dark:text-slate-200">
-              {stats.newCount}
-            </div>
-            <div className="text-xs text-slate-500 dark:text-slate-400 font-medium">
-              Chưa học
-            </div>
-          </div>
+        {/* New */}
+        <div className="p-4 flex flex-col justify-between">
+          <span className="font-mono text-[10px] uppercase tracking-widest text-mutedForeground">
+            [ CHƯA HỌC ]
+          </span>
+          <span className="font-serif text-4xl sm:text-5xl font-light text-black tracking-tight leading-none mt-3">
+            {stats.newCount}
+          </span>
         </div>
       </div>
 
@@ -374,19 +336,19 @@ export default function KanjiCatalogPage() {
       <div className="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-4">
         {/* Search Bar */}
         <div className="relative flex-1 max-w-lg">
-          <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
+          <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-neutral-400 pointer-events-none" />
           <input
             type="text"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            placeholder="Tìm theo chữ Hán, âm Hán Việt (nhất, hải...), nghĩa, On, Kun..."
-            className="w-full pl-10 pr-10 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:focus:ring-indigo-400 transition-colors"
+            placeholder="TÌM CHỮ HÁN, HÁN VIỆT, NGHĨA, ON, KUN..."
+            className="w-full pl-10 pr-10 py-2.5 border-2 border-black bg-white text-black font-mono text-xs uppercase placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-black rounded-none shadow-none"
           />
           {search && (
             <button
               type="button"
               onClick={() => setSearch('')}
-              className="absolute right-3 top-1/2 -translate-y-1/2 p-1 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200"
+              className="absolute right-3 top-1/2 -translate-y-1/2 p-1 text-black hover:opacity-60"
             >
               <X className="w-3.5 h-3.5" />
             </button>
@@ -394,7 +356,7 @@ export default function KanjiCatalogPage() {
         </div>
 
         {/* Status Filter Chips */}
-        <div className="flex flex-wrap items-center gap-1.5">
+        <div className="flex flex-wrap items-center gap-2">
           {statusFilters.map((st) => {
             const isSelected = filter === st.id;
             return (
@@ -402,22 +364,14 @@ export default function KanjiCatalogPage() {
                 key={st.id}
                 type="button"
                 onClick={() => setFilter(st.id)}
-                className={`px-3 py-1.5 rounded-xl text-xs font-semibold border transition-all flex items-center gap-1.5 ${
+                className={`px-3 py-2 border border-black font-mono text-xs uppercase tracking-wider rounded-none transition-colors duration-100 flex items-center gap-1.5 ${
                   isSelected
-                    ? 'bg-indigo-600 text-white border-indigo-700 shadow-xs'
-                    : 'bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700'
+                    ? 'bg-black text-white'
+                    : 'bg-white text-black hover:bg-neutral-100'
                 }`}
               >
                 <span>{st.label}</span>
-                <span
-                  className={`text-[10px] px-1.5 py-0.2 rounded-full font-bold ${
-                    isSelected
-                      ? 'bg-indigo-800/80 text-white'
-                      : 'bg-slate-100 text-slate-500 dark:bg-slate-800 dark:text-slate-400'
-                  }`}
-                >
-                  {st.count}
-                </span>
+                <span className="text-[10px] opacity-75">[{st.count}]</span>
               </button>
             );
           })}
@@ -426,21 +380,17 @@ export default function KanjiCatalogPage() {
 
       {/* Result Count and Grid */}
       <div className="space-y-4">
-        <div className="flex items-center justify-between text-xs sm:text-sm font-medium text-slate-500 dark:text-slate-400">
+        <div className="flex items-center justify-between text-xs font-mono text-mutedForeground uppercase tracking-wider">
           <span>
-            Hiển thị{' '}
-            <strong className="text-slate-900 dark:text-white">
-              {filteredKanji.length}
-            </strong>{' '}
-            / {stats.total} chữ Kanji {level}
+            HIỂN THỊ <strong className="text-black">{filteredKanji.length}</strong> / {stats.total} CHỮ KANJI {level}
           </span>
           {(search || filter !== 'all') && (
             <button
               type="button"
               onClick={handleResetFilters}
-              className="text-indigo-600 dark:text-indigo-400 hover:underline font-semibold"
+              className="text-black underline uppercase hover:opacity-70"
             >
-              Xóa bộ lọc
+              [ XÓA BỘ LỌC ]
             </button>
           )}
         </div>
@@ -453,18 +403,22 @@ export default function KanjiCatalogPage() {
           isSelecting={isSelecting}
           selectedChars={selectedChars}
           onToggleSelect={handleToggleSelectChar}
+          onSelectAll={handleSelectAllFiltered}
+          onClearSelection={handleClearSelection}
+          onBatchAction={() => setIsQuizModalOpen(true)}
+          batchActionLabel="[ LUYỆN TẬP ]"
         />
       </div>
 
       {/* Floating Selection Bar */}
       {isSelecting && (
-        <div className="sticky bottom-4 z-30 mx-auto max-w-xl w-full p-3.5 rounded-2xl bg-slate-900/95 dark:bg-slate-950/95 text-white backdrop-blur-md shadow-2xl border border-slate-800 flex items-center justify-between gap-3 animate-slideUp">
+        <div className="sticky bottom-4 z-30 mx-auto max-w-xl w-full p-4 border-2 border-black bg-white text-black font-mono text-xs rounded-none shadow-none flex items-center justify-between gap-3">
           <div className="flex items-center gap-2 min-w-0">
-            <span className="px-2 py-0.5 rounded-md bg-indigo-600 text-xs font-bold shrink-0">
+            <span className="px-2 py-0.5 bg-black text-white font-bold shrink-0">
               {selectedChars.size}
             </span>
-            <span className="text-xs sm:text-sm font-medium truncate">
-              chữ Hán đã chọn
+            <span className="truncate uppercase tracking-wider">
+              CHỮ HÁN ĐÃ CHỌN
             </span>
           </div>
 
@@ -472,20 +426,19 @@ export default function KanjiCatalogPage() {
             <button
               type="button"
               onClick={selectedChars.size === filteredKanji.length ? handleClearSelection : handleSelectAllFiltered}
-              className="px-2.5 py-1.5 rounded-xl text-xs font-semibold text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 transition-colors"
+              className="px-3 py-1.5 border border-black bg-white text-black hover:bg-black hover:text-white uppercase tracking-wider transition-colors duration-100 rounded-none"
             >
-              {selectedChars.size === filteredKanji.length ? 'Bỏ chọn hết' : 'Chọn tất cả'}
+              {selectedChars.size === filteredKanji.length ? '[ BỎ CHỌN ]' : '[ CHỌN TẤT CẢ ]'}
             </button>
 
             <button
               type="button"
               disabled={selectedChars.size < 4}
               onClick={() => setIsQuizModalOpen(true)}
-              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs sm:text-sm font-bold shadow-md shadow-indigo-500/20 active:scale-95 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 border border-black bg-black text-white hover:bg-white hover:text-black uppercase tracking-wider transition-colors duration-100 rounded-none disabled:opacity-40 disabled:cursor-not-allowed"
               title={selectedChars.size < 4 ? 'Cần chọn tối thiểu 4 chữ để luyện tập' : ''}
             >
-              <Sparkles className="w-3.5 h-3.5" />
-              <span>Luyện tập</span>
+              <span>[ LUYỆN TẬP ]</span>
             </button>
           </div>
         </div>

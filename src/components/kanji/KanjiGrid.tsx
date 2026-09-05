@@ -13,6 +13,10 @@ export interface KanjiGridProps {
   isSelecting?: boolean;
   selectedChars?: Set<string>;
   onToggleSelect?: (character: string) => void;
+  onSelectAll?: () => void;
+  onClearSelection?: () => void;
+  onBatchAction?: () => void;
+  batchActionLabel?: string;
 }
 
 export const KanjiGrid: React.FC<KanjiGridProps> = ({
@@ -22,28 +26,31 @@ export const KanjiGrid: React.FC<KanjiGridProps> = ({
   isSelecting = false,
   selectedChars = new Set(),
   onToggleSelect,
+  onSelectAll,
+  onClearSelection,
+  onBatchAction,
+  batchActionLabel,
 }) => {
   if (kanjiList.length === 0) {
     return (
-      <div className="flex flex-col items-center justify-center py-16 px-4 text-center rounded-2xl bg-white/50 dark:bg-slate-900/50 border border-dashed border-slate-300 dark:border-slate-800 my-6">
-        <div className="w-16 h-16 rounded-2xl bg-indigo-50 dark:bg-indigo-950/60 flex items-center justify-center text-indigo-500 mb-4">
-          <SearchX className="w-8 h-8" />
+      <div className="border-2 border-dashed border-black bg-white p-12 text-center my-6 rounded-none shadow-none">
+        <div className="w-12 h-12 border-2 border-black mx-auto mb-4 flex items-center justify-center text-black">
+          <SearchX className="w-6 h-6 stroke-[1.5]" />
         </div>
-        <h3 className="text-lg font-bold text-slate-800 dark:text-slate-200 mb-1">
-          Không tìm thấy chữ Hán nào
+        <h3 className="font-serif text-xl sm:text-2xl font-normal text-black uppercase tracking-tight mb-2">
+          KHÔNG TÌM THẤY CHỮ HÁN NÀO
         </h3>
-        <p className="text-sm text-slate-500 dark:text-slate-400 max-w-md mb-5">
-          Không có chữ Hán nào khớp với từ khóa tìm kiếm hoặc bộ lọc trạng thái
-          hiện tại của bạn.
+        <p className="font-mono text-xs text-mutedForeground max-w-md mx-auto mb-6">
+          [ KHÔNG CÓ CHỮ HÁN NÀO KHỚP VỚI TỪ KHÓA HOẶC BỘ LỌC HIỆN TẠI ]
         </p>
         {onResetFilter && (
           <button
             type="button"
             onClick={onResetFilter}
-            className="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 shadow-md shadow-indigo-500/20 transition-all active:scale-95"
+            className="inline-flex items-center gap-2 px-5 py-2.5 border border-black bg-black text-white hover:bg-white hover:text-black font-mono text-xs uppercase tracking-widest transition-colors duration-100 rounded-none shadow-none"
           >
-            <RotateCcw className="w-4 h-4" />
-            <span>Đặt lại bộ lọc & tìm kiếm</span>
+            <RotateCcw className="w-3.5 h-3.5 stroke-[2]" />
+            <span>[ ĐẶT LẠI BỘ LỌC ]</span>
           </button>
         )}
       </div>
@@ -51,17 +58,52 @@ export const KanjiGrid: React.FC<KanjiGridProps> = ({
   }
 
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3 sm:gap-4">
-      {kanjiList.map((kanji) => (
-        <KanjiCard
-          key={`${kanji.level || level || ''}_${kanji.character}`}
-          kanji={kanji}
-          level={level}
-          isSelecting={isSelecting}
-          isSelected={selectedChars.has(kanji.character)}
-          onToggleSelect={onToggleSelect}
-        />
-      ))}
+    <div>
+      {/* Batch Action Bar */}
+      {isSelecting && (
+        <div className="bg-white border-2 border-black p-4 mb-6 flex flex-wrap items-center justify-between gap-4 font-mono text-xs rounded-none shadow-none">
+          <div className="flex items-center gap-2">
+            <span className="font-bold uppercase tracking-wider text-black">
+              [ ĐÃ CHỌN: {selectedChars.size} / {kanjiList.length} ]
+            </span>
+          </div>
+
+          <div className="flex items-center gap-2">
+            <button
+              type="button"
+              onClick={selectedChars.size === kanjiList.length ? onClearSelection : onSelectAll}
+              className="border border-black bg-white hover:bg-black hover:text-white px-3 py-1.5 uppercase tracking-wider transition-colors duration-100 rounded-none"
+            >
+              {selectedChars.size === kanjiList.length ? '[ BỎ CHỌN TẤT CẢ ]' : '[ CHỌN TẤT CẢ ]'}
+            </button>
+
+            {onBatchAction && (
+              <button
+                type="button"
+                disabled={selectedChars.size === 0}
+                onClick={onBatchAction}
+                className="border border-black bg-black text-white hover:bg-white hover:text-black px-3 py-1.5 uppercase tracking-wider transition-colors duration-100 rounded-none disabled:opacity-40 disabled:cursor-not-allowed"
+              >
+                {batchActionLabel || '[ LUYỆN TẬP ]'}
+              </button>
+            )}
+          </div>
+        </div>
+      )}
+
+      {/* Grid Layout with Sharp Borders */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3 sm:gap-4">
+        {kanjiList.map((kanji) => (
+          <KanjiCard
+            key={`${kanji.level || level || ''}_${kanji.character}`}
+            kanji={kanji}
+            level={level}
+            isSelecting={isSelecting}
+            isSelected={selectedChars.has(kanji.character)}
+            onToggleSelect={onToggleSelect}
+          />
+        ))}
+      </div>
     </div>
   );
 };
