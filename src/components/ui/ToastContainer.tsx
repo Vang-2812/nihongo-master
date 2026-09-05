@@ -2,7 +2,6 @@
 
 import React from 'react';
 import { useToastStore, ToastItem } from '@/stores/toastStore';
-import { CheckCircle2, AlertCircle, Info, X } from 'lucide-react';
 
 export const ToastContainer: React.FC = () => {
   const { toasts, removeToast } = useToastStore();
@@ -27,63 +26,41 @@ interface ToastCardProps {
   onDismiss: () => void;
 }
 
+const getBadgeText = (type: string) => {
+  switch (type) {
+    case 'success':
+      return '[ SUCCESS ]';
+    case 'error':
+      return '[ ERROR ]';
+    case 'warning':
+      return '[ WARNING ]';
+    case 'info':
+    default:
+      return '[ INFO ]';
+  }
+};
+
 const ToastCard: React.FC<ToastCardProps> = ({ item, onDismiss }) => {
-  const getVariantConfig = () => {
-    switch (item.type) {
-      case 'success':
-        return {
-          icon: <CheckCircle2 className="w-5 h-5 text-emerald-500 flex-shrink-0" />,
-          border: 'border-emerald-500/30 dark:border-emerald-500/40',
-          bg: 'bg-white dark:bg-slate-900',
-          bar: 'bg-emerald-500',
-        };
-      case 'error':
-        return {
-          icon: <AlertCircle className="w-5 h-5 text-rose-500 flex-shrink-0" />,
-          border: 'border-rose-500/30 dark:border-rose-500/40',
-          bg: 'bg-white dark:bg-slate-900',
-          bar: 'bg-rose-500',
-        };
-      case 'warning':
-        return {
-          icon: <AlertCircle className="w-5 h-5 text-amber-500 flex-shrink-0" />,
-          border: 'border-amber-500/30 dark:border-amber-500/40',
-          bg: 'bg-white dark:bg-slate-900',
-          bar: 'bg-amber-500',
-        };
-      case 'info':
-      default:
-
-        return {
-          icon: <Info className="w-5 h-5 text-indigo-500 flex-shrink-0" />,
-          border: 'border-indigo-500/30 dark:border-indigo-500/40',
-          bg: 'bg-white dark:bg-slate-900',
-          bar: 'bg-indigo-500',
-        };
-    }
-  };
-
-  const config = getVariantConfig();
-
   return (
     <div
       role="alert"
-      className={`pointer-events-auto flex items-start gap-3 p-3.5 rounded-xl border shadow-lg backdrop-blur-md transition-all duration-300 transform translate-y-0 opacity-100 ${config.bg} ${config.border}`}
+      className="pointer-events-auto flex items-start justify-between gap-3 bg-white border-2 border-black p-4 text-black font-mono text-xs shadow-none rounded-none transition-all duration-100"
     >
-      <div className="pt-0.5">{config.icon}</div>
-      <div className="flex-1 text-sm font-medium text-slate-800 dark:text-slate-100 break-words">
-        {item.message}
+      <div className="flex flex-col gap-1 flex-1">
+        <span className="font-bold tracking-wider">{getBadgeText(item.type)}</span>
+        <div className="break-words leading-relaxed">{item.message}</div>
       </div>
       <button
         type="button"
         onClick={onDismiss}
-        className="rounded-lg p-1 text-slate-400 hover:text-slate-600 hover:bg-slate-100 dark:hover:text-slate-200 dark:hover:bg-slate-800 transition-colors -mr-1 -mt-1"
+        className="border border-black px-1.5 py-0.5 font-mono text-xs hover:bg-black hover:text-white transition-colors duration-100 -mr-1 -mt-1 flex-shrink-0"
         aria-label="Đóng thông báo"
       >
-        <X className="w-4 h-4" />
+        [ X ]
       </button>
     </div>
   );
 };
 
 export default ToastContainer;
+

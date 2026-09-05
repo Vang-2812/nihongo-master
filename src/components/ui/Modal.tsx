@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useEffect, useCallback } from 'react';
-import { X } from 'lucide-react';
 
 export interface ModalProps {
   isOpen: boolean;
@@ -31,7 +30,7 @@ export const Modal: React.FC<ModalProps> = ({
   description,
   children,
   footer,
-  maxWidth = 'lg',
+  maxWidth = '2xl',
   showCloseButton = true,
   className = '',
 }) => {
@@ -62,33 +61,29 @@ export const Modal: React.FC<ModalProps> = ({
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 overflow-y-auto"
+      className="fixed inset-0 z-50 bg-black/75 flex items-center justify-center p-4 overflow-y-auto"
       role="dialog"
       aria-modal="true"
+      onClick={onClose}
     >
-      {/* Backdrop */}
-      <div
-        className="fixed inset-0 bg-slate-900/60 backdrop-blur-sm transition-opacity duration-200"
-        onClick={onClose}
-        aria-hidden="true"
-      />
-
       {/* Modal Dialog Card */}
       <div
-        className={`relative w-full ${maxWidthMap[maxWidth]} bg-white dark:bg-slate-900 rounded-2xl shadow-2xl border border-slate-200 dark:border-slate-800 z-10 my-8 overflow-hidden transition-all duration-200 transform scale-100 ${className}`}
+        className={`relative bg-white border-2 sm:border-4 border-black w-full ${
+          maxWidth && maxWidthMap[maxWidth] ? maxWidthMap[maxWidth] : 'max-w-2xl'
+        } p-6 sm:p-8 rounded-none shadow-none z-10 my-8 transition-all ${className}`}
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
         {(title || showCloseButton) && (
-          <div className="flex items-start justify-between p-5 sm:p-6 border-b border-slate-100 dark:border-slate-800">
+          <div className="flex items-start justify-between border-b-2 border-black pb-4 mb-6">
             <div>
               {title && (
-                <h3 className="text-xl font-bold text-slate-900 dark:text-white">
+                <h3 className="font-serif text-2xl sm:text-3xl font-bold tracking-tight text-black">
                   {title}
                 </h3>
               )}
               {description && (
-                <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
+                <p className="mt-1 font-body text-sm text-mutedForeground">
                   {description}
                 </p>
               )}
@@ -97,23 +92,23 @@ export const Modal: React.FC<ModalProps> = ({
               <button
                 type="button"
                 onClick={onClose}
-                className="rounded-lg p-1.5 text-slate-400 hover:text-slate-600 hover:bg-slate-100 dark:hover:text-slate-200 dark:hover:bg-slate-800 transition-colors ml-auto"
+                className="border border-black px-2 py-1 font-mono text-xs hover:bg-black hover:text-white transition-colors duration-100 ml-auto flex-shrink-0"
                 aria-label="Đóng cửa sổ"
               >
-                <X className="w-5 h-5" />
+                [ X ]
               </button>
             )}
           </div>
         )}
 
         {/* Content Body */}
-        <div className="p-5 sm:p-6 max-h-[calc(85vh-8rem)] overflow-y-auto text-slate-700 dark:text-slate-300 text-sm">
+        <div className="max-h-[calc(85vh-8rem)] overflow-y-auto font-body text-black text-sm">
           {children}
         </div>
 
         {/* Footer */}
         {footer && (
-          <div className="flex items-center justify-end gap-3 px-5 py-4 sm:px-6 bg-slate-50 dark:bg-slate-800/50 border-t border-slate-100 dark:border-slate-800">
+          <div className="flex items-center justify-end gap-3 pt-6 mt-6 border-t-2 border-black">
             {footer}
           </div>
         )}
@@ -123,3 +118,4 @@ export const Modal: React.FC<ModalProps> = ({
 };
 
 export default Modal;
+
