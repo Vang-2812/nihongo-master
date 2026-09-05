@@ -99,88 +99,88 @@ export default function HomePage() {
       {/* 1. Editorial Hero Section */}
       <section>
         <div className="flex items-center gap-3 mb-4 sm:mb-6">
-          <span className="font-sans text-xs font-semibold uppercase tracking-widest text-black border border-black px-2 py-0.5">
+          <span className="font-sans text-xs font-semibold uppercase tracking-widest text-stone-700 bg-stone-100 border border-stone-300 px-2 py-0.5">
             ARCHIVE EDITION 2026
           </span>
-          <span className="font-sans text-xs uppercase tracking-wider text-mutedForeground">
+          <span className="font-sans text-xs uppercase tracking-wider text-stone-500">
             SM-2 Spaced Repetition Engine
           </span>
         </div>
 
-        <h1 className="font-serif text-6xl sm:text-8xl lg:text-9xl font-normal tracking-tighter text-black leading-none uppercase">
+        <h1 className="font-serif text-6xl sm:text-8xl lg:text-9xl font-normal tracking-tighter text-stone-900 leading-none uppercase">
           NIHONGO ARCHIVE
           <span className="block font-serif text-5xl sm:text-7xl lg:text-8xl mt-2 tracking-normal">
             日本語マスター
           </span>
         </h1>
 
-        <p className="font-sans text-xs sm:text-sm tracking-widest text-mutedForeground uppercase mt-4 max-w-xl font-medium">
+        <p className="font-sans text-xs sm:text-sm tracking-widest text-stone-500 uppercase mt-4 max-w-xl font-medium">
           REPOSITORY OF JAPANESE VOCABULARY & KANJI · SPACED REPETITION SYSTEM · JLPT N5–N1
         </p>
 
-        {/* Heavy 4px black section rule */}
-        <div className="h-1 bg-black w-full my-10 sm:my-14" />
+        {/* Section rule */}
+        <div className="h-px bg-stone-300 w-full my-10 sm:my-14" />
       </section>
 
       {/* 2. High-Impact Statistics Grid */}
       <section aria-label="Thống kê học tập">
-        <div className="border-t-2 border-b-2 border-black divide-y sm:divide-y-0 sm:divide-x divide-black py-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="border-t border-b border-stone-200 divide-y sm:divide-y-0 sm:divide-x divide-stone-200 py-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
           {/* Card 1: Reviews Due */}
           <div className="p-6 sm:p-8 flex flex-col justify-between">
-            <div className="font-sans text-xs font-semibold uppercase tracking-wider text-mutedForeground">
+            <div className="font-sans text-xs font-semibold uppercase tracking-wider text-stone-500">
               CẦN ÔN TẬP
             </div>
             <div className="my-4">
-              <div className="font-serif text-5xl sm:text-7xl font-light text-black tracking-tight leading-none">
+              <div className="font-serif text-5xl sm:text-7xl font-light text-stone-900 tracking-tight leading-none">
                 {dueCount}
               </div>
             </div>
-            <div className="font-sans text-xs text-mutedForeground">
+            <div className="font-sans text-xs text-stone-500">
               {dueCount > 0 ? `${vocabDueCount} từ vựng · ${kanjiDueCount} Hán tự` : 'Đã hoàn thành hôm nay'}
             </div>
           </div>
 
           {/* Card 2: Day Streak */}
           <div className="p-6 sm:p-8 flex flex-col justify-between">
-            <div className="font-sans text-xs font-semibold uppercase tracking-wider text-mutedForeground">
+            <div className="font-sans text-xs font-semibold uppercase tracking-wider text-stone-500">
               CHUỖI NGÀY LIÊN TIẾP
             </div>
             <div className="my-4">
-              <div className="font-serif text-5xl sm:text-7xl font-light text-black tracking-tight leading-none">
+              <div className="font-serif text-5xl sm:text-7xl font-light text-amber-700 tracking-tight leading-none">
                 {streak}
               </div>
             </div>
-            <div className="font-sans text-xs text-mutedForeground">
+            <div className="font-sans text-xs text-stone-500">
               {streak > 0 ? 'Duy trì học đều đặn' : 'Bắt đầu chuỗi hôm nay'}
             </div>
           </div>
 
           {/* Card 3: Total XP */}
           <div className="p-6 sm:p-8 flex flex-col justify-between">
-            <div className="font-sans text-xs font-semibold uppercase tracking-wider text-mutedForeground">
+            <div className="font-sans text-xs font-semibold uppercase tracking-wider text-stone-500">
               ĐIỂM TÍCH LŨY
             </div>
             <div className="my-4">
-              <div className="font-serif text-5xl sm:text-7xl font-light text-black tracking-tight leading-none">
+              <div className="font-serif text-5xl sm:text-7xl font-light text-amber-700 tracking-tight leading-none">
                 {totalXp}
               </div>
             </div>
-            <div className="font-sans text-xs text-mutedForeground">
+            <div className="font-sans text-xs text-stone-500">
               Cấp độ {currentLevel} · {xpInCurrentLevel}/100 XP
             </div>
           </div>
 
           {/* Card 4: Cards in SRS */}
           <div className="p-6 sm:p-8 flex flex-col justify-between">
-            <div className="font-sans text-xs font-semibold uppercase tracking-wider text-mutedForeground">
+            <div className="font-sans text-xs font-semibold uppercase tracking-wider text-stone-500">
               TỔNG THẺ TRONG SRS
             </div>
             <div className="my-4">
-              <div className="font-serif text-5xl sm:text-7xl font-light text-black tracking-tight leading-none">
+              <div className="font-serif text-5xl sm:text-7xl font-light text-indigo-800 tracking-tight leading-none">
                 {totalCards}
               </div>
             </div>
-            <div className="font-sans text-xs text-mutedForeground">
+            <div className="font-sans text-xs text-stone-500">
               {reviewCount} đã ôn · {learningCount} đang học
             </div>
           </div>
@@ -189,60 +189,60 @@ export default function HomePage() {
 
       {/* 3. Primary Action Callout */}
       {dueCount > 0 ? (
-        <section className="border-2 border-black bg-black text-white p-6 sm:p-10 my-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 rounded-none shadow-none">
+        <section className="border border-indigo-200 bg-indigo-50/70 text-stone-900 p-6 sm:p-10 my-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
           <div className="space-y-2">
-            <div className="font-sans text-xs uppercase tracking-widest text-neutral-400 font-semibold">
+            <div className="font-sans text-xs font-semibold uppercase tracking-widest text-indigo-800">
               CẦN XỬ LÝ · CHU KỲ SM-2
             </div>
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal tracking-tight uppercase">
+            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal tracking-tight uppercase text-stone-900">
               HÔM NAY CÓ {dueCount} THẺ CẦN ÔN TẬP
             </h2>
-            <p className="font-sans text-sm sm:text-base text-neutral-300 max-w-2xl leading-relaxed">
+            <p className="font-sans text-sm sm:text-base text-stone-700 max-w-2xl leading-relaxed">
               Ôn tập đúng thời điểm giúp củng cố vùng nhớ dài hạn và tăng hiệu quả ghi nhớ Hán tự và Từ vựng theo thuật toán SM-2.
             </p>
-            <div className="font-sans text-xs text-neutral-400 pt-1">
+            <div className="font-sans text-xs text-indigo-800 pt-1">
               Từ vựng: {vocabDueCount} · Hán tự: {kanjiDueCount} {newCount > 0 ? `· Thẻ mới: ${newCount}` : ''}
             </div>
           </div>
           <Link
             href="/review"
-            className="border border-white bg-white text-black hover:bg-black hover:text-white px-8 py-3.5 font-sans font-semibold text-xs uppercase tracking-widest transition-colors duration-100 inline-flex items-center justify-center gap-3 shrink-0 rounded-none shadow-none"
+            className="bg-indigo-900 hover:bg-indigo-800 text-white border border-indigo-900 px-8 py-3.5 font-sans font-semibold text-xs uppercase tracking-widest transition-colors duration-100 inline-flex items-center justify-center gap-3 shrink-0"
           >
             <span>BẮT ĐẦU ÔN TẬP NGAY</span>
             <ArrowRight className="w-4 h-4" />
           </Link>
         </section>
       ) : (
-        <section className="border-2 border-black bg-white text-black p-6 sm:p-10 my-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 rounded-none shadow-none">
+        <section className="border border-stone-200 bg-white text-stone-900 p-6 sm:p-10 my-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
           <div className="space-y-2">
-            <div className="font-sans text-xs uppercase tracking-widest text-mutedForeground font-semibold">
+            <div className="font-sans text-xs uppercase tracking-widest text-stone-500 font-semibold">
               TRẠNG THÁI · ĐÃ HOÀN THÀNH
             </div>
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal tracking-tight uppercase">
+            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal tracking-tight uppercase text-stone-900">
               ĐÃ HOÀN THÀNH TẤT CẢ ÔN TẬP HÔM NAY
             </h2>
-            <p className="font-sans text-sm sm:text-base text-mutedForeground max-w-2xl leading-relaxed">
+            <p className="font-sans text-sm sm:text-base text-stone-600 max-w-2xl leading-relaxed">
               Hiện không có thẻ nào đến hạn ôn tập. Hãy khám phá kho kiến thức để bổ sung thẻ mới hoặc thử thách bản thân trong phòng Quizlet.
             </p>
           </div>
           <div className="flex flex-wrap gap-3 shrink-0">
             <Link
               href="/tango"
-              className="border border-black bg-white text-black hover:bg-black hover:text-white px-6 py-3 font-sans font-semibold text-xs uppercase tracking-wider transition-colors duration-100 inline-flex items-center justify-center gap-2 rounded-none shadow-none"
+              className="border border-stone-300 bg-white text-stone-800 hover:bg-stone-100 px-6 py-3 font-sans font-semibold text-xs uppercase tracking-wider transition-colors duration-100 inline-flex items-center justify-center gap-2"
             >
               <span>TỪ VỰNG</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </Link>
             <Link
               href="/kanji"
-              className="border border-black bg-white text-black hover:bg-black hover:text-white px-6 py-3 font-sans font-semibold text-xs uppercase tracking-wider transition-colors duration-100 inline-flex items-center justify-center gap-2 rounded-none shadow-none"
+              className="border border-stone-300 bg-white text-stone-800 hover:bg-stone-100 px-6 py-3 font-sans font-semibold text-xs uppercase tracking-wider transition-colors duration-100 inline-flex items-center justify-center gap-2"
             >
               <span>KANJI</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </Link>
             <Link
               href="/review/quiz"
-              className="border border-black bg-black text-white hover:bg-white hover:text-black px-6 py-3 font-sans font-semibold text-xs uppercase tracking-wider transition-colors duration-100 inline-flex items-center justify-center gap-2 rounded-none shadow-none"
+              className="border border-stone-900 bg-stone-900 text-white hover:bg-stone-800 px-6 py-3 font-sans font-semibold text-xs uppercase tracking-wider transition-colors duration-100 inline-flex items-center justify-center gap-2"
             >
               <span>QUIZLET</span>
               <ArrowRight className="w-3.5 h-3.5" />
@@ -251,13 +251,13 @@ export default function HomePage() {
         </section>
       )}
 
-      {/* 4. 4 High-Contrast Quick Navigation Cards */}
+      {/* 4. Quick Navigation Cards */}
       <section aria-label="Danh mục điều hướng">
-        <div className="flex items-center justify-between border-b-2 border-black pb-3 mb-8">
-          <h2 className="font-serif text-2xl sm:text-3xl font-normal tracking-tight uppercase text-black">
+        <div className="flex items-center justify-between border-b border-stone-200 pb-3 mb-8">
+          <h2 className="font-serif text-2xl sm:text-3xl font-normal tracking-tight uppercase text-stone-900">
             DANH MỤC TRỌNG TÂM
           </h2>
-          <span className="font-sans text-xs font-semibold uppercase tracking-wider text-mutedForeground">
+          <span className="font-sans text-xs font-semibold uppercase tracking-wider text-stone-500">
             4 PHÂN HỆ CHÍNH
           </span>
         </div>
@@ -266,35 +266,42 @@ export default function HomePage() {
           {/* Card 1: Kanji */}
           <Link
             href="/kanji"
-            className="border-2 border-black bg-white p-6 sm:p-8 hover:bg-black hover:text-white transition-colors duration-100 group rounded-none shadow-none flex flex-col justify-between"
+            className="border border-stone-200 bg-white p-6 sm:p-8 hover:border-stone-400 hover:bg-stone-50/80 transition-all duration-150 group flex flex-col justify-between"
           >
             <div>
-              <div className="flex items-center justify-between border-b border-black group-hover:border-white pb-3 mb-6 transition-colors duration-100">
-                <span className="font-mono text-xs uppercase tracking-widest font-bold">
+              <div className="flex items-center justify-between border-b border-stone-200 pb-3 mb-6">
+                <span className="font-mono text-xs uppercase tracking-widest font-bold text-stone-900">
                   01 / KANJI
                 </span>
-                <span className="font-serif text-3xl font-bold opacity-30 group-hover:opacity-100 transition-opacity">
+                <span className="font-serif text-3xl font-bold text-stone-300 group-hover:text-stone-500 transition-colors">
                   字
                 </span>
               </div>
-              <h3 className="font-serif text-2xl sm:text-3xl font-normal tracking-tight uppercase mb-3">
+              <h3 className="font-serif text-2xl sm:text-3xl font-normal tracking-tight uppercase mb-3 text-stone-900">
                 KHO HÁN TỰ
               </h3>
-              <p className="font-body text-xs sm:text-sm text-mutedForeground group-hover:text-neutral-300 transition-colors duration-100 mb-6 leading-relaxed">
+              <p className="font-body text-xs sm:text-sm text-stone-600 mb-6 leading-relaxed">
                 2,136 Hán tự thông dụng từ N5 đến N1 kèm phân tích bộ thủ, âm Hán Việt và thứ tự từng nét chuẩn mực.
               </p>
               <div className="flex flex-wrap gap-1.5 mb-6">
-                {['N5', 'N4', 'N3', 'N2', 'N1'].map((lvl) => (
-                  <span
-                    key={lvl}
-                    className="font-mono text-[10px] uppercase px-2 py-0.5 border border-black group-hover:border-white transition-colors duration-100"
-                  >
-                    {lvl}
-                  </span>
-                ))}
+                <span className="bg-emerald-50 text-emerald-800 border border-emerald-200 font-mono text-[10px] uppercase px-2 py-0.5">
+                  N5
+                </span>
+                <span className="bg-sky-50 text-sky-800 border border-sky-200 font-mono text-[10px] uppercase px-2 py-0.5">
+                  N4
+                </span>
+                <span className="bg-amber-50 text-amber-800 border border-amber-200 font-mono text-[10px] uppercase px-2 py-0.5">
+                  N3
+                </span>
+                <span className="bg-purple-50 text-purple-800 border border-purple-200 font-mono text-[10px] uppercase px-2 py-0.5">
+                  N2
+                </span>
+                <span className="bg-rose-50 text-rose-800 border border-rose-200 font-mono text-[10px] uppercase px-2 py-0.5">
+                  N1
+                </span>
               </div>
             </div>
-            <div className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest font-bold group-hover:translate-x-1 transition-transform duration-100 pt-4 border-t border-neutral-200 group-hover:border-neutral-800">
+            <div className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest font-bold text-stone-800 group-hover:text-stone-900 pt-4 border-t border-stone-100 group-hover:translate-x-1 transition-all">
               <span>KHÁM PHÁ KANJI</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </div>
@@ -303,35 +310,35 @@ export default function HomePage() {
           {/* Card 2: Tango */}
           <Link
             href="/tango"
-            className="border-2 border-black bg-white p-6 sm:p-8 hover:bg-black hover:text-white transition-colors duration-100 group rounded-none shadow-none flex flex-col justify-between"
+            className="border border-stone-200 bg-white p-6 sm:p-8 hover:border-stone-400 hover:bg-stone-50/80 transition-all duration-150 group flex flex-col justify-between"
           >
             <div>
-              <div className="flex items-center justify-between border-b border-black group-hover:border-white pb-3 mb-6 transition-colors duration-100">
-                <span className="font-mono text-xs uppercase tracking-widest font-bold">
+              <div className="flex items-center justify-between border-b border-stone-200 pb-3 mb-6">
+                <span className="font-mono text-xs uppercase tracking-widest font-bold text-stone-900">
                   02 / TANGO
                 </span>
-                <span className="font-serif text-3xl font-bold opacity-30 group-hover:opacity-100 transition-opacity">
+                <span className="font-serif text-3xl font-bold text-stone-300 group-hover:text-stone-500 transition-colors">
                   語
                 </span>
               </div>
-              <h3 className="font-serif text-2xl sm:text-3xl font-normal tracking-tight uppercase mb-3">
+              <h3 className="font-serif text-2xl sm:text-3xl font-normal tracking-tight uppercase mb-3 text-stone-900">
                 KHO TỪ VỰNG
               </h3>
-              <p className="font-body text-xs sm:text-sm text-mutedForeground group-hover:text-neutral-300 transition-colors duration-100 mb-6 leading-relaxed">
+              <p className="font-body text-xs sm:text-sm text-stone-600 mb-6 leading-relaxed">
                 Hệ thống giáo trình Minna no Nihongo, Mimikara Oboeru và Somatome với phát âm audio bản xứ và bài tập ngữ cảnh.
               </p>
               <div className="flex flex-wrap gap-1.5 mb-6">
                 {['MINNA', 'MIMIKARA', 'SOMATOME'].map((b) => (
                   <span
                     key={b}
-                    className="font-mono text-[10px] uppercase px-2 py-0.5 border border-black group-hover:border-white transition-colors duration-100"
+                    className="bg-stone-100 text-stone-700 border border-stone-200 font-mono text-[10px] uppercase px-2 py-0.5"
                   >
                     {b}
                   </span>
                 ))}
               </div>
             </div>
-            <div className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest font-bold group-hover:translate-x-1 transition-transform duration-100 pt-4 border-t border-neutral-200 group-hover:border-neutral-800">
+            <div className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest font-bold text-stone-800 group-hover:text-stone-900 pt-4 border-t border-stone-100 group-hover:translate-x-1 transition-all">
               <span>HỌC TỪ VỰNG</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </div>
@@ -340,35 +347,35 @@ export default function HomePage() {
           {/* Card 3: SRS Review */}
           <Link
             href="/review"
-            className="border-2 border-black bg-white p-6 sm:p-8 hover:bg-black hover:text-white transition-colors duration-100 group rounded-none shadow-none flex flex-col justify-between"
+            className="border border-stone-200 bg-white p-6 sm:p-8 hover:border-stone-400 hover:bg-stone-50/80 transition-all duration-150 group flex flex-col justify-between"
           >
             <div>
-              <div className="flex items-center justify-between border-b border-black group-hover:border-white pb-3 mb-6 transition-colors duration-100">
-                <span className="font-mono text-xs uppercase tracking-widest font-bold">
+              <div className="flex items-center justify-between border-b border-stone-200 pb-3 mb-6">
+                <span className="font-mono text-xs uppercase tracking-widest font-bold text-stone-900">
                   03 / SRS REVIEW
                 </span>
-                <span className="font-serif text-3xl font-bold opacity-30 group-hover:opacity-100 transition-opacity">
+                <span className="font-serif text-3xl font-bold text-stone-300 group-hover:text-stone-500 transition-colors">
                   記
                 </span>
               </div>
-              <h3 className="font-serif text-2xl sm:text-3xl font-normal tracking-tight uppercase mb-3">
+              <h3 className="font-serif text-2xl sm:text-3xl font-normal tracking-tight uppercase mb-3 text-stone-900">
                 TRUNG TÂM ÔN TẬP
               </h3>
-              <p className="font-body text-xs sm:text-sm text-mutedForeground group-hover:text-neutral-300 transition-colors duration-100 mb-6 leading-relaxed">
+              <p className="font-body text-xs sm:text-sm text-stone-600 mb-6 leading-relaxed">
                 Thuật toán SuperMemo SM-2 tự động tính toán thời điểm lặp lại tối ưu để củng cố vùng nhớ dài hạn.
               </p>
               <div className="flex flex-wrap gap-1.5 mb-6">
                 {['SM-2', 'FLASHCARDS', `${dueCount} DUE`].map((tag) => (
                   <span
                     key={tag}
-                    className="font-mono text-[10px] uppercase px-2 py-0.5 border border-black group-hover:border-white transition-colors duration-100"
+                    className="bg-indigo-50 text-indigo-800 border border-indigo-200 font-mono text-[10px] uppercase px-2 py-0.5"
                   >
                     {tag}
                   </span>
                 ))}
               </div>
             </div>
-            <div className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest font-bold group-hover:translate-x-1 transition-transform duration-100 pt-4 border-t border-neutral-200 group-hover:border-neutral-800">
+            <div className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest font-bold text-stone-800 group-hover:text-stone-900 pt-4 border-t border-stone-100 group-hover:translate-x-1 transition-all">
               <span>VÀO PHÒNG ÔN TẬP</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </div>
@@ -377,35 +384,35 @@ export default function HomePage() {
           {/* Card 4: Quizlet */}
           <Link
             href="/review/quiz"
-            className="border-2 border-black bg-white p-6 sm:p-8 hover:bg-black hover:text-white transition-colors duration-100 group rounded-none shadow-none flex flex-col justify-between"
+            className="border border-stone-200 bg-white p-6 sm:p-8 hover:border-stone-400 hover:bg-stone-50/80 transition-all duration-150 group flex flex-col justify-between"
           >
             <div>
-              <div className="flex items-center justify-between border-b border-black group-hover:border-white pb-3 mb-6 transition-colors duration-100">
-                <span className="font-mono text-xs uppercase tracking-widest font-bold">
+              <div className="flex items-center justify-between border-b border-stone-200 pb-3 mb-6">
+                <span className="font-mono text-xs uppercase tracking-widest font-bold text-stone-900">
                   04 / QUIZLET
                 </span>
-                <span className="font-serif text-3xl font-bold opacity-30 group-hover:opacity-100 transition-opacity">
+                <span className="font-serif text-3xl font-bold text-stone-300 group-hover:text-stone-500 transition-colors">
                   問
                 </span>
               </div>
-              <h3 className="font-serif text-2xl sm:text-3xl font-normal tracking-tight uppercase mb-3">
+              <h3 className="font-serif text-2xl sm:text-3xl font-normal tracking-tight uppercase mb-3 text-stone-900">
                 LUYỆN TẬP & QUIZ
               </h3>
-              <p className="font-body text-xs sm:text-sm text-mutedForeground group-hover:text-neutral-300 transition-colors duration-100 mb-6 leading-relaxed">
+              <p className="font-body text-xs sm:text-sm text-stone-600 mb-6 leading-relaxed">
                 Đấu trí qua câu hỏi trắc nghiệm 4 đáp án, ghép thẻ tốc độ cao và thử thách lắp ghép ký tự Hán tự.
               </p>
               <div className="flex flex-wrap gap-1.5 mb-6">
                 {['TRẮC NGHIỆM', 'GHÉP THẺ', 'GHÉP CHỮ'].map((mode) => (
                   <span
                     key={mode}
-                    className="font-mono text-[10px] uppercase px-2 py-0.5 border border-black group-hover:border-white transition-colors duration-100"
+                    className="bg-amber-50 text-amber-800 border border-amber-200 font-mono text-[10px] uppercase px-2 py-0.5"
                   >
                     {mode}
                   </span>
                 ))}
               </div>
             </div>
-            <div className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest font-bold group-hover:translate-x-1 transition-transform duration-100 pt-4 border-t border-neutral-200 group-hover:border-neutral-800">
+            <div className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest font-bold text-stone-800 group-hover:text-stone-900 pt-4 border-t border-stone-100 group-hover:translate-x-1 transition-all">
               <span>BẮT ĐẦU QUIZ</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </div>
@@ -414,16 +421,16 @@ export default function HomePage() {
       </section>
 
       {/* 5. Editorial Data Management & Utility Footer */}
-      <section aria-label="Quản lý dữ liệu" className="border-t-2 border-black pt-8 sm:pt-10">
+      <section aria-label="Quản lý dữ liệu" className="border-t border-stone-200 pt-8 sm:pt-10">
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div>
-            <div className="font-sans text-xs uppercase tracking-widest text-mutedForeground font-semibold">
+            <div className="font-sans text-xs uppercase tracking-widest text-stone-500 font-semibold">
               QUẢN TRỊ DỮ LIỆU & TIẾN TRÌNH
             </div>
-            <h3 className="font-serif text-xl sm:text-2xl font-normal tracking-tight uppercase mt-1 text-black">
+            <h3 className="font-serif text-xl sm:text-2xl font-normal tracking-tight uppercase mt-1 text-stone-900">
               QUẢN LÝ DỮ LIỆU & TIẾN TRÌNH
             </h3>
-            <p className="font-sans text-xs sm:text-sm text-mutedForeground mt-1 max-w-xl">
+            <p className="font-sans text-xs sm:text-sm text-stone-500 mt-1 max-w-xl">
               Xuất hoặc nhập bản ghi tiến độ học tập dạng tệp JSON để bảo lưu hoặc đồng bộ trên thiết bị cá nhân.
             </p>
           </div>
@@ -432,7 +439,7 @@ export default function HomePage() {
             <button
               type="button"
               onClick={handleExport}
-              className="inline-flex items-center gap-2 px-4 py-2.5 border border-black bg-white text-black hover:bg-black hover:text-white font-sans font-semibold text-xs uppercase tracking-wider transition-colors duration-100 rounded-none shadow-none"
+              className="inline-flex items-center gap-2 px-4 py-2.5 border border-stone-300 bg-white text-stone-800 hover:bg-stone-100 font-sans font-semibold text-xs uppercase tracking-wider transition-colors duration-100"
             >
               <Download className="w-3.5 h-3.5" />
               <span>XUẤT JSON</span>
@@ -440,14 +447,14 @@ export default function HomePage() {
             <button
               type="button"
               onClick={() => setIsBackupModalOpen(true)}
-              className="inline-flex items-center gap-2 px-4 py-2.5 border border-black bg-white text-black hover:bg-black hover:text-white font-sans font-semibold text-xs uppercase tracking-wider transition-colors duration-100 rounded-none shadow-none"
+              className="inline-flex items-center gap-2 px-4 py-2.5 border border-stone-300 bg-white text-stone-800 hover:bg-stone-100 font-sans font-semibold text-xs uppercase tracking-wider transition-colors duration-100"
             >
               <Upload className="w-3.5 h-3.5" />
               <span>NHẬP SAO LƯU</span>
             </button>
             <Link
               href="/settings"
-              className="inline-flex items-center gap-2 px-4 py-2.5 border border-black bg-black text-white hover:bg-white hover:text-black font-sans font-semibold text-xs uppercase tracking-wider transition-colors duration-100 rounded-none shadow-none"
+              className="inline-flex items-center gap-2 px-4 py-2.5 border border-stone-900 bg-stone-900 text-white hover:bg-stone-800 font-sans font-semibold text-xs uppercase tracking-wider transition-colors duration-100"
             >
               <Settings className="w-3.5 h-3.5" />
               <span>CÀI ĐẶT HỆ THỐNG</span>
@@ -467,14 +474,14 @@ export default function HomePage() {
             <button
               type="button"
               onClick={() => setIsBackupModalOpen(false)}
-              className="border border-black bg-white text-black hover:bg-black hover:text-white px-5 py-2 font-sans font-semibold text-xs uppercase tracking-wider transition-colors duration-100 rounded-none shadow-none"
+              className="border border-stone-300 bg-white text-stone-800 hover:bg-stone-100 px-5 py-2 font-sans font-semibold text-xs uppercase tracking-wider transition-colors duration-100"
             >
               HỦY
             </button>
             <button
               type="button"
               onClick={handleImportJson}
-              className="border border-black bg-black text-white hover:bg-white hover:text-black px-5 py-2 font-sans font-semibold text-xs uppercase tracking-wider transition-colors duration-100 rounded-none shadow-none"
+              className="border border-stone-900 bg-stone-900 text-white hover:bg-stone-800 px-5 py-2 font-sans font-semibold text-xs uppercase tracking-wider transition-colors duration-100"
             >
               ÁP DỤNG KHÔI PHỤC
             </button>
@@ -483,21 +490,21 @@ export default function HomePage() {
       >
         <div className="space-y-6">
           <div>
-            <label className="block font-sans text-xs uppercase tracking-wider text-black mb-2 font-bold">
+            <label className="block font-sans text-xs uppercase tracking-wider text-stone-900 mb-2 font-bold">
               01. TẢI TỆP JSON TỪ THIẾT BỊ:
             </label>
             <input
               type="file"
               accept=".json"
               onChange={handleFileUpload}
-              className="block w-full text-xs text-black font-sans file:mr-4 file:py-2.5 file:px-4 file:rounded-none file:border-2 file:border-black file:text-xs file:font-sans file:font-semibold file:uppercase file:tracking-wider file:bg-black file:text-white hover:file:bg-white hover:file:text-black file:transition-colors file:duration-100 cursor-pointer border border-black p-1"
+              className="block w-full text-xs text-stone-800 font-sans file:mr-4 file:py-2.5 file:px-4 file:border file:border-stone-300 file:text-xs file:font-sans file:font-semibold file:uppercase file:tracking-wider file:bg-stone-100 file:text-stone-800 hover:file:bg-stone-200 file:transition-colors file:duration-100 cursor-pointer border border-stone-300 p-1"
             />
           </div>
 
           <div>
             <label
               htmlFor={importJsonTextareaId}
-              className="block font-sans text-xs uppercase tracking-wider text-black mb-2 font-bold"
+              className="block font-sans text-xs uppercase tracking-wider text-stone-900 mb-2 font-bold"
             >
               02. HOẶC DÁN NỘI DUNG JSON:
             </label>
@@ -507,7 +514,7 @@ export default function HomePage() {
               value={importJsonText}
               onChange={(e) => setImportJsonText(e.target.value)}
               placeholder='{"cards": {...}, "stats": {...}}'
-              className="w-full p-3 font-mono text-xs rounded-none border-2 border-black bg-white text-black focus:outline-none focus:ring-0 placeholder:text-neutral-400"
+              className="w-full p-3 font-mono text-xs border border-stone-300 bg-white text-stone-900 focus:outline-none focus:ring-1 focus:ring-stone-400 placeholder:text-stone-400"
             />
           </div>
         </div>
