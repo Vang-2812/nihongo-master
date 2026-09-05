@@ -1,4 +1,4 @@
-﻿import React, { Suspense } from 'react';
+import React, { Suspense } from 'react';
 import type { Metadata } from 'next';
 import QuizContainer from './QuizContainer';
 
@@ -37,8 +37,8 @@ export default function QuizModeDynamicPage({
       fallback={
         <div className="min-h-[calc(100vh-4rem)] flex items-center justify-center">
           <div className="flex flex-col items-center gap-3">
-            <div className="w-10 h-10 border-4 border-indigo-600 border-t-transparent rounded-full animate-spin" />
-            <p className="text-sm font-medium text-slate-500">Đang chuẩn bị bộ câu hỏi...</p>
+            <div className="w-8 h-8 border-2 border-black border-t-transparent animate-spin" />
+            <p className="font-mono text-xs uppercase tracking-widest text-mutedForeground">[ PREPARING QUIZ ARCHIVE... ]</p>
           </div>
         </div>
       }
