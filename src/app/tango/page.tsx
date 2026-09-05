@@ -192,55 +192,55 @@ export default function TangoCatalogPage() {
       <div className="h-px bg-stone-300 w-full" />
 
       {/* Overall Stats Strip with Hairline Dividers */}
-      <div className="border-t border-b border-stone-200 divide-y sm:divide-y-0 sm:divide-x divide-stone-200 py-4 grid grid-cols-2 lg:grid-cols-4 bg-white">
+      <div className="border-t border-b border-stone-200 divide-y sm:divide-y-0 sm:divide-x divide-stone-200 py-2 sm:py-4 grid grid-cols-2 lg:grid-cols-4 bg-white">
         {/* Textbooks */}
-        <div className="p-4 flex flex-col justify-between">
-          <span className="font-mono text-[10px] uppercase tracking-widest text-stone-500">
+        <div className="p-3 sm:p-4 flex flex-col justify-between">
+          <span className="font-mono text-[9px] sm:text-[10px] uppercase tracking-wider sm:tracking-widest text-stone-500 truncate">
             GIÁO TRÌNH · 教科書
           </span>
-          <span className="font-serif text-4xl sm:text-5xl font-light text-stone-900 tracking-tight leading-none mt-3">
+          <span className="font-serif text-2xl sm:text-5xl font-light text-stone-900 tracking-tight leading-none mt-1.5 sm:mt-3">
             4 BỘ SÁCH
           </span>
         </div>
 
         {/* Total Lessons */}
-        <div className="p-4 flex flex-col justify-between">
-          <span className="font-mono text-[10px] uppercase tracking-widest text-stone-500">
+        <div className="p-3 sm:p-4 flex flex-col justify-between">
+          <span className="font-mono text-[9px] sm:text-[10px] uppercase tracking-wider sm:tracking-widest text-stone-500 truncate">
             TỔNG SỐ BÀI · 全課
           </span>
-          <span className="font-serif text-4xl sm:text-5xl font-light text-stone-900 tracking-tight leading-none mt-3">
+          <span className="font-serif text-2xl sm:text-5xl font-light text-stone-900 tracking-tight leading-none mt-1.5 sm:mt-3">
             {overallStats.totalLessonsCount} BÀI
           </span>
         </div>
 
         {/* Total Words */}
-        <div className="p-4 flex flex-col justify-between">
-          <span className="font-mono text-[10px] uppercase tracking-widest text-stone-500">
+        <div className="p-3 sm:p-4 flex flex-col justify-between">
+          <span className="font-mono text-[9px] sm:text-[10px] uppercase tracking-wider sm:tracking-widest text-stone-500 truncate">
             TỔNG TỪ VỰNG · 総語彙
           </span>
-          <span className="font-serif text-4xl sm:text-5xl font-light text-stone-900 tracking-tight leading-none mt-3">
+          <span className="font-serif text-2xl sm:text-5xl font-light text-stone-900 tracking-tight leading-none mt-1.5 sm:mt-3">
             {overallStats.totalVocab.toLocaleString()}
           </span>
         </div>
 
         {/* Mastered */}
-        <div className="p-4 flex flex-col justify-between">
-          <div className="flex items-baseline justify-between">
-            <span className="font-mono text-[10px] uppercase tracking-widest text-stone-500">
+        <div className="p-3 sm:p-4 flex flex-col justify-between">
+          <div className="flex items-baseline justify-between gap-1">
+            <span className="font-mono text-[9px] sm:text-[10px] uppercase tracking-wider sm:tracking-widest text-stone-500 truncate">
               ĐÃ THUỘC · 習得済み
             </span>
-            <span className="font-mono text-xs font-bold text-emerald-700">
+            <span className="font-mono text-[11px] sm:text-xs font-bold text-emerald-700">
               {overallStats.progressPercent}%
             </span>
           </div>
-          <span className="font-serif text-4xl sm:text-5xl font-light text-emerald-700 tracking-tight leading-none mt-3">
+          <span className="font-serif text-2xl sm:text-5xl font-light text-emerald-700 tracking-tight leading-none mt-1.5 sm:mt-3">
             {overallStats.totalKnown.toLocaleString()}
           </span>
         </div>
       </div>
 
-      {/* Textbook Monograph Cards (High-fashion book covers) */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+      {/* Textbook Monograph Cards (Responsive 2x2 grid on mobile, 4 columns on desktop) */}
+      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-6">
         {textbooks.map((book, idx) => {
           const isSelected = selectedBook === book.id;
           const bookLessons = lessonsWithStats.filter((l) => l.bookId === book.id);
@@ -256,48 +256,83 @@ export default function TangoCatalogPage() {
               key={book.id}
               type="button"
               onClick={() => setSelectedBook(isSelected ? 'all' : book.id)}
-              className={`text-left p-6 sm:p-7 flex flex-col justify-between transition-all duration-150 rounded-none shadow-none group relative cursor-pointer ${
+              className={`text-left p-3 sm:p-7 flex flex-col justify-between transition-all duration-150 rounded-none shadow-none group relative cursor-pointer ${
                 isSelected
-                  ? 'border-2 border-stone-800 bg-stone-50'
-                  : 'border border-stone-200 bg-white hover:border-stone-400 hover:shadow-xs'
+                  ? 'border-2 border-stone-900 bg-stone-50/80'
+                  : 'border border-stone-200 bg-white hover:border-stone-400 hover:shadow-xs active:bg-stone-50'
               }`}
             >
               {/* Monograph Top: Book Volume Index & Level Badge */}
-              <div className="flex items-center justify-between gap-2">
+              <div className="flex items-center justify-between gap-1.5 w-full">
                 <span
-                  className={`font-mono text-xs uppercase tracking-widest border px-2 py-0.5 ${
+                  className={`font-mono text-[10px] sm:text-xs font-bold uppercase tracking-wider sm:tracking-widest border px-1.5 sm:px-2 py-0.5 shrink-0 ${
                     JLPT_BADGE_STYLES[book.level] || 'bg-stone-100 text-stone-700 border-stone-200'
                   }`}
                 >
                   {book.level}
                 </span>
-                <span className="font-mono text-[11px] uppercase tracking-wider text-stone-500">
+                {/* On mobile: show progress percentage at top right */}
+                <span className="sm:hidden font-mono text-[10px] font-bold text-stone-600">
+                  {bookPercent}%
+                </span>
+                {/* On desktop: show VOL. 0X */}
+                <span className="hidden sm:inline-flex font-mono text-[11px] uppercase tracking-wider text-stone-500">
                   VOL. 0{idx + 1}
                 </span>
               </div>
 
-              {/* Monograph Center: Giant Serif Number & Editorial Book Title */}
-              <div className="my-8">
-                <span className="font-serif text-6xl sm:text-7xl font-light leading-none block select-none mb-3 text-stone-900">
+              {/* Monograph Center: Large Number (desktop only) & Book Title */}
+              <div className="my-2.5 sm:my-8 flex-1">
+                {/* Giant number: hidden on mobile */}
+                <span className="hidden sm:block font-serif text-6xl sm:text-7xl font-light leading-none select-none mb-3 text-stone-900">
                   0{idx + 1}
                 </span>
-                <h2 className="font-serif text-xl sm:text-2xl font-bold uppercase tracking-tight leading-snug text-stone-900">
+                {/* Mobile Title: short, punchy */}
+                <h2 className="sm:hidden font-serif text-sm font-bold tracking-tight leading-tight text-stone-900 line-clamp-2">
+                  {book.shortTitle}
+                </h2>
+                {/* Desktop Title: full book title */}
+                <h2 className="hidden sm:block font-serif text-xl sm:text-2xl font-bold uppercase tracking-tight leading-snug text-stone-900">
                   {book.title}
                 </h2>
-                <p className="font-sans text-xs sm:text-sm mt-2 line-clamp-2 text-stone-600">
+                {/* Book description: hidden on mobile */}
+                <p className="hidden sm:block font-sans text-xs sm:text-sm mt-2 line-clamp-2 text-stone-600">
                   {book.description}
                 </p>
               </div>
 
-              {/* Monograph Bottom: Metadata & Monospace Progress */}
-              <div className="pt-3 border-t border-stone-200 font-mono text-xs uppercase tracking-wider space-y-2">
+              {/* Monograph Bottom: Metadata & Progress */}
+              {/* Mobile View */}
+              <div className="sm:hidden pt-2 border-t border-stone-200 w-full font-mono text-[10px]">
+                <div className="flex items-center justify-between text-stone-500">
+                  <span>{book.lessonCount} BÀI</span>
+                  <span>{bookKnownVocab}/{bookTotalVocab} TỪ</span>
+                </div>
+                {/* Mini Hairline Progress Bar */}
+                <div className="w-full bg-stone-100 h-1 mt-1.5 overflow-hidden border border-stone-200">
+                  <div
+                    className="bg-stone-800 h-full transition-all duration-300"
+                    style={{ width: `${bookPercent}%` }}
+                  />
+                </div>
+                {isSelected && (
+                  <div className="text-[9px] font-sans font-bold text-stone-800 uppercase text-center mt-1">
+                    ✓ ĐANG LỌC
+                  </div>
+                )}
+              </div>
+
+              {/* Desktop View */}
+              <div className="hidden sm:block pt-3 border-t border-stone-200 font-mono text-xs uppercase tracking-wider space-y-2 w-full">
                 <div className="flex items-center justify-between text-[11px] text-stone-600">
                   <span>{book.lessonCount} BÀI HỌC</span>
                   <span>{book.vocabCount} TỪ VỰNG</span>
                 </div>
                 <div className="flex items-center justify-between font-bold text-xs text-stone-600">
                   <span>TIẾN ĐỘ</span>
-                  <span className="text-stone-900 font-mono">{bookKnownVocab}/{bookTotalVocab} · {bookPercent}%</span>
+                  <span className="text-stone-900 font-mono">
+                    {bookKnownVocab}/{bookTotalVocab} · {bookPercent}%
+                  </span>
                 </div>
                 {isSelected && (
                   <div className="font-sans font-medium text-[10px] tracking-wider uppercase text-center pt-1 border-t border-stone-300 text-stone-800">
