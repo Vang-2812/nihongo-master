@@ -16,44 +16,50 @@ if (!fs.existsSync(iconsDir)) {
 const standardIconSvg = `
 <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bgGrad" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#4f46e5" />
-      <stop offset="50%" stop-color="#6366f1" />
-      <stop offset="100%" stop-color="#7c3aed" />
+    <!-- Deep Warm Sumi Ink Canvas -->
+    <linearGradient id="sumiBg" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1C1917" />
+      <stop offset="100%" stop-color="#141210" />
     </linearGradient>
-    <linearGradient id="sunGrad" x1="160" y1="130" x2="352" y2="382" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#f43f5e" />
-      <stop offset="100%" stop-color="#fb7185" />
-    </linearGradient>
-    <linearGradient id="kanjiGrad" x1="140" y1="120" x2="372" y2="392" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#ffffff" />
-      <stop offset="100%" stop-color="#f8fafc" />
-    </linearGradient>
-    <filter id="shadow" x="100" y="90" width="312" height="340" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#1e1b4b" flood-opacity="0.45" />
-    </filter>
+
+    <!-- Japanese Vermilion Red Sun Disc (Aka / Hinomaru) -->
+    <radialGradient id="sunGrad" cx="256" cy="256" r="140" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#DC2626" />
+      <stop offset="85%" stop-color="#B91C1C" />
+      <stop offset="100%" stop-color="#991B1B" />
+    </radialGradient>
   </defs>
 
-  <!-- Base rounded container -->
-  <rect width="512" height="512" rx="120" fill="url(#bgGrad)" />
-  <rect x="4" y="4" width="504" height="504" rx="116" stroke="rgba(255,255,255,0.2)" stroke-width="4" />
+  <!-- Base container: Squircle for standard app icon & preview -->
+  <rect width="512" height="512" rx="112" fill="url(#sumiBg)" />
+  <rect x="3" y="3" width="506" height="506" rx="109" stroke="#44403C" stroke-width="2" stroke-opacity="0.6" />
 
-  <!-- Subtle Japanese Sun motif behind character -->
-  <circle cx="256" cy="256" r="115" fill="url(#sunGrad)" opacity="0.88" />
-  <circle cx="256" cy="256" r="130" stroke="rgba(255,255,255,0.15)" stroke-width="3" stroke-dasharray="8 8" />
+  <!-- Traditional Hinomaru Sun Disc -->
+  <circle cx="256" cy="256" r="130" fill="url(#sunGrad)" />
 
-  <!-- Stylized Kanji '日' (Nihon / Sun / Japan) -->
-  <g filter="url(#shadow)">
-    <!-- Outer rectangle frame of '日' -->
-    <rect x="166" y="146" width="180" height="220" rx="16" fill="none" stroke="url(#kanjiGrad)" stroke-width="26" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Subtle Zen Calligraphy Enso ring / Hairline alignment circle -->
+  <circle cx="256" cy="256" r="152" stroke="#E7E5E4" stroke-width="1.5" stroke-opacity="0.25" stroke-dasharray="4 6" />
+
+  <!-- Authentic Kanji '日' in Washi Cream (#FAFAF9) -->
+  <g stroke="#FAFAF9" stroke-linecap="square" stroke-linejoin="miter">
+    <!-- Left vertical upright -->
+    <line x1="184" y1="156" x2="184" y2="356" stroke-width="22" />
+
+    <!-- Top horizontal & Right vertical upright -->
+    <path d="M 184 167 L 328 167 L 328 356" fill="none" stroke-width="22" />
+
     <!-- Middle crossbar -->
-    <line x1="166" y1="256" x2="346" y2="256" stroke="url(#kanjiGrad)" stroke-width="24" stroke-linecap="round" />
-    <!-- Bottom crossbar accent -->
-    <line x1="150" y1="366" x2="362" y2="366" stroke="url(#kanjiGrad)" stroke-width="12" stroke-linecap="round" opacity="0.4" />
+    <line x1="184" y1="256" x2="328" y2="256" stroke-width="20" />
+
+    <!-- Bottom crossbar -->
+    <line x1="184" y1="345" x2="328" y2="345" stroke-width="20" />
   </g>
 
-  <!-- Modern Star / Sparkle Accent -->
-  <path d="M375 130 C375 145 385 155 400 155 C385 155 375 165 375 180 C375 165 365 155 350 155 C365 155 375 145 375 130 Z" fill="#fde047" opacity="0.95" />
+  <!-- Traditional Japanese Hanko Seal (印鑑) in bottom right corner -->
+  <g transform="translate(342, 342)">
+    <rect x="0" y="0" width="46" height="46" rx="4" fill="#B91C1C" stroke="#FAFAF9" stroke-width="1.5" />
+    <text x="23" y="32" font-family="'Playfair Display', 'Hiragino Mincho ProN', 'Source Serif 4', serif" font-size="24" font-weight="900" fill="#FAFAF9" text-anchor="middle">本</text>
+  </g>
 </svg>
 `;
 
@@ -61,41 +67,51 @@ const standardIconSvg = `
 const maskableIconSvg = `
 <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bgGrad" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#4f46e5" />
-      <stop offset="50%" stop-color="#6366f1" />
-      <stop offset="100%" stop-color="#7c3aed" />
+    <!-- Deep Warm Sumi Ink Canvas -->
+    <linearGradient id="sumiBg" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1C1917" />
+      <stop offset="100%" stop-color="#141210" />
     </linearGradient>
-    <linearGradient id="sunGrad" x1="160" y1="130" x2="352" y2="382" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#f43f5e" />
-      <stop offset="100%" stop-color="#fb7185" />
-    </linearGradient>
-    <linearGradient id="kanjiGrad" x1="140" y1="120" x2="372" y2="392" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#ffffff" />
-      <stop offset="100%" stop-color="#f8fafc" />
-    </linearGradient>
-    <filter id="shadow" x="100" y="90" width="312" height="340" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#1e1b4b" flood-opacity="0.45" />
-    </filter>
+
+    <!-- Japanese Vermilion Red Sun Disc (Aka / Hinomaru) -->
+    <radialGradient id="sunGrad" cx="256" cy="256" r="140" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#DC2626" />
+      <stop offset="85%" stop-color="#B91C1C" />
+      <stop offset="100%" stop-color="#991B1B" />
+    </radialGradient>
   </defs>
 
   <!-- Full bleed background for Android dynamic masking -->
-  <rect width="512" height="512" fill="url(#bgGrad)" />
+  <rect width="512" height="512" fill="url(#sumiBg)" />
 
-  <!-- Centered graphics scaled safely inside the 60% safe zone (center 360x360) -->
-  <g transform="translate(256 256) scale(0.85) translate(-256 -256)">
-    <!-- Sun motif -->
-    <circle cx="256" cy="256" r="115" fill="url(#sunGrad)" opacity="0.9" />
-    <circle cx="256" cy="256" r="130" stroke="rgba(255,255,255,0.2)" stroke-width="3" stroke-dasharray="8 8" />
+  <!-- Centered graphics scaled safely inside the safe zone -->
+  <g transform="translate(256 256) scale(0.82) translate(-256 -256)">
+    <!-- Traditional Hinomaru Sun Disc -->
+    <circle cx="256" cy="256" r="130" fill="url(#sunGrad)" />
 
-    <!-- Kanji '日' -->
-    <g filter="url(#shadow)">
-      <rect x="166" y="146" width="180" height="220" rx="16" fill="none" stroke="url(#kanjiGrad)" stroke-width="26" stroke-linecap="round" stroke-linejoin="round" />
-      <line x1="166" y1="256" x2="346" y2="256" stroke="url(#kanjiGrad)" stroke-width="24" stroke-linecap="round" />
+    <!-- Subtle Zen Calligraphy Enso ring -->
+    <circle cx="256" cy="256" r="152" stroke="#E7E5E4" stroke-width="1.5" stroke-opacity="0.25" stroke-dasharray="4 6" />
+
+    <!-- Authentic Kanji '日' in Washi Cream (#FAFAF9) -->
+    <g stroke="#FAFAF9" stroke-linecap="square" stroke-linejoin="miter">
+      <!-- Left vertical upright -->
+      <line x1="184" y1="156" x2="184" y2="356" stroke-width="22" />
+
+      <!-- Top horizontal & Right vertical upright -->
+      <path d="M 184 167 L 328 167 L 328 356" fill="none" stroke-width="22" />
+
+      <!-- Middle crossbar -->
+      <line x1="184" y1="256" x2="328" y2="256" stroke-width="20" />
+
+      <!-- Bottom crossbar -->
+      <line x1="184" y1="345" x2="328" y2="345" stroke-width="20" />
     </g>
 
-    <!-- Sparkle -->
-    <path d="M375 130 C375 145 385 155 400 155 C385 155 375 165 375 180 C375 165 365 155 350 155 C365 155 375 145 375 130 Z" fill="#fde047" />
+    <!-- Traditional Japanese Hanko Seal (印鑑) -->
+    <g transform="translate(342, 342)">
+      <rect x="0" y="0" width="46" height="46" rx="4" fill="#B91C1C" stroke="#FAFAF9" stroke-width="1.5" />
+      <text x="23" y="32" font-family="'Playfair Display', 'Hiragino Mincho ProN', 'Source Serif 4', serif" font-size="24" font-weight="900" fill="#FAFAF9" text-anchor="middle">本</text>
+    </g>
   </g>
 </svg>
 `;

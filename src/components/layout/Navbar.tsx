@@ -87,14 +87,23 @@ export const Navbar: React.FC = () => {
             <div className="flex items-center gap-3">
               <Link
                 href="/"
-                className="flex items-center group focus:outline-none focus:ring-2 focus:ring-stone-400"
+                className="flex items-center gap-2.5 group focus:outline-none focus:ring-2 focus:ring-stone-400"
               >
-                <span className="font-serif text-stone-900 font-extrabold tracking-tight text-xl sm:text-2xl">
-                  NIHONGO MASTER
-                </span>
-                <span className="bg-stone-100 text-stone-700 border border-stone-300 font-mono text-[10px] tracking-widest uppercase px-1.5 py-0.5 ml-2">
-                  ARCHIVE
-                </span>
+                <img
+                  src="/favicon.svg"
+                  alt="Nihongo Master Logo"
+                  width={32}
+                  height={32}
+                  className="w-8 h-8 rounded-none border border-stone-800 shadow-xs shrink-0 object-contain group-hover:border-stone-600 transition-colors"
+                />
+                <div className="flex items-center">
+                  <span className="font-serif text-stone-900 font-extrabold tracking-tight text-xl sm:text-2xl">
+                    NIHONGO MASTER
+                  </span>
+                  <span className="bg-stone-100 text-stone-700 border border-stone-300 font-mono text-[10px] tracking-widest uppercase px-1.5 py-0.5 ml-2">
+                    ARCHIVE
+                  </span>
+                </div>
               </Link>
             </div>
 
