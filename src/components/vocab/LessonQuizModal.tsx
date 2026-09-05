@@ -121,17 +121,17 @@ export const LessonQuizModal: React.FC<LessonQuizModalProps> = ({
     }`;
 
     return (
-      <div className="fixed inset-0 z-50 bg-slate-950/95 backdrop-blur-md overflow-y-auto flex flex-col">
+      <div className="fixed inset-0 z-50 bg-[#FAFAF9] overflow-y-auto flex flex-col">
         {/* Sticky top control bar */}
-        <div className="sticky top-0 z-40 bg-slate-900/90 border-b border-slate-800 px-3 sm:px-6 py-2.5 sm:py-3 flex items-center justify-between">
+        <div className="sticky top-0 z-40 bg-white border-b border-stone-200 px-4 sm:px-6 py-2.5 flex items-center justify-between">
           <div className="flex items-center gap-2 sm:gap-3 min-w-0 pr-2">
-            <span className="px-2 py-0.5 rounded-md text-[11px] sm:text-xs font-bold bg-indigo-950 text-indigo-300 border border-indigo-800 shrink-0">
+            <span className="px-2 py-0.5 text-xs font-mono font-medium bg-stone-100 text-stone-700 border border-stone-300 shrink-0 rounded-none">
               {lesson.bookTitle}
             </span>
-            <span className="text-xs sm:text-base font-semibold text-white truncate max-w-[160px] sm:max-w-md">
+            <span className="text-xs sm:text-sm font-serif font-bold text-stone-900 truncate max-w-[160px] sm:max-w-md">
               {lesson.title}
             </span>
-            <span className="hidden sm:inline-flex text-xs px-2 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700">
+            <span className="hidden sm:inline-flex text-xs font-mono px-2 py-0.5 bg-stone-50 text-stone-500 border border-stone-200 rounded-none">
               {selectedScope === 'selected'
                 ? `Đang luyện ${quizItems.length} từ chọn lọc`
                 : `Đang luyện toàn bộ ${quizItems.length} từ`}
@@ -141,7 +141,7 @@ export const LessonQuizModal: React.FC<LessonQuizModalProps> = ({
           <button
             type="button"
             onClick={() => setIsPlaying(false)}
-            className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 border border-slate-700 transition-all active:scale-95 shrink-0"
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-mono uppercase tracking-wider text-stone-700 hover:text-stone-900 bg-white hover:bg-stone-100 border border-stone-300 transition-colors rounded-none shrink-0"
           >
             <X className="w-3.5 h-3.5" />
             <span className="hidden sm:inline">Thoát ra bài học</span>
@@ -150,7 +150,7 @@ export const LessonQuizModal: React.FC<LessonQuizModalProps> = ({
         </div>
 
         {/* Embedded Quiz Component */}
-        <div className="flex-1 max-w-4xl w-full mx-auto p-3 sm:p-6 flex flex-col justify-center">
+        <div className="flex-1 max-w-4xl w-full mx-auto p-4 sm:p-6 flex flex-col justify-center">
           {selectedMode === 'builder' && (
             <WordBuilderQuiz
               items={quizItems}
@@ -195,50 +195,40 @@ export const LessonQuizModal: React.FC<LessonQuizModalProps> = ({
   const modeCards = [
     {
       id: 'builder' as LessonQuizMode,
-      title: 'Ghép Ký Tự (Word Builder)',
-      badge: '⭐ Độc Quyền',
-      badgeColor: 'bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300 border-amber-300',
-      description: 'Luyện phản xạ chính tả: bấm các ô ký tự moras để ghép thành từ đúng.',
+      title: 'Ghép Ký Tự',
+      badge: 'BUILDER',
+      description: 'Ghép ô moras thành từ',
       icon: Sparkles,
-      iconColor: 'text-amber-500 bg-amber-50 dark:bg-amber-950/60',
-      accentColor: 'border-amber-500 ring-amber-500',
     },
     {
       id: 'choice' as LessonQuizMode,
-      title: 'Trắc Nghiệm 4 Đáp Án',
-      badge: 'Tốc độ',
-      badgeColor: 'bg-indigo-100 text-indigo-800 dark:bg-indigo-950 dark:text-indigo-300 border-indigo-300',
-      description: 'Nhìn từ tiếng Nhật và chọn nhanh 1 trong 4 đáp án nghĩa tiếng Việt.',
+      title: 'Trắc Nghiệm',
+      badge: '4 ĐÁP ÁN',
+      description: 'Chọn 1 trong 4 đáp án',
       icon: CheckCircle2,
-      iconColor: 'text-indigo-500 bg-indigo-50 dark:bg-indigo-950/60',
-      accentColor: 'border-indigo-600 ring-indigo-600',
     },
     {
       id: 'matching' as LessonQuizMode,
-      title: 'Ghép Thẻ (Matching Game)',
-      badge: 'Ghi nhớ',
-      badgeColor: 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300 border-emerald-300',
-      description: 'Nối các cặp thẻ từ vựng và nghĩa tiếng Việt tương ứng theo thời gian kỷ lục.',
+      title: 'Ghép Thẻ',
+      badge: 'MATCH',
+      description: 'Nối cặp từ & ý nghĩa',
       icon: Dices,
-      iconColor: 'text-emerald-500 bg-emerald-50 dark:bg-emerald-950/60',
-      accentColor: 'border-emerald-600 ring-emerald-600',
     },
   ];
 
   return (
-    <div className="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-end sm:items-center justify-center p-0 sm:p-4 overflow-hidden animate-in fade-in duration-200">
-      <div className="bg-white dark:bg-slate-900 rounded-t-3xl sm:rounded-3xl border border-slate-200 dark:border-slate-800 shadow-2xl max-w-2xl w-full flex flex-col max-h-[92vh] sm:max-h-[88vh] overflow-hidden animate-in slide-in-from-bottom sm:slide-in-from-bottom-0 sm:zoom-in-95 duration-200">
-        {/* Mobile pull indicator bar */}
-        <div className="w-12 h-1 rounded-full bg-slate-300 dark:bg-slate-700 mx-auto mt-2.5 sm:hidden shrink-0" />
-
+    <div className="fixed inset-0 z-50 bg-stone-900/60 backdrop-blur-xs flex items-center justify-center p-3 sm:p-4 overflow-hidden animate-in fade-in duration-150">
+      <div className="bg-white border border-stone-300 rounded-none shadow-xl max-w-xl w-full flex flex-col max-h-[92vh] sm:max-h-[88vh] overflow-hidden">
         {/* Modal Sticky Header */}
-        <div className="px-4 sm:px-6 py-3 sm:py-4 border-b border-slate-100 dark:border-slate-800 flex items-center justify-between shrink-0 bg-white/95 dark:bg-slate-900/95 backdrop-blur-sm">
+        <div className="px-5 py-3.5 border-b border-stone-200 flex items-center justify-between shrink-0 bg-white">
           <div className="min-w-0 pr-2">
-            <div className="flex items-center gap-1.5 text-[11px] font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider">
+            <div className="flex items-center gap-1.5 text-[11px] font-mono uppercase tracking-widest text-stone-500 mb-0.5">
               <Dices className="w-3.5 h-3.5 shrink-0" />
-              <span className="truncate">Luyện tập Quizlet</span>
+              <span>LUYỆN TẬP QUIZLET</span>
+              <span>·</span>
+              <span className="text-stone-700 font-medium truncate">{lesson.bookTitle}</span>
             </div>
-            <h2 className="text-base sm:text-xl font-bold text-slate-900 dark:text-white truncate">
+            <h2 className="text-base sm:text-lg font-serif font-bold text-stone-900 truncate">
               {lesson.title}
             </h2>
           </div>
@@ -246,49 +236,40 @@ export const LessonQuizModal: React.FC<LessonQuizModalProps> = ({
           <button
             type="button"
             onClick={onClose}
-            className="p-2 rounded-xl text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors shrink-0"
+            className="border border-stone-300 text-stone-600 hover:text-stone-900 hover:bg-stone-100 px-2.5 py-1 font-mono text-xs transition-colors rounded-none shrink-0"
             aria-label="Đóng cửa sổ"
           >
-            <X className="w-5 h-5" />
+            ✕
           </button>
         </div>
 
         {/* Scrollable Configuration Body */}
-        <div className="p-4 sm:p-6 overflow-y-auto flex-1 space-y-4 sm:space-y-5 overscroll-contain">
+        <div className="p-4 sm:p-5 overflow-y-auto flex-1 space-y-3.5 overscroll-contain">
           {/* Step 1: Chọn Phạm vi từ vựng */}
           <div>
-            <label className="block text-[11px] sm:text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-2">
-              1. Chọn phạm vi từ vựng:
+            <label className="block text-[11px] font-mono font-bold uppercase tracking-wider text-stone-500 mb-1.5">
+              1. Phạm vi từ vựng:
             </label>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3">
+            <div className="grid grid-cols-2 gap-2">
               {/* Option A: Full Lesson */}
               <button
                 type="button"
                 onClick={() => setSelectedScope('all')}
-                className={`flex items-center sm:items-start gap-2.5 sm:gap-3 p-3 sm:p-3.5 rounded-2xl border text-left transition-all ${
+                className={`flex items-center justify-between p-2.5 border text-left transition-all rounded-none ${
                   selectedScope === 'all'
-                    ? 'border-indigo-600 ring-2 ring-indigo-600/20 bg-indigo-50/50 dark:bg-indigo-950/30'
-                    : 'border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 bg-white dark:bg-slate-900/60'
+                    ? 'border-stone-900 bg-stone-100 text-stone-900 font-medium shadow-xs'
+                    : 'border-stone-300 bg-white hover:border-stone-400 text-stone-700'
                 }`}
               >
-                <div
-                  className={`w-4 h-4 rounded-full border flex items-center justify-center shrink-0 ${
-                    selectedScope === 'all'
-                      ? 'border-indigo-600 bg-indigo-600 text-white'
-                      : 'border-slate-300 dark:border-slate-600'
-                  }`}
-                >
-                  {selectedScope === 'all' && <div className="w-1.5 h-1.5 rounded-full bg-white" />}
+                <div className="flex items-center gap-2 min-w-0">
+                  <BookOpen className="w-4 h-4 text-stone-600 shrink-0" />
+                  <span className="font-sans text-xs sm:text-sm font-semibold truncate">
+                    Toàn bài ({lesson.items.length} từ)
+                  </span>
                 </div>
-                <div className="min-w-0">
-                  <div className="font-bold text-xs sm:text-sm text-slate-900 dark:text-white flex items-center gap-1.5">
-                    <BookOpen className="w-3.5 h-3.5 text-indigo-600 dark:text-indigo-400 shrink-0" />
-                    <span className="truncate">Toàn bài ({lesson.items.length} từ)</span>
-                  </div>
-                  <p className="text-[11px] text-slate-500 dark:text-slate-400 hidden sm:block mt-0.5">
-                    Luyện tập toàn bộ {lesson.items.length} từ trong bài học này.
-                  </p>
-                </div>
+                {selectedScope === 'all' && (
+                  <Check className="w-3.5 h-3.5 stroke-[2.5] text-stone-900 shrink-0" />
+                )}
               </button>
 
               {/* Option B: Selected Words */}
@@ -296,46 +277,33 @@ export const LessonQuizModal: React.FC<LessonQuizModalProps> = ({
                 type="button"
                 disabled={isSelectedScopeDisabled}
                 onClick={() => setSelectedScope('selected')}
-                className={`flex items-center sm:items-start gap-2.5 sm:gap-3 p-3 sm:p-3.5 rounded-2xl border text-left transition-all ${
+                className={`flex items-center justify-between p-2.5 border text-left transition-all rounded-none ${
                   isSelectedScopeDisabled
-                    ? 'opacity-60 cursor-not-allowed border-dashed border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/20'
+                    ? 'opacity-50 cursor-not-allowed border-dashed border-stone-200 bg-stone-50 text-stone-400'
                     : selectedScope === 'selected'
-                    ? 'border-indigo-600 ring-2 ring-indigo-600/20 bg-indigo-50/50 dark:bg-indigo-950/30'
-                    : 'border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 bg-white dark:bg-slate-900/60'
+                    ? 'border-stone-900 bg-stone-100 text-stone-900 font-medium shadow-xs'
+                    : 'border-stone-300 bg-white hover:border-stone-400 text-stone-700'
                 }`}
               >
-                <div
-                  className={`w-4 h-4 rounded-full border flex items-center justify-center shrink-0 ${
-                    selectedScope === 'selected' && !isSelectedScopeDisabled
-                      ? 'border-indigo-600 bg-indigo-600 text-white'
-                      : 'border-slate-300 dark:border-slate-600'
-                  }`}
-                >
-                  {selectedScope === 'selected' && !isSelectedScopeDisabled && (
-                    <div className="w-1.5 h-1.5 rounded-full bg-white" />
-                  )}
+                <div className="flex items-center gap-2 min-w-0">
+                  <CheckSquare className="w-4 h-4 text-stone-600 shrink-0" />
+                  <span className="font-sans text-xs sm:text-sm font-semibold truncate">
+                    Từ chỉ định ({selectedItemIds.size} từ)
+                  </span>
                 </div>
-                <div className="min-w-0">
-                  <div className="font-bold text-xs sm:text-sm text-slate-900 dark:text-white flex items-center gap-1.5">
-                    <CheckSquare className="w-3.5 h-3.5 text-indigo-600 dark:text-indigo-400 shrink-0" />
-                    <span className="truncate">Từ chỉ định ({selectedItemIds.size} từ)</span>
-                  </div>
-                  <p className="text-[11px] text-slate-500 dark:text-slate-400 hidden sm:block mt-0.5">
-                    {isSelectedScopeDisabled
-                      ? `(Chọn ít nhất 4 từ trong danh sách)`
-                      : `Chỉ luyện ${selectedItemIds.size} từ bạn đã tick chọn.`}
-                  </p>
-                </div>
+                {selectedScope === 'selected' && !isSelectedScopeDisabled && (
+                  <Check className="w-3.5 h-3.5 stroke-[2.5] text-stone-900 shrink-0" />
+                )}
               </button>
             </div>
           </div>
 
           {/* Step 2: Chọn Chế độ Quizlet */}
           <div>
-            <label className="block text-[11px] sm:text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-2">
-              2. Chọn chế độ Quizlet:
+            <label className="block text-[11px] font-mono font-bold uppercase tracking-wider text-stone-500 mb-1.5">
+              2. Chế độ luyện tập:
             </label>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-3">
+            <div className="grid grid-cols-3 gap-2">
               {modeCards.map((mode) => {
                 const Icon = mode.icon;
                 const isSelected = selectedMode === mode.id;
@@ -345,253 +313,220 @@ export const LessonQuizModal: React.FC<LessonQuizModalProps> = ({
                     key={mode.id}
                     type="button"
                     onClick={() => setSelectedMode(mode.id)}
-                    className={`p-3 sm:p-4 rounded-2xl border text-left transition-all relative flex items-center sm:flex-col sm:items-start justify-between gap-3 ${
+                    className={`p-2.5 border text-left transition-all rounded-none flex flex-col justify-between min-h-[64px] ${
                       isSelected
-                        ? `border-2 ${mode.accentColor} bg-indigo-50/20 dark:bg-slate-800 shadow-sm ring-1 ring-indigo-500/20`
-                        : 'border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 bg-white dark:bg-slate-900/60'
+                        ? 'border-stone-900 bg-stone-100/80 text-stone-900 shadow-xs ring-1 ring-stone-900'
+                        : 'border-stone-300 bg-white hover:border-stone-400 text-stone-700'
                     }`}
                   >
-                    <div className="flex items-center sm:block gap-2.5 min-w-0 flex-1">
-                      <div className="flex items-center justify-between sm:mb-2 shrink-0">
-                        <div className={`p-2 rounded-xl ${mode.iconColor}`}>
-                          <Icon className="w-4 h-4" />
-                        </div>
-                        <span className={`hidden sm:inline-block text-[10px] font-bold px-1.5 py-0.5 rounded border ${mode.badgeColor}`}>
-                          {mode.badge}
-                        </span>
+                    <div className="flex items-center justify-between gap-1 mb-1">
+                      <div className="flex items-center gap-1.5 min-w-0">
+                        <Icon className="w-3.5 h-3.5 text-stone-700 shrink-0" />
+                        <h3 className="font-sans font-bold text-xs sm:text-sm truncate">
+                          {mode.title}
+                        </h3>
                       </div>
-                      <div className="min-w-0">
-                        <div className="flex items-center gap-1.5">
-                          <h3 className="font-bold text-xs sm:text-sm text-slate-900 dark:text-white leading-tight truncate">
-                            {mode.title}
-                          </h3>
-                          <span className={`sm:hidden text-[9px] font-bold px-1.5 py-0.2 rounded border shrink-0 ${mode.badgeColor}`}>
-                            {mode.badge}
-                          </span>
-                        </div>
-                        <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 line-clamp-1 sm:line-clamp-2">
-                          {mode.description}
-                        </p>
-                      </div>
+                      {isSelected && (
+                        <Check className="w-3.5 h-3.5 stroke-[2.5] text-stone-900 shrink-0" />
+                      )}
                     </div>
-
-                    {isSelected && (
-                      <Check className="w-4 h-4 text-indigo-600 dark:text-indigo-400 stroke-[3] sm:hidden shrink-0" />
-                    )}
+                    <p className="font-mono text-[11px] text-stone-500 truncate">
+                      {mode.description}
+                    </p>
                   </button>
                 );
               })}
             </div>
           </div>
 
-          {/* Step 3: Tùy chọn học tập (Chiều câu hỏi, Trộn câu & Phiên âm Kana) */}
-          <div className="space-y-3 p-3.5 sm:p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-700/60">
+          {/* Step 3: Tùy chọn học tập (Chiều câu hỏi, Trộn câu, Kana, Phát âm & Số lượng) */}
+          <div className="p-3 bg-stone-50 border border-stone-200 rounded-none space-y-2.5">
+            {/* Chiều câu hỏi / đáp án */}
             <div>
-              <label className="block text-[11px] sm:text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">
-                3. Chiều câu hỏi / đáp án:
+              <label className="block text-[10px] font-mono font-bold uppercase tracking-wider text-stone-500 mb-1">
+                Chiều câu hỏi:
               </label>
-              <div className="grid grid-cols-3 gap-1.5 sm:gap-2">
-                <button
-                  type="button"
-                  onClick={() => setDirection('ja_to_vi')}
-                  className={`px-2 sm:px-3 py-2 rounded-xl text-xs font-bold border text-center transition-all flex items-center justify-center gap-1 ${
-                    direction === 'ja_to_vi'
-                      ? 'bg-indigo-600 text-white border-indigo-600 shadow-xs'
-                      : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:bg-slate-100'
-                  }`}
-                >
-                  <span className="truncate">Nhật → Việt</span>
-                  {direction === 'ja_to_vi' && <Check className="w-3.5 h-3.5 stroke-[3] shrink-0" />}
-                </button>
-
-                <button
-                  type="button"
-                  onClick={() => setDirection('vi_to_ja')}
-                  className={`px-2 sm:px-3 py-2 rounded-xl text-xs font-bold border text-center transition-all flex items-center justify-center gap-1 ${
-                    direction === 'vi_to_ja'
-                      ? 'bg-indigo-600 text-white border-indigo-600 shadow-xs'
-                      : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:bg-slate-100'
-                  }`}
-                >
-                  <span className="truncate">Việt → Nhật</span>
-                  {direction === 'vi_to_ja' && <Check className="w-3.5 h-3.5 stroke-[3] shrink-0" />}
-                </button>
-
-                <button
-                  type="button"
-                  onClick={() => setDirection('mixed')}
-                  className={`px-2 sm:px-3 py-2 rounded-xl text-xs font-bold border text-center transition-all flex items-center justify-center gap-1 ${
-                    direction === 'mixed'
-                      ? 'bg-purple-600 text-white border-purple-600 shadow-xs'
-                      : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:bg-slate-100'
-                  }`}
-                >
-                  <span className="truncate">🔀 Lộn xộn</span>
-                  {direction === 'mixed' && <Check className="w-3.5 h-3.5 stroke-[3] shrink-0" />}
-                </button>
-              </div>
-            </div>
-
-            <div>
-              <label className="block text-[11px] sm:text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">
-                Thứ tự các câu hỏi:
-              </label>
-              <div className="grid grid-cols-2 gap-2">
-                <button
-                  type="button"
-                  onClick={() => setShuffleQuestions(true)}
-                  className={`px-3 py-2 rounded-xl text-xs font-bold border text-center transition-all flex items-center justify-center gap-1.5 ${
-                    shuffleQuestions
-                      ? 'bg-indigo-600 text-white border-indigo-600 shadow-xs'
-                      : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:bg-slate-100'
-                  }`}
-                >
-                  <span className="truncate">🔀 Trộn ngẫu nhiên</span>
-                  {shuffleQuestions && <Check className="w-3.5 h-3.5 stroke-[3] shrink-0" />}
-                </button>
-
-                <button
-                  type="button"
-                  onClick={() => setShuffleQuestions(false)}
-                  className={`px-3 py-2 rounded-xl text-xs font-bold border text-center transition-all flex items-center justify-center gap-1.5 ${
-                    !shuffleQuestions
-                      ? 'bg-indigo-600 text-white border-indigo-600 shadow-xs'
-                      : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:bg-slate-100'
-                  }`}
-                >
-                  <span className="truncate">Theo bài học</span>
-                  {!shuffleQuestions && <Check className="w-3.5 h-3.5 stroke-[3] shrink-0" />}
-                </button>
-              </div>
-            </div>
-
-            <div>
-              <label className="block text-[11px] sm:text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">
-                Hiển thị phiên âm Kana:
-              </label>
-              <div className="grid grid-cols-2 gap-2">
-                <button
-                  type="button"
-                  onClick={() => setShowKana(true)}
-                  className={`px-3 py-2 rounded-xl text-xs font-bold border text-center transition-all flex items-center justify-center gap-1.5 ${
-                    showKana
-                      ? 'bg-emerald-600 text-white border-emerald-600 shadow-xs'
-                      : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:bg-slate-100'
-                  }`}
-                >
-                  <span className="truncate">Bật Kana (Furigana)</span>
-                  {showKana && <Check className="w-3.5 h-3.5 stroke-[3] shrink-0" />}
-                </button>
-
-                <button
-                  type="button"
-                  onClick={() => setShowKana(false)}
-                  className={`px-3 py-2 rounded-xl text-xs font-bold border text-center transition-all flex items-center justify-center gap-1.5 ${
-                    !showKana
-                      ? 'bg-emerald-600 text-white border-emerald-600 shadow-xs'
-                      : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:bg-slate-100'
-                  }`}
-                >
-                  <span className="truncate">Tắt Kana (Chỉ Kanji)</span>
-                  {!showKana && <Check className="w-3.5 h-3.5 stroke-[3] shrink-0" />}
-                </button>
-              </div>
-            </div>
-
-            <div>
-              <label className="block text-[11px] sm:text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5">
-                Tự động phát âm:
-              </label>
-              <div className="grid grid-cols-2 gap-2">
-                <button
-                  type="button"
-                  onClick={() => setAutoPlayAudio(true)}
-                  className={`px-3 py-2 rounded-xl text-xs font-bold border text-center transition-all flex items-center justify-center gap-1.5 ${
-                    autoPlayAudio
-                      ? 'bg-indigo-600 text-white border-indigo-600 shadow-xs'
-                      : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:bg-slate-100'
-                  }`}
-                >
-                  <span className="truncate">🔊 Bật tự động</span>
-                  {autoPlayAudio && <Check className="w-3.5 h-3.5 stroke-[3] shrink-0" />}
-                </button>
-
-                <button
-                  type="button"
-                  onClick={() => setAutoPlayAudio(false)}
-                  className={`px-3 py-2 rounded-xl text-xs font-bold border text-center transition-all flex items-center justify-center gap-1.5 ${
-                    !autoPlayAudio
-                      ? 'bg-indigo-600 text-white border-indigo-600 shadow-xs'
-                      : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:bg-slate-100'
-                  }`}
-                >
-                  <span className="truncate">🔇 Tắt tự động</span>
-                  {!autoPlayAudio && <Check className="w-3.5 h-3.5 stroke-[3] shrink-0" />}
-                </button>
-              </div>
-            </div>
-          </div>
-
-          {/* Step 4: Tùy chỉnh số lượng câu / thẻ */}
-          {selectedMode === 'matching' ? (
-            <div className="p-3.5 sm:p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-700/60 flex items-center justify-between gap-3">
-              <span className="text-xs font-semibold text-slate-700 dark:text-slate-300">
-                Số cặp thẻ ghép:
-              </span>
-              <div className="flex items-center gap-2">
-                {[6, 8].map((n) => (
+              <div className="grid grid-cols-3 gap-1.5">
+                {[
+                  { id: 'ja_to_vi', label: 'Nhật → Việt' },
+                  { id: 'vi_to_ja', label: 'Việt → Nhật' },
+                  { id: 'mixed', label: 'Lộn xộn' },
+                ].map((d) => (
                   <button
-                    key={n}
+                    key={d.id}
                     type="button"
-                    onClick={() => setPairCount(n)}
-                    className={`px-3 py-1.5 rounded-lg text-xs font-bold border transition-colors ${
-                      pairCount === n
-                        ? 'bg-emerald-600 text-white border-emerald-600 shadow-xs'
-                        : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:bg-slate-50'
+                    onClick={() => setDirection(d.id as any)}
+                    className={`px-2 py-1.5 font-mono text-xs border text-center transition-all flex items-center justify-center gap-1 rounded-none ${
+                      direction === d.id
+                        ? 'bg-stone-900 text-white border-stone-900 font-semibold'
+                        : 'bg-white text-stone-700 border-stone-300 hover:bg-stone-100'
                     }`}
                   >
-                    {n} cặp ({n * 2} ô)
+                    <span className="truncate">{d.label}</span>
+                    {direction === d.id && <Check className="w-3 h-3 stroke-[2.5] shrink-0" />}
                   </button>
                 ))}
               </div>
             </div>
-          ) : (
-            <div className="p-3.5 sm:p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-700/60 flex items-center justify-between gap-3">
-              <span className="text-xs font-semibold text-slate-700 dark:text-slate-300">
-                Số câu hỏi:
-              </span>
-              <div className="flex items-center gap-1.5">
-                {[10, 20, activePool.length].map((n, i) => {
-                  const label = i === 2 ? 'Tất cả' : `${n} câu`;
-                  const isChosen = questionCount === n || (i === 2 && questionCount >= activePool.length);
 
-                  return (
-                    <button
-                      key={label}
-                      type="button"
-                      onClick={() => setQuestionCount(n)}
-                      className={`px-2.5 py-1.5 rounded-lg text-xs font-bold border transition-colors ${
-                        isChosen
-                          ? 'bg-indigo-600 text-white border-indigo-600 shadow-xs'
-                          : 'bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:bg-slate-50'
-                      }`}
-                    >
-                      {label}
-                    </button>
-                  );
-                })}
+            {/* Grid 2 cột cho các tùy chọn cặp */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1 border-t border-stone-200/70">
+              {/* Thứ tự câu hỏi */}
+              <div>
+                <label className="block text-[10px] font-mono font-bold uppercase tracking-wider text-stone-500 mb-1">
+                  Thứ tự câu hỏi:
+                </label>
+                <div className="grid grid-cols-2 gap-1.5">
+                  <button
+                    type="button"
+                    onClick={() => setShuffleQuestions(true)}
+                    className={`px-2 py-1.5 font-mono text-xs border text-center transition-all flex items-center justify-center gap-1 rounded-none ${
+                      shuffleQuestions
+                        ? 'bg-stone-900 text-white border-stone-900 font-semibold'
+                        : 'bg-white text-stone-700 border-stone-300 hover:bg-stone-100'
+                    }`}
+                  >
+                    <span>Trộn ngẫu nhiên</span>
+                    {shuffleQuestions && <Check className="w-3 h-3 stroke-[2.5] shrink-0" />}
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setShuffleQuestions(false)}
+                    className={`px-2 py-1.5 font-mono text-xs border text-center transition-all flex items-center justify-center gap-1 rounded-none ${
+                      !shuffleQuestions
+                        ? 'bg-stone-900 text-white border-stone-900 font-semibold'
+                        : 'bg-white text-stone-700 border-stone-300 hover:bg-stone-100'
+                    }`}
+                  >
+                    <span>Theo bài học</span>
+                    {!shuffleQuestions && <Check className="w-3 h-3 stroke-[2.5] shrink-0" />}
+                  </button>
+                </div>
+              </div>
+
+              {/* Hiển thị Kana */}
+              <div>
+                <label className="block text-[10px] font-mono font-bold uppercase tracking-wider text-stone-500 mb-1">
+                  Hiển thị Kana:
+                </label>
+                <div className="grid grid-cols-2 gap-1.5">
+                  <button
+                    type="button"
+                    onClick={() => setShowKana(true)}
+                    className={`px-2 py-1.5 font-mono text-xs border text-center transition-all flex items-center justify-center gap-1 rounded-none ${
+                      showKana
+                        ? 'bg-stone-900 text-white border-stone-900 font-semibold'
+                        : 'bg-white text-stone-700 border-stone-300 hover:bg-stone-100'
+                    }`}
+                  >
+                    <span>Bật Kana</span>
+                    {showKana && <Check className="w-3 h-3 stroke-[2.5] shrink-0" />}
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setShowKana(false)}
+                    className={`px-2 py-1.5 font-mono text-xs border text-center transition-all flex items-center justify-center gap-1 rounded-none ${
+                      !showKana
+                        ? 'bg-stone-900 text-white border-stone-900 font-semibold'
+                        : 'bg-white text-stone-700 border-stone-300 hover:bg-stone-100'
+                    }`}
+                  >
+                    <span>Tắt Kana</span>
+                    {!showKana && <Check className="w-3 h-3 stroke-[2.5] shrink-0" />}
+                  </button>
+                </div>
+              </div>
+
+              {/* Tự động phát âm */}
+              <div>
+                <label className="block text-[10px] font-mono font-bold uppercase tracking-wider text-stone-500 mb-1">
+                  Tự động phát âm:
+                </label>
+                <div className="grid grid-cols-2 gap-1.5">
+                  <button
+                    type="button"
+                    onClick={() => setAutoPlayAudio(true)}
+                    className={`px-2 py-1.5 font-mono text-xs border text-center transition-all flex items-center justify-center gap-1 rounded-none ${
+                      autoPlayAudio
+                        ? 'bg-stone-900 text-white border-stone-900 font-semibold'
+                        : 'bg-white text-stone-700 border-stone-300 hover:bg-stone-100'
+                    }`}
+                  >
+                    <span>Bật âm</span>
+                    {autoPlayAudio && <Check className="w-3 h-3 stroke-[2.5] shrink-0" />}
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setAutoPlayAudio(false)}
+                    className={`px-2 py-1.5 font-mono text-xs border text-center transition-all flex items-center justify-center gap-1 rounded-none ${
+                      !autoPlayAudio
+                        ? 'bg-stone-900 text-white border-stone-900 font-semibold'
+                        : 'bg-white text-stone-700 border-stone-300 hover:bg-stone-100'
+                    }`}
+                  >
+                    <span>Tắt âm</span>
+                    {!autoPlayAudio && <Check className="w-3 h-3 stroke-[2.5] shrink-0" />}
+                  </button>
+                </div>
+              </div>
+
+              {/* Số lượng câu / Số cặp thẻ */}
+              <div>
+                <label className="block text-[10px] font-mono font-bold uppercase tracking-wider text-stone-500 mb-1">
+                  {selectedMode === 'matching' ? 'Số cặp thẻ:' : 'Số câu hỏi:'}
+                </label>
+                {selectedMode === 'matching' ? (
+                  <div className="grid grid-cols-2 gap-1.5">
+                    {[6, 8].map((n) => (
+                      <button
+                        key={n}
+                        type="button"
+                        onClick={() => setPairCount(n)}
+                        className={`px-2 py-1.5 font-mono text-xs border text-center transition-colors rounded-none ${
+                          pairCount === n
+                            ? 'bg-stone-900 text-white border-stone-900 font-semibold'
+                            : 'bg-white text-stone-700 border-stone-300 hover:bg-stone-100'
+                        }`}
+                      >
+                        {n} cặp ({n * 2} ô)
+                      </button>
+                    ))}
+                  </div>
+                ) : (
+                  <div className="grid grid-cols-3 gap-1.5">
+                    {[10, 20, activePool.length].map((n, i) => {
+                      const label = i === 2 ? 'Tất cả' : `${n} câu`;
+                      const isChosen = questionCount === n || (i === 2 && questionCount >= activePool.length);
+
+                      return (
+                        <button
+                          key={label}
+                          type="button"
+                          onClick={() => setQuestionCount(n)}
+                          className={`px-2 py-1.5 font-mono text-xs border text-center transition-colors rounded-none ${
+                            isChosen
+                              ? 'bg-stone-900 text-white border-stone-900 font-semibold'
+                              : 'bg-white text-stone-700 border-stone-300 hover:bg-stone-100'
+                          }`}
+                        >
+                          {label}
+                        </button>
+                      );
+                    })}
+                  </div>
+                )}
               </div>
             </div>
-          )}
+          </div>
         </div>
 
         {/* Modal Sticky Footer Actions */}
-        <div className="px-4 sm:px-6 py-3 border-t border-slate-100 dark:border-slate-800 bg-white/95 dark:bg-slate-900/95 backdrop-blur-sm flex items-center justify-between gap-3 shrink-0">
+        <div className="px-5 py-3 border-t border-stone-200 bg-white flex items-center justify-between gap-3 shrink-0">
           <div className="flex flex-col min-w-0">
-            <span className="text-xs font-bold text-slate-900 dark:text-white truncate">
+            <span className="font-mono text-xs font-bold text-stone-900 truncate">
               {activePool.length} từ vựng
             </span>
-            <span className="text-[11px] text-slate-500 dark:text-slate-400 truncate">
+            <span className="font-mono text-[11px] text-stone-500 uppercase tracking-wider truncate">
               {selectedMode === 'builder'
                 ? 'Ghép ký tự'
                 : selectedMode === 'choice'
@@ -604,7 +539,7 @@ export const LessonQuizModal: React.FC<LessonQuizModalProps> = ({
             <button
               type="button"
               onClick={onClose}
-              className="px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+              className="px-3.5 py-2 border border-stone-300 bg-white text-stone-700 hover:bg-stone-100 font-mono text-xs uppercase font-medium tracking-wider transition-colors rounded-none"
             >
               Hủy
             </button>
@@ -612,9 +547,9 @@ export const LessonQuizModal: React.FC<LessonQuizModalProps> = ({
             <button
               type="button"
               onClick={() => setIsPlaying(true)}
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-indigo-600 hover:bg-indigo-700 text-white shadow-md shadow-indigo-600/25 active:scale-95 transition-all shrink-0"
+              className="inline-flex items-center gap-1.5 px-5 py-2 border border-stone-900 bg-stone-900 hover:bg-stone-800 text-white font-mono text-xs uppercase font-medium tracking-wider transition-colors rounded-none shadow-xs active:scale-[0.98] shrink-0"
             >
-              <Play className="w-4 h-4 fill-white" />
+              <Play className="w-3.5 h-3.5 fill-white" />
               <span>Bắt đầu làm bài</span>
             </button>
           </div>
