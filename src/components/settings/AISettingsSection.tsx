@@ -51,40 +51,48 @@ export default function AISettingsSection() {
   };
 
   return (
-    <section className="bg-white dark:bg-slate-900 rounded-2xl sm:rounded-3xl p-5 sm:p-7 border border-slate-200/80 dark:border-slate-800 shadow-sm transition-colors mb-6">
+    <section
+      aria-labelledby="ai-settings-heading"
+      className="border-2 border-black p-6 sm:p-8 bg-white rounded-none shadow-none mb-8"
+    >
       {/* Header */}
-      <div className="flex items-center justify-between gap-4 pb-5 border-b border-slate-100 dark:border-slate-800">
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-purple-50 dark:bg-purple-950/60 flex items-center justify-center text-purple-600 dark:text-purple-400">
-            <Sparkles className="w-5 h-5" />
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-5 border-b border-black">
+        <div>
+          <div className="flex items-center gap-2 mb-1">
+            <span className="border border-black px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-black">
+              [ AI ENGINE ]
+            </span>
+            <span className="border border-black px-2 py-0.5 font-mono text-[10px] uppercase tracking-widest text-black">
+              OPENAI COMPATIBLE
+            </span>
           </div>
-          <div>
-            <h2 className="text-base sm:text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2">
-              Trí tuệ nhân tạo (AI Assistant)
-              <span className="text-[10px] uppercase font-extrabold px-2 py-0.5 rounded-full bg-purple-100 dark:bg-purple-900/60 text-purple-700 dark:text-purple-300">
-                Mới
-              </span>
-            </h2>
-            <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400">
-              Cấu hình mô hình AI để tự động tạo câu hỏi bài tập ngữ cảnh cho từ vựng
-            </p>
-          </div>
+          <h2
+            id="ai-settings-heading"
+            className="font-serif text-xl sm:text-2xl font-bold uppercase tracking-tight text-black flex items-center gap-2"
+          >
+            <Sparkles className="w-5 h-5 text-black" />
+            Cấu Hình Trí Tuệ Nhân Tạo (AI Assistant)
+          </h2>
+          <p className="font-mono text-xs uppercase tracking-wider text-mutedForeground mt-1">
+            Tự động khởi tạo câu hỏi ngữ cảnh & bài tập trắc nghiệm thông minh
+          </p>
         </div>
+
         <button
           type="button"
           onClick={handleResetDefaults}
-          className="text-xs font-semibold text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200 inline-flex items-center gap-1 transition-colors"
+          className="border border-black px-3 py-1.5 font-mono text-xs uppercase tracking-wider hover:bg-black hover:text-white rounded-none transition-colors duration-100 inline-flex items-center gap-1.5 self-start sm:self-auto"
           title="Khôi phục mặc định"
         >
           <RotateCcw className="w-3.5 h-3.5" />
-          <span className="hidden sm:inline">Mặc định</span>
+          <span>Mặc Định</span>
         </button>
       </div>
 
-      <div className="mt-5 space-y-4">
+      <div className="mt-6 space-y-6">
         {/* Endpoint URL */}
-        <div>
-          <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-1.5">
+        <div className="space-y-1.5">
+          <label className="block font-mono text-xs font-bold text-black uppercase tracking-wider">
             AI Endpoint URL (OpenAI Compatible)
           </label>
           <input
@@ -92,94 +100,113 @@ export default function AISettingsSection() {
             value={config.endpointUrl}
             onChange={(e) => setConfig({ endpointUrl: e.target.value })}
             placeholder="https://api.deepseek.com/v1"
-            className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/60 text-slate-900 dark:text-white text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-purple-500/20 focus:border-purple-500 font-mono"
+            className="w-full border-2 border-black p-3 font-mono text-xs focus:outline-none focus:ring-2 focus:ring-black bg-white rounded-none shadow-none text-black"
           />
         </div>
 
         {/* API Key */}
-        <div>
-          <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-1.5">
-            API Key
-          </label>
+        <div className="space-y-1.5">
+          <div className="flex items-center justify-between">
+            <label className="block font-mono text-xs font-bold text-black uppercase tracking-wider">
+              API Key
+            </label>
+            <span className="font-mono text-[10px] uppercase tracking-wider text-mutedForeground">
+              [ CLIENT-SIDE STORAGE ONLY ]
+            </span>
+          </div>
           <div className="relative">
             <input
               type={showKey ? 'text' : 'password'}
               value={config.apiKey}
               onChange={(e) => setConfig({ apiKey: e.target.value })}
               placeholder="sk-..."
-              className="w-full pl-3.5 pr-10 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/60 text-slate-900 dark:text-white text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-purple-500/20 focus:border-purple-500 font-mono"
+              className="w-full border-2 border-black p-3 pr-12 font-mono text-xs focus:outline-none focus:ring-2 focus:ring-black bg-white rounded-none shadow-none text-black"
             />
             <button
               type="button"
               onClick={() => setShowKey(!showKey)}
-              className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200"
+              className="absolute right-3 top-1/2 -translate-y-1/2 border border-black px-2 py-1 font-mono text-xs text-black hover:bg-black hover:text-white transition-colors duration-100"
+              aria-label={showKey ? 'Ẩn API Key' : 'Hiện API Key'}
             >
-              {showKey ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+              {showKey ? <EyeOff className="w-3.5 h-3.5" /> : <Eye className="w-3.5 h-3.5" />}
             </button>
           </div>
-          <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-1">
-            Khóa bí mật chỉ được lưu trên trình duyệt của bạn (localStorage), không lưu trên server.
+          <p className="font-body text-xs text-mutedForeground mt-1">
+            Khóa bí mật chỉ được lưu trên trình duyệt của bạn (localStorage), tuyệt đối không lưu trữ trên máy chủ.
           </p>
         </div>
 
         {/* Model Name & Translation Toggle */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div>
-            <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-1.5">
-              Tên Mô Hình (Model)
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2 border-t border-black">
+          <div className="space-y-1.5">
+            <label className="block font-mono text-xs font-bold text-black uppercase tracking-wider">
+              Tên Mô Hình (Model Name)
             </label>
             <input
               type="text"
               value={config.modelName}
               onChange={(e) => setConfig({ modelName: e.target.value })}
               placeholder="deepseek-chat"
-              className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/60 text-slate-900 dark:text-white text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-purple-500/20 focus:border-purple-500 font-mono"
+              className="w-full border-2 border-black p-3 font-mono text-xs focus:outline-none focus:ring-2 focus:ring-black bg-white rounded-none shadow-none text-black"
             />
           </div>
 
           {/* Translation Toggle */}
-          <div className="flex flex-col justify-center">
-            <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-1.5">
-              Bản dịch tiếng Việt khi làm bài
-            </label>
-            <div className="flex items-center gap-3 mt-1">
+          <div className="space-y-1.5 flex flex-col justify-between">
+            <div>
+              <label className="block font-mono text-xs font-bold text-black uppercase tracking-wider">
+                Bản Dịch Tiếng Việt Trong Bài Tập
+              </label>
+              <p className="font-body text-xs text-mutedForeground">
+                {config.showTranslationInQuiz
+                  ? 'Mặc định hiển thị nghĩa tiếng Việt hỗ trợ.'
+                  : 'Mặc định ẩn bản dịch để tăng độ thử thách.'}
+              </p>
+            </div>
+            <div className="inline-flex items-center gap-1.5 mt-2">
               <button
                 type="button"
-                onClick={() => setConfig({ showTranslationInQuiz: !config.showTranslationInQuiz })}
-                className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
-                  config.showTranslationInQuiz ? 'bg-purple-600' : 'bg-slate-300 dark:bg-slate-700'
+                onClick={() => setConfig({ showTranslationInQuiz: true })}
+                className={`border border-black px-3 py-1.5 font-mono text-xs uppercase rounded-none transition-colors duration-100 ${
+                  config.showTranslationInQuiz
+                    ? 'bg-black text-white'
+                    : 'bg-white text-black hover:bg-black hover:text-white'
                 }`}
               >
-                <span
-                  className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
-                    config.showTranslationInQuiz ? 'translate-x-6' : 'translate-x-1'
-                  }`}
-                />
+                [ ON ] HIỂN THỊ
               </button>
-              <span className="text-xs text-slate-600 dark:text-slate-300 font-medium">
-                {config.showTranslationInQuiz ? 'Mặc định hiển thị bản dịch' : 'Mặc định ẩn bản dịch (Thử thách)'}
-              </span>
+              <button
+                type="button"
+                onClick={() => setConfig({ showTranslationInQuiz: false })}
+                className={`border border-black px-3 py-1.5 font-mono text-xs uppercase rounded-none transition-colors duration-100 ${
+                  !config.showTranslationInQuiz
+                    ? 'bg-black text-white'
+                    : 'bg-white text-black hover:bg-black hover:text-white'
+                }`}
+              >
+                [ OFF ] ẨN DỊCH
+              </button>
             </div>
           </div>
         </div>
 
-        {/* Test Connection Button */}
-        <div className="pt-2 flex flex-wrap items-center justify-between gap-3">
+        {/* Action Controls */}
+        <div className="pt-4 border-t border-black flex flex-wrap items-center justify-between gap-4">
           <button
             type="button"
             onClick={handleTestConnection}
             disabled={isTesting}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-purple-600 hover:bg-purple-700 text-white disabled:opacity-50 transition-all active:scale-95 shadow-sm shadow-purple-500/20"
+            className="border-2 border-black px-6 py-3 font-mono text-xs uppercase tracking-widest bg-black text-white hover:bg-white hover:text-black transition-colors duration-100 rounded-none shadow-none inline-flex items-center gap-2 disabled:opacity-50"
           >
             {isTesting ? (
               <>
-                <div className="w-3.5 h-3.5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                <span>Đang kiểm tra kết nối...</span>
+                <div className="w-3.5 h-3.5 border-2 border-white border-t-transparent animate-spin" />
+                <span>Đang kiểm tra...</span>
               </>
             ) : (
               <>
                 <Zap className="w-3.5 h-3.5" />
-                <span>Kiểm tra kết nối</span>
+                <span>Kiểm Tra Kết Nối</span>
               </>
             )}
           </button>
@@ -188,10 +215,10 @@ export default function AISettingsSection() {
             href="https://platform.deepseek.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xs text-purple-600 dark:text-purple-400 hover:underline inline-flex items-center gap-1 font-medium"
+            className="border border-black px-4 py-2.5 font-mono text-xs uppercase tracking-wider text-black hover:bg-black hover:text-white transition-colors duration-100 rounded-none inline-flex items-center gap-1.5"
           >
-            Lấy DeepSeek API Key
-            <ExternalLink className="w-3 h-3" />
+            <span>Lấy DeepSeek API Key</span>
+            <ExternalLink className="w-3.5 h-3.5" />
           </a>
         </div>
       </div>
