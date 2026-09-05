@@ -61,29 +61,29 @@ export const Modal: React.FC<ModalProps> = ({
 
   return (
     <div
-      className="fixed inset-0 z-50 bg-black/75 flex items-center justify-center p-4 overflow-y-auto"
+      className="fixed inset-0 z-50 bg-stone-900/60 backdrop-blur-xs flex items-center justify-center p-4 overflow-y-auto"
       role="dialog"
       aria-modal="true"
       onClick={onClose}
     >
       {/* Modal Dialog Card */}
       <div
-        className={`relative bg-white border-2 sm:border-4 border-black w-full ${
+        className={`relative bg-white border border-stone-300 w-full ${
           maxWidth && maxWidthMap[maxWidth] ? maxWidthMap[maxWidth] : 'max-w-2xl'
-        } p-6 sm:p-8 rounded-none shadow-none z-10 my-8 transition-all ${className}`}
+        } p-6 sm:p-8 shadow-xl z-10 my-8 transition-all ${className}`}
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
         {(title || showCloseButton) && (
-          <div className="flex items-start justify-between border-b-2 border-black pb-4 mb-6">
+          <div className="flex items-start justify-between border-b border-stone-200 pb-4 mb-6">
             <div>
               {title && (
-                <h3 className="font-serif text-2xl sm:text-3xl font-bold tracking-tight text-black">
+                <h3 className="font-serif text-2xl sm:text-3xl font-bold tracking-tight text-stone-900">
                   {title}
                 </h3>
               )}
               {description && (
-                <p className="mt-1 font-sans text-sm text-mutedForeground">
+                <p className="mt-1 font-sans text-sm text-stone-500">
                   {description}
                 </p>
               )}
@@ -92,7 +92,7 @@ export const Modal: React.FC<ModalProps> = ({
               <button
                 type="button"
                 onClick={onClose}
-                className="w-7 h-7 border border-black flex items-center justify-center font-mono text-xs hover:bg-black hover:text-white transition-colors duration-100 ml-auto flex-shrink-0"
+                className="border border-stone-300 px-2 py-1 font-mono text-xs text-stone-600 hover:text-stone-900 hover:bg-stone-100 transition-colors ml-auto flex-shrink-0"
                 aria-label="Đóng cửa sổ"
               >
                 ✕
@@ -102,13 +102,13 @@ export const Modal: React.FC<ModalProps> = ({
         )}
 
         {/* Content Body */}
-        <div className="max-h-[calc(85vh-8rem)] overflow-y-auto font-sans text-black text-sm">
+        <div className="max-h-[calc(85vh-8rem)] overflow-y-auto font-sans text-stone-900 text-sm">
           {children}
         </div>
 
         {/* Footer */}
         {footer && (
-          <div className="flex items-center justify-end gap-3 pt-6 mt-6 border-t-2 border-black">
+          <div className="flex items-center justify-end gap-3 pt-6 mt-6 border-t border-stone-200">
             {footer}
           </div>
         )}

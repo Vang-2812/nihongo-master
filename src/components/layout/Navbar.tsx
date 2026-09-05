@@ -80,19 +80,19 @@ export const Navbar: React.FC = () => {
 
   return (
     <>
-      <header className="sticky top-0 z-40 w-full border-b-2 border-black bg-white">
+      <header className="sticky top-0 z-40 w-full bg-white/95 backdrop-blur-sm border-b border-stone-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             {/* Brand */}
             <div className="flex items-center gap-3">
               <Link
                 href="/"
-                className="flex items-center group focus:outline-none focus:ring-2 focus:ring-black"
+                className="flex items-center group focus:outline-none focus:ring-2 focus:ring-stone-400"
               >
-                <span className="font-serif tracking-tight font-extrabold text-xl sm:text-2xl text-black">
+                <span className="font-serif text-stone-900 font-extrabold tracking-tight text-xl sm:text-2xl">
                   NIHONGO MASTER
                 </span>
-                <span className="font-sans font-semibold text-[10px] tracking-widest uppercase border border-black px-1.5 py-0.5 ml-2 text-black">
+                <span className="bg-stone-100 text-stone-700 border border-stone-300 font-mono text-[10px] tracking-widest uppercase px-1.5 py-0.5 ml-2">
                   ARCHIVE
                 </span>
               </Link>
@@ -106,17 +106,17 @@ export const Navbar: React.FC = () => {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className={`font-sans font-medium text-xs uppercase tracking-wider px-3 py-1.5 transition-colors duration-100 flex items-center gap-1.5 ${
+                    className={`font-sans text-xs uppercase tracking-wider font-semibold px-3 py-1.5 transition-colors duration-100 flex items-center gap-1.5 ${
                       active
-                        ? 'bg-black text-white'
-                        : 'text-black hover:bg-muted'
+                        ? 'bg-stone-900 text-white'
+                        : 'text-stone-600 hover:text-stone-900 hover:bg-stone-100'
                     }`}
                   >
                     <span>{link.label}</span>
                     {link.badge !== undefined && (
                       <span
                         className={`text-[10px] font-mono border px-1 py-0.5 ml-1 ${
-                          active ? 'border-white text-white' : 'border-black text-black'
+                          active ? 'border-white/30 text-white' : 'border-stone-300 text-stone-700 bg-stone-100'
                         }`}
                       >
                         {link.badge > 99 ? '99+' : link.badge}
@@ -131,19 +131,19 @@ export const Navbar: React.FC = () => {
             <div className="flex items-center gap-2 sm:gap-3">
               {/* Streak Badge */}
               <div
-                className="flex items-center gap-1.5 px-2.5 py-1 border border-black bg-white text-black font-mono text-xs uppercase tracking-wider"
+                className="flex items-center gap-1.5 px-2.5 py-1 border border-stone-200 bg-white text-stone-700 font-mono text-xs uppercase tracking-wider"
                 title={`Chuỗi học liên tục: ${streak} ngày`}
               >
-                <Flame className="w-3.5 h-3.5 stroke-[1.5]" />
+                <Flame className="w-3.5 h-3.5 stroke-[1.5] text-amber-600" />
                 <span>{streak} NGÀY</span>
               </div>
 
               {/* XP Badge */}
               <div
-                className="flex items-center gap-1.5 px-2.5 py-1 border border-black bg-white text-black font-mono text-xs uppercase tracking-wider"
+                className="flex items-center gap-1.5 px-2.5 py-1 border border-stone-200 bg-white text-stone-700 font-mono text-xs uppercase tracking-wider"
                 title={`Tổng kinh nghiệm: ${totalXp} XP`}
               >
-                <Sparkles className="w-3.5 h-3.5 stroke-[1.5]" />
+                <Sparkles className="w-3.5 h-3.5 stroke-[1.5] text-amber-600" />
                 <span>{totalXp} XP</span>
               </div>
 
@@ -151,7 +151,7 @@ export const Navbar: React.FC = () => {
               <button
                 type="button"
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="lg:hidden p-1.5 border border-black text-black hover:bg-black hover:text-white transition-colors duration-100 focus:outline-none focus:ring-2 focus:ring-black"
+                className="lg:hidden p-1.5 border border-stone-200 text-stone-700 hover:bg-stone-100 hover:text-stone-900 transition-colors duration-100 focus:outline-none focus:ring-2 focus:ring-stone-400"
                 aria-label="Mở menu điều hướng"
                 aria-expanded={mobileMenuOpen}
               >
@@ -163,7 +163,7 @@ export const Navbar: React.FC = () => {
 
         {/* Mobile dropdown drawer menu */}
         {mobileMenuOpen && (
-          <div className="lg:hidden border-t border-black bg-white px-4 py-3 space-y-1 rounded-none shadow-none">
+          <div className="lg:hidden border-t border-stone-200 bg-white px-4 py-3 space-y-1">
             {navLinks.map((link) => {
               const active = isLinkActive(link.href, link.exact);
               return (
@@ -171,10 +171,10 @@ export const Navbar: React.FC = () => {
                   key={link.href}
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className={`flex items-center justify-between px-3 py-2 font-sans font-medium text-xs uppercase tracking-wider rounded-none transition-colors duration-100 ${
+                  className={`flex items-center justify-between px-3 py-2 font-sans text-xs uppercase tracking-wider font-semibold transition-colors duration-100 ${
                     active
-                      ? 'bg-black text-white'
-                      : 'text-black hover:bg-muted'
+                      ? 'bg-stone-900 text-white'
+                      : 'text-stone-600 hover:text-stone-900 hover:bg-stone-100'
                   }`}
                 >
                   <div className="flex items-center gap-2.5">
@@ -184,7 +184,7 @@ export const Navbar: React.FC = () => {
                   {link.badge !== undefined && (
                     <span
                       className={`text-[10px] font-mono border px-1.5 py-0.5 ${
-                        active ? 'border-white text-white' : 'border-black text-black'
+                        active ? 'border-white/30 text-white' : 'border-stone-300 text-stone-700 bg-stone-100'
                       }`}
                     >
                       {link.badge} ĐẾN HẠN
@@ -198,23 +198,23 @@ export const Navbar: React.FC = () => {
       </header>
 
       {/* Mobile Bottom Navigation Bar for quick access */}
-      <nav aria-label="Điều hướng nhanh" className="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-black px-1 py-1.5 flex justify-around items-center rounded-none shadow-none">
+      <nav aria-label="Điều hướng nhanh" className="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-sm border-t border-stone-200 px-1 py-1.5 flex justify-around items-center">
         {navLinks.slice(0, 5).map((link) => {
           const active = isLinkActive(link.href, link.exact);
           return (
             <Link
               key={link.href}
               href={link.href}
-              className={`relative flex flex-col items-center justify-center py-1 px-2 font-sans font-medium text-[10px] uppercase tracking-wider transition-colors duration-100 rounded-none ${
+              className={`relative flex flex-col items-center justify-center py-1 px-2 font-sans text-[10px] uppercase tracking-wider font-semibold transition-colors duration-100 ${
                 active
-                  ? 'bg-black text-white'
-                  : 'text-black hover:bg-muted'
+                  ? 'bg-stone-900 text-white'
+                  : 'text-stone-600 hover:text-stone-900 hover:bg-stone-100'
               }`}
             >
               <div className="relative">
                 {link.icon}
                 {link.badge !== undefined && (
-                  <span className="absolute -top-1 -right-1.5 w-2 h-2 bg-black border border-white" />
+                  <span className={`absolute -top-1 -right-1.5 w-2 h-2 border ${active ? 'bg-white border-stone-900' : 'bg-rose-500 border-white'}`} />
                 )}
               </div>
               <span className="mt-0.5 truncate max-w-[64px]">

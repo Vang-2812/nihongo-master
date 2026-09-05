@@ -29,7 +29,7 @@ export const ProgressBar: React.FC<ProgressBarProps> = ({
   return (
     <div className={`w-full ${className}`}>
       {(label || showPercentage) && (
-        <div className="flex justify-between items-center mb-1.5 font-mono text-xs uppercase tracking-wider text-black">
+        <div className="flex justify-between items-center mb-1.5 font-mono text-xs uppercase tracking-wider text-stone-900">
           {label && <span>{label}</span>}
           {showPercentage && <span className="ml-auto font-bold">{percentage}%</span>}
         </div>
@@ -39,10 +39,10 @@ export const ProgressBar: React.FC<ProgressBarProps> = ({
         aria-valuenow={value}
         aria-valuemin={0}
         aria-valuemax={safeMax}
-        className="w-full border border-black bg-white h-2 sm:h-2.5 overflow-hidden rounded-none"
+        className="w-full border border-stone-200 bg-stone-100 h-2 sm:h-2.5 overflow-hidden"
       >
         <div
-          className={`bg-black h-full transition-all duration-100 ${barClassName}`}
+          className={`${barClassName || (percentage === 100 ? 'bg-emerald-600' : 'bg-stone-900')} h-full transition-all duration-150`}
           style={{ width: `${percentage}%` }}
         />
       </div>

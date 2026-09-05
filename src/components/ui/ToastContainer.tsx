@@ -40,20 +40,36 @@ const getBadgeText = (type: string) => {
   }
 };
 
+const getBadgeStyle = (type: string) => {
+  switch (type) {
+    case 'success':
+      return 'bg-emerald-50 text-emerald-800 border border-emerald-200';
+    case 'error':
+      return 'bg-rose-50 text-rose-800 border border-rose-200';
+    case 'warning':
+      return 'bg-amber-50 text-amber-800 border border-amber-200';
+    case 'info':
+    default:
+      return 'bg-indigo-50 text-indigo-800 border border-indigo-200';
+  }
+};
+
 const ToastCard: React.FC<ToastCardProps> = ({ item, onDismiss }) => {
   return (
     <div
       role="alert"
-      className="pointer-events-auto flex items-start justify-between gap-3 bg-white border-2 border-black p-4 text-black font-sans text-xs shadow-none rounded-none transition-all duration-100"
+      className="pointer-events-auto flex items-start justify-between gap-3 bg-white border border-stone-200 shadow-sm p-4 text-stone-900 font-sans text-xs transition-all duration-100"
     >
-      <div className="flex flex-col gap-1 flex-1">
-        <span className="font-bold tracking-wider text-[11px] font-mono">{getBadgeText(item.type)}</span>
-        <div className="break-words leading-relaxed text-xs">{item.message}</div>
+      <div className="flex flex-col gap-1.5 flex-1">
+        <span className={`inline-block w-fit px-1.5 py-0.5 font-bold tracking-wider text-[10px] font-mono uppercase ${getBadgeStyle(item.type)}`}>
+          {getBadgeText(item.type)}
+        </span>
+        <div className="break-words leading-relaxed text-xs text-stone-700">{item.message}</div>
       </div>
       <button
         type="button"
         onClick={onDismiss}
-        className="w-6 h-6 border border-black flex items-center justify-center font-mono text-xs hover:bg-black hover:text-white transition-colors duration-100 -mr-1 -mt-1 flex-shrink-0"
+        className="w-6 h-6 border border-stone-200 flex items-center justify-center font-mono text-xs hover:bg-stone-100 text-stone-600 hover:text-stone-900 transition-colors duration-100 -mr-1 -mt-1 flex-shrink-0"
         aria-label="Đóng thông báo"
       >
         ✕
