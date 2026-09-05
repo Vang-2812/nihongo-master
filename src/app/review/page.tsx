@@ -295,8 +295,10 @@ export default function ReviewPage() {
     return (
       <div className="min-h-[calc(100vh-4rem)] flex items-center justify-center">
         <div className="flex flex-col items-center gap-3">
-          <div className="w-10 h-10 border-4 border-indigo-600 border-t-transparent rounded-full animate-spin" />
-          <p className="text-sm font-medium text-slate-500">Đang chuẩn bị bộ thẻ SRS...</p>
+          <div className="w-8 h-8 border-2 border-black border-t-transparent animate-spin rounded-none" />
+          <p className="text-xs font-mono uppercase tracking-widest text-muted-foreground">
+            INITIALIZING SRS DECK...
+          </p>
         </div>
       </div>
     );
@@ -334,92 +336,92 @@ export default function ReviewPage() {
 
     return (
       <div className="min-h-[calc(100vh-4rem)] flex items-center justify-center p-4">
-        <div className="max-w-lg w-full rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-6 sm:p-8 text-center shadow-lg space-y-6 animate-fadeIn">
+        <div className="max-w-lg w-full border-2 border-black bg-white p-6 sm:p-8 text-center rounded-none shadow-none space-y-6 animate-fadeIn">
           {/* Empty State Graphic */}
-          <div className="w-20 h-20 mx-auto rounded-3xl bg-gradient-to-tr from-emerald-500 to-teal-400 flex items-center justify-center text-white shadow-lg shadow-emerald-500/20">
-            <CheckCircle2 className="w-10 h-10 stroke-[2.5]" />
+          <div className="w-14 h-14 mx-auto border-2 border-black bg-black text-white flex items-center justify-center rounded-none shadow-none">
+            <CheckCircle2 className="w-8 h-8 stroke-[2]" />
           </div>
 
           <div>
-            <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-              Tuyệt vời! Không còn thẻ nào cần ôn hôm nay 🎉
+            <h1 className="text-2xl sm:text-3xl font-serif font-bold text-black tracking-tight uppercase">
+              All Caught Up · 学習完了
             </h1>
-            <p className="text-slate-600 dark:text-slate-400 text-sm sm:text-base mt-2">
-              Bạn đã hoàn tất tất cả các thẻ đến hạn theo thuật toán lặp lại ngắt quãng SM-2.
+            <p className="text-neutral-600 font-serif text-sm sm:text-base mt-2">
+              Bạn đã hoàn thành tất cả thẻ cần ôn tập theo thuật toán SM-2.
             </p>
           </div>
 
           {/* User SRS Overview */}
-          <div className="grid grid-cols-3 gap-2.5 p-3.5 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-100 dark:border-slate-800 text-center">
+          <div className="grid grid-cols-3 gap-2.5 p-4 border-2 border-black bg-white text-center rounded-none">
             <div>
-              <p className="text-xs text-slate-500 dark:text-slate-400">Tổng thẻ SRS</p>
-              <p className="text-lg font-bold text-slate-900 dark:text-white mt-0.5">
+              <p className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground">TOTAL CARDS</p>
+              <p className="text-xl font-bold font-serif text-black mt-1">
                 {totalCardsInSRS}
               </p>
             </div>
-            <div>
-              <p className="text-xs text-slate-500 dark:text-slate-400">Chuỗi học</p>
-              <div className="flex items-center justify-center gap-1 mt-0.5">
-                <Flame className="w-4 h-4 text-amber-500 fill-amber-500" />
-                <span className="text-lg font-bold text-slate-900 dark:text-white">
-                  {globalStats.streak} ngày
+            <div className="border-x-2 border-black px-2">
+              <p className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground">STREAK</p>
+              <div className="flex items-center justify-center gap-1 mt-1">
+                <Flame className="w-4 h-4 text-black" />
+                <span className="text-xl font-bold font-serif text-black">
+                  {globalStats.streak}d
                 </span>
               </div>
             </div>
             <div>
-              <p className="text-xs text-slate-500 dark:text-slate-400">Tổng XP</p>
-              <p className="text-lg font-bold text-indigo-600 dark:text-indigo-400 mt-0.5">
-                {globalStats.totalXp} XP
+              <p className="text-[10px] font-mono uppercase tracking-widest text-muted-foreground">TOTAL XP</p>
+              <p className="text-xl font-bold font-serif text-black mt-1">
+                {globalStats.totalXp}
               </p>
             </div>
           </div>
 
           {/* Quick Actions */}
-          <div className="space-y-2.5 pt-2">
+          <div className="space-y-3 pt-2">
             {totalCardsInSRS > 0 ? (
               <button
                 type="button"
                 onClick={handleStartCramMode}
-                className="w-full flex items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-indigo-600 hover:bg-indigo-700 text-white font-semibold shadow-md shadow-indigo-500/20 transition-all active:scale-98"
+                className="w-full flex items-center justify-center gap-2 px-5 py-3 border-2 border-black bg-black text-white hover:bg-white hover:text-black font-mono text-xs uppercase tracking-widest transition-colors duration-100 rounded-none shadow-none"
               >
                 <Layers className="w-4 h-4" />
-                <span>Ôn tập tùy chỉnh (Cram mode {totalCardsInSRS} thẻ)</span>
+                <span>CRAM SESSION ({totalCardsInSRS} CARDS)</span>
               </button>
             ) : (
               <button
                 type="button"
                 onClick={handleQuickAddSampleCards}
-                className="w-full flex items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-indigo-600 hover:bg-indigo-700 text-white font-semibold shadow-md shadow-indigo-500/20 transition-all active:scale-98"
+                className="w-full flex items-center justify-center gap-2 px-5 py-3 border-2 border-black bg-black text-white hover:bg-white hover:text-black font-mono text-xs uppercase tracking-widest transition-colors duration-100 rounded-none shadow-none"
               >
                 <PlusCircle className="w-4 h-4" />
-                <span>Thêm nhanh 20 thẻ N5 để bắt đầu học ngay</span>
+                <span>INITIALIZE N5 STARTER DECK (20 CARDS)</span>
               </button>
             )}
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
               <Link
                 href="/tango"
-                className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 font-medium hover:border-indigo-300 dark:hover:border-indigo-700 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors text-sm"
+                className="flex items-center justify-center gap-2 px-4 py-2.5 border-2 border-black bg-white text-black hover:bg-black hover:text-white transition-colors duration-100 text-xs font-mono uppercase tracking-widest rounded-none"
               >
-                <BookOpen className="w-4 h-4 text-indigo-500" />
-                <span>Kho Từ Vựng (Tango)</span>
+                <BookOpen className="w-4 h-4" />
+                <span>VOCABULARY DECK</span>
               </Link>
 
               <Link
                 href="/kanji"
-                className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 font-medium hover:border-indigo-300 dark:hover:border-indigo-700 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors text-sm"
+                className="flex items-center justify-center gap-2 px-4 py-2.5 border-2 border-black bg-white text-black hover:bg-black hover:text-white transition-colors duration-100 text-xs font-mono uppercase tracking-widest rounded-none"
               >
-                <Languages className="w-4 h-4 text-purple-500" />
-                <span>Kho Hán Tự (Kanji)</span>
+                <Languages className="w-4 h-4" />
+                <span>KANJI REPOSITORY</span>
               </Link>
             </div>
 
             <Link
               href="/review/quiz"
-              className="w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors text-sm"
+              className="w-full flex items-center justify-center gap-2 px-4 py-2.5 border-2 border-black bg-white text-black hover:bg-black hover:text-white transition-colors duration-100 text-xs font-mono uppercase tracking-widest rounded-none"
             >
-              <Dices className="w-4 h-4 text-amber-500" />
-              <span>Thử thách với Quizlet Trắc nghiệm & Nối từ</span>
+              <Dices className="w-4 h-4" />
+              <span>PRACTICE QUIZZES & GAMES</span>
             </Link>
           </div>
         </div>
@@ -438,19 +440,19 @@ export default function ReviewPage() {
           {/* Back button */}
           <Link
             href="/"
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs sm:text-sm font-medium text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-black bg-white hover:bg-black hover:text-white text-xs font-mono uppercase tracking-widest transition-colors duration-100 rounded-none shadow-none"
             title="Thoát phiên ôn tập"
           >
-            <ArrowLeft className="w-4 h-4" />
-            <span>Thoát</span>
+            <ArrowLeft className="w-3.5 h-3.5" />
+            <span>EXIT</span>
           </Link>
 
           {/* Session Title & Mode */}
           <div className="text-center">
-            <h1 className="text-sm sm:text-base font-bold text-slate-900 dark:text-white flex items-center justify-center gap-1.5">
-              <span>{isCramMode ? 'Ôn tập tự do (Cram)' : 'Ôn tập Flashcard SRS'}</span>
-              <span className="text-xs px-2 py-0.5 rounded-full bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 font-mono">
-                {currentIndex + 1}/{sessionQueue.length}
+            <h1 className="text-xs sm:text-sm font-serif font-bold tracking-widest uppercase text-black flex items-center justify-center gap-2">
+              <span>{isCramMode ? 'CRAM SESSION · 自由学習' : 'SRS REVIEW · 復習'}</span>
+              <span className="text-xs px-2 py-0.5 border border-black bg-muted font-mono font-bold text-black rounded-none">
+                [{currentIndex + 1} / {sessionQueue.length}]
               </span>
             </h1>
           </div>
@@ -461,33 +463,32 @@ export default function ReviewPage() {
             <button
               type="button"
               onClick={() => setAutoPlayAudio(!autoPlayAudio)}
-              className={`p-2 rounded-xl border text-xs font-semibold flex items-center gap-1 transition-colors ${
+              className={`px-2.5 py-1.5 border border-black text-xs font-mono uppercase flex items-center gap-1.5 transition-colors duration-100 rounded-none ${
                 autoPlayAudio
-                  ? 'bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 border-indigo-200 dark:border-indigo-800'
-                  : 'bg-slate-100 dark:bg-slate-800 text-slate-400 border-slate-200 dark:border-slate-700'
+                  ? 'bg-black text-white'
+                  : 'bg-white text-black hover:bg-muted'
               }`}
-              title={autoPlayAudio ? 'Tự động phát âm thanh khi lật thẻ (Bật)' : 'Tự động phát âm thanh (Tắt)'}
+              title={autoPlayAudio ? 'Tự động phát âm thanh (Bật)' : 'Tự động phát âm thanh (Tắt)'}
             >
-              {autoPlayAudio ? <Volume2 className="w-4 h-4" /> : <VolumeX className="w-4 h-4" />}
-              <span className="hidden sm:inline">Tự động phát âm</span>
+              {autoPlayAudio ? <Volume2 className="w-3.5 h-3.5" /> : <VolumeX className="w-3.5 h-3.5" />}
+              <span className="hidden sm:inline">TTS: {autoPlayAudio ? 'ON' : 'OFF'}</span>
             </button>
 
             {/* Session XP Badge */}
-            <div className="inline-flex items-center gap-1 px-3 py-1.5 rounded-xl bg-amber-50 dark:bg-amber-950/60 text-amber-700 dark:text-amber-400 border border-amber-200/80 dark:border-amber-800/60 text-xs sm:text-sm font-bold shadow-2xs">
-              <Sparkles className="w-3.5 h-3.5 text-amber-500 fill-amber-500" />
+            <div className="inline-flex items-center gap-1 px-2.5 py-1.5 border border-black bg-white text-black font-mono text-xs font-bold rounded-none shadow-none">
+              <Sparkles className="w-3.5 h-3.5 text-black" />
               <span>+{sessionXp} XP</span>
             </div>
           </div>
         </div>
 
-        {/* Session Progress Bar */}
-        <ProgressBar
-          value={currentIndex}
-          max={sessionQueue.length}
-          variant="primary"
-          size="sm"
-          className="transition-all"
-        />
+        {/* Session Progress Bar (Sharp monochrome border & bar) */}
+        <div className="w-full h-2 border border-black bg-white rounded-none p-0.5">
+          <div
+            className="h-full bg-black transition-all duration-200"
+            style={{ width: `${Math.round(((currentIndex) / Math.max(sessionQueue.length, 1)) * 100)}%` }}
+          />
+        </div>
       </div>
 
       {/* Center 3D Flashcard */}
@@ -514,18 +515,18 @@ export default function ReviewPage() {
         )}
 
         {/* Keyboard shortcut bar */}
-        <div className="flex items-center justify-center flex-wrap gap-x-4 gap-y-1 text-[11px] text-slate-400 dark:text-slate-500 pt-2 border-t border-slate-100 dark:border-slate-800/80">
-          <span className="flex items-center gap-1">
-            <kbd className="px-1.5 py-0.5 rounded bg-slate-200/70 dark:bg-slate-800 font-mono font-bold text-slate-600 dark:text-slate-300">Space</kbd>
-            <span>Lật thẻ</span>
+        <div className="flex items-center justify-center flex-wrap gap-x-6 gap-y-1 text-[11px] font-mono uppercase tracking-wider text-muted-foreground pt-3 border-t border-black">
+          <span className="flex items-center gap-1.5">
+            <kbd className="px-1.5 py-0.5 border border-black bg-white text-black font-mono font-bold text-[10px] rounded-none">SPACE</kbd>
+            <span>LẬT THẺ</span>
           </span>
-          <span className="flex items-center gap-1">
-            <kbd className="px-1.5 py-0.5 rounded bg-slate-200/70 dark:bg-slate-800 font-mono font-bold text-slate-600 dark:text-slate-300">1 - 4</kbd>
-            <span>Đánh giá SM-2</span>
+          <span className="flex items-center gap-1.5">
+            <kbd className="px-1.5 py-0.5 border border-black bg-white text-black font-mono font-bold text-[10px] rounded-none">1 - 4</kbd>
+            <span>ĐÁNH GIÁ SM-2</span>
           </span>
-          <span className="flex items-center gap-1">
-            <kbd className="px-1.5 py-0.5 rounded bg-slate-200/70 dark:bg-slate-800 font-mono font-bold text-slate-600 dark:text-slate-300">R</kbd>
-            <span>Nghe lại phát âm</span>
+          <span className="flex items-center gap-1.5">
+            <kbd className="px-1.5 py-0.5 border border-black bg-white text-black font-mono font-bold text-[10px] rounded-none">R</kbd>
+            <span>PHÁT ÂM</span>
           </span>
         </div>
       </div>

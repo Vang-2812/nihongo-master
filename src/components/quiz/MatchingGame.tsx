@@ -1,17 +1,12 @@
 'use client';
 
-import React, { useState, useEffect, useCallback, useMemo } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import confetti from 'canvas-confetti';
 import {
-  Sparkles,
-  Zap,
   RotateCcw,
-  Trophy,
   Home,
-  Timer,
-  MousePointerClick,
-  CheckCircle2,
+  Check,
   Dices,
 } from 'lucide-react';
 import { speakJapanese } from '@/lib/tts';
@@ -122,7 +117,7 @@ export const MatchingGame: React.FC<MatchingGameProps> = ({
     setTimeSeconds(0);
     setIsTimerRunning(false);
     setIsFinished(false);
-  }, [items, pairCount]);
+  }, [items, pairCount, showKana]);
 
   useEffect(() => {
     initializeGame();
@@ -237,7 +232,7 @@ export const MatchingGame: React.FC<MatchingGameProps> = ({
         if (typeof window !== 'undefined') {
           try {
             confetti({
-              particleCount: 90,
+              particleCount: 80,
               spread: 80,
               origin: { y: 0.6 },
             });
@@ -247,7 +242,7 @@ export const MatchingGame: React.FC<MatchingGameProps> = ({
         }
       }
     } else {
-      // MISMATCH!
+      // MISMATCH! Heavy border shake feedback without red color
       setMismatchedCardIds([firstCard.id, card.id]);
       setTimeout(() => {
         setMismatchedCardIds([]);
@@ -265,14 +260,14 @@ export const MatchingGame: React.FC<MatchingGameProps> = ({
 
   if (!items || items.length === 0) {
     return (
-      <div className="max-w-md mx-auto p-6 text-center space-y-4 rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900">
-        <p className="text-slate-600 dark:text-slate-400">Không có đủ thẻ từ vựng để chơi ghép thẻ.</p>
+      <div className="max-w-md mx-auto p-6 text-center space-y-4 border-2 border-black bg-white rounded-none shadow-none">
+        <p className="font-mono text-sm text-black">[ KHÔNG CÓ ĐỦ THẺ TỪ VỰNG ĐỂ CHƠI GHÉP THẺ ]</p>
         <Link
           href="/review/quiz"
-          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition-colors"
+          className="inline-flex items-center gap-2 px-5 py-2.5 border-2 border-black bg-black text-white font-mono text-xs uppercase font-bold hover:bg-white hover:text-black transition-colors duration-100 rounded-none shadow-none"
         >
           <Dices className="w-4 h-4" />
-          <span>Quay lại Menu Quiz</span>
+          <span>[ QUAY LẠI MENU QUIZ ]</span>
         </Link>
       </div>
     );
@@ -281,75 +276,93 @@ export const MatchingGame: React.FC<MatchingGameProps> = ({
   // ==================== VICTORY SUMMARY SCREEN ====================
   if (isFinished) {
     return (
-      <div className={`w-full max-w-xl mx-auto p-4 sm:p-6 space-y-6 animate-fadeIn ${className}`}>
-        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-emerald-600 via-teal-700 to-indigo-800 text-white p-6 sm:p-8 shadow-xl shadow-emerald-500/20 text-center space-y-4">
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-white/15 backdrop-blur-md ring-4 ring-white/10 mx-auto">
-            <Trophy className="w-8 h-8 text-amber-300 fill-amber-300" />
+      <div className={`w-full max-w-3xl mx-auto p-4 sm:p-6 space-y-8 animate-fadeIn ${className}`}>
+        {/* High-Fashion Editorial Title Banner */}
+        <div className="text-center space-y-2 pb-6 border-b-4 border-black">
+          <div className="font-mono text-xs uppercase tracking-widest text-mutedForeground">
+            [ HOÀN THÀNH TRÒ CHƠI GHÉP THẺ ]
           </div>
-
-          <div>
-            <h1 className="text-2xl sm:text-3xl font-black tracking-tight">
-              Xuất Sắc! Hoàn Thành Ghép Thẻ!
-            </h1>
-            <p className="text-emerald-100 text-sm mt-1">
-              Bạn đã ghép chính xác toàn bộ {totalPairs} cặp thẻ.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-3 gap-3 pt-2">
-            <div className="rounded-2xl bg-white/10 backdrop-blur-md p-3.5 border border-white/15 flex flex-col items-center">
-              <span className="text-xs text-emerald-200">Thời gian</span>
-              <span className="text-2xl font-black mt-0.5 font-mono">
-                {formatTime(timeSeconds)}
-              </span>
-              <span className="text-[10px] text-emerald-200/80">phút:giây</span>
-            </div>
-
-            <div className="rounded-2xl bg-white/10 backdrop-blur-md p-3.5 border border-white/15 flex flex-col items-center">
-              <span className="text-xs text-emerald-200">Số lượt thử</span>
-              <span className="text-2xl font-black mt-0.5">{turns}</span>
-              <span className="text-[10px] text-emerald-200/80">lượt lật</span>
-            </div>
-
-            <div className="rounded-2xl bg-white/10 backdrop-blur-md p-3.5 border border-white/15 flex flex-col items-center">
-              <span className="text-xs text-emerald-200">Điểm thưởng</span>
-              <span className="text-2xl font-black mt-0.5 text-amber-300">+25</span>
-              <span className="text-[10px] text-emerald-200/80">XP</span>
-            </div>
-          </div>
-
-          {bestTime && (
-            <div className="text-xs text-emerald-100/90 font-medium">
-              🏆 Kỷ lục tốt nhất của bạn: <span className="font-bold font-mono">{formatTime(bestTime)}</span>
-            </div>
-          )}
+          <h1 className="font-serif font-black text-4xl sm:text-6xl text-black tracking-tight uppercase">
+            MATCHING COMPLETED
+          </h1>
+          <p className="font-serif text-lg sm:text-2xl text-black tracking-widest">
+            神経衰弱完了
+          </p>
+          <p className="font-mono text-xs uppercase tracking-wider text-mutedForeground mt-1">
+            BẠN ĐÃ GHÉP CHÍNH XÁC {totalPairs} CẶP THẺ
+          </p>
         </div>
 
+        {/* 3 Core Stats Grid with 4px black rules and 6xl serif numbers */}
+        <div className="grid grid-cols-3 border-b-4 border-black divide-x-2 divide-black text-center">
+          <div className="p-4 sm:p-6 flex flex-col items-center justify-center bg-white">
+            <span className="font-mono text-xs uppercase tracking-widest text-mutedForeground">
+              THỜI GIAN
+            </span>
+            <span className="font-mono text-3xl sm:text-5xl font-black text-black my-1">
+              {formatTime(timeSeconds)}
+            </span>
+            <span className="font-mono text-[11px] text-mutedForeground uppercase tracking-wider">
+              PHÚT:GIÂY
+            </span>
+          </div>
+
+          <div className="p-4 sm:p-6 flex flex-col items-center justify-center bg-white">
+            <span className="font-mono text-xs uppercase tracking-widest text-mutedForeground">
+              LƯỢT LẬT
+            </span>
+            <span className="font-serif text-3xl sm:text-5xl font-black text-black my-1">
+              {turns}
+            </span>
+            <span className="font-mono text-[11px] text-mutedForeground uppercase tracking-wider">
+              LƯỢT THỬ
+            </span>
+          </div>
+
+          <div className="p-4 sm:p-6 flex flex-col items-center justify-center bg-white">
+            <span className="font-mono text-xs uppercase tracking-widest text-mutedForeground">
+              ĐIỂM THƯỞNG
+            </span>
+            <span className="font-serif text-3xl sm:text-5xl font-black text-black my-1">
+              +25
+            </span>
+            <span className="font-mono text-[11px] text-mutedForeground uppercase tracking-wider">
+              XP
+            </span>
+          </div>
+        </div>
+
+        {bestTime && (
+          <div className="text-center font-mono text-xs uppercase tracking-widest text-black border-2 border-black p-3 bg-muted">
+            [ KỶ LỤC TỐT NHẤT CỦA BẠN: {formatTime(bestTime)} ]
+          </div>
+        )}
+
         {/* Action Buttons */}
-        <div className="flex flex-col sm:flex-row items-center gap-3">
+        <div className="flex flex-col sm:flex-row items-center gap-3 pt-2">
           <button
             type="button"
             onClick={initializeGame}
-            className="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold shadow-md shadow-emerald-500/20 transition-all active:scale-98"
+            className="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-black bg-white text-black font-mono text-xs font-bold uppercase tracking-widest hover:bg-black hover:text-white transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
           >
             <RotateCcw className="w-4 h-4" />
-            <span>Chơi Lại Ván Khác</span>
+            <span>[ CHƠI LẠI VÁN KHÁC ]</span>
           </button>
 
           <Link
             href="/review/quiz"
-            className="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 font-semibold transition-all active:scale-98"
+            className="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-black bg-white text-black font-mono text-xs font-bold uppercase tracking-widest hover:bg-black hover:text-white transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
           >
-            <Dices className="w-4 h-4 text-emerald-500" />
-            <span>Đổi Chế Độ Quiz</span>
+            <Dices className="w-4 h-4" />
+            <span>[ ĐỔI CHẾ ĐỘ QUIZ ]</span>
           </Link>
 
           <Link
             href="/"
-            className="w-full sm:w-auto flex items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 font-semibold transition-all active:scale-98"
+            className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-black bg-black text-white font-mono text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
           >
             <Home className="w-4 h-4" />
-            <span>Trang Chủ</span>
+            <span>[ TRANG CHỦ ]</span>
           </Link>
         </div>
       </div>
@@ -360,53 +373,32 @@ export const MatchingGame: React.FC<MatchingGameProps> = ({
   const gridColsClass = totalPairs === 8 ? 'grid-cols-2 sm:grid-cols-4' : 'grid-cols-2 sm:grid-cols-3 md:grid-cols-4';
 
   return (
-    <div className={`w-full max-w-3xl mx-auto space-y-4 sm:space-y-6 ${className}`}>
+    <div className={`w-full max-w-3xl mx-auto space-y-6 ${className}`}>
       {/* Game Stats Header */}
-      <div className="flex items-center justify-between gap-2 sm:gap-3 p-3 sm:p-4 rounded-2xl sm:rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-xs sm:shadow-sm">
+      <div className="flex items-center justify-between gap-2 p-3 sm:p-4 border-2 border-black bg-white rounded-none shadow-none">
         {/* Progress */}
-        <div className="flex items-center gap-1.5 sm:gap-2">
-          <div className="p-1.5 sm:p-2 rounded-lg sm:rounded-xl bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400">
-            <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5" />
-          </div>
-          <div>
-            <span className="text-[10px] sm:text-xs text-slate-500 dark:text-slate-400 font-medium">Đã ghép</span>
-            <p className="text-xs sm:text-base font-bold text-slate-900 dark:text-white">
-              {matchedPairsCount}/{totalPairs} <span className="text-[10px] sm:text-xs font-normal text-slate-500">cặp</span>
-            </p>
-          </div>
+        <div className="font-mono text-xs sm:text-sm font-bold uppercase">
+          <span className="text-mutedForeground mr-1">[ ĐÃ GHÉP:</span>
+          <span className="text-black">{matchedPairsCount}/{totalPairs} CẶP ]</span>
         </div>
 
         {/* Turns */}
-        <div className="flex items-center gap-1.5 sm:gap-2">
-          <div className="p-1.5 sm:p-2 rounded-lg sm:rounded-xl bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400">
-            <MousePointerClick className="w-4 h-4 sm:w-5 sm:h-5" />
-          </div>
-          <div>
-            <span className="text-[10px] sm:text-xs text-slate-500 dark:text-slate-400 font-medium">Lượt lật</span>
-            <p className="text-xs sm:text-base font-bold text-slate-900 dark:text-white font-mono">
-              {turns}
-            </p>
-          </div>
+        <div className="font-mono text-xs sm:text-sm font-bold uppercase">
+          <span className="text-mutedForeground mr-1">[ LƯỢT:</span>
+          <span className="text-black">{turns} ]</span>
         </div>
 
         {/* Timer */}
-        <div className="flex items-center gap-1.5 sm:gap-2">
-          <div className="p-1.5 sm:p-2 rounded-lg sm:rounded-xl bg-amber-50 dark:bg-amber-950/60 text-amber-600 dark:text-amber-400">
-            <Timer className="w-4 h-4 sm:w-5 sm:h-5" />
-          </div>
-          <div>
-            <span className="text-[10px] sm:text-xs text-slate-500 dark:text-slate-400 font-medium">Thời gian</span>
-            <p className="text-xs sm:text-base font-bold text-slate-900 dark:text-white font-mono">
-              {formatTime(timeSeconds)}
-            </p>
-          </div>
+        <div className="font-mono text-xs sm:text-sm font-bold uppercase">
+          <span className="text-mutedForeground mr-1">[ THỜI GIAN:</span>
+          <span className="text-black">{formatTime(timeSeconds)} ]</span>
         </div>
 
         {/* Restart Button */}
         <button
           type="button"
           onClick={initializeGame}
-          className="p-2 sm:p-2.5 rounded-xl sm:rounded-2xl border border-slate-200 dark:border-slate-800 text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors shrink-0"
+          className="p-1.5 border border-black bg-white text-black hover:bg-black hover:text-white transition-colors duration-100 rounded-none shadow-none shrink-0"
           title="Xáo bài và chơi lại"
         >
           <RotateCcw className="w-4 h-4" />
@@ -414,29 +406,33 @@ export const MatchingGame: React.FC<MatchingGameProps> = ({
       </div>
 
       {/* Cards Grid */}
-      <div className={`grid ${gridColsClass} gap-2 sm:gap-4`}>
+      <div className={`grid ${gridColsClass} gap-3 sm:gap-4`}>
         {cards.map((card) => {
           const isSelected = selectedCardId === card.id;
           const isMismatched = mismatchedCardIds.includes(card.id);
           const isJustMatched = justMatchedCardIds.includes(card.id);
           const isMatched = card.isMatched;
 
-          // Compute Dynamic Card Styling
+          // Compute Dynamic Card Styling with monochrome feedback states
           let cardStyle =
-            'border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 hover:border-indigo-400 hover:shadow-md';
+            'border-2 border-black bg-white text-black hover:bg-muted hover:border-black';
 
           if (isMatched) {
+            // Matched pair: Inverted solid black with opacity and smooth strike/checkmark
             cardStyle =
-              'border-emerald-500/30 bg-emerald-50/40 dark:bg-emerald-950/20 text-emerald-700/60 dark:text-emerald-300/60 opacity-40 cursor-default scale-95';
+              'border-2 border-black bg-black text-white opacity-40 cursor-default line-through';
           } else if (isJustMatched) {
+            // Just matched pair: Inverted solid black with border
             cardStyle =
-              'border-emerald-500 bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-100 ring-2 ring-emerald-500 scale-102';
+              'border-2 border-black bg-black text-white ring-2 ring-black scale-102';
           } else if (isMismatched) {
+            // Mismatch: Heavy 4px black border / shake feedback without red color
             cardStyle =
-              'border-rose-500 bg-rose-50 dark:bg-rose-950/70 text-rose-800 dark:text-rose-100 ring-1 ring-rose-500';
+              'border-4 border-black bg-muted text-black animate-shake';
           } else if (isSelected) {
+            // Selected state: ring-2 ring-black bg-muted
             cardStyle =
-              'border-indigo-600 bg-indigo-50 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-200 ring-2 ring-indigo-600 shadow-lg shadow-indigo-500/10 scale-102';
+              'border-2 border-black ring-2 ring-black bg-muted text-black scale-102 shadow-none';
           }
 
           return (
@@ -445,25 +441,32 @@ export const MatchingGame: React.FC<MatchingGameProps> = ({
               type="button"
               disabled={isMatched}
               onClick={() => handleCardClick(card)}
-              className={`relative min-h-[4.75rem] sm:min-h-[6.5rem] p-2 sm:p-3 rounded-xl sm:rounded-2xl border-2 flex flex-col items-center justify-center text-center transition-all select-none active:scale-95 ${cardStyle}`}
+              className={`relative min-h-[5.5rem] sm:min-h-[7rem] p-3 border-2 flex flex-col items-center justify-center text-center transition-all select-none active:scale-95 rounded-none shadow-none ${cardStyle}`}
             >
               {/* Type Badge Tag */}
               <span
-                className={`absolute top-1.5 left-1.5 sm:top-2 sm:left-2 text-[8px] sm:text-[9px] font-bold px-1 sm:px-1.5 py-0.5 rounded uppercase tracking-wider ${
-                  card.type === 'japanese'
-                    ? 'bg-indigo-100 dark:bg-indigo-900/60 text-indigo-700 dark:text-indigo-300'
-                    : 'bg-emerald-100 dark:bg-emerald-900/60 text-emerald-700 dark:text-emerald-300'
+                className={`absolute top-1.5 left-1.5 font-mono text-[9px] font-bold px-1.5 py-0.2 border uppercase tracking-wider rounded-none ${
+                  isMatched || isJustMatched
+                    ? 'border-white text-white'
+                    : 'border-black text-black'
                 }`}
               >
                 {card.type === 'japanese' ? 'JA' : 'VI'}
               </span>
 
+              {/* Matched checkmark icon */}
+              {(isMatched || isJustMatched) && (
+                <span className="absolute top-1.5 right-1.5 text-white">
+                  <Check className="w-3.5 h-3.5 stroke-[3]" />
+                </span>
+              )}
+
               {/* Card Main Text */}
               <span
-                className={`font-bold transition-all line-clamp-2 px-1 ${
+                className={`font-serif font-bold transition-all line-clamp-2 px-1 ${
                   card.type === 'japanese'
-                    ? 'text-base sm:text-xl font-japanese'
-                    : 'text-xs sm:text-sm font-medium'
+                    ? 'text-lg sm:text-2xl tracking-tight'
+                    : 'text-sm sm:text-base'
                 }`}
               >
                 {card.text}
@@ -471,7 +474,9 @@ export const MatchingGame: React.FC<MatchingGameProps> = ({
 
               {/* Optional Subtext */}
               {card.subText && (
-                <span className="text-[10px] text-slate-500 dark:text-slate-400 mt-1 line-clamp-1">
+                <span className={`text-[10px] font-mono mt-1 line-clamp-1 opacity-75 ${
+                  isMatched || isJustMatched ? 'text-white' : 'text-mutedForeground'
+                }`}>
                   {card.subText}
                 </span>
               )}

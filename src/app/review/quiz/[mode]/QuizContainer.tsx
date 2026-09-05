@@ -135,48 +135,50 @@ export default function QuizContainer({ mode }: QuizContainerProps) {
     return (
       <div className="min-h-[calc(100vh-4rem)] flex items-center justify-center">
         <div className="flex flex-col items-center gap-3">
-          <div className="w-10 h-10 border-4 border-indigo-600 border-t-transparent rounded-full animate-spin" />
-          <p className="text-sm font-medium text-slate-500">Đang khởi tạo...</p>
+          <div className="w-8 h-8 border-2 border-black border-t-transparent animate-spin rounded-none" />
+          <p className="text-xs font-mono uppercase tracking-widest text-muted-foreground">
+            INITIALIZING QUIZ SESSION...
+          </p>
         </div>
       </div>
     );
   }
 
   const modeTitles: Record<string, string> = {
-    builder: 'Ghép Ký Tự (Word Builder)',
-    choice: 'Trắc Nghiệm 4 Đáp Án',
-    matching: 'Ghép Thẻ (Matching Game)',
+    builder: 'WORD BUILDER · 単語パズル',
+    choice: 'MULTIPLE CHOICE · 4択クイズ',
+    matching: 'MATCHING TILES · ペアマッチ',
   };
 
   return (
     <div className="min-h-[calc(100vh-4rem)] py-4 sm:py-8 px-4 max-w-4xl mx-auto space-y-6 animate-fadeIn">
       {/* Top Header Navigation */}
-      <div className="flex items-center justify-between pb-3 border-b border-slate-200 dark:border-slate-800">
+      <div className="flex items-center justify-between pb-3 border-b-2 border-black">
         <Link
           href="/review/quiz"
-          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs sm:text-sm font-medium text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
+          className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-black bg-white hover:bg-black hover:text-white text-xs font-mono uppercase tracking-widest transition-colors duration-100 rounded-none shadow-none"
           title="Thoát và đổi chế độ"
         >
-          <ArrowLeft className="w-4 h-4" />
-          <span>Menu Quiz</span>
+          <ArrowLeft className="w-3.5 h-3.5" />
+          <span>QUIZ MENU</span>
         </Link>
 
         <div className="text-center">
-          <h1 className="text-sm sm:text-base font-bold text-slate-900 dark:text-white">
-            {modeTitles[mode] || 'Luyện Tập Quiz'}
+          <h1 className="text-sm sm:text-base font-serif font-bold uppercase tracking-wide text-black">
+            {modeTitles[mode] || 'PRACTICE QUIZ'}
           </h1>
-          <p className="text-xs text-indigo-600 dark:text-indigo-400 font-medium">
-            {titleDescription}
+          <p className="text-[11px] font-mono uppercase tracking-widest text-muted-foreground">
+            [{titleDescription}]
           </p>
         </div>
 
         <button
           type="button"
           onClick={handleRestart}
-          className="p-1.5 rounded-xl text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+          className="p-2 border border-black bg-white hover:bg-black hover:text-white transition-colors duration-100 rounded-none shadow-none"
           title="Tạo lại bộ câu hỏi mới"
         >
-          <RefreshCw className="w-4 h-4" />
+          <RefreshCw className="w-3.5 h-3.5" />
         </button>
       </div>
 

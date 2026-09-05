@@ -4,23 +4,18 @@ import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import Link from 'next/link';
 import confetti from 'canvas-confetti';
 import {
-  Sparkles,
-  Flame,
-  CheckCircle2,
   Volume2,
+  VolumeX,
   RotateCcw,
   ArrowRight,
   HelpCircle,
-  Trophy,
   Home,
   Check,
   X,
   Dices,
-  VolumeX,
 } from 'lucide-react';
 import { speakJapanese } from '@/lib/tts';
 import { useSRSStore } from '@/stores/srsStore';
-import { AudioButton } from '@/components/vocab/AudioButton';
 import ProgressBar from '@/components/ui/ProgressBar';
 
 export interface QuizItem {
@@ -206,7 +201,7 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
         },
       ]);
     },
-    [isChecked, currentItem, correctTarget, streak, addXp]
+    [isChecked, currentItem, correctTarget, streak, addXp, autoPlay]
   );
 
   // Next Question
@@ -221,7 +216,7 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
       if (typeof window !== 'undefined') {
         try {
           confetti({
-            particleCount: 80,
+            particleCount: 70,
             spread: 70,
             origin: { y: 0.6 },
           });
@@ -277,14 +272,14 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
 
   if (!items || items.length === 0) {
     return (
-      <div className="max-w-md mx-auto p-6 text-center space-y-4 rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900">
-        <p className="text-slate-600 dark:text-slate-400">Không có câu hỏi nào trong bộ bài này.</p>
+      <div className="max-w-md mx-auto p-6 text-center space-y-4 border-2 border-black bg-white rounded-none shadow-none">
+        <p className="font-mono text-sm text-black">[ KHÔNG CÓ CÂU HỎI NÀO TRONG BỘ BÀI NÀY ]</p>
         <Link
           href="/review/quiz"
-          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition-colors"
+          className="inline-flex items-center gap-2 px-5 py-2.5 border-2 border-black bg-black text-white font-mono text-xs uppercase font-bold hover:bg-white hover:text-black transition-colors duration-100 rounded-none shadow-none"
         >
           <Dices className="w-4 h-4" />
-          <span>Quay lại Menu Quiz</span>
+          <span>[ MENU QUIZ ]</span>
         </Link>
       </div>
     );
@@ -295,123 +290,151 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
     const accuracy = Math.round((score / items.length) * 100);
 
     return (
-      <div className={`w-full max-w-2xl mx-auto p-4 sm:p-6 space-y-6 animate-fadeIn ${className}`}>
-        {/* Banner */}
-        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-indigo-600 via-indigo-700 to-purple-800 text-white p-6 sm:p-8 shadow-xl shadow-indigo-500/20 text-center">
-          <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-white/15 backdrop-blur-md mb-3 ring-4 ring-white/10">
-            <Trophy className="w-8 h-8 text-amber-300 fill-amber-300" />
+      <div className={`w-full max-w-3xl mx-auto p-4 sm:p-6 space-y-8 animate-fadeIn ${className}`}>
+        {/* High-Fashion Editorial Title Banner */}
+        <div className="text-center space-y-2 pb-6 border-b-4 border-black">
+          <div className="font-mono text-xs uppercase tracking-widest text-mutedForeground">
+            [ HOÀN THÀNH BỘ CÂU HỎI TRẮC NGHIỆM ]
+          </div>
+          <h1 className="font-serif font-black text-4xl sm:text-6xl text-black tracking-tight uppercase">
+            MULTIPLE CHOICE COMPLETED
+          </h1>
+          <p className="font-serif text-lg sm:text-2xl text-black tracking-widest">
+            選択問題完了
+          </p>
+          <p className="font-mono text-xs uppercase tracking-wider text-mutedForeground mt-1">
+            BẠN ĐÃ TRẢ LỜI ĐÚNG {score}/{items.length} CÂU HỎI
+          </p>
+        </div>
+
+        {/* 4 Core Stats Grid with 4px black rules and 6xl serif numbers */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 border-b-4 border-black divide-y-2 lg:divide-y-0 lg:divide-x-2 divide-black text-center">
+          <div className="p-4 sm:p-6 flex flex-col items-center justify-center bg-white">
+            <span className="font-mono text-xs uppercase tracking-widest text-mutedForeground">
+              ĐÚNG
+            </span>
+            <span className="font-serif text-4xl sm:text-6xl font-black text-black my-1">
+              {score}/{items.length}
+            </span>
+            <span className="font-mono text-[11px] text-mutedForeground uppercase tracking-wider">
+              CÂU HỎI
+            </span>
           </div>
 
-          <h1 className="text-2xl sm:text-3xl font-extrabold tracking-tight">
-            Hoàn Thành Trắc Nghiệm!
-          </h1>
-          <p className="text-indigo-100 text-sm sm:text-base mt-1">
-            Bạn đã trả lời đúng {score}/{items.length} câu hỏi.
-          </p>
+          <div className="p-4 sm:p-6 flex flex-col items-center justify-center bg-white">
+            <span className="font-mono text-xs uppercase tracking-widest text-mutedForeground">
+              ĐỘ CHÍNH XÁC
+            </span>
+            <span className="font-serif text-4xl sm:text-6xl font-black text-black my-1">
+              {accuracy}%
+            </span>
+            <span className="font-mono text-[11px] text-mutedForeground uppercase tracking-wider">
+              CHÍNH XÁC
+            </span>
+          </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-6">
-            <div className="rounded-2xl bg-white/10 backdrop-blur-md p-3.5 border border-white/15 flex flex-col items-center">
-              <span className="text-xs text-indigo-200">Đúng</span>
-              <span className="text-2xl font-black mt-0.5 text-emerald-300">
-                {score}/{items.length}
-              </span>
-              <span className="text-[11px] text-indigo-200/80">câu hỏi</span>
-            </div>
+          <div className="p-4 sm:p-6 flex flex-col items-center justify-center bg-white">
+            <span className="font-mono text-xs uppercase tracking-widest text-mutedForeground">
+              CHUỖI CAO NHẤT
+            </span>
+            <span className="font-serif text-4xl sm:text-6xl font-black text-black my-1">
+              {maxStreak}
+            </span>
+            <span className="font-mono text-[11px] text-mutedForeground uppercase tracking-wider">
+              LIÊN TIẾP
+            </span>
+          </div>
 
-            <div className="rounded-2xl bg-white/10 backdrop-blur-md p-3.5 border border-white/15 flex flex-col items-center">
-              <span className="text-xs text-indigo-200">Độ chính xác</span>
-              <span className="text-2xl font-black mt-0.5">{accuracy}%</span>
-              <span className="text-[11px] text-indigo-200/80">chính xác</span>
-            </div>
-
-            <div className="rounded-2xl bg-white/10 backdrop-blur-md p-3.5 border border-white/15 flex flex-col items-center">
-              <span className="text-xs text-indigo-200">Chuỗi cao nhất</span>
-              <div className="flex items-center gap-1 mt-0.5">
-                <Flame className="w-4 h-4 text-amber-400 fill-amber-400" />
-                <span className="text-2xl font-black">{maxStreak}</span>
-              </div>
-              <span className="text-[11px] text-indigo-200/80">liên tiếp</span>
-            </div>
-
-            <div className="rounded-2xl bg-white/10 backdrop-blur-md p-3.5 border border-white/15 flex flex-col items-center">
-              <span className="text-xs text-indigo-200">Điểm thưởng</span>
-              <span className="text-2xl font-black mt-0.5 text-amber-300">+{earnedXp}</span>
-              <span className="text-[11px] text-indigo-200/80">XP</span>
-            </div>
+          <div className="p-4 sm:p-6 flex flex-col items-center justify-center bg-white">
+            <span className="font-mono text-xs uppercase tracking-widest text-mutedForeground">
+              ĐIỂM THƯỞNG
+            </span>
+            <span className="font-serif text-4xl sm:text-6xl font-black text-black my-1">
+              +{earnedXp}
+            </span>
+            <span className="font-mono text-[11px] text-mutedForeground uppercase tracking-wider">
+              XP
+            </span>
           </div>
         </div>
 
         {/* Actions */}
-        <div className="flex flex-col sm:flex-row items-center gap-3">
+        <div className="flex flex-col sm:flex-row items-center gap-3 pt-2">
           <button
             type="button"
             onClick={handleRestartInternal}
-            className="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-indigo-600 hover:bg-indigo-700 text-white font-semibold shadow-md shadow-indigo-500/20 transition-all active:scale-98"
+            className="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-black bg-white text-black font-mono text-xs font-bold uppercase tracking-widest hover:bg-black hover:text-white transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
           >
             <RotateCcw className="w-4 h-4" />
-            <span>Làm Lại Bộ Này</span>
+            <span>[ LÀM LẠI BỘ NÀY ]</span>
           </button>
 
           <Link
             href="/review/quiz"
-            className="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 font-semibold transition-all active:scale-98"
+            className="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-black bg-white text-black font-mono text-xs font-bold uppercase tracking-widest hover:bg-black hover:text-white transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
           >
-            <Dices className="w-4 h-4 text-indigo-500" />
-            <span>Đổi Chế Độ Quiz</span>
+            <Dices className="w-4 h-4" />
+            <span>[ ĐỔI CHẾ ĐỘ QUIZ ]</span>
           </Link>
 
           <Link
             href="/"
-            className="w-full sm:w-auto flex items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 font-semibold transition-all active:scale-98"
+            className="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-black bg-black text-white font-mono text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
           >
             <Home className="w-4 h-4" />
-            <span>Trang Chủ</span>
+            <span>[ TRANG CHỦ ]</span>
           </Link>
         </div>
 
         {/* Question Review List */}
-        <div className="rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-6 shadow-sm space-y-3">
-          <h2 className="font-bold text-slate-900 dark:text-white flex items-center gap-2 text-base pb-3 border-b border-slate-100 dark:border-slate-800">
-            <CheckCircle2 className="w-4 h-4 text-indigo-600 dark:text-indigo-400" />
-            <span>Chi tiết câu trả lời ({history.length})</span>
-          </h2>
+        <div className="border-2 border-black bg-white p-5 sm:p-6 rounded-none shadow-none space-y-4">
+          <div className="flex items-center justify-between pb-3 border-b-2 border-black">
+            <h2 className="font-mono text-xs font-bold uppercase tracking-widest text-black">
+              [ CHI TIẾT CÂU TRẢ LỜI · {history.length} CÂU ]
+            </h2>
+          </div>
 
-          <div className="divide-y divide-slate-100 dark:divide-slate-800 max-h-72 overflow-y-auto pr-1">
+          <div className="divide-y divide-black max-h-72 overflow-y-auto pr-1">
             {history.map((h, idx) => (
               <div
                 key={`${h.item.id}-${idx}`}
                 className="py-3 first:pt-0 last:pb-0 flex items-center justify-between gap-3"
               >
                 <div className="flex items-center gap-3 min-w-0">
-                  <div
-                    className={`w-6 h-6 rounded-full flex items-center justify-center shrink-0 ${
+                  <span
+                    className={`inline-flex items-center justify-center px-2 py-0.5 font-mono text-xs font-bold uppercase shrink-0 border border-black ${
                       h.isCorrect
-                        ? 'bg-emerald-100 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400'
-                        : 'bg-rose-100 dark:bg-rose-950 text-rose-600 dark:text-rose-400'
+                        ? 'bg-black text-white'
+                        : 'bg-white text-black line-through'
                     }`}
                   >
-                    {h.isCorrect ? <Check className="w-3.5 h-3.5" /> : <X className="w-3.5 h-3.5" />}
-                  </div>
+                    {h.isCorrect ? '[ ĐÚNG ] ✓' : '[ SAI ] ✕'}
+                  </span>
 
                   <div className="min-w-0">
-                    <div className="flex items-baseline gap-2">
-                      <span className="font-bold text-slate-900 dark:text-white font-japanese">
+                    <div className="flex items-baseline gap-2 flex-wrap">
+                      <span className="font-serif font-bold text-black text-base">
                         {h.item.word}
                       </span>
                       {h.item.reading && h.item.reading !== h.item.word && (
-                        <span className="text-xs text-indigo-600 dark:text-indigo-400 font-japanese">
+                        <span className="text-xs font-mono text-mutedForeground">
                           {h.item.reading}
                         </span>
                       )}
                       {h.item.sinoVietnamese && (
-                        <span className="text-[10px] px-1.5 py-0.2 rounded bg-amber-50 dark:bg-amber-950 text-amber-700 dark:text-amber-300 font-mono">
+                        <span className="text-[10px] font-mono font-bold px-1.5 py-0.2 bg-black text-white border border-black uppercase">
                           {h.item.sinoVietnamese}
                         </span>
                       )}
                     </div>
-                    <p className="text-xs text-slate-600 dark:text-slate-400 truncate mt-0.5">
+                    <p className="font-body text-xs text-mutedForeground truncate mt-0.5">
                       {h.item.meaning}
                     </p>
+                    {!h.isCorrect && (
+                      <p className="font-mono text-[11px] text-black font-semibold mt-0.5">
+                        Bạn chọn: {h.selectedMeaning}
+                      </p>
+                    )}
                   </div>
                 </div>
 
@@ -419,7 +442,7 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
                   <button
                     type="button"
                     onClick={() => speakJapanese(h.item.word)}
-                    className="p-1.5 rounded-lg text-slate-400 hover:text-indigo-600 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                    className="p-1.5 border border-black text-black hover:bg-black hover:text-white transition-colors duration-100 rounded-none"
                     title="Nghe phát âm"
                   >
                     <Volume2 className="w-4 h-4" />
@@ -434,41 +457,31 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
   }
 
   // ==================== ACTIVE QUIZ SCREEN ====================
-  const optionLetters = ['1', '2', '3', '4'];
-
   return (
     <div className={`w-full max-w-2xl mx-auto space-y-6 ${className}`}>
       {/* Top Header */}
       <div className="space-y-3">
         <div className="flex items-center justify-between gap-3">
           <div className="flex items-center gap-2">
-            <span className="text-xs font-mono font-bold px-2.5 py-1 rounded-xl bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 border border-indigo-200/60 dark:border-indigo-800/60">
-              Câu {currentIndex + 1}/{items.length}
+            <span className="text-xs font-mono font-bold px-2.5 py-1 border border-black bg-white text-black rounded-none uppercase">
+              CÂU {currentIndex + 1}/{items.length}
             </span>
             {currentItem.level && (
-              <span className="text-xs font-mono font-bold px-2 py-0.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">
+              <span className="text-xs font-mono font-bold px-2 py-1 bg-black text-white border border-black rounded-none">
                 {currentItem.level}
               </span>
             )}
           </div>
 
           <div className="flex items-center gap-2.5">
-            {/* Streak Counter */}
-            <div
-              className={`flex items-center gap-1 px-3 py-1 rounded-xl border text-xs font-bold transition-all ${
-                streak > 0
-                  ? 'bg-amber-50 dark:bg-amber-950/60 border-amber-200 dark:border-amber-800 text-amber-700 dark:text-amber-400'
-                  : 'bg-slate-50 dark:bg-slate-800/60 border-slate-200 dark:border-slate-700 text-slate-400'
-              }`}
-            >
-              <Flame className={`w-3.5 h-3.5 ${streak > 0 ? 'text-amber-500 fill-amber-500' : ''}`} />
-              <span>{streak} chuỗi</span>
+            {/* Streak Counter Badge */}
+            <div className="flex items-center gap-1 px-3 py-1 border border-black bg-white text-black font-mono text-xs font-bold rounded-none uppercase">
+              <span>[ STREAK: {streak} ]</span>
             </div>
 
-            {/* XP Earned */}
-            <div className="flex items-center gap-1 px-3 py-1 rounded-xl bg-indigo-50 dark:bg-indigo-950/60 border border-indigo-200 dark:border-indigo-800 text-indigo-600 dark:text-indigo-400 text-xs font-bold">
-              <Sparkles className="w-3.5 h-3.5 text-amber-400 fill-amber-400" />
-              <span>+{earnedXp} XP</span>
+            {/* XP Earned Badge */}
+            <div className="flex items-center gap-1 px-3 py-1 border border-black bg-black text-white font-mono text-xs font-bold rounded-none uppercase">
+              <span>[ +{earnedXp} XP ]</span>
             </div>
           </div>
         </div>
@@ -476,29 +489,34 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
         <ProgressBar
           value={currentIndex}
           max={items.length}
-          variant="primary"
           size="sm"
           className="transition-all"
         />
       </div>
 
       {/* Main Question Card */}
-      <div className="relative rounded-2xl sm:rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-5 sm:p-8 text-center shadow-md sm:shadow-lg space-y-3 sm:space-y-4">
-        <div className="flex justify-between items-center absolute top-3.5 left-3.5 right-3.5 sm:top-4 sm:left-4 sm:right-4">
+      <div className="relative border-2 border-black bg-white p-6 sm:p-8 text-center rounded-none shadow-none space-y-4">
+        <div className="flex justify-between items-center absolute top-4 left-4 right-4">
           {/* Audio Controls */}
-          <div className="flex items-center gap-1.5">
-            <AudioButton text={currentItem.word} size="md" variant="subtle" />
+          <div className="flex items-center gap-2">
+            <button
+              type="button"
+              onClick={() => speakJapanese(currentItem.word)}
+              className="p-1.5 border border-black bg-white text-black hover:bg-black hover:text-white transition-colors duration-100 rounded-none shadow-none"
+              title="Phát âm từ này"
+            >
+              <Volume2 className="w-4 h-4" />
+            </button>
+
             <button
               type="button"
               onClick={() => setAutoPlay(!autoPlay)}
-              className={`p-1.5 rounded-full border text-xs font-medium transition-all active:scale-95 ${
-                autoPlay
-                  ? 'bg-indigo-50 dark:bg-indigo-950/60 border-indigo-300 dark:border-indigo-800 text-indigo-600 dark:text-indigo-400 shadow-xs'
-                  : 'text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 border-slate-200 dark:border-slate-800'
+              className={`px-2 py-1 border border-black text-xs font-mono font-bold transition-colors duration-100 rounded-none ${
+                autoPlay ? 'bg-black text-white' : 'bg-white text-black'
               }`}
-              title={autoPlay ? 'Tự động phát âm: Đang BẬT (nhấn để Tắt)' : 'Tự động phát âm: Đang TẮT (nhấn để Bật)'}
+              title={autoPlay ? 'Tự động phát âm: Đang BẬT' : 'Tự động phát âm: Đang TẮT'}
             >
-              {autoPlay ? <Volume2 className="w-4 h-4" /> : <VolumeX className="w-4 h-4" />}
+              {autoPlay ? '[ AUTO: ON ]' : '[ AUTO: OFF ]'}
             </button>
           </div>
 
@@ -506,75 +524,75 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
           <button
             type="button"
             onClick={() => setShowHint(!showHint)}
-            className={`p-2 rounded-full border text-xs font-medium transition-colors ${
-              showHint
-                ? 'bg-amber-50 dark:bg-amber-950/60 border-amber-300 text-amber-600 dark:text-amber-400'
-                : 'text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 border-transparent hover:border-slate-200'
+            className={`px-2 py-1 border border-black text-xs font-mono font-bold transition-colors duration-100 rounded-none ${
+              showHint ? 'bg-black text-white' : 'bg-white text-black'
             }`}
             title="Xem gợi ý Furigana / Âm Hán Việt"
           >
-            <HelpCircle className="w-5 h-5" />
+            {showHint ? '[ HINT: ON ]' : '[ HINT ]'}
           </button>
         </div>
 
         {/* Word / Prompt Display */}
-        <div className="pt-4 pb-1 sm:pb-2">
+        <div className="pt-6 pb-2">
           {activeDirection === 'vi_to_ja' ? (
             <div>
-              <span className="text-xs font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-wider block mb-1">
-                Nghĩa Tiếng Việt
+              <span className="text-xs font-mono font-bold uppercase tracking-widest text-mutedForeground block mb-2">
+                [ NGHĨA TIẾNG VIỆT ]
               </span>
-              <h2 className="text-xl sm:text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+              <h2 className="text-2xl sm:text-4xl font-serif font-black text-black tracking-tight">
                 {currentItem.meaning}
               </h2>
             </div>
           ) : (
             <div>
-              <h2 className="text-3xl sm:text-5xl font-black text-slate-900 dark:text-white font-japanese tracking-tight">
+              <h2 className="text-4xl sm:text-6xl font-serif font-black text-black tracking-tight">
                 {currentItem.word}
               </h2>
             </div>
           )}
 
           {/* Reading and Sino-Vietnamese */}
-          <div className="min-h-[2rem] flex items-center justify-center gap-2 mt-2">
+          <div className="min-h-[2rem] flex items-center justify-center gap-2 mt-3">
             {activeDirection === 'vi_to_ja' ? (
               (showHint || isChecked) ? (
-                <div className="flex items-center gap-2 animate-fadeIn flex-wrap justify-center font-japanese text-sm">
-                  <span className="font-bold text-indigo-600 dark:text-indigo-400">
+                <div className="flex items-center gap-2 animate-fadeIn flex-wrap justify-center font-mono text-sm">
+                  <span className="font-bold text-black">
                     {currentItem.word}
                   </span>
                   {showKana && currentItem.reading && currentItem.reading !== currentItem.word && (
-                    <span className="text-slate-500 dark:text-slate-400">
+                    <span className="text-mutedForeground">
                       ({currentItem.reading})
                     </span>
                   )}
                   {currentItem.sinoVietnamese && (
-                    <span className="text-xs font-bold px-2 py-0.5 rounded bg-amber-50 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300 border border-amber-200/80 dark:border-amber-800/60 font-mono">
+                    <span className="text-xs font-bold px-2 py-0.5 bg-black text-white border border-black uppercase">
                       {currentItem.sinoVietnamese}
                     </span>
                   )}
                 </div>
               ) : (
-                <span className="text-xs text-slate-400 italic">Chọn từ tiếng Nhật tương ứng bên dưới</span>
+                <span className="text-xs font-mono text-mutedForeground uppercase tracking-wider">
+                  [ CHỌN TỪ TIẾNG NHẬT TƯƠNG ỨNG ]
+                </span>
               )
             ) : (
               (showKana || showHint || isChecked) ? (
-                <div className="flex items-center gap-2 animate-fadeIn flex-wrap justify-center">
+                <div className="flex items-center gap-2 animate-fadeIn flex-wrap justify-center font-mono">
                   {currentItem.reading && currentItem.reading !== currentItem.word && (
-                    <span className="text-base font-semibold text-indigo-600 dark:text-indigo-400 font-japanese">
+                    <span className="text-base font-bold text-mutedForeground">
                       {currentItem.reading}
                     </span>
                   )}
                   {currentItem.sinoVietnamese && (
-                    <span className="text-xs font-bold px-2 py-0.5 rounded bg-amber-50 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300 border border-amber-200/80 dark:border-amber-800/60 font-mono">
+                    <span className="text-xs font-bold px-2 py-0.5 bg-black text-white border border-black uppercase">
                       {currentItem.sinoVietnamese}
                     </span>
                   )}
                 </div>
               ) : (
-                <span className="text-xs text-slate-400 italic">
-                  (Đã ẩn Kana) Chọn nghĩa tiếng Việt chính xác bên dưới
+                <span className="text-xs font-mono text-mutedForeground uppercase tracking-wider">
+                  [ CHỌN NGHĨA TIẾNG VIỆT CHÍNH XÁC ]
                 </span>
               )
             )}
@@ -583,28 +601,28 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
       </div>
 
       {/* 4 Choices Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         {currentOptions.map((option, idx) => {
           const isSelected = selectedOption === option;
           const isCorrect = option === correctTarget;
 
           let buttonStyle =
-            'border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 hover:border-indigo-400 hover:bg-indigo-50/50 dark:hover:bg-slate-800';
+            'border-2 border-black bg-white text-black hover:bg-muted transition-colors duration-100 rounded-none shadow-none cursor-pointer';
 
-          let indicatorStyle = 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400';
+          let feedbackLabel = null;
 
           if (isChecked) {
             if (isCorrect) {
               buttonStyle =
-                'border-emerald-500 bg-emerald-50 dark:bg-emerald-950/50 text-emerald-900 dark:text-emerald-100 shadow-sm ring-1 ring-emerald-500';
-              indicatorStyle = 'bg-emerald-500 text-white';
+                'border-2 border-black bg-black text-white rounded-none shadow-none';
+              feedbackLabel = '[ CORRECT ] ✓';
             } else if (isSelected) {
               buttonStyle =
-                'border-rose-500 bg-rose-50 dark:bg-rose-950/50 text-rose-900 dark:text-rose-100 shadow-sm ring-1 ring-rose-500';
-              indicatorStyle = 'bg-rose-500 text-white';
+                'border-4 border-black bg-white text-black line-through rounded-none shadow-none font-bold';
+              feedbackLabel = '[ INCORRECT ] ✕';
             } else {
               buttonStyle =
-                'border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/40 text-slate-400 opacity-60';
+                'border-2 border-black bg-white text-mutedForeground opacity-40 rounded-none shadow-none';
             }
           }
 
@@ -614,23 +632,32 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
               type="button"
               disabled={isChecked}
               onClick={() => handleSelectOption(option)}
-              className={`relative flex items-center gap-3 p-3.5 sm:p-4 rounded-xl sm:rounded-2xl border-2 text-left font-medium transition-all active:scale-98 ${buttonStyle}`}
+              className={`relative flex items-center justify-between p-4 text-left font-mono text-sm sm:text-base font-medium active:scale-[0.99] ${buttonStyle}`}
             >
-              {/* Option Number Key (1, 2, 3, 4) */}
-              <span
-                className={`w-7 h-7 rounded-xl flex items-center justify-center font-mono font-bold text-xs shrink-0 transition-colors ${indicatorStyle}`}
-              >
-                {isChecked && isCorrect ? (
-                  <Check className="w-4 h-4 stroke-[3]" />
-                ) : isChecked && isSelected && !isCorrect ? (
-                  <X className="w-4 h-4 stroke-[3]" />
-                ) : (
-                  optionLetters[idx]
-                )}
-              </span>
+              <div className="flex items-center gap-3 min-w-0">
+                {/* Option Number Key (1, 2, 3, 4) */}
+                <span
+                  className={`w-7 h-7 flex items-center justify-center font-mono font-bold text-xs shrink-0 border border-black ${
+                    isChecked && isCorrect
+                      ? 'bg-white text-black border-white'
+                      : isChecked && isSelected
+                      ? 'bg-black text-white'
+                      : 'bg-white text-black'
+                  }`}
+                >
+                  {idx + 1}
+                </span>
 
-              {/* Option Text */}
-              <span className="text-sm sm:text-base line-clamp-2">{option}</span>
+                {/* Option Text */}
+                <span className="line-clamp-2">{option}</span>
+              </div>
+
+              {/* Feedback Label */}
+              {feedbackLabel && (
+                <span className="font-mono text-xs font-bold shrink-0 ml-2">
+                  {feedbackLabel}
+                </span>
+              )}
             </button>
           );
         })}
@@ -639,16 +666,16 @@ export const MultipleChoiceQuiz: React.FC<MultipleChoiceQuizProps> = ({
       {/* Bottom Bar / Next Action */}
       {isChecked && (
         <div className="pt-2 flex items-center justify-between gap-3 animate-fadeIn">
-          <div className="text-xs text-slate-500 dark:text-slate-400 hidden sm:block">
-            Nhấn phím <kbd className="px-1.5 py-0.5 rounded bg-slate-200 dark:bg-slate-800 font-mono font-bold">Space</kbd> hoặc <kbd className="px-1.5 py-0.5 rounded bg-slate-200 dark:bg-slate-800 font-mono font-bold">Enter</kbd> để tiếp tục
+          <div className="text-xs font-mono text-mutedForeground uppercase tracking-wider hidden sm:block">
+            [ NHẤN SPACE HOẶC ENTER ĐỂ TIẾP TỤC ]
           </div>
 
           <button
             type="button"
             onClick={handleNext}
-            className="w-full sm:w-auto ml-auto flex items-center justify-center gap-2 px-6 py-3 rounded-2xl bg-indigo-600 hover:bg-indigo-700 text-white font-semibold shadow-md shadow-indigo-500/20 transition-all active:scale-98"
+            className="w-full sm:w-auto ml-auto flex items-center justify-center gap-2 px-6 py-3.5 border-2 border-black bg-black text-white hover:bg-white hover:text-black font-mono text-xs uppercase font-bold tracking-widest transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
           >
-            <span>{currentIndex < items.length - 1 ? 'Câu tiếp theo' : 'Xem kết quả'}</span>
+            <span>{currentIndex < items.length - 1 ? '[ CÂU TIẾP THEO ]' : '[ XEM KẾT QUẢ ]'}</span>
             <ArrowRight className="w-4 h-4" />
           </button>
         </div>
