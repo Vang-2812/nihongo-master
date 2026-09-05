@@ -136,16 +136,16 @@ export default function AIClozeQuizModal({
   const accuracyPercent = total > 0 ? Math.round((score / total) * 100) : 0;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/75 p-3 sm:p-4 overflow-y-auto animate-in fade-in duration-100">
-      <div className="w-full max-w-2xl bg-white border-2 sm:border-4 border-black rounded-none shadow-none flex flex-col max-h-[92vh] overflow-hidden my-auto">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-stone-900/60 backdrop-blur-xs p-3 sm:p-4 overflow-y-auto animate-in fade-in duration-100">
+      <div className="w-full max-w-2xl bg-white border border-stone-300 rounded-none shadow-xl flex flex-col max-h-[92vh] overflow-hidden my-auto">
         {/* Top Header */}
-        <div className="px-5 py-4 border-b-2 border-black flex items-center justify-between gap-3 bg-white">
+        <div className="px-5 py-4 border-b border-stone-200 flex items-center justify-between gap-3 bg-white">
           <div className="min-w-0">
-            <h3 className="text-xs sm:text-sm font-mono font-bold text-black uppercase tracking-wider truncate">
+            <h3 className="text-xs sm:text-sm font-mono font-bold text-stone-900 uppercase tracking-wider truncate">
               BÀI TẬP AI: {lessonTitle}
             </h3>
             {!isComplete && (
-              <p className="text-[11px] font-mono text-mutedForeground uppercase tracking-wider">
+              <p className="text-[11px] font-mono text-stone-500 uppercase tracking-wider">
                 CÂU {currentIndex + 1} / {total}
               </p>
             )}
@@ -157,10 +157,10 @@ export default function AIClozeQuizModal({
               <button
                 type="button"
                 onClick={() => setIsTranslationVisible((prev) => !prev)}
-                className={`px-2.5 py-1 font-mono text-xs uppercase font-bold border border-black transition-colors duration-100 rounded-none ${
+                className={`px-2.5 py-1 font-mono text-xs uppercase font-bold border transition-colors duration-100 rounded-none ${
                   isTranslationVisible
-                    ? 'bg-black text-white'
-                    : 'bg-white text-black hover:bg-muted'
+                    ? 'border-stone-900 bg-stone-900 text-white'
+                    : 'border-stone-300 bg-stone-100 text-stone-700 hover:bg-stone-200'
                 }`}
                 title={isTranslationVisible ? 'Đang hiện nghĩa tiếng Việt' : 'Đang ẩn nghĩa tiếng Việt'}
               >
@@ -172,7 +172,7 @@ export default function AIClozeQuizModal({
             <button
               type="button"
               onClick={onClose}
-              className="border border-black px-2.5 py-1 font-mono text-xs font-bold text-black hover:bg-black hover:text-white transition-colors duration-100 rounded-none"
+              className="border border-stone-300 text-stone-600 hover:bg-stone-100 px-2.5 py-1 font-mono text-xs font-bold transition-colors duration-100 rounded-none"
               title="Đóng cửa sổ"
             >
               ✕
@@ -192,7 +192,7 @@ export default function AIClozeQuizModal({
           {!isComplete && currentExercise ? (
             <div className="space-y-6">
               {/* Question Card */}
-              <div className="p-5 sm:p-7 border-2 border-black bg-white text-center relative rounded-none shadow-none">
+              <div className="p-5 sm:p-7 border border-stone-300 bg-white text-center relative rounded-none shadow-none">
                 {/* Audio button */}
                 <button
                   type="button"
@@ -201,18 +201,18 @@ export default function AIClozeQuizModal({
                       isAnswered ? currentExercise.fullSentence : currentExercise.sentence.replace('（　　）', '...')
                     )
                   }
-                  className="absolute right-3.5 top-3.5 p-1.5 border border-black bg-white text-black hover:bg-black hover:text-white transition-colors duration-100 rounded-none"
+                  className="absolute right-3.5 top-3.5 p-1.5 border border-stone-300 bg-white text-stone-700 hover:text-stone-900 hover:bg-stone-100 transition-colors duration-100 rounded-none"
                   title="Nghe phát âm (Phím R)"
                 >
                   <Volume2 className="w-4 h-4" />
                 </button>
 
-                <span className="inline-block text-[11px] font-mono font-bold uppercase tracking-widest text-mutedForeground mb-3">
+                <span className="inline-block text-[11px] font-mono font-bold uppercase tracking-widest text-stone-500 mb-3">
                   ĐIỀN TỪ THÍCH HỢP VÀO CHỖ TRỐNG
                 </span>
 
                 {/* Japanese Sentence */}
-                <div className="text-xl sm:text-3xl font-serif font-black text-black leading-relaxed tracking-wide my-3 px-2">
+                <div className="text-xl sm:text-3xl font-serif font-bold text-stone-900 leading-relaxed tracking-wide my-3 px-2">
                   {currentExercise.sentence.split('（　　）').map((part, index, arr) => (
                     <React.Fragment key={index}>
                       <span>{part}</span>
@@ -221,9 +221,9 @@ export default function AIClozeQuizModal({
                           className={`inline-block px-3 py-0.5 mx-1 font-mono font-bold transition-all ${
                             isAnswered
                               ? selectedOptionIndex === currentExercise.correctIndex
-                                ? 'bg-black text-white border-2 border-black'
-                                : 'bg-white text-black border-4 border-black line-through'
-                              : 'border-b-4 border-black text-black'
+                                ? 'bg-emerald-50 text-emerald-800 border border-emerald-300'
+                                : 'bg-rose-50 text-rose-800 border border-rose-300 line-through'
+                              : 'border-b-2 border-stone-800 text-stone-900'
                           }`}
                         >
                           {isAnswered ? currentExercise.targetWord : '（　？　）'}
@@ -236,14 +236,14 @@ export default function AIClozeQuizModal({
                 {/* Vietnamese Translation (Toggleable) */}
                 <div className="mt-3 min-h-[24px]">
                   {isTranslationVisible ? (
-                    <p className="font-sans text-xs sm:text-sm text-black italic">
+                    <p className="font-sans text-xs sm:text-sm text-stone-700 italic">
                       "{currentExercise.translation}"
                     </p>
                   ) : (
                     <button
                       type="button"
                       onClick={() => setIsTranslationVisible(true)}
-                      className="font-mono text-xs text-mutedForeground hover:text-black border border-black px-2 py-0.5 rounded-none uppercase transition-colors"
+                      className="font-mono text-xs text-stone-500 hover:text-stone-800 border border-stone-300 px-2 py-0.5 rounded-none uppercase transition-colors"
                     >
                       XEM NGHĨA TIẾNG VIỆT
                     </button>
@@ -258,23 +258,23 @@ export default function AIClozeQuizModal({
                   const isCorrect = idx === currentExercise.correctIndex;
 
                   let buttonStyle =
-                    'border-2 border-black bg-white text-black hover:bg-muted cursor-pointer';
+                    'border border-stone-300 bg-white text-stone-900 hover:bg-stone-50 hover:border-stone-400 cursor-pointer';
 
-                  let badgeStyle = 'bg-white text-black border-black';
+                  let badgeStyle = 'bg-stone-100 text-stone-700 border-stone-300';
                   let feedbackLabel = null;
 
                   if (isAnswered) {
                     if (isCorrect) {
-                      buttonStyle = 'border-2 border-black bg-black text-white';
-                      badgeStyle = 'bg-white text-black border-white';
+                      buttonStyle = 'bg-emerald-50 text-emerald-900 border-2 border-emerald-500';
+                      badgeStyle = 'bg-emerald-600 text-white border-emerald-600';
                       feedbackLabel = 'CHÍNH XÁC ✓';
                     } else if (isSelected && !isCorrect) {
-                      buttonStyle = 'border-4 border-black bg-white text-black line-through font-bold';
-                      badgeStyle = 'bg-black text-white border-black';
+                      buttonStyle = 'bg-rose-50 text-rose-900 border-2 border-rose-400 line-through';
+                      badgeStyle = 'bg-rose-600 text-white border-rose-600';
                       feedbackLabel = 'CHƯA ĐÚNG ✕';
                     } else {
-                      buttonStyle = 'border-2 border-black bg-white text-mutedForeground opacity-40';
-                      badgeStyle = 'border-black text-mutedForeground';
+                      buttonStyle = 'border border-stone-200 bg-white text-stone-400 opacity-40';
+                      badgeStyle = 'border-stone-200 text-stone-400';
                     }
                   }
 
@@ -284,11 +284,11 @@ export default function AIClozeQuizModal({
                       type="button"
                       disabled={isAnswered}
                       onClick={() => handleSelectOption(idx)}
-                      className={`flex items-center justify-between p-4 border-2 text-left font-mono transition-colors duration-100 rounded-none shadow-none active:scale-[0.99] ${buttonStyle}`}
+                      className={`flex items-center justify-between p-4 border text-left font-mono transition-all duration-150 rounded-none shadow-none active:scale-[0.99] ${buttonStyle}`}
                     >
                       <div className="flex items-center gap-3 min-w-0">
                         <span
-                          className={`w-7 h-7 border text-xs font-black flex items-center justify-center flex-shrink-0 ${badgeStyle}`}
+                          className={`w-7 h-7 border text-xs font-bold flex items-center justify-center flex-shrink-0 ${badgeStyle}`}
                         >
                           {String.fromCharCode(65 + idx)}
                         </span>
@@ -298,7 +298,11 @@ export default function AIClozeQuizModal({
                       </div>
 
                       {feedbackLabel && (
-                        <span className="font-mono text-xs font-bold shrink-0 ml-2">
+                        <span
+                          className={`font-mono text-xs font-bold shrink-0 ml-2 ${
+                            isCorrect ? 'text-emerald-700' : 'text-rose-700'
+                          }`}
+                        >
                           {feedbackLabel}
                         </span>
                       )}
@@ -309,15 +313,27 @@ export default function AIClozeQuizModal({
 
               {/* Explanation Box (Revealed upon answer) */}
               {isAnswered && (
-                <div className="p-4 border-2 border-black bg-muted text-black rounded-none shadow-none space-y-1 animate-fadeIn">
+                <div
+                  className={`p-4 border rounded-none shadow-none space-y-1 animate-fadeIn ${
+                    selectedOptionIndex === currentExercise.correctIndex
+                      ? 'border-emerald-200 bg-emerald-50/70 text-stone-900'
+                      : 'border-rose-200 bg-rose-50/70 text-stone-900'
+                  }`}
+                >
                   <div className="flex items-start justify-between gap-3">
                     <div>
-                      <h4 className="font-mono text-xs font-bold uppercase tracking-wider mb-1 text-black">
+                      <h4
+                        className={`font-mono text-xs font-bold uppercase tracking-wider mb-1 ${
+                          selectedOptionIndex === currentExercise.correctIndex
+                            ? 'text-emerald-800'
+                            : 'text-rose-800'
+                        }`}
+                      >
                         {selectedOptionIndex === currentExercise.correctIndex
                           ? 'CHÍNH XÁC! (+5 XP)'
                           : `CHƯA CHÍNH XÁC · ĐÁP ÁN ĐÚNG: ${currentExercise.targetWord}`}
                       </h4>
-                      <p className="font-sans text-xs sm:text-sm text-black leading-relaxed">
+                      <p className="font-sans text-xs sm:text-sm text-stone-700 leading-relaxed">
                         {currentExercise.explanation}
                       </p>
                     </div>
@@ -325,7 +341,7 @@ export default function AIClozeQuizModal({
                     <button
                       type="button"
                       onClick={() => handlePlayAudio(currentExercise.fullSentence)}
-                      className="p-1.5 border border-black bg-white text-black hover:bg-black hover:text-white transition-colors duration-100 rounded-none flex-shrink-0"
+                      className="p-1.5 border border-stone-300 bg-white text-stone-700 hover:text-stone-900 hover:bg-stone-100 transition-colors duration-100 rounded-none flex-shrink-0"
                       title="Nghe lại câu hoàn chỉnh"
                     >
                       <Volume2 className="w-4 h-4" />
@@ -337,41 +353,41 @@ export default function AIClozeQuizModal({
           ) : isComplete ? (
             /* Summary View */
             <div className="py-6 text-center space-y-6 animate-fadeIn">
-              <div className="space-y-2 pb-6 border-b-4 border-black">
-                <div className="font-mono text-xs uppercase tracking-widest text-mutedForeground">
+              <div className="space-y-2 pb-6 border-b border-stone-200">
+                <div className="font-mono text-xs uppercase tracking-widest text-stone-500">
                   HOÀN THÀNH BỘ BÀI TẬP ĐIỀN TỪ AI
                 </div>
-                <h3 className="font-serif font-black text-3xl sm:text-5xl text-black tracking-tight uppercase">
+                <h3 className="font-serif font-normal text-3xl sm:text-5xl text-stone-900 tracking-tight uppercase">
                   AI CLOZE EXERCISES COMPLETED
                 </h3>
-                <p className="font-serif text-lg sm:text-2xl text-black tracking-widest">
+                <p className="font-serif text-lg sm:text-2xl text-stone-600 tracking-widest">
                   AI練習完了
                 </p>
               </div>
 
               {/* Score breakdown */}
-              <div className="grid grid-cols-3 border-2 border-black divide-x-2 divide-black max-w-sm mx-auto text-center">
-                <div className="p-3.5 bg-white">
-                  <span className="block font-serif text-2xl font-black text-black">
+              <div className="grid grid-cols-3 border border-stone-200 divide-x divide-stone-200 max-w-sm mx-auto text-center">
+                <div className="p-3.5 bg-stone-50">
+                  <span className="block font-serif text-2xl font-light text-stone-900">
                     {score}/{total}
                   </span>
-                  <span className="font-mono text-[11px] text-mutedForeground uppercase tracking-wider font-bold">
+                  <span className="font-mono text-[11px] text-stone-500 uppercase tracking-wider font-bold">
                     ĐÚNG
                   </span>
                 </div>
-                <div className="p-3.5 bg-white">
-                  <span className="block font-serif text-2xl font-black text-black">
+                <div className="p-3.5 bg-emerald-50">
+                  <span className="block font-serif text-2xl font-light text-emerald-800">
                     {accuracyPercent}%
                   </span>
-                  <span className="font-mono text-[11px] text-mutedForeground uppercase tracking-wider font-bold">
+                  <span className="font-mono text-[11px] text-emerald-700 uppercase tracking-wider font-bold">
                     CHÍNH XÁC
                   </span>
                 </div>
-                <div className="p-3.5 bg-white">
-                  <span className="block font-serif text-2xl font-black text-black">
+                <div className="p-3.5 bg-stone-50">
+                  <span className="block font-serif text-2xl font-light text-stone-900">
                     +{score * 5}
                   </span>
-                  <span className="font-mono text-[11px] text-mutedForeground uppercase tracking-wider font-bold">
+                  <span className="font-mono text-[11px] text-stone-500 uppercase tracking-wider font-bold">
                     XP
                   </span>
                 </div>
@@ -379,28 +395,28 @@ export default function AIClozeQuizModal({
 
               {/* Missed questions review */}
               {wrongAnswers.length > 0 && (
-                <div className="text-left mt-6 pt-4 border-t-2 border-black max-h-48 overflow-y-auto space-y-2">
-                  <h4 className="font-mono text-xs font-bold text-black uppercase tracking-wider">
+                <div className="text-left mt-6 pt-4 border-t border-stone-200 max-h-48 overflow-y-auto space-y-2">
+                  <h4 className="font-mono text-xs font-bold text-rose-800 uppercase tracking-wider">
                     CÁC CÂU CẦN ÔN LẠI ({wrongAnswers.length}):
                   </h4>
                   <div className="space-y-2">
                     {wrongAnswers.map((item, idx) => (
                       <div
                         key={idx}
-                        className="p-3 border border-black bg-muted text-xs flex items-center justify-between gap-3 rounded-none"
+                        className="p-3 border border-rose-200 bg-rose-50/50 text-xs flex items-center justify-between gap-3 rounded-none"
                       >
                         <div>
-                          <p className="font-serif font-bold text-black text-sm">
+                          <p className="font-serif font-bold text-stone-900 text-sm">
                             {item.fullSentence}
                           </p>
-                          <p className="font-sans text-mutedForeground mt-0.5">
-                            Đáp án: <strong className="font-mono text-black">{item.targetWord}</strong> — {item.translation}
+                          <p className="font-sans text-stone-600 mt-0.5">
+                            Đáp án: <strong className="font-mono text-rose-900">{item.targetWord}</strong> — {item.translation}
                           </p>
                         </div>
                         <button
                           type="button"
                           onClick={() => handlePlayAudio(item.fullSentence)}
-                          className="p-1.5 border border-black bg-white text-black hover:bg-black hover:text-white transition-colors duration-100 rounded-none shrink-0"
+                          className="p-1.5 border border-stone-300 bg-white text-stone-700 hover:text-stone-900 hover:bg-stone-100 transition-colors duration-100 rounded-none shrink-0"
                         >
                           <Volume2 className="w-4 h-4" />
                         </button>
@@ -413,13 +429,13 @@ export default function AIClozeQuizModal({
           ) : null}
 
           {/* Bottom Action Controls */}
-          <div className="mt-6 pt-4 border-t-2 border-black flex items-center justify-between gap-3">
+          <div className="mt-6 pt-4 border-t border-stone-200 flex items-center justify-between gap-3">
             {!isComplete ? (
               <button
                 type="button"
                 disabled={!isAnswered}
                 onClick={handleNext}
-                className="w-full inline-flex items-center justify-center gap-2 py-3.5 border-2 border-black bg-black text-white hover:bg-white hover:text-black disabled:opacity-30 disabled:cursor-not-allowed font-mono text-xs uppercase font-bold tracking-widest transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
+                className="w-full inline-flex items-center justify-center gap-2 py-3.5 border border-stone-900 bg-stone-900 text-white hover:bg-stone-800 disabled:opacity-30 disabled:cursor-not-allowed font-mono text-xs uppercase font-bold tracking-widest transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
               >
                 <span>{currentIndex + 1 === total ? 'XEM KẾT QUẢ TỔNG KẾT' : 'CÂU TIẾP THEO'}</span>
                 <ArrowRight className="w-4 h-4" />
@@ -429,7 +445,7 @@ export default function AIClozeQuizModal({
                 <button
                   type="button"
                   onClick={handleRestart}
-                  className="flex-1 inline-flex items-center justify-center gap-2 py-3.5 border-2 border-black bg-white text-black hover:bg-black hover:text-white font-mono text-xs uppercase font-bold tracking-widest transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
+                  className="flex-1 inline-flex items-center justify-center gap-2 py-3.5 border border-stone-300 bg-white text-stone-800 hover:bg-stone-100 font-mono text-xs uppercase font-bold tracking-widest transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
                 >
                   <RotateCcw className="w-4 h-4" />
                   <span>LUYỆN LẠI BÀI NÀY</span>
@@ -437,7 +453,7 @@ export default function AIClozeQuizModal({
                 <button
                   type="button"
                   onClick={onClose}
-                  className="flex-1 inline-flex items-center justify-center gap-2 py-3.5 border-2 border-black bg-black text-white hover:bg-white hover:text-black font-mono text-xs uppercase font-bold tracking-widest transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
+                  className="flex-1 inline-flex items-center justify-center gap-2 py-3.5 border border-stone-900 bg-stone-900 text-white hover:bg-stone-800 font-mono text-xs uppercase font-bold tracking-widest transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
                 >
                   <BookOpen className="w-4 h-4" />
                   <span>QUAY VỀ BÀI HỌC</span>

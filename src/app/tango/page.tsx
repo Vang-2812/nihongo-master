@@ -19,6 +19,33 @@ import {
 
 type StatusFilter = 'all' | 'not_started' | 'learning' | 'complete';
 
+const JLPT_BADGE_STYLES: Record<string, string> = {
+  N5: 'bg-emerald-50 text-emerald-800 border-emerald-200',
+  N4: 'bg-sky-50 text-sky-800 border-sky-200',
+  N3: 'bg-amber-50 text-amber-800 border-amber-200',
+  N2: 'bg-purple-50 text-purple-800 border-purple-200',
+  N1: 'bg-rose-50 text-rose-800 border-rose-200',
+};
+
+const STATUS_CHIP_STYLES: Record<StatusFilter, { active: string; inactive: string }> = {
+  all: {
+    active: 'bg-stone-900 text-white border-stone-900',
+    inactive: 'bg-stone-100 text-stone-700 border-stone-200 hover:bg-stone-200',
+  },
+  not_started: {
+    active: 'bg-stone-700 text-white border-stone-700',
+    inactive: 'bg-stone-100 text-stone-600 border-stone-200 hover:bg-stone-200',
+  },
+  learning: {
+    active: 'bg-indigo-700 text-white border-indigo-700',
+    inactive: 'bg-indigo-50 text-indigo-800 border-indigo-200 hover:bg-indigo-100',
+  },
+  complete: {
+    active: 'bg-emerald-700 text-white border-emerald-700',
+    inactive: 'bg-emerald-50 text-emerald-800 border-emerald-200 hover:bg-emerald-100',
+  },
+};
+
 export default function TangoCatalogPage() {
   const [mounted, setMounted] = useState(false);
   const [selectedBook, setSelectedBook] = useState<TextbookId | 'all'>('all');
@@ -145,53 +172,53 @@ export default function TangoCatalogPage() {
   }, [lessonsWithStats, selectedBook, statusFilter, searchQuery]);
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8 min-h-screen bg-white text-black">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8 min-h-screen text-stone-900">
       {/* Editorial Header Section */}
       <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
         <div>
-          <span className="font-mono text-xs uppercase tracking-widest text-mutedForeground block mb-2">
+          <span className="font-mono text-xs uppercase tracking-widest text-stone-500 block mb-2">
             VOCABULARY ARCHIVE · 単語アーカイブ
           </span>
-          <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl font-normal tracking-tight text-black uppercase leading-none">
+          <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl font-normal tracking-tight text-stone-900 uppercase leading-none">
             VOCABULARY ARCHIVE / 単語帳
           </h1>
-          <p className="font-sans text-xs sm:text-sm tracking-wider text-mutedForeground uppercase mt-3">
+          <p className="font-sans text-xs sm:text-sm tracking-wider text-stone-500 uppercase mt-3">
             4 GIÁO TRÌNH CHUẨN · {overallStats.totalLessonsCount} BÀI HỌC · {overallStats.totalVocab.toLocaleString()} TỪ VỰNG · SRS
           </p>
         </div>
       </div>
 
-      {/* 4px Heavy Black Rule */}
-      <div className="h-1 bg-black w-full" />
+      {/* Hairline Divider */}
+      <div className="h-px bg-stone-300 w-full" />
 
       {/* Overall Stats Strip with Hairline Dividers */}
-      <div className="border-t-2 border-b-2 border-black divide-y sm:divide-y-0 sm:divide-x divide-black py-4 grid grid-cols-2 lg:grid-cols-4">
+      <div className="border-t border-b border-stone-200 divide-y sm:divide-y-0 sm:divide-x divide-stone-200 py-4 grid grid-cols-2 lg:grid-cols-4 bg-white">
         {/* Textbooks */}
         <div className="p-4 flex flex-col justify-between">
-          <span className="font-mono text-[10px] uppercase tracking-widest text-mutedForeground">
+          <span className="font-mono text-[10px] uppercase tracking-widest text-stone-500">
             GIÁO TRÌNH · 教科書
           </span>
-          <span className="font-serif text-4xl sm:text-5xl font-light text-black tracking-tight leading-none mt-3">
+          <span className="font-serif text-4xl sm:text-5xl font-light text-stone-900 tracking-tight leading-none mt-3">
             4 BỘ SÁCH
           </span>
         </div>
 
         {/* Total Lessons */}
         <div className="p-4 flex flex-col justify-between">
-          <span className="font-mono text-[10px] uppercase tracking-widest text-mutedForeground">
+          <span className="font-mono text-[10px] uppercase tracking-widest text-stone-500">
             TỔNG SỐ BÀI · 全課
           </span>
-          <span className="font-serif text-4xl sm:text-5xl font-light text-black tracking-tight leading-none mt-3">
+          <span className="font-serif text-4xl sm:text-5xl font-light text-stone-900 tracking-tight leading-none mt-3">
             {overallStats.totalLessonsCount} BÀI
           </span>
         </div>
 
         {/* Total Words */}
         <div className="p-4 flex flex-col justify-between">
-          <span className="font-mono text-[10px] uppercase tracking-widest text-mutedForeground">
+          <span className="font-mono text-[10px] uppercase tracking-widest text-stone-500">
             TỔNG TỪ VỰNG · 総語彙
           </span>
-          <span className="font-serif text-4xl sm:text-5xl font-light text-black tracking-tight leading-none mt-3">
+          <span className="font-serif text-4xl sm:text-5xl font-light text-stone-900 tracking-tight leading-none mt-3">
             {overallStats.totalVocab.toLocaleString()}
           </span>
         </div>
@@ -199,14 +226,14 @@ export default function TangoCatalogPage() {
         {/* Mastered */}
         <div className="p-4 flex flex-col justify-between">
           <div className="flex items-baseline justify-between">
-            <span className="font-mono text-[10px] uppercase tracking-widest text-mutedForeground">
+            <span className="font-mono text-[10px] uppercase tracking-widest text-stone-500">
               ĐÃ THUỘC · 習得済み
             </span>
-            <span className="font-mono text-xs font-bold text-black">
+            <span className="font-mono text-xs font-bold text-emerald-700">
               {overallStats.progressPercent}%
             </span>
           </div>
-          <span className="font-serif text-4xl sm:text-5xl font-light text-black tracking-tight leading-none mt-3">
+          <span className="font-serif text-4xl sm:text-5xl font-light text-emerald-700 tracking-tight leading-none mt-3">
             {overallStats.totalKnown.toLocaleString()}
           </span>
         </div>
@@ -229,81 +256,51 @@ export default function TangoCatalogPage() {
               key={book.id}
               type="button"
               onClick={() => setSelectedBook(isSelected ? 'all' : book.id)}
-              className={`text-left border-2 border-black p-6 sm:p-7 flex flex-col justify-between transition-colors duration-100 rounded-none shadow-none group relative cursor-pointer ${
+              className={`text-left p-6 sm:p-7 flex flex-col justify-between transition-all duration-150 rounded-none shadow-none group relative cursor-pointer ${
                 isSelected
-                  ? 'bg-black text-white'
-                  : 'bg-white text-black hover:bg-black hover:text-white'
+                  ? 'border-2 border-stone-800 bg-stone-50'
+                  : 'border border-stone-200 bg-white hover:border-stone-400 hover:shadow-xs'
               }`}
             >
               {/* Monograph Top: Book Volume Index & Level Badge */}
               <div className="flex items-center justify-between gap-2">
                 <span
                   className={`font-mono text-xs uppercase tracking-widest border px-2 py-0.5 ${
-                    isSelected
-                      ? 'border-white text-white'
-                      : 'border-black text-black group-hover:border-white group-hover:text-white'
+                    JLPT_BADGE_STYLES[book.level] || 'bg-stone-100 text-stone-700 border-stone-200'
                   }`}
                 >
                   {book.level}
                 </span>
-                <span
-                  className={`font-mono text-[11px] uppercase tracking-wider ${
-                    isSelected ? 'text-neutral-400' : 'text-mutedForeground group-hover:text-neutral-400'
-                  }`}
-                >
+                <span className="font-mono text-[11px] uppercase tracking-wider text-stone-500">
                   VOL. 0{idx + 1}
                 </span>
               </div>
 
               {/* Monograph Center: Giant Serif Number & Editorial Book Title */}
               <div className="my-8">
-                <span
-                  className={`font-serif text-6xl sm:text-7xl font-light leading-none block select-none mb-3 ${
-                    isSelected ? 'text-white' : 'text-black group-hover:text-white'
-                  }`}
-                >
+                <span className="font-serif text-6xl sm:text-7xl font-light leading-none block select-none mb-3 text-stone-900">
                   0{idx + 1}
                 </span>
-                <h2
-                  className={`font-serif text-xl sm:text-2xl font-bold uppercase tracking-tight leading-snug ${
-                    isSelected ? 'text-white' : 'text-black group-hover:text-white'
-                  }`}
-                >
+                <h2 className="font-serif text-xl sm:text-2xl font-bold uppercase tracking-tight leading-snug text-stone-900">
                   {book.title}
                 </h2>
-                <p
-                  className={`font-sans text-xs sm:text-sm mt-2 line-clamp-2 ${
-                    isSelected ? 'text-neutral-300' : 'text-mutedForeground group-hover:text-neutral-300'
-                  }`}
-                >
+                <p className="font-sans text-xs sm:text-sm mt-2 line-clamp-2 text-stone-600">
                   {book.description}
                 </p>
               </div>
 
               {/* Monograph Bottom: Metadata & Monospace Progress */}
-              <div
-                className={`pt-3 border-t font-mono text-xs uppercase tracking-wider space-y-2 ${
-                  isSelected ? 'border-white' : 'border-black group-hover:border-white'
-                }`}
-              >
-                <div
-                  className={`flex items-center justify-between text-[11px] ${
-                    isSelected ? 'text-neutral-300' : 'text-mutedForeground group-hover:text-neutral-300'
-                  }`}
-                >
+              <div className="pt-3 border-t border-stone-200 font-mono text-xs uppercase tracking-wider space-y-2">
+                <div className="flex items-center justify-between text-[11px] text-stone-600">
                   <span>{book.lessonCount} BÀI HỌC</span>
                   <span>{book.vocabCount} TỪ VỰNG</span>
                 </div>
-                <div
-                  className={`flex items-center justify-between font-bold text-xs ${
-                    isSelected ? 'text-white' : 'text-black group-hover:text-white'
-                  }`}
-                >
+                <div className="flex items-center justify-between font-bold text-xs text-stone-600">
                   <span>TIẾN ĐỘ</span>
-                  <span>{bookKnownVocab}/{bookTotalVocab} · {bookPercent}%</span>
+                  <span className="text-stone-900 font-mono">{bookKnownVocab}/{bookTotalVocab} · {bookPercent}%</span>
                 </div>
                 {isSelected && (
-                  <div className="font-sans font-medium text-[10px] tracking-wider uppercase text-center pt-1 border-t border-white/40">
+                  <div className="font-sans font-medium text-[10px] tracking-wider uppercase text-center pt-1 border-t border-stone-300 text-stone-800">
                     ĐANG LỌC BỘ SÁCH NÀY
                   </div>
                 )}
@@ -314,22 +311,22 @@ export default function TangoCatalogPage() {
       </div>
 
       {/* Search & Filter Bar */}
-      <div className="border-2 border-black p-4 mb-6 bg-white rounded-none shadow-none flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div className="border border-stone-200 p-4 mb-6 bg-white rounded-none shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-4">
         {/* Search Input */}
         <div className="relative flex-1">
-          <Search className="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-mutedForeground pointer-events-none" />
+          <Search className="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-stone-400 pointer-events-none" />
           <input
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Tìm kiếm bài học, Kanji, Hiragana hoặc nghĩa tiếng Việt..."
-            className="w-full pl-9 pr-9 py-2 border border-black bg-white text-black placeholder-neutral-400 font-mono text-xs sm:text-sm rounded-none focus:outline-none focus:ring-1 focus:ring-black"
+            className="w-full pl-9 pr-9 py-2 border border-stone-300 bg-white text-stone-900 placeholder-stone-400 font-mono text-xs sm:text-sm rounded-none focus:outline-none focus:ring-1 focus:ring-stone-400"
           />
           {searchQuery && (
             <button
               type="button"
               onClick={() => setSearchQuery('')}
-              className="absolute right-3 top-1/2 -translate-y-1/2 p-1 text-black hover:bg-neutral-200"
+              className="absolute right-3 top-1/2 -translate-y-1/2 p-1 text-stone-500 hover:text-stone-900 hover:bg-stone-100"
             >
               <X className="w-3.5 h-3.5" />
             </button>
@@ -338,7 +335,7 @@ export default function TangoCatalogPage() {
 
         {/* Status Filter Chips */}
         <div className="flex items-center gap-1.5 overflow-x-auto pb-1 md:pb-0">
-          <span className="font-sans font-medium text-xs uppercase tracking-wider text-mutedForeground mr-1 flex items-center gap-1 shrink-0">
+          <span className="font-sans font-medium text-xs uppercase tracking-wider text-stone-500 mr-1 flex items-center gap-1 shrink-0">
             <Filter className="w-3.5 h-3.5" /> TRẠNG THÁI:
           </span>
           {[
@@ -348,15 +345,14 @@ export default function TangoCatalogPage() {
             { id: 'complete', label: 'HOÀN THÀNH' },
           ].map((chip) => {
             const active = statusFilter === chip.id;
+            const styles = STATUS_CHIP_STYLES[chip.id as StatusFilter];
             return (
               <button
                 key={chip.id}
                 type="button"
                 onClick={() => setStatusFilter(chip.id as StatusFilter)}
-                className={`border border-black font-sans font-medium text-xs uppercase tracking-wider px-3 py-1.5 rounded-none transition-colors duration-100 whitespace-nowrap ${
-                  active
-                    ? 'bg-black text-white'
-                    : 'bg-white text-black hover:bg-muted'
+                className={`border font-sans font-medium text-xs uppercase tracking-wider px-3 py-1.5 rounded-none transition-colors duration-100 whitespace-nowrap ${
+                  active ? styles.active : styles.inactive
                 }`}
               >
                 {chip.label}
@@ -369,10 +365,10 @@ export default function TangoCatalogPage() {
       {/* Lesson List Header */}
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center gap-2">
-          <h2 className="font-serif text-xl sm:text-2xl font-normal text-black uppercase">
+          <h2 className="font-serif text-xl sm:text-2xl font-normal text-stone-900 uppercase">
             DANH SÁCH BÀI HỌC
           </h2>
-          <span className="font-mono text-xs border border-black px-2 py-0.5 text-black">
+          <span className="font-mono text-xs border border-stone-200 bg-stone-100 text-stone-700 px-2 py-0.5">
             {filteredLessons.length} BÀI
           </span>
         </div>
@@ -381,7 +377,7 @@ export default function TangoCatalogPage() {
           <button
             type="button"
             onClick={() => setSelectedBook('all')}
-            className="font-sans font-medium text-xs uppercase tracking-wider text-black hover:underline flex items-center gap-1"
+            className="font-sans font-medium text-xs uppercase tracking-wider text-stone-700 hover:text-stone-900 flex items-center gap-1"
           >
             <span>XEM TẤT CẢ GIÁO TRÌNH</span>
             <ChevronRight className="w-3.5 h-3.5" />
@@ -391,12 +387,12 @@ export default function TangoCatalogPage() {
 
       {/* Lesson Cards Grid */}
       {filteredLessons.length === 0 ? (
-        <div className="border-2 border-dashed border-black bg-white p-12 text-center rounded-none">
-          <BookMarked className="w-10 h-10 text-black mx-auto mb-3 stroke-[1.5]" />
-          <h3 className="font-serif text-lg font-normal text-black uppercase">
+        <div className="border border-dashed border-stone-300 bg-white p-12 text-center rounded-none">
+          <BookMarked className="w-10 h-10 text-stone-400 mx-auto mb-3 stroke-[1.5]" />
+          <h3 className="font-serif text-lg font-normal text-stone-900 uppercase">
             KHÔNG TÌM THẤY BÀI HỌC NÀO PHÙ HỢP
           </h3>
-          <p className="font-sans text-sm text-mutedForeground mt-1">
+          <p className="font-sans text-sm text-stone-500 mt-1">
             Vui lòng thử thay đổi từ khóa tìm kiếm hoặc bỏ chọn các bộ lọc.
           </p>
           <button
@@ -406,7 +402,7 @@ export default function TangoCatalogPage() {
               setSelectedBook('all');
               setStatusFilter('all');
             }}
-            className="mt-4 border border-black bg-black text-white hover:bg-white hover:text-black px-4 py-2 font-sans font-medium text-xs uppercase tracking-wider transition-colors duration-100 rounded-none"
+            className="mt-4 border border-stone-900 bg-stone-900 text-white hover:bg-stone-800 px-4 py-2 font-sans font-medium text-xs uppercase tracking-wider transition-colors duration-100 rounded-none"
           >
             XÓA TẤT CẢ BỘ LỌC
           </button>
@@ -418,20 +414,28 @@ export default function TangoCatalogPage() {
               <Link
                 key={lesson.id}
                 href={`/tango/${lesson.id}`}
-                className="group block border border-black bg-white p-5 transition-colors duration-100 hover:bg-black hover:text-white rounded-none shadow-none relative flex flex-col justify-between"
+                className="group block border border-stone-200 bg-white p-5 hover:border-stone-400 hover:shadow-xs transition-all duration-150 rounded-none shadow-none relative flex flex-col justify-between"
               >
                 <div>
                   {/* Header: Book badge & Status badge */}
                   <div className="flex items-center justify-between gap-2 mb-2">
                     <div className="flex items-center gap-1.5">
-                      <span className="font-mono text-[10px] uppercase tracking-widest border border-black group-hover:border-white px-1.5 py-0.5 text-black group-hover:text-white">
+                      <span className={`font-mono text-[10px] uppercase tracking-widest border px-1.5 py-0.5 ${
+                        JLPT_BADGE_STYLES[lesson.level] || 'bg-stone-100 text-stone-700 border-stone-200'
+                      }`}>
                         {lesson.level}
                       </span>
-                      <span className="font-sans text-xs text-mutedForeground group-hover:text-neutral-300 truncate max-w-[150px]">
+                      <span className="font-sans text-xs text-stone-500 truncate max-w-[150px]">
                         {lesson.bookTitle}
                       </span>
                     </div>
-                    <span className="font-sans font-medium text-[10px] uppercase tracking-wider border border-black group-hover:border-white px-1.5 py-0.5 text-black group-hover:text-white">
+                    <span className={`font-sans font-medium text-[10px] uppercase tracking-wider border px-1.5 py-0.5 ${
+                      lesson.status === 'complete'
+                        ? 'bg-emerald-50 text-emerald-800 border-emerald-200'
+                        : lesson.status === 'learning'
+                        ? 'bg-indigo-50 text-indigo-800 border-indigo-200'
+                        : 'bg-stone-100 text-stone-600 border-stone-200'
+                    }`}>
                       {lesson.status === 'complete' && 'ĐÃ HOÀN THÀNH'}
                       {lesson.status === 'learning' && 'ĐANG HỌC'}
                       {lesson.status === 'not_started' && 'CHƯA HỌC'}
@@ -439,30 +443,36 @@ export default function TangoCatalogPage() {
                   </div>
 
                   {/* Lesson Title */}
-                  <h3 className="font-serif text-lg sm:text-xl font-bold text-black group-hover:text-white leading-snug mt-2">
+                  <h3 className="font-serif text-lg sm:text-xl font-bold text-stone-900 group-hover:text-stone-700 leading-snug mt-2 transition-colors">
                     {lesson.title}
                   </h3>
 
                   {/* Lesson Subtitle */}
                   {lesson.subtitle && (
-                    <p className="font-sans text-xs text-mutedForeground group-hover:text-neutral-300 mt-1 line-clamp-2">
+                    <p className="font-sans text-xs text-stone-500 mt-1 line-clamp-2">
                       {lesson.subtitle}
                     </p>
                   )}
                 </div>
 
                 {/* Footer: Vocab Count & Progress in Mono */}
-                <div className="mt-4 pt-3 border-t border-borderLight group-hover:border-neutral-800">
+                <div className="mt-4 pt-3 border-t border-stone-200">
                   <div className="flex items-center justify-between font-mono text-xs mb-1.5">
-                    <span className="text-black group-hover:text-white">
+                    <span className="text-stone-600">
                       {lesson.items.length} TỪ VỰNG
                     </span>
-                    <span className="font-bold text-black group-hover:text-white">
+                    <span className={`font-bold ${
+                      lesson.status === 'complete'
+                        ? 'text-emerald-700'
+                        : lesson.status === 'learning'
+                        ? 'text-indigo-800'
+                        : 'text-stone-900'
+                    }`}>
                       {lesson.knownCount}/{lesson.items.length} · {lesson.progressPercent}%
                     </span>
                   </div>
 
-                  <div className="flex items-center justify-end mt-3 font-sans font-medium text-xs uppercase tracking-wider text-black group-hover:text-white group-hover:translate-x-1 transition-transform">
+                  <div className="flex items-center justify-end mt-3 font-sans font-medium text-xs uppercase tracking-wider text-stone-700 group-hover:text-stone-950 group-hover:translate-x-1 transition-all">
                     <span>VÀO HỌC BÀI →</span>
                   </div>
                 </div>

@@ -75,10 +75,10 @@ export const AudioButton: React.FC<AudioButtonProps> = ({
   }[size];
 
   const variantClasses = {
-    primary: 'bg-black text-white hover:bg-white hover:text-black border-black',
-    subtle: 'bg-white text-black hover:bg-black hover:text-white border-black',
-    ghost: 'bg-transparent text-black hover:bg-black hover:text-white border-transparent hover:border-black',
-    outline: 'bg-white text-black hover:bg-black hover:text-white border-black',
+    primary: 'bg-stone-900 text-white hover:bg-stone-800 border-stone-900',
+    subtle: 'bg-white text-stone-700 hover:text-stone-900 hover:bg-stone-100 border-stone-300',
+    ghost: 'bg-transparent text-stone-600 hover:text-stone-900 hover:bg-stone-100 border-transparent',
+    outline: 'bg-white text-stone-700 hover:bg-stone-100 hover:text-stone-900 border-stone-300',
   }[variant];
 
   return (
@@ -88,8 +88,8 @@ export const AudioButton: React.FC<AudioButtonProps> = ({
       disabled={disabled}
       title={title}
       aria-label={`${title}: ${text}`}
-      className={`relative inline-flex items-center justify-center border rounded-none transition-colors duration-100 focus:outline-none focus:ring-1 focus:ring-black disabled:opacity-40 disabled:cursor-not-allowed ${sizeClasses} ${
-        isPlaying ? 'bg-black text-white border-black' : variantClasses
+      className={`relative inline-flex items-center justify-center border rounded-none transition-colors duration-100 focus:outline-none focus:ring-1 focus:ring-stone-400 disabled:opacity-40 disabled:cursor-not-allowed ${sizeClasses} ${
+        isPlaying ? 'bg-stone-900 text-white border-stone-900' : variantClasses
       } ${className}`}
     >
       {disabled ? (

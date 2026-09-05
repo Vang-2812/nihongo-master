@@ -32,6 +32,29 @@ export interface LessonDetailViewProps {
 
 type FilterTab = 'all' | 'not_started' | 'learning' | 'known' | 'srs';
 
+const FILTER_TAB_STYLES: Record<FilterTab, { active: string; inactive: string }> = {
+  all: {
+    active: 'bg-stone-900 text-white border-stone-900',
+    inactive: 'bg-stone-100 text-stone-700 border-stone-200 hover:bg-stone-200',
+  },
+  not_started: {
+    active: 'bg-stone-700 text-white border-stone-700',
+    inactive: 'bg-stone-100 text-stone-600 border-stone-200 hover:bg-stone-200',
+  },
+  learning: {
+    active: 'bg-indigo-700 text-white border-indigo-700',
+    inactive: 'bg-indigo-50 text-indigo-800 border-indigo-200 hover:bg-indigo-100',
+  },
+  known: {
+    active: 'bg-emerald-700 text-white border-emerald-700',
+    inactive: 'bg-emerald-50 text-emerald-800 border-emerald-200 hover:bg-emerald-100',
+  },
+  srs: {
+    active: 'bg-indigo-700 text-white border-indigo-700',
+    inactive: 'bg-indigo-50 text-indigo-800 border-indigo-200 hover:bg-indigo-100',
+  },
+};
+
 export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
   lesson,
   adjacent,
@@ -311,25 +334,25 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
   };
 
   return (
-    <div className="min-h-screen bg-white text-black pb-24">
+    <div className="min-h-screen text-stone-900 pb-24">
       {/* Top Breadcrumbs & Back Navigation Sticky Header */}
-      <div className="border-b border-black bg-white sticky top-16 z-30">
+      <div className="border-b border-stone-200 bg-white/95 backdrop-blur-sm sticky top-16 z-30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
           <Link
             href="/tango"
-            className="font-sans font-medium text-xs uppercase tracking-wider inline-flex items-center gap-1.5 text-black hover:underline"
+            className="font-sans font-medium text-xs uppercase tracking-wider inline-flex items-center gap-1.5 text-stone-700 hover:text-stone-900"
           >
             <ArrowLeft className="w-3.5 h-3.5" />
             <span>← QUAY LẠI KHO TỪ VỰNG</span>
           </Link>
 
           {/* Breadcrumbs trail */}
-          <div className="hidden sm:flex items-center gap-2 font-mono text-xs text-mutedForeground uppercase tracking-wider">
+          <div className="hidden sm:flex items-center gap-2 font-mono text-xs text-stone-500 uppercase tracking-wider">
             <span>TANGO ARCHIVE</span>
             <span>/</span>
             <span>{lesson.bookTitle}</span>
             <span>/</span>
-            <span className="text-black font-bold truncate max-w-[200px]">
+            <span className="text-stone-900 font-bold truncate max-w-[200px]">
               {lesson.title}
             </span>
           </div>
@@ -346,7 +369,7 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
                   handleGenerateAIExercises(false);
                 }
               }}
-              className="border border-black bg-white hover:bg-black hover:text-white text-black font-sans font-medium text-xs uppercase tracking-wider px-3 py-1.5 transition-colors duration-100 rounded-none disabled:opacity-50"
+              className="bg-indigo-50 text-indigo-800 border border-indigo-200 hover:bg-indigo-100 font-sans font-medium text-xs uppercase tracking-wider px-3 py-1.5 transition-colors duration-100 rounded-none disabled:opacity-50"
             >
               <span>
                 {isGeneratingAI
@@ -361,7 +384,7 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
             <button
               type="button"
               onClick={() => setIsQuizModalOpen(true)}
-              className="border border-black bg-black text-white hover:bg-white hover:text-black font-sans font-medium text-xs uppercase tracking-wider px-3 py-1.5 transition-colors duration-100 rounded-none"
+              className="border border-stone-900 bg-stone-900 text-white hover:bg-stone-800 font-sans font-medium text-xs uppercase tracking-wider px-3 py-1.5 transition-colors duration-100 rounded-none"
             >
               <span>
                 {selectedItemIds.size > 0
@@ -377,44 +400,44 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
         {/* Editorial Section Header */}
         <div>
           <div className="flex flex-wrap items-center gap-2 mb-3">
-            <span className="font-mono text-xs uppercase tracking-widest border border-black px-2 py-0.5 text-black">
+            <span className="font-mono text-xs uppercase tracking-widest bg-stone-100 text-stone-700 border border-stone-200 px-2 py-0.5">
               {lesson.level}
             </span>
-            <span className="font-mono text-xs uppercase tracking-widest border border-black px-2 py-0.5 text-black">
+            <span className="font-mono text-xs uppercase tracking-widest bg-stone-100 text-stone-700 border border-stone-200 px-2 py-0.5">
               BÀI {String(lesson.lessonNumber).padStart(2, '0')}
             </span>
-            <span className="font-sans text-xs uppercase tracking-wider text-mutedForeground">
+            <span className="font-sans text-xs uppercase tracking-wider text-stone-500">
               {lesson.bookTitle}
             </span>
             {currentLessonStatus === 'complete' && (
-              <span className="font-sans font-medium text-xs uppercase tracking-wider bg-black text-white border border-black px-2 py-0.5">
+              <span className="font-sans font-medium text-xs uppercase tracking-wider bg-emerald-50 text-emerald-800 border border-emerald-200 px-2 py-0.5">
                 ĐÃ HOÀN THÀNH
               </span>
             )}
           </div>
 
-          <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal tracking-tight text-black uppercase leading-tight">
+          <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-normal tracking-tight text-stone-900 uppercase leading-tight">
             {lesson.title}
           </h1>
 
           {lesson.subtitle && (
-            <p className="font-sans text-sm sm:text-base text-mutedForeground mt-2 max-w-3xl">
+            <p className="font-sans text-sm sm:text-base text-stone-500 mt-2 max-w-3xl">
               {lesson.subtitle}
             </p>
           )}
         </div>
 
-        {/* 4px Heavy Black Divider Rule */}
-        <div className="h-1 bg-black w-full" />
+        {/* Section Rule: hairline */}
+        <div className="h-px bg-stone-300 w-full" />
 
         {/* Clean Summary Metrics Strip with Hairline Dividers */}
-        <div className="border-t-2 border-b-2 border-black divide-y sm:divide-y-0 sm:divide-x divide-black py-4 grid grid-cols-2 lg:grid-cols-4">
+        <div className="border-t border-b border-stone-200 divide-y sm:divide-y-0 sm:divide-x divide-stone-200 py-4 grid grid-cols-2 lg:grid-cols-4 bg-white">
           {/* Total Words */}
           <div className="p-4 flex flex-col justify-between">
-            <span className="font-mono text-[10px] uppercase tracking-widest text-mutedForeground">
+            <span className="font-mono text-[10px] uppercase tracking-widest text-stone-500">
               TỔNG TỪ VỰNG · 総単語数
             </span>
-            <span className="font-serif text-4xl sm:text-5xl font-light text-black tracking-tight leading-none mt-3">
+            <span className="font-serif text-4xl sm:text-5xl font-light text-stone-900 tracking-tight leading-none mt-3">
               {stats.total}
             </span>
           </div>
@@ -422,44 +445,44 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
           {/* Mastered */}
           <div className="p-4 flex flex-col justify-between">
             <div className="flex items-baseline justify-between">
-              <span className="font-mono text-[10px] uppercase tracking-widest text-mutedForeground">
+              <span className="font-mono text-[10px] uppercase tracking-widest text-stone-500">
                 ĐÃ THUỘC · 習得済み
               </span>
-              <span className="font-mono text-xs font-bold text-black">
+              <span className="font-mono text-xs font-bold text-emerald-700">
                 {stats.progressPercent}%
               </span>
             </div>
-            <span className="font-serif text-4xl sm:text-5xl font-light text-black tracking-tight leading-none mt-3">
+            <span className="font-serif text-4xl sm:text-5xl font-light text-emerald-700 tracking-tight leading-none mt-3">
               {stats.knownCount}
             </span>
           </div>
 
           {/* Learning */}
           <div className="p-4 flex flex-col justify-between">
-            <span className="font-mono text-[10px] uppercase tracking-widest text-mutedForeground">
+            <span className="font-mono text-[10px] uppercase tracking-widest text-stone-500">
               ĐANG HỌC · 学習中
             </span>
-            <span className="font-serif text-4xl sm:text-5xl font-light text-black tracking-tight leading-none mt-3">
+            <span className="font-serif text-4xl sm:text-5xl font-light text-indigo-800 tracking-tight leading-none mt-3">
               {stats.learningCount}
             </span>
           </div>
 
           {/* In SRS Queue */}
           <div className="p-4 flex flex-col justify-between">
-            <span className="font-mono text-[10px] uppercase tracking-widest text-mutedForeground">
+            <span className="font-mono text-[10px] uppercase tracking-widest text-stone-500">
               HÀNG ĐỢI SRS · 復習対象
             </span>
-            <span className="font-serif text-4xl sm:text-5xl font-light text-black tracking-tight leading-none mt-3">
+            <span className="font-serif text-4xl sm:text-5xl font-light text-stone-900 tracking-tight leading-none mt-3">
               {stats.srsCount}
             </span>
           </div>
         </div>
 
         {/* Batch Control Toolbar */}
-        <div className="border-2 border-black p-4 mb-6 flex flex-wrap items-center justify-between gap-4 bg-white rounded-none shadow-none">
+        <div className="border border-stone-200 bg-white p-4 mb-6 shadow-xs flex flex-wrap items-center justify-between gap-4 font-sans text-xs">
           {/* Selection tools */}
           <div className="flex flex-wrap items-center gap-2 sm:gap-3 font-sans font-medium text-xs uppercase tracking-wider">
-            <div className="flex items-center gap-1.5 font-bold text-black mr-2">
+            <div className="flex items-center gap-1.5 font-bold text-stone-900 mr-2">
               <CheckSquare className="w-4 h-4 stroke-[2]" />
               <span>ĐÃ CHỌN: {selectedItemIds.size} / {filteredItems.length}</span>
             </div>
@@ -467,7 +490,7 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
             <button
               type="button"
               onClick={handleSelectAllVisible}
-              className="border border-black bg-white hover:bg-black hover:text-white px-2.5 py-1.5 transition-colors duration-100 rounded-none text-black"
+              className="border border-stone-300 bg-white hover:bg-stone-100 px-2.5 py-1.5 transition-colors duration-100 rounded-none text-stone-800"
             >
               CHỌN TẤT CẢ ({filteredItems.length})
             </button>
@@ -475,7 +498,7 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
             <button
               type="button"
               onClick={handleSelectUnmastered}
-              className="border border-black bg-white hover:bg-black hover:text-white px-2.5 py-1.5 transition-colors duration-100 rounded-none text-black"
+              className="border border-stone-300 bg-white hover:bg-stone-100 px-2.5 py-1.5 transition-colors duration-100 rounded-none text-stone-800"
             >
               TỪ CHƯA THUỘC
             </button>
@@ -484,20 +507,20 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
               <button
                 type="button"
                 onClick={() => setSelectedItemIds(new Set())}
-                className="border border-black bg-white hover:bg-black hover:text-white px-2.5 py-1.5 transition-colors duration-100 rounded-none text-black"
+                className="border border-stone-300 bg-white hover:bg-stone-100 px-2.5 py-1.5 transition-colors duration-100 rounded-none text-stone-800"
               >
                 BỎ CHỌN TẤT CẢ
               </button>
             )}
           </div>
 
-          {/* Main Action Buttons with Hover Invert */}
+          {/* Main Action Buttons */}
           <div className="flex flex-wrap items-center gap-2 sm:gap-2.5">
             {/* + ADD ALL TO SRS */}
             <button
               type="button"
               onClick={handleAddAllToSRS}
-              className="border-2 border-black bg-white hover:bg-black hover:text-white font-sans font-medium text-xs uppercase tracking-wider font-bold px-3.5 py-2 transition-colors duration-100 rounded-none shadow-none"
+              className="border border-stone-300 bg-white hover:bg-stone-100 text-stone-800 font-sans font-medium text-xs uppercase tracking-wider px-3.5 py-2 transition-colors duration-100 rounded-none shadow-none"
             >
               + THÊM TẤT CẢ VÀO SRS
             </button>
@@ -506,7 +529,7 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
             <button
               type="button"
               onClick={() => setIsQuizModalOpen(true)}
-              className="border-2 border-black bg-black text-white hover:bg-white hover:text-black font-sans font-medium text-xs uppercase tracking-wider font-bold px-3.5 py-2 transition-colors duration-100 rounded-none shadow-none"
+              className="border border-stone-900 bg-stone-900 text-white hover:bg-stone-800 font-sans font-medium text-xs uppercase tracking-wider px-3.5 py-2 transition-colors duration-100 rounded-none shadow-none"
             >
               <span>
                 {selectedItemIds.size > 0
@@ -520,7 +543,7 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
               <button
                 type="button"
                 onClick={() => setIsAIModalOpen(true)}
-                className="border-2 border-black bg-white hover:bg-black hover:text-white font-sans font-medium text-xs uppercase tracking-wider font-bold px-3.5 py-2 transition-colors duration-100 rounded-none shadow-none"
+                className="bg-indigo-50 text-indigo-800 border border-indigo-200 hover:bg-indigo-100 font-sans font-medium text-xs uppercase tracking-wider px-3.5 py-2 transition-colors duration-100 rounded-none shadow-none"
               >
                 BÀI TẬP AI ({aiExercises.length})
               </button>
@@ -529,7 +552,7 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
                 type="button"
                 disabled={isGeneratingAI}
                 onClick={() => handleGenerateAIExercises(false)}
-                className="border-2 border-black bg-white hover:bg-black hover:text-white font-sans font-medium text-xs uppercase tracking-wider font-bold px-3.5 py-2 transition-colors duration-100 rounded-none shadow-none disabled:opacity-50"
+                className="bg-indigo-50 text-indigo-800 border border-indigo-200 hover:bg-indigo-100 font-sans font-medium text-xs uppercase tracking-wider px-3.5 py-2 transition-colors duration-100 rounded-none shadow-none disabled:opacity-50"
               >
                 <span>
                   {isGeneratingAI
@@ -545,10 +568,10 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
             <button
               type="button"
               onClick={handleToggleCompleteLesson}
-              className={`border border-black px-2.5 py-1.5 font-sans font-medium text-xs uppercase tracking-wider transition-colors duration-100 rounded-none ${
+              className={`px-2.5 py-1.5 font-sans font-medium text-xs uppercase tracking-wider transition-colors duration-100 rounded-none ${
                 currentLessonStatus === 'complete'
-                  ? 'bg-black text-white hover:bg-neutral-800'
-                  : 'bg-white text-black hover:bg-black hover:text-white'
+                  ? 'bg-emerald-50 text-emerald-800 border border-emerald-200 hover:bg-emerald-100'
+                  : 'border border-stone-300 bg-white text-stone-800 hover:bg-stone-100'
               }`}
             >
               {currentLessonStatus === 'complete' ? '✓ ĐÃ HOÀN THÀNH' : 'ĐÁNH DẤU HOÀN THÀNH'}
@@ -558,7 +581,7 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
             <button
               type="button"
               onClick={handleMarkAllKnown}
-              className="border border-black bg-white hover:bg-black hover:text-white px-2.5 py-1.5 font-sans font-medium text-xs uppercase tracking-wider transition-colors duration-100 rounded-none text-black"
+              className="border border-stone-300 bg-white hover:bg-stone-100 px-2.5 py-1.5 font-sans font-medium text-xs uppercase tracking-wider transition-colors duration-100 rounded-none text-stone-800"
               title="Đánh dấu nhanh tất cả từ vựng trong bài này là Đã thuộc"
             >
               ĐÃ THUỘC TẤT CẢ
@@ -567,22 +590,22 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
         </div>
 
         {/* Filter & Search Bar */}
-        <div className="border-2 border-black p-4 mb-6 bg-white rounded-none shadow-none flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div className="border border-stone-200 p-4 mb-6 bg-white rounded-none shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-4">
           {/* Search input */}
           <div className="relative flex-1">
-            <Search className="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-mutedForeground pointer-events-none" />
+            <Search className="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-stone-400 pointer-events-none" />
             <input
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Tìm kiếm từ vựng trong bài: Kanji, Hiragana, âm Hán Việt hoặc nghĩa..."
-              className="w-full pl-9 pr-9 py-2 border border-black bg-white text-black placeholder-neutral-400 font-mono text-xs sm:text-sm rounded-none focus:outline-none focus:ring-1 focus:ring-black"
+              className="w-full pl-9 pr-9 py-2 border border-stone-300 bg-white text-stone-900 placeholder-stone-400 font-mono text-xs sm:text-sm rounded-none focus:outline-none focus:ring-1 focus:ring-stone-400"
             />
             {searchQuery && (
               <button
                 type="button"
                 onClick={() => setSearchQuery('')}
-                className="absolute right-3 top-1/2 -translate-y-1/2 p-1 text-black hover:bg-neutral-200"
+                className="absolute right-3 top-1/2 -translate-y-1/2 p-1 text-stone-500 hover:text-stone-900 hover:bg-stone-100"
               >
                 <X className="w-3.5 h-3.5" />
               </button>
@@ -599,15 +622,14 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
               { id: 'srs', label: `SRS (${stats.srsCount})` },
             ].map((tab) => {
               const active = activeFilter === tab.id;
+              const styles = FILTER_TAB_STYLES[tab.id as FilterTab];
               return (
                 <button
                   key={tab.id}
                   type="button"
                   onClick={() => setActiveFilter(tab.id as FilterTab)}
-                  className={`border border-black font-sans font-medium text-xs uppercase tracking-wider px-3 py-1.5 rounded-none transition-colors duration-100 whitespace-nowrap ${
-                    active
-                      ? 'bg-black text-white'
-                      : 'bg-white text-black hover:bg-muted'
+                  className={`border font-sans font-medium text-xs uppercase tracking-wider px-3 py-1.5 rounded-none transition-colors duration-100 whitespace-nowrap ${
+                    active ? styles.active : styles.inactive
                   }`}
                 >
                   {tab.label}
@@ -619,12 +641,12 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
 
         {/* Vocabulary Cards Grid */}
         {filteredItems.length === 0 ? (
-          <div className="border-2 border-dashed border-black bg-white p-12 text-center rounded-none">
-            <BookOpen className="w-10 h-10 text-black mx-auto mb-3 stroke-[1.5]" />
-            <h3 className="font-serif text-lg font-normal text-black uppercase">
+          <div className="border border-dashed border-stone-300 bg-white p-12 text-center rounded-none">
+            <BookOpen className="w-10 h-10 text-stone-400 mx-auto mb-3 stroke-[1.5]" />
+            <h3 className="font-serif text-lg font-normal text-stone-900 uppercase">
               KHÔNG TÌM THẤY TỪ VỰNG NÀO
             </h3>
-            <p className="font-sans text-sm text-mutedForeground mt-1">
+            <p className="font-sans text-sm text-stone-500 mt-1">
               Vui lòng thử thay đổi từ khóa tìm kiếm hoặc chọn bộ lọc khác.
             </p>
             <button
@@ -633,7 +655,7 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
                 setSearchQuery('');
                 setActiveFilter('all');
               }}
-              className="mt-4 border border-black bg-black text-white hover:bg-white hover:text-black px-4 py-2 font-sans font-medium text-xs uppercase tracking-wider transition-colors duration-100 rounded-none"
+              className="mt-4 border border-stone-900 bg-stone-900 text-white hover:bg-stone-800 px-4 py-2 font-sans font-medium text-xs uppercase tracking-wider transition-colors duration-100 rounded-none"
             >
               HIỂN THỊ TẤT CẢ {stats.total} TỪ
             </button>
@@ -652,11 +674,11 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
         )}
 
         {/* Bottom Adjacent Lesson Navigation */}
-        <div className="mt-12 pt-6 border-t-2 border-black flex flex-col sm:flex-row items-center justify-between gap-4 font-sans font-medium text-xs uppercase tracking-wider">
+        <div className="mt-12 pt-6 border-t border-stone-200 flex flex-col sm:flex-row items-center justify-between gap-4 font-sans font-medium text-xs uppercase tracking-wider">
           {adjacent.prev ? (
             <Link
               href={`/tango/${adjacent.prev.id}`}
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 py-2.5 border border-black bg-white text-black hover:bg-black hover:text-white transition-colors duration-100 rounded-none"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 py-2.5 border border-stone-300 bg-white text-stone-800 hover:bg-stone-100 hover:border-stone-400 transition-colors duration-100 rounded-none"
             >
               <ChevronLeft className="w-4 h-4" />
               <span>← BÀI TRƯỚC: {adjacent.prev.title}</span>
@@ -667,7 +689,7 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
 
           <Link
             href="/tango"
-            className="text-black hover:underline tracking-widest"
+            className="text-stone-600 hover:text-stone-900 hover:underline tracking-widest"
           >
             ↑ TRỞ VỀ DANH MỤC
           </Link>
@@ -675,7 +697,7 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
           {adjacent.next ? (
             <Link
               href={`/tango/${adjacent.next.id}`}
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 py-2.5 border border-black bg-white text-black hover:bg-black hover:text-white transition-colors duration-100 rounded-none"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 py-2.5 border border-stone-300 bg-white text-stone-800 hover:bg-stone-100 hover:border-stone-400 transition-colors duration-100 rounded-none"
             >
               <span>BÀI TIẾP: {adjacent.next.title} →</span>
               <ChevronRight className="w-4 h-4" />
