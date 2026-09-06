@@ -94,7 +94,7 @@ export const Navbar: React.FC = () => {
                   alt="Nihongo Master Logo"
                   width={32}
                   height={32}
-                  className="w-8 h-8 rounded-none border border-stone-800 shadow-xs shrink-0 object-contain group-hover:border-stone-600 transition-colors"
+                  className="w-8 h-8 rounded-none border-none shadow-xs shrink-0 object-contain transition-colors"
                 />
                 <div className="flex items-center">
                   <span className="font-serif text-stone-900 font-extrabold tracking-tight text-xl sm:text-2xl">
@@ -115,18 +115,16 @@ export const Navbar: React.FC = () => {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className={`font-sans text-xs uppercase tracking-wider font-semibold px-3 py-1.5 transition-colors duration-100 flex items-center gap-1.5 ${
-                      active
-                        ? 'bg-stone-900 text-white'
-                        : 'text-stone-600 hover:text-stone-900 hover:bg-stone-100'
-                    }`}
+                    className={`font-sans text-xs uppercase tracking-wider font-semibold px-3 py-1.5 transition-colors duration-100 flex items-center gap-1.5 ${active
+                      ? 'bg-stone-900 text-white'
+                      : 'text-stone-600 hover:text-stone-900 hover:bg-stone-100'
+                      }`}
                   >
                     <span>{link.label}</span>
                     {link.badge !== undefined && (
                       <span
-                        className={`text-[10px] font-mono border px-1 py-0.5 ml-1 ${
-                          active ? 'border-white/30 text-white' : 'border-stone-300 text-stone-700 bg-stone-100'
-                        }`}
+                        className={`text-[10px] font-mono border px-1 py-0.5 ml-1 ${active ? 'border-white/30 text-white' : 'border-stone-300 text-stone-700 bg-stone-100'
+                          }`}
                       >
                         {link.badge > 99 ? '99+' : link.badge}
                       </span>
@@ -180,11 +178,10 @@ export const Navbar: React.FC = () => {
                   key={link.href}
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className={`flex items-center justify-between px-3 py-2 font-sans text-xs uppercase tracking-wider font-semibold transition-colors duration-100 ${
-                    active
-                      ? 'bg-stone-900 text-white'
-                      : 'text-stone-600 hover:text-stone-900 hover:bg-stone-100'
-                  }`}
+                  className={`flex items-center justify-between px-3 py-2 font-sans text-xs uppercase tracking-wider font-semibold transition-colors duration-100 ${active
+                    ? 'bg-stone-900 text-white'
+                    : 'text-stone-600 hover:text-stone-900 hover:bg-stone-100'
+                    }`}
                 >
                   <div className="flex items-center gap-2.5">
                     {link.icon}
@@ -192,9 +189,8 @@ export const Navbar: React.FC = () => {
                   </div>
                   {link.badge !== undefined && (
                     <span
-                      className={`text-[10px] font-mono border px-1.5 py-0.5 ${
-                        active ? 'border-white/30 text-white' : 'border-stone-300 text-stone-700 bg-stone-100'
-                      }`}
+                      className={`text-[10px] font-mono border px-1.5 py-0.5 ${active ? 'border-white/30 text-white' : 'border-stone-300 text-stone-700 bg-stone-100'
+                        }`}
                     >
                       {link.badge} ĐẾN HẠN
                     </span>
@@ -214,11 +210,10 @@ export const Navbar: React.FC = () => {
             <Link
               key={link.href}
               href={link.href}
-              className={`relative flex flex-col items-center justify-center py-1 px-2 font-sans text-[10px] uppercase tracking-wider font-semibold transition-colors duration-100 ${
-                active
-                  ? 'bg-stone-900 text-white'
-                  : 'text-stone-600 hover:text-stone-900 hover:bg-stone-100'
-              }`}
+              className={`relative flex flex-col items-center justify-center py-1 px-2 font-sans text-[10px] uppercase tracking-wider font-semibold transition-colors duration-100 ${active
+                ? 'bg-stone-900 text-white'
+                : 'text-stone-600 hover:text-stone-900 hover:bg-stone-100'
+                }`}
             >
               <div className="relative">
                 {link.icon}

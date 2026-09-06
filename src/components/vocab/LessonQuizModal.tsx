@@ -45,6 +45,7 @@ export const LessonQuizModal: React.FC<LessonQuizModalProps> = ({
   const [direction, setDirection] = useState<'ja_to_vi' | 'vi_to_ja' | 'mixed'>('ja_to_vi');
   const [shuffleQuestions, setShuffleQuestions] = useState<boolean>(true);
   const [showKana, setShowKana] = useState<boolean>(true);
+  const [builderAnswerType, setBuilderAnswerType] = useState<'word' | 'kana'>('word');
   const [autoPlayAudio, setAutoPlayAudio] = useState<boolean>(true);
   const [questionCount, setQuestionCount] = useState<number>(15);
   const [pairCount, setPairCount] = useState<number>(6);
@@ -157,6 +158,7 @@ export const LessonQuizModal: React.FC<LessonQuizModalProps> = ({
               title="Ghép Ký Tự Tạo Từ"
               subtitle={titleText}
               showKana={showKana}
+              initialAnswerType={builderAnswerType}
               onExit={() => setIsPlaying(false)}
             />
           )}
@@ -404,37 +406,66 @@ export const LessonQuizModal: React.FC<LessonQuizModalProps> = ({
                 </div>
               </div>
 
-              {/* Hiển thị Kana */}
+              {/* Hiển thị Kana hoặc Kiểu đáp án ghép từ */}
               <div>
                 <label className="block text-[10px] font-mono font-bold uppercase tracking-wider text-stone-500 mb-1">
-                  Hiển thị Kana:
+                  {selectedMode === 'builder' ? 'Đáp án ghép từ:' : 'Hiển thị Kana:'}
                 </label>
-                <div className="grid grid-cols-2 gap-1.5">
-                  <button
-                    type="button"
-                    onClick={() => setShowKana(true)}
-                    className={`px-2 py-1.5 font-mono text-xs border text-center transition-all flex items-center justify-center gap-1 rounded-none ${
-                      showKana
-                        ? 'bg-stone-900 text-white border-stone-900 font-semibold'
-                        : 'bg-white text-stone-700 border-stone-300 hover:bg-stone-100'
-                    }`}
-                  >
-                    <span>Bật Kana</span>
-                    {showKana && <Check className="w-3 h-3 stroke-[2.5] shrink-0" />}
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => setShowKana(false)}
-                    className={`px-2 py-1.5 font-mono text-xs border text-center transition-all flex items-center justify-center gap-1 rounded-none ${
-                      !showKana
-                        ? 'bg-stone-900 text-white border-stone-900 font-semibold'
-                        : 'bg-white text-stone-700 border-stone-300 hover:bg-stone-100'
-                    }`}
-                  >
-                    <span>Tắt Kana</span>
-                    {!showKana && <Check className="w-3 h-3 stroke-[2.5] shrink-0" />}
-                  </button>
-                </div>
+                {selectedMode === 'builder' ? (
+                  <div className="grid grid-cols-2 gap-1.5">
+                    <button
+                      type="button"
+                      onClick={() => setBuilderAnswerType('word')}
+                      className={`px-2 py-1.5 font-mono text-xs border text-center transition-all flex items-center justify-center gap-1 rounded-none ${
+                        builderAnswerType === 'word'
+                          ? 'bg-stone-900 text-white border-stone-900 font-semibold'
+                          : 'bg-white text-stone-700 border-stone-300 hover:bg-stone-100'
+                      }`}
+                    >
+                      <span>Từ gốc (Kanji)</span>
+                      {builderAnswerType === 'word' && <Check className="w-3 h-3 stroke-[2.5] shrink-0" />}
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setBuilderAnswerType('kana')}
+                      className={`px-2 py-1.5 font-mono text-xs border text-center transition-all flex items-center justify-center gap-1 rounded-none ${
+                        builderAnswerType === 'kana'
+                          ? 'bg-stone-900 text-white border-stone-900 font-semibold'
+                          : 'bg-white text-stone-700 border-stone-300 hover:bg-stone-100'
+                      }`}
+                    >
+                      <span>Cách đọc Kana</span>
+                      {builderAnswerType === 'kana' && <Check className="w-3 h-3 stroke-[2.5] shrink-0" />}
+                    </button>
+                  </div>
+                ) : (
+                  <div className="grid grid-cols-2 gap-1.5">
+                    <button
+                      type="button"
+                      onClick={() => setShowKana(true)}
+                      className={`px-2 py-1.5 font-mono text-xs border text-center transition-all flex items-center justify-center gap-1 rounded-none ${
+                        showKana
+                          ? 'bg-stone-900 text-white border-stone-900 font-semibold'
+                          : 'bg-white text-stone-700 border-stone-300 hover:bg-stone-100'
+                      }`}
+                    >
+                      <span>Bật Kana</span>
+                      {showKana && <Check className="w-3 h-3 stroke-[2.5] shrink-0" />}
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setShowKana(false)}
+                      className={`px-2 py-1.5 font-mono text-xs border text-center transition-all flex items-center justify-center gap-1 rounded-none ${
+                        !showKana
+                          ? 'bg-stone-900 text-white border-stone-900 font-semibold'
+                          : 'bg-white text-stone-700 border-stone-300 hover:bg-stone-100'
+                      }`}
+                    >
+                      <span>Tắt Kana</span>
+                      {!showKana && <Check className="w-3 h-3 stroke-[2.5] shrink-0" />}
+                    </button>
+                  </div>
+                )}
               </div>
 
               {/* Tự động phát âm */}

@@ -24,11 +24,14 @@ export interface TileItem {
   isDistractor: boolean;
 }
 
+export type WordBuilderAnswerType = 'word' | 'kana';
+
 export interface WordBuilderQuizProps {
   items: QuizItem[];
   title?: string;
   subtitle?: string;
   showKana?: boolean;
+  initialAnswerType?: WordBuilderAnswerType;
   onRestart?: () => void;
   onExit?: () => void;
   className?: string;
@@ -90,7 +93,7 @@ const KANJI_DISTRACTORS = [
  * Breakdown a Japanese word into an array of characters/moras.
  * Supports Hiragana compounds (きゃ, しゃ, ちょ, etc.), Katakana, and Kanji.
  */
-function breakdownJapaneseWord(word: string): string[] {
+export function breakdownJapaneseWord(word: string): string[] {
   const chars: string[] = [];
   const smallKana = new Set(['ゃ', 'ゅ', 'ょ', 'ぁ', 'ぃ', 'ぅ', 'ぇ', 'ぉ', 'ャ', 'ュ', 'ョ', 'ァ', 'ィ', 'ゥ', 'ェ', 'ォ']);
 
@@ -114,12 +117,14 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
   title = 'Ghép Ký Tự (Word Builder)',
   subtitle = 'Xếp các ký tự thành từ tiếng Nhật chính xác theo nghĩa',
   showKana = true,
+  initialAnswerType = 'word',
   onRestart,
   onExit,
   className = '',
 }) => {
   const { addXp } = useSRSStore();
 
+  const [answerType, setAnswerType] = useState<WordBuilderAnswerType>(initialAnswerType);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedTileIds, setSelectedTileIds] = useState<string[]>([]);
   const [isChecked, setIsChecked] = useState(false);
@@ -133,10 +138,24 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
   const [history, setHistory] = useState<QuestionHistory[]>([]);
   const [isFinished, setIsFinished] = useState(false);
 
+  // Sync initialAnswerType if prop changes
+  useEffect(() => {
+    if (initialAnswerType) {
+      setAnswerType(initialAnswerType);
+    }
+  }, [initialAnswerType]);
+
   const currentItem = items[currentIndex];
 
-  // Target answer can be the Kanji word or Reading
-  const targetWord = currentItem ? currentItem.word : '';
+  // Target answer can be the Kanji word or Kana Reading
+  const targetWord = useMemo(() => {
+    if (!currentItem) return '';
+    if (answerType === 'kana') {
+      return currentItem.reading || currentItem.word;
+    }
+    return currentItem.word;
+  }, [currentItem, answerType]);
+
   const targetChars = useMemo(() => {
     return breakdownJapaneseWord(targetWord);
   }, [targetWord]);
@@ -206,6 +225,16 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
   const handleUndo = () => {
     if (isChecked || isFinished || selectedTileIds.length === 0) return;
     setSelectedTileIds((prev) => prev.slice(0, -1));
+  };
+
+  // Toggle between Kanji word and Kana reading
+  const handleToggleAnswerType = (newType: WordBuilderAnswerType) => {
+    if (newType === answerType) return;
+    setAnswerType(newType);
+    setSelectedTileIds([]);
+    setIsChecked(false);
+    setIsCorrect(false);
+    setShowHint(false);
   };
 
   // Check Constructed Word
@@ -494,7 +523,7 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
                     </p>
                     {!h.isCorrect && (
                       <p className="font-sans text-[11px] text-rose-700 font-medium mt-0.5">
-                        Bạn ghép: {h.constructedWord}
+                        Bạn ghép: {h.constructedWord} · Đáp án: {h.targetWord}
                       </p>
                     )}
                   </div>
@@ -556,42 +585,91 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
         />
       </div>
 
-      {/* Main Prompt Card (Vietnamese Meaning) */}
-      <div className="relative border border-stone-200 bg-white p-6 sm:p-8 text-center rounded-none shadow-xs space-y-3">
-        <div className="flex justify-between items-center absolute top-4 left-4 right-4">
-          <div className="text-xs font-sans font-medium text-stone-500 uppercase tracking-wider">
-            GHÉP TỪ CHO NGHĨA
+      {/* Main Prompt Card (Vietnamese Meaning / Word) */}
+      <div className="border border-stone-200 bg-white p-5 sm:p-7 text-center rounded-none shadow-xs space-y-3">
+        <div className="flex flex-wrap items-center justify-between gap-2 pb-2 border-b border-stone-100">
+          <div className="text-xs font-mono font-medium text-stone-500 uppercase tracking-wider">
+            {answerType === 'kana' ? 'GHÉP CÁCH ĐỌC KANA' : 'GHÉP TỪ CHO NGHĨA'}
           </div>
 
-          {/* Hint Button */}
-          <button
-            type="button"
-            onClick={() => setShowHint(!showHint)}
-            className={`px-2 py-1 border text-xs font-sans font-medium transition-colors duration-100 rounded-none ${
-              showHint
-                ? 'border-stone-900 bg-stone-900 text-white'
-                : 'border-stone-300 bg-white text-stone-700 hover:bg-stone-100'
-            }`}
-            title="Xem gợi ý Furigana / Âm Hán Việt"
-          >
-            {showHint ? 'GỢI Ý: BẬT' : 'GỢI Ý'}
-          </button>
+          <div className="flex items-center gap-2">
+            {/* Answer Type Switch: Kanji / Kana */}
+            <div className="inline-flex items-center border border-stone-300 bg-stone-50 p-0.5 rounded-none text-xs font-mono">
+              <button
+                type="button"
+                onClick={() => handleToggleAnswerType('word')}
+                className={`px-2.5 py-1 text-xs transition-colors duration-100 ${
+                  answerType === 'word'
+                    ? 'bg-stone-900 text-white font-medium shadow-xs'
+                    : 'text-stone-600 hover:text-stone-900'
+                }`}
+                title="Ghép từ vựng gốc (Kanji)"
+              >
+                KANJI
+              </button>
+              <button
+                type="button"
+                onClick={() => handleToggleAnswerType('kana')}
+                className={`px-2.5 py-1 text-xs transition-colors duration-100 ${
+                  answerType === 'kana'
+                    ? 'bg-stone-900 text-white font-medium shadow-xs'
+                    : 'text-stone-600 hover:text-stone-900'
+                }`}
+                title="Ghép cách đọc Kana (Hiragana / Katakana)"
+              >
+                KANA
+              </button>
+            </div>
+
+            {/* Hint Button */}
+            <button
+              type="button"
+              onClick={() => setShowHint(!showHint)}
+              className={`px-2.5 py-1 border text-xs font-sans font-medium transition-colors duration-100 rounded-none ${
+                showHint
+                  ? 'border-stone-900 bg-stone-900 text-white'
+                  : 'border-stone-300 bg-white text-stone-700 hover:bg-stone-100'
+              }`}
+              title="Xem gợi ý Furigana / Âm Hán Việt"
+            >
+              {showHint ? 'GỢI Ý: BẬT' : 'GỢI Ý'}
+            </button>
+          </div>
         </div>
 
-        {/* Vietnamese Meaning Prompt */}
-        <div className="pt-6 pb-2">
-          <h2 className="text-2xl sm:text-4xl font-sans font-bold text-stone-900 tracking-tight leading-snug">
-            {currentItem.meaning}
-          </h2>
+        {/* Vietnamese Meaning Prompt / Kanji Display */}
+        <div className="pt-2 pb-1">
+          {answerType === 'kana' ? (
+            <div className="space-y-1.5">
+              <h2 className="text-3xl sm:text-5xl font-serif font-bold text-stone-900 tracking-tight leading-snug">
+                {currentItem.word}
+              </h2>
+              <p className="text-sm sm:text-base font-sans text-stone-600 font-medium">
+                {currentItem.meaning}
+              </p>
+            </div>
+          ) : (
+            <h2 className="text-2xl sm:text-4xl font-sans font-bold text-stone-900 tracking-tight leading-snug">
+              {currentItem.meaning}
+            </h2>
+          )}
 
           {/* Hint / Sino-Vietnamese Display */}
-          <div className="min-h-[1.75rem] flex items-center justify-center gap-2 mt-3">
+          <div className="min-h-[1.75rem] flex items-center justify-center gap-2 mt-2">
             {(showHint || isChecked) && (
               <div className="flex items-center gap-2 animate-fadeIn flex-wrap justify-center font-mono">
-                {currentItem.reading && currentItem.reading !== currentItem.word && (
-                  <span className="text-sm font-medium text-stone-500">
-                    CÁCH ĐỌC: {currentItem.reading}
-                  </span>
+                {answerType === 'word' ? (
+                  currentItem.reading && currentItem.reading !== currentItem.word && (
+                    <span className="text-sm font-medium text-stone-500">
+                      CÁCH ĐỌC: {currentItem.reading}
+                    </span>
+                  )
+                ) : (
+                  showHint && !isChecked && targetChars.length > 0 && (
+                    <span className="text-sm font-medium text-stone-500">
+                      GỢI Ý KÝ TỰ ĐẦU: {targetChars[0]}...
+                    </span>
+                  )
                 )}
                 {currentItem.sinoVietnamese && (
                   <span className="text-xs font-medium px-2 py-0.5 bg-indigo-50 text-indigo-800 border border-indigo-200 uppercase">
