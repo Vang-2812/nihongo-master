@@ -1,4 +1,4 @@
-﻿import test, { describe, it } from 'node:test';
+import test, { describe, it } from 'node:test';
 import assert from 'node:assert/strict';
 import { breakdownJapaneseWord } from '@/components/quiz/WordBuilderQuiz';
 
@@ -61,5 +61,26 @@ describe('Word Builder & Kana Breakdown Logic', () => {
     const kanaModeTarget = item.reading || item.word;
     assert.equal(kanaModeTarget, 'ひらがな');
     assert.deepEqual(breakdownJapaneseWord(kanaModeTarget), ['ひ', 'ら', 'が', 'な']);
+  });
+
+  it('should only mark word as distinct from reading if it contains Kanji and differs from reading', () => {
+    const isDistinct = (word: string, reading?: string) => {
+      const hasKanji = /[\u4E00-\u9FAF]/.test(word);
+      return hasKanji && word !== reading;
+    };
+
+    // Kanji words with Hiragana readings -> distinct, safe to show Kanji in Kana mode
+    assert.equal(isDistinct('月曜日', 'げつようび'), true);
+    assert.equal(isDistinct('学生', 'がくせい'), true);
+    assert.equal(isDistinct('食べる', 'たべる'), true);
+
+    // Pure Kana words -> NOT distinct, should HIDE word to avoid spoiling answer
+    assert.equal(isDistinct('りんご', 'りんご'), false);
+    assert.equal(isDistinct('コーヒー', 'コーヒー'), false);
+    assert.equal(isDistinct('ありがとう', 'ありがとう'), false);
+
+    // Word where word === reading or no kanji
+    assert.equal(isDistinct('パン', 'パン'), false);
+    assert.equal(isDistinct('これ', 'これ'), false);
   });
 });

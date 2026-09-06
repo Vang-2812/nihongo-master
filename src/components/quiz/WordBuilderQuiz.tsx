@@ -160,6 +160,16 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
     return breakdownJapaneseWord(targetWord);
   }, [targetWord]);
 
+  // Check if current item has Kanji distinct from its reading (to avoid spoiling pure Kana words in Kana mode)
+  const hasKanjiInWord = useMemo(() => {
+    return currentItem ? /[\u4E00-\u9FAF]/.test(currentItem.word) : false;
+  }, [currentItem]);
+
+  const isWordDistinctFromReading = useMemo(() => {
+    if (!currentItem) return false;
+    return hasKanjiInWord && currentItem.word !== currentItem.reading;
+  }, [currentItem, hasKanjiInWord]);
+
   // Generate Tile Pool: Correct Characters + 2-3 Distractor Tiles
   const tilePool = useMemo(() => {
     if (!currentItem || targetChars.length === 0) return [];
@@ -639,7 +649,7 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
 
         {/* Vietnamese Meaning Prompt / Kanji Display */}
         <div className="pt-2 pb-1">
-          {answerType === 'kana' ? (
+          {answerType === 'kana' && isWordDistinctFromReading ? (
             <div className="space-y-1.5">
               <h2 className="text-3xl sm:text-5xl font-serif font-bold text-stone-900 tracking-tight leading-snug">
                 {currentItem.word}
