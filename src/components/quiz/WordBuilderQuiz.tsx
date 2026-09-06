@@ -17,6 +17,7 @@ import { speakJapanese } from '@/lib/tts';
 import { useSRSStore } from '@/stores/srsStore';
 import ProgressBar from '@/components/ui/ProgressBar';
 import { QuizItem } from './MultipleChoiceQuiz';
+import { reinsertQuestion } from '@/lib/quizQueue';
 
 export interface TileItem {
   id: string; // unique tile identifier (e.g. "tile_0", "tile_distractor_1")
@@ -125,6 +126,12 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
   const { addXp } = useSRSStore();
 
   const [answerType, setAnswerType] = useState<WordBuilderAnswerType>(initialAnswerType);
+  const [queue, setQueue] = useState<QuizItem[]>(() => [...items]);
+  const [masteredIds, setMasteredIds] = useState<Set<string>>(() => new Set());
+  const [attemptedIds, setAttemptedIds] = useState<Set<string>>(() => new Set());
+
+  const totalUniqueItems = useMemo(() => new Set(items.map((i) => i.id)).size, [items]);
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedTileIds, setSelectedTileIds] = useState<string[]>([]);
   const [isChecked, setIsChecked] = useState(false);
@@ -145,7 +152,25 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
     }
   }, [initialAnswerType]);
 
-  const currentItem = items[currentIndex];
+  // Sync queue if items prop changes
+  useEffect(() => {
+    setQueue([...items]);
+    setMasteredIds(new Set());
+    setAttemptedIds(new Set());
+    setCurrentIndex(0);
+    setSelectedTileIds([]);
+    setIsChecked(false);
+    setIsCorrect(false);
+    setShowHint(false);
+    setStreak(0);
+    setMaxStreak(0);
+    setScore(0);
+    setEarnedXp(0);
+    setHistory([]);
+    setIsFinished(false);
+  }, [items]);
+
+  const currentItem = queue[currentIndex];
 
   // Target answer can be the Kanji word or Kana Reading
   const targetWord = useMemo(() => {
@@ -257,6 +282,13 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
       .join('');
 
     const correct = constructedWord === targetWord;
+    const isFirstAttempt = !attemptedIds.has(currentItem.id);
+
+    setAttemptedIds((prev) => {
+      const next = new Set(prev);
+      next.add(currentItem.id);
+      return next;
+    });
 
     setIsChecked(true);
     setIsCorrect(correct);
@@ -265,7 +297,17 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
       const newStreak = streak + 1;
       setStreak(newStreak);
       setMaxStreak((prev) => Math.max(prev, newStreak));
-      setScore((prev) => prev + 1);
+
+      setMasteredIds((prev) => {
+        const next = new Set(prev);
+        next.add(currentItem.id);
+        return next;
+      });
+
+      if (isFirstAttempt) {
+        setScore((prev) => prev + 1);
+      }
+
       setEarnedXp((prev) => prev + 15);
       addXp(15); // +15 XP for Word Builder
       speakJapanese(currentItem.word);
@@ -273,20 +315,25 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
       setStreak(0);
       setIsShaking(true);
       setTimeout(() => setIsShaking(false), 500);
+
+      // Re-insert this question into the remaining queue at a random position
+      setQueue((prevQueue) => reinsertQuestion(prevQueue, currentIndex, currentItem, 2));
     }
 
-    // Unified SRS SM-2 Record & sync to vocabStore
-    try {
-      useSRSStore
-        .getState()
-        .recordReview(
-          currentItem.type || 'vocab',
-          currentItem.id,
-          correct ? 3 : 1,
-          (currentItem.level as any) || 'N5'
-        );
-    } catch (err) {
-      // ignore
+    // Unified SRS SM-2 Record (only on first attempt)
+    if (isFirstAttempt) {
+      try {
+        useSRSStore
+          .getState()
+          .recordReview(
+            currentItem.type || 'vocab',
+            currentItem.id,
+            correct ? 3 : 1,
+            (currentItem.level as any) || 'N5'
+          );
+      } catch (err) {
+        // ignore
+      }
     }
 
     setHistory((prev) => [
@@ -298,7 +345,7 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
         isCorrect: correct,
       },
     ]);
-  }, [isChecked, currentItem, selectedTileIds, tilePool, targetWord, streak, addXp]);
+  }, [isChecked, currentItem, selectedTileIds, tilePool, targetWord, streak, addXp, currentIndex, attemptedIds]);
 
   // Auto-check when all required characters are placed
   useEffect(() => {
@@ -309,7 +356,7 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
 
   // Next Question
   const handleNext = () => {
-    if (currentIndex < items.length - 1) {
+    if (currentIndex < queue.length - 1) {
       setCurrentIndex((prev) => prev + 1);
       setSelectedTileIds([]);
       setIsChecked(false);
@@ -354,16 +401,20 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [isChecked, selectedTileIds]);
+  }, [isChecked, selectedTileIds, handleNext]);
 
   // Restart Quiz
   const handleRestartInternal = () => {
+    setQueue([...items]);
+    setMasteredIds(new Set());
+    setAttemptedIds(new Set());
     setCurrentIndex(0);
     setSelectedTileIds([]);
     setIsChecked(false);
     setIsCorrect(false);
     setShowHint(false);
     setStreak(0);
+    setMaxStreak(0);
     setScore(0);
     setEarnedXp(0);
     setHistory([]);
@@ -388,23 +439,25 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
 
   // ==================== SUMMARY SCREEN ====================
   if (isFinished) {
-    const accuracy = Math.round((score / items.length) * 100);
+    const accuracy = totalUniqueItems > 0 ? Math.round((score / totalUniqueItems) * 100) : 100;
 
     return (
       <div className={`w-full max-w-3xl mx-auto p-4 sm:p-6 space-y-8 animate-fadeIn ${className}`}>
         {/* Editorial Title Banner */}
         <div className="text-center space-y-2 pb-6 border-b border-stone-200">
           <div className="font-mono text-xs uppercase tracking-widest text-stone-500">
-            HOÀN THÀNH GHÉP KÝ TỰ WORD BUILDER
+            {masteredIds.size >= totalUniqueItems
+              ? 'HOÀN THÀNH 100% BỘ TỪ GHÉP'
+              : 'HOÀN THÀNH GHÉP KÝ TỰ WORD BUILDER'}
           </div>
           <h1 className="font-serif font-light text-4xl sm:text-6xl text-stone-900 tracking-tight uppercase">
             WORD BUILDER COMPLETED
           </h1>
           <p className="font-serif text-lg sm:text-2xl text-stone-700 tracking-widest">
-            文字組み立て完了
+            {masteredIds.size}/{totalUniqueItems} TỪ ĐÃ NẮM VỮNG
           </p>
           <p className="font-sans text-xs uppercase tracking-wider text-stone-500 mt-1 font-medium">
-            BẠN ĐÃ GHÉP ĐÚNG {score}/{items.length} TỪ VỰNG
+            ĐÚNG NGAY LẦN ĐẦU: {score}/{totalUniqueItems} ({accuracy}%) · TỔNG SỐ LƯỢT GHÉP: {history.length}
           </p>
         </div>
 
@@ -412,10 +465,10 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
         <div className="grid grid-cols-2 lg:grid-cols-4 border-t border-b border-stone-200 divide-y sm:divide-y-0 sm:divide-x divide-stone-200 text-center bg-white">
           <div className="p-4 sm:p-6 flex flex-col items-center justify-center">
             <span className="font-mono text-xs uppercase tracking-widest text-stone-500">
-              ĐÚNG
+              ĐÃ THUỘC
             </span>
             <span className="font-serif text-4xl sm:text-6xl font-light text-stone-900 my-1">
-              {score}/{items.length}
+              {masteredIds.size}/{totalUniqueItems}
             </span>
             <span className="font-mono text-[11px] text-stone-500 uppercase tracking-wider">
               TỪ VỰNG
@@ -424,7 +477,7 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
 
           <div className="p-4 sm:p-6 flex flex-col items-center justify-center">
             <span className="font-mono text-xs uppercase tracking-widest text-stone-500">
-              ĐỘ CHÍNH XÁC
+              ĐỘ CHÍNH XÁC LẦN 1
             </span>
             <span className="font-serif text-4xl sm:text-6xl font-light text-stone-900 my-1">
               {accuracy}%
@@ -563,10 +616,18 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
       {/* Top Header */}
       <div className="space-y-3">
         <div className="flex items-center justify-between gap-3">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 flex-wrap">
             <span className="text-xs font-mono font-medium px-2.5 py-1 border border-stone-300 bg-white text-stone-800 rounded-none uppercase">
-              CÂU {currentIndex + 1}/{items.length}
+              CÂU {currentIndex + 1}
             </span>
+            <span className="text-xs font-mono font-medium px-2 py-1 bg-emerald-50 text-emerald-800 border border-emerald-200 rounded-none uppercase">
+              ĐÃ THUỘC: {masteredIds.size}/{totalUniqueItems}
+            </span>
+            {queue.length - currentIndex - 1 > 0 && totalUniqueItems > masteredIds.size && (
+              <span className="text-[11px] font-mono px-2 py-0.5 bg-amber-50 text-amber-800 border border-amber-200 rounded-none uppercase hidden sm:inline-flex">
+                CÒN LẠI: {queue.length - currentIndex - 1} CÂU
+              </span>
+            )}
             {currentItem.level && (
               <span className="text-xs font-mono font-medium px-2 py-1 bg-stone-100 text-stone-800 border border-stone-200 rounded-none">
                 {currentItem.level}
@@ -588,8 +649,8 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
         </div>
 
         <ProgressBar
-          value={currentIndex}
-          max={items.length}
+          value={masteredIds.size}
+          max={totalUniqueItems}
           size="sm"
           className="transition-all"
         />
@@ -833,7 +894,7 @@ export const WordBuilderQuiz: React.FC<WordBuilderQuizProps> = ({
             onClick={handleNext}
             className="flex items-center justify-center gap-2 px-6 py-3.5 border border-stone-900 bg-stone-900 text-white hover:bg-stone-800 font-sans text-xs uppercase font-medium tracking-wider transition-colors duration-100 rounded-none shadow-xs active:scale-[0.98] ml-auto"
           >
-            <span>{currentIndex < items.length - 1 ? 'CÂU TIẾP THEO' : 'XEM KẾT QUẢ'}</span>
+            <span>{currentIndex < queue.length - 1 ? 'CÂU TIẾP THEO' : 'XEM KẾT QUẢ'}</span>
             <ArrowRight className="w-4 h-4" />
           </button>
         </div>
