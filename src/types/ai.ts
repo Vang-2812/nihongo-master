@@ -27,6 +27,7 @@ export interface AIConfig {
 }
 
 export type ExerciseSourceType = 'global' | 'custom';
+export type ClozeQuizMode = 'choice' | 'audio_builder';
 
 export interface ExerciseSetDetail {
   lessonId: string;

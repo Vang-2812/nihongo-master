@@ -12,7 +12,7 @@ import AIClozeQuizModal from './AIClozeQuizModal';
 import ClozeExerciseSourceModal from './ClozeExerciseSourceModal';
 import { useAIStore } from '@/stores/aiStore';
 import { syncService } from '@/services/syncService';
-import { ClozeExerciseItem } from '@/types/ai';
+import { ClozeExerciseItem, ClozeQuizMode } from '@/types/ai';
 import {
   ArrowLeft,
   ChevronLeft,
@@ -74,6 +74,8 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
   const [customExercises, setCustomExercises] = useState<ClozeExerciseItem[] | null>(null);
   const [activeExercises, setActiveExercises] = useState<ClozeExerciseItem[]>([]);
   const [activeSourceType, setActiveSourceType] = useState<'global' | 'custom'>('global');
+  const [activeQuizMode, setActiveQuizMode] = useState<ClozeQuizMode>('choice');
+  const [shuffleQuestions, setShuffleQuestions] = useState<boolean>(true);
 
   const { lessonProgress, vocabStatus, setLessonStatus, setVocabStatus } = useVocabStore();
   const { cards, addCard, addCards } = useSRSStore();
@@ -140,21 +142,25 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
   };
 
   // Launch Global Cloze Exercise
-  const handleLaunchGlobal = () => {
+  const handleLaunchGlobal = (mode: ClozeQuizMode = 'choice', shuffle: boolean = true) => {
     if (!globalExercises || globalExercises.length === 0) {
       toast.warning('Chưa có bộ bài tập chuẩn cho bài này.');
       return;
     }
     setActiveExercises(globalExercises);
     setActiveSourceType('global');
+    setActiveQuizMode(mode);
+    setShuffleQuestions(shuffle);
     setIsSourceModalOpen(false);
     setIsAIModalOpen(true);
   };
 
   // Launch Custom AI Cloze Exercise
-  const handleLaunchCustom = () => {
+  const handleLaunchCustom = (mode: ClozeQuizMode = 'choice', shuffle: boolean = true) => {
+    setActiveQuizMode(mode);
+    setShuffleQuestions(shuffle);
     if (!customExercises || customExercises.length === 0) {
-      handleGenerateAIExercises(false);
+      handleGenerateAIExercises(false, mode, shuffle);
       return;
     }
     setActiveExercises(customExercises);
@@ -170,7 +176,11 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
   };
 
   // Handle Generate / Regenerate AI Exercises
-  const handleGenerateAIExercises = async (isRegenerate: boolean = false) => {
+  const handleGenerateAIExercises = async (
+    isRegenerate: boolean = false,
+    mode: ClozeQuizMode = activeQuizMode,
+    shuffle: boolean = shuffleQuestions
+  ) => {
     if (!aiConfig.apiKey.trim()) {
       toast.warning('Vui lòng vào Cài đặt để thêm API Key trước khi tạo bài tập AI!');
       return;
@@ -230,6 +240,8 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
       setCustomExercises(generated);
       setActiveExercises(generated);
       setActiveSourceType('custom');
+      setActiveQuizMode(mode);
+      setShuffleQuestions(shuffle);
 
       // Persist to SQLite Cloud
       fetch('/api/ai/exercises', {
@@ -786,9 +798,15 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
         customExercises={customExercises}
         selectedWordsCount={selectedItemIds.size}
         totalWordsCount={lesson.items.length}
-        onSelectGlobal={handleLaunchGlobal}
-        onSelectCustom={handleLaunchCustom}
-        onGenerateCustom={() => handleGenerateAIExercises(Boolean(customExercises && customExercises.length > 0))}
+        onSelectGlobal={(mode, shuffle) => handleLaunchGlobal(mode, shuffle)}
+        onSelectCustom={(mode, shuffle) => handleLaunchCustom(mode, shuffle)}
+        onGenerateCustom={(mode, shuffle) =>
+          handleGenerateAIExercises(
+            Boolean(customExercises && customExercises.length > 0),
+            mode,
+            shuffle
+          )
+        }
         isGeneratingAI={isGeneratingAI}
       />
 
@@ -799,8 +817,10 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
         exercises={activeExercises}
         lessonTitle={lesson.title}
         sourceType={activeSourceType}
+        quizMode={activeQuizMode}
+        shuffleQuestions={shuffleQuestions}
         onSwitchSource={handleSwitchSource}
-        onRegenerate={() => handleGenerateAIExercises(true)}
+        onRegenerate={() => handleGenerateAIExercises(true, activeQuizMode, shuffleQuestions)}
       />
     </div>
   );

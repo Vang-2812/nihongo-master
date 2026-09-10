@@ -1,8 +1,8 @@
 'use client';
 
-import React from 'react';
-import { ClozeExerciseItem } from '@/types/ai';
-import { Globe, Sparkles, RotateCcw, Play, X, Layers } from 'lucide-react';
+import React, { useState } from 'react';
+import { ClozeExerciseItem, ClozeQuizMode } from '@/types/ai';
+import { Globe, Sparkles, RotateCcw, Play, X, Layers, Volume2, CheckCircle2, Dices } from 'lucide-react';
 
 interface ClozeExerciseSourceModalProps {
   isOpen: boolean;
@@ -12,9 +12,9 @@ interface ClozeExerciseSourceModalProps {
   customExercises: ClozeExerciseItem[] | null;
   selectedWordsCount: number;
   totalWordsCount: number;
-  onSelectGlobal: () => void;
-  onSelectCustom: () => void;
-  onGenerateCustom: () => void;
+  onSelectGlobal: (mode: ClozeQuizMode, shuffle: boolean) => void;
+  onSelectCustom: (mode: ClozeQuizMode, shuffle: boolean) => void;
+  onGenerateCustom: (mode: ClozeQuizMode, shuffle: boolean) => void;
   isGeneratingAI: boolean;
 }
 
@@ -31,6 +31,9 @@ export default function ClozeExerciseSourceModal({
   onGenerateCustom,
   isGeneratingAI,
 }: ClozeExerciseSourceModalProps) {
+  const [selectedMode, setSelectedMode] = useState<ClozeQuizMode>('choice');
+  const [shuffleQuestions, setShuffleQuestions] = useState<boolean>(true);
+
   if (!isOpen) return null;
 
   const hasGlobal = Boolean(globalExercises && globalExercises.length > 0);
@@ -68,6 +71,81 @@ export default function ClozeExerciseSourceModal({
 
         {/* Content Area */}
         <div className="p-5 sm:p-6 space-y-4 overflow-y-auto">
+          {/* STEP 1: CHẾ ĐỘ LUYỆN TẬP & TRỘN CÂU */}
+          <div className="border border-stone-300 bg-stone-50/70 p-3.5 sm:p-4 space-y-3">
+            <div>
+              <span className="block text-[11px] font-mono font-bold uppercase tracking-wider text-stone-600 mb-1.5">
+                1. CHỌN HÌNH THỨC BÀI TẬP
+              </span>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                <button
+                  type="button"
+                  onClick={() => setSelectedMode('choice')}
+                  className={`p-2.5 border text-left flex flex-col justify-between transition-all rounded-none ${
+                    selectedMode === 'choice'
+                      ? 'border-stone-900 bg-white text-stone-900 shadow-xs'
+                      : 'border-stone-300 bg-stone-100/50 hover:bg-white text-stone-600'
+                  }`}
+                >
+                  <div className="flex items-center gap-1.5 font-bold font-sans text-xs">
+                    <CheckCircle2 className={`w-3.5 h-3.5 ${selectedMode === 'choice' ? 'text-stone-900' : 'text-stone-400'}`} />
+                    <span>Trắc nghiệm (4 Đáp án)</span>
+                  </div>
+                  <span className="text-[10px] font-mono text-stone-500 mt-1">
+                    Chọn 1 trong 4 đáp án đúng
+                  </span>
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => setSelectedMode('audio_builder')}
+                  className={`p-2.5 border text-left flex flex-col justify-between transition-all rounded-none ${
+                    selectedMode === 'audio_builder'
+                      ? 'border-indigo-600 bg-white text-indigo-950 shadow-xs'
+                      : 'border-stone-300 bg-stone-100/50 hover:bg-white text-stone-600'
+                  }`}
+                >
+                  <div className="flex items-center gap-1.5 font-bold font-sans text-xs text-indigo-900">
+                    <Volume2 className={`w-3.5 h-3.5 ${selectedMode === 'audio_builder' ? 'text-indigo-600' : 'text-stone-400'}`} />
+                    <span>Nghe & Ghép từ</span>
+                  </div>
+                  <span className="text-[10px] font-mono text-stone-500 mt-1">
+                    Nghe phát âm voice + Ghép ô chữ
+                  </span>
+                </button>
+              </div>
+            </div>
+
+            {/* Shuffle Questions Setting */}
+            <div className="pt-2 border-t border-stone-200 flex items-center justify-between">
+              <label className="flex items-center gap-2 cursor-pointer select-none text-xs font-mono font-medium text-stone-700">
+                <input
+                  type="checkbox"
+                  checked={shuffleQuestions}
+                  onChange={(e) => setShuffleQuestions(e.target.checked)}
+                  className="w-4 h-4 border border-stone-400 accent-stone-900 rounded-none cursor-pointer"
+                />
+                <div className="flex items-center gap-1.5">
+                  <Dices className="w-3.5 h-3.5 text-stone-500" />
+                  <span>Trộn thứ tự câu hỏi (Lộn xộn)</span>
+                </div>
+              </label>
+              <span className={`text-[11px] font-mono uppercase px-1.5 py-0.5 border ${
+                shuffleQuestions
+                  ? 'bg-stone-900 text-white border-stone-900'
+                  : 'bg-stone-200 text-stone-600 border-stone-300'
+              }`}>
+                {shuffleQuestions ? 'BẬT' : 'TẮT'}
+              </span>
+            </div>
+          </div>
+
+          <div className="pt-1">
+            <span className="block text-[11px] font-mono font-bold uppercase tracking-wider text-stone-600 mb-2">
+              2. CHỌN NGUỒN BÀI TẬP
+            </span>
+          </div>
+
           {/* OPTION 1: GLOBAL EXERCISES */}
           <div className="border border-stone-300 bg-stone-50/50 p-4 sm:p-5 flex flex-col justify-between transition-colors hover:border-stone-400">
             <div>
@@ -100,11 +178,13 @@ export default function ClozeExerciseSourceModal({
             <button
               type="button"
               disabled={!hasGlobal}
-              onClick={onSelectGlobal}
+              onClick={() => onSelectGlobal(selectedMode, shuffleQuestions)}
               className="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 border border-stone-900 bg-stone-900 text-white hover:bg-stone-800 disabled:opacity-30 disabled:cursor-not-allowed font-mono text-xs uppercase font-bold tracking-wider transition-colors duration-100 rounded-none shadow-none active:scale-[0.99]"
             >
               <Play className="w-3.5 h-3.5 fill-current" />
-              <span>LUYỆN TẬP BÀI CHUẨN ({globalCount} CÂU)</span>
+              <span>
+                LUYỆN TẬP BÀI CHUẨN ({globalCount} CÂU) · {selectedMode === 'choice' ? 'TRẮC NGHIỆM' : 'NGHE & GHÉP TỪ'}
+              </span>
             </button>
           </div>
 
@@ -151,7 +231,7 @@ export default function ClozeExerciseSourceModal({
               {hasCustom && (
                 <button
                   type="button"
-                  onClick={onSelectCustom}
+                  onClick={() => onSelectCustom(selectedMode, shuffleQuestions)}
                   className="flex-1 inline-flex items-center justify-center gap-2 py-2.5 px-3 border border-indigo-300 bg-indigo-50 text-indigo-900 hover:bg-indigo-100 font-mono text-xs uppercase font-bold tracking-wider transition-colors duration-100 rounded-none shadow-none active:scale-[0.99]"
                 >
                   <Play className="w-3.5 h-3.5 fill-current" />
@@ -162,7 +242,7 @@ export default function ClozeExerciseSourceModal({
               <button
                 type="button"
                 disabled={isGeneratingAI}
-                onClick={onGenerateCustom}
+                onClick={() => onGenerateCustom(selectedMode, shuffleQuestions)}
                 className={`inline-flex items-center justify-center gap-2 py-2.5 px-3 border font-mono text-xs uppercase font-bold tracking-wider transition-colors duration-100 rounded-none shadow-none active:scale-[0.99] disabled:opacity-50 ${
                   hasCustom
                     ? 'border-stone-300 bg-white text-stone-800 hover:bg-stone-100 sm:w-auto'
