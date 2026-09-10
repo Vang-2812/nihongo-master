@@ -1,0 +1,801 @@
+[
+  {
+    "id": "cloze_minna_10_0",
+    "vocabId": "minna_10_0",
+    "targetWord": "います",
+    "targetReading": "います",
+    "sentence": "あそこに佐藤さんが（　　）。",
+    "fullSentence": "あそこに佐藤さんがいます。",
+    "translation": "Ở đằng kia có bạn Sato.",
+    "options": [
+      "います",
+      "あります",
+      "みます",
+      "いきます"
+    ],
+    "correctIndex": 0,
+    "explanation": "「います」 dùng để chỉ sự hiện diện, tồn tại của người và động vật."
+  },
+  {
+    "id": "cloze_minna_10_1",
+    "vocabId": "minna_10_1",
+    "targetWord": "あります",
+    "targetReading": "あります",
+    "sentence": "机の上に本が（　　）。",
+    "fullSentence": "机の上に本があります。",
+    "translation": "Trên bàn có quyển sách.",
+    "options": [
+      "あります",
+      "います",
+      "おきます",
+      "よみます"
+    ],
+    "correctIndex": 0,
+    "explanation": "「あります」 dùng để chỉ sự tồn tại của đồ vật vô tri hoặc cây cối."
+  },
+  {
+    "id": "cloze_minna_10_2",
+    "vocabId": "minna_10_2",
+    "targetWord": "いろいろ",
+    "targetReading": "いろいろ",
+    "sentence": "デパートには（　　）な物があります。",
+    "fullSentence": "デパートにはいろいろな物があります。",
+    "translation": "Trong trung tâm thương mại có nhiều loại đồ vật đa dạng.",
+    "options": [
+      "いろいろ",
+      "静か",
+      "便利",
+      "上手"
+    ],
+    "correctIndex": 0,
+    "explanation": "「いろいろ」 là tính từ đuôi な biểu thị nhiều loại, đa dạng, phong phú."
+  },
+  {
+    "id": "cloze_minna_10_3",
+    "vocabId": "minna_10_3",
+    "targetWord": "男の人",
+    "targetReading": "おとこのひと",
+    "sentence": "あそこにいる（　　）は山田さんです。",
+    "fullSentence": "あそこにいる男の人は山田さんです。",
+    "translation": "Người đàn ông ở đằng kia là anh Yamada.",
+    "options": [
+      "男の人",
+      "女の人",
+      "男の子",
+      "女の子"
+    ],
+    "correctIndex": 0,
+    "explanation": "「男の人」（おとこのひと） nghĩa là người đàn ông (trưởng thành)."
+  },
+  {
+    "id": "cloze_minna_10_4",
+    "vocabId": "minna_10_4",
+    "targetWord": "女の人",
+    "targetReading": "おんなのひと",
+    "sentence": "受付にきれいな（　　）がいます。",
+    "fullSentence": "受付にきれいな女の人がいます。",
+    "translation": "Ở quầy tiếp tân có một người phụ nữ xinh đẹp.",
+    "options": [
+      "女の人",
+      "男の人",
+      "男の子",
+      "女の子"
+    ],
+    "correctIndex": 0,
+    "explanation": "「女の人」（おんなのひと） nghĩa là người phụ nữ."
+  },
+  {
+    "id": "cloze_minna_10_5",
+    "vocabId": "minna_10_5",
+    "targetWord": "男の子",
+    "targetReading": "おとこのこ",
+    "sentence": "公園で小さい（　　）がサッカーをしています。",
+    "fullSentence": "公園で小さい男の子がサッカーをしています。",
+    "translation": "Một bé trai nhỏ đang chơi bóng đá ở công viên.",
+    "options": [
+      "男の子",
+      "女の子",
+      "男の人",
+      "女の人"
+    ],
+    "correctIndex": 0,
+    "explanation": "「男の子」（おとこのこ） nghĩa là bé trai, cậu bé."
+  },
+  {
+    "id": "cloze_minna_10_6",
+    "vocabId": "minna_10_6",
+    "targetWord": "女の子",
+    "targetReading": "おんなのこ",
+    "sentence": "可愛い（　　）が花を持っています。",
+    "fullSentence": "可愛い女の子が花を持っています。",
+    "translation": "Bé gái dễ thương đang cầm hoa.",
+    "options": [
+      "女の子",
+      "男の子",
+      "女の人",
+      "男の人"
+    ],
+    "correctIndex": 0,
+    "explanation": "「女の子」（おんなのこ） nghĩa là bé gái, cô bé."
+  },
+  {
+    "id": "cloze_minna_10_7",
+    "vocabId": "minna_10_7",
+    "targetWord": "犬",
+    "targetReading": "いぬ",
+    "sentence": "庭に白い（　　）がいます。",
+    "fullSentence": "庭に白い犬がいます。",
+    "translation": "Trong sân có một con chó màu trắng.",
+    "options": [
+      "犬",
+      "猫",
+      "鳥",
+      "魚"
+    ],
+    "correctIndex": 0,
+    "explanation": "「犬」（いぬ） nghĩa là con chó."
+  },
+  {
+    "id": "cloze_minna_10_8",
+    "vocabId": "minna_10_8",
+    "targetWord": "猫",
+    "targetReading": "ねこ",
+    "sentence": "椅子の下に小さい（　　）が寝ています。",
+    "fullSentence": "椅子の下に小さい猫が寝ています。",
+    "translation": "Dưới gầm ghế có một chú mèo nhỏ đang ngủ.",
+    "options": [
+      "猫",
+      "犬",
+      "象",
+      "馬"
+    ],
+    "correctIndex": 0,
+    "explanation": "「猫」（ねこ） nghĩa là con mèo."
+  },
+  {
+    "id": "cloze_minna_10_9",
+    "vocabId": "minna_10_9",
+    "targetWord": "木",
+    "targetReading": "き",
+    "sentence": "公園に大きな桜の（　　）があります。",
+    "fullSentence": "公園に大きな桜の木があります。",
+    "translation": "Trong công viên có một cây hoa anh đào lớn.",
+    "options": [
+      "木",
+      "花",
+      "山",
+      "川"
+    ],
+    "correctIndex": 0,
+    "explanation": "「木」（き） nghĩa là cây, cái cây cối."
+  },
+  {
+    "id": "cloze_minna_10_10",
+    "vocabId": "minna_10_10",
+    "targetWord": "物",
+    "targetReading": "もの",
+    "sentence": "箱の中に色々な（　　）が入っています。",
+    "fullSentence": "箱の中に色々な物が入っています。",
+    "translation": "Trong hộp có nhiều đồ vật khác nhau.",
+    "options": [
+      "物",
+      "人",
+      "犬",
+      "車"
+    ],
+    "correctIndex": 0,
+    "explanation": "「物」（もの） nghĩa là đồ vật, vật phẩm."
+  },
+  {
+    "id": "cloze_minna_10_11",
+    "vocabId": "minna_10_11",
+    "targetWord": "フィルム",
+    "targetReading": "フィルム",
+    "sentence": "古いカメラに（　　）を入れます。",
+    "fullSentence": "古いカメラにフィルムを入れます。",
+    "translation": "Tôi lắp cuộn phim vào chiếc máy ảnh cũ.",
+    "options": [
+      "フィルム",
+      "電池",
+      "スイッチ",
+      "ポスト"
+    ],
+    "correctIndex": 0,
+    "explanation": "「フィルム」 nghĩa là cuộn phim (dùng cho máy ảnh chụp phim)."
+  },
+  {
+    "id": "cloze_minna_10_12",
+    "vocabId": "minna_10_12",
+    "targetWord": "電池",
+    "targetReading": "でんち",
+    "sentence": "時計が止まりましたから、（　　）を交換します。",
+    "fullSentence": "時計が止まりましたから、電池を交換します。",
+    "translation": "Vì đồng hồ đã ngừng chạy nên tôi thay pin.",
+    "options": [
+      "電池",
+      "フィルム",
+      "スイッチ",
+      "箱"
+    ],
+    "correctIndex": 0,
+    "explanation": "「電池」（でんち） nghĩa là cục pin."
+  },
+  {
+    "id": "cloze_minna_10_13",
+    "vocabId": "minna_10_13",
+    "targetWord": "箱",
+    "targetReading": "はこ",
+    "sentence": "この（　　）を開けてください。",
+    "fullSentence": "この箱を開けてください。",
+    "translation": "Xin vui lòng mở chiếc hộp này ra.",
+    "options": [
+      "箱",
+      "棚",
+      "ドア",
+      "窓"
+    ],
+    "correctIndex": 0,
+    "explanation": "「箱」（はこ） nghĩa là cái hộp, thùng, vali đựng đồ."
+  },
+  {
+    "id": "cloze_minna_10_14",
+    "vocabId": "minna_10_14",
+    "targetWord": "スイッチ",
+    "targetReading": "スイッチ",
+    "sentence": "部屋が暗いですから、（　　）をつけてください。",
+    "fullSentence": "部屋が暗いですから、スイッチをつけてください。",
+    "translation": "Phòng tối quá, xin hãy bật công tắc lên.",
+    "options": [
+      "スイッチ",
+      "電池",
+      "フィルム",
+      "ドア"
+    ],
+    "correctIndex": 0,
+    "explanation": "「スイッチ」 nghĩa là công tắc (điện)."
+  },
+  {
+    "id": "cloze_minna_10_15",
+    "vocabId": "minna_10_15",
+    "targetWord": "冷蔵庫",
+    "targetReading": "れいぞうこ",
+    "sentence": "冷たいビールは（　　）の中にあります。",
+    "fullSentence": "冷たいビールは冷蔵庫の中にあります。",
+    "translation": "Bia lạnh ở bên trong tủ lạnh.",
+    "options": [
+      "冷蔵庫",
+      "テーブル",
+      "ベッド",
+      "棚"
+    ],
+    "correctIndex": 0,
+    "explanation": "「冷蔵庫」（れいぞうこ） nghĩa là tủ lạnh."
+  },
+  {
+    "id": "cloze_minna_10_16",
+    "vocabId": "minna_10_16",
+    "targetWord": "テーブル",
+    "targetReading": "テーブル",
+    "sentence": "（　　）の上にリンゴがあります。",
+    "fullSentence": "テーブルの上にリンゴがあります。",
+    "translation": "Ở trên bàn có quả táo.",
+    "options": [
+      "テーブル",
+      "ベッド",
+      "ドア",
+      "ポスト"
+    ],
+    "correctIndex": 0,
+    "explanation": "「テーブル」 nghĩa là cái bàn ăn, bàn tròn."
+  },
+  {
+    "id": "cloze_minna_10_17",
+    "vocabId": "minna_10_17",
+    "targetWord": "ベッド",
+    "targetReading": "ベッド",
+    "sentence": "疲れたので、（　　）で少し休みます。",
+    "fullSentence": "疲れたので、ベッドで少し休みます。",
+    "translation": "Vì mệt nên tôi nghỉ ngơi một lát ở trên giường.",
+    "options": [
+      "ベッド",
+      "テーブル",
+      "棚",
+      "ポスト"
+    ],
+    "correctIndex": 0,
+    "explanation": "「ベッド」 nghĩa là cái giường ngủ."
+  },
+  {
+    "id": "cloze_minna_10_18",
+    "vocabId": "minna_10_18",
+    "targetWord": "棚",
+    "targetReading": "たな",
+    "sentence": "本は本（　　）に並べてあります。",
+    "fullSentence": "本は本棚に並べてあります。",
+    "translation": "Sách được xếp ngay ngắn trên giá sách.",
+    "options": [
+      "棚",
+      "箱",
+      "机",
+      "窓"
+    ],
+    "correctIndex": 0,
+    "explanation": "「棚」（たな） nghĩa là kệ, giá (bản thân hoặc ghép thành 本棚 - giá sách)."
+  },
+  {
+    "id": "cloze_minna_10_19",
+    "vocabId": "minna_10_19",
+    "targetWord": "ドア",
+    "targetReading": "ドア",
+    "sentence": "寒いですから、（　　）を閉めてください。",
+    "fullSentence": "寒いですから、ドアを閉めてください。",
+    "translation": "Trời lạnh nên xin vui lòng đóng cửa ra vào lại.",
+    "options": [
+      "ドア",
+      "窓",
+      "棚",
+      "ベッド"
+    ],
+    "correctIndex": 0,
+    "explanation": "「ドア」 nghĩa là cửa ra vào kiểu Tây."
+  },
+  {
+    "id": "cloze_minna_10_20",
+    "vocabId": "minna_10_20",
+    "targetWord": "窓",
+    "targetReading": "まど",
+    "sentence": "部屋の（　　）から富士山が見えます。",
+    "fullSentence": "部屋の窓から富士山が見えます。",
+    "translation": "Từ cửa sổ của căn phòng có thể nhìn thấy núi Phú Sĩ.",
+    "options": [
+      "窓",
+      "ドア",
+      "棚",
+      "ポスト"
+    ],
+    "correctIndex": 0,
+    "explanation": "「窓」（まど） nghĩa là cửa sổ."
+  },
+  {
+    "id": "cloze_minna_10_21",
+    "vocabId": "minna_10_21",
+    "targetWord": "ポスト",
+    "targetReading": "ポスト",
+    "sentence": "手紙を赤い（　　）に入れます。",
+    "fullSentence": "手紙を赤いポストに入れます。",
+    "translation": "Tôi bỏ lá thư vào thùng thư màu đỏ.",
+    "options": [
+      "ポスト",
+      "ビル",
+      "棚",
+      "ドア"
+    ],
+    "correctIndex": 0,
+    "explanation": "「ポスト」 nghĩa là hòm thư, hộp thư bưu điện ven đường."
+  },
+  {
+    "id": "cloze_minna_10_22",
+    "vocabId": "minna_10_22",
+    "targetWord": "ビル",
+    "targetReading": "ビル",
+    "sentence": "駅の前に高い（　　）がたくさんあります。",
+    "fullSentence": "駅の前に高いビルがたくさんあります。",
+    "translation": "Trước nhà ga có rất nhiều tòa nhà cao tầng.",
+    "options": [
+      "ビル",
+      "ポスト",
+      "公園",
+      "木"
+    ],
+    "correctIndex": 0,
+    "explanation": "「ビル」 nghĩa là tòa nhà cao ốc, tòa nhà văn phòng."
+  },
+  {
+    "id": "cloze_minna_10_23",
+    "vocabId": "minna_10_23",
+    "targetWord": "公園",
+    "targetReading": "こうえん",
+    "sentence": "日曜日、家族と（　　）へ散歩に行きます。",
+    "fullSentence": "日曜日、家族と公園へ散歩に行きます。",
+    "translation": "Chủ nhật tôi đi dạo ở công viên cùng gia đình.",
+    "options": [
+      "公園",
+      "ビル",
+      "ポスト",
+      "本屋"
+    ],
+    "correctIndex": 0,
+    "explanation": "「公園」（こうえん） nghĩa là công viên."
+  },
+  {
+    "id": "cloze_minna_10_24",
+    "vocabId": "minna_10_24",
+    "targetWord": "喫茶店",
+    "targetReading": "きっさてん",
+    "sentence": "駅の近くの（　　）でコーヒーを飲みます。",
+    "fullSentence": "駅の近くの喫茶店でコーヒーを飲みます。",
+    "translation": "Tôi uống cà phê ở quán giải khát gần nhà ga.",
+    "options": [
+      "喫茶店",
+      "本屋",
+      "公園",
+      "ビル"
+    ],
+    "correctIndex": 0,
+    "explanation": "「喫茶店」（きっさてん） nghĩa là quán cà phê, quán giải khát."
+  },
+  {
+    "id": "cloze_minna_10_25",
+    "vocabId": "minna_10_25",
+    "targetWord": "本屋",
+    "targetReading": "ほんや",
+    "sentence": "新しい辞書を買いに（　　）へ行きました。",
+    "fullSentence": "新しい辞書を買いに本屋へ行きました。",
+    "translation": "Tôi đã đến tiệm sách để mua từ điển mới.",
+    "options": [
+      "本屋",
+      "花屋",
+      "魚屋",
+      "肉屋"
+    ],
+    "correctIndex": 0,
+    "explanation": "「本屋」（ほんや） nghĩa là hiệu sách, tiệm sách."
+  },
+  {
+    "id": "cloze_minna_10_26",
+    "vocabId": "minna_10_26",
+    "targetWord": "屋",
+    "targetReading": "や",
+    "sentence": "あそこの花（　　）で綺麗なバラを買いました。",
+    "fullSentence": "あそこの花屋で綺麗なバラを買いました。",
+    "translation": "Tôi đã mua hoa hồng đẹp ở tiệm hoa đằng kia.",
+    "options": [
+      "屋",
+      "人",
+      "員",
+      "室"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hậu tố 「～屋」（や） gắn sau tên mặt hàng để chỉ cửa hàng/tiệm bán món đó (như 花屋, 本屋)."
+  },
+  {
+    "id": "cloze_minna_10_27",
+    "vocabId": "minna_10_27",
+    "targetWord": "乗り場",
+    "targetReading": "のりば",
+    "sentence": "タクシー（　　）は駅の東口にあります。",
+    "fullSentence": "タクシー乗り場は駅の東口にあります。",
+    "translation": "Điểm đón xe taxi ở cửa phía đông của nhà ga.",
+    "options": [
+      "乗り場",
+      "売り場",
+      "受付",
+      "教室"
+    ],
+    "correctIndex": 0,
+    "explanation": "「乗り場」（のりば） nghĩa là bến đỗ, điểm lên đón xe bus, taxi, tàu hỏa."
+  },
+  {
+    "id": "cloze_minna_10_28",
+    "vocabId": "minna_10_28",
+    "targetWord": "県",
+    "targetReading": "けん",
+    "sentence": "富士山は静岡（　　）と山梨県にあります。",
+    "fullSentence": "富士山は静岡県と山梨県にあります。",
+    "translation": "Núi Phú Sĩ nằm ở tỉnh Shizuoka và tỉnh Yamanashi.",
+    "options": [
+      "県",
+      "市",
+      "町",
+      "村"
+    ],
+    "correctIndex": 0,
+    "explanation": "「県」（けん） là đơn vị hành chính tỉnh ở Nhật Bản."
+  },
+  {
+    "id": "cloze_minna_10_29",
+    "vocabId": "minna_10_29",
+    "targetWord": "上",
+    "targetReading": "うえ",
+    "sentence": "机の（　　）にノートとペンがあります。",
+    "fullSentence": "机の上にノートとペンがあります。",
+    "translation": "Ở bên trên bàn có vở và bút.",
+    "options": [
+      "上",
+      "下",
+      "中",
+      "前"
+    ],
+    "correctIndex": 0,
+    "explanation": "「上」（うえ） là phương vị chỉ bên trên."
+  },
+  {
+    "id": "cloze_minna_10_30",
+    "vocabId": "minna_10_30",
+    "targetWord": "下",
+    "targetReading": "した",
+    "sentence": "机の（　　）に猫がいます。",
+    "fullSentence": "机の下に猫がいます。",
+    "translation": "Ở dưới gầm bàn có con mèo.",
+    "options": [
+      "下",
+      "上",
+      "前",
+      "右"
+    ],
+    "correctIndex": 0,
+    "explanation": "「下」（した） là phương vị chỉ bên dưới."
+  },
+  {
+    "id": "cloze_minna_10_31",
+    "vocabId": "minna_10_31",
+    "targetWord": "前",
+    "targetReading": "まえ",
+    "sentence": "銀行の（　　）で友達を待ちます。",
+    "fullSentence": "銀行の前で友達を待ちます。",
+    "translation": "Tôi đợi bạn ở phía trước ngân hàng.",
+    "options": [
+      "前",
+      "うしろ",
+      "左",
+      "間"
+    ],
+    "correctIndex": 0,
+    "explanation": "「前」（まえ） là phương vị chỉ đằng trước."
+  },
+  {
+    "id": "cloze_minna_10_32",
+    "vocabId": "minna_10_32",
+    "targetWord": "うしろ",
+    "targetReading": "うしろ",
+    "sentence": "佐藤さんは私の（　　）に座っています。",
+    "fullSentence": "佐藤さんは私のうしろに座っています。",
+    "translation": "Bạn Sato đang ngồi ở phía sau tôi.",
+    "options": [
+      "うしろ",
+      "前",
+      "上",
+      "下"
+    ],
+    "correctIndex": 0,
+    "explanation": "「うしろ」 là phương vị chỉ đằng sau, phía sau."
+  },
+  {
+    "id": "cloze_minna_10_33",
+    "vocabId": "minna_10_33",
+    "targetWord": "右",
+    "targetReading": "みぎ",
+    "sentence": "郵便局はスーパーの（　　）にあります。",
+    "fullSentence": "郵便局はスーパーの右にあります。",
+    "translation": "Bưu điện nằm ở bên phải của siêu thị.",
+    "options": [
+      "右",
+      "左",
+      "上",
+      "下"
+    ],
+    "correctIndex": 0,
+    "explanation": "「右」（みぎ） là phương vị chỉ bên phải."
+  },
+  {
+    "id": "cloze_minna_10_34",
+    "vocabId": "minna_10_34",
+    "targetWord": "左",
+    "targetReading": "ひだり",
+    "sentence": "本屋の（　　）にパン屋があります。",
+    "fullSentence": "本屋の左にパン屋があります。",
+    "translation": "Ở bên trái tiệm sách có một tiệm bánh mì.",
+    "options": [
+      "左",
+      "右",
+      "前",
+      "外"
+    ],
+    "correctIndex": 0,
+    "explanation": "「左」（ひだり） là phương vị chỉ bên trái."
+  },
+  {
+    "id": "cloze_minna_10_35",
+    "vocabId": "minna_10_35",
+    "targetWord": "中",
+    "targetReading": "なか",
+    "sentence": "かばんの（　　）に財布があります。",
+    "fullSentence": "かばんの中に財布があります。",
+    "translation": "Ở bên trong túi xách có chiếc ví.",
+    "options": [
+      "中",
+      "外",
+      "上",
+      "下"
+    ],
+    "correctIndex": 0,
+    "explanation": "「中」（なか） là phương vị chỉ bên trong."
+  },
+  {
+    "id": "cloze_minna_10_36",
+    "vocabId": "minna_10_36",
+    "targetWord": "外",
+    "targetReading": "そと",
+    "sentence": "（　　）は雨が降っていますから、傘を持って行きます。",
+    "fullSentence": "外は雨が降っていますから、傘を持って行きます。",
+    "translation": "Bên ngoài trời đang mưa nên tôi mang theo ô.",
+    "options": [
+      "外",
+      "中",
+      "前",
+      "隣"
+    ],
+    "correctIndex": 0,
+    "explanation": "「外」（そと） là phương vị chỉ bên ngoài."
+  },
+  {
+    "id": "cloze_minna_10_37",
+    "vocabId": "minna_10_37",
+    "targetWord": "隣",
+    "targetReading": "となり",
+    "sentence": "私の家の（　　）にスーパーがあります。",
+    "fullSentence": "私の家の隣にスーパーがあります。",
+    "translation": "Bên cạnh nhà tôi có một siêu thị.",
+    "options": [
+      "隣",
+      "間",
+      "中",
+      "外"
+    ],
+    "correctIndex": 0,
+    "explanation": "「隣」（となり） nghĩa là bên cạnh, sát vách (cùng chủng loại hoặc liền kề)."
+  },
+  {
+    "id": "cloze_minna_10_38",
+    "vocabId": "minna_10_38",
+    "targetWord": "近く",
+    "targetReading": "ちかく",
+    "sentence": "駅の（　　）に美味しいレストランがあります。",
+    "fullSentence": "駅の近くに美味しいレストランがあります。",
+    "translation": "Ở gần nhà ga có một nhà hàng ngon.",
+    "options": [
+      "近く",
+      "遠く",
+      "間",
+      "中"
+    ],
+    "correctIndex": 0,
+    "explanation": "「近く」（ちかく） nghĩa là vùng phụ cận, lân cận, gần đó."
+  },
+  {
+    "id": "cloze_minna_10_39",
+    "vocabId": "minna_10_39",
+    "targetWord": "間",
+    "targetReading": "あいだ",
+    "sentence": "銀行は郵便局と本屋の（　　）にあります。",
+    "fullSentence": "銀行は郵便局と本屋の間にあります。",
+    "translation": "Ngân hàng nằm ở giữa bưu điện và tiệm sách.",
+    "options": [
+      "間",
+      "隣",
+      "近く",
+      "上"
+    ],
+    "correctIndex": 0,
+    "explanation": "「間」（あいだ） dùng theo cấu trúc AとBの間 nghĩa là ở khoảng giữa A và B."
+  },
+  {
+    "id": "cloze_minna_10_40",
+    "vocabId": "minna_10_40",
+    "targetWord": "や",
+    "targetReading": "や",
+    "sentence": "箱の中に写真（　　）手紙などがあります。",
+    "fullSentence": "箱の中に写真や手紙などがあります。",
+    "translation": "Trong hộp có hình ảnh, thư từ, v.v...",
+    "options": [
+      "や",
+      "と",
+      "も",
+      "が"
+    ],
+    "correctIndex": 0,
+    "explanation": "Trợ từ 「や」 dùng để liệt kê không đầy đủ các danh từ (đi kèm với など mang nghĩa là ...và... v.v.)."
+  },
+  {
+    "id": "cloze_minna_10_41",
+    "vocabId": "minna_10_41",
+    "targetWord": "いちばん",
+    "targetReading": "いちばん",
+    "sentence": "日本で（　　）高い山は富士山です。",
+    "fullSentence": "日本でいちばん高い山は富士山です。",
+    "translation": "Ngọn núi cao nhất ở Nhật Bản là núi Phú Sĩ.",
+    "options": [
+      "いちばん",
+      "とても",
+      "少し",
+      "あまり"
+    ],
+    "correctIndex": 0,
+    "explanation": "「いちばん」 nghĩa là nhất, đứng vị trí số 1 về một tiêu chí nào đó."
+  },
+  {
+    "id": "cloze_minna_10_42",
+    "vocabId": "minna_10_42",
+    "targetWord": "段目",
+    "targetReading": "だんめ",
+    "sentence": "その辞書は棚の3（　　）にあります。",
+    "fullSentence": "その辞書は棚の3段目にあります。",
+    "translation": "Cuốn từ điển đó nằm ở tầng thứ 3 của giá sách.",
+    "options": [
+      "段目",
+      "階",
+      "番線",
+      "枚"
+    ],
+    "correctIndex": 0,
+    "explanation": "Số đếm + 「段目」（だんめ） dùng để chỉ thứ tự tầng/ngăn của giá sách, kệ tủ."
+  },
+  {
+    "id": "cloze_minna_10_43",
+    "vocabId": "minna_10_43",
+    "targetWord": "どうもすみません",
+    "targetReading": "どうもすみません",
+    "sentence": "道を教えてくれて、（　　）。",
+    "fullSentence": "道を教えてくれて、どうもすみません。",
+    "translation": "Cảm ơn anh rất nhiều vì đã chỉ đường giúp tôi.",
+    "options": [
+      "どうもすみません",
+      "お邪魔します",
+      "失礼します",
+      "いってきます"
+    ],
+    "correctIndex": 0,
+    "explanation": "「どうもすみません」 vừa có nghĩa là vô cùng xin lỗi, vừa mang sắc thái cảm ơn sự giúp đỡ của đối phương."
+  },
+  {
+    "id": "cloze_minna_10_44",
+    "vocabId": "minna_10_44",
+    "targetWord": "チリソース",
+    "targetReading": "チリソース",
+    "sentence": "スーパーで辛い（　　）を買いました。",
+    "fullSentence": "スーパーで辛いチリソースを買いました。",
+    "translation": "Tôi đã mua tương ớt cay ở siêu thị.",
+    "options": [
+      "チリソース",
+      "しょうゆ",
+      "みそ",
+      "砂糖"
+    ],
+    "correctIndex": 0,
+    "explanation": "「チリソース」 nghĩa là tương ớt."
+  },
+  {
+    "id": "cloze_minna_10_45",
+    "vocabId": "minna_10_45",
+    "targetWord": "奥",
+    "targetReading": "おく",
+    "sentence": "店の（　　）にスパイスコーナーがあります。",
+    "fullSentence": "店の奥にスパイスコーナーがあります。",
+    "translation": "Ở phía trong cùng của cửa hàng có quầy gia vị.",
+    "options": [
+      "奥",
+      "前",
+      "外",
+      "上"
+    ],
+    "correctIndex": 0,
+    "explanation": "「奥」（おく） nghĩa là nơi sâu bên trong, góc trong cùng."
+  },
+  {
+    "id": "cloze_minna_10_46",
+    "vocabId": "minna_10_46",
+    "targetWord": "スパイスコーナー",
+    "targetReading": "スパイスコーナー",
+    "sentence": "カレーの材料は（　　）にあります。",
+    "fullSentence": "カレーの材料はスパイスコーナーにあります。",
+    "translation": "Nguyên liệu cà ri có ở góc gia vị.",
+    "options": [
+      "スパイスコーナー",
+      "乗り場",
+      "受付",
+      "本屋"
+    ],
+    "correctIndex": 0,
+    "explanation": "「スパイスコーナー」 nghĩa là quầy / góc bày bán gia vị."
+  }
+]

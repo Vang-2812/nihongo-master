@@ -1,0 +1,665 @@
+[
+  {
+    "id": "cloze_minna_13_0",
+    "vocabId": "minna_13_0",
+    "targetWord": "遊びます",
+    "targetReading": "あそびます",
+    "sentence": "週末は友達の家へ（　　）に行きます。",
+    "fullSentence": "週末は友達の家へ遊びに行きます。",
+    "translation": "Cuối tuần tôi đến nhà bạn chơi.",
+    "options": [
+      "遊び",
+      "泳ぎ",
+      "迎えた",
+      "疲れた"
+    ],
+    "correctIndex": 0,
+    "explanation": "「遊びに行きます」（あそびに行きます） mang nghĩa là đi chơi."
+  },
+  {
+    "id": "cloze_minna_13_1",
+    "vocabId": "minna_13_1",
+    "targetWord": "泳ぎます",
+    "targetReading": "およぎます",
+    "sentence": "夏休みに海で（　　）たいです。",
+    "fullSentence": "夏休みに海で泳ぎたいです。",
+    "translation": "Kỳ nghỉ hè tôi muốn đi bơi ở biển.",
+    "options": [
+      "泳ぎ",
+      "遊び",
+      "入り",
+      "出"
+    ],
+    "correctIndex": 0,
+    "explanation": "「泳ぎます」（およぎます） nghĩa là bơi lội."
+  },
+  {
+    "id": "cloze_minna_13_2",
+    "vocabId": "minna_13_2",
+    "targetWord": "迎えます",
+    "targetReading": "むかえます",
+    "sentence": "空港へ友達を（　　）に行きます。",
+    "fullSentence": "空港へ友達を迎えに行きます。",
+    "translation": "Tôi ra sân bay để đón bạn.",
+    "options": [
+      "迎え",
+      "遊び",
+      "送り",
+      "呼び"
+    ],
+    "correctIndex": 0,
+    "explanation": "「迎えます」（むかえます） nghĩa là đón tiếp, nghênh đón."
+  },
+  {
+    "id": "cloze_minna_13_3",
+    "vocabId": "minna_13_3",
+    "targetWord": "疲れました",
+    "targetReading": "つかれました",
+    "sentence": "たくさん歩きましたから、（　　）。少し休みましょう。",
+    "fullSentence": "たくさん歩きましたから、疲れました。少し休みましょう。",
+    "translation": "Vì đã đi bộ rất nhiều nên tôi mệt rồi. Chúng ta hãy nghỉ ngơi một lát nhé.",
+    "options": [
+      "疲れました",
+      "遊びました",
+      "泳ぎました",
+      "出ました"
+    ],
+    "correctIndex": 0,
+    "explanation": "「疲れます」（つかれます） nghĩa là mệt mỏi, mệt sức."
+  },
+  {
+    "id": "cloze_minna_13_4",
+    "vocabId": "minna_13_4",
+    "targetWord": "出します",
+    "targetReading": "だします",
+    "sentence": "郵便局へ手紙を（　　）に行きます。",
+    "fullSentence": "郵便局へ手紙を出しに行きます。",
+    "translation": "Tôi đến bưu điện để gửi thư.",
+    "options": [
+      "出し",
+      "入れ",
+      "買い",
+      "取り"
+    ],
+    "correctIndex": 0,
+    "explanation": "「手紙を出します」（だします） nghĩa là gửi thư."
+  },
+  {
+    "id": "cloze_minna_13_5",
+    "vocabId": "minna_13_5",
+    "targetWord": "入ります",
+    "targetReading": "はいります",
+    "sentence": "寒いから、あの喫茶店に（　　）ましょう。",
+    "fullSentence": "寒いから、あの喫茶店に入りましょう。",
+    "translation": "Vì trời lạnh nên chúng ta cùng vào quán cà phê kia nhé.",
+    "options": [
+      "入り",
+      "出",
+      "遊び",
+      "歩き"
+    ],
+    "correctIndex": 0,
+    "explanation": "「～に入ります」（はいります） nghĩa là đi vào bên trong (quán nước, phòng)."
+  },
+  {
+    "id": "cloze_minna_13_6",
+    "vocabId": "minna_13_6",
+    "targetWord": "出ます",
+    "targetReading": "でます",
+    "sentence": "12時に喫茶店を（　　）ました。",
+    "fullSentence": "12時に喫茶店を出ました。",
+    "translation": "Tôi đã rời khỏi quán cà phê lúc 12 giờ.",
+    "options": [
+      "出",
+      "入り",
+      "行き",
+      "着き"
+    ],
+    "correctIndex": 0,
+    "explanation": "「～を出ます」（でます） đi với trợ từ を chỉ nơi chốn rời khỏi."
+  },
+  {
+    "id": "cloze_minna_13_7",
+    "vocabId": "minna_13_7",
+    "targetWord": "結婚します",
+    "targetReading": "けっこんします",
+    "sentence": "田中さんは来月（　　）。",
+    "fullSentence": "田中さんは来月結婚します。",
+    "translation": "Bạn Tanaka sẽ kết hôn vào tháng sau.",
+    "options": [
+      "結婚します",
+      "散歩します",
+      "食事します",
+      "買い物します"
+    ],
+    "correctIndex": 0,
+    "explanation": "「結婚します」（けっこんします） nghĩa là kết hôn, làm đám cưới."
+  },
+  {
+    "id": "cloze_minna_13_8",
+    "vocabId": "minna_13_8",
+    "targetWord": "買い物します",
+    "targetReading": "かいものします",
+    "sentence": "デパートへ服を（　　）に行きます。",
+    "fullSentence": "デパートへ服を買い物に行きます。",
+    "translation": "Tôi đến trung tâm thương mại để mua sắm quần áo.",
+    "options": [
+      "買い物",
+      "散歩",
+      "食事",
+      "見学"
+    ],
+    "correctIndex": 0,
+    "explanation": "「買い物します」（かいものします） nghĩa là mua sắm đồ đạc."
+  },
+  {
+    "id": "cloze_minna_13_9",
+    "vocabId": "minna_13_9",
+    "targetWord": "食事します",
+    "targetReading": "しょくじします",
+    "sentence": "駅前のレストランで家族と（　　）。",
+    "fullSentence": "駅前のレストランで家族と食事します。",
+    "translation": "Tôi dùng bữa / ăn cơm cùng gia đình ở nhà hàng trước ga.",
+    "options": [
+      "食事します",
+      "散歩します",
+      "勉強します",
+      "登録します"
+    ],
+    "correctIndex": 0,
+    "explanation": "「食事します」（しょくじします） nghĩa là ăn cơm, dùng bữa."
+  },
+  {
+    "id": "cloze_minna_13_10",
+    "vocabId": "minna_13_10",
+    "targetWord": "散歩します",
+    "targetReading": "さんぽします",
+    "sentence": "毎朝犬と一緒に公園を（　　）。",
+    "fullSentence": "毎朝犬と一緒に公園を散歩します。",
+    "translation": "Mỗi sáng tôi đi dạo ở công viên cùng chú chó.",
+    "options": [
+      "散歩します",
+      "食事します",
+      "買い物します",
+      "見学します"
+    ],
+    "correctIndex": 0,
+    "explanation": "「公園を散歩します」（さんぽします） nghĩa là đi dạo trong công viên."
+  },
+  {
+    "id": "cloze_minna_13_11",
+    "vocabId": "minna_13_11",
+    "targetWord": "大変",
+    "targetReading": "たいへん",
+    "sentence": "毎日残業ですから、（　　）ですね。",
+    "fullSentence": "毎日残業ですから、大変ですね。",
+    "translation": "Vì ngày nào cũng làm thêm giờ nên vất vả thật đấy nhỉ.",
+    "options": [
+      "大変",
+      "簡単",
+      "暇",
+      "静か"
+    ],
+    "correctIndex": 0,
+    "explanation": "「大変」（たいへん） là tính từ đuôi な nghĩa là vất vả, khó khăn."
+  },
+  {
+    "id": "cloze_minna_13_12",
+    "vocabId": "minna_13_12",
+    "targetWord": "欲しい",
+    "targetReading": "ほしい",
+    "sentence": "誕生日に新しいパソコンが（　　）です。",
+    "fullSentence": "誕生日に新しいパソコンが欲しいです。",
+    "translation": "Vào ngày sinh nhật tôi muốn có một chiếc máy tính mới.",
+    "options": [
+      "欲しい",
+      "好き",
+      "上手",
+      "痛い"
+    ],
+    "correctIndex": 0,
+    "explanation": "「～が欲しい」（ほしい） dùng để diễn đạt ý muốn có, sở hữu một đồ vật nào đó."
+  },
+  {
+    "id": "cloze_minna_13_13",
+    "vocabId": "minna_13_13",
+    "targetWord": "寂しい",
+    "targetReading": "さびしい",
+    "sentence": "一人で外国に住んでいますから、（　　）です。",
+    "fullSentence": "一人で外国に住んでいますから、寂しいです。",
+    "translation": "Vì sống một mình ở nước ngoài nên tôi cảm thấy buồn và cô đơn.",
+    "options": [
+      "寂しい",
+      "嬉しい",
+      "楽しい",
+      "忙しい"
+    ],
+    "correctIndex": 0,
+    "explanation": "「寂しい」（さびしい） là tính từ đuôi い nghĩa là cô đơn, lẻ loi, buồn bã."
+  },
+  {
+    "id": "cloze_minna_13_14",
+    "vocabId": "minna_13_14",
+    "targetWord": "広い",
+    "targetReading": "ひろい",
+    "sentence": "このアパートの部屋はとても（　　）です。",
+    "fullSentence": "このアパートの部屋はとても広いです。",
+    "translation": "Căn phòng ở căn hộ chung cư này rất rộng rãi.",
+    "options": [
+      "広い",
+      "狭い",
+      "高い",
+      "低い"
+    ],
+    "correctIndex": 0,
+    "explanation": "「広い」（ひろい） nghĩa là rộng rãi (không gian, diện tích)."
+  },
+  {
+    "id": "cloze_minna_13_15",
+    "vocabId": "minna_13_15",
+    "targetWord": "狭い",
+    "targetReading": "せまい",
+    "sentence": "私の部屋は（　　）ですが、家賃が安いです。",
+    "fullSentence": "私の部屋は狭いですが、家賃が安いです。",
+    "translation": "Phòng của tôi chật hẹp nhưng tiền thuê nhà rẻ.",
+    "options": [
+      "狭い",
+      "広い",
+      "明るい",
+      "遠い"
+    ],
+    "correctIndex": 0,
+    "explanation": "「狭い」（せまい） nghĩa là chật chội, hẹp."
+  },
+  {
+    "id": "cloze_minna_13_16",
+    "vocabId": "minna_13_16",
+    "targetWord": "市役所",
+    "targetReading": "しやくしょ",
+    "sentence": "外国人登録のために（　　）へ行きました。",
+    "fullSentence": "外国人登録のために市役所へ行きました。",
+    "translation": "Tôi đã đến tòa thị chính / ủy ban thành phố để làm thủ tục đăng ký người nước ngoài.",
+    "options": [
+      "市役所",
+      "郵便局",
+      "美術館",
+      "プール"
+    ],
+    "correctIndex": 0,
+    "explanation": "「市役所」（しやくしょ） nghĩa là ủy ban nhân dân thành phố / tòa thị chính."
+  },
+  {
+    "id": "cloze_minna_13_17",
+    "vocabId": "minna_13_17",
+    "targetWord": "プール",
+    "targetReading": "プール",
+    "sentence": "週末に市民（　　）へ泳ぎに行きます。",
+    "fullSentence": "週末に市民プールへ泳ぎに行きます。",
+    "translation": "Cuối tuần tôi đến hồ bơi công dân để bơi lội.",
+    "options": [
+      "プール",
+      "川",
+      "海",
+      "市役所"
+    ],
+    "correctIndex": 0,
+    "explanation": "「プール」 nghĩa là hồ bơi, bể bơi."
+  },
+  {
+    "id": "cloze_minna_13_18",
+    "vocabId": "minna_13_18",
+    "targetWord": "川",
+    "targetReading": "かわ",
+    "sentence": "家の近くの（　　）で魚を釣ります。",
+    "fullSentence": "家の近くの川で魚を釣ります。",
+    "translation": "Tôi câu cá ở con sông gần nhà.",
+    "options": [
+      "川",
+      "海",
+      "山",
+      "プール"
+    ],
+    "correctIndex": 0,
+    "explanation": "「川」（かわ） nghĩa là dòng sông, con sông."
+  },
+  {
+    "id": "cloze_minna_13_19",
+    "vocabId": "minna_13_19",
+    "targetWord": "経済",
+    "targetReading": "けいざい",
+    "sentence": "大学で日本の（　　）を専攻しています。",
+    "fullSentence": "大学で日本の経済を専攻しています。",
+    "translation": "Tôi đang học chuyên ngành kinh tế Nhật Bản ở trường đại học.",
+    "options": [
+      "経済",
+      "美術",
+      "歴史",
+      "地理"
+    ],
+    "correctIndex": 0,
+    "explanation": "「経済」（けいざい） nghĩa là nền kinh tế, môn kinh tế học."
+  },
+  {
+    "id": "cloze_minna_13_20",
+    "vocabId": "minna_13_20",
+    "targetWord": "美術",
+    "targetReading": "びじゅつ",
+    "sentence": "上野の（　　）館で絵の展覧会を見ました。",
+    "fullSentence": "上野の美術館で絵の展覧会を見ました。",
+    "translation": "Tôi đã xem triển lãm tranh ở bảo tàng mỹ thuật tại Ueno.",
+    "options": [
+      "美術",
+      "経済",
+      "会議",
+      "登録"
+    ],
+    "correctIndex": 0,
+    "explanation": "「美術」（びじゅつ） nghĩa là mỹ thuật, hội họa nghệ thuật."
+  },
+  {
+    "id": "cloze_minna_13_21",
+    "vocabId": "minna_13_21",
+    "targetWord": "釣り",
+    "targetReading": "つり",
+    "sentence": "休みの日に川へ（　　）に行きます。",
+    "fullSentence": "休みの日に川へ釣りに行きます。",
+    "translation": "Vào ngày nghỉ tôi đi ra sông để câu cá.",
+    "options": [
+      "釣り",
+      "スキー",
+      "買い物",
+      "散歩"
+    ],
+    "correctIndex": 0,
+    "explanation": "「釣り」（つり） nghĩa là việc câu cá."
+  },
+  {
+    "id": "cloze_minna_13_22",
+    "vocabId": "minna_13_22",
+    "targetWord": "スキー",
+    "targetReading": "スキー",
+    "sentence": "冬休みに長野へ（　　）に行きます。",
+    "fullSentence": "冬休みに長野へスキーに行きます。",
+    "translation": "Kỳ nghỉ đông tôi đến Nagano để trượt tuyết.",
+    "options": [
+      "スキー",
+      "釣り",
+      "プール",
+      "散歩"
+    ],
+    "correctIndex": 0,
+    "explanation": "「スキー」 nghĩa là môn thể thao trượt tuyết."
+  },
+  {
+    "id": "cloze_minna_13_23",
+    "vocabId": "minna_13_23",
+    "targetWord": "会議",
+    "targetReading": "かいぎ",
+    "sentence": "午後2時から大切な（　　）があります。",
+    "fullSentence": "午後2時から大切な会議があります。",
+    "translation": "Từ 2 giờ chiều có cuộc họp quan trọng.",
+    "options": [
+      "会議",
+      "週末",
+      "登録",
+      "注文"
+    ],
+    "correctIndex": 0,
+    "explanation": "「会議」（かいぎ） nghĩa là cuộc họp, hội nghị."
+  },
+  {
+    "id": "cloze_minna_13_24",
+    "vocabId": "minna_13_24",
+    "targetWord": "登録",
+    "targetReading": "とうろく",
+    "sentence": "図書館のカードを作るために（　　）をします。",
+    "fullSentence": "図書館のカードを作るために登録をします。",
+    "translation": "Tôi làm thủ tục đăng ký để làm thẻ thư viện.",
+    "options": [
+      "登録",
+      "会議",
+      "食事",
+      "買い物"
+    ],
+    "correctIndex": 0,
+    "explanation": "「登録」（とうろく） nghĩa là việc đăng ký, ghi danh."
+  },
+  {
+    "id": "cloze_minna_13_25",
+    "vocabId": "minna_13_25",
+    "targetWord": "週末",
+    "targetReading": "しゅうまつ",
+    "sentence": "（　　）はいつも何をしますか。…家で映画を見ます。",
+    "fullSentence": "週末はいつも何をしますか。…家で映画を見ます。",
+    "translation": "Cuối tuần bạn thường làm gì? ...Tôi xem phim ở nhà.",
+    "options": [
+      "週末",
+      "毎日",
+      "昨日",
+      "来週"
+    ],
+    "correctIndex": 0,
+    "explanation": "「週末」（しゅうまつ） nghĩa là cuối tuần (thứ 7 và chủ nhật)."
+  },
+  {
+    "id": "cloze_minna_13_26",
+    "vocabId": "minna_13_26",
+    "targetWord": "ごろ",
+    "targetReading": "ごろ",
+    "sentence": "明日の夜7時（　　）に駅で会いましょう。",
+    "fullSentence": "明日の夜7時ごろに駅で会いましょう。",
+    "translation": "Khoảng 7 giờ tối mai chúng ta gặp nhau ở ga nhé.",
+    "options": [
+      "ごろ",
+      "ぐらい",
+      "だけ",
+      "しか"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hậu tố 「～ごろ」 gắn sau mốc thời gian biểu thị khoảng thời điểm (khoảng mấy giờ, vào tầm...)."
+  },
+  {
+    "id": "cloze_minna_13_27",
+    "vocabId": "minna_13_27",
+    "targetWord": "何か",
+    "targetReading": "なにか",
+    "sentence": "おなかがすきましたから、（　　）食べましょう。",
+    "fullSentence": "おなかがすきましたから、何か食べましょう。",
+    "translation": "Vì đói bụng rồi nên chúng ta ăn cái gì đó đi.",
+    "options": [
+      "何か",
+      "どこか",
+      "だれか",
+      "いつか"
+    ],
+    "correctIndex": 0,
+    "explanation": "「何か」（なにか） nghĩa là cái gì đó (đại từ bất định)."
+  },
+  {
+    "id": "cloze_minna_13_28",
+    "vocabId": "minna_13_28",
+    "targetWord": "どこか",
+    "targetReading": "どこか",
+    "sentence": "週末（　　）へ行きましたか。…いいえ、どこへも行きませんでした。",
+    "fullSentence": "週末どこかへ行きましたか。…いいえ、どこへも行きませんでした。",
+    "translation": "Cuối tuần bạn có đi đâu đó không? ...Không, tôi không đi đâu cả.",
+    "options": [
+      "どこか",
+      "何か",
+      "だれか",
+      "いつか"
+    ],
+    "correctIndex": 0,
+    "explanation": "「どこか」 nghĩa là nơi nào đó, đâu đó."
+  },
+  {
+    "id": "cloze_minna_13_29",
+    "vocabId": "minna_13_29",
+    "targetWord": "おなかがすきました",
+    "targetReading": "おなかがすきました",
+    "sentence": "もう12時ですね。（　　）。昼ごはんを食べに行きましょう。",
+    "fullSentence": "もう12時ですね。おなかがすきました。昼ごはんを食べに行きましょう。",
+    "translation": "Đã 12 giờ rồi nhỉ. Đói bụng rồi. Cùng đi ăn trưa nào.",
+    "options": [
+      "おなかがすきました",
+      "おなかがいっぱいです",
+      "のどがかわきました",
+      "つかれました"
+    ],
+    "correctIndex": 0,
+    "explanation": "「おなかがすきました」 nghĩa là (tôi) đói bụng rồi."
+  },
+  {
+    "id": "cloze_minna_13_30",
+    "vocabId": "minna_13_30",
+    "targetWord": "おなかがいっぱいです",
+    "targetReading": "おなかがいっぱいです",
+    "sentence": "たくさん食べましたから、もう（　　）。",
+    "fullSentence": "たくさん食べましたから、もうおなかがいっぱいです。",
+    "translation": "Vì đã ăn rất nhiều nên tôi no bụng rồi.",
+    "options": [
+      "おなかがいっぱいです",
+      "おなかがすきました",
+      "のどがかわきました",
+      "つかれました"
+    ],
+    "correctIndex": 0,
+    "explanation": "「おなかがいっぱいです」 nghĩa là (tôi) đã no căng bụng rồi."
+  },
+  {
+    "id": "cloze_minna_13_31",
+    "vocabId": "minna_13_31",
+    "targetWord": "のどがかわきました",
+    "targetReading": "のどがかわきました",
+    "sentence": "暑い中を走りましたから、（　　）。水を飲みたいです。",
+    "fullSentence": "暑い中を走りましたから、のどがかわきました。水を飲みたいです。",
+    "translation": "Vì chạy trong thời tiết nóng nên tôi khát nước rồi. Muốn uống nước quá.",
+    "options": [
+      "のどがかわきました",
+      "おなかがすきました",
+      "おなかがいっぱいです",
+      "つかれました"
+    ],
+    "correctIndex": 0,
+    "explanation": "「のどがかわきました」 nghĩa là (tôi) khát nước rồi."
+  },
+  {
+    "id": "cloze_minna_13_32",
+    "vocabId": "minna_13_32",
+    "targetWord": "そうですね",
+    "targetReading": "そうですね",
+    "sentence": "「ちょっと休みましょう。」「（　　）。そうしましょう。」",
+    "fullSentence": "「ちょっと休みましょう。」「そうですね。そうしましょう。」",
+    "translation": "「Chúng ta nghỉ ngơi một chút nhé.」「Đúng vậy nhỉ. Cùng làm thế đi.」",
+    "options": [
+      "そうですね",
+      "いいえ違います",
+      "すみません",
+      "おめでとうございます"
+    ],
+    "correctIndex": 0,
+    "explanation": "「そうですね」 dùng để biểu thị sự đồng tình, tán thành ý kiến của đối phương."
+  },
+  {
+    "id": "cloze_minna_13_33",
+    "vocabId": "minna_13_33",
+    "targetWord": "そうしましょう",
+    "targetReading": "そうしましょう",
+    "sentence": "「あそこのカフェに入りましょう。」「ええ、（　　）。」",
+    "fullSentence": "「あそこのカフェに入りましょう。」「ええ、そうしましょう。」",
+    "translation": "「Chúng ta vào quán cà phê đằng kia nhé.」「Ừ, nhất trí làm như thế đi!」",
+    "options": [
+      "そうしましょう",
+      "そうですね",
+      "いらっしゃいませ",
+      "ごちそうさまでした"
+    ],
+    "correctIndex": 0,
+    "explanation": "「そうしましょう」 dùng để đồng ý thực hiện đề xuất của người khác (hãy làm như thế đi)."
+  },
+  {
+    "id": "cloze_minna_13_34",
+    "vocabId": "minna_13_34",
+    "targetWord": "ご注文は",
+    "targetReading": "ごちゅうもんは",
+    "sentence": "店員：「いらっしゃいませ。（　　）？」「牛どんをください。」",
+    "fullSentence": "店員：「いらっしゃいませ。ご注文は？」「牛どんをください。」",
+    "translation": "Nhân viên: 「Kính chào quý khách. Quý khách muốn gọi món gì ạ?」「Cho tôi một phần cơm bò.」",
+    "options": [
+      "ご注文は",
+      "いくらですか",
+      "どちらですか",
+      "何歳ですか"
+    ],
+    "correctIndex": 0,
+    "explanation": "「ご注文は？」（ごちゅうもんは） là câu nhân viên dùng để hỏi khách gọi món."
+  },
+  {
+    "id": "cloze_minna_13_35",
+    "vocabId": "minna_13_35",
+    "targetWord": "定食",
+    "targetReading": "ていしょく",
+    "sentence": "お昼に魚の（　　）を食べました。",
+    "fullSentence": "お昼に魚の定食を食べました。",
+    "translation": "Buổi trưa tôi đã ăn một suất cơm phần có cá.",
+    "options": [
+      "定食",
+      "牛どん",
+      "喫茶店",
+      "注文"
+    ],
+    "correctIndex": 0,
+    "explanation": "「定食」（ていしょく） là suất cơm phần gồm món chính, cơm, canh và đồ chua."
+  },
+  {
+    "id": "cloze_minna_13_36",
+    "vocabId": "minna_13_36",
+    "targetWord": "牛どん",
+    "targetReading": "ぎゅうどん",
+    "sentence": "安くておいしい（　　）を注文しました。",
+    "fullSentence": "安くておいしい牛どんを注文しました。",
+    "translation": "Tôi đã gọi món cơm tô thịt bò Gyudon vừa rẻ vừa ngon.",
+    "options": [
+      "牛どん",
+      "定食",
+      "すき焼き",
+      "おすし"
+    ],
+    "correctIndex": 0,
+    "explanation": "「牛どん」（ぎゅうどん） là món cơm tô thịt bò thái mỏng xào hành tây nổi tiếng."
+  },
+  {
+    "id": "cloze_minna_13_37",
+    "vocabId": "minna_13_37",
+    "targetWord": "少々お待ちください",
+    "targetReading": "しょうしょうおまちください",
+    "sentence": "店員：「かしこまりました。（　　）。」",
+    "fullSentence": "店員：「かしこまりました。少々お待ちください。」",
+    "translation": "Nhân viên: 「Tôi đã rõ rồi ạ. Xin vui lòng chờ trong giây lát.」",
+    "options": [
+      "少々お待ちください",
+      "いらっしゃいませ",
+      "ごちそうさまでした",
+      "お邪魔します"
+    ],
+    "correctIndex": 0,
+    "explanation": "「［少々］お待ちください」 là lời nhờ khách hàng kiên nhẫn đợi một chút một cách rất lịch sự."
+  },
+  {
+    "id": "cloze_minna_13_38",
+    "vocabId": "minna_13_38",
+    "targetWord": "別々に",
+    "targetReading": "べつべつに",
+    "sentence": "会計のとき、「（　　）お願いします。」と言いました。",
+    "fullSentence": "会計のとき、「別々にお願いします。」と言いました。",
+    "translation": "Khi thanh toán, tôi nói \"Làm ơn tính tiền riêng từng người giúp ạ\".",
+    "options": [
+      "別々に",
+      "全部で",
+      "みんなで",
+      "一人で"
+    ],
+    "correctIndex": 0,
+    "explanation": "「別々に」（べつべつに） nghĩa là tính tiền riêng biệt từng phần, để riêng rẽ."
+  }
+]

@@ -1,0 +1,886 @@
+[
+  {
+    "id": "cloze_minna_6_0",
+    "vocabId": "minna_6_0",
+    "targetWord": "食べます",
+    "targetReading": "たべます",
+    "sentence": "毎朝パンと卵を（　　）。",
+    "fullSentence": "毎朝パンと卵を食べます。",
+    "translation": "Mỗi sáng tôi ăn bánh mì và trứng.",
+    "options": [
+      "飲みます",
+      "食べます",
+      "吸います",
+      "見ます"
+    ],
+    "correctIndex": 1,
+    "explanation": "「食べます」（たべます） nghĩa là ăn (thức ăn)."
+  },
+  {
+    "id": "cloze_minna_6_1",
+    "vocabId": "minna_6_1",
+    "targetWord": "飲みます",
+    "targetReading": "のみます",
+    "sentence": "のどが渇きましたから、水を（　　）。",
+    "fullSentence": "のどが渇きましたから、水を飲みます。",
+    "translation": "Vì khát nước nên tôi uống nước.",
+    "options": [
+      "食べます",
+      "飲みます",
+      "吸います",
+      "聞きます"
+    ],
+    "correctIndex": 1,
+    "explanation": "「飲みます」（のみます） nghĩa là uống (nước, đồ uống)."
+  },
+  {
+    "id": "cloze_minna_6_2",
+    "vocabId": "minna_6_2",
+    "targetWord": "吸います",
+    "targetReading": "すいます",
+    "sentence": "父はたばこを（　　）。",
+    "fullSentence": "父はたばこを吸います。",
+    "translation": "Bố tôi hút thuốc lá.",
+    "options": [
+      "吸います",
+      "飲みます",
+      "食べます",
+      "見ます"
+    ],
+    "correctIndex": 0,
+    "explanation": "「たばこを吸います」（すいます） nghĩa là hút thuốc lá."
+  },
+  {
+    "id": "cloze_minna_6_3",
+    "vocabId": "minna_6_3",
+    "targetWord": "見ます",
+    "targetReading": "みます",
+    "sentence": "日曜日の夜、テレビを（　　）。",
+    "fullSentence": "日曜日の夜、テレビを見ます。",
+    "translation": "Tối chủ nhật tôi xem tivi.",
+    "options": [
+      "聞きます",
+      "見ます",
+      "読みます",
+      "書きます"
+    ],
+    "correctIndex": 1,
+    "explanation": "「見ます」（みます） nghĩa là nhìn, xem (phim, tivi)."
+  },
+  {
+    "id": "cloze_minna_6_4",
+    "vocabId": "minna_6_4",
+    "targetWord": "聞きます",
+    "targetReading": "ききます",
+    "sentence": "部屋でCDを（　　）。",
+    "fullSentence": "部屋でCDを聞きます。",
+    "translation": "Tôi nghe đĩa CD trong phòng.",
+    "options": [
+      "見ます",
+      "聞きます",
+      "書きます",
+      "買います"
+    ],
+    "correctIndex": 1,
+    "explanation": "「聞きます」（ききます） nghĩa là nghe (nhạc, tin tức)."
+  },
+  {
+    "id": "cloze_minna_6_5",
+    "vocabId": "minna_6_5",
+    "targetWord": "読みます",
+    "targetReading": "よみます",
+    "sentence": "図書館で日本の雑誌を（　　）。",
+    "fullSentence": "図書館で日本の雑誌を読みます。",
+    "translation": "Tôi đọc tạp chí Nhật Bản ở thư viện.",
+    "options": [
+      "書きます",
+      "読みます",
+      "見ます",
+      "聞きます"
+    ],
+    "correctIndex": 1,
+    "explanation": "「読みます」（よみます） nghĩa là đọc (sách, báo, thư)."
+  },
+  {
+    "id": "cloze_minna_6_6",
+    "vocabId": "minna_6_6",
+    "targetWord": "書きます",
+    "targetReading": "かきます",
+    "sentence": "家族に手紙を（　　）。",
+    "fullSentence": "家族に手紙を書きます。",
+    "translation": "Tôi viết thư cho gia đình.",
+    "options": [
+      "読みます",
+      "買います",
+      "書きます",
+      "撮ります"
+    ],
+    "correctIndex": 2,
+    "explanation": "「書きます」（かきます） nghĩa là viết (thư, chữ)."
+  },
+  {
+    "id": "cloze_minna_6_7",
+    "vocabId": "minna_6_7",
+    "targetWord": "買います",
+    "targetReading": "かいます",
+    "sentence": "デパートで新しい靴を（　　）。",
+    "fullSentence": "デパートで新しい靴を買います。",
+    "translation": "Tôi mua đôi giày mới ở trung tâm thương mại.",
+    "options": [
+      "売ります",
+      "買います",
+      "見ます",
+      "書きます"
+    ],
+    "correctIndex": 1,
+    "explanation": "「買います」（かいます） nghĩa là mua hàng."
+  },
+  {
+    "id": "cloze_minna_6_8",
+    "vocabId": "minna_6_8",
+    "targetWord": "撮ります",
+    "targetReading": "とります",
+    "sentence": "公園でカメラで写真を（　　）。",
+    "fullSentence": "公園でカメラで写真を撮ります。",
+    "translation": "Chụp ảnh bằng máy ảnh ở công viên.",
+    "options": [
+      "撮ります",
+      "書きます",
+      "見ます",
+      "買います"
+    ],
+    "correctIndex": 0,
+    "explanation": "「写真を撮ります」（しゃしんをとります） nghĩa là chụp ảnh."
+  },
+  {
+    "id": "cloze_minna_6_9",
+    "vocabId": "minna_6_9",
+    "targetWord": "します",
+    "targetReading": "します",
+    "sentence": "土曜日の午後、友達とテニスを（　　）。",
+    "fullSentence": "土曜日の午後、友達とテニスをします。",
+    "translation": "Chiều thứ bảy tôi chơi quần vợt cùng bạn bè.",
+    "options": [
+      "します",
+      "見ます",
+      "聞きます",
+      "行きます"
+    ],
+    "correctIndex": 0,
+    "explanation": "「します」 dùng sau các danh từ thể thao, sự kiện nghĩa là chơi, làm (chơi tennis)."
+  },
+  {
+    "id": "cloze_minna_6_10",
+    "vocabId": "minna_6_10",
+    "targetWord": "会います",
+    "targetReading": "あいます",
+    "sentence": "駅前で友達に（　　）。",
+    "fullSentence": "駅前で友達に会います。",
+    "translation": "Tôi gặp bạn ở trước nhà ga.",
+    "options": [
+      "会います",
+      "行きます",
+      "来ます",
+      "帰ります"
+    ],
+    "correctIndex": 0,
+    "explanation": "Người + に + 「会います」（あいます） nghĩa là gặp gỡ ai đó."
+  },
+  {
+    "id": "cloze_minna_6_11",
+    "vocabId": "minna_6_11",
+    "targetWord": "ごはん",
+    "targetReading": "ごはん",
+    "sentence": "日本人は毎食（　　）を食べます。",
+    "fullSentence": "日本人は毎食ごはんを食べます。",
+    "translation": "Người Nhật ăn cơm mỗi bữa.",
+    "options": [
+      "ごはん",
+      "お茶",
+      "水",
+      "ビール"
+    ],
+    "correctIndex": 0,
+    "explanation": "「ごはん」 nghĩa là cơm hoặc bữa ăn."
+  },
+  {
+    "id": "cloze_minna_6_12",
+    "vocabId": "minna_6_12",
+    "targetWord": "朝ごはん",
+    "targetReading": "あさごはん",
+    "sentence": "毎朝7時に（　　）を食べます。",
+    "fullSentence": "毎朝7時に朝ごはんを食べます。",
+    "translation": "Mỗi sáng tôi ăn bữa sáng lúc 7 giờ.",
+    "options": [
+      "昼ごはん",
+      "晩ごはん",
+      "朝ごはん",
+      "お花見"
+    ],
+    "correctIndex": 2,
+    "explanation": "「朝ごはん」（あさごはん） nghĩa là bữa ăn sáng."
+  },
+  {
+    "id": "cloze_minna_6_13",
+    "vocabId": "minna_6_13",
+    "targetWord": "昼ごはん",
+    "targetReading": "ひるごはん",
+    "sentence": "12時に会社の食堂で（　　）を食べます。",
+    "fullSentence": "12時に会社の食堂で昼ごはんを食べます。",
+    "translation": "12 giờ tôi ăn bữa trưa ở nhà ăn công ty.",
+    "options": [
+      "朝ごはん",
+      "昼ごはん",
+      "晩ごはん",
+      "パン"
+    ],
+    "correctIndex": 1,
+    "explanation": "「昼ごはん」（ひるごはん） nghĩa là bữa ăn trưa."
+  },
+  {
+    "id": "cloze_minna_6_14",
+    "vocabId": "minna_6_14",
+    "targetWord": "晩ごはん",
+    "targetReading": "ばんごはん",
+    "sentence": "今晩家族と一緒に（　　）を食べます。",
+    "fullSentence": "今晩家族と一緒に晩ごはんを食べます。",
+    "translation": "Tối nay tôi cùng gia đình ăn bữa tối.",
+    "options": [
+      "朝ごはん",
+      "昼ごはん",
+      "晩ごはん",
+      "宿題"
+    ],
+    "correctIndex": 2,
+    "explanation": "「晩ごはん」（ばんごはん） nghĩa là bữa ăn tối."
+  },
+  {
+    "id": "cloze_minna_6_15",
+    "vocabId": "minna_6_15",
+    "targetWord": "パン",
+    "targetReading": "パン",
+    "sentence": "朝はいつも（　　）とコーヒーです。",
+    "fullSentence": "朝はいつもパンとコーヒーです。",
+    "translation": "Buổi sáng lúc nào tôi cũng ăn bánh mì và uống cà phê.",
+    "options": [
+      "魚",
+      "肉",
+      "パン",
+      "野菜"
+    ],
+    "correctIndex": 2,
+    "explanation": "「パン」 nghĩa là bánh mì."
+  },
+  {
+    "id": "cloze_minna_6_16",
+    "vocabId": "minna_6_16",
+    "targetWord": "卵",
+    "targetReading": "たまご",
+    "sentence": "朝ごはんに（　　）を2個食べました。",
+    "fullSentence": "朝ごはんに卵を2個食べました。",
+    "translation": "Bữa sáng tôi đã ăn 2 quả trứng gà.",
+    "options": [
+      "肉",
+      "魚",
+      "卵",
+      "果物"
+    ],
+    "correctIndex": 2,
+    "explanation": "「卵」（たまご） nghĩa là trứng."
+  },
+  {
+    "id": "cloze_minna_6_17",
+    "vocabId": "minna_6_17",
+    "targetWord": "肉",
+    "targetReading": "にく",
+    "sentence": "すき焼きは牛肉の（　　）料理です。",
+    "fullSentence": "すき焼きは牛肉の肉料理です。",
+    "translation": "Sukiyaki là món ăn làm từ thịt bò.",
+    "options": [
+      "肉",
+      "魚",
+      "野菜",
+      "果物"
+    ],
+    "correctIndex": 0,
+    "explanation": "「肉」（にく） nghĩa là thịt."
+  },
+  {
+    "id": "cloze_minna_6_18",
+    "vocabId": "minna_6_18",
+    "targetWord": "魚",
+    "targetReading": "さかな",
+    "sentence": "刺身は生の（　　）を食べます。",
+    "fullSentence": "刺身は生の魚を食べます。",
+    "translation": "Món sashimi là ăn cá sống.",
+    "options": [
+      "肉",
+      "魚",
+      "卵",
+      "パン"
+    ],
+    "correctIndex": 1,
+    "explanation": "「魚」（さかな） nghĩa là cá."
+  },
+  {
+    "id": "cloze_minna_6_19",
+    "vocabId": "minna_6_19",
+    "targetWord": "野菜",
+    "targetReading": "やさい",
+    "sentence": "健康のために毎日（　　）を食べます。",
+    "fullSentence": "健康のために毎日野菜を食べます。",
+    "translation": "Vì sức khỏe nên mỗi ngày tôi đều ăn rau củ.",
+    "options": [
+      "肉",
+      "ビール",
+      "野菜",
+      "たばこ"
+    ],
+    "correctIndex": 2,
+    "explanation": "「野菜」（やさい） nghĩa là rau củ quả."
+  },
+  {
+    "id": "cloze_minna_6_20",
+    "vocabId": "minna_6_20",
+    "targetWord": "果物",
+    "targetReading": "くだもの",
+    "sentence": "食後に甘い（　　）を食べます。りんごが好きです。",
+    "fullSentence": "食後に甘い果物を食べます。りんごが好きです。",
+    "translation": "Sau bữa ăn tôi ăn hoa quả ngọt. Tôi thích táo.",
+    "options": [
+      "野菜",
+      "果物",
+      "肉",
+      "魚"
+    ],
+    "correctIndex": 1,
+    "explanation": "「果物」（くだもの） nghĩa là trái cây, hoa quả."
+  },
+  {
+    "id": "cloze_minna_6_21",
+    "vocabId": "minna_6_21",
+    "targetWord": "水",
+    "targetReading": "みず",
+    "sentence": "冷たい（　　）を一杯ください。",
+    "fullSentence": "冷たい水を一杯ください。",
+    "translation": "Làm ơn cho tôi một ly nước lạnh.",
+    "options": [
+      "水",
+      "肉",
+      "魚",
+      "パン"
+    ],
+    "correctIndex": 0,
+    "explanation": "「水」（みず） nghĩa là nước lọc, nước uống."
+  },
+  {
+    "id": "cloze_minna_6_22",
+    "vocabId": "minna_6_22",
+    "targetWord": "お茶",
+    "targetReading": "おちゃ",
+    "sentence": "和菓子と一緒に温かい（　　）を飲みます。",
+    "fullSentence": "和菓子と一緒に温かいお茶を飲みます。",
+    "translation": "Uống trà xanh ấm nóng cùng với bánh ngọt Nhật Bản.",
+    "options": [
+      "ビール",
+      "お酒",
+      "お茶",
+      "水"
+    ],
+    "correctIndex": 2,
+    "explanation": "「お茶」（おちゃ） nghĩa là nước trà, trà xanh."
+  },
+  {
+    "id": "cloze_minna_6_23",
+    "vocabId": "minna_6_23",
+    "targetWord": "紅茶",
+    "targetReading": "こうちゃ",
+    "sentence": "イギリス人は（　　）をよく飲みます。",
+    "fullSentence": "イギリス人は紅茶をよく飲みます。",
+    "translation": "Người Anh rất hay uống hồng trà (trà đen).",
+    "options": [
+      "紅茶",
+      "ビール",
+      "お酒",
+      "ジュース"
+    ],
+    "correctIndex": 0,
+    "explanation": "「紅茶」（こうちゃ） nghĩa là hồng trà (trà đen)."
+  },
+  {
+    "id": "cloze_minna_6_24",
+    "vocabId": "minna_6_24",
+    "targetWord": "牛乳",
+    "targetReading": "ぎゅうにゅう（ミルク）",
+    "sentence": "毎朝（　　）をコップ一杯飲みます。",
+    "fullSentence": "毎朝牛乳をコップ一杯飲みます。",
+    "translation": "Mỗi sáng tôi uống một cốc sữa bò.",
+    "options": [
+      "牛乳",
+      "ビール",
+      "お酒",
+      "水"
+    ],
+    "correctIndex": 0,
+    "explanation": "「牛乳」（ぎゅうにゅう） nghĩa là sữa bò tươi."
+  },
+  {
+    "id": "cloze_minna_6_25",
+    "vocabId": "minna_6_25",
+    "targetWord": "ジュース",
+    "targetReading": "ジュース",
+    "sentence": "喫茶店でオレンジ（　　）を頼みました。",
+    "fullSentence": "喫茶店でオレンジジュースを頼みました。",
+    "translation": "Tôi đã gọi nước cam ép ở quán cà phê.",
+    "options": [
+      "ビール",
+      "ジュース",
+      "お酒",
+      "牛乳"
+    ],
+    "correctIndex": 1,
+    "explanation": "「ジュース」 (Juice) nghĩa là nước ép hoa quả."
+  },
+  {
+    "id": "cloze_minna_6_26",
+    "vocabId": "minna_6_26",
+    "targetWord": "ビール",
+    "targetReading": "ビール",
+    "sentence": "仕事の後に冷たい（　　）を飲みます。",
+    "fullSentence": "仕事の後に冷たいビールを飲みます。",
+    "translation": "Sau giờ làm việc, tôi uống bia lạnh.",
+    "options": [
+      "牛乳",
+      "ジュース",
+      "ビール",
+      "お茶"
+    ],
+    "correctIndex": 2,
+    "explanation": "「ビール」 (Beer) nghĩa là rượu bia."
+  },
+  {
+    "id": "cloze_minna_6_27",
+    "vocabId": "minna_6_27",
+    "targetWord": "［お］酒",
+    "targetReading": "［お］さけ",
+    "sentence": "日本の伝統的な（　　）を飲みました。",
+    "fullSentence": "日本の伝統的なお酒を飲みました。",
+    "translation": "Tôi đã uống rượu truyền thống của Nhật Bản (Sake).",
+    "options": [
+      "お茶",
+      "水",
+      "お酒",
+      "ジュース"
+    ],
+    "correctIndex": 2,
+    "explanation": "「［お］酒」（おさけ） nghĩa là rượu (nói chung hoặc rượu gạo Nhật Bản)."
+  },
+  {
+    "id": "cloze_minna_6_28",
+    "vocabId": "minna_6_28",
+    "targetWord": "ビデオ",
+    "targetReading": "ビデオ",
+    "sentence": "休みの日に部屋で（　　）を見ました。",
+    "fullSentence": "休みの日に部屋でビデオを見ました。",
+    "translation": "Vào ngày nghỉ tôi đã xem băng video trong phòng.",
+    "options": [
+      "ビデオ",
+      "手紙",
+      "レポート",
+      "写真"
+    ],
+    "correctIndex": 0,
+    "explanation": "「ビデオ」 nghĩa là băng video / đoạn video."
+  },
+  {
+    "id": "cloze_minna_6_29",
+    "vocabId": "minna_6_29",
+    "targetWord": "映画",
+    "targetReading": "えいが",
+    "sentence": "週末に友達と映画館で（　　）を見ます。",
+    "fullSentence": "週末に友達と映画館で映画を見ます。",
+    "translation": "Cuối tuần tôi đi xem phim cùng bạn bè ở rạp chiếu phim.",
+    "options": [
+      "映画",
+      "宿題",
+      "レポート",
+      "手紙"
+    ],
+    "correctIndex": 0,
+    "explanation": "「映画」（えいが） nghĩa là phim ảnh, điện ảnh."
+  },
+  {
+    "id": "cloze_minna_6_30",
+    "vocabId": "minna_6_30",
+    "targetWord": "ＣＤ",
+    "targetReading": "ＣＤ",
+    "sentence": "店で好きな歌手の（　　）を買いました。",
+    "fullSentence": "店で好きな歌手のＣＤを買いました。",
+    "translation": "Tôi mua đĩa CD của ca sĩ yêu thích ở cửa hàng.",
+    "options": [
+      "ＣＤ",
+      "映画",
+      "手紙",
+      "写真"
+    ],
+    "correctIndex": 0,
+    "explanation": "「ＣＤ」 (CD) nghĩa là đĩa CD ca nhạc."
+  },
+  {
+    "id": "cloze_minna_6_31",
+    "vocabId": "minna_6_31",
+    "targetWord": "手紙",
+    "targetReading": "てがみ",
+    "sentence": "国にいる両親に（　　）を書きました。",
+    "fullSentence": "国にいる両親に手紙を書きました。",
+    "translation": "Tôi đã viết thư cho cha mẹ ở quê nhà.",
+    "options": [
+      "手紙",
+      "映画",
+      "ビデオ",
+      "テニス"
+    ],
+    "correctIndex": 0,
+    "explanation": "「手紙」（てがみ） nghĩa là bức thư."
+  },
+  {
+    "id": "cloze_minna_6_32",
+    "vocabId": "minna_6_32",
+    "targetWord": "レポート",
+    "targetReading": "レポート",
+    "sentence": "大学の授業で（　　）を出しました。",
+    "fullSentence": "大学の授業でレポートを出しました。",
+    "translation": "Tôi đã nộp bản báo cáo trong tiết học ở đại học.",
+    "options": [
+      "レポート",
+      "手紙",
+      "ＣＤ",
+      "映画"
+    ],
+    "correctIndex": 0,
+    "explanation": "「レポート」 (Report) nghĩa là bài báo cáo, tiểu luận."
+  },
+  {
+    "id": "cloze_minna_6_33",
+    "vocabId": "minna_6_33",
+    "targetWord": "写真",
+    "targetReading": "しゃしん",
+    "sentence": "京都でたくさん（　　）を撮りました。",
+    "fullSentence": "京都でたくさん写真を撮りました。",
+    "translation": "Tôi đã chụp rất nhiều ảnh ở Kyoto.",
+    "options": [
+      "手紙",
+      "写真",
+      "宿題",
+      "レポート"
+    ],
+    "correctIndex": 1,
+    "explanation": "「写真」（しゃしん） nghĩa là bức ảnh."
+  },
+  {
+    "id": "cloze_minna_6_34",
+    "vocabId": "minna_6_34",
+    "targetWord": "店",
+    "targetReading": "みせ",
+    "sentence": "あの（　　）で美味しいパンを売っています。",
+    "fullSentence": "あのお店で美味しいパンを売っています。",
+    "translation": "Cửa hàng đó đang bán bánh mì rất ngon.",
+    "options": [
+      "店",
+      "庭",
+      "手紙",
+      "映画"
+    ],
+    "correctIndex": 0,
+    "explanation": "「店」（みせ） nghĩa là cửa hàng, tiệm buôn bán."
+  },
+  {
+    "id": "cloze_minna_6_35",
+    "vocabId": "minna_6_35",
+    "targetWord": "レストラン",
+    "targetReading": "レストラン",
+    "sentence": "誕生日に高級な（　　）で食事をしました。",
+    "fullSentence": "誕生日に高級なレストランで食事をしました。",
+    "translation": "Vào ngày sinh nhật tôi đã dùng bữa ở một nhà hàng cao cấp.",
+    "options": [
+      "レストラン",
+      "店",
+      "庭",
+      "学校"
+    ],
+    "correctIndex": 0,
+    "explanation": "「レストラン」 nghĩa là nhà hàng ăn uống."
+  },
+  {
+    "id": "cloze_minna_6_36",
+    "vocabId": "minna_6_36",
+    "targetWord": "庭",
+    "targetReading": "にわ",
+    "sentence": "家の（　　）にきれいな花が咲いています。",
+    "fullSentence": "家の庭にきれいな花が咲いています。",
+    "translation": "Trong vườn nhà có hoa đẹp đang nở.",
+    "options": [
+      "庭",
+      "店",
+      "レストラン",
+      "部屋"
+    ],
+    "correctIndex": 0,
+    "explanation": "「庭」（にわ） nghĩa là khu vườn sân nhà."
+  },
+  {
+    "id": "cloze_minna_6_37",
+    "vocabId": "minna_6_37",
+    "targetWord": "宿題",
+    "targetReading": "しゅくだい",
+    "sentence": "学校の（　　）をしてから寝ます。",
+    "fullSentence": "学校の宿題をしてから寝ます。",
+    "translation": "Làm xong bài tập về nhà của trường rồi tôi mới đi ngủ.",
+    "options": [
+      "宿題",
+      "テニス",
+      "サッカー",
+      "お花見"
+    ],
+    "correctIndex": 0,
+    "explanation": "「宿題」（しゅくだい） nghĩa là bài tập về nhà."
+  },
+  {
+    "id": "cloze_minna_6_38",
+    "vocabId": "minna_6_38",
+    "targetWord": "テニス",
+    "targetReading": "テニス",
+    "sentence": "日曜日にコートで（　　）をしました。",
+    "fullSentence": "日曜日にコートでテニスをしました。",
+    "translation": "Chủ nhật tôi đã chơi quần vợt ở sân đấu.",
+    "options": [
+      "サッカー",
+      "テニス",
+      "宿題",
+      "レポート"
+    ],
+    "correctIndex": 1,
+    "explanation": "「テニス」 nghĩa là môn thể thao quần vợt (tennis)."
+  },
+  {
+    "id": "cloze_minna_6_39",
+    "vocabId": "minna_6_39",
+    "targetWord": "サッカー",
+    "targetReading": "サッカー",
+    "sentence": "放課後グラウンドで（　　）を練習します。",
+    "fullSentence": "放課後グラウンドでサッカーを練習します。",
+    "translation": "Sau giờ học chúng tôi luyện tập bóng đá ở sân vận động.",
+    "options": [
+      "テニス",
+      "サッカー",
+      "宿題",
+      "手紙"
+    ],
+    "correctIndex": 1,
+    "explanation": "「サッカー」 nghĩa là môn bóng đá."
+  },
+  {
+    "id": "cloze_minna_6_40",
+    "vocabId": "minna_6_40",
+    "targetWord": "［お］花見",
+    "targetReading": "［お］はなみ",
+    "sentence": "春に上野公園で（　　）をします。",
+    "fullSentence": "春に上野公園でお花見をします。",
+    "translation": "Vào mùa xuân người ta tổ chức ngắm hoa anh đào ở công viên Ueno.",
+    "options": [
+      "宿題",
+      "お花見",
+      "テニス",
+      "サッカー"
+    ],
+    "correctIndex": 1,
+    "explanation": "「［お］花見」（おはなみ） nghĩa là tục lệ ngắm hoa anh đào mùa xuân ở Nhật."
+  },
+  {
+    "id": "cloze_minna_6_41",
+    "vocabId": "minna_6_41",
+    "targetWord": "何",
+    "targetReading": "なに",
+    "sentence": "昼ごはんに（　　）を食べましたか。…うどんを食べました。",
+    "fullSentence": "昼ごはんに何を食べましたか。…うどんを食べました。",
+    "translation": "Bữa trưa bạn đã ăn gì vậy? ...Tôi đã ăn mì Udon.",
+    "options": [
+      "だれ",
+      "何",
+      "どこ",
+      "いつ"
+    ],
+    "correctIndex": 1,
+    "explanation": "「何」（なに） dùng để hỏi đối tượng của hành động (cái gì)."
+  },
+  {
+    "id": "cloze_minna_6_42",
+    "vocabId": "minna_6_42",
+    "targetWord": "いっしょに",
+    "targetReading": "いっしょに",
+    "sentence": "（　　）京都へ行きませんか。…ええ、行きましょう。",
+    "fullSentence": "いっしょに京都へ行きませんか。…ええ、行きましょう。",
+    "translation": "Bạn có muốn cùng nhau đi Kyoto không? ...Vâng, cùng đi nào.",
+    "options": [
+      "ひとりで",
+      "いっしょに",
+      "いつも",
+      "ちょっと"
+    ],
+    "correctIndex": 1,
+    "explanation": "「いっしょに」 nghĩa là cùng nhau (làm chung một việc)."
+  },
+  {
+    "id": "cloze_minna_6_43",
+    "vocabId": "minna_6_43",
+    "targetWord": "ちょっと",
+    "targetReading": "ちょっと",
+    "sentence": "日曜日、映画を見ませんか。…日曜日は（　　）都合が悪いです。",
+    "fullSentence": "日曜日、映画を見ませんか。…日曜日はちょっと都合が悪いです。",
+    "translation": "Chủ nhật đi xem phim không? ...Chủ nhật thì hơi bất tiện/kẹt một chút.",
+    "options": [
+      "いつも",
+      "ちょっと",
+      "いっしょに",
+      "ときどき"
+    ],
+    "correctIndex": 1,
+    "explanation": "「ちょっと」 nghĩa là một chút, hoặc dùng để từ chối khéo (hơi kẹt)."
+  },
+  {
+    "id": "cloze_minna_6_44",
+    "vocabId": "minna_6_44",
+    "targetWord": "いつも",
+    "targetReading": "いつも",
+    "sentence": "朝は（　　）この喫茶店でコーヒーを飲みます。",
+    "fullSentence": "朝はいつもこの喫茶店でコーヒーを飲みます。",
+    "translation": "Buổi sáng lúc nào tôi cũng uống cà phê ở quán này.",
+    "options": [
+      "ときどき",
+      "いつも",
+      "あまり",
+      "ぜんぜん"
+    ],
+    "correctIndex": 1,
+    "explanation": "「いつも」 là phó từ chỉ tần suất tuyệt đối (luôn luôn, lúc nào cũng)."
+  },
+  {
+    "id": "cloze_minna_6_45",
+    "vocabId": "minna_6_45",
+    "targetWord": "時々",
+    "targetReading": "ときどき",
+    "sentence": "（　　）日本料理のレストランへ行きます。",
+    "fullSentence": "時々日本料理のレストランへ行きます。",
+    "translation": "Thỉnh thoảng tôi đi ăn ở nhà hàng món Nhật.",
+    "options": [
+      "いつも",
+      "時々",
+      "毎日",
+      "毎朝"
+    ],
+    "correctIndex": 1,
+    "explanation": "「時々」（ときどき） là phó từ chỉ tần suất vừa phải (thỉnh thoảng, đôi khi)."
+  },
+  {
+    "id": "cloze_minna_6_46",
+    "vocabId": "minna_6_46",
+    "targetWord": "それから",
+    "targetReading": "それから",
+    "sentence": "新宿で買い物をしました。（　　）映画を見ました。",
+    "fullSentence": "新宿で買い物をしました。それから映画を見ました。",
+    "translation": "Tôi đã mua sắm ở Shinjuku. Sau đó tôi đã đi xem phim.",
+    "options": [
+      "それから",
+      "そして",
+      "しかし",
+      "でも"
+    ],
+    "correctIndex": 0,
+    "explanation": "「それから」 là từ nối tiếp thời gian (sau đó, tiếp theo)."
+  },
+  {
+    "id": "cloze_minna_6_47",
+    "vocabId": "minna_6_47",
+    "targetWord": "ええ",
+    "targetReading": "ええ",
+    "sentence": "お茶を飲みませんか。…（　　）、いいですね。",
+    "fullSentence": "お茶を飲みませんか。…ええ、いいですね。",
+    "translation": "Bạn uống trà không? ...Ừ/Vâng, được đấy nhỉ.",
+    "options": [
+      "いいえ",
+      "ええ",
+      "だめ",
+      "ちがう"
+    ],
+    "correctIndex": 1,
+    "explanation": "「ええ」 dùng để đồng tình hoặc nhận lời rủ rê (vâng, ừ)."
+  },
+  {
+    "id": "cloze_minna_6_48",
+    "vocabId": "minna_6_48",
+    "targetWord": "いいですね。",
+    "targetReading": "いいですね。",
+    "sentence": "あした一緒に食事に行きませんか。…（　　）。行きましょう。",
+    "fullSentence": "あした一緒に食事に行きませんか。…いいですね。行きましょう。",
+    "translation": "Ngày mai cùng đi ăn nhé? ...Hay quá nhỉ/được đấy nhỉ. Đi nào.",
+    "options": [
+      "いいですね",
+      "たいへんですね",
+      "ざんねんですね",
+      "すみません"
+    ],
+    "correctIndex": 0,
+    "explanation": "「いいですね」 dùng để nhiệt tình hưởng ứng một đề xuất (thật tốt/hay quá nhỉ)."
+  },
+  {
+    "id": "cloze_minna_6_49",
+    "vocabId": "minna_6_49",
+    "targetWord": "わかりました。",
+    "targetReading": "わかりました。",
+    "sentence": "あした8時に駅で待ち合わせましょう。…はい、（　　）。",
+    "fullSentence": "あした8時に駅で待ち合わせましょう。…はい、わかりました。",
+    "translation": "Ngày mai chúng ta hẹn nhau 8 giờ ở nhà ga nhé. ...Vâng, tôi hiểu/nhất trí rồi.",
+    "options": [
+      "わかりました",
+      "知りません",
+      "ちがいます",
+      "ごちそうさま"
+    ],
+    "correctIndex": 0,
+    "explanation": "「わかりました」 dùng để xác nhận đã hiểu và tiếp nhận thông tin hoặc sự sắp xếp."
+  },
+  {
+    "id": "cloze_minna_6_50",
+    "vocabId": "minna_6_50",
+    "targetWord": "何ですか。",
+    "targetReading": "なんですか",
+    "sentence": "ミラーさん、ちょっといいですか。…はい、（　　）。",
+    "fullSentence": "ミラーさん、ちょっといいですか。…はい、何ですか。",
+    "translation": "Anh Miller, cho tôi hỏi chút được không? ...Vâng, có chuyện gì vậy ạ?",
+    "options": [
+      "何ですか",
+      "だれですか",
+      "どこですか",
+      "いくらですか"
+    ],
+    "correctIndex": 0,
+    "explanation": "「何ですか」（なんですか） dùng khi được gọi để hỏi xem đối phương có việc gì (có chuyện gì vậy?)."
+  },
+  {
+    "id": "cloze_minna_6_51",
+    "vocabId": "minna_6_51",
+    "targetWord": "じゃ、また［あした］。",
+    "targetReading": "じゃ、また［あした］。",
+    "sentence": "きょうはお疲れ様でした。（　　）。",
+    "fullSentence": "きょうはお疲れ様でした。じゃ、またあした。",
+    "translation": "Hôm nay bạn đã vất vả rồi. Hẹn gặp lại vào ngày mai nhé.",
+    "options": [
+      "はじめまして",
+      "じゃ、またあした",
+      "いただきます",
+      "お邪魔します"
+    ],
+    "correctIndex": 1,
+    "explanation": "「じゃ、また［あした］」 là câu chào tạm biệt thân mật hẹn gặp lại."
+  }
+]

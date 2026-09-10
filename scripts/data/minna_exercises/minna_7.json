@@ -1,0 +1,631 @@
+[
+  {
+    "id": "cloze_minna_7_0",
+    "vocabId": "minna_7_0",
+    "targetWord": "切ります",
+    "targetReading": "きります",
+    "sentence": "ナイフでパンを（　　）。",
+    "fullSentence": "ナイフでパンを切ります。",
+    "translation": "Cắt bánh mì bằng dao.",
+    "options": [
+      "切ります",
+      "送ります",
+      "あげます",
+      "教えます"
+    ],
+    "correctIndex": 0,
+    "explanation": "「切ります」（きります） nghĩa là cắt, thái."
+  },
+  {
+    "id": "cloze_minna_7_1",
+    "vocabId": "minna_7_1",
+    "targetWord": "送ります",
+    "targetReading": "おくります",
+    "sentence": "家族に小包を（　　）。",
+    "fullSentence": "家族に小包を送ります。",
+    "translation": "Tôi gửi bưu phẩm cho gia đình.",
+    "options": [
+      "切ります",
+      "送ります",
+      "借ります",
+      "習います"
+    ],
+    "correctIndex": 1,
+    "explanation": "「送ります」（おくります） nghĩa là gửi (thư từ, bưu kiện, hàng hóa)."
+  },
+  {
+    "id": "cloze_minna_7_2",
+    "vocabId": "minna_7_2",
+    "targetWord": "あげます",
+    "targetReading": "あげます",
+    "sentence": "母の日に花を（　　）。",
+    "fullSentence": "母の日に花をあげます。",
+    "translation": "Tôi tặng hoa cho mẹ vào Ngày của Mẹ.",
+    "options": [
+      "あげます",
+      "もらいます",
+      "借ります",
+      "切ります"
+    ],
+    "correctIndex": 0,
+    "explanation": "「あげます」 nghĩa là cho, tặng ai đó cái gì."
+  },
+  {
+    "id": "cloze_minna_7_3",
+    "vocabId": "minna_7_3",
+    "targetWord": "もらいます",
+    "targetReading": "もらいます",
+    "sentence": "誕生日に友達からプレゼントを（　　）。",
+    "fullSentence": "誕生日に友達からプレゼントをもらいました。",
+    "translation": "Vào ngày sinh nhật tôi đã nhận được quà từ bạn bè.",
+    "options": [
+      "あげました",
+      "もらいました",
+      "貸しました",
+      "教えました"
+    ],
+    "correctIndex": 1,
+    "explanation": "「もらいます」 nghĩa là nhận được cái gì từ ai đó."
+  },
+  {
+    "id": "cloze_minna_7_4",
+    "vocabId": "minna_7_4",
+    "targetWord": "貸します",
+    "targetReading": "かします",
+    "sentence": "友達に本を（　　）。",
+    "fullSentence": "友達に本を貸します。",
+    "translation": "Tôi cho bạn mượn sách.",
+    "options": [
+      "借ります",
+      "貸します",
+      "習います",
+      "切ります"
+    ],
+    "correctIndex": 1,
+    "explanation": "「貸します」（かします） nghĩa là cho ai mượn, cho vay."
+  },
+  {
+    "id": "cloze_minna_7_5",
+    "vocabId": "minna_7_5",
+    "targetWord": "借ります",
+    "targetReading": "かります",
+    "sentence": "図書館で辞書を（　　）。",
+    "fullSentence": "図書館で辞書を借ります。",
+    "translation": "Tôi mượn từ điển ở thư viện.",
+    "options": [
+      "貸します",
+      "借ります",
+      "あげます",
+      "教えます"
+    ],
+    "correctIndex": 1,
+    "explanation": "「借ります」（かります） nghĩa là vay mượn từ ai/nơi nào."
+  },
+  {
+    "id": "cloze_minna_7_6",
+    "vocabId": "minna_7_6",
+    "targetWord": "教えます",
+    "targetReading": "おしえます",
+    "sentence": "先生は生徒に日本語を（　　）。",
+    "fullSentence": "先生は生徒に日本語を教えます。",
+    "translation": "Thầy giáo dạy tiếng Nhật cho học sinh.",
+    "options": [
+      "習います",
+      "教えます",
+      "借ります",
+      "送ります"
+    ],
+    "correctIndex": 1,
+    "explanation": "「教えます」（おしえます） nghĩa là giảng dạy, chỉ bảo."
+  },
+  {
+    "id": "cloze_minna_7_7",
+    "vocabId": "minna_7_7",
+    "targetWord": "習います",
+    "targetReading": "ならいます",
+    "sentence": "ワット先生に英語を（　　）。",
+    "fullSentence": "ワット先生に英語を習います。",
+    "translation": "Tôi học tiếng Anh từ thầy Watt.",
+    "options": [
+      "教えます",
+      "習います",
+      "貸します",
+      "切ります"
+    ],
+    "correctIndex": 1,
+    "explanation": "「習います」（ならいます） nghĩa là theo học ai đó."
+  },
+  {
+    "id": "cloze_minna_7_8",
+    "vocabId": "minna_7_8",
+    "targetWord": "かけます",
+    "targetReading": "かけます",
+    "sentence": "友達に電話を（　　）。",
+    "fullSentence": "友達に電話をかけます。",
+    "translation": "Tôi gọi điện thoại cho bạn.",
+    "options": [
+      "かけます",
+      "切ります",
+      "あげます",
+      "借ります"
+    ],
+    "correctIndex": 0,
+    "explanation": "「電話をかけます」（でんわをかけます） nghĩa là gọi điện thoại."
+  },
+  {
+    "id": "cloze_minna_7_9",
+    "vocabId": "minna_7_9",
+    "targetWord": "手",
+    "targetReading": "て",
+    "sentence": "ご飯を食べる前に（　　）を洗います。",
+    "fullSentence": "ご飯を食べる前に手を洗います。",
+    "translation": "Rửa tay trước khi ăn cơm.",
+    "options": [
+      "手",
+      "はし",
+      "紙",
+      "はさみ"
+    ],
+    "correctIndex": 0,
+    "explanation": "「手」（て） nghĩa là bàn tay."
+  },
+  {
+    "id": "cloze_minna_7_10",
+    "vocabId": "minna_7_10",
+    "targetWord": "はし",
+    "targetReading": "はし",
+    "sentence": "日本人は（　　）でご飯を食べます。",
+    "fullSentence": "日本人ははしでご飯を食べます。",
+    "translation": "Người Nhật ăn cơm bằng đũa.",
+    "options": [
+      "フォーク",
+      "はし",
+      "スプーン",
+      "ナイフ"
+    ],
+    "correctIndex": 1,
+    "explanation": "「はし」 nghĩa là đôi đũa."
+  },
+  {
+    "id": "cloze_minna_7_11",
+    "vocabId": "minna_7_11",
+    "targetWord": "スプーン",
+    "targetReading": "スプーン",
+    "sentence": "カレーを（　　）で食べます。",
+    "fullSentence": "カレーをスプーンで食べます。",
+    "translation": "Ăn món cà ri bằng thìa/muỗng.",
+    "options": [
+      "はし",
+      "スプーン",
+      "ナイフ",
+      "はさみ"
+    ],
+    "correctIndex": 1,
+    "explanation": "「スプーン」 (Spoon) nghĩa là chiếc thìa, muỗng."
+  },
+  {
+    "id": "cloze_minna_7_12",
+    "vocabId": "minna_7_12",
+    "targetWord": "ナイフ",
+    "targetReading": "ナイフ",
+    "sentence": "肉を（　　）で切ります。",
+    "fullSentence": "肉をナイフで切ります。",
+    "translation": "Cắt thịt bằng dao.",
+    "options": [
+      "ナイフ",
+      "スプーン",
+      "はし",
+      "消しゴム"
+    ],
+    "correctIndex": 0,
+    "explanation": "「ナイフ」 (Knife) nghĩa là con dao."
+  },
+  {
+    "id": "cloze_minna_7_13",
+    "vocabId": "minna_7_13",
+    "targetWord": "フォーク",
+    "targetReading": "フォーク",
+    "sentence": "スパゲッティを（　　）で食べます。",
+    "fullSentence": "スパゲッティをフォークで食べます。",
+    "translation": "Ăn mì Ý bằng nĩa.",
+    "options": [
+      "フォーク",
+      "ナイフ",
+      "はさみ",
+      "パンチ"
+    ],
+    "correctIndex": 0,
+    "explanation": "「フォーク」 (Fork) nghĩa là cái nĩa, dĩa."
+  },
+  {
+    "id": "cloze_minna_7_14",
+    "vocabId": "minna_7_14",
+    "targetWord": "はさみ",
+    "targetReading": "はさみ",
+    "sentence": "（　　）で紙を切ります。",
+    "fullSentence": "はさみで紙を切ります。",
+    "translation": "Cắt giấy bằng kéo.",
+    "options": [
+      "はさみ",
+      "ホッチキス",
+      "セロテープ",
+      "消しゴム"
+    ],
+    "correctIndex": 0,
+    "explanation": "「はさみ」 nghĩa là cái kéo."
+  },
+  {
+    "id": "cloze_minna_7_15",
+    "vocabId": "minna_7_15",
+    "targetWord": "ファクス",
+    "targetReading": "ファクス",
+    "sentence": "書類を（　　）で送ります。",
+    "fullSentence": "書類をファクスで送ります。",
+    "translation": "Gửi tài liệu bằng máy fax.",
+    "options": [
+      "ファクス",
+      "はさみ",
+      "パンチ",
+      "消しゴム"
+    ],
+    "correctIndex": 0,
+    "explanation": "「ファクス」 (Fax) nghĩa là máy fax / bản fax."
+  },
+  {
+    "id": "cloze_minna_7_16",
+    "vocabId": "minna_7_16",
+    "targetWord": "ワープロ",
+    "targetReading": "ワープロ",
+    "sentence": "昔は（　　）で文書を作成しました。",
+    "fullSentence": "昔はワープロで文書を作成しました。",
+    "translation": "Ngày xưa người ta soạn thảo văn bản bằng máy xử lý văn bản (Word processor).",
+    "options": [
+      "ワープロ",
+      "ナイフ",
+      "はし",
+      "スプーン"
+    ],
+    "correctIndex": 0,
+    "explanation": "「ワープロ」 (Word processor) nghĩa là máy đánh chữ điện tử / máy xử lý văn bản."
+  },
+  {
+    "id": "cloze_minna_7_17",
+    "vocabId": "minna_7_17",
+    "targetWord": "パソコン",
+    "targetReading": "パソコン",
+    "sentence": "（　　）でレポートを書きます。",
+    "fullSentence": "パソコンでレポートを書きます。",
+    "translation": "Viết báo cáo bằng máy tính cá nhân.",
+    "options": [
+      "パソコン",
+      "はさみ",
+      "切符",
+      "お金"
+    ],
+    "correctIndex": 0,
+    "explanation": "「パソコン」 (Personal computer) nghĩa là máy tính cá nhân, laptop."
+  },
+  {
+    "id": "cloze_minna_7_18",
+    "vocabId": "minna_7_18",
+    "targetWord": "パンチ",
+    "targetReading": "パンチ",
+    "sentence": "（　　）で紙に穴をあけます。",
+    "fullSentence": "パンチで紙に穴をあけます。",
+    "translation": "Đục lỗ trên giấy bằng cái bấm lỗ.",
+    "options": [
+      "ホッチキス",
+      "パンチ",
+      "セロテープ",
+      "消しゴム"
+    ],
+    "correctIndex": 1,
+    "explanation": "「パンチ」 (Hole puncher) nghĩa là cái kìm bấm lỗ giấy."
+  },
+  {
+    "id": "cloze_minna_7_19",
+    "vocabId": "minna_7_19",
+    "targetWord": "ホッチキス",
+    "targetReading": "ホッチキス",
+    "sentence": "プリントを（　　）で留めます。",
+    "fullSentence": "プリントをホッチキスで留めます。",
+    "translation": "Ghim tập tài liệu lại bằng cái dập ghim.",
+    "options": [
+      "パンチ",
+      "ホッチキス",
+      "はさみ",
+      "ナイフ"
+    ],
+    "correctIndex": 1,
+    "explanation": "「ホッチキス」 (Stapler) nghĩa là cái dập ghim, bấm kim."
+  },
+  {
+    "id": "cloze_minna_7_20",
+    "vocabId": "minna_7_20",
+    "targetWord": "セロテープ",
+    "targetReading": "セロテープ",
+    "sentence": "ポスターを（　　）で壁に貼ります。",
+    "fullSentence": "ポスターをセロテープで壁に貼ります。",
+    "translation": "Dán áp phích lên tường bằng băng dính trong (băng keo).",
+    "options": [
+      "消しゴム",
+      "ホッチキス",
+      "セロテープ",
+      "パンチ"
+    ],
+    "correctIndex": 2,
+    "explanation": "「セロテープ」 (Sellotape) nghĩa là cuộn băng dính trong suốt."
+  },
+  {
+    "id": "cloze_minna_7_21",
+    "vocabId": "minna_7_21",
+    "targetWord": "消しゴム",
+    "targetReading": "けしゴム",
+    "sentence": "鉛筆の文字を（　　）で消します。",
+    "fullSentence": "鉛筆の文字を消しゴムで消します。",
+    "translation": "Tẩy chữ viết bằng bút chì bằng cục tẩy.",
+    "options": [
+      "パンチ",
+      "セロテープ",
+      "消しゴム",
+      "ホッチキス"
+    ],
+    "correctIndex": 2,
+    "explanation": "「消しゴム」（けしゴム） nghĩa là cục tẩy, gôm chì."
+  },
+  {
+    "id": "cloze_minna_7_22",
+    "vocabId": "minna_7_22",
+    "targetWord": "紙",
+    "targetReading": "かみ",
+    "sentence": "白い（　　）に絵を描きます。",
+    "fullSentence": "白い紙に絵を描きます。",
+    "translation": "Vẽ tranh lên tờ giấy trắng.",
+    "options": [
+      "紙",
+      "花",
+      "シャツ",
+      "切符"
+    ],
+    "correctIndex": 0,
+    "explanation": "「紙」（かみ） nghĩa là tờ giấy."
+  },
+  {
+    "id": "cloze_minna_7_23",
+    "vocabId": "minna_7_23",
+    "targetWord": "花",
+    "targetReading": "はな",
+    "sentence": "庭にきれいな（　　）がたくさんあります。",
+    "fullSentence": "庭にきれいな花がたくさんあります。",
+    "translation": "Trong vườn có rất nhiều bông hoa đẹp.",
+    "options": [
+      "紙",
+      "花",
+      "シャツ",
+      "荷物"
+    ],
+    "correctIndex": 1,
+    "explanation": "「花」（はな） nghĩa là hoa."
+  },
+  {
+    "id": "cloze_minna_7_24",
+    "vocabId": "minna_7_24",
+    "targetWord": "シャツ",
+    "targetReading": "シャツ",
+    "sentence": "デパートで白い（　　）を買いました。",
+    "fullSentence": "デパートで白いシャツを買いました。",
+    "translation": "Tôi mua chiếc áo sơ mi trắng ở trung tâm thương mại.",
+    "options": [
+      "紙",
+      "花",
+      "シャツ",
+      "切符"
+    ],
+    "correctIndex": 2,
+    "explanation": "「シャツ」 (Shirt) nghĩa là áo sơ mi."
+  },
+  {
+    "id": "cloze_minna_7_25",
+    "vocabId": "minna_7_25",
+    "targetWord": "プレゼント",
+    "targetReading": "プレゼント",
+    "sentence": "友達の誕生日に（　　）をあげました。",
+    "fullSentence": "友達の誕生日にプレゼントをあげました。",
+    "translation": "Tôi đã tặng quà vào ngày sinh nhật của bạn.",
+    "options": [
+      "宿題",
+      "プレゼント",
+      "荷物",
+      "切符"
+    ],
+    "correctIndex": 1,
+    "explanation": "「プレゼント」 (Present) nghĩa là món quà tặng."
+  },
+  {
+    "id": "cloze_minna_7_26",
+    "vocabId": "minna_7_26",
+    "targetWord": "荷物",
+    "targetReading": "にもつ",
+    "sentence": "郵便局から実家へ（　　）を送ります。",
+    "fullSentence": "郵便局から実家へ荷物を送ります。",
+    "translation": "Tôi gửi hành lý/bưu kiện về nhà bố mẹ từ bưu điện.",
+    "options": [
+      "荷物",
+      "切符",
+      "お金",
+      "プレゼント"
+    ],
+    "correctIndex": 0,
+    "explanation": "「荷物」（にもつ） nghĩa là hành lý, bưu kiện hàng hóa."
+  },
+  {
+    "id": "cloze_minna_7_27",
+    "vocabId": "minna_7_27",
+    "targetWord": "お金",
+    "targetReading": "おかね",
+    "sentence": "銀行で（　　）をおろします。",
+    "fullSentence": "銀行でお金をおろします。",
+    "translation": "Rút tiền ở ngân hàng.",
+    "options": [
+      "お金",
+      "紙",
+      "花",
+      "荷物"
+    ],
+    "correctIndex": 0,
+    "explanation": "「お金」（おかね） nghĩa là tiền bạc."
+  },
+  {
+    "id": "cloze_minna_7_28",
+    "vocabId": "minna_7_28",
+    "targetWord": "切符",
+    "targetReading": "きっぷ",
+    "sentence": "駅で新幹線の（　　）を買いました。",
+    "fullSentence": "駅で新幹線の切符を買いました。",
+    "translation": "Tôi mua vé tàu siêu tốc Shinkansen ở nhà ga.",
+    "options": [
+      "お金",
+      "切符",
+      "手紙",
+      "荷物"
+    ],
+    "correctIndex": 1,
+    "explanation": "「切符」（きっぷ） nghĩa là tấm vé (tàu, xe)."
+  },
+  {
+    "id": "cloze_minna_7_29",
+    "vocabId": "minna_7_29",
+    "targetWord": "クリスマス",
+    "targetReading": "クリスマス",
+    "sentence": "12月25日は（　　）です。",
+    "fullSentence": "12月25日はクリスマスです。",
+    "translation": "Ngày 25 tháng 12 là lễ Giáng sinh.",
+    "options": [
+      "お正月",
+      "クリスマス",
+      "誕生日",
+      "お花見"
+    ],
+    "correctIndex": 1,
+    "explanation": "「クリスマス」 (Christmas) nghĩa là ngày lễ Giáng sinh Noel."
+  },
+  {
+    "id": "cloze_minna_7_30",
+    "vocabId": "minna_7_30",
+    "targetWord": "父",
+    "targetReading": "ちち",
+    "sentence": "わたしの（　　）は高校の教師です。",
+    "fullSentence": "わたしの父は高校の教師です。",
+    "translation": "Bố tôi là giáo viên trường cấp 3.",
+    "options": [
+      "父",
+      "母",
+      "お父さん",
+      "お母さん"
+    ],
+    "correctIndex": 0,
+    "explanation": "「父」（ちち） dùng khi nói về người bố ruột của chính mình."
+  },
+  {
+    "id": "cloze_minna_7_31",
+    "vocabId": "minna_7_31",
+    "targetWord": "母",
+    "targetReading": "はは",
+    "sentence": "わたしの（　　）は料理がとても上手です。",
+    "fullSentence": "わたしの母は料理がとても上手です。",
+    "translation": "Mẹ tôi nấu ăn rất giỏi.",
+    "options": [
+      "父",
+      "母",
+      "お母さん",
+      "お父さん"
+    ],
+    "correctIndex": 1,
+    "explanation": "「母」（はは） dùng khi nói về người mẹ của chính mình."
+  },
+  {
+    "id": "cloze_minna_7_32",
+    "vocabId": "minna_7_32",
+    "targetWord": "お父さん",
+    "targetReading": "おとうさん",
+    "sentence": "田中さんの（　　）はお元気ですか。",
+    "fullSentence": "田中さんのお父さんはお元気ですか。",
+    "translation": "Bác trai (bố của bạn Tanaka) có khỏe không ạ?",
+    "options": [
+      "父",
+      "お父さん",
+      "母",
+      "お母さん"
+    ],
+    "correctIndex": 1,
+    "explanation": "「お父さん」（おとうさん） dùng để gọi hoặc nói về bố của người khác một cách kính trọng."
+  },
+  {
+    "id": "cloze_minna_7_33",
+    "vocabId": "minna_7_33",
+    "targetWord": "お母さん",
+    "targetReading": "おかあさん",
+    "sentence": "ミラーさんの（　　）はアメリカにいます。",
+    "fullSentence": "ミラーさんのお母さんはアメリカにいます。",
+    "translation": "Mẹ của anh Miller đang ở Mỹ.",
+    "options": [
+      "母",
+      "お母さん",
+      "父",
+      "お父さん"
+    ],
+    "correctIndex": 1,
+    "explanation": "「お母さん」（おかあさん） dùng để nói về mẹ của người khác một cách kính trọng."
+  },
+  {
+    "id": "cloze_minna_7_34",
+    "vocabId": "minna_7_34",
+    "targetWord": "もう",
+    "targetReading": "もう",
+    "sentence": "（　　）荷物を送りましたか。…はい、もう送りました。",
+    "fullSentence": "もう荷物を送りましたか。…はい、もう送りました。",
+    "translation": "Bạn đã gửi hành lý chưa? ...Vâng, tôi đã gửi rồi.",
+    "options": [
+      "まだ",
+      "もう",
+      "これから",
+      "いつも"
+    ],
+    "correctIndex": 1,
+    "explanation": "「もう」 đứng trước động từ thể quá khứ biểu thị hành động đã hoàn tất (đã... rồi)."
+  },
+  {
+    "id": "cloze_minna_7_35",
+    "vocabId": "minna_7_35",
+    "targetWord": "まだ",
+    "targetReading": "まだ",
+    "sentence": "宿題をしましたか。…いいえ、（　　）です。",
+    "fullSentence": "宿題をしましたか。…いいえ、まだです。",
+    "translation": "Bạn đã làm bài tập về nhà chưa? ...Chưa, tôi vẫn chưa làm.",
+    "options": [
+      "もう",
+      "まだ",
+      "これから",
+      "いつも"
+    ],
+    "correctIndex": 1,
+    "explanation": "「まだ」 nghĩa là vẫn chưa (chưa thực hiện hành động)."
+  },
+  {
+    "id": "cloze_minna_7_36",
+    "vocabId": "minna_7_36",
+    "targetWord": "これから",
+    "targetReading": "これから",
+    "sentence": "もう昼ごはんを食べましたか。…いいえ、（　　）食べます。",
+    "fullSentence": "もう昼ごはんを食べましたか。…いいえ、これから食べます。",
+    "translation": "Bạn đã ăn trưa chưa? ...Chưa, bây giờ tôi mới đi ăn đây.",
+    "options": [
+      "もう",
+      "まだ",
+      "これから",
+      "きのう"
+    ],
+    "correctIndex": 2,
+    "explanation": "「これから」 nghĩa là từ bây giờ, ngay sau đây sẽ làm."
+  }
+]

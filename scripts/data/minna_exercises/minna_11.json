@@ -1,0 +1,1022 @@
+[
+  {
+    "id": "cloze_minna_11_0",
+    "vocabId": "minna_11_0",
+    "targetWord": "います",
+    "targetReading": "います",
+    "sentence": "私には子どもが2人（　　）。",
+    "fullSentence": "私には子どもが2人います。",
+    "translation": "Tôi có 2 người con.",
+    "options": [
+      "います",
+      "あります",
+      "みます",
+      "かいます"
+    ],
+    "correctIndex": 0,
+    "explanation": "「子どもがいます」 biểu thị có con cái."
+  },
+  {
+    "id": "cloze_minna_11_1",
+    "vocabId": "minna_11_1",
+    "targetWord": "います",
+    "targetReading": "います",
+    "sentence": "ミラーさんは日本に1年（　　）。",
+    "fullSentence": "ミラーさんは日本に1年います。",
+    "translation": "Anh Miller ở Nhật Bản 1 năm.",
+    "options": [
+      "います",
+      "あります",
+      "いきます",
+      "きます"
+    ],
+    "correctIndex": 0,
+    "explanation": "「日本にいます」 kết hợp với lượng từ thời gian mang nghĩa lưu trú, sinh sống ở Nhật."
+  },
+  {
+    "id": "cloze_minna_11_2",
+    "vocabId": "minna_11_2",
+    "targetWord": "かかります",
+    "targetReading": "かかります",
+    "sentence": "東京から京都まで新幹線で2時間半（　　）。",
+    "fullSentence": "東京から京都まで新幹線で2時間半かかります。",
+    "translation": "Từ Tokyo đến Kyoto mất 2 tiếng rưỡi bằng tàu Shinkansen.",
+    "options": [
+      "かかります",
+      "いきます",
+      "います",
+      "あります"
+    ],
+    "correctIndex": 0,
+    "explanation": "「かかります」 biểu thị sự tiêu tốn, mất bao nhiêu thời gian hoặc tiền bạc."
+  },
+  {
+    "id": "cloze_minna_11_3",
+    "vocabId": "minna_11_3",
+    "targetWord": "休みます",
+    "targetReading": "やすみます",
+    "sentence": "風邪を引きましたから、会社を（　　）。",
+    "fullSentence": "風邪を引きましたから、会社を休みます。",
+    "translation": "Vì bị cảm nên tôi xin nghỉ làm ở công ty.",
+    "options": [
+      "休みます",
+      "働きます",
+      "行きます",
+      "来ます"
+    ],
+    "correctIndex": 0,
+    "explanation": "「会社を休みます」（やすみます） nghĩa là nghỉ làm việc."
+  },
+  {
+    "id": "cloze_minna_11_4",
+    "vocabId": "minna_11_4",
+    "targetWord": "一つ",
+    "targetReading": "ひとつ",
+    "sentence": "りんごを（　　）ください。",
+    "fullSentence": "りんごを一つください。",
+    "translation": "Xin vui lòng cho tôi một quả táo.",
+    "options": [
+      "一つ",
+      "二つ",
+      "三つ",
+      "四つ"
+    ],
+    "correctIndex": 0,
+    "explanation": "「一つ」（ひとつ） là số đếm đồ vật thuần Nhật nghĩa là 1 cái."
+  },
+  {
+    "id": "cloze_minna_11_5",
+    "vocabId": "minna_11_5",
+    "targetWord": "二つ",
+    "targetReading": "ふたつ",
+    "sentence": "みかんを（　　）食べました。",
+    "fullSentence": "みかんを二つ食べました。",
+    "translation": "Tôi đã ăn hai quả quýt.",
+    "options": [
+      "二つ",
+      "一つ",
+      "三つ",
+      "五つ"
+    ],
+    "correctIndex": 0,
+    "explanation": "「二つ」（ふたつ） là từ đếm đồ vật nghĩa là 2 cái."
+  },
+  {
+    "id": "cloze_minna_11_6",
+    "vocabId": "minna_11_6",
+    "targetWord": "三つ",
+    "targetReading": "みっつ",
+    "sentence": "テーブルの上にパンが（　　）あります。",
+    "fullSentence": "テーブルの上にパンが三つあります。",
+    "translation": "Trên bàn có ba chiếc bánh mì.",
+    "options": [
+      "三つ",
+      "四つ",
+      "六つ",
+      "八つ"
+    ],
+    "correctIndex": 0,
+    "explanation": "「三つ」（みっつ） là từ đếm đồ vật nghĩa là 3 cái."
+  },
+  {
+    "id": "cloze_minna_11_7",
+    "vocabId": "minna_11_7",
+    "targetWord": "四つ",
+    "targetReading": "よっつ",
+    "sentence": "部屋の隅に箱が（　　）置いてあります。",
+    "fullSentence": "部屋の隅に箱が四つ置いてあります。",
+    "translation": "Ở góc phòng có đặt 4 chiếc hộp.",
+    "options": [
+      "四つ",
+      "三つ",
+      "五つ",
+      "七つ"
+    ],
+    "correctIndex": 0,
+    "explanation": "「四つ」（よっつ） là từ đếm đồ vật nghĩa là 4 cái."
+  },
+  {
+    "id": "cloze_minna_11_8",
+    "vocabId": "minna_11_8",
+    "targetWord": "五つ",
+    "targetReading": "いつつ",
+    "sentence": "卵を（　　）買いました。",
+    "fullSentence": "卵を五つ買いました。",
+    "translation": "Tôi đã mua năm quả trứng.",
+    "options": [
+      "五つ",
+      "四つ",
+      "六つ",
+      "九つ"
+    ],
+    "correctIndex": 0,
+    "explanation": "「五つ」（いつつ） là từ đếm đồ vật nghĩa là 5 cái."
+  },
+  {
+    "id": "cloze_minna_11_9",
+    "vocabId": "minna_11_9",
+    "targetWord": "六つ",
+    "targetReading": "むっつ",
+    "sentence": "ビールを（　　）注文しました。",
+    "fullSentence": "ビールを六つ注文しました。",
+    "translation": "Tôi đã gọi sáu chai bia.",
+    "options": [
+      "六つ",
+      "五つ",
+      "七つ",
+      "十"
+    ],
+    "correctIndex": 0,
+    "explanation": "「六つ」（むっつ） là từ đếm đồ vật nghĩa là 6 cái."
+  },
+  {
+    "id": "cloze_minna_11_10",
+    "vocabId": "minna_11_10",
+    "targetWord": "七つ",
+    "targetReading": "ななつ",
+    "sentence": "この箱の中に時計が（　　）あります。",
+    "fullSentence": "この箱の中に時計が七つあります。",
+    "translation": "Trong chiếc hộp này có 7 chiếc đồng hồ.",
+    "options": [
+      "七つ",
+      "八つ",
+      "六つ",
+      "九つ"
+    ],
+    "correctIndex": 0,
+    "explanation": "「七つ」（ななつ） là từ đếm đồ vật nghĩa là 7 cái."
+  },
+  {
+    "id": "cloze_minna_11_11",
+    "vocabId": "minna_11_11",
+    "targetWord": "八つ",
+    "targetReading": "やっつ",
+    "sentence": "あそこに椅子が（　　）並んでいます。",
+    "fullSentence": "あそこに椅子が八つ並んでいます。",
+    "translation": "Ở đằng kia có tám chiếc ghế được xếp thành hàng.",
+    "options": [
+      "八つ",
+      "七つ",
+      "九つ",
+      "十"
+    ],
+    "correctIndex": 0,
+    "explanation": "「八つ」（やっつ） là từ đếm đồ vật nghĩa là 8 cái."
+  },
+  {
+    "id": "cloze_minna_11_12",
+    "vocabId": "minna_11_12",
+    "targetWord": "九つ",
+    "targetReading": "ここのつ",
+    "sentence": "ケーキを（　　）買ってください。",
+    "fullSentence": "ケーキを九つ買ってください。",
+    "translation": "Xin hãy mua giúp tôi 9 chiếc bánh ngọt.",
+    "options": [
+      "九つ",
+      "八つ",
+      "十",
+      "七つ"
+    ],
+    "correctIndex": 0,
+    "explanation": "「九つ」（ここのつ） là từ đếm đồ vật nghĩa là 9 cái."
+  },
+  {
+    "id": "cloze_minna_11_13",
+    "vocabId": "minna_11_13",
+    "targetWord": "十",
+    "targetReading": "とお",
+    "sentence": "切手を（　　）買いました。",
+    "fullSentence": "切手を十買いました。",
+    "translation": "Tôi đã mua 10 con tem.",
+    "options": [
+      "十",
+      "九つ",
+      "八つ",
+      "七つ"
+    ],
+    "correctIndex": 0,
+    "explanation": "「十」（とお） là từ đếm đồ vật thuần Nhật nghĩa là 10 cái (từ 11 trở lên đếm theo số từ Hán Nhật)."
+  },
+  {
+    "id": "cloze_minna_11_14",
+    "vocabId": "minna_11_14",
+    "targetWord": "いくつ",
+    "targetReading": "いくつ",
+    "sentence": "みかんを（　　）買いましたか。…5つ買いました。",
+    "fullSentence": "みかんをいくつ買いましたか。…5つ買いました。",
+    "translation": "Bạn đã mua bao nhiêu quả quýt? ...Tôi mua 5 quả.",
+    "options": [
+      "いくつ",
+      "いくら",
+      "だれ",
+      "どれ"
+    ],
+    "correctIndex": 0,
+    "explanation": "「いくつ」 dùng để hỏi số lượng đồ vật (bao nhiêu cái)."
+  },
+  {
+    "id": "cloze_minna_11_15",
+    "vocabId": "minna_11_15",
+    "targetWord": "一人",
+    "targetReading": "ひとり",
+    "sentence": "教室に学生が（　　）います。",
+    "fullSentence": "教室に学生が一人います。",
+    "translation": "Trong lớp học có một học sinh.",
+    "options": [
+      "一人",
+      "二人",
+      "三人",
+      "四人"
+    ],
+    "correctIndex": 0,
+    "explanation": "「一人」（ひとり） nghĩa là 1 người (cũng có nghĩa là một mình)."
+  },
+  {
+    "id": "cloze_minna_11_16",
+    "vocabId": "minna_11_16",
+    "targetWord": "二人",
+    "targetReading": "ふたり",
+    "sentence": "兄と弟の（　　）で旅行に行きます。",
+    "fullSentence": "兄と弟の二人で旅行に行きます。",
+    "translation": "Hai người gồm anh trai và em trai cùng đi du lịch.",
+    "options": [
+      "二人",
+      "一人",
+      "三人",
+      "四人"
+    ],
+    "correctIndex": 0,
+    "explanation": "「二人」（ふたり） nghĩa là 2 người."
+  },
+  {
+    "id": "cloze_minna_11_17",
+    "vocabId": "minna_11_17",
+    "targetWord": "人",
+    "targetReading": "にん",
+    "sentence": "会議室に先生が5（　　）います。",
+    "fullSentence": "会議室に先生が5人います。",
+    "translation": "Trong phòng họp có 5 người thầy giáo.",
+    "options": [
+      "人",
+      "台",
+      "枚",
+      "回"
+    ],
+    "correctIndex": 0,
+    "explanation": "Số đếm + 「人」（にん） dùng để đếm số lượng người từ 3 người trở lên."
+  },
+  {
+    "id": "cloze_minna_11_18",
+    "vocabId": "minna_11_18",
+    "targetWord": "台",
+    "targetReading": "だい",
+    "sentence": "私の家には車が2（　　）あります。",
+    "fullSentence": "私の家には車が2台あります。",
+    "translation": "Nhà tôi có 2 chiếc xe ô tô.",
+    "options": [
+      "台",
+      "枚",
+      "人",
+      "回"
+    ],
+    "correctIndex": 0,
+    "explanation": "Số đếm + 「台」（だい） dùng để đếm xe cộ, máy móc thiết bị điện tử."
+  },
+  {
+    "id": "cloze_minna_11_19",
+    "vocabId": "minna_11_19",
+    "targetWord": "枚",
+    "targetReading": "まい",
+    "sentence": "シャツを3（　　）買いました。",
+    "fullSentence": "シャツを3枚買いました。",
+    "translation": "Tôi đã mua 3 chiếc áo sơ mi.",
+    "options": [
+      "枚",
+      "台",
+      "人",
+      "本"
+    ],
+    "correctIndex": 0,
+    "explanation": "Số đếm + 「枚」（まい） dùng để đếm vật mỏng dẹt như áo, giấy, đĩa, vé."
+  },
+  {
+    "id": "cloze_minna_11_20",
+    "vocabId": "minna_11_20",
+    "targetWord": "回",
+    "targetReading": "かい",
+    "sentence": "1か月に2（　　）映画を見に行きます。",
+    "fullSentence": "1か月に2回映画を見に行きます。",
+    "translation": "Một tháng tôi đi xem phim 2 lần.",
+    "options": [
+      "回",
+      "枚",
+      "台",
+      "時"
+    ],
+    "correctIndex": 0,
+    "explanation": "Số đếm + 「回」（かい） dùng để đếm số lần thực hiện hành động."
+  },
+  {
+    "id": "cloze_minna_11_21",
+    "vocabId": "minna_11_21",
+    "targetWord": "りんご",
+    "targetReading": "りんご",
+    "sentence": "スーパーで赤い（　　）を4つ買いました。",
+    "fullSentence": "スーパーで赤いりんごを4つ買いました。",
+    "translation": "Tôi đã mua 4 quả táo đỏ ở siêu thị.",
+    "options": [
+      "りんご",
+      "みかん",
+      "切手",
+      "封筒"
+    ],
+    "correctIndex": 0,
+    "explanation": "「りんご」 nghĩa là quả táo."
+  },
+  {
+    "id": "cloze_minna_11_22",
+    "vocabId": "minna_11_22",
+    "targetWord": "みかん",
+    "targetReading": "みかん",
+    "sentence": "冬はこたつで（　　）を食べます。",
+    "fullSentence": "冬はこたつでみかんを食べます。",
+    "translation": "Mùa đông tôi ngồi bên bàn sưởi và ăn quýt.",
+    "options": [
+      "みかん",
+      "りんご",
+      "サンドイッチ",
+      "切手"
+    ],
+    "correctIndex": 0,
+    "explanation": "「みかん」 nghĩa là quả quýt."
+  },
+  {
+    "id": "cloze_minna_11_23",
+    "vocabId": "minna_11_23",
+    "targetWord": "サンドイッチ",
+    "targetReading": "サンドイッチ",
+    "sentence": "昼ごはんにコンビニで（　　）を買いました。",
+    "fullSentence": "昼ごはんにコンビニでサンドイッチを買いました。",
+    "translation": "Tôi đã mua bánh sandwich ở cửa hàng tiện lợi cho bữa trưa.",
+    "options": [
+      "サンドイッチ",
+      "切手",
+      "はがき",
+      "封筒"
+    ],
+    "correctIndex": 0,
+    "explanation": "「サンドイッチ」 nghĩa là bánh mì kẹp sandwich."
+  },
+  {
+    "id": "cloze_minna_11_24",
+    "vocabId": "minna_11_24",
+    "targetWord": "カレー",
+    "targetReading": "カレー",
+    "sentence": "今晩美味しい（　　）ライスを作ります。",
+    "fullSentence": "今晩美味しいカレーライスを作ります。",
+    "translation": "Tối nay tôi sẽ nấu món cơm cà ri thơm ngon.",
+    "options": [
+      "カレー",
+      "サンドイッチ",
+      "アイスクリーム",
+      "みかん"
+    ],
+    "correctIndex": 0,
+    "explanation": "「カレー」 nghĩa là món cà ri."
+  },
+  {
+    "id": "cloze_minna_11_25",
+    "vocabId": "minna_11_25",
+    "targetWord": "アイスクリーム",
+    "targetReading": "アイスクリーム",
+    "sentence": "暑い日に冷たい（　　）を食べたいです。",
+    "fullSentence": "暑い日に冷たいアイスクリームを食べたいです。",
+    "translation": "Vào ngày trời nóng nực, tôi muốn ăn kem mát lạnh.",
+    "options": [
+      "アイスクリーム",
+      "カレー",
+      "サンドイッチ",
+      "はがき"
+    ],
+    "correctIndex": 0,
+    "explanation": "「アイスクリーム」 nghĩa là kem."
+  },
+  {
+    "id": "cloze_minna_11_26",
+    "vocabId": "minna_11_26",
+    "targetWord": "切手",
+    "targetReading": "きって",
+    "sentence": "手紙に84円の（　　）を貼ります。",
+    "fullSentence": "手紙に84円の切手を貼ります。",
+    "translation": "Tôi dán con tem 84 yên lên bức thư.",
+    "options": [
+      "切手",
+      "はがき",
+      "封筒",
+      "チケット"
+    ],
+    "correctIndex": 0,
+    "explanation": "「切手」（きって） nghĩa là tem bưu chính."
+  },
+  {
+    "id": "cloze_minna_11_27",
+    "vocabId": "minna_11_27",
+    "targetWord": "はがき",
+    "targetReading": "はがき",
+    "sentence": "旅行先から友達に絵（　　）を送りました。",
+    "fullSentence": "旅行先から友達に絵はがきを送りました。",
+    "translation": "Tôi đã gửi bưu thiếp ảnh cho bạn bè từ nơi du lịch.",
+    "options": [
+      "はがき",
+      "切手",
+      "封筒",
+      "速達"
+    ],
+    "correctIndex": 0,
+    "explanation": "「はがき」 nghĩa là bưu thiếp, bưu ảnh."
+  },
+  {
+    "id": "cloze_minna_11_28",
+    "vocabId": "minna_11_28",
+    "targetWord": "封筒",
+    "targetReading": "ふうとう",
+    "sentence": "手紙を（　　）に入れて、切手を貼りました。",
+    "fullSentence": "手紙を封筒に入れて、切手を貼りました。",
+    "translation": "Tôi cho lá thư vào phong bì rồi dán tem.",
+    "options": [
+      "封筒",
+      "はがき",
+      "切手",
+      "箱"
+    ],
+    "correctIndex": 0,
+    "explanation": "「封筒」（ふうとう） nghĩa là phong bì thư."
+  },
+  {
+    "id": "cloze_minna_11_29",
+    "vocabId": "minna_11_29",
+    "targetWord": "速達",
+    "targetReading": "そくたつ",
+    "sentence": "急ぎの手紙ですから、（　　）で出してください。",
+    "fullSentence": "急ぎの手紙ですから、速達で出してください。",
+    "translation": "Vì là thư gấp nên xin hãy gửi bằng hình thức chuyển phát nhanh.",
+    "options": [
+      "速達",
+      "書留",
+      "船便",
+      "封筒"
+    ],
+    "correctIndex": 0,
+    "explanation": "「速達」（そくたつ） nghĩa là dịch vụ chuyển phát thư nhanh hỏa tốc."
+  },
+  {
+    "id": "cloze_minna_11_30",
+    "vocabId": "minna_11_30",
+    "targetWord": "書留",
+    "targetReading": "かきとめ",
+    "sentence": "大切な書類を（　　）で送りました。",
+    "fullSentence": "大切な書類を書留で送りました。",
+    "translation": "Tôi đã gửi tài liệu quan trọng bằng đường gửi bảo đảm.",
+    "options": [
+      "書留",
+      "速達",
+      "船便",
+      "切手"
+    ],
+    "correctIndex": 0,
+    "explanation": "「書留」（かきとめ） nghĩa là thư bảo đảm."
+  },
+  {
+    "id": "cloze_minna_11_31",
+    "vocabId": "minna_11_31",
+    "targetWord": "エアメール",
+    "targetReading": "エアメール",
+    "sentence": "国へ（　　）で手紙を出します。",
+    "fullSentence": "国へエアメールで手紙を出します。",
+    "translation": "Tôi gửi thư về nước bằng đường hàng không.",
+    "options": [
+      "エアメール",
+      "船便",
+      "速達",
+      "書留"
+    ],
+    "correctIndex": 0,
+    "explanation": "「エアメール」（航空便） nghĩa là thư gửi đường hàng không quốc tế."
+  },
+  {
+    "id": "cloze_minna_11_32",
+    "vocabId": "minna_11_32",
+    "targetWord": "船便",
+    "targetReading": "ふなびん",
+    "sentence": "（　　）は時間がかかりますが、安いです。",
+    "fullSentence": "船便は時間がかかりますが、安いです。",
+    "translation": "Gửi bằng đường biển thì mất nhiều thời gian nhưng giá rẻ.",
+    "options": [
+      "船便",
+      "エアメール",
+      "速達",
+      "書留"
+    ],
+    "correctIndex": 0,
+    "explanation": "「船便」（ふなびん） nghĩa là gửi chuyển bằng đường tàu biển."
+  },
+  {
+    "id": "cloze_minna_11_33",
+    "vocabId": "minna_11_33",
+    "targetWord": "両親",
+    "targetReading": "りょうしん",
+    "sentence": "私の（　　）はハノイに住んでいます。",
+    "fullSentence": "私の両親はハノイに住んでいます。",
+    "translation": "Bố mẹ tôi đang sinh sống ở Hà Nội.",
+    "options": [
+      "両親",
+      "兄弟",
+      "友達",
+      "先生"
+    ],
+    "correctIndex": 0,
+    "explanation": "「両親」（りょうしん） nghĩa là cha mẹ, phụ mẫu."
+  },
+  {
+    "id": "cloze_minna_11_34",
+    "vocabId": "minna_11_34",
+    "targetWord": "兄弟",
+    "targetReading": "きょうだい",
+    "sentence": "（　　）は何人ですか。…兄が1人と妹が1人います。",
+    "fullSentence": "兄弟は何人ですか。…兄が1人と妹が1人います。",
+    "translation": "Anh chị em bạn có mấy người? ...Tôi có 1 anh trai và 1 em gái.",
+    "options": [
+      "兄弟",
+      "両親",
+      "家族",
+      "子ども"
+    ],
+    "correctIndex": 0,
+    "explanation": "「兄弟」（きょうだい） nghĩa là anh chị em trong nhà."
+  },
+  {
+    "id": "cloze_minna_11_35",
+    "vocabId": "minna_11_35",
+    "targetWord": "兄",
+    "targetReading": "あに",
+    "sentence": "私の（　　）は会社員です。",
+    "fullSentence": "私の兄は会社員です。",
+    "translation": "Anh trai tôi là nhân viên công ty.",
+    "options": [
+      "兄",
+      "お兄さん",
+      "弟さん",
+      "姉さん"
+    ],
+    "correctIndex": 0,
+    "explanation": "「兄」（あに） là từ dùng khi nói về anh trai của chính bản thân mình."
+  },
+  {
+    "id": "cloze_minna_11_36",
+    "vocabId": "minna_11_36",
+    "targetWord": "お兄さん",
+    "targetReading": "おにいさん",
+    "sentence": "田中さんの（　　）は背が高いですね。",
+    "fullSentence": "田中さんのお兄さんは背が高いですね。",
+    "translation": "Anh trai của bạn Tanaka cao ráo thật nhỉ.",
+    "options": [
+      "お兄さん",
+      "兄",
+      "弟",
+      "妹"
+    ],
+    "correctIndex": 0,
+    "explanation": "「お兄さん」（おにいさん） là cách gọi anh trai người khác một cách lịch sự."
+  },
+  {
+    "id": "cloze_minna_11_37",
+    "vocabId": "minna_11_37",
+    "targetWord": "姉",
+    "targetReading": "あね",
+    "sentence": "私の（　　）は東京の病院で働いています。",
+    "fullSentence": "私の姉は東京の病院で働いています。",
+    "translation": "Chị gái tôi đang làm việc ở một bệnh viện tại Tokyo.",
+    "options": [
+      "姉",
+      "お姉さん",
+      "妹さん",
+      "お兄さん"
+    ],
+    "correctIndex": 0,
+    "explanation": "「姉」（あね） là từ dùng để chỉ chị gái của bản thân."
+  },
+  {
+    "id": "cloze_minna_11_38",
+    "vocabId": "minna_11_38",
+    "targetWord": "お姉さん",
+    "targetReading": "おねえさん",
+    "sentence": "佐藤さんの（　　）は結婚していますか。",
+    "fullSentence": "佐藤さんのお姉さんは結婚していますか。",
+    "translation": "Chị gái của bạn Sato đã kết hôn chưa?",
+    "options": [
+      "お姉さん",
+      "姉",
+      "兄",
+      "妹"
+    ],
+    "correctIndex": 0,
+    "explanation": "「お姉さん」（おねえさん） dùng để gọi hoặc hỏi về chị gái người khác."
+  },
+  {
+    "id": "cloze_minna_11_39",
+    "vocabId": "minna_11_39",
+    "targetWord": "弟",
+    "targetReading": "おとうと",
+    "sentence": "私の（　　）は中学生です。",
+    "fullSentence": "私の弟は中学生です。",
+    "translation": "Em trai tôi là học sinh trung học cơ sở.",
+    "options": [
+      "弟",
+      "弟さん",
+      "お兄さん",
+      "お姉さん"
+    ],
+    "correctIndex": 0,
+    "explanation": "「弟」（おとうと） dùng để chỉ em trai của mình."
+  },
+  {
+    "id": "cloze_minna_11_40",
+    "vocabId": "minna_11_40",
+    "targetWord": "弟さん",
+    "targetReading": "おとうとさん",
+    "sentence": "ミラーさんの（　　）は何歳ですか。",
+    "fullSentence": "ミラーさんの弟さんは何歳ですか。",
+    "translation": "Em trai của anh Miller năm nay bao nhiêu tuổi?",
+    "options": [
+      "弟さん",
+      "弟",
+      "兄",
+      "姉"
+    ],
+    "correctIndex": 0,
+    "explanation": "「弟さん」（おとうとさん） là cách nói tôn trọng về em trai của người khác."
+  },
+  {
+    "id": "cloze_minna_11_41",
+    "vocabId": "minna_11_41",
+    "targetWord": "妹",
+    "targetReading": "いもうと",
+    "sentence": "私の（　　）は絵を描くのが好きです。",
+    "fullSentence": "私の妹は絵を描くのが好きです。",
+    "translation": "Em gái tôi thích vẽ tranh.",
+    "options": [
+      "妹",
+      "妹さん",
+      "お姉さん",
+      "お兄さん"
+    ],
+    "correctIndex": 0,
+    "explanation": "「妹」（いもうと） là từ khiêm nhường dùng để chỉ em gái của mình."
+  },
+  {
+    "id": "cloze_minna_11_42",
+    "vocabId": "minna_11_42",
+    "targetWord": "妹さん",
+    "targetReading": "いもうとさん",
+    "sentence": "山田さんの（　　）は大学生ですか。",
+    "fullSentence": "山田さんの妹さんは大学生ですか。",
+    "translation": "Em gái bạn Yamada là sinh viên đại học à?",
+    "options": [
+      "妹さん",
+      "妹",
+      "兄",
+      "姉"
+    ],
+    "correctIndex": 0,
+    "explanation": "「妹さん」（いもうとさん） là cách gọi em gái người khác một cách lịch sự."
+  },
+  {
+    "id": "cloze_minna_11_43",
+    "vocabId": "minna_11_43",
+    "targetWord": "外国",
+    "targetReading": "がいこく",
+    "sentence": "将来（　　）で働きたいです。",
+    "fullSentence": "将来外国で働きたいです。",
+    "translation": "Trong tương lai tôi muốn làm việc ở nước ngoài.",
+    "options": [
+      "外国",
+      "日本",
+      "東京",
+      "学校"
+    ],
+    "correctIndex": 0,
+    "explanation": "「外国」（がいこく） nghĩa là nước ngoài, ngoại quốc."
+  },
+  {
+    "id": "cloze_minna_11_44",
+    "vocabId": "minna_11_44",
+    "targetWord": "時間",
+    "targetReading": "じかん",
+    "sentence": "毎日日本語を2（　　）勉強します。",
+    "fullSentence": "毎日日本語を2時間勉強します。",
+    "translation": "Mỗi ngày tôi học tiếng Nhật trong 2 tiếng đồng hồ.",
+    "options": [
+      "時間",
+      "週間",
+      "か月",
+      "年"
+    ],
+    "correctIndex": 0,
+    "explanation": "Số đếm + 「時間」（じかん） biểu thị khoảng thời gian tính theo giờ đồng hồ."
+  },
+  {
+    "id": "cloze_minna_11_45",
+    "vocabId": "minna_11_45",
+    "targetWord": "週間",
+    "targetReading": "しゅうかん",
+    "sentence": "京都に1（　　）旅行に行きました。",
+    "fullSentence": "京都に1週間旅行に行きました。",
+    "translation": "Tôi đã đi du lịch ở Kyoto trong 1 tuần.",
+    "options": [
+      "週間",
+      "時間",
+      "日",
+      "年"
+    ],
+    "correctIndex": 0,
+    "explanation": "Số đếm + 「週間」（しゅうかん） biểu thị khoảng thời gian tính bằng tuần."
+  },
+  {
+    "id": "cloze_minna_11_46",
+    "vocabId": "minna_11_46",
+    "targetWord": "か月",
+    "targetReading": "かげつ",
+    "sentence": "日本に3（　　）滞在します。",
+    "fullSentence": "日本に3か月滞在します。",
+    "translation": "Tôi sẽ lưu trú tại Nhật Bản trong 3 tháng.",
+    "options": [
+      "か月",
+      "時間",
+      "週間",
+      "回"
+    ],
+    "correctIndex": 0,
+    "explanation": "Số đếm + 「か月」（かげつ） biểu thị khoảng thời gian tính theo tháng."
+  },
+  {
+    "id": "cloze_minna_11_47",
+    "vocabId": "minna_11_47",
+    "targetWord": "年",
+    "targetReading": "ねん",
+    "sentence": "大学で日本語を4（　　）勉強しました。",
+    "fullSentence": "大学で日本語を4年勉強しました。",
+    "translation": "Tôi đã học tiếng Nhật ở trường đại học trong 4 năm.",
+    "options": [
+      "年",
+      "か月",
+      "週間",
+      "時間"
+    ],
+    "correctIndex": 0,
+    "explanation": "Số đếm + 「年」（ねん） biểu thị khoảng thời gian tính theo năm."
+  },
+  {
+    "id": "cloze_minna_11_48",
+    "vocabId": "minna_11_48",
+    "targetWord": "ぐらい",
+    "targetReading": "ぐらい",
+    "sentence": "家から駅まで歩いて10分（　　）かかります。",
+    "fullSentence": "家から駅まで歩いて10分ぐらいかかります。",
+    "translation": "Đi bộ từ nhà đến ga mất khoảng chừng 10 phút.",
+    "options": [
+      "ぐらい",
+      "ごろ",
+      "だけ",
+      "しか"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hậu tố 「～ぐらい」 gắn sau lượng từ biểu thị mức độ ước chừng (khoảng, xấp xỉ)."
+  },
+  {
+    "id": "cloze_minna_11_49",
+    "vocabId": "minna_11_49",
+    "targetWord": "どのくらい",
+    "targetReading": "どのくらい",
+    "sentence": "国から日本まで飛行機で（　　）かかりますか。…5時間です。",
+    "fullSentence": "国から日本まで飛行機でどのくらいかかりますか。…5時間です。",
+    "translation": "Từ nước bạn đến Nhật Bản đi máy bay mất bao lâu? ...Khoảng 5 tiếng.",
+    "options": [
+      "どのくらい",
+      "いくら",
+      "いくつ",
+      "どこ"
+    ],
+    "correctIndex": 0,
+    "explanation": "「どのくらい」 dùng để hỏi khoảng thời gian hoặc mức độ (bao lâu, khoảng bao nhiêu)."
+  },
+  {
+    "id": "cloze_minna_11_50",
+    "vocabId": "minna_11_50",
+    "targetWord": "全部で",
+    "targetReading": "ぜんぶで",
+    "sentence": "りんごとみかんを買いました。（　　）1000円です。",
+    "fullSentence": "りんごとみかんを買いました。全部で1000円です。",
+    "translation": "Tôi đã mua táo và quýt. Tổng cộng hết 1000 yên.",
+    "options": [
+      "全部で",
+      "みんな",
+      "一人で",
+      "別々に"
+    ],
+    "correctIndex": 0,
+    "explanation": "「全部で」（ぜんぶで） nghĩa là tổng cộng toàn bộ chi phí hoặc số lượng."
+  },
+  {
+    "id": "cloze_minna_11_51",
+    "vocabId": "minna_11_51",
+    "targetWord": "みんな",
+    "targetReading": "みんな",
+    "sentence": "クラスの学生は（　　）日本語が上手です。",
+    "fullSentence": "クラスの学生はみんな日本語が上手です。",
+    "translation": "Các học sinh trong lớp đều giỏi tiếng Nhật.",
+    "options": [
+      "みんな",
+      "全部で",
+      "少し",
+      "あまり"
+    ],
+    "correctIndex": 0,
+    "explanation": "「みんな」 nghĩa là tất cả mọi người, toàn bộ."
+  },
+  {
+    "id": "cloze_minna_11_52",
+    "vocabId": "minna_11_52",
+    "targetWord": "だけ",
+    "targetReading": "だけ",
+    "sentence": "会議室にミラーさん（　　）います。ほかの人はいません。",
+    "fullSentence": "会議室にミラーさんだけいます。ほかの人はいません。",
+    "translation": "Trong phòng họp chỉ có mỗi anh Miller. Không có ai khác.",
+    "options": [
+      "だけ",
+      "しか",
+      "も",
+      "と"
+    ],
+    "correctIndex": 0,
+    "explanation": "Trợ từ 「だけ」 biểu thị sự giới hạn (chỉ có duy nhất...)."
+  },
+  {
+    "id": "cloze_minna_11_53",
+    "vocabId": "minna_11_53",
+    "targetWord": "いらっしゃいませ",
+    "targetReading": "いらっしゃいませ",
+    "sentence": "店に入ると、店員が「（　　）」と言いました。",
+    "fullSentence": "店に入ると、店員が「いらっしゃいませ」と言いました。",
+    "translation": "Khi bước vào cửa hàng, nhân viên liền nói \"Kính chào quý khách\".",
+    "options": [
+      "いらっしゃいませ",
+      "ごちそうさまでした",
+      "お邪魔します",
+      "失礼します"
+    ],
+    "correctIndex": 0,
+    "explanation": "「いらっしゃいませ」 là câu chào trang trọng của nhân viên bán hàng tiếp đón khách."
+  },
+  {
+    "id": "cloze_minna_11_54",
+    "vocabId": "minna_11_54",
+    "targetWord": "いいお天気ですね",
+    "targetReading": "いいおてんきですね",
+    "sentence": "「（　　）。」「そうですね、気持ちがいいですね。」",
+    "fullSentence": "「いいお天気ですね。」「そうですね、気持ちがいいですね。」",
+    "translation": "「Thời tiết đẹp thật nhỉ.」「Đúng vậy, cảm giác thật dễ chịu.」",
+    "options": [
+      "いいお天気ですね",
+      "お出かけですか",
+      "いってらっしゃい",
+      "いってまいります"
+    ],
+    "correctIndex": 0,
+    "explanation": "「いい［お］天気ですね」 là câu chào hỏi mở đầu quen thuộc hàng ngày về thời tiết."
+  },
+  {
+    "id": "cloze_minna_11_55",
+    "vocabId": "minna_11_55",
+    "targetWord": "お出かけですか",
+    "targetReading": "おでかけですか",
+    "sentence": "玄関で近所の人に「（　　）。」と聞かれました。",
+    "fullSentence": "玄関で近所の人に「お出かけですか。」と聞かれました。",
+    "translation": "Ở hiên nhà, tôi được người hàng xóm hỏi thăm \"Anh/chị đi ra ngoài đấy à?\".",
+    "options": [
+      "お出かけですか",
+      "いいお天気ですね",
+      "いってらっしゃい",
+      "いってまいります"
+    ],
+    "correctIndex": 0,
+    "explanation": "「お出かけですか」 là câu chào hỏi xã giao thường gặp khi thấy hàng xóm chuẩn bị đi ra ngoài."
+  },
+  {
+    "id": "cloze_minna_11_56",
+    "vocabId": "minna_11_56",
+    "targetWord": "ちょっと郵便局まで",
+    "targetReading": "ちょっとゆうびんきょくまで",
+    "sentence": "お出かけですか。…ええ、（　　）。",
+    "fullSentence": "お出かけですか。…ええ、ちょっと郵便局まで。",
+    "translation": "Anh đi ra ngoài đấy à? ...Vâng, tôi đi ra bưu điện một chút.",
+    "options": [
+      "ちょっと郵便局まで",
+      "いいお天気ですね",
+      "いってまいります",
+      "お邪魔します"
+    ],
+    "correctIndex": 0,
+    "explanation": "「ちょっと～まで」 là cách trả lời khiêm tốn khi được hỏi đi đâu (tôi ra đây một chút)."
+  },
+  {
+    "id": "cloze_minna_11_57",
+    "vocabId": "minna_11_57",
+    "targetWord": "行っていらっしゃい",
+    "targetReading": "いっていらっしゃい",
+    "sentence": "出かける家族に「（　　）。」と言います。",
+    "fullSentence": "出かける家族に「行っていらっしゃい。」と言います。",
+    "translation": "Tôi nói \"Bạn đi nhé / Đi cẩn thận nhé\" với người nhà khi họ đi ra ngoài.",
+    "options": [
+      "行っていらっしゃい",
+      "行ってまいります",
+      "お帰りなさい",
+      "ただいま"
+    ],
+    "correctIndex": 0,
+    "explanation": "「行っていらっしゃい」 là câu người ở lại nói để chào người chuẩn bị đi ra ngoài."
+  },
+  {
+    "id": "cloze_minna_11_58",
+    "vocabId": "minna_11_58",
+    "targetWord": "行ってまいります",
+    "targetReading": "いってまいります",
+    "sentence": "家を出るとき、「（　　）。」と言います。",
+    "fullSentence": "家を出るとき、「行ってまいります。」と言います。",
+    "translation": "Khi rời khỏi nhà đi làm/đi học, tôi nói \"Tôi đi đây nhé / Con xin phép đi ạ\".",
+    "options": [
+      "行ってまいります",
+      "行っていらっしゃい",
+      "ただいま",
+      "お帰りなさい"
+    ],
+    "correctIndex": 0,
+    "explanation": "「行ってまいります」（hoặc 行ってきます） là lời chào của người chuẩn bị bước chân ra khỏi nhà."
+  },
+  {
+    "id": "cloze_minna_11_59",
+    "vocabId": "minna_11_59",
+    "targetWord": "それから",
+    "targetReading": "それから",
+    "sentence": "パンを買いました。（　　）、牛乳も買いました。",
+    "fullSentence": "パンを買いました。それから、牛乳も買いました。",
+    "translation": "Tôi đã mua bánh mì. Sau đó, tôi cũng mua cả sữa nữa.",
+    "options": [
+      "それから",
+      "そして",
+      "ですから",
+      "でも"
+    ],
+    "correctIndex": 0,
+    "explanation": "「それから」 dùng để nối tiếp các hành động theo trình tự thời gian (sau đó, tiếp theo là)."
+  }
+]

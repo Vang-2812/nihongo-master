@@ -1,0 +1,699 @@
+[
+  {
+    "id": "cloze_minna_3_0",
+    "vocabId": "minna_3_0",
+    "targetWord": "ここ",
+    "targetReading": "ここ",
+    "sentence": "（　　）は教室です。学生がたくさんいます。",
+    "fullSentence": "ここは教室です。学生がたくさんいます。",
+    "translation": "Đây là phòng học. Có rất nhiều sinh viên.",
+    "options": [
+      "ここ",
+      "そこ",
+      "あそこ",
+      "どこ"
+    ],
+    "correctIndex": 0,
+    "explanation": "「ここ」 chỉ vị trí ở gần người nói (chỗ này, ở đây)."
+  },
+  {
+    "id": "cloze_minna_3_1",
+    "vocabId": "minna_3_1",
+    "targetWord": "そこ",
+    "targetReading": "そこ",
+    "sentence": "（　　）は受付ですか。…はい、そうです。",
+    "fullSentence": "そこは受付ですか。…はい、そうです。",
+    "translation": "Đó là quầy lễ tân phải không? ...Vâng, đúng vậy.",
+    "options": [
+      "ここ",
+      "そこ",
+      "あそこ",
+      "だれ"
+    ],
+    "correctIndex": 1,
+    "explanation": "「そこ」 chỉ vị trí ở gần người nghe (chỗ đó, ở đó)."
+  },
+  {
+    "id": "cloze_minna_3_2",
+    "vocabId": "minna_3_2",
+    "targetWord": "あそこ",
+    "targetReading": "あそこ",
+    "sentence": "（　　）は食堂です。遠くに見えます。",
+    "fullSentence": "あそこは食堂です。遠くに見えます。",
+    "translation": "Đằng kia là nhà ăn. Nhìn thấy ở đằng xa.",
+    "options": [
+      "ここ",
+      "そこ",
+      "あそこ",
+      "どちら"
+    ],
+    "correctIndex": 2,
+    "explanation": "「あそこ」 chỉ vị trí ở xa cả người nói và người nghe (ở kia, chỗ kia)."
+  },
+  {
+    "id": "cloze_minna_3_3",
+    "vocabId": "minna_3_3",
+    "targetWord": "どこ",
+    "targetReading": "どこ",
+    "sentence": "お手洗いは（　　）ですか。…あそこです。",
+    "fullSentence": "お手洗いはどこですか。…あそこです。",
+    "translation": "Nhà vệ sinh ở đâu vậy? ...Ở đằng kia.",
+    "options": [
+      "だれ",
+      "どこ",
+      "なん",
+      "いくら"
+    ],
+    "correctIndex": 1,
+    "explanation": "「どこ」 là từ để hỏi vị trí, địa điểm (ở đâu, chỗ nào)."
+  },
+  {
+    "id": "cloze_minna_3_4",
+    "vocabId": "minna_3_4",
+    "targetWord": "こちら",
+    "targetReading": "こちら",
+    "sentence": "エレベーターは（　　）でございます。",
+    "fullSentence": "エレベーターはこちらでございます。",
+    "translation": "Thang máy ở phía này ạ.",
+    "options": [
+      "こちら",
+      "そちら",
+      "あちら",
+      "どちら"
+    ],
+    "correctIndex": 0,
+    "explanation": "「こちら」 là cách nói lịch sự chỉ hướng hoặc vị trí gần người nói (phía này, chỗ này)."
+  },
+  {
+    "id": "cloze_minna_3_5",
+    "vocabId": "minna_3_5",
+    "targetWord": "そちら",
+    "targetReading": "そちら",
+    "sentence": "電話は（　　）でございます。",
+    "fullSentence": "電話はそちらでございます。",
+    "translation": "Điện thoại ở phía đó ạ.",
+    "options": [
+      "こちら",
+      "そちら",
+      "あちら",
+      "どこ"
+    ],
+    "correctIndex": 1,
+    "explanation": "「そちら」 là cách nói lịch sự chỉ vị trí ở gần người nghe (phía đó, chỗ đó)."
+  },
+  {
+    "id": "cloze_minna_3_6",
+    "vocabId": "minna_3_6",
+    "targetWord": "あちら",
+    "targetReading": "あちら",
+    "sentence": "会議室は（　　）でございます。",
+    "fullSentence": "会議室はあちらでございます。",
+    "translation": "Phòng họp ở phía đằng kia ạ.",
+    "options": [
+      "こちら",
+      "そちら",
+      "あちら",
+      "どちら"
+    ],
+    "correctIndex": 2,
+    "explanation": "「あちら」 là cách nói lịch sự chỉ phương hướng ở xa cả hai người (phía kia)."
+  },
+  {
+    "id": "cloze_minna_3_7",
+    "vocabId": "minna_3_7",
+    "targetWord": "どちら",
+    "targetReading": "どちら",
+    "sentence": "お国は（　　）ですか。…アメリカです。",
+    "fullSentence": "お国はどちらですか。…アメリカです。",
+    "translation": "Đất nước của bạn ở đâu (quốc tịch nước nào)? ...Là nước Mỹ.",
+    "options": [
+      "だれ",
+      "何",
+      "どちら",
+      "いくら"
+    ],
+    "correctIndex": 2,
+    "explanation": "「どちら」 là cách hỏi lịch sự của どこ (ở đâu, phía nào, nước nào)."
+  },
+  {
+    "id": "cloze_minna_3_8",
+    "vocabId": "minna_3_8",
+    "targetWord": "教室",
+    "targetReading": "きょうしつ",
+    "sentence": "学生は（　　）で日本語を勉強します。",
+    "fullSentence": "学生は教室で日本語を勉強します。",
+    "translation": "Sinh viên học tiếng Nhật ở phòng học.",
+    "options": [
+      "教室",
+      "食堂",
+      "事務所",
+      "部屋"
+    ],
+    "correctIndex": 0,
+    "explanation": "「教室」（きょうしつ） nghĩa là phòng học, lớp học."
+  },
+  {
+    "id": "cloze_minna_3_9",
+    "vocabId": "minna_3_9",
+    "targetWord": "食堂",
+    "targetReading": "しょくどう",
+    "sentence": "お昼休みに（　　）でご飯を食べます。",
+    "fullSentence": "お昼休みに食堂でご飯を食べます。",
+    "translation": "Tôi ăn cơm ở nhà ăn vào giờ nghỉ trưa.",
+    "options": [
+      "教室",
+      "会議室",
+      "食堂",
+      "事務所"
+    ],
+    "correctIndex": 2,
+    "explanation": "「食堂」（しょくどう） nghĩa là nhà ăn, căng-tin."
+  },
+  {
+    "id": "cloze_minna_3_10",
+    "vocabId": "minna_3_10",
+    "targetWord": "事務所",
+    "targetReading": "じむしょ",
+    "sentence": "先生は（　　）で書類を作っています。",
+    "fullSentence": "先生は事務所で書類を作っています。",
+    "translation": "Thầy giáo đang làm giấy tờ ở văn phòng.",
+    "options": [
+      "事務所",
+      "食堂",
+      "部屋",
+      "教室"
+    ],
+    "correctIndex": 0,
+    "explanation": "「事務所」（じむしょ） nghĩa là văn phòng làm việc."
+  },
+  {
+    "id": "cloze_minna_3_11",
+    "vocabId": "minna_3_11",
+    "targetWord": "会議室",
+    "targetReading": "かいぎしつ",
+    "sentence": "3階の（　　）で打ち合わせをします。",
+    "fullSentence": "3階の会議室で打ち合わせをします。",
+    "translation": "Chúng tôi họp bàn thảo luận ở phòng họp tầng 3.",
+    "options": [
+      "食堂",
+      "受付",
+      "会議室",
+      "教室"
+    ],
+    "correctIndex": 2,
+    "explanation": "「会議室」（かいぎしつ） nghĩa là phòng họp."
+  },
+  {
+    "id": "cloze_minna_3_12",
+    "vocabId": "minna_3_12",
+    "targetWord": "受付",
+    "targetReading": "うけつけ",
+    "sentence": "ビルの1階に（　　）があります。",
+    "fullSentence": "ビルの1階に受付があります。",
+    "translation": "Có quầy tiếp tân ở tầng 1 của tòa nhà.",
+    "options": [
+      "部屋",
+      "受付",
+      "食堂",
+      "教室"
+    ],
+    "correctIndex": 1,
+    "explanation": "「受付」（うけつけ） nghĩa là quầy tiếp tân, lễ tân."
+  },
+  {
+    "id": "cloze_minna_3_13",
+    "vocabId": "minna_3_13",
+    "targetWord": "ロビー",
+    "targetReading": "ロビー",
+    "sentence": "ホテルの（　　）で友達を待ちます。",
+    "fullSentence": "ホテルのロビーで友達を待ちます。",
+    "translation": "Tôi đợi bạn ở sảnh chờ của khách sạn.",
+    "options": [
+      "ロビー",
+      "教室",
+      "食堂",
+      "事務所"
+    ],
+    "correctIndex": 0,
+    "explanation": "「ロビー」 (Lobby) nghĩa là sảnh chờ, hành lang phòng khách."
+  },
+  {
+    "id": "cloze_minna_3_14",
+    "vocabId": "minna_3_14",
+    "targetWord": "部屋",
+    "targetReading": "へや",
+    "sentence": "わたしの（　　）は2階にあります。",
+    "fullSentence": "わたしの部屋は2階にあります。",
+    "translation": "Căn phòng của tôi ở tầng 2.",
+    "options": [
+      "部屋",
+      "靴",
+      "国",
+      "会社"
+    ],
+    "correctIndex": 0,
+    "explanation": "「部屋」（へや） nghĩa là căn phòng."
+  },
+  {
+    "id": "cloze_minna_3_15",
+    "vocabId": "minna_3_15",
+    "targetWord": "お手洗い",
+    "targetReading": "トイレ（おてあらい）",
+    "sentence": "すみません、（　　）はどこですか。",
+    "fullSentence": "すみません、お手洗いはどこですか。",
+    "translation": "Xin lỗi, nhà vệ sinh ở đâu vậy ạ?",
+    "options": [
+      "お手洗い",
+      "事務所",
+      "会議室",
+      "食堂"
+    ],
+    "correctIndex": 0,
+    "explanation": "「お手洗い」（おてあらい） là cách nói lịch sự của nhà vệ sinh (toilet)."
+  },
+  {
+    "id": "cloze_minna_3_16",
+    "vocabId": "minna_3_16",
+    "targetWord": "階段",
+    "targetReading": "かいだん",
+    "sentence": "エレベーターが混んでいますから、（　　）で行きます。",
+    "fullSentence": "エレベーターが混んでいますから、階段で行きます。",
+    "translation": "Vì thang máy đông nên tôi đi bằng cầu thang bộ.",
+    "options": [
+      "階段",
+      "電話",
+      "部屋",
+      "食堂"
+    ],
+    "correctIndex": 0,
+    "explanation": "「階段」（かいだん） nghĩa là cầu thang bộ."
+  },
+  {
+    "id": "cloze_minna_3_17",
+    "vocabId": "minna_3_17",
+    "targetWord": "エレベーター",
+    "targetReading": "エレベーター",
+    "sentence": "（　　）で8階へ上がります。",
+    "fullSentence": "エレベーターで8階へ上がります。",
+    "translation": "Lên tầng 8 bằng thang máy.",
+    "options": [
+      "エスカレーター",
+      "エレベーター",
+      "階段",
+      "ロビー"
+    ],
+    "correctIndex": 1,
+    "explanation": "「エレベーター」 (Elevator) nghĩa là thang máy."
+  },
+  {
+    "id": "cloze_minna_3_18",
+    "vocabId": "minna_3_18",
+    "targetWord": "エスカレーター",
+    "targetReading": "エスカレーター",
+    "sentence": "デパートの（　　）で2階へ行きます。",
+    "fullSentence": "デパートのエスカレーターで2階へ行きます。",
+    "translation": "Đi lên tầng 2 bằng thang cuốn của trung tâm thương mại.",
+    "options": [
+      "エスカレーター",
+      "エレベーター",
+      "電話",
+      "部屋"
+    ],
+    "correctIndex": 0,
+    "explanation": "「エスカレーター」 (Escalator) nghĩa là thang cuốn."
+  },
+  {
+    "id": "cloze_minna_3_19",
+    "vocabId": "minna_3_19",
+    "targetWord": "［お］国",
+    "targetReading": "［お］くに",
+    "sentence": "ミラーさんの（　　）はどちらですか。…アメリカです。",
+    "fullSentence": "ミラーさんのお国はどちらですか。…アメリカです。",
+    "translation": "Đất nước của anh Miller là ở đâu vậy? ...Là nước Mỹ.",
+    "options": [
+      "お国",
+      "会社",
+      "教室",
+      "受付"
+    ],
+    "correctIndex": 0,
+    "explanation": "「［お］国」（おくに） là cách nói lịch sự tôn kính khi hỏi về quê hương, đất nước người khác."
+  },
+  {
+    "id": "cloze_minna_3_20",
+    "vocabId": "minna_3_20",
+    "targetWord": "会社",
+    "targetReading": "かいしゃ",
+    "sentence": "父は自動車の（　　）に勤めています。",
+    "fullSentence": "父は自動車の会社に勤めています。",
+    "translation": "Bố tôi đang làm việc ở một công ty ô tô.",
+    "options": [
+      "部屋",
+      "会社",
+      "学校",
+      "国"
+    ],
+    "correctIndex": 1,
+    "explanation": "「会社」（かいしゃ） nghĩa là công ty."
+  },
+  {
+    "id": "cloze_minna_3_21",
+    "vocabId": "minna_3_21",
+    "targetWord": "うち",
+    "targetReading": "うち",
+    "sentence": "毎晩7時に（　　）へ帰ります。",
+    "fullSentence": "毎晩7時にうちへ帰ります。",
+    "translation": "Mỗi tối 7 giờ tôi trở về nhà.",
+    "options": [
+      "会社",
+      "事務所",
+      "うち",
+      "教室"
+    ],
+    "correctIndex": 2,
+    "explanation": "「うち」 nghĩa là ngôi nhà, tổ ấm của mình."
+  },
+  {
+    "id": "cloze_minna_3_22",
+    "vocabId": "minna_3_22",
+    "targetWord": "電話",
+    "targetReading": "でんわ",
+    "sentence": "事務所に（　　）があります。",
+    "fullSentence": "事務所に電話があります。",
+    "translation": "Ở văn phòng có điện thoại.",
+    "options": [
+      "電話",
+      "靴",
+      "傘",
+      "ワイン"
+    ],
+    "correctIndex": 0,
+    "explanation": "「電話」（でんわ） nghĩa là máy điện thoại, cuộc gọi."
+  },
+  {
+    "id": "cloze_minna_3_23",
+    "vocabId": "minna_3_23",
+    "targetWord": "靴",
+    "targetReading": "くつ",
+    "sentence": "ここで（　　）を脱いでください。",
+    "fullSentence": "ここで靴を脱いでください。",
+    "translation": "Xin hãy cởi giày ở đây.",
+    "options": [
+      "ネクタイ",
+      "靴",
+      "傘",
+      "かばん"
+    ],
+    "correctIndex": 1,
+    "explanation": "「靴」（くつ） nghĩa là đôi giày, đôi dép."
+  },
+  {
+    "id": "cloze_minna_3_24",
+    "vocabId": "minna_3_24",
+    "targetWord": "ネクタイ",
+    "targetReading": "ネクタイ",
+    "sentence": "会社員はスーツを着て、（　　）をしめます。",
+    "fullSentence": "会社員はスーツを着て、ネクタイをしめます。",
+    "translation": "Nhân viên công ty mặc âu phục và thắt cà vạt.",
+    "options": [
+      "靴",
+      "ネクタイ",
+      "ワイン",
+      "たばこ"
+    ],
+    "correctIndex": 1,
+    "explanation": "「ネクタイ」 (Necktie) nghĩa là chiếc cà vạt."
+  },
+  {
+    "id": "cloze_minna_3_25",
+    "vocabId": "minna_3_25",
+    "targetWord": "ワイン",
+    "targetReading": "ワイン",
+    "sentence": "フランスの（　　）はとてもおいしいです。",
+    "fullSentence": "フランスのワインはとてもおいしいです。",
+    "translation": "Rượu vang của Pháp rất là ngon.",
+    "options": [
+      "たばこ",
+      "靴",
+      "ワイン",
+      "ネクタイ"
+    ],
+    "correctIndex": 2,
+    "explanation": "「ワイン」 (Wine) nghĩa là rượu vang nho."
+  },
+  {
+    "id": "cloze_minna_3_26",
+    "vocabId": "minna_3_26",
+    "targetWord": "たばこ",
+    "targetReading": "たばこ",
+    "sentence": "教室で（　　）を吸ってはいけません。",
+    "fullSentence": "教室でたばこを吸ってはいけません。",
+    "translation": "Không được hút thuốc lá trong phòng học.",
+    "options": [
+      "たばこ",
+      "ワイン",
+      "靴",
+      "ネクタイ"
+    ],
+    "correctIndex": 0,
+    "explanation": "「たばこ」 nghĩa là điếu thuốc lá."
+  },
+  {
+    "id": "cloze_minna_3_27",
+    "vocabId": "minna_3_27",
+    "targetWord": "売り場",
+    "targetReading": "うりば",
+    "sentence": "ワインの（　　）は地下1階です。",
+    "fullSentence": "ワインの売り場は地下1階です。",
+    "translation": "Quầy bán rượu vang ở tầng hầm 1.",
+    "options": [
+      "売り場",
+      "教室",
+      "事務所",
+      "部屋"
+    ],
+    "correctIndex": 0,
+    "explanation": "「売り場」（うりば） nghĩa là quầy hàng, gian hàng bày bán."
+  },
+  {
+    "id": "cloze_minna_3_28",
+    "vocabId": "minna_3_28",
+    "targetWord": "地下",
+    "targetReading": "ちか",
+    "sentence": "デパートの（　　）に食品売り場があります。",
+    "fullSentence": "デパートの地下に食品売り場があります。",
+    "translation": "Dưới tầng hầm của trung tâm thương mại có quầy thực phẩm.",
+    "options": [
+      "地下",
+      "屋上",
+      "階段",
+      "ロビー"
+    ],
+    "correctIndex": 0,
+    "explanation": "「地下」（ちか） nghĩa là tầng hầm, lòng đất."
+  },
+  {
+    "id": "cloze_minna_3_29",
+    "vocabId": "minna_3_29",
+    "targetWord": "～階",
+    "targetReading": "～かい（～がい）",
+    "sentence": "会議室は3（　　）にあります。",
+    "fullSentence": "会議室は3階にあります。",
+    "translation": "Phòng họp ở tầng 3.",
+    "options": [
+      "階",
+      "円",
+      "歳",
+      "人"
+    ],
+    "correctIndex": 0,
+    "explanation": "Số đếm + 「階」（かい/がい） dùng để chỉ số tầng của tòa nhà."
+  },
+  {
+    "id": "cloze_minna_3_30",
+    "vocabId": "minna_3_30",
+    "targetWord": "何階",
+    "targetReading": "なんがい",
+    "sentence": "事務所は（　　）ですか。…2階です。",
+    "fullSentence": "事務所は何階ですか。…2階です。",
+    "translation": "Văn phòng ở tầng mấy vậy? ...Ở tầng 2.",
+    "options": [
+      "なんさい",
+      "何階",
+      "いくら",
+      "なんにん"
+    ],
+    "correctIndex": 1,
+    "explanation": "「何階」（なんがい） là từ để hỏi số tầng (tầng mấy)."
+  },
+  {
+    "id": "cloze_minna_3_31",
+    "vocabId": "minna_3_31",
+    "targetWord": "～円",
+    "targetReading": "～えん",
+    "sentence": "このノートは100（　　）です。",
+    "fullSentence": "このノートは100円です。",
+    "translation": "Cuốn vở này giá 100 yên.",
+    "options": [
+      "円",
+      "階",
+      "歳",
+      "人"
+    ],
+    "correctIndex": 0,
+    "explanation": "「～円」（えん） là đơn vị tiền tệ Nhật Bản (Yên)."
+  },
+  {
+    "id": "cloze_minna_3_32",
+    "vocabId": "minna_3_32",
+    "targetWord": "いくら",
+    "targetReading": "いくら",
+    "sentence": "このネクタイは（　　）ですか。…3,000円です。",
+    "fullSentence": "このネクタイはいくらですか。…3,000円です。",
+    "translation": "Cà vạt này giá bao nhiêu? ...3.000 yên.",
+    "options": [
+      "だれ",
+      "どこ",
+      "いくら",
+      "なんがい"
+    ],
+    "correctIndex": 2,
+    "explanation": "「いくら」 là từ dùng để hỏi giá tiền (bao nhiêu tiền)."
+  },
+  {
+    "id": "cloze_minna_3_33",
+    "vocabId": "minna_3_33",
+    "targetWord": "百",
+    "targetReading": "ひゃく",
+    "sentence": "このペンは（　　）円（100円）です。",
+    "fullSentence": "このペンは百円（100円）です。",
+    "translation": "Chiếc bút này giá một trăm yên.",
+    "options": [
+      "百",
+      "千",
+      "万",
+      "十"
+    ],
+    "correctIndex": 0,
+    "explanation": "「百」（ひゃく） nghĩa là một trăm (100)."
+  },
+  {
+    "id": "cloze_minna_3_34",
+    "vocabId": "minna_3_34",
+    "targetWord": "千",
+    "targetReading": "せん",
+    "sentence": "この本は（　　）円（1,000円）です。",
+    "fullSentence": "この本は千円（1,000円）です。",
+    "translation": "Cuốn sách này giá một nghìn yên.",
+    "options": [
+      "百",
+      "千",
+      "万",
+      "億"
+    ],
+    "correctIndex": 1,
+    "explanation": "「千」（せん） nghĩa là một nghìn (1.000)."
+  },
+  {
+    "id": "cloze_minna_3_35",
+    "vocabId": "minna_3_35",
+    "targetWord": "万",
+    "targetReading": "まん",
+    "sentence": "この時計は一（　　）円（10,000円）です。",
+    "fullSentence": "この時計は一万円（10,000円）です。",
+    "translation": "Chiếc đồng hồ này giá một vạn yên (10.000 yên).",
+    "options": [
+      "万",
+      "百",
+      "千",
+      "階"
+    ],
+    "correctIndex": 0,
+    "explanation": "「万」（まん） là đơn vị mười nghìn (vạn, 10.000)."
+  },
+  {
+    "id": "cloze_minna_3_36",
+    "vocabId": "minna_3_36",
+    "targetWord": "すみません。",
+    "targetReading": "すみません。",
+    "sentence": "（　　）、その靴を見せてください。",
+    "fullSentence": "すみません、その靴を見せてください。",
+    "translation": "Xin lỗi/Làm phiền bạn, làm ơn cho tôi xem đôi giày đó.",
+    "options": [
+      "ありがとうございます",
+      "すみません",
+      "失礼しました",
+      "ごちそうさま"
+    ],
+    "correctIndex": 1,
+    "explanation": "「すみません」 dùng để gọi nhân viên hoặc mở đầu nhờ vả (xin lỗi, làm phiền)."
+  },
+  {
+    "id": "cloze_minna_3_37",
+    "vocabId": "minna_3_37",
+    "targetWord": "～でございます。",
+    "targetReading": "～でございます。",
+    "sentence": "ワイン売り場は地下1階（　　）。",
+    "fullSentence": "ワイン売り場は地下1階でございます。",
+    "translation": "Quầy bán rượu vang ở tầng hầm 1 ạ.",
+    "options": [
+      "でございます",
+      "でした",
+      "じゃありません",
+      "ございますか"
+    ],
+    "correctIndex": 0,
+    "explanation": "「でございます」 là dạng kính ngữ lịch sự của 「です」 mà nhân viên phục vụ hay dùng."
+  },
+  {
+    "id": "cloze_minna_3_38",
+    "vocabId": "minna_3_38",
+    "targetWord": "［～を］みせてください。",
+    "targetReading": "［～を］みせてください。",
+    "sentence": "すみません、あの時計を（　　）。",
+    "fullSentence": "すみません、あの時計をみせてください。",
+    "translation": "Xin lỗi, làm ơn cho tôi xem chiếc đồng hồ kia.",
+    "options": [
+      "みせてください",
+      "たべてください",
+      "のんでください",
+      "かえってください"
+    ],
+    "correctIndex": 0,
+    "explanation": "「［～を］みせてください」 dùng khi muốn nhân viên cho xem món hàng."
+  },
+  {
+    "id": "cloze_minna_3_39",
+    "vocabId": "minna_3_39",
+    "targetWord": "じゃ",
+    "targetReading": "じゃ",
+    "sentence": "（　　）、その靴をください。",
+    "fullSentence": "じゃ、その靴をください。",
+    "translation": "Thế thì/vậy thì, hãy lấy cho tôi đôi giày đó.",
+    "options": [
+      "じゃ",
+      "はい",
+      "いいえ",
+      "どうも"
+    ],
+    "correctIndex": 0,
+    "explanation": "「じゃ」 nghĩa là thế thì, vậy thì (dùng khi đưa ra quyết định mua đồ)."
+  },
+  {
+    "id": "cloze_minna_3_40",
+    "vocabId": "minna_3_40",
+    "targetWord": "［～を］ください。",
+    "targetReading": "［～を］ください。",
+    "sentence": "このネクタイを（　　）。…かしこまりました。",
+    "fullSentence": "このネクタイをください。…かしこまりました。",
+    "translation": "Làm ơn cho tôi lấy chiếc cà vạt này. ...Tôi hiểu rồi ạ.",
+    "options": [
+      "みせてください",
+      "ください",
+      "いってください",
+      "おねがいします"
+    ],
+    "correctIndex": 1,
+    "explanation": "「［～を］ください」 dùng khi quyết định mua món đồ (hãy bán/cho tôi món này)."
+  }
+]

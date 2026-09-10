@@ -1,0 +1,767 @@
+[
+  {
+    "id": "cloze_minna_1_0",
+    "vocabId": "minna_1_0",
+    "targetWord": "わたし",
+    "targetReading": "わたし",
+    "sentence": "（　　）はマイク・ミラーです。アメリカ人です。",
+    "fullSentence": "わたしはマイク・ミラーです。アメリカ人です。",
+    "translation": "Tôi là Mike Miller. Tôi là người Mỹ.",
+    "options": [
+      "わたし",
+      "あなた",
+      "あのひと",
+      "だれ"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dùng 「わたし」 (Tôi) khi tự xưng và giới thiệu về bản thân."
+  },
+  {
+    "id": "cloze_minna_1_1",
+    "vocabId": "minna_1_1",
+    "targetWord": "わたしたち",
+    "targetReading": "わたしたち",
+    "sentence": "（　　）はさくら大学の学生です。",
+    "fullSentence": "わたしたちはさくら大学の学生です。",
+    "translation": "Chúng tôi là sinh viên trường Đại học Sakura.",
+    "options": [
+      "あのひと",
+      "あなた",
+      "わたしたち",
+      "だれ"
+    ],
+    "correctIndex": 2,
+    "explanation": "「わたしたち」 nghĩa là chúng tôi, chúng ta (ngôi thứ nhất số nhiều)."
+  },
+  {
+    "id": "cloze_minna_1_2",
+    "vocabId": "minna_1_2",
+    "targetWord": "あなた",
+    "targetReading": "あなた",
+    "sentence": "（　　）は会社員ですか。…はい、会社員です。",
+    "fullSentence": "あなたは会社員ですか。…はい、会社員です。",
+    "translation": "Bạn có phải là nhân viên công ty không? ...Vâng, tôi là nhân viên công ty.",
+    "options": [
+      "わたし",
+      "あなた",
+      "わたしたち",
+      "みなさん"
+    ],
+    "correctIndex": 1,
+    "explanation": "「あなた」 là đại từ nhân xưng ngôi thứ 2 (bạn, anh/chị)."
+  },
+  {
+    "id": "cloze_minna_1_3",
+    "vocabId": "minna_1_3",
+    "targetWord": "あの人",
+    "targetReading": "あのひと",
+    "sentence": "（　　）はだれですか。…サントスさんです。",
+    "fullSentence": "あの人はだれですか。…サントスさんです。",
+    "translation": "Người kia là ai vậy? ...Là anh Santos.",
+    "options": [
+      "わたし",
+      "このひと",
+      "あの人",
+      "みなさん"
+    ],
+    "correctIndex": 2,
+    "explanation": "「あの人」（あのひと） chỉ người ở phía xa cả hai người nói (người kia)."
+  },
+  {
+    "id": "cloze_minna_1_4",
+    "vocabId": "minna_1_4",
+    "targetWord": "あの方",
+    "targetReading": "あのかた",
+    "sentence": "（　　）はどなたですか。…ワット先生です。",
+    "fullSentence": "あの方はどなたですか。…ワット先生です。",
+    "translation": "Vị kia là ai vậy? ...Là thầy Watt.",
+    "options": [
+      "あの人",
+      "あの方",
+      "あなた",
+      "だれ"
+    ],
+    "correctIndex": 1,
+    "explanation": "「あの方」（あのかた） là dạng lịch sự, kính trọng của 「あの人」."
+  },
+  {
+    "id": "cloze_minna_1_5",
+    "vocabId": "minna_1_5",
+    "targetWord": "みなさん",
+    "targetReading": "みなさん",
+    "sentence": "（　　）、おはようございます。",
+    "fullSentence": "みなさん、おはようございます。",
+    "translation": "Chào buổi sáng mọi người.",
+    "options": [
+      "あのひと",
+      "みなさん",
+      "わたし",
+      "あのかた"
+    ],
+    "correctIndex": 1,
+    "explanation": "「みなさん」 nghĩa là các bạn, mọi người (gọi chung tập thể lịch sự)."
+  },
+  {
+    "id": "cloze_minna_1_6",
+    "vocabId": "minna_1_6",
+    "targetWord": "～さん",
+    "targetReading": "～さん",
+    "sentence": "こちらはミラー（　　）です。",
+    "fullSentence": "こちらはミラーさんです。",
+    "translation": "Đây là anh Miller.",
+    "options": [
+      "さん",
+      "じん",
+      "ちゃん",
+      "くん"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hậu tố 「さん」 gắn sau tên người khác để biểu thị sự lịch sự (anh/chị/ông/bà)."
+  },
+  {
+    "id": "cloze_minna_1_7",
+    "vocabId": "minna_1_7",
+    "targetWord": "～ちゃん",
+    "targetReading": "～ちゃん",
+    "sentence": "テレサ（　　）は何歳ですか。…9歳です。",
+    "fullSentence": "テレサちゃんは何歳ですか。…9歳です。",
+    "translation": "Bé Teresa mấy tuổi rồi? ...Bé 9 tuổi.",
+    "options": [
+      "さん",
+      "ちゃん",
+      "じん",
+      "せんせい"
+    ],
+    "correctIndex": 1,
+    "explanation": "Hậu tố 「ちゃん」 dùng gọi thân mật cho bé gái hoặc trẻ con."
+  },
+  {
+    "id": "cloze_minna_1_8",
+    "vocabId": "minna_1_8",
+    "targetWord": "～くん",
+    "targetReading": "～くん",
+    "sentence": "太郎（　　）は日本の小学生です。",
+    "fullSentence": "太郎くんは日本の小学生です。",
+    "translation": "Bé Taro là học sinh tiểu học Nhật Bản.",
+    "options": [
+      "くん",
+      "じん",
+      "さい",
+      "たち"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hậu tố 「くん」 dùng gọi các bạn nam hoặc bé trai một cách thân mật."
+  },
+  {
+    "id": "cloze_minna_1_9",
+    "vocabId": "minna_1_9",
+    "targetWord": "～人",
+    "targetReading": "～じん",
+    "sentence": "マリアさんはブラジル（　　）です。",
+    "fullSentence": "マリアさんはブラジル人です。",
+    "translation": "Chị Maria là người Brazil.",
+    "options": [
+      "語",
+      "人",
+      "歳",
+      "さん"
+    ],
+    "correctIndex": 1,
+    "explanation": "Tên quốc gia + 「人」（じん） biểu thị người mang quốc tịch đó."
+  },
+  {
+    "id": "cloze_minna_1_10",
+    "vocabId": "minna_1_10",
+    "targetWord": "先生",
+    "targetReading": "せんせい",
+    "sentence": "ワットさんはさくら大学の（　　）です。",
+    "fullSentence": "ワットさんはさくら大学の先生です。",
+    "translation": "Thầy Watt là giáo viên trường Đại học Sakura.",
+    "options": [
+      "先生",
+      "学生",
+      "医者",
+      "会社員"
+    ],
+    "correctIndex": 0,
+    "explanation": "「先生」（せんせい） dùng gọi hoặc xưng hô với thầy cô giáo, bác sĩ."
+  },
+  {
+    "id": "cloze_minna_1_11",
+    "vocabId": "minna_1_11",
+    "targetWord": "教師",
+    "targetReading": "きょうし",
+    "sentence": "わたしは高校の（　　）です。",
+    "fullSentence": "わたしは高校の教師です。",
+    "translation": "Tôi là giáo viên cấp 3.",
+    "options": [
+      "医者",
+      "学生",
+      "教師",
+      "社員"
+    ],
+    "correctIndex": 2,
+    "explanation": "「教師」（きょうし） chỉ nghề nghiệp giáo viên (thường dùng tự nói về nghề của bản thân)."
+  },
+  {
+    "id": "cloze_minna_1_12",
+    "vocabId": "minna_1_12",
+    "targetWord": "学生",
+    "targetReading": "がくせい",
+    "sentence": "カリナさんは富士大学の（　　）です。",
+    "fullSentence": "カリナさんは富士大学の学生です。",
+    "translation": "Karina là sinh viên trường Đại học Fuji.",
+    "options": [
+      "医者",
+      "銀行員",
+      "学生",
+      "教師"
+    ],
+    "correctIndex": 2,
+    "explanation": "「学生」（がくせい） nghĩa là học sinh, sinh viên."
+  },
+  {
+    "id": "cloze_minna_1_13",
+    "vocabId": "minna_1_13",
+    "targetWord": "会社員",
+    "targetReading": "かいしゃいん",
+    "sentence": "ミラーさんはIMCの（　　）です。",
+    "fullSentence": "ミラーさんはIMCの会社員です。",
+    "translation": "Anh Miller là nhân viên công ty IMC.",
+    "options": [
+      "研究者",
+      "会社員",
+      "学生",
+      "医者"
+    ],
+    "correctIndex": 1,
+    "explanation": "「会社員」（かいしゃいん） nghĩa là nhân viên công ty."
+  },
+  {
+    "id": "cloze_minna_1_14",
+    "vocabId": "minna_1_14",
+    "targetWord": "社員",
+    "targetReading": "～しゃいん",
+    "sentence": "シュミットさんはパワー電気の（　　）です。",
+    "fullSentence": "シュミットさんはパワー電気の社員です。",
+    "translation": "Anh Schmidt là nhân viên của công ty Điện lực Power.",
+    "options": [
+      "社員",
+      "先生",
+      "学生",
+      "医者"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tên công ty + の + 「社員」（しゃいん） chỉ nhân viên thuộc một công ty cụ thể."
+  },
+  {
+    "id": "cloze_minna_1_15",
+    "vocabId": "minna_1_15",
+    "targetWord": "銀行員",
+    "targetReading": "ぎんこういん",
+    "sentence": "山田さんは東京銀行の（　　）です。",
+    "fullSentence": "山田さんは東京銀行の銀行員です。",
+    "translation": "Anh Yamada là nhân viên ngân hàng Tokyo.",
+    "options": [
+      "医者",
+      "銀行員",
+      "学生",
+      "研究者"
+    ],
+    "correctIndex": 1,
+    "explanation": "「銀行員」（ぎんこういん） nghĩa là nhân viên ngân hàng."
+  },
+  {
+    "id": "cloze_minna_1_16",
+    "vocabId": "minna_1_16",
+    "targetWord": "医者",
+    "targetReading": "いしゃ",
+    "sentence": "父は神戸病院の（　　）です。",
+    "fullSentence": "父は神戸病院の医者です。",
+    "translation": "Bố tôi là bác sĩ ở bệnh viện Kobe.",
+    "options": [
+      "医者",
+      "学生",
+      "会社員",
+      "銀行員"
+    ],
+    "correctIndex": 0,
+    "explanation": "「医者」（いしゃ） nghĩa là bác sĩ."
+  },
+  {
+    "id": "cloze_minna_1_17",
+    "vocabId": "minna_1_17",
+    "targetWord": "研究者",
+    "targetReading": "けんきゅうしゃ",
+    "sentence": "イーさんはAKCの（　　）です。",
+    "fullSentence": "イーさんはAKCの研究者です。",
+    "translation": "Anh Lee là nhà nghiên cứu tại AKC.",
+    "options": [
+      "学生",
+      "研究者",
+      "医者",
+      "銀行員"
+    ],
+    "correctIndex": 1,
+    "explanation": "「研究者」（けんきゅうしゃ） nghĩa là nhà nghiên cứu."
+  },
+  {
+    "id": "cloze_minna_1_18",
+    "vocabId": "minna_1_18",
+    "targetWord": "エンジニア",
+    "targetReading": "エンジニア",
+    "sentence": "グプタさんはIT企業の（　　）です。",
+    "fullSentence": "グプタさんはIT企業のエンジニアです。",
+    "translation": "Anh Gupta là kỹ sư của công ty công nghệ IT.",
+    "options": [
+      "教師",
+      "医者",
+      "エンジニア",
+      "学生"
+    ],
+    "correctIndex": 2,
+    "explanation": "「エンジニア」 là từ Katakana mượn từ Engineer, nghĩa là kỹ sư."
+  },
+  {
+    "id": "cloze_minna_1_19",
+    "vocabId": "minna_1_19",
+    "targetWord": "大学",
+    "targetReading": "だいがく",
+    "sentence": "さくら（　　）は日本の有名な学校です。",
+    "fullSentence": "さくら大学は日本の有名な学校です。",
+    "translation": "Đại học Sakura là trường học nổi tiếng ở Nhật Bản.",
+    "options": [
+      "病院",
+      "大学",
+      "銀行",
+      "会社"
+    ],
+    "correctIndex": 1,
+    "explanation": "「大学」（だいがく） nghĩa là trường đại học."
+  },
+  {
+    "id": "cloze_minna_1_20",
+    "vocabId": "minna_1_20",
+    "targetWord": "病院",
+    "targetReading": "びょういん",
+    "sentence": "母は（　　）で働いています。看護師です。",
+    "fullSentence": "母は病院で働いています。看護師です。",
+    "translation": "Mẹ tôi làm việc ở bệnh viện. Bà là y tá.",
+    "options": [
+      "大学",
+      "病院",
+      "銀行",
+      "会社"
+    ],
+    "correctIndex": 1,
+    "explanation": "「病院」（びょういん） nghĩa là bệnh viện."
+  },
+  {
+    "id": "cloze_minna_1_21",
+    "vocabId": "minna_1_21",
+    "targetWord": "電気",
+    "targetReading": "でんき",
+    "sentence": "部屋の（　　）をつけます。",
+    "fullSentence": "部屋の電気をつけます。",
+    "translation": "Bật điện trong phòng lên.",
+    "options": [
+      "電気",
+      "電話",
+      "電車",
+      "大学"
+    ],
+    "correctIndex": 0,
+    "explanation": "「電気」（でんき） nghĩa là điện hoặc đèn điện."
+  },
+  {
+    "id": "cloze_minna_1_22",
+    "vocabId": "minna_1_22",
+    "targetWord": "誰",
+    "targetReading": "だれ（どなた）",
+    "sentence": "あの人は（　　）ですか。…サントスさんです。",
+    "fullSentence": "あの人は誰ですか。…サントスさんです。",
+    "translation": "Người kia là ai vậy? ...Là anh Santos.",
+    "options": [
+      "何",
+      "どこ",
+      "誰",
+      "いつ"
+    ],
+    "correctIndex": 2,
+    "explanation": "「誰」（だれ） là từ để hỏi người (ai)."
+  },
+  {
+    "id": "cloze_minna_1_23",
+    "vocabId": "minna_1_23",
+    "targetWord": "～歳",
+    "targetReading": "―さい",
+    "sentence": "テレサちゃんは9（　　）です。",
+    "fullSentence": "テレサちゃんは9歳です。",
+    "translation": "Bé Teresa 9 tuổi.",
+    "options": [
+      "歳",
+      "人",
+      "年",
+      "月"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hậu tố 「歳」（さい） dùng sau số đếm để nói về tuổi tác."
+  },
+  {
+    "id": "cloze_minna_1_24",
+    "vocabId": "minna_1_24",
+    "targetWord": "何歳",
+    "targetReading": "なんさい",
+    "sentence": "太郎くんは（　　）ですか。…8歳です。",
+    "fullSentence": "太郎くんは何歳ですか。…8歳です。",
+    "translation": "Bé Taro mấy tuổi rồi? ...Bé 8 tuổi.",
+    "options": [
+      "だれ",
+      "何歳",
+      "どこ",
+      "なんにん"
+    ],
+    "correctIndex": 1,
+    "explanation": "「何歳」（なんさい） là từ để hỏi tuổi tác (mấy tuổi, bao nhiêu tuổi)."
+  },
+  {
+    "id": "cloze_minna_1_25",
+    "vocabId": "minna_1_25",
+    "targetWord": "はい",
+    "targetReading": "はい",
+    "sentence": "ミラーさんはアメリカ人ですか。…（　　）、アメリカ人です。",
+    "fullSentence": "ミラーさんはアメリカ人ですか。…はい、アメリカ人です。",
+    "translation": "Anh Miller có phải người Mỹ không? ...Vâng, là người Mỹ.",
+    "options": [
+      "いいえ",
+      "はい",
+      "どうぞ",
+      "だれ"
+    ],
+    "correctIndex": 1,
+    "explanation": "「はい」 dùng để trả lời đồng ý hoặc xác nhận khẳng định (vâng, dạ, đúng)."
+  },
+  {
+    "id": "cloze_minna_1_26",
+    "vocabId": "minna_1_26",
+    "targetWord": "いいえ",
+    "targetReading": "いいえ",
+    "sentence": "山田さんは学生ですか。…（　　）、会社員です。",
+    "fullSentence": "山田さんは学生ですか。…いいえ、会社員です。",
+    "translation": "Anh Yamada có phải sinh viên không? ...Không, là nhân viên công ty.",
+    "options": [
+      "はい",
+      "そうです",
+      "いいえ",
+      "よろしく"
+    ],
+    "correctIndex": 2,
+    "explanation": "「いいえ」 dùng để trả lời phủ định (không, không phải)."
+  },
+  {
+    "id": "cloze_minna_1_27",
+    "vocabId": "minna_1_27",
+    "targetWord": "失礼ですが",
+    "targetReading": "しつれいですが",
+    "sentence": "（　　）、お名前は？…ミラーです。",
+    "fullSentence": "失礼ですが、お名前は？…ミラーです。",
+    "translation": "Xin lỗi cho hỏi, tên anh là gì ạ? ...Tôi là Miller.",
+    "options": [
+      "はじめまして",
+      "失礼ですが",
+      "ありがとう",
+      "どうも"
+    ],
+    "correctIndex": 1,
+    "explanation": "「失礼ですが」（しつれいですが） là lời mở đầu lịch sự khi hỏi thông tin cá nhân của người khác."
+  },
+  {
+    "id": "cloze_minna_1_28",
+    "vocabId": "minna_1_28",
+    "targetWord": "お名前は",
+    "targetReading": "おなまえは？",
+    "sentence": "失礼ですが、（　　）？…田中です。",
+    "fullSentence": "失礼ですが、お名前は？…田中です。",
+    "translation": "Xin lỗi cho hỏi, tên anh/chị là gì ạ? ...Tôi là Tanaka.",
+    "options": [
+      "お元気ですか",
+      "お名前は",
+      "どちらですか",
+      "何歳ですか"
+    ],
+    "correctIndex": 1,
+    "explanation": "「お名前は？」（おなまえは？） dùng để hỏi tên đối phương một cách nhã nhặn."
+  },
+  {
+    "id": "cloze_minna_1_29",
+    "vocabId": "minna_1_29",
+    "targetWord": "初めて",
+    "targetReading": "はじめまして。",
+    "sentence": "（　　）。わたしはマイク・ミラーです。",
+    "fullSentence": "はじめまして。わたしはマイク・ミラーです。",
+    "translation": "Rất vui được gặp bạn. Tôi là Mike Miller.",
+    "options": [
+      "さようなら",
+      "はじめまして",
+      "おやすみなさい",
+      "こんにちは"
+    ],
+    "correctIndex": 1,
+    "explanation": "「はじめまして」 là lời chào mở đầu trong lần đầu tiên gặp mặt."
+  },
+  {
+    "id": "cloze_minna_1_30",
+    "vocabId": "minna_1_30",
+    "targetWord": "どうぞよろしく「お願いします」。",
+    "targetReading": "どうぞよろしく[おねがいします]。",
+    "sentence": "ミラーです。（　　）。…こちらこそよろしく。",
+    "fullSentence": "ミラーです。どうぞよろしくお願いします。…こちらこそよろしく。",
+    "translation": "Tôi là Miller. Rất mong được sự giúp đỡ. ...Chính tôi mới cần nhờ anh giúp đỡ.",
+    "options": [
+      "すみません",
+      "どういたしまして",
+      "どうぞよろしくお願いします",
+      "お疲れ様でした"
+    ],
+    "correctIndex": 2,
+    "explanation": "「どうぞよろしくお願いします」 là câu chào kết thúc khi tự giới thiệu bản thân."
+  },
+  {
+    "id": "cloze_minna_1_31",
+    "vocabId": "minna_1_31",
+    "targetWord": "こちらは～さんです。",
+    "targetReading": "こちらは～さんです。",
+    "sentence": "（　　）サントスさんです。ブラジルから来ました。",
+    "fullSentence": "こちらはサントスさんです。ブラジルから来ました。",
+    "translation": "Đây là anh Santos. Anh ấy đến từ Brazil.",
+    "options": [
+      "こちらは",
+      "そこは",
+      "あれは",
+      "どれは"
+    ],
+    "correctIndex": 0,
+    "explanation": "「こちらは～さんです」 dùng để giới thiệu người thứ 3 đứng cạnh mình cho người khác biết."
+  },
+  {
+    "id": "cloze_minna_1_32",
+    "vocabId": "minna_1_32",
+    "targetWord": "～から来ました",
+    "targetReading": "～からきました。",
+    "sentence": "わたしはベトナム（　　）。",
+    "fullSentence": "わたしはベトナムから来ました。",
+    "translation": "Tôi đến từ Việt Nam.",
+    "options": [
+      "にいきます",
+      "から来ました",
+      "でいます",
+      "へかえります"
+    ],
+    "correctIndex": 1,
+    "explanation": "Tên đất nước / địa danh + 「から来ました」（からきました） biểu thị xuất thân/đến từ đâu."
+  },
+  {
+    "id": "cloze_minna_1_33",
+    "vocabId": "minna_1_33",
+    "targetWord": "アメリカ",
+    "targetReading": "アメリカ",
+    "sentence": "ミラーさんは（　　）から来ました。ニューヨーク出身です。",
+    "fullSentence": "ミラーさんはアメリカから来ました。ニューヨーク出身です。",
+    "translation": "Anh Miller đến từ nước Mỹ. Anh ấy xuất thân từ New York.",
+    "options": [
+      "中国",
+      "アメリカ",
+      "タイ",
+      "フランス"
+    ],
+    "correctIndex": 1,
+    "explanation": "「アメリカ」 nghĩa là nước Mỹ (Hoa Kỳ)."
+  },
+  {
+    "id": "cloze_minna_1_34",
+    "vocabId": "minna_1_34",
+    "targetWord": "イギリス",
+    "targetReading": "イギリス",
+    "sentence": "ワット先生は（　　）人です。ロンドン出身です。",
+    "fullSentence": "ワット先生はイギリス人です。ロンドン出身です.",
+    "translation": "Thầy Watt là người Anh. Thầy xuất thân từ Luân Đôn.",
+    "options": [
+      "ドイツ",
+      "イギリス",
+      "インド",
+      "ブラジル"
+    ],
+    "correctIndex": 1,
+    "explanation": "「イギリス」 nghĩa là nước Anh."
+  },
+  {
+    "id": "cloze_minna_1_35",
+    "vocabId": "minna_1_35",
+    "targetWord": "インド",
+    "targetReading": "インド",
+    "sentence": "グプタさんは（　　）人です。カレーが有名です。",
+    "fullSentence": "グプタさんはインド人です。カレーが有名です。",
+    "translation": "Anh Gupta là người Ấn Độ. Cà ri ở đây rất nổi tiếng.",
+    "options": [
+      "韓国",
+      "インド",
+      "ドイツ",
+      "タイ"
+    ],
+    "correctIndex": 1,
+    "explanation": "「インド」 nghĩa là nước Ấn Độ."
+  },
+  {
+    "id": "cloze_minna_1_36",
+    "vocabId": "minna_1_36",
+    "targetWord": "インドネシア",
+    "targetReading": "インドネシア",
+    "sentence": "ジャカルタは（　　）の首都です。",
+    "fullSentence": "ジャカルタはインドネシアの首都です。",
+    "translation": "Jakarta là thủ đô của Indonesia.",
+    "options": [
+      "タイ",
+      "インドネシア",
+      "アメリカ",
+      "フランス"
+    ],
+    "correctIndex": 1,
+    "explanation": "「インドネシア」 là tên quốc gia Indonesia."
+  },
+  {
+    "id": "cloze_minna_1_37",
+    "vocabId": "minna_1_37",
+    "targetWord": "韓国",
+    "targetReading": "かんこく",
+    "sentence": "ソウルは（　　）の都市です。",
+    "fullSentence": "ソウルは韓国の都市です。",
+    "translation": "Seoul là thành phố của Hàn Quốc.",
+    "options": [
+      "日本",
+      "中国",
+      "韓国",
+      "ドイツ"
+    ],
+    "correctIndex": 2,
+    "explanation": "「韓国」（かんこく） nghĩa là nước Hàn Quốc."
+  },
+  {
+    "id": "cloze_minna_1_38",
+    "vocabId": "minna_1_38",
+    "targetWord": "タイ",
+    "targetReading": "タイ",
+    "sentence": "バンコクは（　　）の首都です。",
+    "fullSentence": "バンコクはタイの首都です。",
+    "translation": "Bangkok là thủ đô của Thái Lan.",
+    "options": [
+      "インド",
+      "タイ",
+      "イギリス",
+      "ブラジル"
+    ],
+    "correctIndex": 1,
+    "explanation": "「タイ」 nghĩa là nước Thái Lan."
+  },
+  {
+    "id": "cloze_minna_1_39",
+    "vocabId": "minna_1_39",
+    "targetWord": "中国",
+    "targetReading": "ちゅうごく",
+    "sentence": "北京は（　　）の首都です。",
+    "fullSentence": "北京は中国の首都です。",
+    "translation": "Bắc Kinh là thủ đô của Trung Quốc.",
+    "options": [
+      "韓国",
+      "日本",
+      "中国",
+      "アメリカ"
+    ],
+    "correctIndex": 2,
+    "explanation": "「中国」（ちゅうごく） nghĩa là nước Trung Quốc."
+  },
+  {
+    "id": "cloze_minna_1_40",
+    "vocabId": "minna_1_40",
+    "targetWord": "ドイツ",
+    "targetReading": "ドイツ",
+    "sentence": "シュミットさんは（　　）人です。ベルリン出身です。",
+    "fullSentence": "シュミットさんはドイツ人です。ベルリン出身です。",
+    "translation": "Anh Schmidt là người Đức. Anh ấy xuất thân từ Berlin.",
+    "options": [
+      "フランス",
+      "イギリス",
+      "ドイツ",
+      "タイ"
+    ],
+    "correctIndex": 2,
+    "explanation": "「ドイツ」 nghĩa là nước Đức."
+  },
+  {
+    "id": "cloze_minna_1_41",
+    "vocabId": "minna_1_41",
+    "targetWord": "日本",
+    "targetReading": "にほん",
+    "sentence": "山田さんは（　　）人です。東京に住んでいます。",
+    "fullSentence": "山田さんは日本人です。東京に住んでいます。",
+    "translation": "Anh Yamada là người Nhật Bản. Anh ấy sống ở Tokyo.",
+    "options": [
+      "アメリカ",
+      "中国",
+      "日本",
+      "韓国"
+    ],
+    "correctIndex": 2,
+    "explanation": "「日本」（にほん） nghĩa là nước Nhật Bản."
+  },
+  {
+    "id": "cloze_minna_1_42",
+    "vocabId": "minna_1_42",
+    "targetWord": "フランス",
+    "targetReading": "フランス",
+    "sentence": "パリは（　　）の美しい都市です。",
+    "fullSentence": "パリはフランスの美しい都市です。",
+    "translation": "Paris là thành phố xinh đẹp của nước Pháp.",
+    "options": [
+      "イギリス",
+      "フランス",
+      "ドイツ",
+      "ブラジル"
+    ],
+    "correctIndex": 1,
+    "explanation": "「フランス」 nghĩa là nước Pháp."
+  },
+  {
+    "id": "cloze_minna_1_43",
+    "vocabId": "minna_1_43",
+    "targetWord": "ブラジル",
+    "targetReading": "ブラジル",
+    "sentence": "サントスさんは（　　）から来ました。",
+    "fullSentence": "サントスさんはブラジルから来ました。",
+    "translation": "Anh Santos đến từ nước Brazil.",
+    "options": [
+      "タイ",
+      "ブラジル",
+      "インド",
+      "韓国"
+    ],
+    "correctIndex": 1,
+    "explanation": "「ブラジル」 nghĩa là nước Brazil."
+  },
+  {
+    "id": "cloze_minna_1_44",
+    "vocabId": "minna_1_44",
+    "targetWord": "さくら大学",
+    "targetReading": "さくらだいがく",
+    "sentence": "ワット先生は（　　）の先生です。",
+    "fullSentence": "ワット先生はさくら大学の先生です。",
+    "translation": "Thầy Watt là giáo viên trường Đại học Sakura.",
+    "options": [
+      "神戸病院",
+      "さくら大学",
+      "東京銀行",
+      "パワー電気"
+    ],
+    "correctIndex": 1,
+    "explanation": "「さくら大学」 là tên trường đại học giả định trong giáo trình Minna no Nihongo."
+  }
+]

@@ -1,0 +1,937 @@
+[
+  {
+    "id": "cloze_minna_5_0",
+    "vocabId": "minna_5_0",
+    "targetWord": "行きます",
+    "targetReading": "いきます",
+    "sentence": "あした東京へ（　　）。",
+    "fullSentence": "あした東京へ行きます。",
+    "translation": "Ngày mai tôi sẽ đi Tokyo.",
+    "options": [
+      "行きます",
+      "来ます",
+      "帰ります",
+      "寝ます"
+    ],
+    "correctIndex": 0,
+    "explanation": "「行きます」（いきます） nghĩa là đi (rời khỏi vị trí hiện tại đến nơi khác)."
+  },
+  {
+    "id": "cloze_minna_5_1",
+    "vocabId": "minna_5_1",
+    "targetWord": "来ます",
+    "targetReading": "きます",
+    "sentence": "ミラーさんはきのう日本へ（　　）。",
+    "fullSentence": "ミラーさんはきのう日本へ来ました。",
+    "translation": "Anh Miller đã đến Nhật Bản vào ngày hôm qua.",
+    "options": [
+      "行きます",
+      "来ました",
+      "帰りました",
+      "起きました"
+    ],
+    "correctIndex": 1,
+    "explanation": "「来ます」（きます） nghĩa là đến (di chuyển về phía người nói)."
+  },
+  {
+    "id": "cloze_minna_5_2",
+    "vocabId": "minna_5_2",
+    "targetWord": "帰ります",
+    "targetReading": "かえります",
+    "sentence": "夕方6時にうちへ（　　）。",
+    "fullSentence": "夕方6時にうちへ帰ります。",
+    "translation": "6 giờ chiều tôi trở về nhà.",
+    "options": [
+      "行きます",
+      "来ます",
+      "帰ります",
+      "休みます"
+    ],
+    "correctIndex": 2,
+    "explanation": "「帰ります」（かえります） nghĩa là trở về nhà hoặc quê hương."
+  },
+  {
+    "id": "cloze_minna_5_3",
+    "vocabId": "minna_5_3",
+    "targetWord": "学校",
+    "targetReading": "がっこう",
+    "sentence": "毎朝自転車で（　　）へ行きます。",
+    "fullSentence": "毎朝自転車で学校へ行きます。",
+    "translation": "Mỗi sáng tôi đi xe đạp đến trường học.",
+    "options": [
+      "学校",
+      "スーパー",
+      "駅",
+      "病院"
+    ],
+    "correctIndex": 0,
+    "explanation": "「学校」（がっこう） nghĩa là trường học."
+  },
+  {
+    "id": "cloze_minna_5_4",
+    "vocabId": "minna_5_4",
+    "targetWord": "スーパー",
+    "targetReading": "スーパー",
+    "sentence": "（　　）で野菜と果物を買います。",
+    "fullSentence": "スーパーで野菜と果物を買います。",
+    "translation": "Tôi mua rau và trái cây ở siêu thị.",
+    "options": [
+      "駅",
+      "スーパー",
+      "学校",
+      "飛行機"
+    ],
+    "correctIndex": 1,
+    "explanation": "「スーパー」 (Supermarket) nghĩa là siêu thị."
+  },
+  {
+    "id": "cloze_minna_5_5",
+    "vocabId": "minna_5_5",
+    "targetWord": "駅",
+    "targetReading": "えき",
+    "sentence": "（　　）で友達を待ちます。電車が来ます。",
+    "fullSentence": "駅で友達を待ちます。電車が来ます。",
+    "translation": "Tôi đợi bạn ở nhà ga. Tàu điện đang tới.",
+    "options": [
+      "学校",
+      "駅",
+      "スーパー",
+      "美術館"
+    ],
+    "correctIndex": 1,
+    "explanation": "「駅」（えき） nghĩa là nhà ga xe lửa / tàu điện."
+  },
+  {
+    "id": "cloze_minna_5_6",
+    "vocabId": "minna_5_6",
+    "targetWord": "飛行機",
+    "targetReading": "ひこうき",
+    "sentence": "ベトナムから日本まで（　　）で行きます。",
+    "fullSentence": "ベトナムから日本まで飛行機で行きます。",
+    "translation": "Đi từ Việt Nam đến Nhật Bản bằng máy bay.",
+    "options": [
+      "飛行機",
+      "船",
+      "電車",
+      "自転車"
+    ],
+    "correctIndex": 0,
+    "explanation": "「飛行機」（ひこうき） nghĩa là máy bay."
+  },
+  {
+    "id": "cloze_minna_5_7",
+    "vocabId": "minna_5_7",
+    "targetWord": "船",
+    "targetReading": "ふね",
+    "sentence": "海を（　　）で渡ります。",
+    "fullSentence": "海を船で渡ります。",
+    "translation": "Vượt biển bằng tàu thủy / thuyền.",
+    "options": [
+      "飛行機",
+      "電車",
+      "船",
+      "バス"
+    ],
+    "correctIndex": 2,
+    "explanation": "「船」（ふね） nghĩa là thuyền, tàu thủy."
+  },
+  {
+    "id": "cloze_minna_5_8",
+    "vocabId": "minna_5_8",
+    "targetWord": "電車",
+    "targetReading": "でんしゃ",
+    "sentence": "東京では多くの人が（　　）で通勤します。",
+    "fullSentence": "東京では多くの人が電車で通勤します。",
+    "translation": "Ở Tokyo nhiều người đi làm bằng tàu điện.",
+    "options": [
+      "電車",
+      "船",
+      "飛行機",
+      "タクシー"
+    ],
+    "correctIndex": 0,
+    "explanation": "「電車」（でんしゃ） nghĩa là tàu điện."
+  },
+  {
+    "id": "cloze_minna_5_9",
+    "vocabId": "minna_5_9",
+    "targetWord": "地下鉄",
+    "targetReading": "ちかてつ",
+    "sentence": "（　　）に乗って銀座へ行きます。",
+    "fullSentence": "地下鉄に乗って銀座へ行きます。",
+    "translation": "Đi tàu điện ngầm đến Ginza.",
+    "options": [
+      "地下鉄",
+      "飛行機",
+      "船",
+      "自転車"
+    ],
+    "correctIndex": 0,
+    "explanation": "「地下鉄」（ちかてつ） nghĩa là tàu điện ngầm."
+  },
+  {
+    "id": "cloze_minna_5_10",
+    "vocabId": "minna_5_10",
+    "targetWord": "新幹線",
+    "targetReading": "しんかんせん",
+    "sentence": "京都まで（　　）で行きます。とても速いです。",
+    "fullSentence": "京都まで新幹線で行きます。とても速いです。",
+    "translation": "Đi đến Kyoto bằng tàu Shinkansen. Rất là nhanh.",
+    "options": [
+      "新幹線",
+      "自転車",
+      "バス",
+      "船"
+    ],
+    "correctIndex": 0,
+    "explanation": "「新幹線」（しんかんせん） là tàu siêu tốc của Nhật Bản."
+  },
+  {
+    "id": "cloze_minna_5_11",
+    "vocabId": "minna_5_11",
+    "targetWord": "バス",
+    "targetReading": "バス",
+    "sentence": "駅前から（　　）に乗って大学へ行きます。",
+    "fullSentence": "駅前からバスに乗って大学へ行きます。",
+    "translation": "Bắt xe buýt từ trước nhà ga đến trường đại học.",
+    "options": [
+      "船",
+      "飛行機",
+      "バス",
+      "新幹線"
+    ],
+    "correctIndex": 2,
+    "explanation": "「バス」 (Bus) nghĩa là xe buýt."
+  },
+  {
+    "id": "cloze_minna_5_12",
+    "vocabId": "minna_5_12",
+    "targetWord": "タクシー",
+    "targetReading": "タクシー",
+    "sentence": "荷物が多いですから、（　　）で行きましょう。",
+    "fullSentence": "荷物が多いですから、タクシーで行きましょう。",
+    "translation": "Vì nhiều hành lý nên chúng ta hãy đi bằng taxi nhé.",
+    "options": [
+      "自転車",
+      "タクシー",
+      "歩いて",
+      "地下鉄"
+    ],
+    "correctIndex": 1,
+    "explanation": "「タクシー」 (Taxi) nghĩa là xe taxi."
+  },
+  {
+    "id": "cloze_minna_5_13",
+    "vocabId": "minna_5_13",
+    "targetWord": "自転車",
+    "targetReading": "じてんしゃ",
+    "sentence": "天気がいいので、（　　）で公園へ行きます。",
+    "fullSentence": "天気がいいので、自転車で公園へ行きます。",
+    "translation": "Vì thời tiết đẹp nên tôi đi xe đạp tới công viên.",
+    "options": [
+      "飛行機",
+      "船",
+      "自転車",
+      "新幹線"
+    ],
+    "correctIndex": 2,
+    "explanation": "「自転車」（じてんしゃ） nghĩa là xe đạp."
+  },
+  {
+    "id": "cloze_minna_5_14",
+    "vocabId": "minna_5_14",
+    "targetWord": "歩いて",
+    "targetReading": "あるいて",
+    "sentence": "駅からうちまで（　　）帰ります。10分です。",
+    "fullSentence": "駅からうちまで歩いて帰ります。10分です。",
+    "translation": "Từ nhà ga về nhà tôi đi bộ. Mất 10 phút.",
+    "options": [
+      "電車で",
+      "歩いて",
+      "タクシーで",
+      "飛行機で"
+    ],
+    "correctIndex": 1,
+    "explanation": "「歩いて」（あるいて） nghĩa là đi bộ (không dùng trợ từ で)."
+  },
+  {
+    "id": "cloze_minna_5_15",
+    "vocabId": "minna_5_15",
+    "targetWord": "人",
+    "targetReading": "ひと",
+    "sentence": "あの（　　）はだれですか。…サントスさんです。",
+    "fullSentence": "あの人はだれですか。…サントスさんです。",
+    "translation": "Người kia là ai vậy? ...Là anh Santos.",
+    "options": [
+      "人",
+      "友達",
+      "家族",
+      "彼"
+    ],
+    "correctIndex": 0,
+    "explanation": "「人」（ひと） nghĩa là con người, người."
+  },
+  {
+    "id": "cloze_minna_5_16",
+    "vocabId": "minna_5_16",
+    "targetWord": "友達",
+    "targetReading": "ともだち",
+    "sentence": "日曜日、（　　）と映画を見に行きます。",
+    "fullSentence": "日曜日、友達と映画を見に行きます。",
+    "translation": "Chủ nhật tôi đi xem phim cùng bạn bè.",
+    "options": [
+      "一人で",
+      "友達",
+      "学校",
+      "駅"
+    ],
+    "correctIndex": 1,
+    "explanation": "「友達」（ともだち） nghĩa là bạn bè."
+  },
+  {
+    "id": "cloze_minna_5_17",
+    "vocabId": "minna_5_17",
+    "targetWord": "彼",
+    "targetReading": "かれ",
+    "sentence": "（　　）はとても親切な人です。",
+    "fullSentence": "彼はとても親切な人です。",
+    "translation": "Anh ấy là một người rất tốt bụng.",
+    "options": [
+      "彼女",
+      "彼",
+      "家族",
+      "友達"
+    ],
+    "correctIndex": 1,
+    "explanation": "「彼」（かれ） nghĩa là anh ấy, bạn trai."
+  },
+  {
+    "id": "cloze_minna_5_18",
+    "vocabId": "minna_5_18",
+    "targetWord": "彼女",
+    "targetReading": "かのじょ",
+    "sentence": "（　　）は日本語の先生です。",
+    "fullSentence": "彼女は日本語の先生です。",
+    "translation": "Cô ấy là giáo viên tiếng Nhật.",
+    "options": [
+      "彼",
+      "彼女",
+      "家族",
+      "一人"
+    ],
+    "correctIndex": 1,
+    "explanation": "「彼女」（かのじょ） nghĩa là cô ấy, bạn gái."
+  },
+  {
+    "id": "cloze_minna_5_19",
+    "vocabId": "minna_5_19",
+    "targetWord": "家族",
+    "targetReading": "かぞく",
+    "sentence": "去年の夏、（　　）と一緒に旅行しました。",
+    "fullSentence": "去年の夏、家族と一緒に旅行しました。",
+    "translation": "Mùa hè năm ngoái tôi đã đi du lịch cùng gia đình.",
+    "options": [
+      "一人",
+      "家族",
+      "学校",
+      "スーパー"
+    ],
+    "correctIndex": 1,
+    "explanation": "「家族」（かぞく） nghĩa là gia đình."
+  },
+  {
+    "id": "cloze_minna_5_20",
+    "vocabId": "minna_5_20",
+    "targetWord": "一人で",
+    "targetReading": "ひとりで",
+    "sentence": "だれと日本へ来ましたか。…（　　）来ました。",
+    "fullSentence": "だれと日本へ来ましたか。…一人で来ました。",
+    "translation": "Bạn đã đến Nhật Bản cùng với ai? ...Tôi đã đến một mình.",
+    "options": [
+      "友達と",
+      "家族と",
+      "一人で",
+      "彼女と"
+    ],
+    "correctIndex": 2,
+    "explanation": "「一人で」（ひとりで） nghĩa là một mình (tự thân làm)."
+  },
+  {
+    "id": "cloze_minna_5_21",
+    "vocabId": "minna_5_21",
+    "targetWord": "先週",
+    "targetReading": "せんしゅう",
+    "sentence": "（　　）の土曜日に京都へ行きました。",
+    "fullSentence": "先週の土曜日に京都へ行きました。",
+    "translation": "Thứ bảy tuần trước tôi đã đi Kyoto.",
+    "options": [
+      "今週",
+      "来週",
+      "先週",
+      "毎週"
+    ],
+    "correctIndex": 2,
+    "explanation": "「先週」（せんしゅう） nghĩa là tuần trước."
+  },
+  {
+    "id": "cloze_minna_5_22",
+    "vocabId": "minna_5_22",
+    "targetWord": "今週",
+    "targetReading": "こんしゅう",
+    "sentence": "（　　）の日曜日は忙しいです。",
+    "fullSentence": "今週の日曜日は忙しいです。",
+    "translation": "Chủ nhật tuần này tôi rất bận.",
+    "options": [
+      "先週",
+      "今週",
+      "来週",
+      "去年"
+    ],
+    "correctIndex": 1,
+    "explanation": "「今週」（こんしゅう） nghĩa là tuần này."
+  },
+  {
+    "id": "cloze_minna_5_23",
+    "vocabId": "minna_5_23",
+    "targetWord": "来週",
+    "targetReading": "らいしゅう",
+    "sentence": "（　　）の月曜日にテストがあります。",
+    "fullSentence": "来週の月曜日にテストがあります。",
+    "translation": "Thứ hai tuần sau sẽ có bài kiểm tra.",
+    "options": [
+      "先週",
+      "今週",
+      "来週",
+      "おととい"
+    ],
+    "correctIndex": 2,
+    "explanation": "「来週」（らいしゅう） nghĩa là tuần sau."
+  },
+  {
+    "id": "cloze_minna_5_24",
+    "vocabId": "minna_5_24",
+    "targetWord": "先月",
+    "targetReading": "せんげつ",
+    "sentence": "（　　）日本へ来ました。",
+    "fullSentence": "先月日本へ来ました。",
+    "translation": "Tháng trước tôi đã đến Nhật Bản.",
+    "options": [
+      "今月",
+      "来月",
+      "先月",
+      "毎月"
+    ],
+    "correctIndex": 2,
+    "explanation": "「先月」（せんげつ） nghĩa là tháng trước."
+  },
+  {
+    "id": "cloze_minna_5_25",
+    "vocabId": "minna_5_25",
+    "targetWord": "今月",
+    "targetReading": "こんげつ",
+    "sentence": "（　　）の終わりにお祭りがあります。",
+    "fullSentence": "今月の終わりにお祭りがあります。",
+    "translation": "Cuối tháng này sẽ có lễ hội.",
+    "options": [
+      "先月",
+      "今月",
+      "来月",
+      "去年"
+    ],
+    "correctIndex": 1,
+    "explanation": "「今月」（こんげつ） nghĩa là tháng này."
+  },
+  {
+    "id": "cloze_minna_5_26",
+    "vocabId": "minna_5_26",
+    "targetWord": "来月",
+    "targetReading": "らいげつ",
+    "sentence": "（　　）国へ帰ります。とても楽しみです。",
+    "fullSentence": "来月国へ帰ります。とても楽しみです。",
+    "translation": "Tháng sau tôi sẽ về nước. Rất là mong chờ.",
+    "options": [
+      "先月",
+      "今月",
+      "来月",
+      "おととい"
+    ],
+    "correctIndex": 2,
+    "explanation": "「来月」（らいげつ） nghĩa là tháng sau."
+  },
+  {
+    "id": "cloze_minna_5_27",
+    "vocabId": "minna_5_27",
+    "targetWord": "去年",
+    "targetReading": "きょねん",
+    "sentence": "（　　）高校を卒業しました。",
+    "fullSentence": "去年高校を卒業しました。",
+    "translation": "Năm ngoái tôi đã tốt nghiệp cấp 3.",
+    "options": [
+      "ことし",
+      "来年",
+      "去年",
+      "先週"
+    ],
+    "correctIndex": 2,
+    "explanation": "「去年」（きょねん） nghĩa là năm ngoái."
+  },
+  {
+    "id": "cloze_minna_5_28",
+    "vocabId": "minna_5_28",
+    "targetWord": "ことし",
+    "targetReading": "ことし",
+    "sentence": "（　　）20歳になりました。",
+    "fullSentence": "ことし20歳になりました。",
+    "translation": "Năm nay tôi tròn 20 tuổi.",
+    "options": [
+      "去年",
+      "ことし",
+      "来年",
+      "おととい"
+    ],
+    "correctIndex": 1,
+    "explanation": "「ことし」（今年） nghĩa là năm nay."
+  },
+  {
+    "id": "cloze_minna_5_29",
+    "vocabId": "minna_5_29",
+    "targetWord": "来年",
+    "targetReading": "らいねん",
+    "sentence": "（　　）大学に入ります。",
+    "fullSentence": "来年大学に入ります。",
+    "translation": "Năm sau tôi sẽ vào đại học.",
+    "options": [
+      "去年",
+      "ことし",
+      "来年",
+      "先月"
+    ],
+    "correctIndex": 2,
+    "explanation": "「来年」（らいねん） nghĩa là năm sau."
+  },
+  {
+    "id": "cloze_minna_5_30",
+    "vocabId": "minna_5_30",
+    "targetWord": "～月",
+    "targetReading": "～がつ",
+    "sentence": "桜は4（　　）に咲きます。",
+    "fullSentence": "桜は4月に咲きます。",
+    "translation": "Hoa anh đào nở vào tháng 4.",
+    "options": [
+      "月",
+      "日",
+      "年",
+      "時"
+    ],
+    "correctIndex": 0,
+    "explanation": "Số đếm + 「月」（がつ） dùng để chỉ các tháng trong năm."
+  },
+  {
+    "id": "cloze_minna_5_31",
+    "vocabId": "minna_5_31",
+    "targetWord": "何月",
+    "targetReading": "なんがつ",
+    "sentence": "誕生日は（　　）ですか。…7月です。",
+    "fullSentence": "誕生日は何月ですか。…7月です。",
+    "translation": "Sinh nhật bạn là tháng mấy? ...Là tháng 7.",
+    "options": [
+      "何日",
+      "何月",
+      "何時",
+      "何年"
+    ],
+    "correctIndex": 1,
+    "explanation": "「何月」（なんがつ） dùng để hỏi tháng mấy."
+  },
+  {
+    "id": "cloze_minna_5_32",
+    "vocabId": "minna_5_32",
+    "targetWord": "一日",
+    "targetReading": "ついたち",
+    "sentence": "1月（　　）はお正月です。",
+    "fullSentence": "1月一日はお正月です。",
+    "translation": "Ngày mùng 1 tháng 1 là ngày tết.",
+    "options": [
+      "一日",
+      "二日",
+      "三日",
+      "四日"
+    ],
+    "correctIndex": 0,
+    "explanation": "「一日」（ついたち） là cách đọc đặc biệt của ngày mùng 1 đầu tháng."
+  },
+  {
+    "id": "cloze_minna_5_33",
+    "vocabId": "minna_5_33",
+    "targetWord": "二日",
+    "targetReading": "ふつか",
+    "sentence": "5月（　　）に東京へ行きます。",
+    "fullSentence": "5月二日に東京へ行きます。",
+    "translation": "Tôi sẽ đi Tokyo vào ngày mùng 2 tháng 5.",
+    "options": [
+      "一日",
+      "二日",
+      "三日",
+      "四日"
+    ],
+    "correctIndex": 1,
+    "explanation": "「二日」（ふつか） nghĩa là ngày mùng 2 (hoặc khoảng thời gian 2 ngày)."
+  },
+  {
+    "id": "cloze_minna_5_34",
+    "vocabId": "minna_5_34",
+    "targetWord": "三日",
+    "targetReading": "みっか",
+    "sentence": "3月（　　）はひな祭りです。",
+    "fullSentence": "3月三日はひな祭りです。",
+    "translation": "Ngày mùng 3 tháng 3 là lễ hội búp bê Hina Matsuri.",
+    "options": [
+      "二日",
+      "三日",
+      "四日",
+      "五日"
+    ],
+    "correctIndex": 1,
+    "explanation": "「三日」（みっか） nghĩa là ngày mùng 3 (hoặc 3 ngày)."
+  },
+  {
+    "id": "cloze_minna_5_35",
+    "vocabId": "minna_5_35",
+    "targetWord": "四日",
+    "targetReading": "よっか",
+    "sentence": "5月（　　）はみどりの日です。",
+    "fullSentence": "5月四日はみどりの日です。",
+    "translation": "Ngày mùng 4 tháng 5 là Ngày Cây xanh ở Nhật Bản.",
+    "options": [
+      "三日",
+      "四日",
+      "五日",
+      "六日"
+    ],
+    "correctIndex": 1,
+    "explanation": "「四日」（よっか） nghĩa là ngày mùng 4 (hoặc 4 ngày)."
+  },
+  {
+    "id": "cloze_minna_5_36",
+    "vocabId": "minna_5_36",
+    "targetWord": "五日",
+    "targetReading": "いつか",
+    "sentence": "5月（　　）はこどもの日です。",
+    "fullSentence": "5月五日はこどもの日です。",
+    "translation": "Ngày mùng 5 tháng 5 là Ngày Thiếu nhi.",
+    "options": [
+      "四日",
+      "五日",
+      "六日",
+      "七日"
+    ],
+    "correctIndex": 1,
+    "explanation": "「五日」（いつか） nghĩa là ngày mùng 5 (hoặc 5 ngày)."
+  },
+  {
+    "id": "cloze_minna_5_37",
+    "vocabId": "minna_5_37",
+    "targetWord": "六日",
+    "targetReading": "むいか",
+    "sentence": "夏休みは8月（　　）からです。",
+    "fullSentence": "夏休みは8月六日からです。",
+    "translation": "Kỳ nghỉ hè bắt đầu từ ngày mùng 6 tháng 8.",
+    "options": [
+      "五日",
+      "六日",
+      "七日",
+      "八日"
+    ],
+    "correctIndex": 1,
+    "explanation": "「六日」（むいか） nghĩa là ngày mùng 6 (hoặc 6 ngày)."
+  },
+  {
+    "id": "cloze_minna_5_38",
+    "vocabId": "minna_5_38",
+    "targetWord": "七日",
+    "targetReading": "なのか",
+    "sentence": "7月（　　）は七夕（たなばた）です。",
+    "fullSentence": "7月七日は七夕（たなばた）です。",
+    "translation": "Ngày mùng 7 tháng 7 là lễ hội Ngưu Lang Chức Nữ Tanabata.",
+    "options": [
+      "六日",
+      "七日",
+      "八日",
+      "九日"
+    ],
+    "correctIndex": 1,
+    "explanation": "「七日」（なのか） nghĩa là ngày mùng 7 (hoặc 7 ngày)."
+  },
+  {
+    "id": "cloze_minna_5_39",
+    "vocabId": "minna_5_39",
+    "targetWord": "八日",
+    "targetReading": "ようか",
+    "sentence": "4月（　　）に入学式があります。",
+    "fullSentence": "4月八日に入学式があります。",
+    "translation": "Ngày mùng 8 tháng 4 có lễ khai giảng.",
+    "options": [
+      "七日",
+      "八日",
+      "九日",
+      "十日"
+    ],
+    "correctIndex": 1,
+    "explanation": "「八日」（ようか） nghĩa là ngày mùng 8 (hoặc 8 ngày)."
+  },
+  {
+    "id": "cloze_minna_5_40",
+    "vocabId": "minna_5_40",
+    "targetWord": "九日",
+    "targetReading": "ここのか",
+    "sentence": "旅行は9月（　　）までです。",
+    "fullSentence": "旅行は9月九日までです。",
+    "translation": "Chuyến du lịch kéo dài đến ngày mùng 9 tháng 9.",
+    "options": [
+      "八日",
+      "九日",
+      "十日",
+      "一日"
+    ],
+    "correctIndex": 1,
+    "explanation": "「九日」（ここのか） nghĩa là ngày mùng 9 (hoặc 9 ngày)."
+  },
+  {
+    "id": "cloze_minna_5_41",
+    "vocabId": "minna_5_41",
+    "targetWord": "十日",
+    "targetReading": "とおか",
+    "sentence": "10月（　　）に運動会があります。",
+    "fullSentence": "10月十日に運動会があります。",
+    "translation": "Ngày mùng 10 tháng 10 có hội thao.",
+    "options": [
+      "九日",
+      "十日",
+      "十四日",
+      "二十日"
+    ],
+    "correctIndex": 1,
+    "explanation": "「十日」（とおか） nghĩa là ngày mùng 10 (hoặc 10 ngày)."
+  },
+  {
+    "id": "cloze_minna_5_42",
+    "vocabId": "minna_5_42",
+    "targetWord": "十四日",
+    "targetReading": "じゅうよっか",
+    "sentence": "2月（　　）はバレンタインデーです。",
+    "fullSentence": "2月十四日はバレンタインデーです。",
+    "translation": "Ngày 14 tháng 2 là ngày lễ tình nhân Valentine.",
+    "options": [
+      "十日",
+      "十四日",
+      "二十四日",
+      "四日"
+    ],
+    "correctIndex": 1,
+    "explanation": "「十四日」（じゅうよっか） là cách đọc đặc biệt của ngày 14."
+  },
+  {
+    "id": "cloze_minna_5_43",
+    "vocabId": "minna_5_43",
+    "targetWord": "二十日",
+    "targetReading": "はつか",
+    "sentence": "給料日は毎月（　　）です。",
+    "fullSentence": "給料日は毎月二十日です。",
+    "translation": "Ngày trả lương là ngày 20 hàng tháng.",
+    "options": [
+      "十日",
+      "十四日",
+      "二十日",
+      "二十四日"
+    ],
+    "correctIndex": 2,
+    "explanation": "「二十日」（はつか） là cách đọc đặc biệt của ngày 20."
+  },
+  {
+    "id": "cloze_minna_5_44",
+    "vocabId": "minna_5_44",
+    "targetWord": "二十四日",
+    "targetReading": "にじゅうよっか",
+    "sentence": "12月（　　）はクリスマスイブです。",
+    "fullSentence": "12月二十四日はクリスマスイブです。",
+    "translation": "Ngày 24 tháng 12 là đêm Giáng sinh.",
+    "options": [
+      "十四日",
+      "二十日",
+      "二十四日",
+      "四日"
+    ],
+    "correctIndex": 2,
+    "explanation": "「二十四日」（にじゅうよっか） là cách đọc đặc biệt của ngày 24."
+  },
+  {
+    "id": "cloze_minna_5_45",
+    "vocabId": "minna_5_45",
+    "targetWord": "～日",
+    "targetReading": "～にち",
+    "sentence": "テストは25（　　）にあります。",
+    "fullSentence": "テストは25日にあります。",
+    "translation": "Bài kiểm tra diễn ra vào ngày 25.",
+    "options": [
+      "日",
+      "月",
+      "年",
+      "時"
+    ],
+    "correctIndex": 0,
+    "explanation": "Số đếm + 「日」（にち） dùng để chỉ ngày trong tháng."
+  },
+  {
+    "id": "cloze_minna_5_46",
+    "vocabId": "minna_5_46",
+    "targetWord": "何日",
+    "targetReading": "なんにち",
+    "sentence": "きょうは（　　）ですか。…15日です。",
+    "fullSentence": "きょうは何日ですか。…15日です。",
+    "translation": "Hôm nay là ngày mùng mấy? ...Là ngày 15.",
+    "options": [
+      "何月",
+      "何日",
+      "何曜日",
+      "何時"
+    ],
+    "correctIndex": 1,
+    "explanation": "「何日」（なんにち） dùng để hỏi ngày trong tháng (ngày mấy)."
+  },
+  {
+    "id": "cloze_minna_5_47",
+    "vocabId": "minna_5_47",
+    "targetWord": "いつ",
+    "targetReading": "いつ",
+    "sentence": "国へ帰りますか。…来週（　　）帰りますか。",
+    "fullSentence": "いつ国へ帰りますか。…来週帰ります。",
+    "translation": "Khi nào bạn về nước? ...Tuần sau tôi sẽ về.",
+    "options": [
+      "だれ",
+      "どこ",
+      "いつ",
+      "なんにち"
+    ],
+    "correctIndex": 2,
+    "explanation": "「いつ」 là từ để hỏi thời điểm (khi nào, bao giờ)."
+  },
+  {
+    "id": "cloze_minna_5_48",
+    "vocabId": "minna_5_48",
+    "targetWord": "誕生日",
+    "targetReading": "たんじょうび",
+    "sentence": "（　　）おめでとうございます！",
+    "fullSentence": "誕生日おめでとうございます！",
+    "translation": "Chúc mừng sinh nhật!",
+    "options": [
+      "誕生日",
+      "何曜日",
+      "学校",
+      "休み"
+    ],
+    "correctIndex": 0,
+    "explanation": "「誕生日」（たんじょうび） nghĩa là ngày sinh nhật."
+  },
+  {
+    "id": "cloze_minna_5_49",
+    "vocabId": "minna_5_49",
+    "targetWord": "普通",
+    "targetReading": "ふつう",
+    "sentence": "（　　）電車は各駅に止まります。",
+    "fullSentence": "普通電車は各駅に止まります。",
+    "translation": "Tàu thường dừng ở tất cả các ga.",
+    "options": [
+      "普通",
+      "急行",
+      "特急",
+      "新幹線"
+    ],
+    "correctIndex": 0,
+    "explanation": "「普通」（ふつう） nghĩa là tàu thường (đỗ tại mọi ga)."
+  },
+  {
+    "id": "cloze_minna_5_50",
+    "vocabId": "minna_5_50",
+    "targetWord": "急行",
+    "targetReading": "きゅうこう",
+    "sentence": "（　　）電車は普通電車より速いです。",
+    "fullSentence": "急行電車は普通電車より速いです。",
+    "translation": "Tàu tốc hành nhanh hơn tàu thường.",
+    "options": [
+      "普通",
+      "急行",
+      "自転車",
+      "バス"
+    ],
+    "correctIndex": 1,
+    "explanation": "「急行」（きゅうこう） nghĩa là tàu tốc hành (chỉ dừng ở các ga lớn)."
+  },
+  {
+    "id": "cloze_minna_5_51",
+    "vocabId": "minna_5_51",
+    "targetWord": "特急",
+    "targetReading": "とっきゅう",
+    "sentence": "（　　）に乗るには特急券が必要です。",
+    "fullSentence": "特急に乗るには特急券が必要です。",
+    "translation": "Cần có vé đặc tốc để đi tàu đặc tốc.",
+    "options": [
+      "普通",
+      "特急",
+      "急行",
+      "タクシー"
+    ],
+    "correctIndex": 1,
+    "explanation": "「特急」（とっきゅう） nghĩa là tàu đặc tốc (dừng rất ít ga, có phụ phí)."
+  },
+  {
+    "id": "cloze_minna_5_52",
+    "vocabId": "minna_5_52",
+    "targetWord": "次の",
+    "targetReading": "つぎの",
+    "sentence": "（　　）電車は何時ですか。…10時15分です。",
+    "fullSentence": "次の電車は何時ですか。…10時15分です。",
+    "translation": "Chuyến tàu tiếp theo là mấy giờ? ...10 giờ 15 phút.",
+    "options": [
+      "前の",
+      "次の",
+      "この",
+      "その"
+    ],
+    "correctIndex": 1,
+    "explanation": "「次の」（つぎの） nghĩa là tiếp theo, kế tiếp."
+  },
+  {
+    "id": "cloze_minna_5_53",
+    "vocabId": "minna_5_53",
+    "targetWord": "どういたしまして。",
+    "targetReading": "どういたしまして。",
+    "sentence": "ありがとうございます。…いいえ、（　　）。",
+    "fullSentence": "ありがとうございます。…いいえ、どういたしまして。",
+    "translation": "Cảm ơn bạn. ...Không có chi/không có gì đâu ạ.",
+    "options": [
+      "どういたしまして",
+      "かしこまりました",
+      "失礼しました",
+      "すみません"
+    ],
+    "correctIndex": 0,
+    "explanation": "「どういたしまして」 dùng đáp lại lời cảm ơn (không có gì, không dám)."
+  },
+  {
+    "id": "cloze_minna_5_54",
+    "vocabId": "minna_5_54",
+    "targetWord": "～番線",
+    "targetReading": "～ばんせん",
+    "sentence": "京都行きは3（　　）から発車します。",
+    "fullSentence": "京都行きは3番線から発車します。",
+    "translation": "Chuyến tàu đi Kyoto sẽ khởi hành từ sân ga số 3.",
+    "options": [
+      "番線",
+      "階",
+      "号",
+      "時"
+    ],
+    "correctIndex": 0,
+    "explanation": "Số đếm + 「番線」（ばんせん） dùng để chỉ đường ray, sân ga tàu điện số mấy."
+  }
+]

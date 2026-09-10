@@ -1,0 +1,801 @@
+[
+  {
+    "id": "cloze_minna_2_0",
+    "vocabId": "minna_2_0",
+    "targetWord": "これ",
+    "targetReading": "これ",
+    "sentence": "（　　）は辞書です。日本語の辞書です。",
+    "fullSentence": "これは辞書です。日本語の辞書です。",
+    "translation": "Đây là cuốn từ điển. Là từ điển tiếng Nhật.",
+    "options": [
+      "これ",
+      "それ",
+      "あれ",
+      "どれ"
+    ],
+    "correctIndex": 0,
+    "explanation": "「これ」 chỉ vật ở gần người nói (cái này, đây)."
+  },
+  {
+    "id": "cloze_minna_2_1",
+    "vocabId": "minna_2_1",
+    "targetWord": "それ",
+    "targetReading": "それ",
+    "sentence": "（　　）は傘ですか。…はい、そうです。",
+    "fullSentence": "それは傘ですか。…はい、そうです。",
+    "translation": "Đó có phải là cái ô không? ...Vâng, đúng vậy.",
+    "options": [
+      "これ",
+      "それ",
+      "あれ",
+      "だれ"
+    ],
+    "correctIndex": 1,
+    "explanation": "「それ」 chỉ vật ở gần người nghe (cái đó, đó)."
+  },
+  {
+    "id": "cloze_minna_2_2",
+    "vocabId": "minna_2_2",
+    "targetWord": "あれ",
+    "targetReading": "あれ",
+    "sentence": "（　　）は病院です。あそこに見えます。",
+    "fullSentence": "あれは病院です。あそこに見えます。",
+    "translation": "Kia là bệnh viện. Có thể thấy ở đằng kia.",
+    "options": [
+      "これ",
+      "それ",
+      "あれ",
+      "この"
+    ],
+    "correctIndex": 2,
+    "explanation": "「あれ」 chỉ vật ở xa cả người nói và người nghe (cái kia, kia)."
+  },
+  {
+    "id": "cloze_minna_2_3",
+    "vocabId": "minna_2_3",
+    "targetWord": "この",
+    "targetReading": "この~",
+    "sentence": "（　　）本はわたしのです。",
+    "fullSentence": "この本はわたしのです。",
+    "translation": "Cuốn sách này là của tôi.",
+    "options": [
+      "この",
+      "その",
+      "あの",
+      "どの"
+    ],
+    "correctIndex": 0,
+    "explanation": "「この」 đứng trước danh từ để chỉ vật ở gần người nói (cái ~ này)."
+  },
+  {
+    "id": "cloze_minna_2_4",
+    "vocabId": "minna_2_4",
+    "targetWord": "その",
+    "targetReading": "その~",
+    "sentence": "（　　）かばんはだれのですか。…田中さんのです。",
+    "fullSentence": "そのかばんはだれのですか。…田中さんのです。",
+    "translation": "Cái cặp đó là của ai vậy? ...Là của anh Tanaka.",
+    "options": [
+      "この",
+      "その",
+      "あの",
+      "これ"
+    ],
+    "correctIndex": 1,
+    "explanation": "「その」 đứng trước danh từ để chỉ vật ở gần người nghe (cái ~ đó)."
+  },
+  {
+    "id": "cloze_minna_2_5",
+    "vocabId": "minna_2_5",
+    "targetWord": "あの",
+    "targetReading": "あの~",
+    "sentence": "（　　）人はミラーさんです。",
+    "fullSentence": "あの人はミラーさんです。",
+    "translation": "Người kia là anh Miller.",
+    "options": [
+      "この",
+      "その",
+      "あの",
+      "あれ"
+    ],
+    "correctIndex": 2,
+    "explanation": "「あの」 đứng trước danh từ để chỉ người/vật ở xa cả hai người (người/vật ~ kia)."
+  },
+  {
+    "id": "cloze_minna_2_6",
+    "vocabId": "minna_2_6",
+    "targetWord": "本",
+    "targetReading": "ほん",
+    "sentence": "これは日本語の（　　）です。",
+    "fullSentence": "これは日本語の本です。",
+    "translation": "Đây là cuốn sách tiếng Nhật.",
+    "options": [
+      "本",
+      "傘",
+      "かばん",
+      "時計"
+    ],
+    "correctIndex": 0,
+    "explanation": "「本」（ほん） nghĩa là cuốn sách."
+  },
+  {
+    "id": "cloze_minna_2_7",
+    "vocabId": "minna_2_7",
+    "targetWord": "辞書",
+    "targetReading": "じしょ",
+    "sentence": "言葉の意味を（　　）で調べます。",
+    "fullSentence": "言葉の意味を辞書で調べます。",
+    "translation": "Tra ý nghĩa của từ vựng bằng từ điển.",
+    "options": [
+      "手帳",
+      "辞書",
+      "雑誌",
+      "新聞"
+    ],
+    "correctIndex": 1,
+    "explanation": "「辞書」（じしょ） nghĩa là cuốn từ điển."
+  },
+  {
+    "id": "cloze_minna_2_8",
+    "vocabId": "minna_2_8",
+    "targetWord": "雑誌",
+    "targetReading": "ざっし",
+    "sentence": "これは自動車の（　　）です。写真がたくさんあります。",
+    "fullSentence": "これは自動車の雑誌です。写真がたくさんあります。",
+    "translation": "Đây là cuốn tạp chí về ô tô. Có rất nhiều hình ảnh.",
+    "options": [
+      "手帳",
+      "新聞",
+      "雑誌",
+      "ノート"
+    ],
+    "correctIndex": 2,
+    "explanation": "「雑誌」（ざっし） nghĩa là cuốn tạp chí."
+  },
+  {
+    "id": "cloze_minna_2_9",
+    "vocabId": "minna_2_9",
+    "targetWord": "新聞",
+    "targetReading": "しんぶん",
+    "sentence": "父は毎朝（　　）を読みます。",
+    "fullSentence": "父は毎朝新聞を読みます。",
+    "translation": "Bố tôi đọc báo mỗi sáng.",
+    "options": [
+      "新聞",
+      "辞書",
+      "時計",
+      "かぎ"
+    ],
+    "correctIndex": 0,
+    "explanation": "「新聞」（しんぶん） nghĩa là tờ báo."
+  },
+  {
+    "id": "cloze_minna_2_10",
+    "vocabId": "minna_2_10",
+    "targetWord": "ノート",
+    "targetReading": "ノート",
+    "sentence": "この（　　）に漢字を練習します。",
+    "fullSentence": "このノートに漢字を練習します。",
+    "translation": "Tôi luyện tập chữ Hán vào cuốn vở này.",
+    "options": [
+      "カード",
+      "ノート",
+      "雑誌",
+      "辞書"
+    ],
+    "correctIndex": 1,
+    "explanation": "「ノート」 là từ mượn tiếng Anh (Notebook), nghĩa là cuốn vở."
+  },
+  {
+    "id": "cloze_minna_2_11",
+    "vocabId": "minna_2_11",
+    "targetWord": "手帳",
+    "targetReading": "てちょう",
+    "sentence": "予定を（　　）に書きます。",
+    "fullSentence": "予定を手帳に書きます。",
+    "translation": "Tôi ghi lịch trình vào cuốn sổ tay.",
+    "options": [
+      "手帳",
+      "新聞",
+      "雑誌",
+      "傘"
+    ],
+    "correctIndex": 0,
+    "explanation": "「手帳」（てちょう） nghĩa là cuốn sổ tay cá nhân bỏ túi."
+  },
+  {
+    "id": "cloze_minna_2_12",
+    "vocabId": "minna_2_12",
+    "targetWord": "名刺",
+    "targetReading": "めいし",
+    "sentence": "社長の（　　）をいただきました。",
+    "fullSentence": "社長の名刺をいただきました。",
+    "translation": "Tôi đã nhận được danh thiếp của giám đốc.",
+    "options": [
+      "手帳",
+      "名刺",
+      "切手",
+      "雑誌"
+    ],
+    "correctIndex": 1,
+    "explanation": "「名刺」（めいし） nghĩa là danh thiếp (card visit)."
+  },
+  {
+    "id": "cloze_minna_2_13",
+    "vocabId": "minna_2_13",
+    "targetWord": "カード",
+    "targetReading": "カード",
+    "sentence": "財布の中に銀行の（　　）があります。",
+    "fullSentence": "財布の中に銀行のカードがあります。",
+    "translation": "Trong ví có thẻ ngân hàng.",
+    "options": [
+      "本",
+      "カード",
+      "かばん",
+      "時計"
+    ],
+    "correctIndex": 1,
+    "explanation": "「カード」 nghĩa là chiếc thẻ (thẻ ngân hàng, thẻ từ...)."
+  },
+  {
+    "id": "cloze_minna_2_14",
+    "vocabId": "minna_2_14",
+    "targetWord": "テレホンカード",
+    "targetReading": "テレホンカード",
+    "sentence": "公衆電話で（　　）を使います。",
+    "fullSentence": "公衆電話でテレホンカードを使います。",
+    "translation": "Dùng thẻ điện thoại ở bốt điện thoại công cộng.",
+    "options": [
+      "テレホンカード",
+      "名刺",
+      "ノート",
+      "手帳"
+    ],
+    "correctIndex": 0,
+    "explanation": "「テレホンカード」 là thẻ điện thoại dùng cho bốt điện thoại công cộng."
+  },
+  {
+    "id": "cloze_minna_2_15",
+    "vocabId": "minna_2_15",
+    "targetWord": "鉛筆",
+    "targetReading": "えんぴつ",
+    "sentence": "テストは（　　）で書いてください。",
+    "fullSentence": "テストは鉛筆で書いてください。",
+    "translation": "Xin hãy làm bài kiểm tra bằng bút chì.",
+    "options": [
+      "鉛筆",
+      "かぎ",
+      "傘",
+      "時計"
+    ],
+    "correctIndex": 0,
+    "explanation": "「鉛筆」（えんぴつ） nghĩa là bút chì."
+  },
+  {
+    "id": "cloze_minna_2_16",
+    "vocabId": "minna_2_16",
+    "targetWord": "ボールペン",
+    "targetReading": "ボールペン",
+    "sentence": "黒の（　　）で書類にサインします。",
+    "fullSentence": "黒のボールペンで書類にサインします。",
+    "translation": "Ký tên vào giấy tờ bằng bút bi màu đen.",
+    "options": [
+      "ノート",
+      "手帳",
+      "ボールペン",
+      "辞書"
+    ],
+    "correctIndex": 2,
+    "explanation": "「ボールペン」 nghĩa là chiếc bút bi."
+  },
+  {
+    "id": "cloze_minna_2_17",
+    "vocabId": "minna_2_17",
+    "targetWord": "シャープペンシル",
+    "targetReading": "シャープペンシル",
+    "sentence": "（　　）の芯を買いました。",
+    "fullSentence": "シャープペンシルの芯を買いました。",
+    "translation": "Tôi đã mua ruột chì cho chiếc bút chì bấm.",
+    "options": [
+      "ボールペン",
+      "シャープペンシル",
+      "テレホンカード",
+      "手帳"
+    ],
+    "correctIndex": 1,
+    "explanation": "「シャープペンシル」 nghĩa là bút chì bấm (chì kim)."
+  },
+  {
+    "id": "cloze_minna_2_18",
+    "vocabId": "minna_2_18",
+    "targetWord": "かぎ",
+    "targetReading": "かぎ",
+    "sentence": "部屋の（　　）をかばんに入れました。",
+    "fullSentence": "部屋のかぎをかばんに入れました。",
+    "translation": "Tôi đã để chìa khóa phòng vào trong cặp.",
+    "options": [
+      "かぎ",
+      "傘",
+      "時計",
+      "本"
+    ],
+    "correctIndex": 0,
+    "explanation": "「かぎ」 nghĩa là chiếc chìa khóa."
+  },
+  {
+    "id": "cloze_minna_2_19",
+    "vocabId": "minna_2_19",
+    "targetWord": "時計",
+    "targetReading": "とけい",
+    "sentence": "この（　　）は日本のセイコー製です。",
+    "fullSentence": "この時計は日本のセイコー製です。",
+    "translation": "Chiếc đồng hồ này do hãng Seiko của Nhật sản xuất.",
+    "options": [
+      "かさ",
+      "時計",
+      "かぎ",
+      "ノート"
+    ],
+    "correctIndex": 1,
+    "explanation": "「時計」（とけい） nghĩa là đồng hồ."
+  },
+  {
+    "id": "cloze_minna_2_20",
+    "vocabId": "minna_2_20",
+    "targetWord": "傘",
+    "targetReading": "かさ",
+    "sentence": "雨ですから、（　　）を持っていきます。",
+    "fullSentence": "雨ですから、傘を持っていきます。",
+    "translation": "Vì trời mưa nên tôi mang theo ô.",
+    "options": [
+      "傘",
+      "本",
+      "時計",
+      "かぎ"
+    ],
+    "correctIndex": 0,
+    "explanation": "「傘」（かさ） nghĩa là chiếc ô, dù."
+  },
+  {
+    "id": "cloze_minna_2_21",
+    "vocabId": "minna_2_21",
+    "targetWord": "かばん",
+    "targetReading": "かばん",
+    "sentence": "教科書を（　　）に入れます。",
+    "fullSentence": "教科書をかばんに入れます。",
+    "translation": "Cho sách giáo khoa vào trong cặp.",
+    "options": [
+      "机",
+      "かばん",
+      "時計",
+      "椅子"
+    ],
+    "correctIndex": 1,
+    "explanation": "「かばん」 nghĩa là cặp sách, túi xách."
+  },
+  {
+    "id": "cloze_minna_2_22",
+    "vocabId": "minna_2_22",
+    "targetWord": "テープ",
+    "targetReading": "[カセット] テーブ",
+    "sentence": "昔、カセット（　　）で音楽を聞きました。",
+    "fullSentence": "昔、カセットテープで音楽を聞きました。",
+    "translation": "Ngày xưa, người ta nghe nhạc bằng băng cát-xét.",
+    "options": [
+      "テープ",
+      "テレビ",
+      "ラジオ",
+      "カメラ"
+    ],
+    "correctIndex": 0,
+    "explanation": "「カセットテープ」 nghĩa là cuộn băng cát-xét."
+  },
+  {
+    "id": "cloze_minna_2_23",
+    "vocabId": "minna_2_23",
+    "targetWord": "テープレコーダー",
+    "targetReading": "テープレコーダー",
+    "sentence": "（　　）で先生の発音を録音します。",
+    "fullSentence": "テープレコーダーで先生の発音を録音します。",
+    "translation": "Ghi âm lại phát âm của giáo viên bằng máy ghi âm.",
+    "options": [
+      "テープレコーダー",
+      "テレビ",
+      "ラジオ",
+      "自動車"
+    ],
+    "correctIndex": 0,
+    "explanation": "「テープレコーダー」 nghĩa là máy ghi âm / máy phát băng."
+  },
+  {
+    "id": "cloze_minna_2_24",
+    "vocabId": "minna_2_24",
+    "targetWord": "テレビ",
+    "targetReading": "テレビ",
+    "sentence": "毎晩リビングで（　　）を見ます。",
+    "fullSentence": "毎晩リビングでテレビを見ます。",
+    "translation": "Mỗi tối tôi xem tivi ở phòng khách.",
+    "options": [
+      "ラジオ",
+      "テレビ",
+      "机",
+      "傘"
+    ],
+    "correctIndex": 1,
+    "explanation": "「テレビ」 là từ mượn (Television), nghĩa là máy vô tuyến truyền hình (tivi)."
+  },
+  {
+    "id": "cloze_minna_2_25",
+    "vocabId": "minna_2_25",
+    "targetWord": "ラジオ",
+    "targetReading": "ラジオ",
+    "sentence": "朝ごはんを食べながら（　　）を聞きます。",
+    "fullSentence": "朝ごはんを食べながらラジオを聞きます。",
+    "translation": "Tôi vừa nghe đài radio vừa ăn sáng.",
+    "options": [
+      "テレビ",
+      "ラジオ",
+      "カメラ",
+      "本"
+    ],
+    "correctIndex": 1,
+    "explanation": "「ラジオ」 nghĩa là máy thu thanh (đài radio)."
+  },
+  {
+    "id": "cloze_minna_2_26",
+    "vocabId": "minna_2_26",
+    "targetWord": "カメラ",
+    "targetReading": "カメラ",
+    "sentence": "旅行で（　　）を使って写真を撮ります。",
+    "fullSentence": "旅行でカメラを使って写真を撮ります。",
+    "translation": "Dùng máy ảnh chụp ảnh khi đi du lịch.",
+    "options": [
+      "テレビ",
+      "時計",
+      "カメラ",
+      "ラジオ"
+    ],
+    "correctIndex": 2,
+    "explanation": "「カメラ」 nghĩa là chiếc máy ảnh."
+  },
+  {
+    "id": "cloze_minna_2_27",
+    "vocabId": "minna_2_27",
+    "targetWord": "コンピュータ",
+    "targetReading": "コンピュータ",
+    "sentence": "会社で（　　）を使って仕事をします。",
+    "fullSentence": "会社でコンピュータを使って仕事をします。",
+    "translation": "Sử dụng máy vi tính để làm việc ở công ty.",
+    "options": [
+      "ラジオ",
+      "コンピュータ",
+      "テレビ",
+      "テープレコーダー"
+    ],
+    "correctIndex": 1,
+    "explanation": "「コンピュータ」 nghĩa là máy vi tính (máy tính điện tử)."
+  },
+  {
+    "id": "cloze_minna_2_28",
+    "vocabId": "minna_2_28",
+    "targetWord": "自動車",
+    "targetReading": "じどうしゃ",
+    "sentence": "日本の（　　）は世界中で人気があります。",
+    "fullSentence": "日本の自動車は世界中で人気があります。",
+    "translation": "Ô tô của Nhật Bản rất được ưa chuộng trên toàn thế giới.",
+    "options": [
+      "自動車",
+      "時計",
+      "ラジオ",
+      "机"
+    ],
+    "correctIndex": 0,
+    "explanation": "「自動車」（じどうしゃ） nghĩa là xe ô tô, xe hơi."
+  },
+  {
+    "id": "cloze_minna_2_29",
+    "vocabId": "minna_2_29",
+    "targetWord": "机",
+    "targetReading": "つくえ",
+    "sentence": "（　　）の上に本とノートがあります。",
+    "fullSentence": "机の上に本とノートがあります。",
+    "translation": "Trên bàn có sách và vở.",
+    "options": [
+      "いす",
+      "机",
+      "かばん",
+      "傘"
+    ],
+    "correctIndex": 1,
+    "explanation": "「机」（つくえ） nghĩa là cái bàn làm việc, bàn học."
+  },
+  {
+    "id": "cloze_minna_2_30",
+    "vocabId": "minna_2_30",
+    "targetWord": "いす",
+    "targetReading": "いす",
+    "sentence": "どうぞ、（　　）に座ってください。",
+    "fullSentence": "どうぞ、いすに座ってください。",
+    "translation": "Xin mời, hãy ngồi xuống ghế.",
+    "options": [
+      "机",
+      "いす",
+      "かばん",
+      "本"
+    ],
+    "correctIndex": 1,
+    "explanation": "「いす」 nghĩa là cái ghế."
+  },
+  {
+    "id": "cloze_minna_2_31",
+    "vocabId": "minna_2_31",
+    "targetWord": "チョコレート",
+    "targetReading": "チョコレート",
+    "sentence": "バレンタインデーに（　　）をあげます。",
+    "fullSentence": "バレンタインデーにチョコレートをあげます。",
+    "translation": "Tặng sô-cô-la vào ngày lễ tình nhân Valentine.",
+    "options": [
+      "コーヒー",
+      "チョコレート",
+      "タバコ",
+      "本"
+    ],
+    "correctIndex": 1,
+    "explanation": "「チョコレート」 nghĩa là sô-cô-la."
+  },
+  {
+    "id": "cloze_minna_2_32",
+    "vocabId": "minna_2_32",
+    "targetWord": "コーヒー",
+    "targetReading": "コーヒー",
+    "sentence": "喫茶店で温かい（　　）を飲みます。",
+    "fullSentence": "喫茶店で温かいコーヒーを飲みます。",
+    "translation": "Uống cà phê nóng ở quán giải khát.",
+    "options": [
+      "チョコレート",
+      "コーヒー",
+      "ラジオ",
+      "辞書"
+    ],
+    "correctIndex": 1,
+    "explanation": "「コーヒー」 nghĩa là cà phê."
+  },
+  {
+    "id": "cloze_minna_2_33",
+    "vocabId": "minna_2_33",
+    "targetWord": "英語",
+    "targetReading": "えいご",
+    "sentence": "ワット先生は大学で（　　）を教えています。",
+    "fullSentence": "ワット先生は大学で英語を教えています。",
+    "translation": "Thầy Watt dạy tiếng Anh ở trường đại học.",
+    "options": [
+      "日本語",
+      "英語",
+      "フランス",
+      "ドイツ"
+    ],
+    "correctIndex": 1,
+    "explanation": "「英語」（えいご） nghĩa là tiếng Anh."
+  },
+  {
+    "id": "cloze_minna_2_34",
+    "vocabId": "minna_2_34",
+    "targetWord": "日本語",
+    "targetReading": "にほんご",
+    "sentence": "（　　）の勉強はとても面白いです。",
+    "fullSentence": "日本語の勉強はとても面白いです。",
+    "translation": "Học tiếng Nhật rất là thú vị.",
+    "options": [
+      "英語",
+      "日本語",
+      "中国人",
+      "韓国"
+    ],
+    "correctIndex": 1,
+    "explanation": "「日本語」（にほんご） nghĩa là tiếng Nhật."
+  },
+  {
+    "id": "cloze_minna_2_35",
+    "vocabId": "minna_2_35",
+    "targetWord": "∼語",
+    "targetReading": "∼ご",
+    "sentence": "サントスさんはポルトガル（　　）を話します。",
+    "fullSentence": "サントスさんはポルトガル語を話します。",
+    "translation": "Anh Santos nói tiếng Bồ Đào Nha.",
+    "options": [
+      "人",
+      "語",
+      "本",
+      "年"
+    ],
+    "correctIndex": 1,
+    "explanation": "Tên quốc gia + 「語」（ご） để chỉ ngôn ngữ của quốc gia đó."
+  },
+  {
+    "id": "cloze_minna_2_36",
+    "vocabId": "minna_2_36",
+    "targetWord": "何",
+    "targetReading": "なん",
+    "sentence": "これは（　　）ですか。…名刺です。",
+    "fullSentence": "これは何ですか。…名刺です。",
+    "translation": "Đây là cái gì vậy? ...Là danh thiếp.",
+    "options": [
+      "だれ",
+      "どこ",
+      "何",
+      "いつ"
+    ],
+    "correctIndex": 2,
+    "explanation": "「何」（なん） là từ để hỏi đồ vật (cái gì)."
+  },
+  {
+    "id": "cloze_minna_2_37",
+    "vocabId": "minna_2_37",
+    "targetWord": "そう",
+    "targetReading": "そう",
+    "sentence": "それは辞書ですか。…はい、（　　）です。",
+    "fullSentence": "それは辞書ですか。…はい、そうです。",
+    "translation": "Đó là cuốn từ điển phải không? ...Vâng, đúng vậy.",
+    "options": [
+      "ちがいます",
+      "そう",
+      "だれ",
+      "これ"
+    ],
+    "correctIndex": 1,
+    "explanation": "「はい、そうです」 dùng để xác nhận câu hỏi nghi vấn là đúng như vậy."
+  },
+  {
+    "id": "cloze_minna_2_38",
+    "vocabId": "minna_2_38",
+    "targetWord": "違います。",
+    "targetReading": "ちがいます。",
+    "sentence": "これはミラーさんの傘ですか。…いいえ、（　　）。佐藤さんのです。",
+    "fullSentence": "これはミラーさんの傘ですか。…いいえ、違います。佐藤さんのです。",
+    "translation": "Đây có phải ô của anh Miller không? ...Không, nhầm rồi. Là của chị Sato.",
+    "options": [
+      "そうです",
+      "違います",
+      "わかりました",
+      "どういたしまして"
+    ],
+    "correctIndex": 1,
+    "explanation": "「いいえ、違います」（ちがいます） dùng khi muốn phủ định thông tin (không phải, nhầm rồi)."
+  },
+  {
+    "id": "cloze_minna_2_39",
+    "vocabId": "minna_2_39",
+    "targetWord": "そうですか。",
+    "targetReading": "そうですか。",
+    "sentence": "この傘は木村さんのですよ。…あ、（　　）。ありがとうございます。",
+    "fullSentence": "この傘は木村さんのですよ。…あ、そうですか。ありがとうございます。",
+    "translation": "Chiếc ô này là của chị Kimura đấy. ...A, thế à? Cảm ơn bạn nhé.",
+    "options": [
+      "そうですか",
+      "どうぞ",
+      "はじめまして",
+      "おねがいします"
+    ],
+    "correctIndex": 0,
+    "explanation": "「そうですか」 dùng khi vừa tiếp nhận một thông tin mới từ người khác (vậy à, thế à)."
+  },
+  {
+    "id": "cloze_minna_2_40",
+    "vocabId": "minna_2_40",
+    "targetWord": "あのう",
+    "targetReading": "あのう",
+    "sentence": "（　　）、これはほんの気持ちですが、どうぞ。",
+    "fullSentence": "あのう、これはほんの気持ちですが、どうぞ。",
+    "translation": "À ừm..., đây là chút lòng thành, xin mời nhận ạ.",
+    "options": [
+      "はい",
+      "あのう",
+      "さようなら",
+      "いいえ"
+    ],
+    "correctIndex": 1,
+    "explanation": "「あのう」 dùng biểu thị sự ngập ngừng, e ngại một cách lịch sự trước khi mở lời."
+  },
+  {
+    "id": "cloze_minna_2_41",
+    "vocabId": "minna_2_41",
+    "targetWord": "ほんの気持ちです",
+    "targetReading": "ほんのきもちです",
+    "sentence": "これは（　　）。どうぞお受け取りください。",
+    "fullSentence": "これはほんの気持ちです。どうぞお受け取りください。",
+    "translation": "Đây chỉ là chút quà nhỏ/chút lòng thành thôi. Xin anh vui lòng nhận cho.",
+    "options": [
+      "お世話になります",
+      "ほんの気持ちです",
+      "こちらこそ",
+      "失礼ですが"
+    ],
+    "correctIndex": 1,
+    "explanation": "「ほんの気持ちです」 là câu nói khiêm tốn khi tặng quà cho ai đó (chút quà mọn)."
+  },
+  {
+    "id": "cloze_minna_2_42",
+    "vocabId": "minna_2_42",
+    "targetWord": "どうぞ",
+    "targetReading": "どうぞ",
+    "sentence": "お茶が入りました。（　　）召し上がってください。",
+    "fullSentence": "お茶が入りました。どうぞ召し上がってください。",
+    "translation": "Trà đã pha xong rồi. Xin mời bạn dùng ạ.",
+    "options": [
+      "どうぞ",
+      "どうも",
+      "はい",
+      "いいえ"
+    ],
+    "correctIndex": 0,
+    "explanation": "「どうぞ」 dùng để mời ai đó làm gì (xin mời)."
+  },
+  {
+    "id": "cloze_minna_2_43",
+    "vocabId": "minna_2_43",
+    "targetWord": "どうも",
+    "targetReading": "どうも",
+    "sentence": "荷物を持ってくれて、（　　）ありがとう。",
+    "fullSentence": "荷物を持ってくれて、どうもありがとう。",
+    "translation": "Cảm ơn bạn nhiều vì đã xách hành lý giúp tôi.",
+    "options": [
+      "どうぞ",
+      "どうも",
+      "いいえ",
+      "じゃあ"
+    ],
+    "correctIndex": 1,
+    "explanation": "「どうも」 dùng để tăng mức độ cảm ơn hoặc chào hỏi ngắn gọn."
+  },
+  {
+    "id": "cloze_minna_2_44",
+    "vocabId": "minna_2_44",
+    "targetWord": "[どうも] ありがとう[ございます]",
+    "targetReading": "[どうも] ありがとう[ございます]",
+    "sentence": "素敵なプレゼントを（　　）。",
+    "fullSentence": "素敵なプレゼントをどうもありがとうございます。",
+    "translation": "Cảm ơn bạn rất nhiều vì món quà tuyệt vời.",
+    "options": [
+      "失礼します",
+      "どうもありがとうございます",
+      "ごちそうさまでした",
+      "お邪魔します"
+    ],
+    "correctIndex": 1,
+    "explanation": "「どうもありがとうございます」 là lời cảm ơn trang trọng và lịch sự."
+  },
+  {
+    "id": "cloze_minna_2_45",
+    "vocabId": "minna_2_45",
+    "targetWord": "これから お世話になります",
+    "targetReading": "これから おせわになります",
+    "sentence": "隣の部屋に引っ越してきました。（　　）。",
+    "fullSentence": "隣の部屋に引っ越してきました。これからお世話になります。",
+    "translation": "Tôi vừa chuyển đến phòng bên cạnh. Từ nay mong được anh/chị giúp đỡ.",
+    "options": [
+      "お邪魔しました",
+      "これからお世話になります",
+      "おかげさまで",
+      "いってきます"
+    ],
+    "correctIndex": 1,
+    "explanation": "「これからお世話になります」 dùng khi bắt đầu một mối quan hệ hàng xóm, công việc mới."
+  },
+  {
+    "id": "cloze_minna_2_46",
+    "vocabId": "minna_2_46",
+    "targetWord": "こちらこそ よろしく",
+    "targetReading": "こちらこそ よろしく",
+    "sentence": "どうぞよろしくお願いします。…（　　）。",
+    "fullSentence": "どうぞよろしくお願いします。…こちらこそよろしくお願いします。",
+    "translation": "Rất mong được anh giúp đỡ. ...Chính tôi mới mong được anh giúp đỡ.",
+    "options": [
+      "お疲れ様でした",
+      "こちらこそよろしくお願いします",
+      "ごめんなさい",
+      "いってらっしゃい"
+    ],
+    "correctIndex": 1,
+    "explanation": "「こちらこそよろしくお願いします」 dùng đáp lại câu chào của đối phương để thể hiện sự tương hỗ."
+  }
+]

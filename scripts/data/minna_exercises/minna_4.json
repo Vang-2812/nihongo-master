@@ -1,0 +1,937 @@
+[
+  {
+    "id": "cloze_minna_4_0",
+    "vocabId": "minna_4_0",
+    "targetWord": "起きます",
+    "targetReading": "おきます",
+    "sentence": "わたしは毎朝6時に（　　）。",
+    "fullSentence": "わたしは毎朝6時に起きます。",
+    "translation": "Tôi thức dậy vào lúc 6 giờ mỗi sáng.",
+    "options": [
+      "起きます",
+      "寝ます",
+      "働きます",
+      "終わります"
+    ],
+    "correctIndex": 0,
+    "explanation": "「起きます」（おきます） nghĩa là thức dậy."
+  },
+  {
+    "id": "cloze_minna_4_1",
+    "vocabId": "minna_4_1",
+    "targetWord": "寝ます",
+    "targetReading": "ねます",
+    "sentence": "毎晩11時に（　　）。",
+    "fullSentence": "毎晩11時に寝ます。",
+    "translation": "Mỗi tối tôi đi ngủ lúc 11 giờ.",
+    "options": [
+      "起きます",
+      "寝ます",
+      "勉強します",
+      "休みます"
+    ],
+    "correctIndex": 1,
+    "explanation": "「寝ます」（ねます） nghĩa là ngủ, đi ngủ."
+  },
+  {
+    "id": "cloze_minna_4_2",
+    "vocabId": "minna_4_2",
+    "targetWord": "働きます",
+    "targetReading": "はたらきます",
+    "sentence": "父は銀行で（　　）。",
+    "fullSentence": "父は銀行で働きます。",
+    "translation": "Bố tôi làm việc ở ngân hàng.",
+    "options": [
+      "寝ます",
+      "働きます",
+      "起きます",
+      "終わります"
+    ],
+    "correctIndex": 1,
+    "explanation": "「働きます」（はたらきます） nghĩa là làm việc, lao động."
+  },
+  {
+    "id": "cloze_minna_4_3",
+    "vocabId": "minna_4_3",
+    "targetWord": "休みます",
+    "targetReading": "やすみます",
+    "sentence": "土曜日と日曜日は会社を（　　）。",
+    "fullSentence": "土曜日と日曜日は会社を休みます。",
+    "translation": "Thứ bảy và chủ nhật tôi nghỉ làm ở công ty.",
+    "options": [
+      "働きます",
+      "休みます",
+      "勉強します",
+      "起きます"
+    ],
+    "correctIndex": 1,
+    "explanation": "「休みます」（やすみます） nghĩa là nghỉ ngơi, nghỉ phép."
+  },
+  {
+    "id": "cloze_minna_4_4",
+    "vocabId": "minna_4_4",
+    "targetWord": "勉強します",
+    "targetReading": "べんきょうします",
+    "sentence": "毎晩日本語を（　　）。",
+    "fullSentence": "毎晩日本語を勉強します。",
+    "translation": "Mỗi tối tôi học tiếng Nhật.",
+    "options": [
+      "寝ます",
+      "勉強します",
+      "働きます",
+      "終わります"
+    ],
+    "correctIndex": 1,
+    "explanation": "「勉強します」（べんきょうします） nghĩa là học tập."
+  },
+  {
+    "id": "cloze_minna_4_5",
+    "vocabId": "minna_4_5",
+    "targetWord": "終わります",
+    "targetReading": "おわります",
+    "sentence": "仕事は午後5時に（　　）。",
+    "fullSentence": "仕事は午後5時に終わります。",
+    "translation": "Công việc kết thúc vào lúc 5 giờ chiều.",
+    "options": [
+      "起きます",
+      "始まります",
+      "終わります",
+      "寝ます"
+    ],
+    "correctIndex": 2,
+    "explanation": "「終わります」（おわります） nghĩa là kết thúc, xong."
+  },
+  {
+    "id": "cloze_minna_4_6",
+    "vocabId": "minna_4_6",
+    "targetWord": "デパート",
+    "targetReading": "デパート",
+    "sentence": "（　　）で服と靴を買いました。",
+    "fullSentence": "デパートで服と靴を買いました。",
+    "translation": "Tôi mua quần áo và giày ở trung tâm thương mại.",
+    "options": [
+      "デパート",
+      "郵便局",
+      "図書館",
+      "美術館"
+    ],
+    "correctIndex": 0,
+    "explanation": "「デパート」 nghĩa là trung tâm thương mại, cửa hàng bách hóa."
+  },
+  {
+    "id": "cloze_minna_4_7",
+    "vocabId": "minna_4_7",
+    "targetWord": "銀行",
+    "targetReading": "ぎんこう",
+    "sentence": "（　　）は午前9時から午後3時までです。",
+    "fullSentence": "銀行は午前9時から午後3時までです。",
+    "translation": "Ngân hàng mở cửa từ 9 giờ sáng đến 3 giờ chiều.",
+    "options": [
+      "郵便局",
+      "銀行",
+      "図書館",
+      "美術館"
+    ],
+    "correctIndex": 1,
+    "explanation": "「銀行」（ぎんこう） nghĩa là ngân hàng."
+  },
+  {
+    "id": "cloze_minna_4_8",
+    "vocabId": "minna_4_8",
+    "targetWord": "郵便局",
+    "targetReading": "ゆうびんきょく",
+    "sentence": "（　　）で手紙を出します。",
+    "fullSentence": "郵便局で手紙を出します。",
+    "translation": "Tôi gửi thư ở bưu điện.",
+    "options": [
+      "図書館",
+      "郵便局",
+      "銀行",
+      "デパート"
+    ],
+    "correctIndex": 1,
+    "explanation": "「郵便局」（ゆうびんきょく） nghĩa là bưu điện."
+  },
+  {
+    "id": "cloze_minna_4_9",
+    "vocabId": "minna_4_9",
+    "targetWord": "図書館",
+    "targetReading": "としょかん",
+    "sentence": "（　　）で本を借ります。",
+    "fullSentence": "図書館で本を借ります。",
+    "translation": "Tôi mượn sách ở thư viện.",
+    "options": [
+      "美術館",
+      "図書館",
+      "郵便局",
+      "銀行"
+    ],
+    "correctIndex": 1,
+    "explanation": "「図書館」（としょかん） nghĩa là thư viện."
+  },
+  {
+    "id": "cloze_minna_4_10",
+    "vocabId": "minna_4_10",
+    "targetWord": "美術館",
+    "targetReading": "びじゅつかん",
+    "sentence": "日曜日、（　　）で絵を見ました。",
+    "fullSentence": "日曜日、美術館で絵を見ました。",
+    "translation": "Chủ nhật, tôi đã đi xem tranh ở bảo tàng mỹ thuật.",
+    "options": [
+      "図書館",
+      "美術館",
+      "郵便局",
+      "銀行"
+    ],
+    "correctIndex": 1,
+    "explanation": "「美術館」（びじゅつかん） nghĩa là bảo tàng mỹ thuật."
+  },
+  {
+    "id": "cloze_minna_4_11",
+    "vocabId": "minna_4_11",
+    "targetWord": "今",
+    "targetReading": "いま",
+    "sentence": "（　　）、何時ですか。…4時です。",
+    "fullSentence": "今、何時ですか。…4時です。",
+    "translation": "Bây giờ là mấy giờ? ...Là 4 giờ.",
+    "options": [
+      "きのう",
+      "今",
+      "あした",
+      "おととい"
+    ],
+    "correctIndex": 1,
+    "explanation": "「今」（いま） nghĩa là bây giờ, hiện tại."
+  },
+  {
+    "id": "cloze_minna_4_12",
+    "vocabId": "minna_4_12",
+    "targetWord": "～時",
+    "targetReading": "～じ",
+    "sentence": "会議は午前10（　　）からです。",
+    "fullSentence": "会議は午前10時からです。",
+    "translation": "Cuộc họp bắt đầu từ 10 giờ sáng.",
+    "options": [
+      "時",
+      "分",
+      "歳",
+      "円"
+    ],
+    "correctIndex": 0,
+    "explanation": "Số đếm + 「時」（じ） dùng để chỉ giờ."
+  },
+  {
+    "id": "cloze_minna_4_13",
+    "vocabId": "minna_4_13",
+    "targetWord": "～分",
+    "targetReading": "～ふん",
+    "sentence": "今、2時15（　　）です。",
+    "fullSentence": "今、2時15分です。",
+    "translation": "Bây giờ là 2 giờ 15 phút.",
+    "options": [
+      "分",
+      "時",
+      "日",
+      "年"
+    ],
+    "correctIndex": 0,
+    "explanation": "Số đếm + 「分」（ふん/ぷん） dùng để chỉ phút."
+  },
+  {
+    "id": "cloze_minna_4_14",
+    "vocabId": "minna_4_14",
+    "targetWord": "半",
+    "targetReading": "はん",
+    "sentence": "毎朝7時（　　）に朝ごはんを食べます。",
+    "fullSentence": "毎朝7時半に朝ごはんを食べます。",
+    "translation": "Mỗi sáng tôi ăn sáng lúc 7 giờ rưỡi.",
+    "options": [
+      "半",
+      "分",
+      "時",
+      "前"
+    ],
+    "correctIndex": 0,
+    "explanation": "「半」（はん） nghĩa là một nửa, 30 phút (rưỡi)."
+  },
+  {
+    "id": "cloze_minna_4_15",
+    "vocabId": "minna_4_15",
+    "targetWord": "何時",
+    "targetReading": "なんじ",
+    "sentence": "今、（　　）ですか。…3時20分です。",
+    "fullSentence": "今、何時ですか。…3時20分です。",
+    "translation": "Bây giờ là mấy giờ? ...3 giờ 20 phút.",
+    "options": [
+      "何時",
+      "何曜日",
+      "何番",
+      "何歳"
+    ],
+    "correctIndex": 0,
+    "explanation": "「何時」（なんじ） dùng để hỏi thời gian (mấy giờ)."
+  },
+  {
+    "id": "cloze_minna_4_16",
+    "vocabId": "minna_4_16",
+    "targetWord": "何分",
+    "targetReading": "なんぷん",
+    "sentence": "テストはあと（　　）ですか。…あと10分です。",
+    "fullSentence": "テストはあと何分ですか。…あと10分です。",
+    "translation": "Bài kiểm tra còn lại mấy phút? ...Còn 10 phút nữa.",
+    "options": [
+      "何時",
+      "何分",
+      "何曜日",
+      "何番"
+    ],
+    "correctIndex": 1,
+    "explanation": "「何分」（なんぷん） dùng để hỏi số phút (mấy phút)."
+  },
+  {
+    "id": "cloze_minna_4_17",
+    "vocabId": "minna_4_17",
+    "targetWord": "午前",
+    "targetReading": "ごぜん",
+    "sentence": "（　　）9時に学校へ行きます。",
+    "fullSentence": "午前9時に学校へ行きます。",
+    "translation": "Tôi đến trường lúc 9 giờ sáng.",
+    "options": [
+      "午前",
+      "午後",
+      "今晩",
+      "おととい"
+    ],
+    "correctIndex": 0,
+    "explanation": "「午前」（ごぜん） nghĩa là buổi sáng (a.m.)."
+  },
+  {
+    "id": "cloze_minna_4_18",
+    "vocabId": "minna_4_18",
+    "targetWord": "午後",
+    "targetReading": "ごご",
+    "sentence": "（　　）3時にお茶を飲みます。",
+    "fullSentence": "午後3時にお茶を飲みます。",
+    "translation": "Tôi uống trà lúc 3 giờ chiều.",
+    "options": [
+      "午前",
+      "午後",
+      "あさって",
+      "けさ"
+    ],
+    "correctIndex": 1,
+    "explanation": "「午後」（ごご） nghĩa là buổi chiều (p.m.)."
+  },
+  {
+    "id": "cloze_minna_4_19",
+    "vocabId": "minna_4_19",
+    "targetWord": "朝",
+    "targetReading": "あさ",
+    "sentence": "（　　）ジョギングをします。空気がきれいです。",
+    "fullSentence": "朝ジョギングをします。空気がきれいです。",
+    "translation": "Buổi sáng tôi chạy bộ. Không khí rất trong lành.",
+    "options": [
+      "昼",
+      "晩",
+      "朝",
+      "夜"
+    ],
+    "correctIndex": 2,
+    "explanation": "「朝」（あさ） nghĩa là buổi sáng."
+  },
+  {
+    "id": "cloze_minna_4_20",
+    "vocabId": "minna_4_20",
+    "targetWord": "昼",
+    "targetReading": "ひる",
+    "sentence": "（　　）は食堂でラーメンを食べました。",
+    "fullSentence": "昼は食堂でラーメンを食べました。",
+    "translation": "Buổi trưa tôi đã ăn mì ramen ở nhà ăn.",
+    "options": [
+      "朝",
+      "昼",
+      "夜",
+      "晩"
+    ],
+    "correctIndex": 1,
+    "explanation": "「昼」（ひる） nghĩa là buổi trưa, ban ngày."
+  },
+  {
+    "id": "cloze_minna_4_21",
+    "vocabId": "minna_4_21",
+    "targetWord": "晩",
+    "targetReading": "ばん（よる）",
+    "sentence": "（　　）家族と一緒にテレビを見ます。",
+    "fullSentence": "晩家族と一緒にテレビを見ます。",
+    "translation": "Buổi tối tôi cùng gia đình xem tivi.",
+    "options": [
+      "朝",
+      "昼",
+      "晩",
+      "けさ"
+    ],
+    "correctIndex": 2,
+    "explanation": "「晩」（ばん） hoặc 「夜」（よる） nghĩa là buổi tối, đêm."
+  },
+  {
+    "id": "cloze_minna_4_22",
+    "vocabId": "minna_4_22",
+    "targetWord": "おととい",
+    "targetReading": "おととい",
+    "sentence": "（　　）雨が降りました。一昨日です。",
+    "fullSentence": "おととい雨が降りました。一昨日です。",
+    "translation": "Hôm kia trời đã đổ mưa.",
+    "options": [
+      "きのう",
+      "おととい",
+      "あした",
+      "あさって"
+    ],
+    "correctIndex": 1,
+    "explanation": "「おととい」 nghĩa là hôm kia (2 ngày trước)."
+  },
+  {
+    "id": "cloze_minna_4_23",
+    "vocabId": "minna_4_23",
+    "targetWord": "きのう",
+    "targetReading": "きのう",
+    "sentence": "（　　）デパートへ行きました。",
+    "fullSentence": "きのうデパートへ行きました。",
+    "translation": "Hôm qua tôi đã đến trung tâm thương mại.",
+    "options": [
+      "きょう",
+      "あした",
+      "きのう",
+      "あさって"
+    ],
+    "correctIndex": 2,
+    "explanation": "「きのう」 nghĩa là ngày hôm qua."
+  },
+  {
+    "id": "cloze_minna_4_24",
+    "vocabId": "minna_4_24",
+    "targetWord": "きょう",
+    "targetReading": "きょう",
+    "sentence": "（　　）は何曜日ですか。…金曜日です。",
+    "fullSentence": "きょうは何曜日ですか。…金曜日です。",
+    "translation": "Hôm nay là thứ mấy? ...Là thứ sáu.",
+    "options": [
+      "きょう",
+      "きのう",
+      "あした",
+      "おととい"
+    ],
+    "correctIndex": 0,
+    "explanation": "「きょう」 nghĩa là ngày hôm nay."
+  },
+  {
+    "id": "cloze_minna_4_25",
+    "vocabId": "minna_4_25",
+    "targetWord": "あした",
+    "targetReading": "あした",
+    "sentence": "（　　）テストがありますから、今晩勉強します。",
+    "fullSentence": "あしたテストがありますから、今晩勉強します。",
+    "translation": "Vì ngày mai có bài kiểm tra nên tối nay tôi sẽ học.",
+    "options": [
+      "きのう",
+      "おととい",
+      "あした",
+      "けさ"
+    ],
+    "correctIndex": 2,
+    "explanation": "「あした」 nghĩa là ngày mai."
+  },
+  {
+    "id": "cloze_minna_4_26",
+    "vocabId": "minna_4_26",
+    "targetWord": "あさって",
+    "targetReading": "あさって",
+    "sentence": "あしたは土曜日で、（　　）は日曜日です。",
+    "fullSentence": "あしたは土曜日で、あさっては日曜日です。",
+    "translation": "Ngày mai là thứ bảy, và ngày kia là chủ nhật.",
+    "options": [
+      "きのう",
+      "あさって",
+      "おととい",
+      "きょう"
+    ],
+    "correctIndex": 1,
+    "explanation": "「あさって」 nghĩa là ngày kia (2 ngày sau)."
+  },
+  {
+    "id": "cloze_minna_4_27",
+    "vocabId": "minna_4_27",
+    "targetWord": "けさ",
+    "targetReading": "けさ",
+    "sentence": "（　　）パンを食べました。今朝です。",
+    "fullSentence": "けさパンを食べました。今朝です。",
+    "translation": "Sáng nay tôi đã ăn bánh mì.",
+    "options": [
+      "けさ",
+      "今晩",
+      "まいあさ",
+      "まいばん"
+    ],
+    "correctIndex": 0,
+    "explanation": "「けさ」（今朝） nghĩa là sáng nay."
+  },
+  {
+    "id": "cloze_minna_4_28",
+    "vocabId": "minna_4_28",
+    "targetWord": "今晩",
+    "targetReading": "こんばん",
+    "sentence": "（　　）映画を見に行きます。",
+    "fullSentence": "今晩映画を見に行きます。",
+    "translation": "Tối nay tôi sẽ đi xem phim.",
+    "options": [
+      "けさ",
+      "今晩",
+      "おととい",
+      "きのう"
+    ],
+    "correctIndex": 1,
+    "explanation": "「今晩」（こんばん） nghĩa là tối nay."
+  },
+  {
+    "id": "cloze_minna_4_29",
+    "vocabId": "minna_4_29",
+    "targetWord": "休み",
+    "targetReading": "やすみ",
+    "sentence": "銀行の（　　）は土曜日と日曜日です。",
+    "fullSentence": "銀行の休みは土曜日と日曜日です。",
+    "translation": "Ngày nghỉ của ngân hàng là thứ bảy và chủ nhật.",
+    "options": [
+      "仕事",
+      "休み",
+      "勉強",
+      "番号"
+    ],
+    "correctIndex": 1,
+    "explanation": "「休み」（やすみ） là danh từ nghĩa là ngày nghỉ, kỳ nghỉ."
+  },
+  {
+    "id": "cloze_minna_4_30",
+    "vocabId": "minna_4_30",
+    "targetWord": "昼休み",
+    "targetReading": "ひるやすみ",
+    "sentence": "（　　）は12時から1時までです。",
+    "fullSentence": "昼休みは12時から1時までです。",
+    "translation": "Nghỉ trưa là từ 12 giờ đến 1 giờ.",
+    "options": [
+      "昼休み",
+      "今晩",
+      "朝",
+      "夜"
+    ],
+    "correctIndex": 0,
+    "explanation": "「昼休み」（ひるやすみ） nghĩa là giờ nghỉ trưa."
+  },
+  {
+    "id": "cloze_minna_4_31",
+    "vocabId": "minna_4_31",
+    "targetWord": "毎朝",
+    "targetReading": "まいあさ",
+    "sentence": "（　　）新聞を読みます。",
+    "fullSentence": "毎朝新聞を読みます。",
+    "translation": "Mỗi sáng tôi đều đọc báo.",
+    "options": [
+      "けさ",
+      "毎朝",
+      "毎晩",
+      "あした"
+    ],
+    "correctIndex": 1,
+    "explanation": "「毎朝」（まいあさ） nghĩa là mỗi buổi sáng."
+  },
+  {
+    "id": "cloze_minna_4_32",
+    "vocabId": "minna_4_32",
+    "targetWord": "毎晩",
+    "targetReading": "まいばん",
+    "sentence": "（　　）日記を書きます。",
+    "fullSentence": "毎晩日記を書きます。",
+    "translation": "Mỗi tối tôi đều viết nhật ký.",
+    "options": [
+      "毎朝",
+      "毎晩",
+      "毎日",
+      "けさ"
+    ],
+    "correctIndex": 1,
+    "explanation": "「毎晩」（まいばん） nghĩa là mỗi buổi tối."
+  },
+  {
+    "id": "cloze_minna_4_33",
+    "vocabId": "minna_4_33",
+    "targetWord": "毎日",
+    "targetReading": "まいにち",
+    "sentence": "（　　）日本語を勉強します。休みはありません。",
+    "fullSentence": "毎日日本語を勉強します。休みはありません。",
+    "translation": "Mỗi ngày tôi đều học tiếng Nhật. Không có ngày nghỉ.",
+    "options": [
+      "毎日",
+      "きのう",
+      "おととい",
+      "あさって"
+    ],
+    "correctIndex": 0,
+    "explanation": "「毎日」（まいにち） nghĩa là mỗi ngày, hàng ngày."
+  },
+  {
+    "id": "cloze_minna_4_34",
+    "vocabId": "minna_4_43",
+    "targetWord": "月曜日",
+    "targetReading": "げつようび",
+    "sentence": "週の始まりは（　　）です。",
+    "fullSentence": "週の始まりは月曜日です。",
+    "translation": "Khởi đầu của tuần là thứ hai.",
+    "options": [
+      "月曜日",
+      "火曜日",
+      "水曜日",
+      "木曜日"
+    ],
+    "correctIndex": 0,
+    "explanation": "「月曜日」（げつようび） nghĩa là thứ hai."
+  },
+  {
+    "id": "cloze_minna_4_35",
+    "vocabId": "minna_4_35",
+    "targetWord": "火曜日",
+    "targetReading": "かようび",
+    "sentence": "月曜日の次は（　　）です。",
+    "fullSentence": "月曜日の次は火曜日です。",
+    "translation": "Tiếp sau thứ hai là thứ ba.",
+    "options": [
+      "火曜日",
+      "水曜日",
+      "金曜日",
+      "日曜日"
+    ],
+    "correctIndex": 0,
+    "explanation": "「火曜日」（かようび） nghĩa là thứ ba."
+  },
+  {
+    "id": "cloze_minna_4_36",
+    "vocabId": "minna_4_36",
+    "targetWord": "水曜日",
+    "targetReading": "すいようび",
+    "sentence": "（　　）は週の真ん中の日です。",
+    "fullSentence": "水曜日は週の真ん中の日です。",
+    "translation": "Thứ tư là ngày giữa tuần.",
+    "options": [
+      "水曜日",
+      "木曜日",
+      "土曜日",
+      "月曜日"
+    ],
+    "correctIndex": 0,
+    "explanation": "「水曜日」（すいようび） nghĩa là thứ tư."
+  },
+  {
+    "id": "cloze_minna_4_37",
+    "vocabId": "minna_4_37",
+    "targetWord": "木曜日",
+    "targetReading": "もくようび",
+    "sentence": "金曜日の前は（　　）です。",
+    "fullSentence": "金曜日の前は木曜日です。",
+    "translation": "Trước thứ sáu là thứ năm.",
+    "options": [
+      "木曜日",
+      "火曜日",
+      "土曜日",
+      "日曜日"
+    ],
+    "correctIndex": 0,
+    "explanation": "「木曜日」（もくようび） nghĩa là thứ năm."
+  },
+  {
+    "id": "cloze_minna_4_38",
+    "vocabId": "minna_4_38",
+    "targetWord": "金曜日",
+    "targetReading": "きんようび",
+    "sentence": "（　　）の夜、友達と食事に行きます。",
+    "fullSentence": "金曜日の夜、友達と食事に行きます。",
+    "translation": "Tối thứ sáu tôi đi ăn cùng bạn bè.",
+    "options": [
+      "金曜日",
+      "月曜日",
+      "火曜日",
+      "水曜日"
+    ],
+    "correctIndex": 0,
+    "explanation": "「金曜日」（きんようび） nghĩa là thứ sáu."
+  },
+  {
+    "id": "cloze_minna_4_39",
+    "vocabId": "minna_4_39",
+    "targetWord": "土曜日",
+    "targetReading": "どようび",
+    "sentence": "（　　）は学校が休みです。",
+    "fullSentence": "土曜日は学校が休みです。",
+    "translation": "Thứ bảy trường học được nghỉ.",
+    "options": [
+      "月曜日",
+      "火曜日",
+      "水曜日",
+      "土曜日"
+    ],
+    "correctIndex": 3,
+    "explanation": "「土曜日」（どようび） nghĩa là thứ bảy."
+  },
+  {
+    "id": "cloze_minna_4_40",
+    "vocabId": "minna_4_40",
+    "targetWord": "日曜日",
+    "targetReading": "にちようび",
+    "sentence": "（　　）に家族と公園へ行きます。",
+    "fullSentence": "日曜日に家族と公園へ行きます。",
+    "translation": "Chủ nhật tôi cùng gia đình đi công viên.",
+    "options": [
+      "月曜日",
+      "木曜日",
+      "日曜日",
+      "火曜日"
+    ],
+    "correctIndex": 2,
+    "explanation": "「日曜日」（にちようび） nghĩa là chủ nhật."
+  },
+  {
+    "id": "cloze_minna_4_41",
+    "vocabId": "minna_4_41",
+    "targetWord": "何曜日",
+    "targetReading": "なんようび",
+    "sentence": "きょうは（　　）ですか。…水曜日です。",
+    "fullSentence": "きょうは何曜日ですか。…水曜日です。",
+    "translation": "Hôm nay là thứ mấy? ...Là thứ tư.",
+    "options": [
+      "何時",
+      "何曜日",
+      "何番",
+      "何日"
+    ],
+    "correctIndex": 1,
+    "explanation": "「何曜日」（なんようび） dùng để hỏi ngày trong tuần (thứ mấy)."
+  },
+  {
+    "id": "cloze_minna_4_42",
+    "vocabId": "minna_4_42",
+    "targetWord": "番号",
+    "targetReading": "ばんごう",
+    "sentence": "電話（　　）を教えてください。",
+    "fullSentence": "電話番号を教えてください。",
+    "translation": "Xin hãy chỉ cho tôi số điện thoại của bạn.",
+    "options": [
+      "番号",
+      "手帳",
+      "時計",
+      "名前"
+    ],
+    "correctIndex": 0,
+    "explanation": "「番号」（ばんごう） nghĩa là số, số hiệu."
+  },
+  {
+    "id": "cloze_minna_4_43",
+    "vocabId": "minna_4_43",
+    "targetWord": "何番",
+    "targetReading": "なんばん",
+    "sentence": "部屋は（　　）ですか。…302号室です。",
+    "fullSentence": "部屋は何番ですか。…302号室です。",
+    "translation": "Phòng là số mấy vậy? ...Là phòng số 302.",
+    "options": [
+      "何番",
+      "何階",
+      "何時",
+      "何曜日"
+    ],
+    "correctIndex": 0,
+    "explanation": "「何番」（なんばん） dùng để hỏi số thứ tự, số hiệu (số mấy)."
+  },
+  {
+    "id": "cloze_minna_4_44",
+    "vocabId": "minna_4_44",
+    "targetWord": "～から",
+    "targetReading": "～から",
+    "sentence": "9時（　　）5時まで働きます。",
+    "fullSentence": "9時から5時まで働きます。",
+    "translation": "Tôi làm việc từ 9 giờ đến 5 giờ.",
+    "options": [
+      "から",
+      "まで",
+      "と",
+      "へ"
+    ],
+    "correctIndex": 0,
+    "explanation": "Trợ từ 「から」 dùng để chỉ điểm xuất phát về thời gian hoặc địa điểm (từ...)."
+  },
+  {
+    "id": "cloze_minna_4_45",
+    "vocabId": "minna_4_45",
+    "targetWord": "～まで",
+    "targetReading": "～まで",
+    "sentence": "月曜日から金曜日（　　）学校があります。",
+    "fullSentence": "月曜日から金曜日まで学校があります。",
+    "translation": "Có giờ học ở trường từ thứ hai đến thứ sáu.",
+    "options": [
+      "から",
+      "まで",
+      "と",
+      "の"
+    ],
+    "correctIndex": 1,
+    "explanation": "Trợ từ 「まで」 dùng để chỉ giới hạn kết thúc về thời gian hoặc địa điểm (đến...)."
+  },
+  {
+    "id": "cloze_minna_4_46",
+    "vocabId": "minna_4_46",
+    "targetWord": "～と～",
+    "targetReading": "～と～",
+    "sentence": "休みは土曜日（　　）日曜日です。",
+    "fullSentence": "休みは土曜日と日曜日です。",
+    "translation": "Ngày nghỉ là thứ bảy và chủ nhật.",
+    "options": [
+      "と",
+      "から",
+      "まで",
+      "も"
+    ],
+    "correctIndex": 0,
+    "explanation": "Trợ từ 「と」 dùng nối hai danh từ tương đương (và, với)."
+  },
+  {
+    "id": "cloze_minna_4_47",
+    "vocabId": "minna_4_47",
+    "targetWord": "そちら",
+    "targetReading": "そちら",
+    "sentence": "（　　）は何時までですか。…午後6時までです。",
+    "fullSentence": "そちらは何時までですか。…午後6時までです。",
+    "translation": "Phía đằng bạn mở cửa đến mấy giờ? ...Đến 6 giờ chiều.",
+    "options": [
+      "こちら",
+      "そちら",
+      "あちら",
+      "どちら"
+    ],
+    "correctIndex": 1,
+    "explanation": "「そちら」 chỉ phía đối phương khi nói chuyện qua điện thoại (bên bạn, phía bạn)."
+  },
+  {
+    "id": "cloze_minna_4_48",
+    "vocabId": "minna_4_48",
+    "targetWord": "大変ですね。",
+    "targetReading": "たいへんですね。",
+    "sentence": "毎晩12時まで残業します。…それは（　　）。",
+    "fullSentence": "毎晩12時まで残業します。…それは大変ですね。",
+    "translation": "Mỗi tối tôi tăng ca đến 12 giờ đêm. ...Thế thì vất vả quá nhỉ.",
+    "options": [
+      "おめでとう",
+      "大変ですね",
+      "よかったですね",
+      "はじめまして"
+    ],
+    "correctIndex": 1,
+    "explanation": "「大変ですね」（たいへんですね） thể hiện sự thấu hiểu và cảm thông khi người khác gặp vất vả."
+  },
+  {
+    "id": "cloze_minna_4_49",
+    "vocabId": "minna_4_49",
+    "targetWord": "えーと",
+    "targetReading": "えーと",
+    "sentence": "電話番号は、（　　）…345の6789です。",
+    "fullSentence": "電話番号は、えーと…345の6789です。",
+    "translation": "Số điện thoại là, à ừm... 345-6789.",
+    "options": [
+      "えーと",
+      "はい",
+      "いいえ",
+      "どうぞ"
+    ],
+    "correctIndex": 0,
+    "explanation": "「えーと」 là từ đệm dùng khi đang suy nghĩ hoặc nhớ lại thông tin (à, ừm)."
+  },
+  {
+    "id": "cloze_minna_4_50",
+    "vocabId": "minna_4_50",
+    "targetWord": "104",
+    "targetReading": "104",
+    "sentence": "電話番号案内は（　　）番です。",
+    "fullSentence": "電話番号案内は104番です。",
+    "translation": "Tổng đài hướng dẫn tra cứu số điện thoại ở Nhật là số 104.",
+    "options": [
+      "104",
+      "110",
+      "119",
+      "100"
+    ],
+    "correctIndex": 0,
+    "explanation": "「104」 là số tổng đài tra cứu danh bạ điện thoại tại Nhật Bản."
+  },
+  {
+    "id": "cloze_minna_4_51",
+    "vocabId": "minna_4_51",
+    "targetWord": "お願いします。",
+    "targetReading": "おねがいします。",
+    "sentence": "大和美術館の電話番号を（　　）。",
+    "fullSentence": "大和美術館の電話番号をお願いします。",
+    "translation": "Làm ơn cho tôi hỏi số điện thoại của bảo tàng mỹ thuật Yamato.",
+    "options": [
+      "お願いします",
+      "いってください",
+      "みてください",
+      "ありました"
+    ],
+    "correctIndex": 0,
+    "explanation": "「お願いします」（おねがいします） dùng khi yêu cầu dịch vụ hoặc nhờ giúp đỡ."
+  },
+  {
+    "id": "cloze_minna_4_52",
+    "vocabId": "minna_4_52",
+    "targetWord": "かしこまりました。",
+    "targetReading": "かしこまりました。",
+    "sentence": "チケットを2枚ください。…はい、（　　）。",
+    "fullSentence": "チケットを2枚ください。…はい、かしこまりました。",
+    "translation": "Làm ơn bán cho tôi 2 vé. ...Vâng, tôi hiểu rồi/có ngay ạ.",
+    "options": [
+      "かしこまりました",
+      "わかりません",
+      "どういたしまして",
+      "ごめんなさい"
+    ],
+    "correctIndex": 0,
+    "explanation": "「かしこまりました」 là câu trả lời chuẩn mực của nhân viên phục vụ khi tiếp nhận yêu cầu."
+  },
+  {
+    "id": "cloze_minna_4_53",
+    "vocabId": "minna_4_53",
+    "targetWord": "お問い合わせの番号",
+    "targetReading": "おといあわせのばんごう",
+    "sentence": "（　　）は03-3456-7890です。",
+    "fullSentence": "お問い合わせの番号は03-3456-7890です。",
+    "translation": "Số điện thoại mà quý khách đang hỏi là 03-3456-7890.",
+    "options": [
+      "お問い合わせの番号",
+      "わたしの番号",
+      "部屋の番号",
+      "銀行の番号"
+    ],
+    "correctIndex": 0,
+    "explanation": "「お問い合わせの番号」（おといあわせのばんごう） là câu thông báo số điện thoại khách hàng vừa hỏi."
+  },
+  {
+    "id": "cloze_minna_4_54",
+    "vocabId": "minna_4_54",
+    "targetWord": "［どうも］ありがとうごさいました。",
+    "targetReading": "［どうも］ありがとうごさいました",
+    "sentence": "番号を教えてくれて、（　　）。",
+    "fullSentence": "番号を教えてくれて、どうもありがとうございました。",
+    "translation": "Cảm ơn bạn rất nhiều vì đã chỉ cho tôi số điện thoại.",
+    "options": [
+      "失礼します",
+      "どうもありがとうございました",
+      "お疲れ様でした",
+      "ごめんなさい"
+    ],
+    "correctIndex": 1,
+    "explanation": "「どうもありがとうございました」 là lời cảm ơn cho sự giúp đỡ đã hoàn thành xong."
+  }
+]
