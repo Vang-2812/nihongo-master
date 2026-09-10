@@ -59,4 +59,50 @@ describe('AI Store', () => {
     useAIStore.getState().toggleTranslationSetting();
     assert.equal(useAIStore.getState().config.showTranslationInQuiz, true);
   });
+
+  it('independently caches and retrieves global and custom exercises', () => {
+    const globalEx = [
+      {
+        id: 'g_1',
+        vocabId: 'item_1',
+        targetWord: 'わたし',
+        targetReading: 'わたし',
+        sentence: '（　　）は学生です。',
+        fullSentence: 'わたしは学生です。',
+        translation: 'Tôi là học sinh.',
+        options: ['わたし', 'あなた', 'せんせい', 'だれ'],
+        correctIndex: 0,
+        explanation: 'Dùng わたし',
+      },
+    ];
+
+    const customEx = [
+      {
+        id: 'c_1',
+        vocabId: 'item_2',
+        targetWord: 'あなた',
+        targetReading: 'あなた',
+        sentence: '（　　）は先生ですか。',
+        fullSentence: 'あなたは先生ですか。',
+        translation: 'Bạn là giáo viên phải không?',
+        options: ['あなた', 'わたし', 'かれ', 'だれ'],
+        correctIndex: 0,
+        explanation: 'Dùng あなた',
+      },
+    ];
+
+    useAIStore.getState().saveGlobalExercises('lesson_dual', globalEx, 'curated-model');
+    useAIStore.getState().saveCustomExercises('lesson_dual', customEx, 'deepseek-chat', 'MY_SYNC');
+
+    const retrievedGlobal = useAIStore.getState().getGlobalExercises('lesson_dual');
+    const retrievedCustom = useAIStore.getState().getCustomExercises('lesson_dual');
+
+    assert.notEqual(retrievedGlobal, null);
+    assert.equal(retrievedGlobal?.exercises[0].targetWord, 'わたし');
+    assert.equal(retrievedGlobal?.syncCode, 'global');
+
+    assert.notEqual(retrievedCustom, null);
+    assert.equal(retrievedCustom?.exercises[0].targetWord, 'あなた');
+    assert.equal(retrievedCustom?.syncCode, 'MY_SYNC');
+  });
 });

@@ -1,0 +1,533 @@
+STT	Từ vựng	Kanji	Ý nghĩa
+
+Bài 1:
+1	これ	 	Cái này, đây (vật ở gần người nói)
+2	それ	 	Cái đó, đó (vật ở gần người nghe)
+3	あれ	 	Cái kia, kia (vật ở xa cả người nói và người nghe)
+4	この~	 	~ này
+5	その~	 	~ đó
+6	あの~	 	~ kia
+7	ほん	本	Sách
+8	じしょ	辞書	Từ điển
+9	ざっし	雑誌	Tạp chí
+10	しんぶん	新聞	Báo
+11	ノート	 	Vở
+12	てちょう	手帳	Sổ tay
+13	めいし	名詞	Danh thiếp
+14	カード	 	Thẻ, cạc
+15	テレホンカード	 	Thẻ điện thoại
+16	えんぴつ	鉛筆	Bút chì
+17	ボールペン	 	Bút bi
+18	シャープペンシル	 	Bút chì kim, bút chì bấm
+19	かぎ	 	Chìa khóa
+20	とけい	時計	Đồng hồ
+21	かさ	傘	ô, dù
+22	かばん	 	Cặp sách, túi sách
+23	[カセット] テーブ	 	Băng [cát-xét]
+24	テープレコーダー	 	Máy ghi âm
+25	テレビ	 	Tivi
+26	ラジオ	 	Radio
+27	カメラ	 	Máy ảnh
+28	コンピュータ	 	Máy vi tính
+29	じどうしゃ	自動車	Ô tô, xe hơi
+30	つくえ	机	Cái bàn
+31	いす	 	Ghế
+32	チョコレート	 	Chocolate
+33	コーヒー	 	Cà phê
+34	えいご	英語	Tiếng Anh
+35	にほんご	日本語	Tiếng Nhật
+36	∼ご	∼語	Tiếng~
+37	なん	何	Cái gì
+38	そう	 	Đúng vậy
+39	ちがいます。	違います。	Nhầm rồi
+40	そうですか。	 	Thế à?
+41	あのう	 	 À…(được sử dụng để thể hiện sự do dự)
+42	ほんのきもちです	ほんの気持ちです	Đây là chút quà nhỏ của tôi
+43	どうぞ	 	Xin mời
+44	どうも	 	Cảm ơn
+45	[どうも] ありがとう[ございます]	 	Cảm ơn nhiều
+46	これから おせわになります	これから お世話になります	Từ này mong được anh/chị giúp đỡ
+47	こちらこそ よろしく	 	Chính tôi mới mong được anh/chị giúp đỡ
+
+Bài 2:
+1	これ	 	Cái này, đây (vật ở gần người nói)
+2	それ	 	Cái đó, đó (vật ở gần người nghe)
+3	あれ	 	Cái kia, kia (vật ở xa cả người nói và người nghe)
+4	この~	 	~ này
+5	その~	 	~ đó
+6	あの~	 	~ kia
+7	ほん	本	Sách
+8	じしょ	辞書	Từ điển
+9	ざっし	雑誌	Tạp chí
+10	しんぶん	新聞	Báo
+11	ノート	 	Vở
+12	てちょう	手帳	Sổ tay
+13	めいし	名詞	Danh thiếp
+14	カード	 	Thẻ, cạc
+15	テレホンカード	 	Thẻ điện thoại
+16	えんぴつ	鉛筆	Bút chì
+17	ボールペン	 	Bút bi
+18	シャープペンシル	 	Bút chì kim, bút chì bấm
+19	かぎ	 	Chìa khóa
+20	とけい	時計	Đồng hồ
+21	かさ	傘	ô, dù
+22	かばん	 	Cặp sách, túi sách
+23	[カセット] テーブ	 	Băng [cát-xét]
+24	テープレコーダー	 	Máy ghi âm
+25	テレビ	 	Tivi
+26	ラジオ	 	Radio
+27	カメラ	 	Máy ảnh
+28	コンピュータ	 	Máy vi tính
+29	じどうしゃ	自動車	Ô tô, xe hơi
+30	つくえ	机	Cái bàn
+31	いす	 	Ghế
+32	チョコレート	 	Chocolate
+33	コーヒー	 	Cà phê
+34	えいご	英語	Tiếng Anh
+35	にほんご	日本語	Tiếng Nhật
+36	∼ご	∼語	Tiếng~
+37	なん	何	Cái gì
+38	そう	 	Đúng vậy
+39	ちがいます。	違います。	Nhầm rồi
+40	そうですか。	 	Thế à?
+41	あのう	 	 À…(được sử dụng để thể hiện sự do dự)
+42	ほんのきもちです	ほんの気持ちです	Đây là chút quà nhỏ của tôi
+43	どうぞ	 	Xin mời
+44	どうも	 	Cảm ơn
+45	[どうも] ありがとう[ございます]	 	Cảm ơn nhiều
+46	これから おせわになります	これから お世話になります	Từ này mong được anh/chị giúp đỡ
+47	こちらこそ よろしく	 	Chính tôi mới mong được anh/chị giúp đỡ
+
+Bài 3:
+1	ここ	 	chỗ này, đây
+2	そこ	 	chỗ đó, đó
+3	あそこ	 	chỗ kia, kia
+4	どこ	 	chỗ nào, đâu
+5	こちら	 	phía này, đằng này, chỗ này, đây (là cách nói lịch sự của ここ)
+6	そちら	 	phía đó, đằng đó, chỗ đó, đó (là cách nói lịch sự của そこ)
+7	あちら	 	phía kia, đằng kia, chỗ kia, kia (cách nói lịch sự của あそこ)
+8	どちら	 	phía nào, đằng nào, chỗ nào, đâu (cách nói lịch sự của どこ )
+9	きょうしつ	教室	lớp học, phòng học
+10	しょくどう	食堂	nhà ăn
+11	じむしょ	事務所	văn phòng
+12	かいぎしつ	会議室	phòng họp
+13	うけつけ	受付	bộ phận tiếp tân, phòng thường trực, lễ tân
+14	ロビー	 	hành lang, đại sảnh
+15	へや	部屋	căn phòng
+16	トイレ（おてあらい）	(お手洗い）	nhà vệ sinh, phòng vệ sinh, toa-lét
+17	かいだん	階段	cầu thang
+18	エレベーター	 	thang máy
+19	エスカレーター	 	thang cuốn
+20	[お]くに	[お]国	đất nước
+21	かいしゃ	会社	công ty
+22	うち	 	nhà
+23	でんわ	電話	máy điện thoại, điện thoại
+24	くつ	靴	giày
+25	ネクタイ	 	cà vạt
+26	ワイン	 	rượu vang
+27	たばこ	 	thuốc lá
+28	うりば	売り場	quầy bán (trong một cửa hàng bách hóa)
+29	ちか	地下	tầng hầm, dưới mặt đất
+30	―かい（－がい）	－階	tầng thứ –
+31	なんがい	何階	tầng mấy
+32	―えん	―円	yên
+33	いくら	 	bao nhiêu tiền
+34	ひゃく	百	trăm
+35	せん	千	nghìn
+36	まん	万	mười nghìn, vạn
+37	すみません	 	Xin lỗi
+38	～でございます	 	(cách nói lịch sự của 「です」)
+39	みせてください	[～を]見せてください	cho tôi xem [~]
+40	じゃ	 	Thế thì, vậy thì
+41	[～を]ください	 	cho tôi [~]
+42	しんおおさか	新大阪	tên một nhà ga ở Osaka
+43	イタリア	 	Ý
+44	スイス	 	Thụy Sĩ
+45	ＭＴ/ヨーネン/アキックス	 	tên các công ty giả tưởng
+
+Bài 4:
+1	おきます	 	thức dậy
+2	ねます	寝ます	ngủ
+3	はたらきます	働きます	làm việc
+4	やすみます	休みます	nghỉ ngơi
+5	べんきょうします	勉強します	học tập
+6	おわります	終わります	kết thúc
+7	デパート	 	cửa hàng bách hóa
+8	ぎんこう	銀行	ngân hàng
+9	ゆうびんきょく	郵便局	bưu điện
+10	としょかん	図書館	thư viện
+11	びじゅつかん	美術館	viện bảo tàng
+12	でんわばんごう	電話番号	số điện thoại
+13	なんばん	何番	số mấy
+14	いま	今	bây giờ
+15	～じ	～時	~giờ
+16	～ふん / ～ぷん	～分	～phút
+17	はん	半	phân nửa
+18	なんじ	何時	mấy giờ
+19	なんぷん	何分	mấy phút
+20	ごぜん	午前	sáng (AM: trước 12 giờ)
+21	ごご	午後	chiều (PM: sau 12 giờ)
+22	あさ	朝	sáng
+23	ひる	昼	trưa
+24	ばん	晩	tối
+25	よる	夜	tối
+26	おととい	 	ngày hôm kia
+27	きのう	 	ngày hôm qua
+28	きょう	今日	hôm nay
+29	あした	明日	ngày mai
+30	あさって	 	ngày mốt
+31	けさ	今朝	sáng nay
+32	こんばん	 	tối nay
+33	ゆうべ	 	tối hôm qua
+34	やすみ	休み	nghỉ ngơi (danh từ)
+35	ひるやすみ	昼休み	nghỉ trưa
+36	まいあさ	毎朝	mỗi sáng
+37	まいばん	毎晩	mỗi tối
+38	まいにち	毎日	mỗi ngày
+39	ペキン	 	Bắc Kinh
+40	バンコク	 	Bangkok
+41	ロンドン	 	Luân Đôn
+42	ロサンゼルス	 	Los Angeles
+43	たいへんですね	大変ですね	vất vả nhỉ
+44	ばんごうあんない	 	dịch vụ 116 (hỏi số điện thoại)
+45	おといあわせ	 	(số điện thoại) bạn muốn biết / hỏi là
+
+Bài 5:
+1	ばんせん	―番線	sân ga số –
+2	いきます	行きます	đi
+3	きます	来ます	đến
+4	かえります	帰ります	về
+5	がっこう	学校	trường học
+6	スーパー	 	siêu thị
+7	えき	駅	ga, nhà ga
+8	ひこうき	飛行機	máy bay
+9	ふね	船	thuyền, tàu thủy
+10	でんしゃ	電車	tàu điện
+11	ちかてつ	地下鉄	tàu điện ngầm
+12	しんかんせん	新幹線	tàu Shinkansen (tàu điện siêu tốc của Nhật)
+13	バス	 	xe Buýt
+14	タクシー	 	tắc-xi
+15	じてんしゃ	自転車	xe đạp
+16	あるいて	歩いて	đi bộ
+17	ひと	人	người
+18	ともだち	友達	bạn, bạn bè
+19	かれ	彼	anh ấy, bạn trai
+20	かのじょ	彼女	chị ấy, bạn gái
+21	かぞく	家族	gia đình
+22	せんしゅう	先週	tuần trước
+23	こんしゅう	今週	tuần này
+24	らいしゅう	来週	tuần sau
+25	せんげつ	先月	tháng trước
+26	こんげつ	今月	tháng này
+27	らいげつ	来月	tháng sau
+28	きょねん	去年	năm ngoái
+29	ことし	 	năm nay
+30	らいねん	来年	 năm sau
+31	―がつ	―月	tháng –
+32	なんがつ	何月	tháng mấy
+33	ついたち	１日	ngày mồng 1
+34	ふつか	２日	ngày mồng 2, 2 ngày
+35	みっか	３日	ngày mồng 3, 3 ngày
+36	よっか	４日	ngày mồng 4, 4 ngày
+37	いつか	５日	ngày mồng 5, 5 ngày
+38	むいか	６日	ngày mồng 6, 6 ngày
+39	なのか	７日	ngày mồng 7, 7 ngày
+40	ようか	８日	ngày mồng 8, 8 ngày
+41	ここのか	９日	ngày mồng 9, 9 ngày
+42	とおか	１０日	ngày mồng 10, 10 ngày
+43	じゅうよっか	１４日	ngày 14, 14 ngày
+44	はつか	２０日	ngày 20, 20 ngày
+45	にじゅうよっか	２４日	ngày 24, 24 ngày
+46	―にち	―日	ngày -, – ngày
+47	なんにち	何日	ngày mấy, ngày bao nhiêu, mấy ngày, bao nhiêu ngày
+48	いつ	 	bao giờ, khi nào
+49	たんじょうび	誕生日	sinh nhật
+50	ふつう	普通	tàu thường (dừng cả ở các ga lẻ)
+51	きゅうこう	急行	tàu tốc hành
+52	とっきゅう	特急	tàu tốc hành đặc biệt
+53	つぎの	次の	tiếp theo
+54	どういたしまして	 	Không có chi
+
+Bài 6:
+1	たべます	食べます	ăn
+2	のみます	飲みます	uống
+3	すいます [たばこを～]	吸います	hút [thuốc lá]
+4	みます	見ます	xem, nhìn, trông
+5	ききます	  聞きます	nghe
+6	よみます	読みます	đọc
+7	かきます	書きます	viết, vẽ
+8	かいます	買います	mua
+9	とります [しゃしんを～]	撮ります [写真を～]	chụp [ảnh]
+10	します	 	làm
+11	あいます [ともだちに～]	会います [友達に～]	gặp [bạn]
+12	ごはん	 	cơm, bữa ăn
+13	あさごはん	朝ごはん	cơm sáng
+14	ひるごはん	昼ごはん	cơm trưa
+15	ばんごはん	晩ごはん	cơm tối
+16	パン	 	bánh mì
+17	たまご	卵	trứng
+18	にく	肉	thịt
+19	さかな	魚	cá
+20	やさい	野菜	rau
+21	くだもの	果物	hoa quả, trái cây
+22	みず	水	nước
+23	おちゃ	お茶	trà (nói chung)
+24	こうちゃ	紅茶	trà đen
+25	ぎゅうにゅう (ミルク)	牛乳	sữa bò
+26	ジュース	 	nước hoa quả
+27	ビール	 	bia
+28	[お]さけ	[お]酒	rượu, rượu sake
+29	ビデオ	 	video, băng video, đầu video
+30	えいが	映画	 phim, điện ảnh
+31	ＣＤ	 	đĩa CD
+32	てがみ	手紙	thư
+33	レポート	 	báo cáo
+34	しゃしん	写真	ảnh
+35	みせ	店	cửa hàng, tiệm
+36	レストラン	 	nhà hàng
+37	にわ	庭	vườn
+38	しゅくだい	宿題	bài tập về nhà (～をします: làm bài tập)
+39	テニス	 	quần vợt (～をします: đánh quần vợt)
+40	サッカー	 	bóng đá (～をします: chơi bóng đá)
+41	[お]はなみ	[お]花見	việc ngắm hoa anh đào (～をします: ngắm hoa anh đào)
+42	なに	何	cái gì, gì
+43	いっしょに	 	cùng, cùng nhau
+44	ちょっと	 	một chút
+45	いつも	 	luôn luôn, lúc nào cũng
+46	ときどき	時々	thỉnh thoảng
+47	それから	 	sau đó, tiếp theo
+48	ええ	 	vâng, được (cách nói thân mật của 「はい」)
+49	いいですね。	 	Được đấy nhỉ./ hay quá.
+50	わかりました。	 	Tôi hiểu rồi/ vâng ạ.
+51	なんですか	何ですか。	Có gì đấy ạ?/ cái gì vậy?/ vâng có tôi. (câu trả lời khi ai đó gọi tên mình)
+52	じゃ、また[あした]。	 	Hẹn gặp lại [ngày mai].
+53	メキシコ	 	Mexico
+
+Bài 7:
+1	きる	切る	cắt
+2	おくる	送る	gửi
+3	あげる	 	tặng
+4	もらう	 	nhận
+5	かす	  貸す	cho mượn
+6	かりる	借りる	mượn
+7	かける	 	mang
+8	て	手	tay
+9	はし	 	cầu
+10	スプーン	 	muỗng
+11	ナイフ	 	con dao
+12	フォーク	 	nĩa
+13	はさみ	 	cái kéo
+14	ファクス	 	máy fax
+15	ワープロ	 	máy đánh chữ
+16	パソコン	 	máy tính
+17	パンチ	 	 cái đục lỗ
+18	ホッチキス	 	 cái dập ghim
+19	セロテープ	 	băng dính
+20	けしゴム	 	cục tẩy
+21	かみ	 	tóc
+22	はな	花	hoa
+23	シャツ	 	áo sơ mi
+24	プレゼント	 	quà tặng
+25	にもつ	荷物	hàng hóa
+26	おかね	お金	tiền
+27	きっぷ	 	vé (tàu ,xe)
+28	クリスマス	 	Lễ Giáng sinh
+29	ちち	父	cha mình
+30	はは	母	 mẹ mình
+31	これから	 	từ bây giờ-
+32	おとうさん	お父さん	cha ( người khác)
+33	おかあさん	お母さん	mẹ (người khác)
+34	もう	 	đã rồi
+35	まだ	 	vẫn còn , vẫn chưa
+36	ごめん‌な‌さい	 	xin lỗi
+37	いらっしゃい	 	xin mời
+38	いってきます	 	tôi đi đây
+39	しつれします	 	xin thất lễ
+40	りょこう	旅行	du lịch
+41	おみやげ	お土産	quà lưu niệm
+42	ヨーロッパ	 	Châu Âu
+
+Bài 8:
+1	みにくい	 	Xấu
+2	ハンサム(な)	 	đẹp trai
+3	きれい(な)	 	(cảnh) đẹp, đẹp (gái), sạch
+4	しずか(な)	静か(な)	yên tĩnh
+5	にぎやか(な)	賑やか(な)	nhộn nhịp
+6	ゆうめい(な)	有名(な)	nổi tiếng
+7	しんせつ(な)	親切(な)	tử tế
+8	げんき(な)	元気(な)	khỏe
+9	ひま(な)	暇(な)	rảnh rỗi
+10	いそがしい	忙しい	bận rộn
+11	べんり(な)	便利(な)	tiện lợi
+12	すてき(な)	 	tuyệt vời
+13	おおきい	大きい	to, lớn
+14	ちいさい	小さい	nhỏ, bé
+15	あたらしい	新しい	mới
+16	ふるい	古い	cũ
+17	いい	 	tốt
+18	わるい	悪い	xấu
+19	あつい	熱い	nóng
+20	つめたい	冷たい	lạnh
+21	あつい	暑い	(trời) nóng (dùng cho thời tiết)
+22	さむい	寒い	(trời) lạnh (dùng cho thời tiết)
+23	むずかしい	難しい	khó
+24	やさしい	優しい	dễ
+25	きびしい	 	nghiêm khắc
+26	やさしい	 	dịu dàng, hiền từ
+27	たかい	高い	đắt
+28	やすい	安い	rẻ
+29	ひくい	低い	thấp
+30	たかい	高い	 cao
+31	おもしろい	 	thú vị
+32	おいしい	 	ngon
+33	たのしい	楽しい	vui vẻ
+34	しろい	白い	trắng
+35	くろい	黒い	đen
+36	あかい	赤い	đỏ
+37	あおい	青い	xanh
+38	さくら	桜	hoa anh đào
+39	やま	山	núi
+40	まち	町	thành phố
+41	たべもの	食べ物	thức ăn
+42	ところ	所	chỗ
+43	りょう	 	ký túc xá
+44	べんきょう	勉強	học tập ( danh từ )
+45	せいかつ	生活	cuộc sống
+46	(お)しごと	お仕事	công việc
+47	どう	 	như thế nào
+48	どんな	 	～nào
+49	どれ	 	cái nào
+
+Bài 9:
+1	わかります	分かります	hiểu, nắm được
+2	あります	 	có (sở hữu)
+3	すき[な]	好き[な]	thích
+4	きらい[な]	嫌い[な] )	ghét, không thích
+5	じょうず[な]	上手[な]	giỏi, khéo
+6	へた[な]	下手[な]	kém
+7	りょうり	料理	món ăn, việc nấu ăn
+8	のみもの	飲み物	đồ uống
+9	スポーツ	 	thể thao (～をします：chơi thể thao)
+10	やきゅう	野球	bóng chày (～をします：chơi bóng chày)
+11	ダンス	 	nhảy, khiêu vũ (～をします：nhảy, khiêu vũ)
+12	おんがく	音楽	âm nhạc
+13	うた	歌	bài hát
+14	クラシック	 	nhạc cổ điển
+15	ジャズ	 	nhạc jazz
+16	コンサート	 	buổi hòa nhạc
+17	カラオケ	 	karaoke
+18	かぶき	歌舞伎	Kabuki (một loại ca kịch truyền thống của Nhật)
+19	え	絵	Tranh, hội họa
+20	じ	字	chữ
+21	かんじ	漢字	chữ hán
+22	ひらがな	 	chữ Hiragana
+23	かたかな	 	Chữ Katakana
+24	ローマじ	ローマ字	chữ La Mã
+25	こまかいおかね	細かいお金	tiền lẻ
+26	チケット	 	vé (xem hòa nhạc, xem phim)
+27	じかん	時間	thời gian
+28	ようじ	用事	việc bận, công chuyện
+29	やくそく	約束	cuộc hẹn, lời hứa
+30	ごしゅじん	ご‌主‌人	chồng (dùng khi nói về chồng người khác)
+31	おっと/しゅじん	夫/主人	chồng (dùng khi nói về chồng mình)
+32	おくさん	奥さん	vợ (dùng khi nói về vợ người khác)
+33	つま/かない	妻/家内	vợ (dùng khi nói về vợ mình)
+34	こども	子ども	con cái
+35	よく	 	tốt, rõ (chỉ mức độ)
+36	だいたい	 	đại khái, đại thể
+37	たくさん	 	nhiều
+38	すこし	少し	ít, một ít
+39	ぜんぜん	全然	hoàn toàn ~ không
+40	はやく	早く、速く	sớm, nhanh
+41	～から	 	vì ~
+42	どうして	 	tại sao
+43	ざんねんです[ね]	残念です[ね]	Thật đáng tiếc nhỉ/ buồn nhỉ
+44	すみません	 	Xin lỗi
+45	もしもし	 	a-lô
+46	ああ	 	a (cách nói khi đã gặp được đúng người trên điện thoại)
+47	いっしょにいかがですか	 	Anh/chị cùng ~ (làm cái gì đó) với chúng tôi được không?
+48	[～は]ちょっと….	 	[~ thì] có lẽ không được rồi. (cách từ chối khéo khi nhận được một lời mời nào đó)
+49	だめですか。	 	Không được à?
+50	またこんどおねがいします	 	hẹn lần sau
+
+Bài 10: 
+1	います	 	có, ở (tồn tại, dùng cho người và động vật)
+2	あります	 	có (tồn tại, dùng cho đồ vật)
+3	いろいろ[な]	 	nhiều, đa dạng
+4	おとこのひと	男の人	người đàn ông
+5	じょうず[な]	上手[な]	giỏi, khéo
+6	おんなのひと	女の人	người đàn bà
+7	おとこのこ	男の子	cậu con trai
+8	おんなのこ	女の子	cô con gái
+9	いぬ	犬	chó
+10	ねこ	猫	mèo
+11	き	木	cây, gỗ
+12	もの	物	vật, đồ vật
+13	フィルム	 	phim
+14	でんち	電池	Pin
+15	はこ	箱	hộp
+16	スイッチ	 	công tắc
+17	れいぞうこ	冷蔵庫	tủ lạnh
+18	テーブル	 	bàn
+19	ベッド	 	giường
+20	たな	棚	giá sách
+21	ドア	 	cửa
+22	まど	窓	cửa sổ
+23	ポスト	 	hộp thư, hòm thư
+24	ビル	 	toà nhà
+25	こうえん	公園	công viên
+26	きっさてん	喫茶店	quán giải khát, quán cà-phê
+27	ほんや	本屋	hiệu sách
+28	～や	～屋	hiệu ~, cửa hàng ~
+29	のりば	乗り場	bến xe, điểm lên xuống xe
+30	けん	県	 tỉnh
+31	うえ	上	trên
+32	した	下	dưới
+33	まえ	前	trước
+34	うしろ	後ろ	sau
+35	みぎ	右	phải
+36	ひだり	左	trái
+37	なか	中	trong, giữa
+38	そと	外	ngoài
+39	となり	隣	bên cạnh
+40	ちかく	近く	gần
+41	あいだ	間	giữa
+42	～や～[など]	 	~ và ~, [v.v.]
+43	いちばん～	 	~ nhất (いちばん うえ：vị trí cao nhất)
+44	―だんめ	―段目	giá thứ -, tầng thứ – (「だん」 được dùng cho giá sách v.v.)
+45	すみません	 	Xin lỗi
+46	チリソース	 	tương ớt (chili sauce)
+
+Bài 11:
+1	います	 	có (động vật)
+2	かかります	 	mất, tốn
+3	やすみます	休みます	nghỉ ngơi
+4	ひとつ	 	1 cái (đồ vật)
+5	ふたつ	 	2 cái
+6	みっつ	 	3 cái
+7	よっつ	 	4 cái
+8	いつつ	 	5 cái
+9	むっつ	 	6 cái
+10	ななつ	 	7 cái
+11	やっつ	 	8 cái
+12	ここのつ	 	9 cái
+13	とお	 	10 cái
+14	いくつ	 	bao nhiêu cái
+15	ひとり	一人	1 người
+16	ふたり	二人	2 người
+17	～にん	～人	～người
+18	～だい	 	～cái, chiếc (máy móc)
+19	～まい	 	～tờ, (những vật mỏng như áo, giấy…)
+20	～かい	 	～lần, tầng lầu
+21	りんご	 	quả táo
+22	みかん	 	quýt
+23	サンドイッチ	 	sandwich
+24	カレー(ライス)	 	(cơm) cà ri
+25	アイスクリーム	 	kem
+26	きって	切手	tem
+27	はがき	葉書	bưu thiếp
+28	ふうとう	封筒	phong bì
+29	そくたつ	速達	chuyển phát nhanh
+30	かきとめ	 書留	 gửi bảo đảm
+
+Bài 12:

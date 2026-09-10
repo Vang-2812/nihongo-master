@@ -25,3 +25,30 @@ export interface AIConfig {
   modelName: string;
   showTranslationInQuiz: boolean;
 }
+
+export type ExerciseSourceType = 'global' | 'custom';
+
+export interface ExerciseSetDetail {
+  lessonId: string;
+  syncCode: string;
+  model: string;
+  totalExercises: number;
+  exercises: ClozeExerciseItem[];
+  updatedAt: number;
+}
+
+export interface ExerciseApiResponse {
+  success: boolean;
+  found: boolean;
+  lessonId?: string;
+  syncCode?: string;
+  model?: string;
+  totalExercises?: number;
+  exercises?: ClozeExerciseItem[] | null;
+  source?: ExerciseSourceType | 'none';
+  global?: ExerciseSetDetail | null;
+  custom?: ExerciseSetDetail | null;
+  updatedAt?: number;
+  error?: string;
+  message?: string;
+}

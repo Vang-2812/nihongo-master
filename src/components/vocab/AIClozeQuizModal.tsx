@@ -18,6 +18,8 @@ interface AIClozeQuizModalProps {
   onClose: () => void;
   exercises: ClozeExerciseItem[];
   lessonTitle: string;
+  sourceType?: 'global' | 'custom';
+  onSwitchSource?: () => void;
   onRegenerate?: () => void;
 }
 
@@ -26,6 +28,8 @@ export default function AIClozeQuizModal({
   onClose,
   exercises,
   lessonTitle,
+  sourceType = 'global',
+  onSwitchSource,
   onRegenerate,
 }: AIClozeQuizModalProps) {
   const { config } = useAIStore();
@@ -141,17 +145,40 @@ export default function AIClozeQuizModal({
         {/* Top Header */}
         <div className="px-5 py-4 border-b border-stone-200 flex items-center justify-between gap-3 bg-white">
           <div className="min-w-0">
-            <h3 className="text-xs sm:text-sm font-mono font-bold text-stone-900 uppercase tracking-wider truncate">
-              BÀI TẬP AI: {lessonTitle}
-            </h3>
+            <div className="flex items-center gap-2 flex-wrap">
+              <h3 className="text-xs sm:text-sm font-mono font-bold text-stone-900 uppercase tracking-wider truncate">
+                BÀI TẬP ĐIỀN TỪ: {lessonTitle}
+              </h3>
+              {sourceType === 'global' ? (
+                <span className="font-mono text-[10px] font-bold uppercase tracking-wider px-1.5 py-0.5 bg-emerald-50 text-emerald-800 border border-emerald-200">
+                  CHUẨN CLOUD
+                </span>
+              ) : (
+                <span className="font-mono text-[10px] font-bold uppercase tracking-wider px-1.5 py-0.5 bg-indigo-50 text-indigo-800 border border-indigo-200">
+                  AI CÁ NHÂN
+                </span>
+              )}
+            </div>
             {!isComplete && (
-              <p className="text-[11px] font-mono text-stone-500 uppercase tracking-wider">
+              <p className="text-[11px] font-mono text-stone-500 uppercase tracking-wider mt-0.5">
                 CÂU {currentIndex + 1} / {total}
               </p>
             )}
           </div>
 
           <div className="flex items-center gap-2 flex-shrink-0">
+            {/* Switch source button */}
+            {onSwitchSource && (
+              <button
+                type="button"
+                onClick={onSwitchSource}
+                className="px-2.5 py-1 font-mono text-xs uppercase font-medium border border-stone-300 bg-white text-stone-700 hover:bg-stone-100 transition-colors duration-100 rounded-none"
+                title="Đổi nguồn bài tập (Chuẩn / AI cá nhân)"
+              >
+                <span>ĐỔI NGUỒN</span>
+              </button>
+            )}
+
             {/* Translation Toggle Button */}
             {!isComplete && (
               <button
@@ -441,19 +468,28 @@ export default function AIClozeQuizModal({
                 <ArrowRight className="w-4 h-4" />
               </button>
             ) : (
-              <div className="w-full flex items-center gap-3">
+              <div className="w-full flex flex-col sm:flex-row items-center gap-2 sm:gap-3">
                 <button
                   type="button"
                   onClick={handleRestart}
-                  className="flex-1 inline-flex items-center justify-center gap-2 py-3.5 border border-stone-300 bg-white text-stone-800 hover:bg-stone-100 font-mono text-xs uppercase font-bold tracking-widest transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
+                  className="w-full sm:flex-1 inline-flex items-center justify-center gap-2 py-3.5 border border-stone-300 bg-white text-stone-800 hover:bg-stone-100 font-mono text-xs uppercase font-bold tracking-widest transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
                 >
                   <RotateCcw className="w-4 h-4" />
                   <span>LUYỆN LẠI BÀI NÀY</span>
                 </button>
+                {onSwitchSource && (
+                  <button
+                    type="button"
+                    onClick={onSwitchSource}
+                    className="w-full sm:flex-1 inline-flex items-center justify-center gap-2 py-3.5 border border-stone-300 bg-stone-100 text-stone-800 hover:bg-stone-200 font-mono text-xs uppercase font-bold tracking-widest transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
+                  >
+                    <span>ĐỔI NGUỒN BÀI TẬP</span>
+                  </button>
+                )}
                 <button
                   type="button"
                   onClick={onClose}
-                  className="flex-1 inline-flex items-center justify-center gap-2 py-3.5 border border-stone-900 bg-stone-900 text-white hover:bg-stone-800 font-mono text-xs uppercase font-bold tracking-widest transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
+                  className="w-full sm:flex-1 inline-flex items-center justify-center gap-2 py-3.5 border border-stone-900 bg-stone-900 text-white hover:bg-stone-800 font-mono text-xs uppercase font-bold tracking-widest transition-colors duration-100 rounded-none shadow-none active:scale-[0.98]"
                 >
                   <BookOpen className="w-4 h-4" />
                   <span>QUAY VỀ BÀI HỌC</span>

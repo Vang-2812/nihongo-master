@@ -14,25 +14,65 @@ export async function GET(req: NextRequest) {
       return NextResponse.json({ success: false, error: 'lessonId is required' }, { status: 400 });
     }
 
-    const id = `${lessonId}_${syncCode}`;
-    const records = await db.select().from(aiLessonExercises).where(eq(aiLessonExercises.id, id));
+    const globalId = `${lessonId}_global`;
+    const globalRecords = await db.select().from(aiLessonExercises).where(eq(aiLessonExercises.id, globalId));
+    const globalRecord = globalRecords.length > 0 ? globalRecords[0] : null;
+    const globalDetail = globalRecord
+      ? {
+          lessonId: globalRecord.lessonId,
+          syncCode: globalRecord.syncCode,
+          model: globalRecord.model,
+          totalExercises: globalRecord.totalExercises,
+          exercises: JSON.parse(globalRecord.exercisesData),
+          updatedAt: globalRecord.updatedAt,
+        }
+      : null;
 
-    if (records.length === 0) {
-      return NextResponse.json({ success: true, found: false, exercises: null });
+    let customRecord = null;
+    if (syncCode !== 'global') {
+      const customId = `${lessonId}_${syncCode}`;
+      const customRecords = await db.select().from(aiLessonExercises).where(eq(aiLessonExercises.id, customId));
+      if (customRecords.length > 0) {
+        customRecord = customRecords[0];
+      }
     }
 
-    const record = records[0];
-    const exercises = JSON.parse(record.exercisesData);
+    const customDetail = customRecord
+      ? {
+          lessonId: customRecord.lessonId,
+          syncCode: customRecord.syncCode,
+          model: customRecord.model,
+          totalExercises: customRecord.totalExercises,
+          exercises: JSON.parse(customRecord.exercisesData),
+          updatedAt: customRecord.updatedAt,
+        }
+      : null;
+
+    if (!globalDetail && !customDetail) {
+      return NextResponse.json({
+        success: true,
+        found: false,
+        exercises: null,
+        global: null,
+        custom: null,
+      });
+    }
+
+    // Default: custom if exists, otherwise global
+    const primary = customDetail || globalDetail;
 
     return NextResponse.json({
       success: true,
       found: true,
-      lessonId: record.lessonId,
-      syncCode: record.syncCode,
-      model: record.model,
-      totalExercises: record.totalExercises,
-      exercises,
-      updatedAt: record.updatedAt,
+      lessonId,
+      syncCode,
+      model: primary!.model,
+      totalExercises: primary!.totalExercises,
+      exercises: primary!.exercises,
+      source: customDetail ? 'custom' : 'global',
+      global: globalDetail,
+      custom: customDetail,
+      updatedAt: primary!.updatedAt,
     });
   } catch (error: any) {
     return NextResponse.json({ success: false, error: error.message }, { status: 500 });

@@ -9,6 +9,7 @@ import { toast } from '@/stores/toastStore';
 import VocabCard from './VocabCard';
 import LessonQuizModal from './LessonQuizModal';
 import AIClozeQuizModal from './AIClozeQuizModal';
+import ClozeExerciseSourceModal from './ClozeExerciseSourceModal';
 import { useAIStore } from '@/stores/aiStore';
 import { syncService } from '@/services/syncService';
 import { ClozeExerciseItem } from '@/types/ai';
@@ -65,27 +66,43 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
   const [isQuizModalOpen, setIsQuizModalOpen] = useState(false);
   const [selectedItemIds, setSelectedItemIds] = useState<Set<string>>(new Set());
 
-  // AI Exercises state
+  // Cloze Exercises state (Global & Custom)
+  const [isSourceModalOpen, setIsSourceModalOpen] = useState(false);
   const [isAIModalOpen, setIsAIModalOpen] = useState(false);
   const [isGeneratingAI, setIsGeneratingAI] = useState(false);
-  const [aiExercises, setAiExercises] = useState<ClozeExerciseItem[]>([]);
+  const [globalExercises, setGlobalExercises] = useState<ClozeExerciseItem[] | null>(null);
+  const [customExercises, setCustomExercises] = useState<ClozeExerciseItem[] | null>(null);
+  const [activeExercises, setActiveExercises] = useState<ClozeExerciseItem[]>([]);
+  const [activeSourceType, setActiveSourceType] = useState<'global' | 'custom'>('global');
 
   const { lessonProgress, vocabStatus, setLessonStatus, setVocabStatus } = useVocabStore();
   const { cards, addCard, addCards } = useSRSStore();
-  const { config: aiConfig, getExercisesFromCache, saveExercisesToCache } = useAIStore();
+  const {
+    config: aiConfig,
+    getExercisesFromCache,
+    saveExercisesToCache,
+    getGlobalExercises,
+    saveGlobalExercises,
+    getCustomExercises,
+    saveCustomExercises,
+  } = useAIStore();
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
-  // Load AI exercises from local cache or SQLite Turso cloud
+  // Load AI / Global exercises from local cache and Turso Cloud
   useEffect(() => {
     if (!mounted) return;
 
     // 1. Check local cache
-    const cached = getExercisesFromCache(lesson.id);
-    if (cached && cached.exercises && cached.exercises.length > 0) {
-      setAiExercises(cached.exercises);
+    const cachedGlobal = getGlobalExercises(lesson.id);
+    if (cachedGlobal?.exercises?.length) {
+      setGlobalExercises(cachedGlobal.exercises);
+    }
+    const cachedCustom = getCustomExercises(lesson.id);
+    if (cachedCustom?.exercises?.length) {
+      setCustomExercises(cachedCustom.exercises);
     }
 
     // 2. Fetch from DB
@@ -93,15 +110,64 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
     fetch(`/api/ai/exercises?lessonId=${lesson.id}&syncCode=${syncCode}`)
       .then((res) => res.json())
       .then((data) => {
-        if (data.success && data.found && Array.isArray(data.exercises) && data.exercises.length > 0) {
-          setAiExercises(data.exercises);
-          saveExercisesToCache(lesson.id, data.exercises, data.model || 'deepseek-chat', syncCode);
+        if (data.success) {
+          if (data.global?.exercises?.length) {
+            setGlobalExercises(data.global.exercises);
+            saveGlobalExercises(lesson.id, data.global.exercises, data.global.model || 'deepseek-chat');
+          }
+          if (data.custom?.exercises?.length) {
+            setCustomExercises(data.custom.exercises);
+            saveCustomExercises(lesson.id, data.custom.exercises, data.custom.model || 'deepseek-chat', syncCode);
+          }
+          // Fallback if data was saved without segmentation
+          if (!data.global && !data.custom && data.exercises?.length) {
+            if (data.source === 'custom') {
+              setCustomExercises(data.exercises);
+            } else {
+              setGlobalExercises(data.exercises);
+            }
+          }
         }
       })
       .catch((err) => {
         console.warn('Could not load AI exercises from DB:', err);
       });
-  }, [lesson.id, mounted, getExercisesFromCache, saveExercisesToCache]);
+  }, [lesson.id, mounted, getGlobalExercises, getCustomExercises, saveGlobalExercises, saveCustomExercises]);
+
+  // Open source selection modal
+  const handleOpenSourceModal = () => {
+    setIsSourceModalOpen(true);
+  };
+
+  // Launch Global Cloze Exercise
+  const handleLaunchGlobal = () => {
+    if (!globalExercises || globalExercises.length === 0) {
+      toast.warning('Chưa có bộ bài tập chuẩn cho bài này.');
+      return;
+    }
+    setActiveExercises(globalExercises);
+    setActiveSourceType('global');
+    setIsSourceModalOpen(false);
+    setIsAIModalOpen(true);
+  };
+
+  // Launch Custom AI Cloze Exercise
+  const handleLaunchCustom = () => {
+    if (!customExercises || customExercises.length === 0) {
+      handleGenerateAIExercises(false);
+      return;
+    }
+    setActiveExercises(customExercises);
+    setActiveSourceType('custom');
+    setIsSourceModalOpen(false);
+    setIsAIModalOpen(true);
+  };
+
+  // Switch source from within AIClozeQuizModal
+  const handleSwitchSource = () => {
+    setIsAIModalOpen(false);
+    setIsSourceModalOpen(true);
+  };
 
   // Handle Generate / Regenerate AI Exercises
   const handleGenerateAIExercises = async (isRegenerate: boolean = false) => {
@@ -112,7 +178,7 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
 
     if (isRegenerate) {
       const confirmed = window.confirm(
-        'Bạn có chắc chắn muốn tạo lại bài tập AI không? Thao tác này sẽ làm mới toàn bộ câu hỏi hiện tại của bài.'
+        'Bạn có chắc chắn muốn tạo lại bài tập AI không? Thao tác này sẽ làm mới bộ bài tập AI cá nhân của bài.'
       );
       if (!confirmed) return;
     }
@@ -159,8 +225,11 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
       const syncCode = syncService.getSyncCode() || 'local';
 
       // Save to local cache
+      saveCustomExercises(lesson.id, generated, data.model || aiConfig.modelName, syncCode);
       saveExercisesToCache(lesson.id, generated, data.model || aiConfig.modelName, syncCode);
-      setAiExercises(generated);
+      setCustomExercises(generated);
+      setActiveExercises(generated);
+      setActiveSourceType('custom');
 
       // Persist to SQLite Cloud
       fetch('/api/ai/exercises', {
@@ -175,6 +244,7 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
       }).catch((e) => console.warn('Could not persist exercises to SQLite:', e));
 
       toast.success(`Đã tạo thành công ${generated.length} câu bài tập AI!`);
+      setIsSourceModalOpen(false);
       setIsAIModalOpen(true);
     } catch (err: any) {
       toast.error(err.message || 'Lỗi khi tạo bài tập AI');
@@ -358,25 +428,21 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
           </div>
 
           <div className="flex items-center gap-2">
-            {/* Quick AI Exercise Button */}
+            {/* Quick AI / Cloze Exercise Button */}
             <button
               type="button"
               disabled={isGeneratingAI}
-              onClick={() => {
-                if (aiExercises.length > 0) {
-                  setIsAIModalOpen(true);
-                } else {
-                  handleGenerateAIExercises(false);
-                }
-              }}
-              className="bg-indigo-50 text-indigo-800 border border-indigo-200 hover:bg-indigo-100 font-sans font-medium text-xs uppercase tracking-wider px-3 py-1.5 transition-colors duration-100 rounded-none disabled:opacity-50"
+              onClick={handleOpenSourceModal}
+              className="bg-indigo-50 text-indigo-800 border border-indigo-200 hover:bg-indigo-100 font-sans font-medium text-xs uppercase tracking-wider px-3 py-1.5 transition-colors duration-100 rounded-none disabled:opacity-50 flex items-center gap-1.5"
             >
               <span>
                 {isGeneratingAI
                   ? 'AI: ĐANG TẠO...'
-                  : aiExercises.length > 0
-                  ? `BÀI TẬP AI (${aiExercises.length})`
-                  : 'BÀI TẬP AI'}
+                  : globalExercises?.length
+                  ? `BÀI TẬP ĐIỀN TỪ (${globalExercises.length})`
+                  : customExercises?.length
+                  ? `BÀI TẬP AI (${customExercises.length})`
+                  : 'BÀI TẬP ĐIỀN TỪ'}
               </span>
             </button>
 
@@ -538,31 +604,25 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
               </span>
             </button>
 
-            {/* AI CLOZE EXERCISES */}
-            {aiExercises.length > 0 ? (
-              <button
-                type="button"
-                onClick={() => setIsAIModalOpen(true)}
-                className="bg-indigo-50 text-indigo-800 border border-indigo-200 hover:bg-indigo-100 font-sans font-medium text-xs uppercase tracking-wider px-3.5 py-2 transition-colors duration-100 rounded-none shadow-none"
-              >
-                BÀI TẬP AI ({aiExercises.length})
-              </button>
-            ) : (
-              <button
-                type="button"
-                disabled={isGeneratingAI}
-                onClick={() => handleGenerateAIExercises(false)}
-                className="bg-indigo-50 text-indigo-800 border border-indigo-200 hover:bg-indigo-100 font-sans font-medium text-xs uppercase tracking-wider px-3.5 py-2 transition-colors duration-100 rounded-none shadow-none disabled:opacity-50"
-              >
-                <span>
-                  {isGeneratingAI
-                    ? 'ĐANG TẠO BÀI TẬP AI...'
-                    : selectedItemIds.size > 0
-                    ? `BÀI TẬP AI (${selectedItemIds.size})`
-                    : 'BÀI TẬP AI'}
-                </span>
-              </button>
-            )}
+            {/* BÀI TẬP ĐIỀN TỪ (GLOBAL / AI) */}
+            <button
+              type="button"
+              disabled={isGeneratingAI}
+              onClick={handleOpenSourceModal}
+              className="bg-indigo-50 text-indigo-800 border border-indigo-200 hover:bg-indigo-100 font-sans font-medium text-xs uppercase tracking-wider px-3.5 py-2 transition-colors duration-100 rounded-none shadow-none disabled:opacity-50"
+            >
+              <span>
+                {isGeneratingAI
+                  ? 'ĐANG TẠO BÀI TẬP AI...'
+                  : globalExercises?.length
+                  ? `BÀI TẬP ĐIỀN TỪ (${globalExercises.length})`
+                  : customExercises?.length
+                  ? `BÀI TẬP AI (${customExercises.length})`
+                  : selectedItemIds.size > 0
+                  ? `TẠO BÀI TẬP AI (${selectedItemIds.size})`
+                  : 'BÀI TẬP ĐIỀN TỪ'}
+              </span>
+            </button>
 
             {/* Toggle Complete Lesson */}
             <button
@@ -717,12 +777,29 @@ export const LessonDetailView: React.FC<LessonDetailViewProps> = ({
         onClearSelection={() => setSelectedItemIds(new Set())}
       />
 
+      {/* Cloze Exercise Source Modal */}
+      <ClozeExerciseSourceModal
+        isOpen={isSourceModalOpen}
+        onClose={() => setIsSourceModalOpen(false)}
+        lessonTitle={lesson.title}
+        globalExercises={globalExercises}
+        customExercises={customExercises}
+        selectedWordsCount={selectedItemIds.size}
+        totalWordsCount={lesson.items.length}
+        onSelectGlobal={handleLaunchGlobal}
+        onSelectCustom={handleLaunchCustom}
+        onGenerateCustom={() => handleGenerateAIExercises(Boolean(customExercises && customExercises.length > 0))}
+        isGeneratingAI={isGeneratingAI}
+      />
+
       {/* AI Cloze Exercise Modal */}
       <AIClozeQuizModal
         isOpen={isAIModalOpen}
         onClose={() => setIsAIModalOpen(false)}
-        exercises={aiExercises}
+        exercises={activeExercises}
         lessonTitle={lesson.title}
+        sourceType={activeSourceType}
+        onSwitchSource={handleSwitchSource}
         onRegenerate={() => handleGenerateAIExercises(true)}
       />
     </div>
