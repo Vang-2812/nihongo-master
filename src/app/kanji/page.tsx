@@ -14,9 +14,13 @@ import {
 } from 'lucide-react';
 import { toast } from '@/stores/toastStore';
 
-const JLPT_LEVELS: KanjiLevel[] = ['N5', 'N4', 'N3', 'N2', 'N1'];
+const JLPT_LEVELS: KanjiLevel[] = ['N0', 'N5', 'N4', 'N3', 'N2', 'N1'];
 
 const JLPT_TAB_STYLES: Record<KanjiLevel, { active: string; inactive: string }> = {
+  N0: {
+    active: 'bg-stone-900 text-white border-stone-900',
+    inactive: 'bg-stone-100 text-stone-800 border-stone-300 hover:bg-stone-200',
+  },
   N5: {
     active: 'bg-emerald-800 text-white border-emerald-800',
     inactive: 'bg-emerald-50 text-emerald-800 border-emerald-300 hover:bg-emerald-100',
@@ -249,7 +253,7 @@ export default function KanjiCatalogPage() {
             KHO HÁN TỰ
           </h1>
           <p className="font-sans text-xs sm:text-sm tracking-wider text-stone-500 uppercase mt-3 font-medium">
-            2,136 THƯỜNG DỤNG HÁN TỰ · JLPT N5–N1 · BỘ THỦ & THỨ TỰ NÉT · SRS
+            2,136 THƯỜNG DỤNG HÁN TỰ · 214 BỘ THỦ KHANG HY · JLPT N5–N1 · SRS
           </p>
         </div>
 
@@ -317,7 +321,7 @@ export default function KanjiCatalogPage() {
               }}
               className={`border font-sans font-semibold text-xs uppercase tracking-wider px-4 py-2.5 rounded-none transition-colors duration-100 flex items-center gap-2 ${styleClass}`}
             >
-              <span>{lvl}</span>
+              <span>{lvl === 'N0' ? 'N0 · BỘ THỦ' : lvl}</span>
               <span className="text-[11px] opacity-75">({levelCount})</span>
             </button>
           );

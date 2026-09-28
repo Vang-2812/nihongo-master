@@ -18,6 +18,7 @@ export interface KanjiCardProps {
 }
 
 const LEVEL_BADGE_STYLES: Record<string, string> = {
+  N0: 'bg-stone-800 text-stone-100 border-stone-800',
   N5: 'bg-emerald-50 text-emerald-800 border-emerald-200',
   N4: 'bg-sky-50 text-sky-800 border-sky-200',
   N3: 'bg-amber-50 text-amber-800 border-amber-200',

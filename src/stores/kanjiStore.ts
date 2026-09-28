@@ -1,7 +1,7 @@
 import { create } from 'zustand';
 import { persist, createJSONStorage } from 'zustand/middleware';
 
-export type KanjiLevel = 'N5' | 'N4' | 'N3' | 'N2' | 'N1';
+export type KanjiLevel = 'N0' | 'N5' | 'N4' | 'N3' | 'N2' | 'N1';
 export type KanjiFilter = 'all' | 'known' | 'learning' | 'new';
 export type KanjiStatus = 'known' | 'learning' | 'new';
 

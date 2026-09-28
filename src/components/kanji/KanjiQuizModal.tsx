@@ -175,10 +175,10 @@ export const KanjiQuizModal: React.FC<KanjiQuizModalProps> = ({
         <div className="sticky top-0 z-40 bg-white border-b border-stone-200 px-4 sm:px-6 py-2.5 flex items-center justify-between">
           <div className="flex items-center gap-2 sm:gap-3 min-w-0 pr-2">
             <span className="px-2 py-0.5 text-xs font-mono font-medium bg-stone-100 text-stone-700 border border-stone-300 shrink-0 rounded-none">
-              JLPT {level}
+              {level === 'N0' ? 'BỘ THỦ N0' : `JLPT ${level}`}
             </span>
             <span className="text-xs sm:text-sm font-serif font-bold text-stone-900 truncate max-w-[160px] sm:max-w-md">
-              Hán tự Kanji {level}
+              {level === 'N0' ? '214 Bộ Thủ Khang Hy' : `Hán tự Kanji ${level}`}
             </span>
             <span className="hidden sm:inline-flex text-xs font-mono px-2 py-0.5 bg-stone-50 text-stone-500 border border-stone-200 rounded-none">
               {selectedScope === 'selected'
@@ -279,10 +279,12 @@ export const KanjiQuizModal: React.FC<KanjiQuizModalProps> = ({
               <Languages className="w-3.5 h-3.5 shrink-0" />
               <span>LUYỆN TẬP KANJI</span>
               <span>·</span>
-              <span className="text-stone-700 font-medium">JLPT {level}</span>
+              <span className="text-stone-700 font-medium">
+                {level === 'N0' ? 'BỘ THỦ N0' : `JLPT ${level}`}
+              </span>
             </div>
             <h2 className="text-base sm:text-lg font-serif font-bold text-stone-900 truncate">
-              Hán tự Kanji {level}
+              {level === 'N0' ? '214 Bộ Thủ Khang Hy' : `Hán tự Kanji ${level}`}
             </h2>
           </div>
 
@@ -654,7 +656,9 @@ export const KanjiQuizModal: React.FC<KanjiQuizModalProps> = ({
         <div className="px-5 py-3 border-t border-stone-200 bg-white flex items-center justify-between gap-3 shrink-0">
           <div className="flex flex-col min-w-0">
             <span className="font-mono text-xs font-bold text-stone-900 truncate">
-              {activePool.length} chữ Kanji {level}
+              {level === 'N0'
+                ? `${activePool.length} bộ thủ Khang Hy`
+                : `${activePool.length} chữ Kanji ${level}`}
             </span>
             <span className="font-mono text-[11px] text-stone-500 uppercase tracking-wider truncate">
               {selectedMode === 'choice'

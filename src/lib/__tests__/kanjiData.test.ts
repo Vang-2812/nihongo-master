@@ -13,11 +13,19 @@ import {
 
 describe('Kanji Data Helper & Indexer', () => {
   it('should load kanji by level accurately', () => {
+    const n0 = getKanjiByLevel('N0' as any);
     const n5 = getKanjiByLevel('N5');
     const n4 = getKanjiByLevel('N4');
     const n3 = getKanjiByLevel('N3');
     const n2 = getKanjiByLevel('N2');
     const n1 = getKanjiByLevel('N1');
+
+    assert.equal(n0.length, 214, 'N0 should contain all 214 Kangxi radicals');
+    assert.equal(n0[0].character, '一');
+    assert.equal(n0[0].level, 'N0');
+    assert.equal(n0[0].jlptIndex, 1);
+    assert.equal(n0[213].character, '龠');
+    assert.equal(n0[213].jlptIndex, 214);
 
     assert.ok(n5.length > 100, `N5 count ${n5.length} should be > 100`);
     assert.ok(n4.length > 150, `N4 count ${n4.length} should be > 150`);
@@ -27,6 +35,14 @@ describe('Kanji Data Helper & Indexer', () => {
 
     assert.equal(n5[0].level, 'N5');
     assert.equal(n1[0].level, 'N1');
+  });
+
+  it('should resolve radical characters like 丨 in kanji lookup', () => {
+    const radical2 = getKanjiByCharacter('丨');
+    assert.ok(radical2, 'Radical 丨 should be found');
+    assert.equal(radical2.character, '丨');
+    assert.equal(radical2.level, 'N0');
+    assert.equal(radical2.stroke_count, 1);
   });
 
   it('should return all kanji and all characters list', () => {

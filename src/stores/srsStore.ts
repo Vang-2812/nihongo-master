@@ -10,7 +10,7 @@ export interface SRSCard {
   id: string; // e.g. 'vocab_123' or 'kanji_木'
   cardType: CardType;
   contentId: string | number;
-  level: 'N5' | 'N4' | 'N3' | 'N2' | 'N1';
+  level: 'N0' | 'N5' | 'N4' | 'N3' | 'N2' | 'N1';
   status: CardStatus;
   interval: number;
   easeFactor: number;
@@ -53,7 +53,7 @@ export interface SRSState {
     cardType: CardType,
     contentId: string | number,
     rating: 1 | 2 | 3 | 4,
-    level?: 'N5' | 'N4' | 'N3' | 'N2' | 'N1'
+    level?: 'N0' | 'N5' | 'N4' | 'N3' | 'N2' | 'N1'
   ) => { xpEarned: number; nextDueDate: string };
   addXp: (amount: number) => void;
   importData: (data: any) => void;

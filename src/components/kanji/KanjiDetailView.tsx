@@ -118,7 +118,7 @@ export const KanjiDetailView: React.FC<KanjiDetailViewProps> = ({
           )}
 
           <span className="font-sans font-bold text-xs px-3 py-1.5 border border-stone-300 bg-stone-100 text-stone-800">
-            {kanji.level}
+            {kanji.level === 'N0' ? 'BỘ THỦ (N0)' : kanji.level}
           </span>
 
           {adjacent.next ? (
@@ -213,7 +213,7 @@ export const KanjiDetailView: React.FC<KanjiDetailViewProps> = ({
                       {sinoVietnamese}
                     </h1>
                     <span className="font-sans font-semibold text-xs uppercase tracking-wider text-stone-500 mt-1 block">
-                      JLPT {kanji.level}
+                      {kanji.level === 'N0' ? 'BỘ THỦ (KHANG HY)' : `JLPT ${kanji.level}`}
                     </span>
                   </div>
                 </div>
@@ -247,7 +247,9 @@ export const KanjiDetailView: React.FC<KanjiDetailViewProps> = ({
               </div>
               <div className="px-3 text-center">
                 <span className="text-stone-500 block text-[10px] uppercase tracking-wider font-semibold">CẤP ĐỘ</span>
-                <span className="font-bold text-stone-900 text-sm mt-0.5 block">JLPT {kanji.level}</span>
+                <span className="font-bold text-stone-900 text-sm mt-0.5 block">
+                  {kanji.level === 'N0' ? 'BỘ THỦ (N0)' : `JLPT ${kanji.level}`}
+                </span>
               </div>
             </div>
           </div>

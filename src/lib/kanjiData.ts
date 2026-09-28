@@ -10,7 +10,7 @@ import minnaData from '@/data/vocab/minna.json';
 import somatomeData from '@/data/vocab/somatome_n3.json';
 import tangoData from '@/data/vocab/tango.json';
 
-export type KanjiLevel = 'N5' | 'N4' | 'N3' | 'N2' | 'N1';
+export type KanjiLevel = 'N0' | 'N5' | 'N4' | 'N3' | 'N2' | 'N1';
 
 export interface RadicalRef {
   character: string;
@@ -103,6 +103,19 @@ export function parseKanjiMeaning(
   };
 }
 
+// Convert 214 Kangxi radicals to N0 KanjiItems
+const typedN0: KanjiItem[] = (radicalsData as RadicalDetail[]).map((r) => ({
+  character: r.radical,
+  stroke_count: r.stroke_count,
+  onyomi: [],
+  kunyomi: r.reading_ja ? [r.reading_ja] : [],
+  meaning_vi: r.meaning_vi,
+  mnemonic_vi: `Bộ thứ ${r.kangxi_number}/214 bộ thủ Khang Hy.${r.variants ? ` Biến thể: ${r.variants}` : ''}`,
+  radicals: [{ character: r.radical, is_main: true, position: 'none' }],
+  level: 'N0' as KanjiLevel,
+  jlptIndex: r.kangxi_number,
+}));
+
 // Attach levels to raw data
 const typedN5: KanjiItem[] = (n5Data as any[]).map((k) => ({
   ...k,
@@ -130,6 +143,7 @@ const typedN1: KanjiItem[] = (n1Data as any[]).map((k) => ({
 }));
 
 const allKanjiList: KanjiItem[] = [
+  ...typedN0,
   ...typedN5,
   ...typedN4,
   ...typedN3,
@@ -138,8 +152,15 @@ const allKanjiList: KanjiItem[] = [
 ];
 
 // Map by character for O(1) lookup
+// Prioritize N5..N1 for characters that exist in standard JLPT so full on/kun is preserved,
+// and add unique radicals from N0
 const kanjiByCharMap = new Map<string, KanjiItem>();
-for (const item of allKanjiList) {
+for (const item of [...typedN5, ...typedN4, ...typedN3, ...typedN2, ...typedN1]) {
+  if (!kanjiByCharMap.has(item.character)) {
+    kanjiByCharMap.set(item.character, item);
+  }
+}
+for (const item of typedN0) {
   if (!kanjiByCharMap.has(item.character)) {
     kanjiByCharMap.set(item.character, item);
   }
@@ -239,6 +260,8 @@ function getCompoundsIndex(): Map<string, KanjiCompound[]> {
 
 export function getKanjiByLevel(level: KanjiLevel): KanjiItem[] {
   switch (level) {
+    case 'N0':
+      return typedN0;
     case 'N5':
       return typedN5;
     case 'N4':
